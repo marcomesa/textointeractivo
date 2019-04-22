@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>TITULO</title>
+</head>
+<body BGCOLOR="ffffff">
+
+<p align="left">
+
+<br>
+<applet code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=790 height=40>
+   <param name="decimal_symbol" value=".">
+   <param name="Versi&oacute;n" value="3.8912, 2006-12-20">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='d8d8f2' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='B' regi&oacute;n='exterior' valor='0.25' nombre='B' incr='0.01' visible='si' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='L' regi&oacute;n='exterior' valor='600' decimales='0' nombre='L' incr='1' visible='si' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='H' regi&oacute;n='exterior' valor='20' decimales='0' nombre='H' incr='1' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="id='B' expresi&oacute;n='0.25' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='L' expresi&oacute;n='600' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='H' expresi&oacute;n='20' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='Rojo(s)' expresi&oacute;n='(s&lt;L/2)+(s&gt;=L/2)*(1-(s-L/2)/(L/2))'">
+   <param name="A_04" value="id='Verde(s)' expresi&oacute;n='(s&lt;L/2)*s/(L/2)+(s&gt;=L/2)*(1-(s-L/2)/(L/2)*0.1)'">
+   <param name="A_05" value="id='Azul(s)' expresi&oacute;n='0.1*(s&gt;=L/2)*(s-L/2)/(L/2)'">
+   <param name="A_06" value="id='AVANZAR' expresi&oacute;n='B&gt;0.99'">
+   <param name="A_07" value="id='RETROCEDER' expresi&oacute;n='B&lt;0.01'">
+   <param name="G_00" value="tipo='imagen' fondo='si' expresi&oacute;n='(1,1)' archivo='imagenes/tools/barra.gif' coord_abs='si'">
+   <param name="G_01" value="tipo='pol&iacute;gono' fondo='si' color='707070' expresi&oacute;n='(0,0)(L,0)(L,H)(0,H)(0,0)' coord_abs='si'">
+   <param name="G_02" value="tipo='pol&iacute;gono' color='grisObscuro' expresi&oacute;n='(B*L,0)(L,0)(L,H)(B*L,H)(B*L,0)' relleno='606080' coord_abs='si'">
+</applet>
+</p>
+
+</body>
+</html>

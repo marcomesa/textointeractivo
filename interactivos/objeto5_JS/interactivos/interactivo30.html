@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cálculo Diferencial - Introducción</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+              <ajs name="continua" width=740 height=500 code="Descartes">
+   <param name="tamaño" value="740x500">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="continua">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no alto=0">
+   <param name="E_01" value="tipo='R2' fijo='sí' escala='16' O.y='24 ' despl_imagen='arr-izq' fondo='ffffffff' red='dddddd' red10='no' ejes='gris' texto='no' números='sí' eje-x='X' eje-y='Y'">
+   <param name="E_02" value="tipo='R2' id='imag' fijo='sí' escala='16' O.x='-1' O.y='23 ' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='text' alto='64' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='abajo' y='338' dibujar-si='0' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='adelante' tipo='numérico' interfaz='botón' región='interior' espacio='text' expresión='(700,8,30,30)' valor='1' fijo='sí' visible='sí' imagen='imagenes/siguiente.png' acción='calcular' parámetro='t=0;Oy=24;Ox=0;escala=16;anim=0;paso=paso+1;p0.x=-10;p1.x=-9;p2.x=-8;p3.x=-10;p4.x=-10;limpiar=1' dibujar-si='(paso<4)'">
+   <param name="C_02" value="id='atras' tipo='numérico' interfaz='botón' región='interior' espacio='text' expresión='(665,8,30,30)' fijo='no' visible='sí' imagen='imagenes/anterior.png' acción='calcular' parámetro='t=0;Oy=24;Ox=0;escala=16;anim=0;paso=paso-1;p0.x=-10;p1.x=-9;p2.x=-8;p3.x=-9;p4.x=-10;limpiar=1' dibujar-si='paso>=1' pos_mensajes='centro'">
+   <param name="C_03" value="id='dibujo' tipo='numérico' interfaz='botón' región='interior' espacio='text' expresión='(645,36,30,30)' fijo='sí' visible='sí' imagen='imagenes/milapiz.png' acción='calcular' parámetro='limpiar=1;escala=16;Oy=24;Ox=0;anim=1;p0.x=-10;p1.x=-9;p2.x=-8;p3.x=-9;p4.x=-9;' dibujar-si='(t=0)|(t>=0.38)' activo-si='(t=0)|(t>=0.38)' pos_mensajes='centro'">
+   <param name="C_04" value="id='p0' tipo='gráfico' espacio='imag' color='20c0c0c0' color-int='ffff0000' tamaño='24' constricción='y=x*sen(x)' fijo='sí' dibujar-si='paso=0' activo-si='(t=0)|(t>=0.38)'">
+   <param name="C_05" value="id='p0.x' tipo='numérico' región='exterior' nombre='q.x' valor='-10' min='(Ox-179)/escala' max='(Ox+170)/escala' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='p1' tipo='gráfico' espacio='imag' color='20c0c0c0' color-int='ffff0000' tamaño='24' constricción='y=ind(x<=2)*(x+3)+(ind(x>2))*(- 0.5*x+2)' fijo='sí' dibujar-si='paso=2' activo-si='(t=0)|(t>=0.38)'">
+   <param name="C_07" value="id='p1.x' tipo='numérico' interfaz='campo de texto' región='interior' espacio='abajo' expresión='(110,3,40,25)' valor='-10' incr='0.0001' min='(Ox-179)/escala' max='(Ox+190)/escala' fijo='no' visible='sí' dibujar-si='paso=2' pos_mensajes='centro'">
+   <param name="C_08" value="id='p1.x' tipo='numérico' región='interior' espacio='abajo' nombre=' p1.x' expresión='(150,3,15,25)' valor='-10' incr='0.00001' min='(Ox-179)/escala' max='(Ox+190)/escala' fijo='no' visible='no' dibujar-si='paso=2' pos_mensajes='centro'">
+   <param name="C_09" value="id='p2' tipo='gráfico' espacio='imag' color='20c0c0c0' color-int='ffff0000' tamaño='24' constricción='y=(0.25*(x+2)*(x-1))-6' fijo='sí' dibujar-si='paso=1' activo-si='(t=0)|(t>=0.38)'">
+   <param name="C_10" value="id='p2.x' tipo='numérico' interfaz='campo de texto' región='interior' espacio='abajo' expresión='(110,3,40,25)' valor='-8' min='-8.5' max='7.5' fijo='no' visible='sí' dibujar-si='paso=1' pos_mensajes='centro'">
+   <param name="C_11" value="id='p2.x' tipo='numérico' región='interior' espacio='abajo' nombre=' p2.x' expresión='(150,3,15,25)' valor='-8' min='-8.5' max='7.5' fijo='no' visible='no' dibujar-si='paso=1' pos_mensajes='centro'">
+   <param name="C_12" value="id='p3' tipo='gráfico' espacio='imag' color='20c0c0c0' color-int='ffff0000' tamaño='24' expresión='(-9,72/11)' constricción='y=ind(x<2)*(x^2-9)/(x-2)+ind(x>=2)*(-5+x)' fijo='sí' dibujar-si='paso=3' activo-si='(t=0)|(t>=0.38)'">
+   <param name="C_13" value="id='p3.x' tipo='numérico' interfaz='campo de texto' región='interior' espacio='abajo' expresión='(110,3,40,25)' valor='-9' fijo='no' visible='sí' dibujar-si='paso=3' pos_mensajes='centro'">
+   <param name="C_14" value="id='p3.x' tipo='numérico' región='interior' espacio='abajo' nombre=' p3.x' expresión='(150,3,15,25)' valor='-9' fijo='no' visible='sí' dibujar-si='paso=3' pos_mensajes='centro'">
+   <param name="C_15" value="id='p4' tipo='gráfico' espacio='imag' color='20c0c0c0' color-int='ffff0000' tamaño='24' expresión='(-9,5/11)' constricción='y=abs(1/(x-2))*5' fijo='sí' dibujar-si='paso=4' activo-si='(t=0)|(t>=0.38)'">
+   <param name="C_16" value="id='p4.x' tipo='numérico' interfaz='campo de texto' región='interior' espacio='abajo' expresión='(110,3,40,25)' fijo='no' visible='sí' dibujar-si='paso=4' pos_mensajes='centro'">
+   <param name="C_17" value="id='p4.x' tipo='numérico' región='interior' espacio='abajo' nombre=' p4.x' expresión='(150,3,15,25)' fijo='no' visible='sí' dibujar-si='paso=4' pos_mensajes='centro'">
+   <param name="A_01" value="id='f0(x)' expresión='x*sen(x)' dominio='x<=p0.x'">
+   <param name="A_02" value="id='f1(x)' expresión='ind(x<=2)*(x+3)+(ind(x>2))*(- 0.5*x+2)' dominio='x<=p1.x'">
+   <param name="A_03" value="id='f2(x)' expresión='(ind(x<2))*((0.25*(x^2-4)*(x-1)/(x-2))-6)+(ind(x=2))*(-3)+(ind(x>2))*((0.25*(x^2-4)*(x-1)/(x-2))-6)' dominio='x<=p2.x'">
+   <param name="A_04" value="id='f3(x)' expresión='(ind(x<2))*((x^2-9)/(x-2))+(ind(x>=2))*(-5+x)' dominio='x<=p3.x'">
+   <param name="A_05" value="id='f4(x)' expresión='abs(1/(x-2))*5' dominio='x<=p4.x'">
+   <param name="A_06" value="id='dibuja' evento='sí' condición='anim=1' acción='animar' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_07" value="id='escala' constante='sí' expresión='16' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='Oy' constante='sí' expresión='24' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='Ox' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='limpiar' evento='sí' condición='limpiar=1' acción='limpiar' ejecución='siempre' pos_mensajes='centro'">
+   <param name="A_11" value="id='e8' evento='sí' condición='limpiar=1' acción='calcular' parámetro='limpiar=0' ejecución='siempre' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='text' tipo='polígono' color='ff6600' coord_abs='sí' expresión='(0,1)(739,1)(739,63)(0,63)(0,1)' relleno='fffada'">
+   <param name="G_02" value="espacio='abajo' tipo='polígono' color='grisClaro' coord_abs='sí' expresión='(0,1)(739,1)(739,31)(0,31)(0,1)'">
+   <param name="G_03" value="espacio='text' tipo='texto' color='azul' dibujar-si='(t=0)|(t>=0.38)' expresión='[670,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40\b dibujar\cf1\fs24\b0\par }' fuente='Monospaced,BOLD,20' fijo='sí'">
+   <param name="G_04" value="tipo='ecuación' color='0000cc' dibujar-si='paso=0' expresión='y=f0(x)' rastro='7272ff'">
+   <param name="G_05" value="tipo='ecuación' color='0000aa' dibujar-si='(paso=1)' expresión='y=f2(x)' rastro='7272ff'">
+   <param name="G_06" value="tipo='ecuación' color='0000aa' dibujar-si='paso=2' expresión='y=f1(x)' rastro='7272ff'">
+   <param name="G_07" value="tipo='ecuación' color='0000aa' dibujar-si='paso=3' expresión='y=f3(x)' rastro='7272ff'">
+   <param name="G_08" value="tipo='ecuación' color='0000aa' dibujar-si='paso=4' expresión='y=f4(x)' rastro='7272ff'">
+   <param name="G_09" value="tipo='ecuación' color='e0e0e0' dibujar-si='(paso=3)&(p3.x>1.9)' expresión='x=2' rastro='cccccc'">
+   <param name="G_10" value="tipo='ecuación' color='e0e0e0' dibujar-si='(paso=4)&(p4.x>1.9)' expresión='x=2' rastro='cccccc'">
+   <param name="G_11" value="tipo='punto' color='azul' dibujar-si='(paso=1)&(p2.x>1.9)' expresión='(2,-3)' rastro='7272ff' fijo='sí' tamaño='4'">
+   <param name="G_12" value="espacio='text' tipo='texto' color='azul' dibujar-si='paso=0' expresión='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red204\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs48 La funci\u243 n de la gr\u225 fica es continua\par puede dibujarse de un s\u243 lo trazo.\cf1\fs24\par }' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_13" value="espacio='text' tipo='texto' color='azul' dibujar-si='paso=1' expresión='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red204\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs48 La funci\u243 n de la gr\u225 fica es discontinua en x=2, hay un\par &squot;agujero&squot; en ese punto,  tiene una  discontinuidad evitable. \cf1\par \fs24}' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_14" value="espacio='text' tipo='texto' color='azul' dibujar-si='paso=2' expresión='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red204\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs48 La funci\u243 n de la gr\u225 fica es discontinua\par en x=2, presenta un salto.\cf1\fs24\par }' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_15" value="espacio='text' tipo='texto' color='azul' dibujar-si='paso=3' expresión='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red204\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs48 La funci\u243 n de la gr\u225 fica es discontinua\par en x=2, presenta un salto de longitud infinita.  \cf1\fs24\par }' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_16" value="espacio='text' tipo='texto' color='azul' dibujar-si='paso=4' expresión='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red204\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40 La funci\u243 n de la gr\u225 fica no est\u225  definida en x=2, adem\u225 s presenta\par una discontinuidadque no es de salto, las ramas se juntan en \u8734 \cf1\par \fs24}' fuente='Monospaced,PLAIN,20' fijo='sí'">
+   <param name="G_17" value="tipo='ecuación' color='blanco' dibujar-si='(paso=2)' expresión='x=2' ancho='3'">
+   <param name="G_18" value="tipo='ecuación' color='dddddd' dibujar-si='(paso=2)' expresión='x=2'">
+   <param name="G_19" value="tipo='ecuación' color='grisObscuro' dibujar-si='(paso=2)' expresión='y=0'">
+   <param name="G_20" value="tipo='segmento' color='grisObscuro' dibujar-si='paso>=2' expresión='(2,0.06)(2,-0.06)' fijo='sí' tamaño='0'">
+   <param name="G_21" value="tipo='punto' color='0000cc' dibujar-si='paso=0' expresión='(p0.x,f0(p0.x))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par}' fuente='Serif,PLAIN,12' fijo='sí' tamaño='3'">
+   <param name="G_22" value="tipo='imagen' dibujar-si='paso=0' expresión='(p0.x-1.2,f0(p0.x)+1.25)' archivo='imagenes/milapiz.png'">
+   <param name="G_23" value="tipo='punto' color='0000cc' dibujar-si='paso=2' expresión='( p1.x,f1(p1.x))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par}' fuente='Serif,PLAIN,12' fijo='sí' tamaño='3'">
+   <param name="G_24" value="tipo='punto' color='azul' dibujar-si='(paso=2)&( p1.x>1.9)' expresión='(2,5)' rastro='7272ff' fijo='sí' tamaño='3'">
+   <param name="G_25" value="tipo='imagen' dibujar-si='paso=2' expresión='( p1.x-1.2,f1(p1.x)+1.2)' archivo='imagenes/milapiz.png'">
+   <param name="G_26" value="tipo='punto' color='0000cc' dibujar-si='paso=1' expresión='( p2.x,f2(p2.x))' fijo='sí' tamaño='3'">
+   <param name="G_27" value="tipo='imagen' dibujar-si='paso=1' expresión='(p2.x-1.2,f2(p2.x)+1.2)' archivo='imagenes/milapiz.png'">
+   <param name="G_28" value="tipo='punto' color='0000cc' dibujar-si='(paso=3)&(p3.x#2)' expresión='(p3.x,f3(p3.x))' fijo='sí' tamaño='3'">
+   <param name="G_29" value="tipo='imagen' dibujar-si='paso=3' expresión='(p3.x-1.2,f3(p3.x)+1.2)' archivo='imagenes/milapiz.png'">
+   <param name="G_30" value="tipo='punto' color='0000cc' dibujar-si='(paso=4)&(p4.x#2)' expresión='(p4.x,f4(p4.x))' fijo='sí' tamaño='3'">
+   <param name="G_31" value="tipo='imagen' dibujar-si='paso=4' expresión='(p4.x-1.2,f4(p4.x)+1.2)' archivo='imagenes/milapiz.png'">
+   <param name="G_32" value="tipo='punto' color='0000cc' dibujar-si='(paso=1)&( p2.x>1.9)' expresión='(2,-5)' rastro='7272ff' fijo='no' tamaño='4'">
+   <param name="G_33" value="tipo='punto' color='blanco' dibujar-si='(paso=1)&( p2.x>1.9)' expresión='(2,-5)' rastro='blanco' fijo='sí'">
+   <param name="G_34" value="tipo='punto' color='0000cc' dibujar-si='(paso=2)&(t>0.38)' expresión='( p1.x-1.2,f1(p1.x)-0.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue204;}\f1\fs20\b\cf0 arrastra\f2\fs24\b0\cf1\par}' fuente='SansSerif,BOLD,10' fijo='sí' tamaño='0'">
+   <param name="G_35" value="tipo='punto' color='0000cc' dibujar-si='(paso=1)&(t>0.38)' expresión='(p2.x-1.2,f2(p2.x)-0.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue204;}\f1\fs20\b\cf0 arrastra\f2\fs24\b0\cf1\par}' fuente='SansSerif,BOLD,10' fijo='sí' tamaño='0'">
+   <param name="G_36" value="tipo='punto' color='0000cc' dibujar-si='(paso=3)&(t>0.38)' expresión='(p3.x-1.2,f3(p3.x)-0.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue204;}\f1\fs20\b\cf0 arrastra\f2\fs24\b0\cf1\par}' fuente='SansSerif,BOLD,10' fijo='sí' tamaño='0'">
+   <param name="G_37" value="tipo='punto' color='0000cc' dibujar-si='(paso=4)&(t>0.38)' expresión='(p4.x-1.2,f4(p4.x)-0.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue204;}\f1\fs20\b\cf0 arrastra\f2\fs24\b0\cf1\par}' fuente='SansSerif,BOLD,10' fijo='sí' tamaño='0'">
+   <param name="G_38" value="tipo='punto' color='0000cc' dibujar-si='(paso=0)&(t>0.38)' expresión='(p0.x-1.2,f0(p0.x)-0.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue204;}\f1\fs20\b\cf0 arrastra\cf1\f2\fs24\b0\par}' fuente='SansSerif,BOLD,10' fijo='sí' tamaño='0'">
+   <param name="G_39" value="tipo='punto' color='0000cc' dibujar-si='(paso=3)&(p3.x>2)' expresión='(2,-3)' rastro='7272ff' fijo='no' tamaño='4'">
+   <param name="G_40" value="tipo='texto' color='990000' dibujar-si='(paso=3)&(t>0.13)&(t<0.25)' expresión='[20,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs48 Zoom -\par La gr\u225 fica da un \par salto de longitud infinita. \par \fs24}' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_41" value="tipo='texto' color='990000' dibujar-si='(paso=4)&(t>0.13)&(t<0.25)' expresión='[20,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs48 Zoom + y hacia arriba\par La gr\u225 fica tiene en x=2\par una discontinuidad. \par Se va a +\u8734  sin salto\par \fs24}' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_42" value="espacio='imag' tipo='texto' color='990000' dibujar-si='(paso=1)&(t>=0.38)' expresión='[40,260]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs48 Si x se aproxima a 2\par por la derecha o por\par la izquierda f(x)\u8594  -5 \par pero f(2)=-3\par La discontinuidad se \par evitar\u237 a haciendo f(2)=-5 \par \fs24\par }' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_43" value="espacio='imag' tipo='texto' color='990000' dibujar-si='(paso=2)&(t>=0.38)' expresión='[30,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs48 Si x se aproxima a 2\par por la izquierda f(x)\u8594  5\par por la derecha f(x)\u8594  1\par Salto de longitud 5-1=4, \par longitud finita\fs24\par }' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_44" value="espacio='imag' tipo='texto' color='990000' dibujar-si='(paso=3)&(t>=0.38)' expresión='[35,240]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs48 Si x se aproxima a 2\par por la izquierda f(x)\u8594 +\u8734 \par por la derecha f(x)\u8594  -3\par la funci\u243 n salta \par de +\u8734  a -3\par \fs24}' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="G_45" value="espacio='imag' tipo='texto' color='990000' dibujar-si='(paso=4)&(t>=0.38)' expresión='[35,220]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs48 Si x se aproxima a 2\par por la izquierda o por\par la derecha f(x)\u8594  +\u8734 \par f(2) no existe\par La discontinuidad no se \par puede evitar definiendo \par de nuevo f(2)\par \par \par \fs24}' fuente='Monospaced,PLAIN,24' fijo='sí'">
+   <param name="Animación" value="pausa='(paso>2)&(t>0.13)&(t<0.25)?180:50' controles='no' auto='sí' inicio='t=0' hacer='t=t+0.005;anim=0;p0.x=p0.x+t;p1.x=p1.x+t;p2.x=p2.x+t;p3.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p3.x);p4.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p4.x);escala=(paso=3)&((t>=0.13)&(t<0.20))?escala/2^(0.9*t):((paso=3)&((t>=0.20)&(t<0.25))?escala*2^(0.9*t):escala);escala=(paso=4)&((t>=0.13)&(t<0.20))?escala*2^(0.3*t):((paso=4)&((t>=0.20)&(t<0.25))?escala/2^(0.3*t):escala);Oy=(paso=4)&((t>=0.13)&(t<0.18))?Oy+700*t:((paso=4)&(t>=0.18)&(t<0.25)?Oy-2330*(t-0.18):Oy);;' mientras='t<0.38'">
+</ajs>
+
+</body>
+</html>

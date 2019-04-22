@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="560" height="380" code="Descartes">
+    <param name="tamaño" value="560x380">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E10' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='000000' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='centro' tipo='gráfico' espacio='E0' color='b1406080' color-int='b1cc0022' tamaño='10' expresión='(0,0)' ">
+    <param name="C_02" value="id='centro.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E10' nombre='centro.x' expresión='(0,0)' valor='0' incr='0.1' min='-3.5' max='3.5' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_03" value="id='centro.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E10' nombre='centro.y' expresión='(0,0)' valor='2' incr='0.1' min='-3' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_04" value="id='ot' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Otro ejemplo' expresión='(E10._w-135,E10._h-100,130,30)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='t=(t=3)?0:t+1' ">
+    <param name="A_01" value="id='ejernuevo()' algoritmo='sí' expresión='x' hacer='e=1+ent(3.99*rnd);ejer0=ent(6.99*rnd);ejer1=ent(6.99*rnd);vr=0' mientras='ejer0=ejer1' ">
+    <param name="A_02" value="id='verresp()' algoritmo='sí' expresión='x' hacer='vr=1;res=(e=n0)?1:2;' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='ejernuevo()' ">
+    <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='E10' tipo='curva' fondo='no' color='20303a' dibujar-si='t=0' coord_abs='no' expresión='(2*cos(t)+centro.x,1.5*sen(t)+centro.y)' parámetro='t' t.intervalo='[0,2*pi]' t.pasos='80' ancho='0.5' visible='no' editable='no' lineDash='solid' ">
+    <param name="G_02" value="espacio='E10' tipo='curva' fondo='no' color='20303a' dibujar-si='t=1' coord_abs='no' expresión='(t+centro.x,tan(t)+centro.y)' parámetro='t' t.intervalo='[-pi/2+0.1,pi/2]' t.pasos='80' ancho='0.5' visible='no' editable='no' lineDash='solid' ">
+    <param name="G_03" value="espacio='E10' tipo='curva' fondo='no' color='20303a' dibujar-si='t=2' coord_abs='no' expresión='(t+centro.x,tan(t)+centro.y)' parámetro='t' t.intervalo='[-pi/2+0.1,pi/4]' t.pasos='80' ancho='0.5' visible='no' editable='no' lineDash='solid' ">
+    <param name="G_04" value="espacio='E10' tipo='ecuación' fondo='no' color='20303a' dibujar-si='t=3' coord_abs='no' expresión='y=sqrt(x+centro.x)+centro.y' ancho='1' visible='no' editable='no' ">
+    <param name="G_05" value="espacio='E10' tipo='segmento' fondo='no' color='20303a' dibujar-si='(t=1)|(t=2)' coord_abs='no' expresión='(centro.x-pi/2,5-0.4*s)(centro.x-pi/2,4.8-0.4*s)' familia='s' s.intervalo='[0,30]' s.pasos='30' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_06" value="espacio='E10' tipo='segmento' fondo='no' color='20303a' dibujar-si='t=1' coord_abs='no' expresión='(centro.x+pi/2,5-0.4*s)(centro.x+pi/2,4.8-0.4*s)' familia='s' s.intervalo='[0,30]' s.pasos='30' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_07" value="espacio='E10' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(-6,0)(6,0)' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_08" value="espacio='E10' tipo='segmento' fondo='no' color='20303a' dibujar-si='t=0' coord_abs='no' expresión='(centro.x-2,0)(centro.x+2,0)' decimales='2' fijo='sí' tamaño='4' ancho='3' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_09" value="espacio='E10' tipo='polígono' fondo='no' color='ff20303a' coord_abs='no' expresión='(-6,-3)(6,-3)(6,-4)(-6,-4)(-6,-3)' relleno='b6c5cc' ancho='1' lineDash='solid' ">
+    <param name="G_10" value="espacio='E10' tipo='polígono' fondo='no' color='ff20303a' dibujar-si='t&gt;0' coord_abs='no' expresión='(-6,3.2)(6,3.2)(6,4)(-6,4)(-6,3.2)' relleno='b6c5cc' ancho='1' lineDash='solid' ">
+    <param name="G_11" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=0' expresión='[20,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula{\expr centro.x-2\decimals 2\fixed0}≤ x ≤{\expr centro.x+2\decimals 2\fixed0}}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_12" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=0' expresión='[300,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Intervalo: \b0\b{\*\mjaformula [{\expr centro.x-2\decimals 2\fixed0},{\expr centro.x+2\decimals 2\fixed0}]}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_13" value="espacio='E10' tipo='punto' fondo='no' color='20303a' dibujar-si='t=0' coord_abs='no' expresión='(centro.x-2,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\expr centro.x-2\decimals 2\fixed0}}\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_14" value="espacio='E10' tipo='punto' fondo='no' color='20303a' dibujar-si='t=0' coord_abs='no' expresión='(centro.x+2,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\expr centro.x+2\decimals 2\fixed0}}\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_15" value="espacio='E10' tipo='segmento' fondo='no' color='20303a' dibujar-si='t=1' coord_abs='no' expresión='(centro.x-pi/2,0)(centro.x+pi/2,0)' decimales='2' fijo='sí' tamaño='4' ancho='3' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_16" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=1' expresión='[20,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula{\expr centro.x-pi/2\decimals 2\fixed0}< x <{\expr centro.x+pi/2\decimals 2\fixed0}}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_17" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=1' expresión='[280,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Intervalo: \b0\b{\*\mjaformula ({\expr centro.x-pi/2\decimals 2\fixed0},{\expr centro.x+pi/2\decimals 2\fixed0})}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_18" value="espacio='E10' tipo='punto' fondo='no' color='20303a' dibujar-si='t=1' coord_abs='no' expresión='(centro.x-pi/2,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\expr centro.x-pi/2\decimals 2\fixed0}}\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_19" value="espacio='E10' tipo='punto' fondo='no' color='20303a' dibujar-si='t=1' coord_abs='no' expresión='(centro.x+pi/2,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\expr centro.x+pi/2\decimals 2\fixed0}}\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_20" value="espacio='E10' tipo='punto' fondo='no' color='blanco' dibujar-si='t=1' coord_abs='no' expresión='(centro.x-pi/2,0)' decimales='2' fijo='sí' tamaño='3' fuente='Arial,PLAIN,12' ">
+    <param name="G_21" value="espacio='E10' tipo='punto' fondo='no' color='blanco' dibujar-si='t=1' coord_abs='no' expresión='(centro.x+pi/2,0)' decimales='2' fijo='sí' tamaño='3' fuente='Arial,PLAIN,12' ">
+    <param name="G_22" value="espacio='E10' tipo='punto' fondo='no' color='negro' dibujar-si='t=2' coord_abs='no' expresión='(pi/4+centro.x,1+centro.y)' decimales='2' fijo='sí' tamaño='4' fuente='Arial,PLAIN,12' ">
+    <param name="G_23" value="espacio='E10' tipo='segmento' fondo='no' color='20303a' dibujar-si='t=2' coord_abs='no' expresión='(centro.x-pi/2,0)(centro.x+pi/4,0)' decimales='2' fijo='sí' tamaño='4' ancho='3' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_24" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=2' expresión='[20,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula{\expr centro.x-pi/2\decimals 2\fixed0}<&nbsp;x&nbsp;&nbsp;≤{\expr centro.x+pi/4\decimals 2\fixed0}}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_25" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=2' expresión='[300,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Intervalo: \b0\b{\*\mjaformula ({\expr centro.x-pi/2\decimals 2\fixed0},{\expr centro.x+pi/4\decimals 2\fixed0}]}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_26" value="espacio='E10' tipo='punto' fondo='no' color='20303a' dibujar-si='t=2' coord_abs='no' expresión='(centro.x-pi/2,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\expr centro.x-pi/2\decimals 2\fixed0}}\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_27" value="espacio='E10' tipo='punto' fondo='no' color='20303a' dibujar-si='t=2' coord_abs='no' expresión='(centro.x+pi/4,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\expr centro.x+pi/4\decimals 2\fixed0}}\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_28" value="espacio='E10' tipo='punto' fondo='no' color='blanco' dibujar-si='t=2' coord_abs='no' expresión='(centro.x-pi/2,0)' decimales='2' fijo='sí' tamaño='3' fuente='Arial,PLAIN,12' ">
+    <param name="G_29" value="espacio='E10' tipo='segmento' fondo='no' color='20303a' dibujar-si='t=3' coord_abs='no' expresión='(-6,0)(centro.x,0)' decimales='2' fijo='sí' tamaño='4' ancho='3' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_30" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=3' expresión='[20,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula x≤{\expr centro.x\decimals 2\fixed0}}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_31" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=3' expresión='[300,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Intervalo: \b0\b{\*\mjaformula (-∞&nbsp;,{\expr centro.x\decimals 2\fixed0}]}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_32" value="espacio='E10' tipo='punto' fondo='no' color='20303a' dibujar-si='t=3' coord_abs='no' expresión='(centro.x,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\expr centro.x\decimals 2\fixed0}}\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_33" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=1' expresión='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs48\b Las rectas verticales son asíntotas de la gráfica\b0\f1\fs30 .\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,15' align='a_left' ">
+    <param name="G_34" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=2' expresión='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Puede haber intervalos mixtos.\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,15' align='a_left' ">
+    <param name="G_35" value="espacio='E10' tipo='texto' fondo='no' color='20303a' dibujar-si='t=3' expresión='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Puede haber inter\b0\b valos infinitos\b0 .\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,15' align='a_left' ">
+    <param name="G_36" value="espacio='E10' tipo='ecuación' fondo='no' color='20303a' dibujar-si='t=3' coord_abs='no' expresión='y=-sqrt(-x+centro.x)+centro.y' ancho='1' visible='no' editable='no' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4b.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="740" height="660" code="Descartes">
+    <param name="tamaño" value="740x660">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E2' cID='157074baa07' x='0' y='0' ancho='740' alto='660' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="A_01" value="id='dist(x1,y1,x2,y2)' algoritmo='no' expresión='sqrt((x2-x1)^2+(y2-y1)^2)' ">
+    <param name="A_02" value="id='toCoordRelX(ax,w,e,ox)' algoritmo='no' expresión='(ax-(ent(w/2)+ox))/e' ">
+    <param name="A_03" value="id='toCoordRelY(ay,h,e,oy)' algoritmo='no' expresión='-(ay-(ent(h/2)+oy))/e' ">
+    <param name="A_04" value="id='orden' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_05" value="id='E3_vecAux' vector='sí' evaluar='una-sola-vez' tamaño='5' ">
+    <param name="A_06" value="id='xRatio' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_07" value="id='yRatio' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_08" value="id='respCorr' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='respCorr[0]=1;respCorr[1]=1;respCorr[2]=2;respCorr[3]=3;respCorr[4]=4;respCorr[5]=1' ">
+    <param name="A_09" value="id='BD' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_10" value="id='resp' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_11" value="id='CX' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_12" value="id='CY' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_13" value="id='CX_goal' vector='sí' evaluar='una-sola-vez' tamaño='9' ">
+    <param name="A_14" value="id='CY_goal' vector='sí' evaluar='una-sola-vez' tamaño='9' ">
+    <param name="A_15" value="id='iniGX' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_16" value="id='iniGY' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_17" value="id='variables' vector='sí' evaluar='una-sola-vez' tamaño='numVariables' expresión='variables[0]=|x|;variables[1]=|y|;variables[2]=|z|' ">
+    <param name="A_18" value="id='vecAux' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='vecAux[0]=0;vecAux[1]=1;vecAux[2]=2;vecAux[3]=3;vecAux[4]=4;vecAux[5]=5;vecAux[6]=6;vecAux[7]=7;vecAux[8]=8;vecAux[9]=9' ">
+    <param name="A_19" value="id='vecDePosicion' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='vecDePosicion[0]=0;vecDePosicion[1]=1;vecDePosicion[2]=2;vecDePosicion[3]=3;vecDePosicion[4]=4;vecDePosicion[5]=5;vecDePosicion[6]=6;vecDePosicion[7]=7;vecDePosicion[8]=8;vecDePosicion[9]=9' ">
+    <param name="A_20" value="id='iniVecAux()' algoritmo='sí' expresión='1' inicio='_j=0' hacer='E3_vecAux[_j]=_j;_j=_j+1' mientras='_j<numIncisos' ">
+    <param name="A_21" value="id='actVecAux(n)' algoritmo='sí' expresión='1' inicio='_k=n' hacer='E3_vecAux[_k]=E3_vecAux[_k+1];_k=_k+1' mientras='_k<(numIncisos-1)' ">
+    <param name="A_22" value="id='setOrden()' algoritmo='sí' expresión='1' inicio='_i=0*iniVecAux()' hacer='_resto=numIncisos-_i;_indice=ent(rnd*_resto);orden[_i]=E3_vecAux[_indice];aux=actVecAux(_indice);_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_23" value="id='setRatio()' algoritmo='sí' expresión='1' inicio='_i=0' hacer='xRatio[orden[_i]]=xRAT1;yRatio[orden[_i]]=yRAT1-_i*RAT1.sv;_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_24" value="id='llenaVecAux(random1,limite)' algoritmo='sí' expresión='0' inicio='i=0;r=random1' hacer='vecAux[i]=(i>=r)?vecAux[i+1]:vecAux[i];i=i+1' mientras='i<limite' ">
+    <param name="A_25" value="id='permutacionAleatoria(limite)' algoritmo='sí' expresión='0' inicio='_t=0' hacer='r=ent(rnd*(limite-_t));vecDePosicion[_t]=vecAux[r];llenaVecAux(r,limite);_t=_t+1' mientras='_t<limite' ">
+    <param name="A_26" value="id='ini_vecDePosicion()' algoritmo='sí' expresión='1' hacer='vecDePosicion[0]=0;vecDePosicion[1]=1;vecDePosicion[2]=2;vecDePosicion[3]=3;vecDePosicion[4]=4;vecDePosicion[5]=5;vecDePosicion[6]=6;vecDePosicion[7]=7;vecDePosicion[8]=8;vecDePosicion[9]=9;vecAux[0]=0;vecAux[1]=1;vecAux[2]=2;vecAux[3]=3;vecAux[4]=4;vecAux[5]=5;vecAux[6]=6;vecAux[7]=7;vecAux[8]=8;vecAux[9]=9' ">
+    <param name="A_27" value="id='ini_vecsC()' algoritmo='sí' expresión='1' inicio='_i=0' hacer='CX[_i]=iniGX[vecDePosicion[_i]];CY[_i]=iniGY[vecDePosicion[_i]];_i=_i+1' mientras='_i<10' ">
+    <param name="A_28" value="id='iniGs()' algoritmo='sí' expresión='1' inicio='_i=1;iniGX[0]=E1_cajitas_x;iniGY[0]=E1_cajitas_y' hacer='iniGX[_i]=iniGX[_i-1]+E1_cajita_ancho+E1_cajitas_sep;iniGY[_i]=iniGY[_i-1];BD[_i-1]=-1;_i=_i+1;;' mientras='_i<10' ">
+    <param name="A_29" value="id='ini_Cgoal()' algoritmo='sí' expresión='0' inicio='CX_goal[0]=-4;CY_goal[0]=1.1;CX_goal_sep=1;_i=1' hacer=';CX_goal[_i]=CX_goal[_i-1]+CX_goal_sep;CY_goal[_i]=CY_goal[_i-1];;_i=_i+1' mientras='_i<9' ">
+    <param name="A_30" value="id='E1_acomoda_opciones()' algoritmo='sí' expresión='x' hacer='E1_w=E1._w/E1.escala;E1_cajitas_sep=0.3;E1_cajitas_x=(E1_w-E1_num_opciones*E1_cajita_ancho-(E1_num_opciones-1)*E1_cajitas_sep)/2-E1_w/2+E1_cajita_ancho/2;E1_cajitas_y=-0.5;' ">
+    <param name="A_31" value="id='E1_ejer1()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=2;E1_acomoda_opciones();;CX_goal[0]=0.16;CY_goal[0]=1.1;;CX_goal[1]=2.2;CY_goal[1]=1.1;;resp[0]=&squot;f ´(x)&squot;;resp[1]=&squot;g´(x)&squot;' ">
+    <param name="A_32" value="id='E1_ejer2()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=4;E1_acomoda_opciones();;CX_goal[0]=-0.65;CY_goal[0]=1.1;;CX_goal[1]=0.3;CY_goal[1]=1.1;;CX_goal[2]=1.5;CY_goal[2]=1.1;;CX_goal[3]=2.4;CY_goal[3]=1.1;;resp[0]=&squot;f(x)&squot;;resp[1]=&squot;g(x)&squot;;resp[2]=&squot;g´(x)&squot;;resp[3]=&squot;f ´(x)&squot;;' ">
+    <param name="A_33" value="id='E1_ejer3()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=6;E1_acomoda_opciones();;CX_goal[0]=-1.82;CY_goal[0]=1.1;;CX_goal[1]=-0.95;CY_goal[1]=1.1;;CX_goal[2]=1.22;CY_goal[2]=1.1;;CX_goal[3]=2.1;CY_goal[3]=1.1;;CX_goal[4]=4.2;CY_goal[4]=1.1;;CX_goal[5]=5.08;CY_goal[5]=1.1;;;resp[0]=&squot;f(x)&squot;;resp[1]=&squot;g(x)&squot;;resp[2]=&squot;h(x)&squot;;resp[3]=&squot;f ´(x)&squot;;resp[4]=&squot;g´(x)&squot;;resp[5]=&squot;h´(x)&squot;;' ">
+    <param name="A_34" value="id='E1_ejer4()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=9;E1_acomoda_opciones();;CX_goal[0]=-2.55;CY_goal[0]=1.1;CX_goal[1]=-1.68;CY_goal[1]=1.1;CX_goal[2]=-0.8;CY_goal[2]=1.1;;CX_goal[3]=0.48;CY_goal[3]=1.1;CX_goal[4]=1.35;CY_goal[4]=1.1;CX_goal[5]=2.25;CY_goal[5]=1.1;;CX_goal[6]=3.5;CY_goal[6]=1.1;CX_goal[7]=4.4;CY_goal[7]=1.1;CX_goal[8]=5.3;CY_goal[8]=1.1;;resp[0]=&squot;f(x)&squot;;resp[1]=&squot;g(x)&squot;;resp[2]=&squot;h(x)&squot;;resp[3]=&squot;f ´(x)&squot;;resp[4]=&squot;g´(x)&squot;;resp[5]=&squot;h´(x)&squot;;resp[6]=&squot;f(x)&squot;;resp[7]=&squot;g(x)&squot;;resp[8]=&squot;h(x)&squot;;' ">
+    <param name="A_35" value="id='reinit_E1()' algoritmo='sí' expresión='x' hacer=';aux=(E1_num_ejer=0)?E1_ejer1():0;aux=(E1_num_ejer=1)?E1_ejer2():0;aux=(E1_num_ejer=2)?E1_ejer3():0;aux=(E1_num_ejer=3)?E1_ejer4():0;;ini_vecDePosicion();permutacionAleatoria(E1_num_opciones);iniGs();ini_vecsC();E1_num_colocados=0;E1_bien=0;;' ">
+    <param name="A_36" value="id='ini_E1()' algoritmo='sí' expresión='x' hacer='E1_cajita_ancho=0.8;E1_cajita_alto=0.5;E1_num_ejer=0;;reinit_E1();' ">
+    <param name="A_37" value="id='Reini()' algoritmo='sí' expresión='1' inicio='reini=0' hacer='E3_verSol=0;E3_bien=-1;ratio=-1;ratioActivo=1;aux2=setOrden()*setRatio()' ">
+    <param name="A_38" value="id='liberarCasilla(_o)' algoritmo='sí' expresión='x' inicio='_i=0' hacer='E1_num_colocados=(BD[_i]=_o)?E1_num_colocados-1:E1_num_colocados;E1_bien=(BD[_i]=_o)?0:E1_bien;BD[_i]=(BD[_i]=_o)?-1:BD[_i];;;_i=_i+1' mientras='_i<E1_num_opciones' ">
+    <param name="A_39" value="id='cualGoal()' algoritmo='sí' expresión='encontrado' inicio='_i=0;E1_eps=0.5;encontrado=10' hacer='encontrado=((abs(CX[seleccionado]-CX_goal[_i])<E1_eps)&(abs(CY[seleccionado]-CY_goal[_i])<E1_eps))?_i:10;;_i=_i+1' mientras='(_i<E1_num_opciones)&(encontrado=10)' ">
+    <param name="A_40" value="id='regresarAlInicio(s)' algoritmo='sí' expresión='1' hacer='CX[s]=iniGX[vecDePosicion[s]];CY[s]=iniGY[vecDePosicion[s]];' ">
+    <param name="A_41" value="id='E1_verif1()' algoritmo='sí' expresión='(BD[1]=0)' ">
+    <param name="A_42" value="id='E1_verif2()' algoritmo='sí' expresión='((BD[0]+2)%4=BD[1])' ">
+    <param name="A_43" value="id='E1_verif3()' algoritmo='sí' expresión='((BD[0]+BD[1]=6)&(BD[2]+BD[3]=5))' ">
+    <param name="A_44" value="id='E1_verif4()' algoritmo='sí' expresión='((BD[0]%6+BD[1]%6+BD[2]%6=6)&(BD[3]%6+BD[4]%6+BD[5]%6=6))' ">
+    <param name="A_45" value="id='E1_verif()' algoritmo='sí' expresión='1' hacer='E1_bien=(E1_num_ejer=0)?E1_verif1():E1_bien;E1_bien=(E1_num_ejer=1)?E1_verif2():E1_bien;E1_bien=(E1_num_ejer=2)?E1_verif3():E1_bien;E1_bien=(E1_num_ejer=3)?E1_verif4():E1_bien;;' ">
+    <param name="A_46" value="id='soltar(s)' algoritmo='sí' expresión='1' hacer='_goal=cualGoal();es_colocable=((_goal!=10)&(BD[_goal]=-1));BD[_goal]=(es_colocable)?seleccionado:BD[_goal];E1_num_colocados=(es_colocable)?E1_num_colocados+1:E1_num_colocados;CX[seleccionado]=(es_colocable)?CX_goal[_goal]:iniGX[vecDePosicion[seleccionado]];CY[seleccionado]=(es_colocable)?CY_goal[_goal]:iniGY[vecDePosicion[seleccionado]];;;' ">
+    <param name="A_47" value="id='seleccion()' algoritmo='sí' expresión='s_aux' inicio='_i=0;_cont=0;s_aux=-1;_dx=E1_cajita_ancho/2;_dy=E1_cajita_alto/2' hacer='s_aux=((abs(E1.mouse_x-CX[_i])<=_dx)&(abs(E1.mouse_y-CY[_i])<=_dy))?_i:s_aux;;_cont=(s_aux!=-1)?0:1;;;_i=_i+1' mientras='((_cont=1)&(_i<E1_num_opciones))' ">
+    <param name="A_48" value="id='agarrar()' algoritmo='sí' expresión='_aux' hacer='_aux=seleccion();_aux2=(_aux=-1)?0:liberarCasilla(_aux);;' ">
+    <param name="A_49" value="id='arrastrarFigura()' algoritmo='sí' expresión='1' hacer='CX[seleccionado]=E1.mouse_x;CY[seleccionado]=E1.mouse_y;' ">
+    <param name="A_50" value="id='clicRatio(mx,my)' algoritmo='sí' expresión='1' inicio='_i=0;_epsilon=1' hacer='_onRatio=(dist(mx,my,xRatio[_i],yRatio[_i])<_epsilon);ratio=((_onRatio)?_i:ratio);E3_bien=((_onRatio)?-1:E3_bien);_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_51" value="id='E3_Verificar()' algoritmo='sí' expresión='1' hacer='E3_bien=(ratio=respCorr[E3_num_ejer])' ">
+    <param name="A_52" value="id='CONFIG' algoritmo='sí' evaluar='una-sola-vez' hacer='E3_escala=10;E3_Ox=0;E3_Oy=0;numEjercicios=6;numIncisos=4' ">
+    <param name="A_53" value="id='INI_MRC' algoritmo='sí' evaluar='una-sola-vez' hacer='MRC1.b=420;MRC1.h=90;xMRC1=160;yMRC1=100;MRC2.b=550;MRC2.h=230;xMRC2=180;yMRC2=100' ">
+    <param name="A_54" value="id='INI_RAT' algoritmo='sí' evaluar='una-sola-vez' hacer='RAT1.re=0.8;RAT1.ri=0.4;RAT1.sv=4.6;RAT1.sh=22;RAT1.xt=1;xRAT1=toCoordRelX(30,E3._w,E3_escala,E3_Ox);yRAT1=toCoordRelY(120,E3._h,E3_escala,E3_Oy)' ">
+    <param name="A_55" value="id='numVariables' expresión='3' evaluar='una-sola-vez' constant='sí' ">
+    <param name="A_56" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='reini=1' hacer='ini_E1()' ">
+    <param name="A_57" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='aux=((reini)?Reini():0)' hacer='alternador=(E1.mouse_pressed=mousePressed)?0:1;mousePressed=(alternador=1)?(mousePressed+1)%2:mousePressed;seleccionado=((mousePressed=1)&(alternador=1))?agarrar():seleccionado;aux=((mousePressed=1)&(seleccionado>-1))?arrastrarFigura():0;aux=((seleccionado>-1)&(mousePressed=0)&(alternador=1))?soltar(seleccionado):0;E1_completo=(E1_num_colocados=E1_num_opciones)?E1_verif():0;aux=(((E3.mouse_pressed)&(ratioActivo))?clicRatio(E3.mouse_x,E3.mouse_y):0);' ">
+    <param name="G_01" value="espacio='E2' tipo='texto' fondo='no' color='20303a' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red232\green0\blue34;\red0\green170\blue34;}\f0\cf0\fs52 Para obtener la derivada del producto de dos funciones, se aplica\par\f0\cf0\fs52 la siguiente regla: \cf0                    \par\f0\cf0\fs52                               el \cf1 primer factor\cf0  por la derivada del \cf2 segundo\cf0  más\par\f0\cf0\fs52                               el \cf2 segundo factor\cf0  por la derivada del \cf1 primero\par\f0\cf0\fs52                                            {\*\mjaformula (f·g)&squot;(x)=f(x)g&squot;(x)+g(x)f&nbsp;&squot;(x)}\par\par\f0\cf0\fs52 Veamos la demostración de esta fórmula:\par\f0\cf0\fs52 Recuerda que, la definición de la derivada de una función es\par\f0\cf0\fs52                                                    {\*\mjaformula f&nbsp;&squot;(x)={\limit{\from ∆x}{\to 0}{\what{\fraction{\num f(x+∆x)-f(x)}{\den ∆x}}}}}\par\f0\cf0\fs52 Al usar esta definición para obtener la derivada de la función\par\f0\cf0\fs52  {\*\mjaformula f(x)·g(x)}\cf0  escribimos\par\f0\cf0\fs52                            {\*\mjaformula (f·g)&squot;(x)={\limit{\from ∆x}{\to 0}{\what{\fraction{\num f(x+∆x)g(x+∆x)-f(x)g(x)}{\den ∆x}}}}}\par\par\f0\cf0\fs52 Ahora, hay que sumar y restar el término  \f1\i{\*\mjaformula f(x+∆x)g(x)}\i0\f0\cf0 . Esto no\par\f0\cf0\fs52 afectará a la expresión, pues \cf0 un número, menos él mismo, es\par\f0\cf0\fs52 cero. Esto se hace con miras a factorizar \f1\i{\*\mjaformula f(x+∆x)}\i0\f0\cf0   y \f1\i{\*\mjaformula g(x)}\i0\f0\cf0 .\par\par\f1\cf0\fs52\b\i    \i0\b0\fs48\b\i{\*\mjaformula ={\limit{\from ∆x}{\to 0}{\what{\fraction{\num f(x+∆x)g(x+∆x)-f(x+∆x)g(x)+f(x+∆x)g(x)-f(x)g(x)}{\den ∆x}}}}}\i0\b0\cf0\fs38\i        \i0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,26' align='a_left' anchor='a_top_left' ">
+    <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='20303a' dibujar-si='pg2' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs52 Al factorizar  {\*\mjaformula f(x+\u8710 x)}  y {\*\mjaformula g(x)} se obtiene\par \par               {\*\mjaformula ={\limit{\from\u8710 x}{\to 0}{\what{\fraction{\num f(x+\u8710 x)(g(x+\u8710 x)-g(x))+g(x)(f(x+\u8710 x)-f(x))}{\den\u8710 x}}}}}  \par \par y, como el l\u237 mite de una suma es la suma de los l\u237 mites, entonces\par \par               {\*\mjaformula ={\limit{\from\u8710 x}{\to 0}{\what f(x+\u8710 x){\fraction{\num g(x+\u8710 x)-g(x)}{\den\u8710 x}}+{\limit{\from\u8710 x}{\to 0}{\what g(x)}}{\fraction{\num f(x+\u8710 x)-f(x)}{\den\u8710 x}}}}} \par \par y el l\u237 mite de un producto es el producto de los l\u237 mites\par \par              {\*\mjaformula ={\limit{\from\u8710 x}{\to 0}{\what}}f(x+\u8710 x){\limit{\from\u8710 x}{\to 0}{\what{\fraction{\num g(x+\u8710 x)-g(x)}{\den\u8710 x}}+{\limit{\from\u8710 x}{\to 0}{\what}}g(x){\limit{\from\u8710 x}{\to 0}{\what}}{\fraction{\num f(x+\u8710 x)-f(x)}{\den\u8710 x}}}}} \par \par reescribimos como\cf1\par \par \cf0             {\*\mjaformula =({\limit{\from\u8710 x}{\to 0}{\what}}f(x+\u8710 x))g&squot;(x)+({\limit{\from\u8710 x}{\to 0}{\what g(x)}})f &squot;(x)} \fs34\par \par pero \f3\fs38\i  {\*\mjaformula\f3\fs38\i{\limit{\from\u8710 x}{\to 0}{\what}}f(x+\u8710 x)=f(x)\f2\fs34\i0}\f2\fs34\i0   y  \f3\fs38\i{\*\mjaformula\f3\fs38\i{\limit{\from\u8710 x}{\to 0}{\what g(x)}}=g(x)\f2\fs34\i0}\f2\fs34\i0 ,  entonces\f3\fs38\i\par                   \par                                              {\*\mjaformula (f\u183 g)&squot;(x)=f (x)\u183 g&squot;(x)+g(x)\u183 f &squot;(x)}\f2\fs34\i0\par \i\par \i0 Observaci\u243 n 1\i .\i0  Hay que notar que la regla de la derivada del producto de dos funciones se puede\par generalizar para el caso de m\u225 s de dos funciones. Por ejemplo, para el producto de tres funciones \par se tiene\par \f3\fs38\i\par                    {\*\mjaformula (f{\subix 1}\u183 f{\subix 2}\u183 f{\subix 3})&squot;(x)=f{\subix 1}&squot;(x)f{\subix 2}(x)f{\subix 3}(x)+f{\subix 1}(x)f{\subix 2}&squot;(x)f{\subix 3}(x)+f{\subix 1}(x)f{\subix 2}(x)f{\subix 3}&squot;(x)\f4\fs34\i}\cf1\f5\fs30\i0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,26' align='left' anchor='top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

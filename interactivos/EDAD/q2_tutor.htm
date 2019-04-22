@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Actividades</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function validar(){
+    var sw_error = 0;
+		var err;
+
+    if (!tutor_2.r1a.value || tutor_2.r1a.value == " " || !tutor_2.r1b.value || tutor_2.r1b.value == " " || tutor_2.r1a.value == "base^(exp)" || tutor_2.r1b.value == "base^(exp)" ||
+		    !tutor_2.r1c.value || tutor_2.r1c.value == " " || !tutor_2.r1d.value || tutor_2.r1d.value == " " || 
+				!tutor_2.r4a.value || tutor_2.r4a.value == " " || !tutor_2.r4b.value || tutor_2.r4b.value == " " || !tutor_2.r4b2.value || tutor_2.r4b2.value == " " || 
+				!tutor_2.r2antes.value || tutor_2.r2antes.value == " " || !tutor_2.r2radicando.value || tutor_2.r2radicando.value == " " ||
+				!tutor_2.r3base.value || tutor_2.r3base.value == " " || !tutor_2.r3exponente.value || tutor_2.r3exponente.value == " " || tutor_2.r3exponente.value == "exp" || tutor_2.r3base.value == "base"){	
+		   sw_error = 1;
+		}
+		
+		if (sw_error == 1){
+		   err = " - Debes responder a todos los apartados";
+		}
+		
+		
+		if (tutor_2.alumno.value == "Escribe tu nombre y apellidos" || !tutor_2.alumno.value || tutor_2.alumno.value == " "){
+		   if(err){
+			    err = err + "\n\n - Debes introducir tu nombre y apellidos";
+			 }else{
+			    err = " - Debes introducir tu nombre y apellidos";
+			 }
+       tutor_2.alumno.focus();
+		}
+		
+		var email = tutor_2.email.value;
+		
+		if(!isEmailAddress(email)){
+			if(err){
+				err = err + "\n\n - Debes introducir una direcci\u00f3n de correo electr\u00f3nico v\u00e1lida";
+			}else{
+				err = " - Debes introducir una direcci\u00f3n de correo electr\u00f3nico válida";
+			}
+		} 
+		
+		if(err){
+		  alert(err+"\n\n");
+		}else{
+			ventana=confirm("Para realizar el envio debes estar conectado a internet ¿Deseas continuar?");
+			if (ventana) {
+				tutor_2.submit();
+			}		
+		}
+}
+
+function isEmailAddress(email){
+	var s = email;
+	var filter=/^[A-Za-z][A-Za-z0-9_.]*@[A-Za-z0-9_.]+\.[A-Za-z0-9_.]+[A-za-z]$/;
+	if (s.length == 0 ) return false;
+	if (filter.test(s))
+		return true;
+	else
+		//alert("Ingrese una dirección de correo válida");
+		return false;
+}
+
+//-->
+</script>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#f1f1f1" onLoad="MM_preloadImages('imagen4/paraantes3.png','imagen4/paraantes2.png','imagen4/paracont3.png','imagen4/paracont2.png','imagen4/paraejer3.png','imagen4/paraejer2.png','imagen4/paraeval3.png','imagen4/paraeval2.png','imagen4/paratut.png','imagen4/paratut2.png','imagen4/paramas3.png','imagen4/paramas2.png','imagen4/paraimprimir2.png','imagen4/atrasb.png','imagen4/adelanteb.png')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:800px; height:528px; z-index:1"> 
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td><a href="quincena2_presenta_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','antes','imagen4/paraantes3.png',1)" onMouseOver="MM_nbGroup('over','antes','imagen4/paraantes2.png','imagen4/paraantes3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraantes.png" alt="" name="antes" border="0" onload=""></a></td>
+      <td><a href="quincena2_contenidos_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','contenido','imagen4/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenido','imagen4/paracont2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraconte.png" alt="" name="contenido" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="quincena2_ejercicios_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','ejercicios','imagen4/paraejer3.png',1)" onMouseOver="MM_nbGroup('over','ejercicios','imagen4/paraejer2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraejer.png" alt="" name="ejercicios" border="0" onload=""></a></td>
+      <td><a href="quincena2_autoeval_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','autoeval','imagen4/paraeval3.png',1)" onMouseOver="MM_nbGroup('over','autoeval','imagen4/paraeval2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraeval.png" alt="" name="autoeval" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="texto" onClick="MM_nbGroup('down','group1','paratutor','imagen4/paratut3.png',1)" onMouseOver="MM_nbGroup('over','paratutor','imagen4/paratut2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paratut3.png" alt="" name="paratutor" border="0" onload="MM_nbGroup('init','group1','paratutor','imagen4/paratut.png',1)"></a></td>
+      <td><a href="quincena2_sabermas_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','paramas','imagen4/paramas3.png',1)" onMouseOver="MM_nbGroup('over','paramas','imagen4/paramas2.png','imagen4/paramas3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paramas.png" alt="" name="paramas" width="130" height="18" border="0" onLoad=""></a></td>
+    </tr>
+  </table>
+  <table width="800" height="8" border="0" align="center" cellspacing="0">
+    <tr> 
+      <td width="8" height="8" background="imagen4/e1.gif"></td>
+      <td height="8" background="imagen4/b1.gif"></td>
+      <td width="8" height="8" background="imagen4/e2.gif"></td>
+    </tr>
+  </table>
+  <table width="800" height="85%" border="0" align="center" cellspacing="0">
+    <tr height="100%">
+      <td width="8" background="imagen4/b4.gif"></td>
+      <td valign="top" bgcolor="#FFFFFF"> 
+        <table width="100%" cellspacing="10">
+          <tr> 
+            <td width="50%" valign="top"> <font color="#FF6600" size="3" face="Geneva, Arial, Helvetica, sans-serif"><strong><img src="imagen4/paraenviar.png" width="50" height="38" align="middle"><font size="4">Actividades 
+              para env&iacute;ar al tutor</font></strong></font></td>
+            <td> <div align="right"><font color="#990000" size="1" face="Verdana, Arial, Helvetica, sans-serif">Puedes 
+                enviar las respuestas por correo electr&oacute;nico<br>
+                o imprimir aqu&iacute; el cuestionario y contestar en papel</font></div></td>
+            <td width="7%"><a href="impresos/quincena2_actividades.pdf" target="_blank" onMouseOver="MM_swapImage('imprime','','imagen4/paraimprimir2.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen4/paraimprimir.png" name="imprime" width="40" height="40" border="0"></a></td>
+          </tr>
+          <tr bgcolor="#eeeedd"> 
+            <td colspan="3" valign="top"> 
+						    <!--<form action="mailto:tutor.mat4b@cnice.mec.es" method="post" enctype="text/plain" name="4tutor_2" target="_blank" " id="4tutor_2">-->
+						<form action="http://proyectodescartes.org/EDAD/materiales_didacticos/4esomatematicasB/mail.php" method="post" target="_self" id="tutor_2">
+                <table width="100%" cellpadding="2" cellspacing="6" >
+                  <tr> 
+                    <td colspan="3" valign="middle" class="textopeque"><div align="justify"><strong>1</strong>. 
+                        <input name="act" id="act" type="hidden" value="Potencias y radicales">
+										<input name="quincena" id="quincena" type="hidden" value="Quincena 2&ordf;: Potencias y radicales">
+                        Escribe las potencias como radicales y los radicales como 
+                        potencias: </div></td>
+                    <td colspan="4" valign="middle" class="textopeque"><div align="justify"><strong>2</strong>. 
+                        Calcula expresando el resultado como una potencia de exponente 
+                        fraccionario lo m&aacute;s simplificada posible:</div></td>
+                  </tr>
+                  <tr> 
+                    <td width="23%" valign="middle" class="textopeque"> <div align="left">a) 
+                        <img src="imagenes2/tutor1a.gif" width="28" height="24" align="absbottom"> 
+                        = 
+                        <input name="r1a" type="text" id="1a" value="base^(exp)" size="8">
+                      </div></td>
+                    <td width="9%" valign="middle" class="textopeque"> <div align="right">c)<img src="imagenes2/tutor1c.gif" width="20" height="31" align="absbottom"> 
+                        = </div></td>
+                    <td width="17%" valign="middle" class="textopeque"> <table width="68" height="30" align="left" cellpadding="0" cellspacing="0" background="imagenes2/pararaiz5.gif">
+                        <tr> 
+                          <td><div align="center"> 
+                              <input name="r1c" type="text" id="1c" size="1">
+                            </div></td>
+                        </tr>
+                      </table></td>
+                    <td colspan="2" rowspan="2" valign="middle" class="textopeque"> 
+                      <div align="right"><img src="imagenes2/tutor3.gif" width="59" height="43" align="absmiddle"> 
+                      </div></td>
+                    <td width="13%" rowspan="2" valign="middle" class="textopeque"> 
+                      <div align="right">= 
+                        <input name="r3base" type="text" id="3base" value="base" size="3">
+                      </div></td>
+                    <td width="14%" rowspan="2" valign="top" class="textopeque"> 
+                      <div align="left"> 
+                        <input name="r3exponente" type="text" id="3exponente" value="exp" size="2">
+                      </div></td>
+                  </tr>
+                  <tr> 
+                    <td valign="middle" class="textopeque">b)<img src="imagenes2/tutor1b.gif" width="21" height="20" align="absbottom"> 
+                      = 
+                      <input name="r1b" type="text" id="1b" value="base^(exp)" size="8"> 
+                    </td>
+                    <td valign="middle" class="textopeque"><div align="right">d)<img src="imagenes2/tutor1d.gif" width="20" height="32" align="absbottom"> 
+                        = </div></td>
+                    <td valign="middle" class="textopeque"> <table width="68" height="30" align="left" cellpadding="0" cellspacing="0" background="imagenes2/pararaiz3.gif">
+                        <tr> 
+                          <td><div align="center"> 
+                              <input name="r1d" type="text" id="r1d" size="1">
+                            </div></td>
+                        </tr>
+                      </table></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="3" valign="top"> <div align="justify" class="textopeque"> 
+                        <p><strong>&nbsp;<br>
+                          <br>
+                          3.</strong> Calcula: <img src="imagenes2/tutor2.gif" width="124" height="21" align="absmiddle"></p>
+                        </div></td>
+                    <td colspan="4" valign="top"><div align="justify" class="textopeque"> 
+                        <p>&nbsp;<br>
+                          <br>
+                          <strong>4.</strong> Racionaliza y simplifica:</p>
+                        </div></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="3" rowspan="2" valign="top"> 
+                      <div align="center"> 
+                        <table height="30" align="center" cellpadding="0" cellspacing="0">
+                          <tr> 
+                            <td width="66" height="26" align="center"> <div align="right"> 
+                                <input name="r2antes" type="text" id="2antes" size="2">
+                              </div></td>
+                            <td width="66" height="30" align="center" background="imagenes2/pararaiz.gif"> 
+                              <input name="r2radicando" type="text" id="2radicando" size="1"></td>
+                          </tr>
+                        </table>
+                      </div></td>
+                    <td width="13%" valign="middle" class="textopeque"> <div align="right"> 
+                        a) <img src="imagenes2/tutor4a.gif" width="24" height="37" align="absmiddle"> 
+                        =</div></td>
+                    <td width="11%" valign="middle" class="textopeque"> <table width="66" height="30" align="left" cellpadding="0" cellspacing="0" background="imagenes2/pararaiz.gif">
+                        <tr> 
+                          <td><div align="center"> 
+                              <input name="r4a" type="text" id="4a" size="1">
+                            </div></td>
+                        </tr>
+                      </table></td>
+                  <tr valign="top"> 
+                    <td width="13%" valign="middle" class="textopeque"> <div align="right"> 
+                        b) &nbsp;&nbsp;&nbsp;<img src="imagenes2/tutor4b.gif" width="43" height="37" align="absmiddle"> 
+                        =<br>
+                        &nbsp; </div></td>
+                    <!--<td width="66" height="26" align="center"> <div align="right">-->
+                    <td valign="middle" class="textopeque"> <table width="66" height="30" align="left" cellpadding="0" cellspacing="0" background="imagenes2/pararaiz.gif">
+                        <tr> 
+                          <td><div align="center"> 
+                              <input name="r4b" type="text" id="4b" size="1">
+                            </div></tr>
+                      </table>
+                      <br>
+                      <br>
+                      &nbsp; </td>
+                    <td align="left" valign="middle" class="textopeque"> 
+                      <div align="left"> + 
+                        <input name="r4b2" type="text" id="4b2" size="2">
+                        <br>
+                        &nbsp; </div></td>
+                  <tr> 
+                    <td bgcolor="#CCCC99" class="recuadro" colspan="8"><div align="center"><font face="Verdana, Arial, Helvetica, sans-serif"> 
+                        <input name="alumno" type="text" id="alumno2" value="Escribe tu nombre y apellidos" size="28">
+                        &nbsp; 
+                        <input type="text" name="email" id="email" value="Escribe la dirección correo electrónico de tu tutor o tutora" size="45">
+                        &nbsp; 
+                        <input name="Quincena 1" type="button" id="Quincena 1" value="Enviar" onclick="javascript:validar();" >
+                        &nbsp; 
+                        <input name="borrar" type="reset" id="borrar2" value="Borrar">
+                        </font></div></td>
+                  </tr>
+                </table>
+              </form></td>
+          </tr>
+        </table>
+      </td>
+      <td width="8" background="imagen4/b2.gif"></td>
+    </tr>
+  </table>
+  <table width="800" height="10" border="0" align="center" cellspacing="0">
+    <tr> 
+      <td width="8" height="8" background="imagen4/e4.gif"></td>
+      <td height="8" background="imagen4/b3.gif"></td>
+      <td width="8" height="8" background="imagen4/e3.gif"></td>
+    </tr>
+  </table>
+  <table width="768" border="0" align="center" cellspacing="0">
+    <tr> 
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center"><a href="quincena2_autoeval_1a.htm" target="_parent" onMouseOver="MM_swapImage('anterior','','imagen4/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen4/atras.png" alt="anterior" name="anterior" width="25" height="25" border="0"></a></div></td>
+      <td width="30">
+<div align="center"><a href="quincena2_sabermas_1a.htm" target="_parent" onMouseOver="MM_swapImage('siguiente','','imagen4/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen4/adelante.png" alt="siguiente" name="siguiente" width="25" height="25" border="0"></a></div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

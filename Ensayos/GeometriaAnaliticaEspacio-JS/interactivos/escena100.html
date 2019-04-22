@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="560" height="220">
+      <param name="tamaño" value="560x220">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="">
+      <param name="expand" value="">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='f0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='ant' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='_._' expresión='(140,170,50,50)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='imagen/atras1.png' acción='calcular' parámetro='foto=foto-1' dibujar-si='foto>0' ">
+      <param name="C_02" value="id='sig' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='_._' expresión='(180,170,50,50)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='imagen/adelante1.png' acción='calcular' parámetro='foto=foto+1' dibujar-si='(foto<=2)&(foto>=0)' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='foto=0' coord_abs='sí' expresión='(240,10)' archivo='imagen/roce1.jpg' rotini='0' opacidad='1' ">
+      <param name="G_02" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='foto=1' coord_abs='sí' expresión='(240,10)' archivo='imagen/gansos.jpg' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='foto=2' coord_abs='sí' expresión='(240,10)' archivo='imagen/vuelo.jpg' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='foto=3' coord_abs='sí' expresión='(240,10)' archivo='imagen/telesillasolar.jpg' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='foto=0' coord_abs='sí' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32\i Por ejemplo, la fuerza  \i0\par\f0\fs32\i que hay que aplicar para \i0\par\f0\fs32\i desplazar una caja.\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='foto=1' coord_abs='sí' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\i Por ejemplo, el movimiento\par que realizan  al  volar  unos \par gansos.\f2\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='foto=2' coord_abs='sí' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\i Por ejemplo, el \par movimiento de \par unos aviones en \par formaci\u243 n.\f2\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='foto=3' coord_abs='sí' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\i Por ejemplo, el \par desplazamiento\par de un telesilla.\f2\fs24\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

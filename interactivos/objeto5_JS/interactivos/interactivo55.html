@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Arquimedes" width=670 height=300 code="Descartes">
+   <param name="tamaño" value="670x300">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Arquimedes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=30">
+   <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='360' alto='300' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='c7f0f8fa' red='no' red10='no' ejes='no' texto='no' cID='12a66c8fcad'">
+   <param name="E_02" value="tipo='R2' id='E1' x='370' y='0' ancho='300' alto='300' dibujar-si='1' escala='30' despl_imagen='arr-izq' fondo='c2f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='sí' cID='12a66c917b7'">
+   <param name="C_01" value="id='debug' tipo='numérico' región='exterior' espacio='E0' nombre='debug' incr='1' min='0' max='1' fijo='sí' visible='sí'">
+   <param name="C_02" value="id='n' tipo='numérico' región='interior' espacio='E0' nombre='Ejemplos' expresión='(E0._w-145,E0._h-40,140,35)' valor='1' incr='1' min='1' max='6' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='x0=&squot;&squot;\nE1.Ox=0\nE1.Oy=0\nE1.escala=30\nv=0' pos_mensajes='centro'">
+   <param name="C_03" value="id='x0' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E0' nombre='            x =' expresión='(20,90,150,35)' valor='&squot;&squot;' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_04" value="id='m' tipo='numérico' región='interior' espacio='E0' nombre='m' expresión='(250,210,90,30)' valor='1' incr='0.5' fijo='no' visible='sí' dibujar-si='n=5' pos_mensajes='centro'">
+   <param name="C_05" value="id='E1.escala' tipo='numérico' región='interior' espacio='E1' nombre='E1.escala' expresión='(E1._w-30,E1._h-50,30,50)' valor='30' incr='0.1*E1.escala' min='0.000001' max='1000000' decimales='(escala<0.01)+(escala<0.1)+(escala<1)+(escala<10)+(escala<100)+(escala<1000)+(escala<10000)+(escala<100000)' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="A_01" value="id='f1(x)' algoritmo='sí' expresión='y' algoritmo='sí' inicio='y=0' hacer='y=(n=1)?(x^2):y;y=(n=2)?(1/x):y;y=(n=3)?(log(x)):y;y=(n=4)?(exp(x)):y;y=(n=5)?(x^m):y;y=(n=6)?(sen(x)):y;'">
+   <param name="A_02" value="id='otroEjercicio()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='VerRespC=0;VerLetR=0;resp=0;Lok=0;L=&squot;&squot;;;n1=1+ent(rnd*6);a1=-10+ent(rnd*20);a1=(a1=0)?2:a1;;m1=-10+ent(rnd*20);;L1=0;VL=0;;L1=((n1=1)&(a1>0)&(m1>0))?1:L1;L1=((n1=1)&(a1<0)&(m1>0))?2:L1;L1=((n1=1)&(m1<=0))?3:L1;VL=((n1=1)&(m1=0))?a1:VL;VL=((n1=1)&(m1>0))?0:VL;;L1=((n1=2)&(a1>0)&(m1<0))?1:L1;L1=((n1=2)&(a1<0)&(m1<0))?2:L1;L1=((n1=2)&(m1>=0))?3:L1;VL=((n1=2)&(m1=0))?a1:VL;VL=((n1=2)&(m1>0))?0:VL;;L1=((n1=3)&(a1>0))?1:L1;L1=((n1=3)&(a1<0))?2:L1;;L1=((n1=4)&(a1>0))?1:L1;L1=((n1=4)&(a1<0))?2:L1;;L1=(n1>4)?4:L1;;resp2=&squot;&squot;;resp2=(L1=1)?(&squot;= &squot;+inf):resp2;resp2=(L1=2)?(&squot;= - &squot;+inf):resp2;resp2=(L1=3)?(&squot;= &squot; + VL):resp2;resp2=(L1=4)?&squot;no existe&squot;:resp2'">
+   <param name="A_03" value="id='califica()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='bien1=((resp!=0)&(resp=L1))?1:0;mal1=((resp!=0)&(resp!=L1))?1:0;;todoBien=((L1!=3)&(bien1))|(Lok);mal2=(L1=3)&(L!=&squot;&squot;)&(!Lok);'">
+   <param name="A_04" value="id='INI_MRC' algoritmo='sí' evaluar='una-sola-vez' hacer='MRC1.margen=10;MRC1.b=E0._w-2*MRC1.margen;MRC1.h=E0._h-2*MRC1.margen;xMRC1=MRC1.margen;yMRC1=MRC1.margen;MRC2.extra=40;MRC2.b=280+MRC2.extra;MRC2.h=75;xMRC2=ent((E2._w-MRC2.b+MRC2.extra)/2);yMRC2=E2._h-40-MRC2.h'">
+   <param name="A_05" value="id='inf' constante='sí' expresión='&squot;\u221e&squot;' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='menos' constante='sí' expresión='&squot;\u2212 &squot;' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='menosinf' constante='sí' expresión='&squot;-&squot;+&squot;\u221e&squot;' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='lim=0' hacer='lim=(m>0)?&squot;∞&squot;:lim;lim=(m=0)?&squot;1&squot;:lim;lim=(m<0)?&squot;0&squot;:lim;;califica()'">
+   <param name="A_09" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otroEjercicio()'">
+   <param name="G_01" value="espacio='E0' tipo='texto' dibujar-si='n=1' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\par\f0\fs48\b\i{\*\mjaformula{\limit{\from x}{\to ∞}{\what}}x{\supix 2}=∞}\i0\b0}' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_02" value="espacio='E0' tipo='texto' dibujar-si='x0!=&squot;&squot;' expresión='[20,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b\i{\*\mjaformula f(x)={\expr (f1(x0)=Infinity)?&squot;Infinito&squot;:f1(x0)\decimals 8\fixed0}}\i0\b0}' fuente='Times New Roman Cursiva,ITALIC,17' fijo='sí'">
+   <param name="G_03" value="espacio='E0' tipo='texto' dibujar-si='n=2' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\par\f0\fs48\b\i{\*\mjaformula{\limit{\from x}{\to ∞}{\what}}{\fraction{\num 1}{\den x}}=0}\i0\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_04" value="espacio='E0' tipo='texto' dibujar-si='n=3' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\par\f0\fs48\b\i{\*\mjaformula{\limit{\from x}{\to ∞}{\what}}ln(x)=∞}\i0\b0}' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_05" value="espacio='E0' tipo='texto' dibujar-si='n=3' expresión='[20,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red255\green104\blue0;\red32\green48\blue58;}\f0\cf0\fs48\b Observa que el logaritmo crece\b0\par\f0\cf0\fs48\b muy \b0\cf0\b despacio; sin embargo,\b0\par\f0\cf0\fs48\b tiende a infinito\b0\f1\cf1\fs34 .}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_06" value="espacio='E0' tipo='texto' dibujar-si='n=4' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs24\par \fs48\b\i{\*\mjaformula{\limit{\from x}{\to\u8734 }{\what}}e{\supix x}=\u8734 }\b0\i0}' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_07" value="espacio='E0' tipo='texto' dibujar-si='n=4' expresión='[20,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green118\blue0;}\f0\cf0\fs48\b La función exponencial crec\b0\cf0\b e\b0\par\f0\cf0\fs48\b más \b0\cf0\b rápido que cualquier\b0\par\f0\cf0\fs48\b potencia\b0\cf0\b  \b0\b\i{\*\mjaformula x{\supix n}}\i0\b0}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_08" value="espacio='E0' tipo='texto' dibujar-si='n=5' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs36\par \fs48\b\i{\*\mjaformula{\limit{\from x}{\to\u8734 }{\what}}x{\supix{\expr m\decimals 0\fixed1}}={\expr lim\decimals 0\fixed0}}\b0\i0}' fuente='Monospaced,PLAIN,18' fijo='sí'">
+   <param name="G_09" value="espacio='E0' tipo='texto' dibujar-si='n=5' expresión='[10,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green82\blue0;}\f0\cf0\fs50\b Cambia el valor del exponente\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_10" value="espacio='E0' tipo='texto' dibujar-si='n=6' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs36\par \f2\fs48\b\i{\*\mjaformula{\limit{\from x}{\to\u8734 }{\what}} sen(x)}no existe\b0\i0}' fuente='Serif,PLAIN,18' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='ecuación' color='3366dd' dibujar-si='n=1' expresión='y=x^2'">
+   <param name="G_12" value="espacio='E1' tipo='ecuación' color='3366dd' dibujar-si='n=2' expresión='y=1/x'">
+   <param name="G_13" value="espacio='E1' tipo='ecuación' color='3366dd' dibujar-si='n=3' expresión='y=log(x)'">
+   <param name="G_14" value="espacio='E1' tipo='ecuación' color='3366dd' dibujar-si='n=4' expresión='y=exp(x)'">
+   <param name="G_15" value="espacio='E1' tipo='ecuación' color='3366dd' dibujar-si='n=5' expresión='y=x^m'">
+   <param name="G_16" value="espacio='E1' tipo='ecuación' color='3366dd' dibujar-si='n=6' expresión='y=sen(x)'">
+   <param name="G_17" value="espacio='E1' tipo='ecuación' color='3366dd' dibujar-si='n=7' expresión='y=1/log(x)'">
+</ajs>
+
+
+
+</body>
+</html>

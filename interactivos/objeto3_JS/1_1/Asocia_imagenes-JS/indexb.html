@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font5.css" type="text/css">
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden;">
+  <ajs name="Descartes" code="Descartes" width="650" height="550">
+    <param name="tamaño" value="650x550">
+    <param name="decimal_symbol" value=",">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='50' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='90' O.x='50' O.y='40' imagen='images/fondo.jpg' despl_imagen='expand.' fondo='b3e1f7' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E2' x='0' y='0' ancho='100%' alto='50' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/fondo.jpg' despl_imagen='expand.' fondo='b3e1f7' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_03" value="tipo='R2' id='E3' x='0' y='50' ancho='100%' alto='100%' dibujar-si='foto=1' fijo='sí' escala='75' O.x='0' O.y='0' imagen='images/fondo.jpg' despl_imagen='expand.' fondo='b3e1f7' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='g1' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_02" value="id='g1.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_03" value="id='g1.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_04" value="id='g2' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_05" value="id='g2.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_06" value="id='g2.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_07" value="id='g3' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_08" value="id='g3.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_09" value="id='g3.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_10" value="id='g4' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_11" value="id='g4.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_12" value="id='g4.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_13" value="id='g5' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_14" value="id='g5.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_15" value="id='g5.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_16" value="id='g6' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_17" value="id='g6.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_18" value="id='g6.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_19" value="id='g7' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_20" value="id='g7.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_21" value="id='g7.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_22" value="id='g8' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_23" value="id='g8.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_24" value="id='g8.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_25" value="id='g9' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_26" value="id='g9.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_27" value="id='g9.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g1.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_28" value="id='g10' tipo='gráfico' espacio='E0' color='faffffff' color-int='faffffff' tamaño='40' expresión='(0,0)' dibujar-si='raro=1' ">
+    <param name="C_29" value="id='g10.x' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.x' expresión='(10,570)' valor='(rnd*2.5)' incr='0.1' min='-4' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_30" value="id='g10.y' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='g2.y' expresión='(10,570)' valor='(rnd*4)-1.5' incr='0.1' min='-2' max='3' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_31" value="id='n17' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Revolver' expresión='(20,478,110,22)' color='blanco' borderColor='no' color-int='009200' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' imagen='images/btn150.png' acción='calcular' parámetro='g1.x=(rnd*2.5)\ng2.x=(rnd*2.5)\ng3.x=(rnd*2.5)\ng4.x=(rnd*2.5)\ng5.x=(rnd*2.5)\ng6.x=(rnd*2.5)\ng7.x=(rnd*2.5)\ng8.x=(rnd*2.5)\ng9.x=(rnd*2.5)\ng10.x=(rnd*2.5)\ng1.y=(rnd*4)-1.5\ng2.y=(rnd*4)-1.5\ng3.y=(rnd*4)-1.5\ng4.y=(rnd*4)-1.5\ng5.y=(rnd*4)-1.5\ng6.y=(rnd*4)-1.5\ng7.y=(rnd*4)-1.5\ng8.y=(rnd*4)-1.5\ng9.y=(rnd*4)-1.5\ng10.y=(rnd*4)-1.5\n' dibujar-si='s!=25' ">
+    <param name="C_32" value="id='n21' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Otro test' expresión='(150,478,120,22)' color='blanco' borderColor='no' color-int='009200' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' imagen='images/btn150.png' acción='calcular' parámetro='otra=(otra=F[0])?1:otra+1\ng1.x=(rnd*2.5)\ng2.x=(rnd*2.5)\ng3.x=(rnd*2.5)\ng4.x=(rnd*2.5)\ng5.x=(rnd*2.5)\ng6.x=(rnd*2.5)\ng7.x=(rnd*2.5)\ng8.x=(rnd*2.5)\ng9.x=(rnd*2.5)\ng10.x=(rnd*2.5)\ng1.y=(rnd*4)-1.5\ng2.y=(rnd*4)-1.5\ng3.y=(rnd*4)-1.5\ng4.y=(rnd*4)-1.5\ng5.y=(rnd*4)-1.5\ng6.y=(rnd*4)-1.5\ng7.y=(rnd*4)-1.5\ng8.y=(rnd*4)-1.5\ng9.y=(rnd*4)-1.5\ng10.y=(rnd*4)-1.5\nim=1\n' ">
+    <param name="A_01" value="id='F' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='F[0]=0;F[1]=0;F[2]=0' archivo='datos/ficheros.txt' tipo='vector' ">
+    <param name="A_02" value="id='V' vector='sí' evaluar='una-sola-vez' tamaño='13' expresión=';' archivo='datos/imagenes.txt' tipo='vector' ">
+    <param name="A_03" value="id='T' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='T[0]=0;T[1]=0;T[2]=0' archivo='datos/temas.txt' tipo='vector' ">
+    <param name="A_04" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='P[0]=0;P[1]=0;P[2]=0' tipo='vector' ">
+    <param name="A_05" value="id='I' vector='sí' evaluar='una-sola-vez' tamaño='17' expresión=';' tipo='vector' ">
+    <param name="A_06" value="id='otra' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+    <param name="A_07" value="id='im' expresión='1' evaluar='una-sola-vez' constante='sí' ">
+    <param name="A_08" value="id='a2' algoritmo='sí' evaluar='siempre' inicio='zz=0' hacer='I[zz]=F[otra]+V[zz];zz=zz+1;' mientras='zz<13' ">
+    <param name="A_09" value="id='a1' algoritmo='sí' evaluar='siempre' hacer='g1.x=(g1.x<-1)?ent(g1.x)+.5:g1.x;g1.y=(g1.x<-1)?ent(g1.y)+.5:g1.y;g2.x=(g2.x<-1)?ent(g2.x)+.5:g2.x;g2.y=(g2.x<-1)?ent(g2.y)+.5:g2.y;g3.x=(g3.x<-1)?ent(g3.x)+.5:g3.x;g3.y=(g3.x<-1)?ent(g3.y)+.5:g3.y;g4.x=(g4.x<-1)?ent(g4.x)+.5:g4.x;g4.y=(g4.x<-1)?ent(g4.y)+.5:g4.y;g5.x=(g5.x<-1)?ent(g5.x)+.5:g5.x;g5.y=(g5.x<-1)?ent(g5.y)+.5:g5.y;g6.x=(g6.x<-1)?ent(g6.x)+.5:g6.x;g6.y=(g6.x<-1)?ent(g6.y)+.5:g6.y;g7.x=(g7.x<-1)?ent(g7.x)+.5:g7.x;g7.y=(g7.x<-1)?ent(g7.y)+.5:g7.y;g8.x=(g8.x<-1)?ent(g8.x)+.5:g8.x;g8.y=(g8.x<-1)?ent(g8.y)+.5:g8.y;g9.x=(g9.x<-1)?ent(g9.x)+.5:g9.x;g9.y=(g9.x<-1)?ent(g9.y)+.5:g9.y;g10.x=(g10.x<-1)?ent(g10.x)+.5:g10.x;g10.y=(g10.x<-1)?ent(g10.y)+.5:g10.y;' ">
+    <param name="A_10" value="id='a9' algoritmo='sí' evaluar='siempre' hacer='s1=((4*g1.y+g2.y=12.5)&(g1.x!=g2.x))|((4*g3.y+g4.y=12.5)&(g3.x!=g4.x))|((4*g5.y+g6.y=12.5)&(g5.x!=g6.x))|((4*g7.y+g8.y=12.5)&(g7.x!=g8.x))|((4*g9.y+g10.y=12.5)&(g9.x!=g10.x));s2=((4*g1.y+g2.y=7.5)&(g1.x!=g2.x))|((4*g3.y+g4.y=7.5)&(g3.x!=g4.x))|((4*g5.y+g6.y=7.5)&(g5.x!=g6.x))|((4*g7.y+g8.y=7.5)&(g7.x!=g8.x))|((4*g9.y+g10.y=7.5)&(g9.x!=g10.x));s3=((4*g1.y+g2.y=2.5)&(g1.x!=g2.x))|((4*g3.y+g4.y=2.5)&(g3.x!=g4.x))|((4*g5.y+g6.y=2.5)&(g5.x!=g6.x))|((4*g7.y+g8.y=2.5)&(g7.x!=g8.x))|((4*g9.y+g10.y=2.5)&(g9.x!=g10.x));s4=((4*g1.y+g2.y=-2.5)&(g1.x!=g2.x))|((4*g3.y+g4.y=-2.5)&(g3.x!=g4.x))|((4*g5.y+g6.y=-2.5)&(g5.x!=g6.x))|((4*g7.y+g8.y=-2.5)&(g7.x!=g8.x))|((4*g9.y+g10.y=-2.5)&(g9.x!=g10.x));s5=((4*g1.y+g2.y=-7.5)&(g1.x!=g2.x))|((4*g3.y+g4.y=-7.5)&(g3.x!=g4.x))|((4*g5.y+g6.y=-7.5)&(g5.x!=g6.x))|((4*g7.y+g8.y=-7.5)&(g7.x!=g8.x))|((4*g9.y+g10.y=-7.5)&(g9.x!=g10.x));s=s1+s2+s3+s4+s5' ">
+    <param name="A_11" value="id='a10' algoritmo='sí' evaluar='siempre' hacer='doble1=((g1.x=-3.5)&(g1.y=2.5))+((g2.x=-3.5)&(g2.y=2.5))+((g3.x=-3.5)&(g3.y=2.5))+((g4.x=-3.5)&(g4.y=2.5))+((g5.x=-3.5)&(g5.y=2.5))+((g6.x=-3.5)&(g6.y=2.5))+((g7.x=-3.5)&(g7.y=2.5))+((g8.x=-3.5)&(g8.y=2.5))+((g9.x=-3.5)&(g9.y=2.5))+((g10.x=-3.5)&(g10.y=2.5));doble2=((g1.x=-3.5)&(g1.y=1.5))+((g2.x=-3.5)&(g2.y=1.5))+((g3.x=-3.5)&(g3.y=1.5))+((g4.x=-3.5)&(g4.y=1.5))+((g5.x=-3.5)&(g5.y=1.5))+((g6.x=-3.5)&(g6.y=1.5))+((g7.x=-3.5)&(g7.y=1.5))+((g8.x=-3.5)&(g8.y=1.5))+((g9.x=-3.5)&(g9.y=1.5))+((g10.x=-3.5)&(g10.y=1.5));doble3=((g1.x=-3.5)&(g1.y=.5))+((g2.x=-3.5)&(g2.y=.5))+((g3.x=-3.5)&(g3.y=.5))+((g4.x=-3.5)&(g4.y=.5))+((g5.x=-3.5)&(g5.y=.5))+((g6.x=-3.5)&(g6.y=.5))+((g7.x=-3.5)&(g7.y=.5))+((g8.x=-3.5)&(g8.y=.5))+((g9.x=-3.5)&(g9.y=.5))+((g10.x=-3.5)&(g10.y=.5));doble4=((g1.x=-3.5)&(g1.y=-.5))+((g2.x=-3.5)&(g2.y=-.5))+((g3.x=-3.5)&(g3.y=-.5))+((g4.x=-3.5)&(g4.y=-.5))+((g5.x=-3.5)&(g5.y=-.5))+((g6.x=-3.5)&(g6.y=-.5))+((g7.x=-3.5)&(g7.y=-.5))+((g8.x=-3.5)&(g8.y=-.5))+((g9.x=-3.5)&(g9.y=-.5))+((g10.x=-3.5)&(g10.y=-.5));doble5=((g1.x=-3.5)&(g1.y=-1.5))+((g2.x=-3.5)&(g2.y=-1.5))+((g3.x=-3.5)&(g3.y=-1.5))+((g4.x=-3.5)&(g4.y=-1.5))+((g5.x=-3.5)&(g5.y=-1.5))+((g6.x=-3.5)&(g6.y=-1.5))+((g7.x=-3.5)&(g7.y=-1.5))+((g8.x=-3.5)&(g8.y=-1.5))+((g9.x=-3.5)&(g9.y=-1.5))+((g10.x=-3.5)&(g10.y=-1.5));doble6=((g1.x=-1.5)&(g1.y=2.5))+((g2.x=-1.5)&(g2.y=2.5))+((g3.x=-1.5)&(g3.y=2.5))+((g4.x=-1.5)&(g4.y=2.5))+((g5.x=-1.5)&(g5.y=2.5))+((g6.x=-1.5)&(g6.y=2.5))+((g7.x=-1.5)&(g7.y=2.5))+((g8.x=-1.5)&(g8.y=2.5))+((g9.x=-1.5)&(g9.y=2.5))+((g10.x=-1.5)&(g10.y=2.5));doble7=((g1.x=-1.5)&(g1.y=1.5))+((g2.x=-1.5)&(g2.y=1.5))+((g3.x=-1.5)&(g3.y=1.5))+((g4.x=-1.5)&(g4.y=1.5))+((g5.x=-1.5)&(g5.y=1.5))+((g6.x=-1.5)&(g6.y=1.5))+((g7.x=-1.5)&(g7.y=1.5))+((g8.x=-1.5)&(g8.y=1.5))+((g9.x=-1.5)&(g9.y=1.5))+((g10.x=-1.5)&(g10.y=1.5));doble8=((g1.x=-1.5)&(g1.y=.5))+((g2.x=-1.5)&(g2.y=.5))+((g3.x=-1.5)&(g3.y=.5))+((g4.x=-1.5)&(g4.y=.5))+((g5.x=-1.5)&(g5.y=.5))+((g6.x=-1.5)&(g6.y=.5))+((g7.x=-1.5)&(g7.y=.5))+((g8.x=-1.5)&(g8.y=.5))+((g9.x=-1.5)&(g9.y=.5))+((g10.x=-1.5)&(g10.y=.5));doble9=((g1.x=-1.5)&(g1.y=-.5))+((g2.x=-1.5)&(g2.y=-.5))+((g3.x=-1.5)&(g3.y=-.5))+((g4.x=-1.5)&(g4.y=-.5))+((g5.x=-1.5)&(g5.y=-.5))+((g6.x=-1.5)&(g6.y=-.5))+((g7.x=-1.5)&(g7.y=-.5))+((g8.x=-1.5)&(g8.y=-.5))+((g9.x=-1.5)&(g9.y=-.5))+((g10.x=-1.5)&(g10.y=-.5));doble10=((g1.x=-1.5)&(g1.y=-1.5))+((g2.x=-1.5)&(g2.y=-1.5))+((g3.x=-1.5)&(g3.y=-1.5))+((g4.x=-1.5)&(g4.y=-1.5))+((g5.x=-1.5)&(g5.y=-1.5))+((g6.x=-1.5)&(g6.y=-1.5))+((g7.x=-1.5)&(g7.y=-1.5))+((g8.x=-1.5)&(g8.y=-1.5))+((g9.x=-1.5)&(g9.y=-1.5))+((g10.x=-1.5)&(g10.y=-1.5))' ">
+    <param name="A_12" value="id='e7' evento='sí' condición='im=1' acción='animar' ejecución='siempre' ">
+    <param name="G_01" value="espacio='E0' tipo='polígono' fondo='no' color='000000' coord_abs='no' expresión='(s,2)(s,3)(s+1,3)(s+1,2)(s,2)' familia='s' s.intervalo='[-4,-2]' s.pasos='2' relleno='78ffffff' ancho='1' lineDash='solid' ">
+    <param name="G_02" value="espacio='E0' tipo='polígono' fondo='no' color='negro' coord_abs='no' expresión='(s,1)(s,2)(s+1,2)(s+1,1)(s,1)' familia='s' s.intervalo='[-4,-2]' s.pasos='2' relleno='78ffffff' ancho='1' lineDash='solid' ">
+    <param name="G_03" value="espacio='E0' tipo='polígono' fondo='no' color='negro' coord_abs='no' expresión='(s,0)(s,1)(s+1,1)(s+1,0)(s,0)' familia='s' s.intervalo='[-4,-2]' s.pasos='2' relleno='78ffffff' ancho='1' lineDash='solid' ">
+    <param name="G_04" value="espacio='E0' tipo='polígono' fondo='no' color='negro' coord_abs='no' expresión='(s,-1)(s,0)(s+1,0)(s+1,-1)(s,-1)' familia='s' s.intervalo='[-4,-2]' s.pasos='2' relleno='78ffffff' ancho='1' lineDash='solid' ">
+    <param name="G_05" value="espacio='E0' tipo='polígono' fondo='no' color='negro' coord_abs='no' expresión='(s,-2)(s,-1)(s+1,-1)(s+1,-2)(s,-2)' familia='s' s.intervalo='[-4,-2]' s.pasos='2' relleno='78ffffff' ancho='1' lineDash='solid' ">
+    <param name="G_06" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s5=0' coord_abs='no' expresión='(-3,-1)' archivo='I[11]' rotini='0' opacidad='1' ">
+    <param name="G_07" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s1=1' coord_abs='no' expresión='(-3,3)' archivo='I[12]' rotini='0' opacidad='1' ">
+    <param name="G_08" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s2=1' coord_abs='no' expresión='(-3,2)' archivo='I[12]' rotini='0' opacidad='1' ">
+    <param name="G_09" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s3=1' coord_abs='no' expresión='(-3,1)' archivo='I[12]' rotini='0' opacidad='1' ">
+    <param name="G_10" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s4=0' coord_abs='no' expresión='(-3,0)' archivo='I[11]' rotini='0' opacidad='1' ">
+    <param name="G_11" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s4=1' coord_abs='no' expresión='(-3,0)' archivo='I[12]' rotini='0' opacidad='1' ">
+    <param name="G_12" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s5=1' coord_abs='no' expresión='(-3,-1)' archivo='I[12]' rotini='0' opacidad='1' ">
+    <param name="G_13" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s3=0' coord_abs='no' expresión='(-3,1)' archivo='I[11]' rotini='0' opacidad='1' ">
+    <param name="G_14" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s1=0' coord_abs='no' expresión='(-3,3)' archivo='I[11]' rotini='0' opacidad='1' ">
+    <param name="G_15" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='s2=0' coord_abs='no' expresión='(-3,2)' archivo='I[11]' rotini='0' opacidad='1' ">
+    <param name="G_16" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='pa>70' coord_abs='sí' expresión='[21,421]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green122\blue0;}\f0\fs34\b{\*\mjaformula Porcentaje&nbsp;de&nbsp;la&nbsp;imagen{\expr pa\decimals 0\fixed1}%}\b0\par\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='17' align='a_left' anchor='a_top_left' ">
+    <param name="G_17" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='pa>70' coord_abs='sí' expresión='[20,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green122\blue0;}\f0\fs34\b{\*\mjaformula Porcentaje&nbsp;de&nbsp;la&nbsp;imagen{\expr pa\decimals 0\fixed1}%}\b0\par\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='17' align='a_left' anchor='a_top_left' ">
+    <param name="G_18" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='s=5' coord_abs='sí' expresión='[381,401]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs48\b ¡EXCELENTE!\b0\par\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='24' align='a_left' anchor='a_top_left' ">
+    <param name="G_19" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='s=5' coord_abs='sí' expresión='[380,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green255\blue0;}\f0\cf0\fs48\b ¡EXCELENTE!\b0\par\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='24' align='a_left' anchor='a_top_left' ">
+    <param name="G_20" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g1.x-.5,g1.y+.5)' archivo='I[1]' rotini='0' opacidad='1' ">
+    <param name="G_21" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g2.x-.5,g2.y+.5)' archivo='I[2]' rotini='0' opacidad='1' ">
+    <param name="G_22" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g3.x-.5,g3.y+.5)' archivo='I[3]' rotini='0' opacidad='1' ">
+    <param name="G_23" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g4.x-.5,g4.y+.5)' archivo='I[4]' rotini='0' opacidad='1' ">
+    <param name="G_24" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g5.x-.5,g5.y+.5)' archivo='I[5]' rotini='0' opacidad='1' ">
+    <param name="G_25" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g6.x-.5,g6.y+.5)' archivo='I[6]' rotini='0' opacidad='1' ">
+    <param name="G_26" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g7.x-.5,g7.y+.5)' archivo='I[7]' rotini='0' opacidad='1' ">
+    <param name="G_27" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g8.x-.5,g8.y+.5)' archivo='I[8]' rotini='0' opacidad='1' ">
+    <param name="G_28" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g9.x-.5,g9.y+.5)' archivo='I[9]' rotini='0' opacidad='1' ">
+    <param name="G_29" value="espacio='E0' tipo='imagen' fondo='no' coord_abs='no' expresión='(g10.x-.5,g10.y+.5)' archivo='I[10]' rotini='0' opacidad='1' ">
+    <param name="G_30" value="espacio='E3' tipo='imagen' fondo='no' coord_abs='no' expresión='(0,0,1,1)' archivo='I[0]' rotini='0' opacidad='1' ">
+    <param name="G_31" value="espacio='E2' tipo='imagen' fondo='no' coord_abs='no' expresión='(0,0,.8,.8)' archivo='images/titulo.png' rotini='0' opacidad='1' ">
+    <param name="G_32" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='s!=16' coord_abs='sí' expresión='[260,450]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs24                        Ten cuidado al soltar la pieza, es posible que\par\f0\cf0\fs24                       quede debajo de otra. Si esto ocurre, aparecerá\par\f0\cf0\fs24                       un cuadrado de color verde.}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='12' align='a_left' anchor='a_top_left' ">
+    <param name="G_33" value="espacio='E0' tipo='segmento' fondo='no' color='negro' coord_abs='no' expresión='(-3.01,-2)(-3.01,3)' decimales='2' fijo='sí' tamaño='.2' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' lineDash='solid' ">
+    <param name="G_34" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[11,6]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f0\fs64\b{\*\mjaformula{\expr T[otra]\decimals undefined\fixed0}}\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='32' align='a_left' anchor='a_top_left' ">
+    <param name="G_35" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f0\fs64\b{\*\mjaformula{\expr T[otra]\decimals undefined\fixed0}}\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='32' align='a_left' anchor='a_top_left' ">
+    <param name="G_36" value="espacio='E0' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[18,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green114\blue0;}\f0\cf0\fs28\b COLUMNA 1\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+    <param name="G_37" value="espacio='E0' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[200,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green114\blue0;}\f0\cf0\fs28\b COLUMNA 2\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='Monospaced' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+    <param name="G_38" value="espacio='E0' tipo='imagen' fondo='no' dibujar-si='jj' coord_abs='no' expresión='(-.5,3.2)' archivo='images/subtitulo.png' rotini='0' opacidad='1' ">
+    <param name="G_39" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble1>1' coord_abs='no' expresión='(-4,2)(-4,3)(-3,3)(-3,2)(-4,2)' ancho='6' lineDash='solid' ">
+    <param name="G_40" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble2>1' coord_abs='no' expresión='(-4,1)(-4,2)(-3,2)(-3,1)(-4,1)' ancho='6' lineDash='solid' ">
+    <param name="G_41" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble3>1' coord_abs='no' expresión='(-4,0)(-4,1)(-3,1)(-3,0)(-4,0)' ancho='6' lineDash='solid' ">
+    <param name="G_42" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble4>1' coord_abs='no' expresión='(-4,-1)(-4,0)(-3,0)(-3,-1)(-4,-1)' ancho='6' lineDash='solid' ">
+    <param name="G_43" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble5>1' coord_abs='no' expresión='(-4,-2)(-4,-1)(-3,-1)(-3,-2)(-4,-2)' ancho='6' lineDash='solid' ">
+    <param name="G_44" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble6>1' coord_abs='no' expresión='(-2,2)(-2,3)(-1,3)(-1,2)(-2,2)' ancho='6' lineDash='solid' ">
+    <param name="G_45" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble7>1' coord_abs='no' expresión='(-2,1)(-2,2)(-1,2)(-1,1)(-2,1)' ancho='6' lineDash='solid' ">
+    <param name="G_46" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble8>1' coord_abs='no' expresión='(-2,0)(-2,1)(-1,1)(-1,0)(-2,0)' ancho='6' lineDash='solid' ">
+    <param name="G_47" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble9>1' coord_abs='no' expresión='(-2,-1)(-2,0)(-1,0)(-1,-1)(-2,-1)' ancho='6' lineDash='solid' ">
+    <param name="G_48" value="espacio='E0' tipo='polígono' fondo='no' color='8200ff00' dibujar-si='doble10>1' coord_abs='no' expresión='(-2,-2)(-2,-1)(-1,-1)(-1,-2)(-2,-2)' ancho='6' lineDash='solid' ">
+    <param name="G_49" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[290,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs32 Arrastra los elementos hacia las columnas 1 y 2, \par\f0\cf0\fs32 de tal forma que queden parejas con propiedades\par\f0\cf0\fs32 asociadas.}' decimales='2' fijo='sí' ancho='350' color_borde_texto='000000' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+    <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='fff=0;im=0' hacer='fff=fff+1' mientras='fff<20' ">
+  </ajs>
+
+<script type="descartes/vectorFile" id="datos/ficheros.txt">
+2
+'imagenes1/'
+'imagenes2/'
+</script>
+
+<script type="descartes/vectorFile" id="datos/imagenes.txt">
+'titulo.png'
+'g11.png'
+'g12.png'
+'g21.png'
+'g22.png'
+'g31.png'
+'g32.png'
+'g41.png'
+'g42.png'
+'g51.png'
+'g52.png'
+'f1.png'
+'f2.png'
+</script>
+
+<script type="descartes/vectorFile" id="datos/temas.txt">
+'vacio'
+'Evaluar la expresión si: a=3, b=1, c=2'
+'Producto de monomios'
+</script>
+
+</body>
+</html>

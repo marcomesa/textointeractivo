@@ -1,0 +1,7 @@
+5
+
+'¿Cuáles de estos polígonos son cuadriláteros?'
+'¿Cuáles verbos están en infinitivo?'
+'¿Cuáles de estos números son primos?'
+'De estas bellas ciudades, ¿cuáles son colombianas?'
+'He aquí algunos enteros, ¿cuáles son cuadrados perfectos?'

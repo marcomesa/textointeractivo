@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="700" height="580" code="Descartes">
+    <param name="tamaño" value="700x580">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='700' alto='580' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fbf0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="A_01" value="id='E' vector='sí' evaluar='una-sola-vez' tamaño='NE+1' expresión='E[0]=&squot;0&squot;;E[1]=&squot;x/2&squot;;E[2]=&squot;0.25*x^3-x^2+x+0.33&squot;;E[3]=&squot;-0.75*(x<0)+0.5*(x>0)&squot;;E[4]=&squot;-x*(x<0)+x*(x>0)&squot;;E[5]=&squot;(0.5*x+0.75)*(x<0)+(x^2-1)*(x>0)&squot;;E[6]=&squot;(0.1*x^3-0.05*x^2-0.25)*(x<0.5)+0.3*x+(0.1*x^3-0.05*x^2+0.25)*(x>0.5)&squot;;E[7]=&squot;(x!=0)?1/x:0&squot;;E[8]=&squot;(x!=0)?1/abs(x):0&squot;;E[9]=&squot;((x!=1)&(x!=-1))?1/((x-1)*(x+1)):0&squot;;E[10]=&squot;sen(5x)&squot;;E[11]=&squot;(x>0)?-0.9+(0.5+0.2*x^3)/sqrt(x):-x/2-0.5&squot;;E[12]=&squot;(x>0)?x*sen(10/sqrt(x)):-0.2*x^2&squot;;E[13]=&squot;0.5+cos(3x)/(1+x^2)&squot;;E[14]=&squot;atan(x)&squot;;E[15]=&squot;exp(-x/2)&squot;;;' ">
+    <param name="A_02" value="id='Lim1' vector='sí' evaluar='una-sola-vez' tamaño='NE+1' expresión='Lim1[0]=0;Lim1[1]=&squot;-∞&squot;;Lim1[2]=&squot;-∞&squot;;Lim1[3]=-0.75;Lim1[4]=&squot;+∞&squot;;Lim1[5]=&squot;-∞&squot;;Lim1[6]=&squot;-∞&squot;;Lim1[7]=0;Lim1[8]=0;Lim1[9]=0;Lim1[10]=&squot;nada&squot;;Lim1[11]=&squot;+∞&squot;;Lim1[12]=&squot;-∞&squot;;Lim1[13]=0.5;Lim1[14]=-pi/2;Lim1[15]=&squot;+∞&squot;;' ">
+    <param name="A_03" value="id='HayLim1' vector='sí' evaluar='una-sola-vez' tamaño='NE+1' expresión='HayLim1[0]=1;HayLim1[1]=0;HayLim1[2]=0;HayLim1[3]=1;HayLim1[4]=0;HayLim1[5]=0;HayLim1[6]=0;HayLim1[7]=1;HayLim1[8]=1;HayLim1[9]=1;HayLim1[10]=0;HayLim1[11]=0;HayLim1[12]=0;HayLim1[13]=1;HayLim1[14]=1;HayLim1[15]=0' ">
+    <param name="A_04" value="id='Lim2' vector='sí' evaluar='una-sola-vez' tamaño='NE+1' expresión='Lim2[0]=0;Lim2[1]=&squot;+∞&squot;;Lim2[2]=&squot;+∞&squot;;Lim2[3]=0.5;Lim2[4]=&squot;+∞&squot;;Lim2[5]=&squot;+∞&squot;;Lim2[6]=&squot;+∞&squot;;Lim2[7]=0;Lim2[8]=0;Lim2[9]=0;Lim2[10]=&squot;nada&squot;;Lim2[11]=&squot;+∞&squot;;Lim2[12]=&squot;nada&squot;;Lim2[13]=0.5;Lim2[14]=pi/2;Lim2[15]=0' ">
+    <param name="A_05" value="id='HayLim2' vector='sí' evaluar='una-sola-vez' tamaño='NE+1' expresión='HayLim2[0]=1;HayLim2[1]=0;HayLim2[2]=0;HayLim2[3]=1;HayLim2[4]=0;HayLim2[5]=0;HayLim2[6]=0;HayLim2[7]=1;HayLim2[8]=1;HayLim2[9]=1;HayLim2[10]=0;HayLim2[11]=0;HayLim2[12]=0;HayLim2[13]=1;HayLim2[14]=1;HayLim2[15]=1' ">
+    <param name="A_06" value="id='OtroEjercicio()' algoritmo='sí' expresión='x' inicio='ejercicio=1+ent(rnd*NE)' hacer='VerLetResp=0;VerBResp=0;FX=E[ejercicio];k0=0;n0=0;n1=&squot;&squot;;n2=0;menos=(rnd<0.4);' ">
+    <param name="A_07" value="id='getValue(n2)' algoritmo='sí' expresión='x' hacer='val=&squot;&squot;;val=(n2=1)?&squot;-∞&squot;:val;val=(n2=2)?&squot;+∞&squot;:val;val=(n2=3)?&squot;nada&squot;:val;;' ">
+    <param name="A_08" value="id='Verificar1()' algoritmo='sí' expresión='x' hacer='BIEN1=(HayLim1[ejercicio]&(n0=1))|(!HayLim1[ejercicio]&(n0=2));BIEN2=(n1!=&squot;&squot;)&HayLim1[ejercicio]&(abs(Lim1[ejercicio]-n1)<0.02);temp=BIEN2;getValue(n2);BIEN3=(!HayLim1[ejercicio])&(val=Lim1[ejercicio]);BIEN=BIEN1&(BIEN2|BIEN3)' ">
+    <param name="A_09" value="id='Verificar2()' algoritmo='sí' expresión='x' hacer='BIEN1=(HayLim2[ejercicio]&(k0=1))|(!HayLim2[ejercicio]&(k0=2));BIEN2=(n1!=&squot;&squot;)&HayLim2[ejercicio]&(abs(Lim2[ejercicio]-n1)<0.02);getValue(n2);BIEN3=(!HayLim2[ejercicio])&(val=Lim2[ejercicio]);BIEN=BIEN1&(BIEN2|BIEN3)' ">
+    <param name="A_10" value="id='NE' expresión='15' evaluar='una-sola-vez' constant='sí' ">
+    <param name="A_11" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='h=0;H=80;anim=1' hacer='NE=15;OtroEjercicio()' ">
+    <param name="A_12" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='E0.Oy=40;E1.Oy=0' hacer='F=E[ejemplo];x=P.x;FP=_Eval_(F);x=P.x-0.000001;FL=_Eval_(F);LI=abs(FL>100);LIP=(FL>100);x=P.x+0.000001;FR=_Eval_(F);RI=abs(FR>100);RIP=(FR>100);HayLim=(abs(FL-FR)<0.1)&(!LI)*(!RI);FR=((!HayLim)&(FR>100))?&squot;+ ∞&squot;:FR;FR=((!HayLim)&(FR<-100))?&squot;- ∞&squot;:FR;FL=((!HayLim)&(FL>100))?&squot;+ ∞&squot;:FL;FL=((!HayLim)&(FL<-100))?&squot;- ∞&squot;:FL;x=Q.x;FQ=_Eval_(FX);aux=(menos)?Verificar1():Verificar2();;;' ">
+    <param name="A_13" value="id='animar' evento='sí' condición='anim' acción='animar' ejecución='alternar' ">
+    <param name="A_14" value="id='pausar' evento='sí' condición='!anim' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='20303a' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs48\b Cuando el límite de una función en +\b0\cf0\b\i ∞\i0\b0\cf0\b  o en -\b0\cf0\b\i ∞\i0\b0\cf0\b  existe y es \b0\cf0\b\i L\i0\b0\cf0\b ,\b0\par\f0\cf0\fs48\b se escribe:\b0\par\par\f0\cf0\fs48\b\i                         \i0\b0\b\i{\*\mjaformula{\limit{\from x}{\to ∞}{\what}}}\i0\b0\cf0\b  \b0\cf0\b\i f(x)= L \i0\b0\cf0\b     o     \b0\cf0\b\i  \i0\b0\b\i{\*\mjaformula{\limit{\from x}{\to -∞}{\what f(x)=L}}}\i0\b0\cf0\b   \b0\par\par\f0\cf0\fs48\b y se lee así: El límite de \b0\cf0\b\i f\i0\b0\cf0\b  cuando \b0\cf0\b\i x\i0\b0\cf0\b  tiende a infinito\b0\par\f0\cf0\fs48\b (o a menos infinito) es \b0\cf0\b\i L\i0\b0\cf0\b . \b0\par\par\f0\cf0\fs48\b Si la función \b0\b\i{\*\mjaformula f(x)}\i0\b0\cf0\b  tiende a más o menos infinito, cuando x tiende\b0\par\f0\cf0\fs48\b a infinito, se dice que su límite no \b0\cf0\b existe, pero se permite escribir: \b0\par\par\f0\cf0\fs48\b                       \b0\cf0\b\i   \i0\b0\b\i{\*\mjaformula{\limit{\from x}{\to ∞}{\what}}}\i0\b0\cf0\b  \b0\cf0\b\i f(x)= ∞\i0\b0\cf0\b       o     \b0\cf0\b\i   \i0\b0\b\i{\*\mjaformula{\limit{\from x}{\to ∞}{\what}}}\i0\b0\cf0\b  \b0\cf0\b\i f(x)=\i0\b0\cf0\b  -∞\b0\par\par\f0\cf0\fs48\b Análogamente, si la función \b0\b\i{\*\mjaformula f(x)}\i0\b0\cf0\b  tiende a más o menos infinito,\b0\par\f0\cf0\fs48\b cuando x tiende a menos infinito, se \b0\cf0\b dice que su límite no existe,\b0\par\f0\cf0\fs48\b pero se permite escribir: \b0\par\par\f0\cf0\fs48\b                        \b0\cf0\b\i   \i0\b0\b\i{\*\mjaformula{\limit{\from x}{\to -∞}{\what f(x)=&nbsp;∞}}}\i0\b0\cf0\b        o     \b0\cf0\b\i   \i0\b0\b\i{\*\mjaformula{\limit{\from x}{\to -∞}{\what f(x)=-&nbsp;∞}}}\i0\b0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,17' align='a_left' ">
+    <param name="Animación" value="pausa='3000' controles='no' auto='no' repetir='no' hacer='ejemplo=1+(ejemplo)%12;E0.Ox=0' mientras='1' ">
+  </ajs>
+
+  <p></p>
+
+
+
+</body>
+</html>

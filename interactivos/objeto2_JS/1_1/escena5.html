@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>2.2 a  -  Multiplicación y división de expresiones algebraicas</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body style="margin:0;padding:0; overflow: hidden; ">
+
+<applet name="distribuye potencias"
+        code="Descartes.class"
+        codebase="../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=400 height=290>
+   <param name="nombre" value="distribuye potencias">
+   <param name="Versión" value="2.45">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=si limpiar=no">
+   <param name="Espacio" value="fondo=ffdc9b red=no red10=no ejes=no texto=no eje-x=no eje-y=no">
+   <param name="C_00" value="id=n1 tipo=gráfico expresión='[-2.5+d,-1.55]' decimales='2' tamaño=31 dibujar-si='0'">
+   <param name="C_01" value="id=n2 tipo=gráfico expresión='[-2.5+(1+d)%6,-1.55]' decimales='2' tamaño=31 dibujar-si='0'">
+   <param name="C_02" value="id=n3 tipo=gráfico expresión='[-2.5+(2+d)%6,-1.55]' decimales='2' tamaño=31 dibujar-si='0'">
+   <param name="C_03" value="id=n4 tipo=gráfico expresión='[-2.5+(3+d)%6,-1.55]' decimales='2' tamaño=31 dibujar-si='0'">
+   <param name="C_04" value="id=n5 tipo=gráfico expresión='[-2.5+(4+d)%6,-1.55]' decimales='2' tamaño=31 dibujar-si='0'">
+   <param name="C_05" value="id=n6 tipo=gráfico expresión='[-2.5+(5+d)%6,-1.55]' decimales='2' tamaño=31 dibujar-si='0'">
+   <param name="A_00" value="id=escala expresión='66' constante=si evaluar=siempre">
+   <param name="A_01" value="id=b1 expresión='ent(rnd*10)' constante=si evaluar=una-sola-vez">
+   <param name="A_02" value="id=b2 expresión='ent(rnd*10)' constante=si evaluar=una-sola-vez">
+   <param name="A_03" value="id=b3 expresión='ent(rnd*10)' constante=si evaluar=una-sola-vez">
+   <param name="A_04" value="id=b4 expresión='ent(rnd*10)' constante=si evaluar=una-sola-vez">
+   <param name="A_05" value="id=b5 expresión='ent(rnd*10)' constante=si evaluar=una-sola-vez">
+   <param name="A_06" value="id=b6 expresión='ent(rnd*10)' constante=si evaluar=una-sola-vez">
+   <param name="A_07" value="id=e1 expresión='ent((rnd*10)%3)+2' constante=si evaluar=una-sola-vez">
+   <param name="A_08" value="id=e2 expresión='ent((rnd*10)%3)+2' constante=si evaluar=una-sola-vez">
+   <param name="A_09" value="id=e3 expresión='ent((rnd*10)%3)+2' constante=si evaluar=una-sola-vez">
+   <param name="A_10" value="id=e4 expresión='ent((rnd*10)%3)+2' constante=si evaluar=una-sola-vez">
+   <param name="A_11" value="id=e5 expresión='ent((rnd*10)%3)+2' constante=si evaluar=una-sola-vez">
+   <param name="A_12" value="id=e6 expresión='ent((rnd*10)%3)+2' constante=si evaluar=una-sola-vez">
+   <param name="A_13" value="id=p1 expresión='b1^e1' constante=si evaluar=una-sola-vez">
+   <param name="A_14" value="id=p2 expresión='b2^e2' constante=si evaluar=una-sola-vez">
+   <param name="A_15" value="id=p3 expresión='b3^e3' constante=si evaluar=una-sola-vez">
+   <param name="A_16" value="id=p4 expresión='b4^e4' constante=si evaluar=una-sola-vez">
+   <param name="A_17" value="id=p5 expresión='b5^e5' constante=si evaluar=una-sola-vez">
+   <param name="A_18" value="id=p6 expresión='b6^e6' constante=si evaluar=una-sola-vez">
+   <param name="A_19" value="id=d expresión='(ent(rnd*100))%6' constante=si evaluar=una-sola-vez">
+   <param name="A_20" value="id=v1 expresión='(1+p4)*(abs(n1.x+1)<0.3)*(abs(n1.y-1.5)<0.3)+(1+p1)*(abs(n2.x+1)<0.3)*(abs(n2.y-1.5)<0.3)+(1+p3)*(abs(n3.x+1)<0.3)*(abs(n3.y-1.5)<0.3)+(1+p6)*(abs(n4.x+1)<0.3)*(abs(n4.y-1.5)<0.3)+(1+p2)*(abs(n5.x+1)<0.3)*(abs(n5.y-1.5)<0.3)+(1+p5)*(abs(n6.x+1)<0.3)*(abs(n6.y-1.5)<0.3)'">
+   <param name="A_21" value="id=v2 expresión='(1+p4)*(abs(n1.x+1)<0.3)*(abs(n1.y-0.5)<0.3)+(1+p1)*(abs(n2.x+1)<0.3)*(abs(n2.y-0.5)<0.3)+(1+p3)*(abs(n3.x+1)<0.3)*(abs(n3.y-0.5)<0.3)+(1+p6)*(abs(n4.x+1)<0.3)*(abs(n4.y-0.5)<0.3)+(1+p2)*(abs(n5.x+1)<0.3)*(abs(n5.y-0.5)<0.3)+(1+p5)*(abs(n6.x+1)<0.3)*(abs(n6.y-0.5)<0.3)'">
+   <param name="A_22" value="id=v3 expresión='(1+p4)*(abs(n1.x+1)<0.3)*(abs(n1.y+0.5)<0.3)+(1+p1)*(abs(n2.x+1)<0.3)*(abs(n2.y+0.5)<0.3)+(1+p3)*(abs(n3.x+1)<0.3)*(abs(n3.y+0.5)<0.3)+(1+p6)*(abs(n4.x+1)<0.3)*(abs(n4.y+0.5)<0.3)+(1+p2)*(abs(n5.x+1)<0.3)*(abs(n5.y+0.5)<0.3)+(1+p5)*(abs(n6.x+1)<0.3)*(abs(n6.y+0.5)<0.3)'">
+   <param name="A_23" value="id=v4 expresión='(1+p4)*(abs(n1.x-2)<0.3)*(abs(n1.y-1.5)<0.3)+(1+p1)*(abs(n2.x-2)<0.3)*(abs(n2.y-1.5)<0.3)+(1+p3)*(abs(n3.x-2)<0.3)*(abs(n3.y-1.5)<0.3)+(1+p6)*(abs(n4.x-2)<0.3)*(abs(n4.y-1.5)<0.3)+(1+p2)*(abs(n5.x-2)<0.3)*(abs(n5.y-1.5)<0.3)+(1+p5)*(abs(n6.x-2)<0.3)*(abs(n6.y-1.5)<0.3)'">
+   <param name="A_24" value="id=v5 expresión='(1+p4)*(abs(n1.x-2)<0.3)*(abs(n1.y-0.5)<0.3)+(1+p1)*(abs(n2.x-2)<0.3)*(abs(n2.y-0.5)<0.3)+(1+p3)*(abs(n3.x-2)<0.3)*(abs(n3.y-0.5)<0.3)+(1+p6)*(abs(n4.x-2)<0.3)*(abs(n4.y-0.5)<0.3)+(1+p2)*(abs(n5.x-2)<0.3)*(abs(n5.y-0.5)<0.3)+(1+p5)*(abs(n6.x-2)<0.3)*(abs(n6.y-0.5)<0.3)'">
+   <param name="A_25" value="id=v6 expresión='(1+p4)*(abs(n1.x-2)<0.3)*(abs(n1.y+0.5)<0.3)+(1+p1)*(abs(n2.x-2)<0.3)*(abs(n2.y+0.5)<0.3)+(1+p3)*(abs(n3.x-2)<0.3)*(abs(n3.y+0.5)<0.3)+(1+p6)*(abs(n4.x-2)<0.3)*(abs(n4.y+0.5)<0.3)+(1+p2)*(abs(n5.x-2)<0.3)*(abs(n5.y+0.5)<0.3)+(1+p5)*(abs(n6.x-2)<0.3)*(abs(n6.y+0.5)<0.3)'">
+   <param name="G_00" value="tipo=punto expresión='(-2.5,1.3)' color=negro fondo=si texto='[b1]  =' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,30'">
+   <param name="G_01" value="tipo=punto expresión='(-2.5,0.3)' color=negro fondo=si texto='[b2]  =' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,30'">
+   <param name="G_02" value="tipo=punto expresión='(-2.5,-0.7)' color=negro fondo=si texto='[b3]  =' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,30'">
+   <param name="G_03" value="tipo=punto expresión='(0.5,1.3)' color=negro fondo=si texto='[b4]  =' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,30'">
+   <param name="G_04" value="tipo=punto expresión='(0.5,0.3)' color=negro fondo=si texto='[b5]  =' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,30'">
+   <param name="G_05" value="tipo=punto expresión='(0.5,-0.7)' color=negro texto='[b6]  =' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,30'">
+   <param name="G_06" value="tipo=punto expresión='(-2.25,1.6)' color=negro fondo=si texto='[e1]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_07" value="tipo=punto expresión='(-2.25,0.6)' color=negro fondo=si texto='[e2]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_08" value="tipo=punto expresión='(-2.25,-0.4)' color=negro fondo=si texto='[e3]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_09" value="tipo=punto expresión='(0.75,1.6)' color=negro fondo=si texto='[e4]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_10" value="tipo=punto expresión='(0.75,0.6)' color=negro fondo=si texto='[e5]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_11" value="tipo=punto expresión='(0.75,-0.4)' color=negro fondo=si texto='[e6]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_12" value="tipo=punto expresión='(-1,1.5)' color=ffffe1 fondo=si tamaño=30">
+   <param name="G_13" value="tipo=punto expresión='(-1,0.5)' color=ffffe1 fondo=si tamaño=30">
+   <param name="G_14" value="tipo=punto expresión='(-1,-0.5)' color=ffffe1 fondo=si tamaño=30">
+   <param name="G_15" value="tipo=punto expresión='(2,1.5)' color=ffffe1 fondo=si tamaño=30">
+   <param name="G_16" value="tipo=punto expresión='(2,0.5)' color=ffffe1 fondo=si tamaño=30">
+   <param name="G_17" value="tipo=punto expresión='(2,-0.5)' color=ffffe1 fondo=si tamaño=30">
+   <param name="G_18" value="tipo=polígono expresión='(-3.1,-3)(3.1,-3)(3.1,-1.05)(-3.1,-1.05)(-3.1,-3)' color=0000cd fondo=si ancho=0 relleno=00a5ff">
+   <param name="G_19" value="tipo=punto expresión='(n1.x,n1.y)' color=blanco decimales=0 tamaño=28">
+   <param name="G_20" value="tipo=punto expresión='(n1.x-0.1,n1.y-0.15)' color=negro dibujar-si='p4<10' texto='[p4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_21" value="tipo=punto expresión='(n1.x-0.2,n1.y-0.15)' color=negro dibujar-si='(p4>9)*(p4<100)' texto='[p4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_22" value="tipo=punto expresión='(n1.x-0.3,n1.y-0.15)' color=negro dibujar-si='(p4>99)*(p4<1000)' texto='[p4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_23" value="tipo=punto expresión='(n1.x-0.4,n1.y-0.15)' color=negro dibujar-si='p4>999' texto='[p4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_24" value="tipo=punto expresión='(n2.x,n2.y)' color=blanco decimales=0 tamaño=28">
+   <param name="G_25" value="tipo=punto expresión='(n2.x-0.1,n2.y-0.15)' color=negro dibujar-si='p1<10' texto='[p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_26" value="tipo=punto expresión='(n2.x-0.2,n2.y-0.15)' color=negro dibujar-si='(p1>9)*(p1<100)' texto='[p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_27" value="tipo=punto expresión='(n2.x-0.3,n2.y-0.15)' color=negro dibujar-si='(p1>99)*(p1<1000)' texto='[p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_28" value="tipo=punto expresión='(n2.x-0.4,n2.y-0.15)' color=negro dibujar-si='p1>999' texto='[p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_29" value="tipo=punto expresión='(n3.x,n3.y)' color=blanco decimales=0 tamaño=28">
+   <param name="G_30" value="tipo=punto expresión='(n3.x-0.1,n3.y-0.15)' color=negro dibujar-si='p3<10' texto='[p3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_31" value="tipo=punto expresión='(n3.x-0.2,n3.y-0.15)' color=negro dibujar-si='(p3>9)*(p3<100)' texto='[p3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_32" value="tipo=punto expresión='(n3.x-0.3,n3.y-0.15)' color=negro dibujar-si='(p3>99)*(p3<1000)' texto='[p3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_33" value="tipo=punto expresión='(n3.x-0.4,n3.y-0.15)' color=negro dibujar-si='p3>999' texto='[p3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_34" value="tipo=punto expresión='(n4.x,n4.y)' color=blanco decimales=0 tamaño=28">
+   <param name="G_35" value="tipo=punto expresión='(n4.x-0.1,n4.y-0.15)' color=negro dibujar-si='p6<10' texto='[p6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_36" value="tipo=punto expresión='(n4.x-0.2,n4.y-0.15)' color=negro dibujar-si='(p6>9)*(p6<100)' texto='[p6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_37" value="tipo=punto expresión='(n4.x-0.3,n4.y-0.15)' color=negro dibujar-si='(p6>99)*(p6<1000)' texto='[p6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_38" value="tipo=punto expresión='(n4.x-0.4,n4.y-0.15)' color=negro dibujar-si='p6>999' texto='[p6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_39" value="tipo=punto expresión='(n5.x,n5.y)' color=blanco decimales=0 tamaño=28">
+   <param name="G_40" value="tipo=punto expresión='(n5.x-0.1,n5.y-0.15)' color=negro dibujar-si='p2<10' texto='[p2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_41" value="tipo=punto expresión='(n5.x-0.2,n5.y-0.15)' color=negro dibujar-si='(p2>9)*(p2<100)' texto='[p2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_42" value="tipo=punto expresión='(n5.x-0.3,n5.y-0.15)' color=negro dibujar-si='(p2>99)*(p2<1000)' texto='[p2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_43" value="tipo=punto expresión='(n5.x-0.4,n5.y-0.15)' color=negro dibujar-si='p2>999' texto='[p2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_44" value="tipo=punto expresión='(n6.x,n6.y)' color=blanco decimales=0 tamaño=28">
+   <param name="G_45" value="tipo=punto expresión='(n6.x-0.1,n6.y-0.15)' color=negro dibujar-si='p5<10' texto='[p5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_46" value="tipo=punto expresión='(n6.x-0.2,n6.y-0.15)' color=negro dibujar-si='(p5>9)*(p5<100)' texto='[p5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_47" value="tipo=punto expresión='(n6.x-0.3,n6.y-0.15)' color=negro dibujar-si='(p5>99)*(p5<1000)' texto='[p5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_48" value="tipo=punto expresión='(n6.x-0.4,n6.y-0.15)' color=negro dibujar-si='p5>999' texto='[p5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,24'">
+   <param name="G_49" value="tipo=punto expresión='(-2.45,-1.9)' color=blanco dibujar-si='(p1+1=v1)*(p2+1=v2)*(p3+1=v3)*(p4+1=v4)*(p5+1=v5)*(p6+1=v6)' texto='CORRECTO' decimales=0 tamaño=0 fuente='Helvetica,BOLD,56'">
+</applet>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cálculo Diferencial - Introducción</title>
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="400" height="300" code="Descartes">
+    <param name="tamaño" value="780x300">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' cID='122dd7d8f22' x='2' y='21' ancho='365' alto='200' dibujar-si='1' fijo='sí' escala='5' O.x='-150' O.y='50' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='405860' texto='405860' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="A_01" value="id='E0_f(_x)' algoritmo='sí' expresión='E0_fx' hacer='E0_fx=(_x<x1)?b-(x7-x1)^2/16:b;E0_fx=(_x>x2)?b-(x7-x2)^2/16:E0_fx;;;' ">
+    <param name="A_02" value="id='E2_f1(E2_x)' algoritmo='sí' expresión='E2_f1Temp' hacer='E2_f1Temp=E2_x+6;E2_f1Temp=((E2_x>=-3)&(E2_x<=3))?-0.5*(E2_x+3)+3:E2_f1Temp;E2_f1Temp=(E2_x>=3)?2*(E2_x-3):E2_f1Temp;E2_f1Temp=(E2_x>=6)?6:E2_f1Temp' ">
+    <param name="A_03" value="id='E2_f2(E2_x)' algoritmo='sí' expresión='E2_f2Temp' hacer='E2_f2Temp=-3;E2_f2Temp=(E2_x>-3)?2*E2_x+3:E2_f2Temp;E2_f2Temp=(E2_x>0)?-2*E2_x+3:E2_f2Temp;E2_f2Temp=(E2_x>3)?2*E2_x-9:E2_f2Temp;E2_f2Temp=(E2_x>6)?3:E2_f2Temp' ">
+    <param name="A_04" value="id='E2_verif()' algoritmo='sí' expresión='x' hacer='E2_bien=0;E2_bien=((E2_ejemplo=1)&(E2_menu=2))?1:E2_bien;E2_bien=((E2_ejemplo=2)&(E2_menu=1))?1:E2_bien;E2_bien=((E2_ejemplo=3)&(E2_menu=2))?1:E2_bien;E2_bien=((E2_ejemplo=4)&(E2_menu=3))?1:E2_bien;E2_bien=((E2_ejemplo=5)&(E2_menu=4))?1:E2_bien;' ">
+    <param name="A_05" value="id='E3_f(_x)' algoritmo='sí' expresión='E3_fx' hacer='E3_fx=(_x<x1)?b-(x-x1)^2/16:b;E3_fx=(_x>x2)?b-(x-x2)^2/16:E3_fx;;;' ">
+    <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='kk=1;x0=0;x1=20;x2=40;x3=60;b=25;E1_num_ejem=8;E3_texto_x=0;E3_texto_y=20;;E2_ejemplo=1;E2_num_ejem=4;E2_verif=0;E2_bien=0;' ">
+    <param name="A_07" value="id='calculos' algoritmo='sí' evaluar='siempre' hacer='uu=(E2_verif=1)?E2_verif():0' ">
+    <param name="A_08" value="id='e2' evento='sí' condición='kk' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='E0' tipo='ecuación' fondo='no' color='ba5a00' dibujar-si='(x>0)&(x<x3)' coord_abs='no' expresión='y=E3_f(x)' ancho='2' visible='no' editable='no' ">
+    <param name="G_02" value="espacio='E0' tipo='punto' fondo='no' color='magenta' dibujar-si='x7<x3' coord_abs='no' expresión='(0,E0_f(x7))' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_03" value="espacio='E0' tipo='punto' fondo='no' color='3366dd' dibujar-si='x7<x3' coord_abs='no' expresión='(x7,0)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_04" value="espacio='E0' tipo='flecha' fondo='no' color='20303a' dibujar-si='x7<x1' coord_abs='no' expresión='(0,0)(0,E0_f(x7))' decimales='2' fijo='sí' ancho='5' punta='5' flecha='00aa22' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_05" value="espacio='E0' tipo='flecha' fondo='no' color='20303a' dibujar-si='(x7>x2+2)&(x7<x3)' coord_abs='no' expresión='(0,b)(0,E0_f(x7))' decimales='2' fijo='sí' ancho='5' punta='5' flecha='e80022' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_06" value="espacio='E0' tipo='segmento' fondo='no' color='3366dd' dibujar-si='x7<x3' coord_abs='no' expresión='(x7,0)(x7,E0_f(x7))' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_07" value="espacio='E0' tipo='segmento' fondo='no' color='3366dd' dibujar-si='x7<x3' coord_abs='no' expresión='(0,E0_f(x7))(x7,E0_f(x7))' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_08" value="espacio='E0' tipo='punto' fondo='no' color='3366dd' dibujar-si='x7<x3' coord_abs='no' expresión='(x7,-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 x\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,14' ">
+    <param name="G_09" value="espacio='E0' tipo='punto' fondo='no' color='3366dd' dibujar-si='x7<x3' coord_abs='no' expresión='(0-5,E0_f(x7))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 f(x)\f2\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,14' ">
+    <param name="G_10" value="espacio='E0' tipo='punto' fondo='no' color='3366dd' dibujar-si='x7<x3' coord_abs='no' expresión='(x7,E0_f(x7))' decimales='2' fijo='sí' tamaño='3' fuente='Arial,PLAIN,14' ">
+    <param name="G_11" value="espacio='E0' tipo='punto' fondo='no' color='20303a' dibujar-si='x7>=x1' coord_abs='no' expresión='(x0+3,-5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b creciente\f2\fs24\b0\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,BOLD,14' ">
+    <param name="G_12" value="espacio='E0' tipo='punto' fondo='no' color='20303a' dibujar-si='x7>=x2' coord_abs='no' expresión='(x1+3,-5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b constante\f2\fs24\b0\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,BOLD,14' ">
+    <param name="G_13" value="espacio='E0' tipo='punto' fondo='no' color='20303a' dibujar-si='x7>=x3' coord_abs='no' expresión='(x2+2,-5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b decreciente\f2\fs24\b0\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,BOLD,14' ">
+    <param name="G_14" value="espacio='E0' tipo='segmento' fondo='no' color='negro' dibujar-si='x7>=x1' coord_abs='no' expresión='(x1,0)(x1,E0_f(x1)+10)' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_15" value="espacio='E0' tipo='segmento' fondo='no' color='negro' dibujar-si='x7>=x2' coord_abs='no' expresión='(x2,0)(x2,E0_f(x2)+10)' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_16" value="espacio='E0' tipo='segmento' fondo='no' color='00aa22' dibujar-si='x7>=x1' coord_abs='no' expresión='(0,0)(x1,0)' decimales='2' fijo='sí' tamaño='0' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_17" value="espacio='E0' tipo='segmento' fondo='no' color='negro' dibujar-si='x7>=x2' coord_abs='no' expresión='(x1,0)(x2,0)' decimales='2' fijo='sí' tamaño='0' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_18" value="espacio='E0' tipo='segmento' fondo='no' color='e80022' dibujar-si='x7>=x3' coord_abs='no' expresión='(x2,0)(x3,0)' decimales='2' fijo='sí' tamaño='0' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="Animación" value="pausa='15' controles='no' auto='no' repetir='sí' inicio='x7=x0' hacer='x7=x7+0.25;x7=(x7>x3+15)?0:x7;;' mientras='x7<=x3-0.25' ">
+  </ajs>
+
+
+
+</body>
+</html>

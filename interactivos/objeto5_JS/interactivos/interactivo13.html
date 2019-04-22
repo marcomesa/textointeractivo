@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width=780 height=725 code="Descartes">
+   <param name="tamaño" value="780x725">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150">
+   <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E4' x='460' y='30' ancho='300' alto='230' dibujar-si='1' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer=';'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='ang=theta*pi/180;m=((theta=90)|(theta=270))?0:tan(ang);c=cos(ang);s=sen(ang);alpha=180-theta;beta=theta-180;gama=360-theta;ang1=theta1*pi/180;mm=tan(ang1);'">
+   <param name="G_01" value="espacio='E0' tipo='texto' expresión='[20,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue255;\red0\green153\blue0;}\cf0\f1\fs48\b Tambi\u233 n podemos obtener la pendiente de una\b0\par \b recta a partir de su gr\u225 fica. Se pueden\b0\par \b considerar tres casos, seg\u250 n sea la recta:\b0\par \b inclinada, horizontal, o vertical.\b0\par \par \b En el primer caso, se eligen dos puntos sobre\b0\par \b la recta, {\*\mjaformula\cf1 P{\subix\cf1 1}=(x{\subix\cf1 1},  y{\subix\cf1 1})\cf0}\u65279  y {\*\mjaformula\cf2 P{\subix 2}=(x{\subix\cf2 2\cf0},  y{\subix 2})\cf0  de}\b0\par \b manera que {\*\mjaformula x{\subix 1}}sea diferente de{\*\mjaformula x{\subix 2},} Entonces,\b0\par \b la pendiente de la misma, que es la \b0\par \b tangente del \u225 ngulo mostrado en la figura,\b0\par \b se obtiene dividiendo el cateto opuesto entre el adyacente en el \b0\par \b tri\u225 ngulo {\*\mjaformula\cf1 (x{\subix\cf1 1},  y{\subix\cf1 1})\cf2 (x{\subix\cf2 2},  y{\subix\cf2 2})\cf3 (x{\subix\cf3 2},  y{\subix\cf3 1})\cf0}, por lo tanto la pendiente m es:\b0\par \par \b{\*\mjaformula m={\fraction{\num d(\cf2 (x{\subix\cf2 2},  y{\subix\cf2 2})\cf0 ,\cf3 (x{\subix\cf3 2},  y{\subix\cf3 1})\cf0 )}{\den d(\cf3 (x{\subix\cf3 2},  y{\subix\cf3 1})\cf0 ,\cf1 (x{\subix\cf1 1},  y{\subix\cf1 1})\cf0 )}}={\fraction{\num y{\subix 2}-y{\subix 1}}{\den x{\subix 2}-x{\subix 1}}}}.\b0\par \par \b El segundo caso, es en realidad una particularidad del primero,\b0\par \b ya que en la recta horizontal: {\*\mjaformula y{\subix 1}=y{\subix 2}}.\b0\par \b                   {\*\mjaformula m={\fraction{\num y{\subix 2}-y{\subix 2}}{\den x{\subix 2}-x{\subix 1}}}=0}.\b0\par \b Finalmente, para el tercer caso la recta es vertical, lo que implica\b0\par \b que {\*\mjaformula x{\subix 1}=x{\subix 2}}. Entonces,se dice que la pendiente de la recta no est\u225  \b0\par \b definida.\b0\par \par \par \par \par }' fuente='Monospaced,BOLD,24' fijo='sí'">
+   <param name="G_02" value="espacio='E4' tipo='ecuación' color='555555' expresión='y=x'">
+   <param name="G_03" value="espacio='E4' tipo='segmento' color='gris' expresión='(1.5,-1.5)(1.5,1.5)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_04" value="espacio='E4' tipo='segmento' color='gris' expresión='(-1.5,-1.5)(1.5,-1.5)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_05" value="espacio='E4' tipo='punto' color='3366dd' expresión='(1.5,1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs22\par  \fs20{\*\mjaformula (x{\subix 2},y{\subix 2})}\f3\fs24\par}' fuente='Arial,PLAIN,11' fijo='sí' tamaño='4'">
+   <param name="G_06" value="espacio='E4' tipo='punto' color='e80022' expresión='(-1.5,-1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22\par {\*\mjaformula (x{\subix 1},y{\subix 1})}\f2\fs24\par}' fuente='Arial,PLAIN,11' fijo='sí' tamaño='4'">
+   <param name="G_07" value="espacio='E4' tipo='punto' color='009b00' expresión='(1.5,-1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22\par {\*\mjaformula (x{\subix 2},y{\subix 1})}\f2\fs24\par}' fuente='Arial,PLAIN,11' fijo='sí' tamaño='4'">
+   <param name="G_08" value="espacio='E4' tipo='arco' color='gris' centro='(-1.5,-1.5)' radio='1.25' fin='45' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34         \f2\fs24\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_09" value="espacio='E4' tipo='texto' color='555555' expresión='[150,77]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34 m\f2\fs24\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_10" value="espacio='E4' tipo='texto' color='gris' expresión='[132,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34\u945 \f2\fs24\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_11" value="espacio='E4' tipo='flecha' color='negro' expresión='(0,-2.2)(0,2.2)' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='0' ancho='0' punta='4' flecha='negro'">
+   <param name="G_12" value="espacio='E4' tipo='flecha' color='negro' expresión='(-2.8,0)(2.8,0)' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='0' ancho='0' punta='4' flecha='negro'">
+   <param name="G_13" value="espacio='E4' tipo='texto' expresión='[130,7]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 y\f2\fs24\par}' fuente='Arial,PLAIN,15' fijo='sí'">
+   <param name="G_14" value="espacio='E4' tipo='texto' expresión='[260,112]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 x\f2\fs24\par}' fuente='Arial,PLAIN,15' fijo='sí'">
+   <param name="G_15" value="espacio='E4' tipo='texto' expresión='[135,115]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 0\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='sí'">
+   <param name="G_16" value="espacio='E4' tipo='texto' expresión='[190,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red51\green102\blue221;\red32\green48\blue58;}\f1\fs34{\*\mjaformula\cf0 P\cf1{\subix\cf0 2\cf1}}\f2\fs24\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_17" value="espacio='E4' tipo='texto' expresión='[50,165]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red232\green0\blue34;\red32\green48\blue58;}\f1\fs34{\*\mjaformula\cf0 P\cf1{\subix\cf0\f2\fs22 1\cf1}}\f3\fs24\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+</ajs>
+
+
+
+</body>
+</html>

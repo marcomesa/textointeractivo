@@ -1,0 +1,12 @@
+tipo_de_macro=R2
+id='ancho' expresión='180' evaluar='una-sola-vez' constante='si'
+id='alto' expresión='50' evaluar='una-sola-vez' constante='si'
+id='m' expresión='0' evaluar='una-sola-vez' constante='si'
+id='Mv' expresión='1' evaluar='una-sola-vez' constante='si'
+id='Mh' expresión='1.5' evaluar='una-sola-vez' constante='si'
+id='Rojo' expresión='0.4' evaluar='una-sola-vez' constante='si'
+id='Verde' expresión='1' evaluar='una-sola-vez' constante='si'
+id='Azul' expresión='0.4' evaluar='una-sola-vez' constante='si'
+tipo='polígono' color='ff000000' expresión='(0,0)(ancho+1,0)(ancho+1,alto+1)(0,alto+1)' relleno='(Rojo,Verde,Azul,0.0)' coord_abs='si' 
+tipo='segmento' color='(0.0,0.0,0.0,m+(1-m)*Mv*sqrt(1-(2*s/alto)^2))' expresión='(0,alto/2+s)(ancho,alto/2+s)' familia='s' s.intervalo='[-alto/2,alto/2]' s.pasos='alto' tamaño='0' coord_abs='si' 
+tipo='segmento' color='(0.0,0.0,0.0,m+(1-m)*Mh*sqrt(1-(2*s/ancho)^2))' expresión='(ancho/2+s,0)(ancho/2+s,alto)' familia='s' s.intervalo='[-ancho/2,ancho/2]' s.pasos='ancho' tamaño='0' coord_abs='si' 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>título</title>
+  <link rel="stylesheet" href="../fonts/font4b.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width=740 height=620 code="Descartes">
+   <param name="tamaño" value="740x620">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150">
+   <param name="E_01" value="tipo='R2' id='E9' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' escala='48' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' cID='129c9719053'">
+   <param name="E_02" value="tipo='R2' id='E0' x='396' y='10' ancho='360' alto='240' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' red='b8c4c8' red10='889498' ejes='405860' texto='no' cID='12967c448f2'">
+   <param name="C_01" value="id='p1' tipo='gráfico' espacio='E0' color='222222' color-int='f0f8ff' expresión='(1,1/3)' constricción='y=(1/3)*x^3'">
+   <param name="C_02" value="id='p1.x' tipo='numérico' región='interior' espacio='E0' nombre='p1.x' expresión='(1000,0)' valor='1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_03" value="id='p1.y' tipo='numérico' región='interior' espacio='E0' nombre='p1.y' expresión='(1000,0)' valor='1/3' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_04" value="id='p2' tipo='gráfico' espacio='E0' color='222222' color-int='20c030' tamaño='8' expresión='(p1.x+1,p1.y+1)' constricción='(x-p1.x)^2+(y-p1.y)^2=sqrt(2)' fijo='sí'">
+   <param name="C_05" value="id='p2.x' tipo='numérico' región='interior' espacio='E0' nombre='p2.x' expresión='(1000,0)' valor='p1.x+1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='p2.y' tipo='numérico' región='interior' espacio='E0' nombre='p2.y' expresión='(1000,0)' valor='p1.y+1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_07" value="id='E0.escala' tipo='numérico' región='interior' espacio='E0' nombre='E0.escala' expresión='(E0._w-22,E0._h-35,17,30)' valor='48' incr='0.1*E0.escala' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="C_08" value="id='r' tipo='numérico' región='exterior' espacio='E0' nombre='r' valor='1.5' min='1.5' max='3' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_09" value="id='theta' tipo='numérico' región='exterior' espacio='E0' nombre='theta' valor='pi*(1/6)' min='0' max='2*pi' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_10" value="id='t' tipo='numérico' región='exterior' espacio='E0' nombre='t' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="A_01" value="id='f1(x)' expresión='2/3+x*(x-1)*(x-3)*(x+2)*(x+3.5)/((x^2+3)*(x^2+2))'">
+   <param name="A_02" value="id='Df1(x)' expresión='(126-321*x^2-138*x+36*x^3-93*x^4+27*x^6+38*x^5+x^8)/((x^2+3)^2*(x^2+2)^2)'">
+   <param name="A_03" value="id='f4(x)' expresión='1/(4*p)*x^2'">
+   <param name="A_04" value="id='e0(x)' expresión='1+2*x+x^2'">
+   <param name="A_05" value="id='e1(x)' expresión='sqrt(x)'">
+   <param name="A_06" value="id='e2(x)' expresión='x/(4-x^2)'">
+   <param name="A_07" value="id='e3(x)' expresión='1/x^3'">
+   <param name="A_08" value="id='e4(x)' expresión='sen(x)'">
+   <param name="A_09" value="id='e5(x)' expresión='exp(2*x-3)'">
+   <param name="A_10" value="id='e6(x)' expresión='log(x)'">
+   <param name="A_11" value="id='De0(x)' expresión='2+2*x'">
+   <param name="A_12" value="id='De1(x)' expresión='1/(2*sqrt(x))'">
+   <param name="A_13" value="id='De2(x)' expresión='((4-x^2)-2*x*x)/(4-x^2)^2'">
+   <param name="A_14" value="id='De3(x)' expresión='-3/x^4'">
+   <param name="A_15" value="id='De4(x)' expresión='cos(x)'">
+   <param name="A_16" value="id='De5(x)' expresión='2*exp(2*x-3)'">
+   <param name="A_17" value="id='De6(x)' expresión='1/x'">
+   <param name="A_18" value="id='g0(x)' expresión='9+7*x-6*x^2'">
+   <param name="A_19" value="id='g1(x)' expresión='2+6*x+x^2'">
+   <param name="A_20" value="id='g2(x)' expresión='1-5*x+x^2'">
+   <param name="A_21" value="id='g3(x)' expresión='(x)^(1/2)'">
+   <param name="A_22" value="id='g4(x)' expresión='(1+x)^(1/3)'">
+   <param name="A_23" value="id='g5(x)' expresión='(-2+x^3)^(1/2)'">
+   <param name="A_24" value="id='g6(x)' expresión='sqrt(9-x^2)'">
+   <param name="A_25" value="id='g7(x)' expresión='sqrt(3*x^2-27)'">
+   <param name="A_26" value="id='g8(x)' expresión='(4+7*x)/(9-x^4)'">
+   <param name="A_27" value="id='g9(x)' expresión='(3+6*x)/(3+5*x^3)'">
+   <param name="A_28" value="id='g10(x)' expresión='(2+7*x)/(3-9*x^2)'">
+   <param name="A_29" value="id='g11(x)' expresión='1/x'">
+   <param name="A_30" value="id='g12(x)' expresión='x^(1/2)+1/(x^(1/2))'">
+   <param name="A_31" value="id='g13(x)' expresión='5*x^3+2/(x^(1/2))'">
+   <param name="A_32" value="id='g14(x)' expresión='x^3-1/(x^(1/2))'">
+   <param name="A_33" value="id='g15(x)' expresión='3*exp(2*x+6)'">
+   <param name="A_34" value="id='g16(x)' expresión='exp(x^2-8)'">
+   <param name="A_35" value="id='g17(x)' expresión='-3*cos(x+6)'">
+   <param name="A_36" value="id='g18(x)' expresión='sen(x-10)'">
+   <param name="A_37" value="id='g19(x)' expresión='tan(3*x-4)'">
+   <param name="A_38" value="id='g20(x)' expresión='csc(-3*x)'">
+   <param name="A_39" value="id='g21(x)' expresión='5*x*cos(-3*x)'">
+   <param name="A_40" value="id='g22(x)' expresión='x^2*sen(5*x)'">
+   <param name="A_41" value="id='g23(x)' expresión='(sen(-3*x))^(2)'">
+   <param name="A_42" value="id='g24(x)' expresión='-(cos(3*x))^(2)'">
+   <param name="A_43" value="id='g25(x)' expresión='9*sen(-x)*cos(2*x)'">
+   <param name="A_44" value="id='g26(x)' expresión='sen(sqrt(x))'">
+   <param name="A_45" value="id='g27(x)' expresión='2*log(2*x^3)'">
+   <param name="A_46" value="id='g28(x)' expresión='log(3*x)'">
+   <param name="A_47" value="id='g29(x)' expresión='-2*log(1/x)'">
+   <param name="A_48" value="id='Dg0(x)' expresión='7-12*x'">
+   <param name="A_49" value="id='Dg1(x)' expresión='6+2*x'">
+   <param name="A_50" value="id='Dg2(x)' expresión='-5+2*x'">
+   <param name="A_51" value="id='Dg3(x)' expresión='(1/2)*x^(-1/2)'">
+   <param name="A_52" value="id='Dg4(x)' expresión='1/3*1/(((1+x)^2)^(1/3))'">
+   <param name="A_53" value="id='Dg5(x)' expresión='(1/2)*3*x^2*(-2+x^3)^(-1/2)'">
+   <param name="A_54" value="id='Dg6(x)' expresión='-x/sqrt(9-x^2)'">
+   <param name="A_55" value="id='Dg7(x)' expresión='3*x/sqrt(3*x^2-27)'">
+   <param name="A_56" value="id='Dg8(x)' expresión='(7*(9-x^4)+4*x^3*(4+7*x))/(9-x^4)^2'">
+   <param name="A_57" value="id='Dg9(x)' expresión='(6*(3+5*x^3)-5*3*x^2*(3+6*x))/(3+5*x^3)^2'">
+   <param name="A_58" value="id='Dg10(x)' expresión='(7*(3-9*x^2)-9*2*x*(2+7*x))/(3-9*x^2)^2'">
+   <param name="A_59" value="id='Dg11(x)' expresión='-1/x^2'">
+   <param name="A_60" value="id='Dg12(x)' expresión='(1/2)*x^(-1/2)-(1/2)*1/(x^(3/2))'">
+   <param name="A_61" value="id='Dg13(x)' expresión='5*3*x^2-1/(x^(3/2))'">
+   <param name="A_62" value="id='Dg14(x)' expresión='3*x^2+(1/2)*(x^(-3/2))'">
+   <param name="A_63" value="id='Dg15(x)' expresión='3*2*exp(2*x+6)'">
+   <param name="A_64" value="id='Dg16(x)' expresión='2*x*exp(x^2-8)'">
+   <param name="A_65" value="id='Dg17(x)' expresión='3*sen(x+6)'">
+   <param name="A_66" value="id='Dg18(x)' expresión='cos(x-10)'">
+   <param name="A_67" value="id='Dg19(x)' expresión='3*(sec(3*x-4))^2'">
+   <param name="A_68" value="id='Dg20(x)' expresión='3*cot(-3*x)*csc(-3*x)'">
+   <param name="A_69" value="id='Dg21(x)' expresión='5*cos(-3*x)+5*3*x*sen(-3*x)'">
+   <param name="A_70" value="id='Dg22(x)' expresión='2*x*sen(5*x)+x^2*5*cos(5*x)'">
+   <param name="A_71" value="id='Dg23(x)' expresión='2*(-3)*sen(-3*x)*cos(-3*x)'">
+   <param name="A_72" value="id='Dg24(x)' expresión='-2*cos(3*x)*(-3)*sen(3*x)'">
+   <param name="A_73" value="id='Dg25(x)' expresión='-9*cos(-x)*cos(2*x)-9*sen(-x)*2*sen(2*x)'">
+   <param name="A_74" value="id='Dg26(x)' expresión='cos(sqrt(x))/(2*sqrt(x))'">
+   <param name="A_75" value="id='Dg27(x)' expresión='2*2*3*x^2/(2*x^3)'">
+   <param name="A_76" value="id='Dg28(x)' expresión='3/(3*x)'">
+   <param name="A_77" value="id='Dg29(x)' expresión='2/x'">
+   <param name="A_78" value="id='H(x)' algoritmo='sí' expresión='H' algoritmo='sí' inicio='H=0' hacer='H=(nE=0)?e0(x):H;H=(nE=1)?e1(x):H;H=(nE=2)?e2(x):H;H=(nE=3)?e3(x):H;H=(nE=4)?e4(x):H;H=(nE=5)?e5(x):H;H=(nE=6)?e6(x):H;'">
+   <param name="A_79" value="id='DH(x)' algoritmo='sí' expresión='DH' algoritmo='sí' inicio='DH=0' hacer='DH=(nE=0)?De0(x):DH;DH=(nE=1)?De1(x):DH;DH=(nE=2)?De2(x):DH;DH=(nE=3)?De3(x):DH;DH=(nE=4)?De4(x):DH;DH=(nE=5)?De5(x):DH;DH=(nE=6)?De6(x):DH;'">
+   <param name="A_80" value="id='F(x)' algoritmo='sí' expresión='F' algoritmo='sí' inicio='F=0' hacer='F=(n=0)?g0(x):F;F=(n=1)?g1(x):F;F=(n=2)?g2(x):F;F=(n=3)?g3(x):F;F=(n=4)?g4(x):F;F=(n=5)?g5(x):F;F=(n=6)?g6(x):F;F=(n=7)?g7(x):F;F=(n=8)?g8(x):F;F=(n=9)?g9(x):F;F=(n=10)?g10(x):F;F=(n=11)?g11(x):F;F=(n=12)?g12(x):F;F=(n=13)?g13(x):F;F=(n=14)?g14(x):F;F=(n=15)?g15(x):F;F=(n=16)?g16(x):F;F=(n=17)?g17(x):F;F=(n=18)?g18(x):F;F=(n=19)?g19(x):F;F=(n=20)?g20(x):F;F=(n=21)?g21(x):F;F=(n=22)?g22(x):F;F=(n=23)?g23(x):F;F=(n=24)?g24(x):F;F=(n=25)?g25(x):F;F=(n=26)?g26(x):F;F=(n=27)?g27(x):F;F=(n=28)?g28(x):F;F=(n=29)?g29(x):F;'">
+   <param name="A_81" value="id='DF(x)' algoritmo='sí' expresión='DF' algoritmo='sí' inicio='DF=0' hacer='DF=(n=0)?Dg0(x):DF;DF=(n=1)?Dg1(x):DF;DF=(n=2)?Dg2(x):DF;DF=(n=3)?Dg3(x):DF;DF=(n=4)?Dg4(x):DF;DF=(n=5)?Dg5(x):DF;DF=(n=6)?Dg6(x):DF;DF=(n=7)?Dg7(x):DF;DF=(n=8)?Dg8(x):DF;DF=(n=9)?Dg9(x):DF;DF=(n=10)?Dg10(x):DF;DF=(n=11)?Dg11(x):DF;DF=(n=12)?Dg12(x):DF;DF=(n=13)?Dg13(x):DF;DF=(n=14)?Dg14(x):DF;DF=(n=15)?Dg15(x):DF;DF=(n=16)?Dg16(x):DF;DF=(n=17)?Dg17(x):DF;DF=(n=18)?Dg18(x):DF;DF=(n=19)?Dg19(x):DF;DF=(n=20)?Dg20(x):DF;DF=(n=21)?Dg21(x):DF;DF=(n=22)?Dg22(x):DF;DF=(n=23)?Dg23(x):DF;DF=(n=24)?Dg24(x):DF;DF=(n=25)?Dg25(x):DF;DF=(n=26)?Dg26(x):DF;DF=(n=27)?Dg27(x):DF;DF=(n=28)?Dg28(x):DF;DF=(n=29)?Dg29(x):DF;'">
+   <param name="A_82" value="id='p4x()' algoritmo='sí' expresión='p4x' algoritmo='sí' inicio='p4x=0' hacer='p4x=0;p4x=(nE=0)?ent(100*rnd-50)/10:p4x;p4x=(nE=1)?0.1+ent(50*rnd)/10:p4x;p4x=(nE=2)?ent(100*rnd-50)/10:p4x;p4x=((nE=2)&(p4x=2))?1:p4x;p4x=(nE=3)?ent(60*rnd-30)/10:p4x;p4x=((nE=3)&(p4x=0))?1:p4x;p4x=(nE=4)?ent(20*pi*rnd-10*pi)/10:p4x;p4x=(nE=5)?ent(30*rnd-15)/10:p4x;p4x=(nE=6)?ent(100*rnd)/10:p4x;'">
+   <param name="A_83" value="id='p8x()' algoritmo='sí' expresión='p8x' algoritmo='sí' inicio='p8x=0' hacer='p8x=(n=0)?ent(100*rnd-50)/10:p8x;p8x=(n=1)?ent(100*rnd-50)/10:p8x;p8x=(n=2)?ent(100*rnd-50)/10:p8x;p8x=(n=3)?ent(100*rnd)/10:p8x;p8x=(n=4)?ent(50*rnd-25)/10:p8x;p8x=(n=5)?2+ent(10*rnd):p8x;p8x=(n=6)?ent(58*rnd-29)/10:p8x;p8x=(n=7)?(-1)^(1+ent(2*rnd))*(10-ent(14*rnd-7)):p8x;p8x=(n=8)?ent(100*rnd-50)/10:p8x;p8x=((n=8)&(p8x=sqrt(3)))?1:p8x                         ;p8x=(n=9)?ent(100*rnd-50)/10:p8x;p8x=((n=9)&(p8x=-(3/5)^(1/3)))?1:p8x;p8x=(n=10)?ent(100*rnd-50)/10:p8x;p8x=((n=10)&(p8x=sqrt(1/3)))?1:p8x;p8x=(n=11)?ent(100*rnd-50)/10:p8x;p8x=((n=11)&(p8x=0))?1:p8x;p8x=(n=12)?1+ent(100*rnd)/10:p8x;p8x=(n=13)?1+ent(40*rnd)/10:p8x;p8x=(n=14)?0.9+ent(50*rnd)/10:p8x;p8x=(n=15)?-0.1+ent(10*rnd)/10:p8x;p8x=(n=16)?2.5+ent(10*rnd)/10:p8x;p8x=(n=17)?-6+ent(100*pi*rnd)/10:p8x;p8x=(n=18)?10+ent(20*pi*rnd)/10:p8x;p8x=(n=19)?(4/3-pi/12)+ent(20*pi*rnd/12)/10:p8x;p8x=(n=20)?-ent(3*pi*rnd)/10:p8x;p8x=(n=21)?ent(4*pi*rnd-2pi)/10:p8x;p8x=(n=22)?ent(2*pi*rnd)/5:p8x;p8x=(n=23)?ent(3*pi*(1+rnd))/10:p8x;p8x=(n=24)?ent(6*pi*rnd-3*pi)/10:p8x;p8x=(n=25)?-ent(2.5*pi*rnd)/10:p8x;p8x=(n=26)?ent(10*pi^2*rnd)/10:p8x;p8x=(n=27)?0.1+ent(30*rnd)/10:p8x;p8x=(n=28)?0.1+ent(100*rnd/3)/10:p8x;p8x=(n=29)?0.1+ent(50*rnd)/10:p8x;;'">
+   <param name="A_84" value="id='otroejercicio()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='ver=0;verificar=0;intento=0;n=ent(rnd*30);aux=&squot;n=n8&squot;;respy0=&squot;&squot;;respm=&squot;&squot;;respx0=&squot;&squot;;;;;;;' mientras='0'">
+   <param name="A_85" value="id='revisary0()' algoritmo='sí' expresión='rev' algoritmo='sí' hacer='aux=&squot;no utilizada&squot;;rev=(abs(F(p8y)-)<0.1)?1:rev;;;;;;;'">
+   <param name="A_86" value="id='revisarm()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='aux=&squot;no utilizada&squot;;rev=(abs(DF(p8y)-)<0.1)?1:rev;;;;;;;'">
+   <param name="A_87" value="id='revisarx0()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='aux=&squot;no utilizada&squot;;rev=(abs(p8y-)<0.1)?1:rev;;;;;;;'">
+   <param name="A_88" value="id='verificar()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='ver=1;verificar=((abs(F(p8x)-respy0)<0.1)&(abs(DF(p8x)-respm)<0.1)&(abs(p8x-respx0)<0.1))?1:0;;;;' mientras='0'">
+   <param name="A_89" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='b31=0;b32=1;i=0;j=0;p3.x=-1/3;q3.x=p3.x+1' hacer='nE=0;n=0;na=0;ver=0'">
+   <param name="A_90" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='aux=&squot;calculos para primera escena (espacio 1)&squot;;m=(abs(p2.x-p1.x)<0.001)?10000:(p2.y-p1.y)/(p2.x-p1.x);d=-3*p1.x^2+12*m;x1=((d=0)|(d>0))?(-p1.x+sqrt(d))/2:0;x2=(d>0)?(-p1.x-sqrt(d))/2:0;y1=(1/3)*x1^3;y2=(1/3)*x2^3;xQ=r*cos(theta+3*pi/4);yQ=r*sen(theta+3*pi/4);vT=(sen(theta),cos(theta))'">
+   <param name="A_91" value="id='textoIntento' algoritmo='sí' evaluar='siempre' hacer='textoIntento=(intento=0)?&squot;1er intento&squot;:textoIntento;textoIntento=(intento=1)?&squot;2o intento&squot;:textoIntento;textoIntento=(intento=2)?&squot;3er intento&squot;:textoIntento;textoIntento=(intento=3)?&squot;3er intento&squot;:textoIntento;' mientras='0'">
+   <param name="G_01" value="espacio='E0' tipo='ecuación' expresión='y=(1/3)*x^3' ancho='2'">
+   <param name="G_02" value="espacio='E0' tipo='curva' color='5050b0' expresión='(p1.x+(p2.x-p1.x)*t,p1.y+(p2.y-p1.y)*t)' t.intervalo='[-1000/E0.escala,1000/E0.escala]' t.pasos='1' ancho='2'">
+   <param name="G_03" value="espacio='E0' tipo='curva' color='rojo' dibujar-si='(d<0)' expresión='(p1.x+(p2.x-p1.x)*t,p1.y+(p2.y-p1.y)*t)' t.intervalo='[-1000/E0.escala,1000/E0.escala]' t.pasos='1' ancho='2'">
+   <param name="G_04" value="espacio='E0' tipo='texto' expresión='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f0\cf0\fs40\b P\b0\cf1   = ({\*\mjaformula{\expr p1.x\decimals undefined\fixed0}}\cf1 ,{\*\mjaformula{\expr p1.y\decimals 2\fixed1})}}' fuente='SansSerif,BOLD,16' fijo='sí'">
+   <param name="G_05" value="espacio='E0' tipo='texto' dibujar-si='((d>0)|(d=0))&(sqrt((x1-p1.x)^2+(y1-p1.y)^2)>0.01)' expresión='[10,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red23\green157\blue171;\red32\green48\blue58;}\f0\cf0\fs40\b Q\b0\b{\*\mjaformula{\subix 1}}\b0\cf1 = \cf1 ({\*\mjaformula{\expr x1\decimals 2\fixed1}}\cf1 ,{\*\mjaformula{\expr y1\decimals 2\fixed1}}\cf1 )}' fuente='SansSerif,BOLD,16' fijo='sí'">
+   <param name="G_06" value="espacio='E0' tipo='texto' dibujar-si='(d>0)&(sqrt((x2-p1.x)^2+(y2-p1.y)^2)>0.01)' expresión='[10,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red160\green30\blue174;\red32\green48\blue58;}\f0\cf0\fs40\b Q\b0\b{\*\mjaformula{\subix 2}}\b0\cf1 = \cf1 ({\*\mjaformula{\expr x2\decimals 2\fixed1}}\cf1 ,{\*\mjaformula{\expr y2\decimals 2\fixed1}}\cf1 )}' fuente='SansSerif,BOLD,16' fijo='sí'">
+   <param name="G_07" value="espacio='E0' tipo='punto' color='179dab' dibujar-si='((d>0)|(d=0))&(sqrt((x1-p1.x)^2+(y1-p1.y)^2)>0.01)' expresión='(x1,y1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Serif,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_08" value="espacio='E0' tipo='punto' color='a01eae' dibujar-si='(d>0)&(sqrt((x2-p1.x)^2+(y2-p1.y)^2)>0.01)' expresión='(x2,y2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Serif,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_09" value="espacio='E9' tipo='texto' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green159\blue0;\red32\green48\blue58;\red0\green0\blue0;\red255\green0\blue0;}\f1\fs48\b La tangente a la circunferencia en uno\b0\par \b de sus puntos se define como la recta\b0\par \b que la toca \u250 nicamente en ese punto,\b0\par \b pero esta definici\u243 n no sirve para\b0\par \b otras curvas. Por ejemplo, si giras la\b0\par \b recta de la figura tom\u225 ndola del punto\b0\par \b verde, observar\u225 s que hay muchas \b0\par \b rectas que cumplen con la propiedad \b0\par \b de intersecar a la curva de la figura \b0\par \b s\u243 lo en P. \b0\par \par \b Recordar\u225 s que la tangente a la circunferencia en \cf0\i P\cf1\i0  se puede definir \par como la recta a la que se aproximan las secantes que pasan por \cf0\i P \cf2\i0 y \cf3\i Q\cf2\i0  \par cuando \cf3\i Q\cf2\i0  se aproxima a  \cf0\i P\cf2\i0 . La ventaja de esta definici\u243 n es que se \par puede extender a otras curvas. Recuerda que las rectas que pasan por\b0\par \b\i{\*\mjaformula p=(x{\subix p},&nbsp;y{\subix p})}\i0  se describen algebr\u225 icamente mediante la ecuaci\u243 n\b0\par \b\i{\*\mjaformula y=y{\subix p}+m(x-x{\subix p})}\i0 , y que, si sabemos que la recta pasa por otro punto \cf3\i Q\cf2\i0 , \b0\par \b se puede obtener m,  la pendiente, sustituyendo, en la ecuaci\u243 n, a \b0\par \b  \i{\*\mjaformula x}\i0  y \i{\*\mjaformula y}\i0  por las coordenadas de  \i{\*\mjaformula Q=(x{\subix Q},&nbsp;y{\subix Q})}\i0  y despejando:  \b0\par \cf0\b\i                                             {\*\mjaformula m{\subix PQ}={\fraction{\num y{\subix Q}-y{\subix P}}{\den x{\subix Q}-x{\subix P}}}}\b0\i0}' fuente='SansSerif,BOLD,24' fijo='sí' color_borde_texto='negro'">
+   <param name="G_10" value="espacio='E0' tipo='texto' expresión='[160+p1.x*E0.escala,105-p1.y*E0.escala]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs32\b P\cf1   \fs28\b0}' fuente='SansSerif,BOLD,16' fijo='sí'">
+</ajs>
+
+
+
+</body>
+</html>

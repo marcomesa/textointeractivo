@@ -1,0 +1,93 @@
+body{
+	scrollbar-3dlight-color : #486d90;
+	scrollbar-arrow-color : #ffffff;
+	scrollbar-base-color : #73AD97;
+	scrollbar-darkshadow-color : #486d90;
+	scrollbar-face-color : #486d90;
+	scrollbar-highlight-color : #486d90;
+	scrollbar-shadow-color : #486d90;
+	scrollbar-track-color : #1d3d5b;
+	
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+	
+.titulo_ventana{
+	font-size: 10px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	padding-left: 0px;
+	text-decoration: none;
+	   }	
+	   
+.menu_materias{
+	font-size: 15px;
+	color: #17314a;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding-left: 0px;
+	text-decoration: none;
+	   }	
+	    
+.info_ventana{
+	font-size: 11px;
+	color: #17314a;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding-left: 0px;
+	text-decoration: none;
+	   }	
+	   
+	   
+.lista_link{
+	font-size: 11px;
+	color: #17314a;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	   }
+.lista_link:hover {
+	font-size: 11px;
+	color: #17314a;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+		   }
+
+
+.ruta{
+	font-size: 10px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	padding-left: 10px;
+	text-decoration: none;
+	   }
+  
+.ruta_link{
+	font-size: 10px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	   }
+.ruta_link:hover {
+	font-size: 10px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+		   }
+	   
+.txt_tit01{
+	font-size: 14px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	padding: 5px;
+	   }	   
+	   
+   

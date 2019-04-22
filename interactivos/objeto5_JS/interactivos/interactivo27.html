@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cálculo Diferencial - Introducción</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="760" height="450" code="Descartes">
+    <param name="tamaño" value="760x450">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='405860' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E4' cID='1230b337fab' x='350' y='0' ancho='420' alto='450' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_03" value="tipo='R2' id='E6' x='0' y='0' ancho='350' alto='450' fijo='sí' escala='20' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='E2_menu' tipo='numérico' interfaz='menú' región='interior' espacio='E4' expresión='((E4._w-160)/2,E4._h-160,140,35)' valor='0' decimales='2' fijo='sí' visible='no' opciones=' [0],a)[1],b)[2],c)[3],d)[4]' acción='calcular' parámetro='E2_verif=0' activo-si='!E2_bien' ">
+    <param name="C_02" value="id='E2_verif' interfaz='botón' tipo='numérico' región='interior' espacio='E4' nombre='Verificar' expresión='((E4._w-200)/2,E4._h-40,130,35)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E2_verif=1' dibujar-si='!((E2_ejemplo=5)&(E2_bien))' activo-si='!E2_bien' ">
+    <param name="C_03" value="id='E4_sig' interfaz='botón' tipo='numérico' región='interior' espacio='E4' nombre='Siguiente' expresión='((E4._w-200)/2+140,E4._h-40,130,35)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E2_ejemplo=E2_ejemplo+1\nE2_bien=0\nE2_verif=0\nE2_menu=0' dibujar-si='E2_ejemplo<=4' activo-si='(E2_bien)&(E2_ejemplo<=E2_num_ejem)' ">
+    <param name="C_04" value="id='E4_reiniciar' interfaz='botón' tipo='numérico' región='interior' espacio='E4' nombre='Reiniciar' expresión='((E4._w-100)/2,E4._h-30,100,25)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='14' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E2_ejemplo=1\nE2_bien=0\nE2_verif=0\nE2_menu=0' dibujar-si='(E2_ejemplo=5)&(E2_bien)' ">
+    <param name="A_01" value="id='E0_f(_x)' algoritmo='sí' expresión='E0_fx' hacer='E0_fx=(_x<x1)?b-(x7-x1)^2/16:b;E0_fx=(_x>x2)?b-(x7-x2)^2/16:E0_fx;;;' ">
+    <param name="A_02" value="id='E2_f1(E2_x)' algoritmo='sí' expresión='E2_f1Temp' hacer='E2_f1Temp=E2_x+6;E2_f1Temp=((E2_x>=-3)&(E2_x<=3))?-0.5*(E2_x+3)+3:E2_f1Temp;E2_f1Temp=(E2_x>=3)?2*(E2_x-3):E2_f1Temp;E2_f1Temp=(E2_x>=6)?6:E2_f1Temp' ">
+    <param name="A_03" value="id='E2_f2(E2_x)' algoritmo='sí' expresión='E2_f2Temp' hacer='E2_f2Temp=-3;E2_f2Temp=(E2_x>-3)?2*E2_x+3:E2_f2Temp;E2_f2Temp=(E2_x>0)?-2*E2_x+3:E2_f2Temp;E2_f2Temp=(E2_x>3)?2*E2_x-9:E2_f2Temp;E2_f2Temp=(E2_x>6)?3:E2_f2Temp' ">
+    <param name="A_04" value="id='E2_verif()' algoritmo='sí' expresión='x' hacer='E2_bien=0;E2_bien=((E2_ejemplo=1)&(E2_menu=2))?1:E2_bien;E2_bien=((E2_ejemplo=2)&(E2_menu=1))?1:E2_bien;E2_bien=((E2_ejemplo=3)&(E2_menu=2))?1:E2_bien;E2_bien=((E2_ejemplo=4)&(E2_menu=3))?1:E2_bien;E2_bien=((E2_ejemplo=5)&(E2_menu=4))?1:E2_bien;' ">
+    <param name="A_05" value="id='E3_f(_x)' algoritmo='sí' expresión='E3_fx' hacer='E3_fx=(_x<x1)?b-(x-x1)^2/16:b;E3_fx=(_x>x2)?b-(x-x2)^2/16:E3_fx;;;' ">
+    <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='kk=1;x0=0;x1=20;x2=40;x3=60;b=25;E1_num_ejem=8;E3_texto_x=0;E3_texto_y=20;;E2_ejemplo=1;E2_num_ejem=4;E2_verif=0;E2_bien=0;' ">
+    <param name="A_07" value="id='calculos' algoritmo='sí' evaluar='siempre' hacer='uu=(E2_verif=1)?E2_verif():0' ">
+    <param name="A_08" value="id='e2' evento='sí' condición='kk' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='E2_ejemplo=5' expresión='[60,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs48\b Ejercicio\b0\b  \b0\b 5 de 5\b0\par\par\f0\fs48 a) En ningún intervalo\par\par\f0\fs48 b) (-∞,∞)\par\par\f0\fs48 c) (-∞,0)\par\par\f1\fs48 d\f0 ) [0,∞)\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_02" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='E2_ejemplo=4' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Ejercicio \b0\b 4 d\b0\b e 5\b0\par\par\f0\fs48 a) (-∞,∞)\par\par\f0\fs48 b) En los enteros (..., -2, -1, 0, 1, 2, ...)\par\par\f0\fs48 c) En ningún intervalo\par\par\f0\fs48 d) (-∞,0)\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_03" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='E2_ejemplo=3' expresión='[10,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b E\b0\b jericio 3 de 5\b0\par\par\f0\fs48 a) (-∞,∞)\par\par\f0\fs48 b)  \fs40{\*\mjaformula (-{\fraction{\num 3}{\den 2}}π,-{\fraction{\num 1}{\den 2}}π),&nbsp;(-{\fraction{\num 1}{\den 2}}π,{\fraction{\num 1}{\den 2}}π)&nbsp;y&nbsp;({\fraction{\num 1}{\den 2}}π,{\fraction{\num 3}{\den 2}}π)}\par\par\f0\fs48 c) En ningún intervalo \par\par\f0\fs48 d)  {\*\mjaformula (-{\fraction{\num 3}{\den 2}}π,{\fraction{\num 3}{\den 2}}π)}\par}' decimales='2' fijo='no' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_04" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='E2_ejemplo=2' expresión='[60,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Ejerc\b0\b icio 2\b0  \b de \b0\b 5\b0\par\par\f0\fs48 a)  {\*\mjaformula (-∞,-3)&nbsp;&nbsp;y&nbsp;(3,6)}\par\par\f0\fs48 b)  {\*\mjaformula (-3,3)&nbsp;y&nbsp;(6,∞)}\par\par\f0\fs48 c) \fs46 (-3,3) \par\par\f0\fs46 d) En ningún intervalo\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_05" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='E2_ejemplo=1' expresión='[60,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs48\b Ejercicio 1 de 5\b0\par\par\f1\fs48 a\f0 )  {\*\mjaformula (-∞,-3)}\par\par\f0\fs48 b)  {\*\mjaformula (-3,0)&nbsp;y&nbsp;(3,6)}\par\par\f0\fs48 c) En ningún intervalo \par\par\f0\fs48 d)  {\*\mjaformula (-∞,-3)} y {\*\mjaformula (6,∞)}\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_06" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='((E2_verif)&(E2_bien))' expresión='[120,E4._h-100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green137\blue0;}\f0\cf0\fs60\b ¡Correcto!\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_07" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='((E2_verif)&(!E2_bien))' expresión='[115,E4._h-100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;}\f0\cf0\fs60\b ¡Incorrecto\b0\cf0\b !\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_08" value="espacio='E6' tipo='ecuación' fondo='no' color='20303a' dibujar-si='((x<1.5*pi)&(x>-1.5*pi))&(E2_ejemplo=3)' coord_abs='no' expresión='y=tan(x)' ancho='1' visible='no' editable='no' ">
+    <param name="G_09" value="espacio='E6' tipo='segmento' fondo='no' color='20303a' dibujar-si='E2_ejemplo=3' coord_abs='no' expresión='(-1.5*pi,s)(-1.5*pi,s+0.1)' familia='s' s.intervalo='[-200,200]' s.pasos='799' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_10" value="espacio='E6' tipo='segmento' fondo='no' color='20303a' dibujar-si='E2_ejemplo=3' coord_abs='no' expresión='(1.5*pi,s)(1.5*pi,s+0.1)' familia='s' s.intervalo='[-200,200]' s.pasos='799' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_11" value="espacio='E6' tipo='segmento' fondo='no' color='20303a' dibujar-si='E2_ejemplo=3' coord_abs='no' expresión='(-0.5*pi,s)(-0.5*pi,s+0.1)' familia='s' s.intervalo='[-200,200]' s.pasos='799' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_12" value="espacio='E6' tipo='segmento' fondo='no' color='20303a' dibujar-si='E2_ejemplo=3' coord_abs='no' expresión='(0.5*pi,s)(0.5*pi,s+0.1)' familia='s' s.intervalo='[-200,200]' s.pasos='799' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_13" value="espacio='E6' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(-8,0)(8,0)' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_14" value="espacio='E6' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(0,-8)(0,8)' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_15" value="espacio='E6' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(-1.5*pi+pi*s-1,-0.8)' familia='s' s.intervalo='[0,3]' s.pasos='3' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24{\*\mjaformula{\fraction{\num\f2\fs22{\expr ((2*s-3)<0)?&squot;-&squot;:&squot;&squot;\decimals 0\fixed0}{\expr (abs(2*s-3)=1)?&squot;&squot;:3\decimals 0\fixed0}\u960 }{\den 2}}}\f3\fs24\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_16" value="espacio='E6' tipo='ecuación' fondo='no' color='000000' dibujar-si='E2_ejemplo=5' coord_abs='no' expresión='y=x^2/3' ancho='1' visible='no' editable='no' ">
+    <param name="G_17" value="espacio='E6' tipo='ecuación' fondo='no' color='20303a' dibujar-si='E2_ejemplo=4' coord_abs='no' expresión='y=ent(x)' ancho='1' visible='no' editable='no' ">
+    <param name="G_18" value="espacio='E6' tipo='ecuación' fondo='no' color='20303a' dibujar-si='E2_ejemplo=2' coord_abs='no' expresión='y=E2_f1(x)' ancho='1' visible='no' editable='no' ">
+    <param name="G_19" value="espacio='E6' tipo='ecuación' fondo='no' color='20303a' dibujar-si='E2_ejemplo=1' coord_abs='no' expresión='y=E2_f2(x)' ancho='1' visible='no' editable='no' ">
+    <param name="Animación" value="pausa='15' controles='no' auto='no' repetir='sí' inicio='x7=x0' hacer='x7=x7+0.25;x7=(x7>x3+15)?0:x7;;' mientras='x7<=x3-0.25' ">
+  </ajs>
+
+
+
+</body>
+</html>

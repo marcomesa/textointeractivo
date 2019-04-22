@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font5.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="740" height="281">
+      <param name="tamaño" value="740x281">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='E1._w-332' y='37' ancho='331' alto='241' dibujar-si='1' fijo='sí' escala='15' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='f0f8fa' red='d8e4e8' red10='no' ejes='8090a0' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='a' tipo='gráfico' espacio='E2' color='902060ff' color-int='ffff0000' tamaño='8' expresión='(-3,1)' ">
+      <param name="C_02" value="id='b' tipo='gráfico' espacio='E2' color='902060ff' color-int='ffff0000' tamaño='8' expresión='(4,2)' ">
+      <param name="C_03" value="id='u' tipo='gráfico' espacio='E2' color='90cc0000' color-int='ffff0000' tamaño='8' expresión='(-1,7)' ">
+      <param name="C_04" value="id='ampliar' interfaz='botón' tipo='numérico' región='interior' espacio='E2' expresión='(E2._w-37,E2._h-37,33,33)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='imagen/lupa.png' acción='abrir Escena' parámetro='escena132b.html' ">
+      <param name="A_01" value="id='f1(x)' algoritmo='no' expresión='y0+m1*(x-x0)' tipo='función' ">
+      <param name="A_02" value="id='f2(x)' algoritmo='no' expresión='y0+m2*(x-x0)' tipo='función' ">
+      <param name="A_03" value="id='f3(x)' algoritmo='no' expresión='y0+m3*(x-x0)' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='t=1;s=1;;' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a.x=ent(a.x);a.y=ent(a.y);b.x=ent(b.x);b.y=ent(b.y);a.x=(a.x<-10)?-10:a.x;a.x=(a.x>10)?10:a.x;a.y=(a.y<-7)?-6:a.y;a.y=(a.y>7)?6:a.y;b.x=(b.x<-10)?-10:b.x;b.x=(b.x>10)?10:b.x;b.y=(b.y<-7)?-6:b.y;b.y=(b.y>7)?6:b.y;a.x=(a.x*b.y=a.y*b.x)?a.x-1:a.x;u.x=ent(u.x);u.y=ent(u.y);detab=a.x*b.y-a.y*b.x;detau=a.x*u.y-a.y*u.x;detub=u.x*b.y-u.y*b.x;t=detub/detab;s=detau/detab' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='206090' coord_abs='sí' expresión='(0,-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs46\b 3.2. Base de vectores\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='0' coord_abs='sí' expresión='(0,35)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 ●}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E2' tipo='flecha' fondo='no' color='cc0000' dibujar-si='0' coord_abs='no' expresión='(0,0)(t*a.x,t*a.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32\b{\*\mjaformula v{\subix 1}}\b0}' decimales='2' fijo='sí' ancho='0' punta='4' flecha='c9cc0000' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='17' ">
+      <param name="G_04" value="espacio='E2' tipo='flecha' fondo='no' color='2060ff' coord_abs='no' expresión='(0,0)(a.x,a.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32\b{\*\mjaformula v{\subix 1}}\b0}' decimales='2' fijo='sí' ancho='0' punta='4' flecha='662060ff' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='17' ">
+      <param name="G_05" value="espacio='E2' tipo='flecha' fondo='no' color='2060ff' coord_abs='no' expresión='(0,0)(b.x,b.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32\b{\*\mjaformula v{\subix 2}}\b0}' decimales='2' fijo='sí' ancho='0' punta='4' flecha='662060ff' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='17' ">
+      <param name="G_06" value="espacio='E2' tipo='flecha' fondo='no' color='cc0000' coord_abs='no' expresión='(0,0)(u.x,u.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32\b{\*\mjaformula u}\b0}' decimales='2' fijo='sí' ancho='0' punta='4' flecha='90cc0000' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='17' ">
+      <param name="G_07" value="espacio='E2' tipo='segmento' fondo='no' color='2060ff' coord_abs='no' expresión='(t*a.x,t*a.y)(u.x,u.y)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_08" value="espacio='E2' tipo='segmento' fondo='no' color='2060ff' coord_abs='no' expresión='(u.x,u.y)(s*b.x,s*b.y)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_09" value="espacio='E2' tipo='segmento' fondo='no' color='2060ff' coord_abs='no' expresión='(0,0)(s*b.x,s*b.y)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_10" value="espacio='E2' tipo='segmento' fondo='no' color='2060ff' coord_abs='no' expresión='(t*a.x,t*a.y)(0,0)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(0,35)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 Si dos vectores del plano, \b{\*\mjaformula v{\subix 1}}\b0 ﻿ y \b{\*\mjaformula v{\subix 2}}\b0  son\b  linealmente \b0\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(0,57)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34\b in\b0\b dependientes\b0 , cualquier otro vector se puede poner \par\f0\fs34 como combinación lineal de ellos.}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(190,105)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34\b{\*\mjaformula u}\b0 = \i α\i0\b{\*\mjaformula v{\subix 1}}\b0 + \i β\i0\b{\*\mjaformula v{\subix 2}}\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,130)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 ●﻿}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(42,130)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 Los vectores \b{\*\mjaformula v{\subix 1}}\b0 ﻿ y \b{\*\mjaformula v{\subix 2}}\b0  forman una \b base \b0 y (\i α\i0 ,\i  β\i0 )\par\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_16" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(39,154)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 son las \b coordenadas\b0  de \b u\b0  en dicha base.\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_17" value="espacio='E1' tipo='texto' fondo='no' color='cc0000' coord_abs='sí' expresión='(190,180)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34\b{\*\mjaformula{\expr &squot;u&squot;\decimals 2\fixed0}}\b0\b =\b0{\*\mjaformula{\expr t=1?&squot;&squot;:(t=-1?&squot;-&squot;:t)\decimals 2\fixed0}}\b{\*\mjaformula v{\subix 1}}\b0\b{\*\mjaformula{\expr s<0?&squot;-&squot;:&squot;+&squot;\decimals 2\fixed0}}\b0{\*\mjaformula{\expr abs(s)=1?&squot;&squot;:abs(s)\decimals 2\fixed0}}\b{\*\mjaformula v{\subix 2}}\b0\b\i            \i0\b0\b{\*\mjaformula{\expr &squot;u&squot;\decimals 2\fixed0}}\b0\b\i =\i0\b0{\*\mjaformula ({\expr t\decimals 2\fixed0}{\expr &squot;, &squot;\decimals 2\fixed0}{\expr s\decimals 2\fixed0})}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,210)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 ●﻿}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_19" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(39,210)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 Si los vectores de la base son perpendiculares\par\f0\fs34 diremos que es una base \b ortogonal\b0  y si además\par\f0\fs34 su módulo es 1 la base se dice \b ortonormal\b0 .\par\par\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

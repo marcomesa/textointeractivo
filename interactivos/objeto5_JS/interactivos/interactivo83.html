@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Arquimedes" width=600 height=180 code="Descartes">
+   <param name="tamaño" value="600x180">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Arquimedes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=30">
+   <param name="E_01" value="tipo='R2' id='E2' x='0' y='0' ancho='600' alto='180' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' cID='128616f374a'">
+   <param name="C_01" value="id='Otro' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Otro ejemplo' expresión='((E2._w-140)/2,E2._h-40,140,35)' fijo='sí' visible='sí' color='blanco' color-int='536598' negrita='sí' fuente puntos='18' imagen=' _STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='REINIT_Polinomios()'">
+   <param name="A_01" value="id='dist(x1,y1,x2,y2)' expresión='sqrt((x2-x1)^2+(y2-y1)^2)'">
+   <param name="A_02" value="id='toCoordRelX(ax,w,e,ox)' expresión='(ax-(ent(w/2)+ox))/e'">
+   <param name="A_03" value="id='toCoordRelY(ay,h,e,oy)' expresión='-(ay-(ent(h/2)+oy))/e'">
+   <param name="A_04" value="id='orden' vector='sí' evaluar='una-sola-vez' tamaño='4'">
+   <param name="A_05" value="id='vecAux' vector='sí' evaluar='una-sola-vez' tamaño='5'">
+   <param name="A_06" value="id='xRatio' vector='sí' evaluar='una-sola-vez' tamaño='4'">
+   <param name="A_07" value="id='yRatio' vector='sí' evaluar='una-sola-vez' tamaño='4'">
+   <param name="A_08" value="id='respCorr' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='respCorr[0]=3;respCorr[1]=2;respCorr[2]=0;respCorr[3]=2;respCorr[4]=3'">
+   <param name="A_09" value="id='coef' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='coef[0]=0;coef[1]=0;coef[2]=0;coef[3]=0'">
+   <param name="A_10" value="id='coef2' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='coef2[0]=0;coef2[1]=0;coef2[2]=0;coef2[3]=0'">
+   <param name="A_11" value="id='iniVecAux()' algoritmo='sí' expresión='1' algoritmo='sí' inicio='_j=0' hacer='vecAux[_j]=_j;_j=_j+1' mientras='_j<numIncisos'">
+   <param name="A_12" value="id='actVecAux(n)' algoritmo='sí' expresión='1' algoritmo='sí' inicio='_k=n' hacer='vecAux[_k]=vecAux[_k+1];_k=_k+1' mientras='_k<(numIncisos-1)'">
+   <param name="A_13" value="id='setOrden()' algoritmo='sí' expresión='1' algoritmo='sí' inicio='_i=0*iniVecAux()' hacer='_resto=numIncisos-_i;_indice=ent(rnd*_resto);orden[_i]=vecAux[_indice];aux=actVecAux(_indice);_i=_i+1' mientras='_i<numIncisos'">
+   <param name="A_14" value="id='setRatio()' algoritmo='sí' expresión='1' algoritmo='sí' inicio='_i=0' hacer='xRatio[orden[_i]]=xRAT1;yRatio[orden[_i]]=yRAT1-_i*RAT1.sv;_i=_i+1' mientras='_i<numIncisos'">
+   <param name="A_15" value="id='genera_coeficientes()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='a_0=0;a_1=0;a_2=0;a_3=0' hacer='a_0=ent(rnd*20)-10;a_1=ent(rnd*20)-10;a_2=ent(rnd*20)-10;a_3=ent(rnd*20)-10' mientras='((a_0=0)&(a_1=0)&(a_2=0)&(a_3=0))'">
+   <param name="A_16" value="id='creaPolinomio()' algoritmo='sí' expresión='return_creaPolinomio' algoritmo='sí' hacer='equis_3=&squot;x\ub3 &squot;;equis_2=&squot;x\ub2 &squot;;equis=&squot;x&squot;;suma=&squot;+&squot;;ajusta_coef();polinomio = (coef[0]==0)?&squot;&squot;:coef[0];;suma=(coef[0]==0)?&squot;&squot;:&squot;+&squot;;suma=(coef[0]<0)?&squot;&squot;:suma;;coef=coef[1];coef=(coef[1]==1)?&squot;&squot;:coef;coef=(coef[1]==-1)?&squot;-&squot;:coef;polinomio = (coef[1]!=0)?coef+equis+suma+polinomio:polinomio;;suma=((coef[1]==0)&(coef[0]<=0))?&squot;&squot;:&squot;+&squot;;suma=(coef[1]<0)?&squot;&squot;:suma;coef=coef[2];coef=(coef[2]==1)?&squot;&squot;:coef;coef=(coef[2]==-1)?&squot;-&squot;:coef;polinomio =(coef[2]!=0)?coef+equis_2+suma+polinomio:polinomio;;suma=((coef[2]==0)&(coef[1]==0)&(coef[0]<=0))?&squot;&squot;:&squot;+&squot;;suma=((coef[2]==0)&(coef[1]<0))?&squot;&squot;:suma;suma=(coef[2]<0)?&squot;&squot;:suma;coef=coef[3];coef=(coef[3]==1)?&squot;&squot;:coef;coef=(coef[3]==-1)?&squot;-&squot;:coef;polinomio =(coef[3]!=0)?coef+equis_3+suma+polinomio:polinomio'">
+   <param name="A_17" value="id='ini_func()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='coefGradoCero=ent(rnd*8)+2;coefGradoUno=ent(rnd*8)+2;coefGradoDos=ent(rnd*8)+2;coefGradoTres=ent(rnd*8)+2;logBase=ent(rnd*7)+2;baseExponencial=ent(rnd*7)+2'">
+   <param name="A_18" value="id='ini_pos()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='E0_ancho_cajita=75;E0_alto_cajita=22;;E0_ancho_f=56;E0_ancho_func=E0_ancho_cajita+E0_ancho_f;;E0_posx=(E0._w-2*E0_ancho_func)/3;CX_f=E0_posx+E0_ancho_f;CY_f=30;CX_g=2*E0_posx+E0_ancho_func+E0_ancho_f;CY_g=30;;CX_suma=E0_posx;CY_suma=100;;CX_df=CX_f-E0_ancho_f;CY_df=190;CX_dg=CX_g-E0_ancho_f;CY_dg=190;CX_Dsuma=CX_df;CY_Dsuma=270'">
+   <param name="A_19" value="id='cambiaSignos()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='signoSDpos=(E0_menu=1)?&squot;+&squot;:&squot;-&squot;;signoSDneg=(E0_menu=1)?&squot;-&squot;:&squot;+&squot;;signoCeroSDpos=(E0_menu=1)?&squot;&squot;:&squot;-&squot;;signoCeroSDneg=(E0_menu=1)?&squot;-&squot;:&squot;&squot;;;'">
+   <param name="A_20" value="id='REINIT_Polinomios()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='aux=genera_coeficientes();;coef[0]=a_0;coef[1]=a_1;coef[2]=a_2;coef[3]=a_3;aux=creaPolinomio();;polinomio_original=polinomio;;coef[0]=a_1;coef[1]=2*a_2;coef[2]=3*a_3;coef[3]=0;aux=creaPolinomio();;polinomio_derivado=polinomio'">
+   <param name="A_21" value="id='iniE1()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='E1_x2=&squot;&squot;;E1_x=&squot;&squot;;E1_cte=&squot;&squot;;;E1_x2.ok=0;E1_x.ok=0;E1_cte.ok=0;;aux=genera_coeficientes();;coef[0]=a_0;coef[1]=a_1;coef[2]=a_2;coef[3]=a_3;;coef2[0]=a_0;coef2[1]=a_1;coef2[2]=a_2;coef2[3]=a_3;;aux=creaPolinomio();;E1_polEjer=polinomio;;E1_bien=0;E1_verif=0'">
+   <param name="A_22" value="id='Reini()' algoritmo='sí' expresión='1' algoritmo='sí' inicio='reini=0' hacer='E3_verSol=0;E3_bien=-1;ratio=-1;ratioActivo=1;aux2=setOrden()*setRatio()'">
+   <param name="A_23" value="id='E1_verificar()' algoritmo='sí' expresión='E1_bien' algoritmo='sí' hacer='E1_bien=(E1_cte.ok)&(E1_x.ok)&(E1_x2.ok)?1:0;E1_hola=&squot;jpppas&squot;'">
+   <param name="A_24" value="id='clicRatio(mx,my)' algoritmo='sí' expresión='1' algoritmo='sí' inicio='_i=0;_epsilon=1' hacer='_onRatio=(dist(mx,my,xRatio[_i],yRatio[_i])<_epsilon);ratio=((_onRatio)?_i:ratio);E3_bien=((_onRatio)?-1:E3_bien);_i=_i+1' mientras='_i<numIncisos'">
+   <param name="A_25" value="id='E3_Verificar()' algoritmo='sí' expresión='1' algoritmo='sí' hacer='E3_bien=(ratio=respCorr[E3_num_ejer])'">
+   <param name="A_26" value="id='CONFIG' algoritmo='sí' evaluar='una-sola-vez' hacer='E3_escala=10;E3_Ox=0;E3_Oy=0;numEjercicios=5;numIncisos=4'">
+   <param name="A_27" value="id='INI_MRC' algoritmo='sí' evaluar='una-sola-vez' hacer='MRC1.b=560;MRC1.h=70;xMRC1=20;yMRC1=90;MRC2.b=400;MRC2.h=180;xMRC2=190;yMRC2=120'">
+   <param name="A_28" value="id='INI_RAT' algoritmo='sí' evaluar='una-sola-vez' hacer='RAT1.re=0.8;RAT1.ri=0.4;RAT1.sv=4.6;RAT1.sh=22;RAT1.xt=1;xRAT1=toCoordRelX(30,E3._w,E3_escala,E3_Ox);yRAT1=toCoordRelY(140,E3._h,E3_escala,E3_Oy)'">
+   <param name="A_29" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='reini=1' hacer='ini_func();ini_pos();cambiaSignos();;REINIT_Polinomios();iniE1();'">
+   <param name="A_30" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='aux=((reini)?Reini():0)' hacer='aux=(((E3.mouse_pressed)&(ratioActivo))?clicRatio(E3.mouse_x,E3.mouse_y):0)'">
+   <param name="G_01" value="espacio='E2' tipo='texto' expresión='[160,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;}\f1\fs52\b\i\cf0{\*\mjaformula f(x)&nbsp;={\expr polinomio_original\decimals 2\fixed1}}\b0\i0   \par }' fuente='Serif,BOLD+ITALIC,26' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='texto' expresión='[160,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs52\b\i{\*\mjaformula{\fraction{\num d}{\den dx}}f(x)&nbsp;={\expr polinomio_derivado\decimals 2\fixed1}}\i0\b0\par}' fuente='Times New Roman Italic,ITALIC,17' fijo='sí'">
+</ajs>
+
+
+
+</body>
+</html>

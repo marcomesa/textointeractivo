@@ -1,0 +1,1140 @@
+﻿<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title>Libro digital interactivo</title>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/turn.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="fonts/font4.css" type="text/css">
+	<link rel="stylesheet" href="fonts/font3.css" type="text/css">
+	<link rel="stylesheet" href="fonts/font5.css" type="text/css">
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden; ">
+
+	<div id="book">
+	
+		<div class="hard" style="background-image: url(images/fondo.jpg);  border: 2px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; font-size:65px; position: absolute; top: 40px; left:150px; right:0; bottom:55px;"><font color="white">MATEMÁTICAS<br><br>BÁSICAS</font></h1>
+			<p style="position: absolute; top: 190px; left:290px; right:0;"><img src="images/portada.png" width="380px"></p>
+			<h1 class="t11" style="text-shadow: 2px 4px #89a; font-size:45px; position: absolute; top: 570px; left:150px; right:0;""><font color="112211" size="7">INTERACTIVO</font></h1>
+			
+		</div>
+		
+		<div class="hard" style="background-image: url(images/cover.png);">
+		<p align="center" style="position: absolute; bottom: 350px; left:0; right:0;"> <a id="logo"><img src="images/logo3.svg" alt="Descartes"></a>	</p>
+		</div>
+		
+		<div class="derecha">
+			<p align="center" style="position: absolute; top: 100px; left:0; right:0;"><span style="font-size:36px"><strong><big>MATEMÁTICAS OPERATIVAS</big></strong></span><br><span style="font-size:28px"><big>INTERACTIVO</big></span></p>
+			<br><br>
+			<p align="center" style="position: absolute; top: 240px; left:0; right:0;">Guilda Viviana Dávila Durán<br><br>
+			Marco Tulio Mesa Cardona<br><br>
+			Juan Guillermo Arango Arango<br><br>
+			Institución Universitaria Pascual Bravo<br></p>
+			<p align="center" style="position: absolute; bottom: 100px; left:0; right:0;">Fondo Editorial Pascual Bravo<br><br><img src="images/logo_pascual.png" width="130px"></p>
+			<p align="center" style="position: absolute; bottom: 60px; left:0; right:0;">Medellín</p>
+		</div>
+		
+		<div class="izquierda">
+			<p><span style="font-size:16px">Título de la obra<br>
+			Matemáticas Operativas<br><br>
+			Autores<br>
+			Guilda Viviana Dávila Durán<br>
+			Marco Tulio Mesa Cardona<br>
+			Juan Guillermo Arango Arango<br><br>
+			Primera edición: 2019</span></p>
+			<br><br>
+			<p> <span style="font-size:16px">Diseño del libro: Juan Guillermo Rivera Berrío<br>Diseño de cubierta: Diana María Velásquez García<br>
+			Librería turn.js: Emmanuel García<br>
+			Herramienta de edición: DescartesJS<br>
+			Fuente: Amaranth<br>
+			Obra diseñada a partir del libro "Matemáticas Básicas" de Carlos Rojas Hincapié</span></p>
+			<p> <span style="font-size:16px">Fondo Editorial Pascual Bravo<br>
+			Calle 73 73A-226<br>
+			PBX: (574) 4480520<br>
+			Apartado 6564<br>
+			Medellín, Colombia<br>
+			<a style="font-size:16px" href="http://www.pascualbravo.edu.co/" target="_blank"><font color="blue">www.pascualbravo.edu.co</font></a></span></p>
+			<p style="font-size:16px; position: absolute; bottom: 60px; left:0; right:0;"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="images/88x31.png" style="height:40px; width:110px" /></a><br/><a style="font-size:16px" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><font color="blue">Creative Commons Attribution License 4.0</font></a> license.</p>
+			<p align="left"></p>
+		</div>
+		
+		<div class="derecha">
+			<h2 class="t2">Tabla de contenido</h2>
+				<p><a class="a2" href="javascript:myFunction(7)"><b>Prólogo</b><span class="span2">vii</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(9)"><b>Conceptos Preliminares</b><span class="span2">9</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(10)">0. El sistema de los números reales<span class="span2">10</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(10)">0.1. Los números naturales<span class="span2">10</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(10)">0.2. Los números enteros<span class="span2">10</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(11)">0.3. Los números racionales<span class="span2">11</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(13)">0.4. Los números irracionales<span class="span2">13</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(13)">0.5. Los números reales<span class="span2">13</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(14)">0.6. Practiquemos<span class="span2">14</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(19)"><b>Potenciación</b><span class="span2">19</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(20)">1. Potenciación<span class="span2">20</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(22)">1.1. Propiedades de la potenciación<span class="span2">22</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(24)">1.2. Practiquemos<span class="span2">24</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(27)"><b>Radicación</b><span class="span2">27</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(28)">2. Radicación<span class="span2">28</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(29)">2.1. Propiedades de los radicales<span class="span2">29</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(30)">2.2. Operaciones con expresiones radicales<span class="span2">30</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(31)">2.3. Simplificar expresiones radicales<span class="span2">31</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(32)">2.4. Practiquemos<span class="span2">32</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(35)"><b>Expresiones algebraicas</b><span class="span2">35</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(36)">3. Expresiones algebraicas<span class="span2">36</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(36)">3.1. Definiciones preliminares<span class="span2">36</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(41)">3.2. Polinomios<span class="span2">41</span></a></p> 
+				 
+								
+				<h3>iii</h3>	
+		</div>
+		
+	<div class="izquierda">
+				<p><a class="a2" href="javascript:myFunction(42)">3.3. Suma y resta de polinomios<span class="span2">42</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(45)">3.4. Producto de monomios entre si<span class="span2">45</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(46)">3.5. Producto de polinomios<span class="span2">46</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(47)">3.6. Productos notables<span class="span2">47</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(53)">3.7. División de polinomios<span class="span2">53</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(57)">3.8. Practiquemos<span class="span2">57</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(60)"><b>Factorización</b><span class="span2">60</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(62)">4. Factorización de polinomios<span class="span2">62</span></a></p> 			
+				<p><a class="a2" href="javascript:myFunction(62)">4.1. Factor común<span class="span2">62</span></a></p> 				
+				<p><a class="a2" href="javascript:myFunction(64)">4.2. Diferencia de cuadrados<span class="span2">64</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(67)">4.3. Trinomio de la forma x<sup>2</sup> +  bx + c<span class="span2">67</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(69)">4.4. Trinomio de la forma ax<sup>2</sup> +  bx + c<span class="span2">69</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(72)">4.5. Suma de cubos<span class="span2">72</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(73)">4.6. Diferencia de cubos<span class="span2">73</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(74)">4.7. Factorización por agrupación<span class="span2">74</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(75)">4.8. Practiquemos<span class="span2">75</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(76)"><b>Fracciones algebraicas</b><span class="span2">76</span></a></p> 
+				<p><a class="a2" href="javascript:myFunction(78)">5. Fracciones Racionales<span class="span2">78</span></a></p> 			
+				<p><a class="a2" href="javascript:myFunction(78)">5.1. Simplificación de fracciones aritméticas<span class="span2">78</span></a></p> 	
+				<p><a class="a2" href="javascript:myFunction(79)">5.2. Simplificación de fracciones racionales<span class="span2">79</span></a></p> 	
+				<p><a class="a2" href="javascript:myFunction(81)">5.3. Suma y diferencia de fracciones racionales<span class="span2">81</span></a></p> 	
+				<p><a class="a2" href="javascript:myFunction(83)">5.4. Producto de fracciones racionales<span class="span2">83</span></a></p> 	
+				<p><a class="a2" href="javascript:myFunction(85)">5.5. División de fracciones racionales<span class="span2">85</span></a></p> 	
+				
+			
+
+		<h3>iv</h3>	
+		</div>
+	
+			<div class="derecha">
+				<p><a class="a2" href="javascript:myFunction(87)">5.6. Practiquemos<span class="span2">87</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(88)">Bibliografía<span class="span2">88</span></a></p>
+			
+				<h3>v</h3>	
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+		<div class="derecha">
+			<h1>Prólogo</h1>
+			<p>De la colección iCartesiLibri surge este libro digital interactivo, diseñado de tal forma que permita el aprendizaje significativo a través de la intervención directa y personal del usuario, el cual se convierte en el protagonista del libro, en tanto que podrá interactuar con algunos objetos de aprendizaje. Estos objetos de aprendizaje interactivos fueron diseñados con el editor DescartesJS y GeoGebra.</p>
+
+			<div class="nt">La herramienta DescartesJS se caracteriza por una innata interactividad, por permitir realizar representaciones de objetos bi y tridimensionales, por gestionar expresiones de texto y de fórmulas, por integrar objetos multimedia como imágenes, audios y vídeos, por tener la posibilidad de reflejar casos concretos y también potenciar la conceptualización de tareas y procedimientos mediante la utilización de semillas aleatorias y controles numéricos, gráficos y de texto, y con ellos poder abordar la evaluación de manera automática, tanto la correctiva como la formativa. Con Descartes es posible el diseño y desarrollo de objetos educativos que promueven el aprendizaje significativo, posibilitando esa deseada construcción del conocimiento.<sup>1</sup></div>
+
+			<p>Todos los recursos incluidos en este libro se basan en el estándar HTML5 y consecuentemente son plenamente accesibles y operativos en cualquier ordenador, tableta o smartphone sin más que utilizar un navegador compatible con dicho estándar. Diseñar en HTML5, significa que usaremos:</p> 
+			
+			<ul style="list-style-type: disk">
+				<li>Lenguaje HTML</li>
+				<li>Hojas de estilo CSS</li>
+				<li>Programación en JavaScript</li>
+			</ul>
+			
+			
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>1</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/iCartesiLibri/descripcion.htm" target="_blank"><font color="blue">http://proyectodescartes.org/iCartesiLibri/descripcion.htm</font></a>.</div>
+			<h3>vii</h3>
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+
+		<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Capitulo 0</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Conceptos Preliminares</font></h1>
+			<p align="center" style="position: absolute; bottom: 110px; left:130px; right:0;"><font color="black" size="5"><b>Guilda Viviana Dávila Durán<br>
+			Marco Tulio Mesa Cardona<br>
+			Juan Guillermo Arango Arango<br><br></b></font></p>
+		</div>
+		
+		<div class="izquierda">
+			<h1>0. Concepto preliminares</h1>
+			<p>El sistema de los Números Reales x&lt;5 &alpha; &Alpha; &ge; x<sup>2</sup> X<sub>1</sub> &infin; &rarr; &larr; <b>F</b><span class="vector2">&rarr;</span> <b>R</b><span class="vector2">&rarr;</span>  8&bull;5 lo conforman los siguientes conjuntos numéricos:</p>
+			<p><img src="Imagenes/img01.png" style="float:left; width:222px" border="0"/></p>
+			<p>El buscador de Google o buscador web de Google es un motor de búsqueda en la web propiedad de Alphabet Inc., es el motor de búsqueda más utilizado en la Web, ​ recibe cientos de millones de consultas cada día a través de sus diferentes servicios..</p>
+			<p class="t4">0.1. El conjunto de los Números Naturales (N)</p>
+			<p>N = { 1, 2, 3, 4, 5, 6, 7,.......}</p>
+			<p>Se denomina el conjunto de los Números Naturales o enteros positivos. Están definidas las siguientes operaciones básicas: adición y multiplicación. El conjunto de los Números Naturales surgió de la necesidad de contar, lo cual se manifiesta en el ser humano desde sus inicios. Este conjunto se caracteriza porque tiene un número ilimitado de elementos</p>
+			<p class="t4">0.2. El conjunto de los Números Enteros (Z)</p>
+            <p align="center">Z  =   { .... –3, -2, -1, 0, 1, 2, 3,...}</p>
+			<p>El Conjunto de los Números Enteros surge de la necesidad de dar solución general a la sustracción, pues cuando el sustraendo es mayor que el minuendo, esta sustracción no tiene solución en los Números Naturales (por ejemplo: 5 – 20 =  ¿?). Debido a esto, la recta numérica se extiende hacia la izquierda, de modo que a cada punto que</p>
+						
+			<h3>10</h3>
+		</div>
+		
+		<div class="derecha">
+			<p> representa un número natural le corresponda un punto simétrico, situado a la izquierda del cero. Punto simétrico es aquel que está ubicado a igual distancia del cero (uno a la derecha y el otro a la izquierda de él). Se dividen en:</p>
+			<p align="center">Enteros Negativos: Z<sup>-</sup>, Enteros Positivos:  Z<sup>+</sup> y el Cero: {0}</p>
+			<p>Por lo tanto, el Conjunto de los Números Enteros es la unión de los tres subconjuntos mencionados:      Z  =  Z<sup>-</sup> U  { 0 }  U  Z<sup>+</sup></p>
+			<p class="t4">0.3. El conjunto de los Números Racionales (Q)</p>
+			<p>Q  = {....- ¾, - ½, - ¼ , 0, ¼ , ½, ¾,.....}</p> 
+			<p>El conjunto de los Números Racionales se creó debido a las limitaciones de cálculo que se presentaban en el conjunto de los Números Naturales y Números Enteros. Para solucionar esta dificultad, se creó este conjunto, el cual está formado por todos los números de la forma a / b. Esta fracción en la cual el numerador es "a" y el denominador "b" donde a, b números enteros con b distinto de cero.</p>
+			<p>Este conjunto se representa gráficamente, dividiendo cada intervalo de una recta numérica en espacios iguales, que representen números enteros.</p> 
+			
+			<p align="center"><iframe src="interactivos/objeto1_JS/2_1/index.html" width="600px" height="300px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto1_JS/2_1/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+				<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+			
+			<h3>11</h3>
+		</div>
+		
+		<div class="izquierda">
+		<p>Observa la representación en la recta de fracciones propias e impropias</p>
+		<p align="center"><iframe src="interactivos/objeto1_JS/2_1/index1.html" width="650px" height="800px" frameborder="no" scrolling="no"></iframe></p>
+		
+	
+			<h3>12</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>Cada una de estas subdivisiones representa una fracción con denominador igual al número de partes de la subdivisión. 
+			Cada fracción es un número racional y cada número racional consta de infinitas fracciones equivalentes.</p>
+			<p class="t4">0.4. Conjunto de Números Irracionales (Q*)</p>
+			<p>Conjunto de Números Decimales Infinitos no Periódicos. Este conjunto surgió de la necesidad de reunir a ciertos números que no pertenecen a los conjuntos anteriores; entre ellos se pueden citar a las raíces inexactas, el número Pi, etc. A él pertenecen todos los números decimales infinitos puros, es decir aquellos números que no pueden transformarse en una fracción.</p>        
+		
+			<p>No deben confundirse con los números racionales, porque éstos son números decimales finitos, infinitos periódicos e infinitos semiperiódicos que sí pueden transformarse en una fracción.</p>
+			<<p class="t4">0.5. El conjunto de Números Reales (R)</p>
+			<p>El sistema de los números reales esta conformado por la unión del conjunto de los números racionales y el conjunto de los números irracionales:      R = Q U Q*</p> 
+			
+			<p> <img src="Imagenes/img01a.png" style="float:left; width:400px" border="0"/></p>
+			<p>Representación gráfica del conjunto de los números reales.</p>
+			<p>Todos los conjuntos numéricos pueden ser representados en la recta numérica.</p>
+				
+			<h3>13</h3>
+		</div>
+
+		
+		<div class="izquierda">
+		<h2>0.6. Practiquemos</h2>
+		<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 1</p>
+        <p>Identifica a que conjunto numérico pertenece el número dado. Oprime el botón correspondiente al conjunto numérico al cual pertenece el numero dado, N(Naturales), Z(Enteros), Q(Racional), Q*(Irracional) o R(Real) y verifica tu respuesta</p>   
+        		<p align="center"><iframe src="interactivos/objeto1_JS/1_1/interactivo1.html" width="750px" height="450px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto1_JS/1_1/interactivo1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+				<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<h3>14</h3>
+		</div>
+
+		
+		<div class="derecha">
+		<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 2</p>
+		<p>Clasifica cada uno de los siguientes números en el recuadro correspondiente al conjunto numérico, ubicándolos en el conjunto más pequeño al que pertenezcan:</p>
+		<p align="center" class="escena6" style="height:500px;"><iframe src="interactivos/Clasifica3/index.html" style="border:0;" width="700px" height="500px" scrolling="no"></iframe></p>
+			<h3>15</h3>
+		</div>
+
+		<div class="izquierda">
+		<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 3</p>
+		<p><img src="images/printer.png" style="float:left; width:45px" border="0"/>Imprimir: Resuelve los siguientes ejercicios con su debido procedimiento.</p>
+		
+		<p><img src="Imagenes/img01b.png" style="float:left; width:430px" border="0"/></p>
+		<p></p>
+			<h3>16</h3>
+		</div>
+
+		<div class="derecha">
+		<p></p>
+		<p></p>
+		<p><img src="Imagenes/img01c.png" style="float:left; width:430px" border="0"/></p>
+			<h3>17</h3>
+		</div>
+		
+		<div class="izquierda">
+			
+		</div>
+		
+		<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Capitulo 1</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Potenciación</font></h1>
+			<p align="center" style="position: absolute; bottom: 155px; left:130px; right:0;"><font color="black" size="5"><b>Carlos Alberto Rojas Hincapié</b></font></p>
+		</div>
+		
+		<div class="izquierda">
+		<h1>1. Potenciación</h1>
+		<p> En la nomenclatura de la potenciación se diferencian tres partes, la base, el exponente y la potencia.</p>
+		<p>Una potencia es el resultado de multiplicar un número por sí mismo varias veces. El número que multiplicamos se llama base, el número de veces que multiplicamos la base se llama exponente.</p>
+		<p align="center"><img src="Imagenes/img02a.png" width="330px" border="0"/></p>
+		<p>El exponente determina la cantidad de veces que la base se multiplica por sí misma:</p>
+		<p align="center"><iframe src="interactivos/objeto2_JS/1_1/escena1.html" width="450px" height="250px" frameborder="no" scrolling="no"></iframe></p>
+			
+			<h3>20</h3>
+		</div>
+
+		<div class="derecha">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p align="center" class="escena6a" style="height:600px">1. Ingresa la base y el exponente indicado, oprime la tecla "intro" y verifica.<br>
+				<iframe src="interactivos/objeto2_JS/1_1/escena3a.html" width="450px" height="200px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto2_JS/1_1/escena3a.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=500,height=300');return false;">
+				<br><br><img src="images/amp.png" style="float:right; width:80px" border="0" /></a><br><br>
+			2. Verifica ingresando la base y el exponente del ejercicio propuesto y escribe la potencia, (recuerda (B)<sup>E</sup> = P), oprime la tecla "intro" para verifica.<br><br>
+				<iframe src="interactivos/objeto2_JS/1_1/escena4.html" width="550px" height="180px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto2_JS/1_1/escena4.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=600,height=280');return false;">
+				<br><img src="images/amp.png" style="float:right; width:80px" border="0" /></a></p>
+		
+			<h3>21</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p class="t4">1.1. Propiedades de la potenciación</p>
+		<p>Las propiedades de la potenciación son válidas para todos los conjuntos númericos.</p>
+		<p align="center"><iframe src="interactivos/escena1.html" width="700px" height="150px" frameborder="no" scrolling="no"></iframe><br>
+		<iframe src="interactivos/objeto2_JS/1_1/index.html" width="700px" height="500px" frameborder="no" scrolling="no"></iframe></p>
+			
+			<h3>22</h3>
+		</div>
+		
+		<div class="derecha">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Verifica lo aprendido en esta sección por medio de un paso a paso.</p>
+			<p align="center" class="escena6a" style="height:450px"><iframe src="interactivos/objeto2_JS/1_1/escena2a.html" width="550px" height="400px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto2_JS/1_1/escena2a.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=500');return false;">
+				<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+			<p>Recuerda, una potencia que tiene de base una potencia, se coloca la misma base y se multiplican los exponentes.</p>
+
+		<h3>23</h3>
+		</div>
+		
+		
+		<div class="izquierda">
+		<h2>1.2. Practiquemos</h2>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 1</p>
+			<p>Dar click en el boton ejercicio, soluciona en tu cuaderno, escribe el exponente, la base y pulsa la tecla "intro" y verifica tu respuesta.</p>
+			<p align="center"><iframe src="interactivos/objeto2_JS/1_1/index1.html" width="700px" height="500px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto2_JS/1_1/index1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=500');return false;">
+				<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		<h3>24</h3>
+		</div>
+		
+		<div class="derecha">
+		<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 2</p>
+		<p>Mide tus conocimientos de lo aprendido en esta sección y responde las siguientes preguntas seleccionando la respuesta correcta.</p>
+		<p align="center" class="escena6" style="height:500px;"><iframe src="interactivos/objeto2_JS/1_1/Seleccion_multiple7-JS/index.html" style="border:0;" width="700px" height="500px" scrolling="no"></iframe></p>
+
+		<h3>25</h3>
+		</div>
+		
+		<div class="izquierda">
+			
+		</div>
+		
+		<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Capitulo 2</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Radicación</font></h1>
+			<p align="center" style="position: absolute; bottom: 155px; left:130px; right:0;"><font color="black" size="5"><b>Carlos Alberto Rojas Hincapié</b></font></p>
+		</div>
+		
+		<div class="izquierda">
+		<h1>2. Radicación</h1>
+		<p>Las expresiones radicales son expresiones que incluyen un radical, el cual es el símbolo de calcular una raíz.</p>
+		<p>En la nomenclatura de la radicación se tienen las siguientes partes:</p>
+		<p align="center"><img src="Imagenes/img02b.png" "width:550px" border="0"/></p>
+		<p align="center"><iframe src="interactivos/objeto2_JS/3_1/interactivo2.html" width="700px" height="350px" frameborder="no" scrolling="no"></iframe></p>
+		<p></p>
+			<h3>28</h3>
+		</div>
+
+		<div class="derecha">
+		<p class="t4">2.1. Propiedades de los Radicales</p>
+		<p align="center"><iframe src="interactivos/objeto2_JS/2_1/index.html" width="700px" height="650px" frameborder="no" scrolling="no"></iframe></p>
+		
+		<p></p>
+		<p></p>
+			<h3>29</h3>
+		</div>
+		
+		<div class="izquierda">
+		<p class="t4">2.2. Operaciones con expresiones Radicales</p>
+		<p>Para operar sumas o restas de expresiones radicales, deben tener el mismo índice y el mismo radicando, o sea radicandos semejantes.</p>
+		<p align="center"><iframe src="interactivos/objeto2_JS/3_1/interactivo1.html" width="600px" height="80px" frameborder="no" scrolling="no"></iframe></p>
+		<p>Resuelva expresiones radicales de suma y resta. ingresa el coeficiente numérico y el valor del radical, pulsa la tecla "intro" y observa la solución.</p>
+		<p align="center"><iframe src="interactivos/objeto2_JS/3_1/index.html" width="600px" height="350px" frameborder="no" scrolling="no"></iframe></p>
+		<p align="center"><a href="interactivos/objeto2_JS/3_1/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=400');return false;">
+		<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<h3>30</h3>
+		</div>
+		
+		<div class="derecha">
+		<p class="t4">2.3. Simplificar expresiones radicales</p>
+		<p>Para simplificar expresiones radicales, buscamos términos exponenciales dentro del radical, donde usamos la factorización o descomposición en factores primos y aplicamos las reglas de los exponentes.</p>
+		<p align="center"><iframe src="interactivos/escena2.html" width="700px" height="130px" frameborder="no" scrolling="no"></iframe></p>
+		<p align="center"><iframe src="interactivos/objeto2_JS/3_1/index1.html" width="700px" height="350px" frameborder="no" scrolling="no"></iframe></p>
+		<p align="center"><a href="interactivos/objeto2_JS/3_1/index1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=400');return false;">
+		<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+			<h3>31</h3>
+		</div>
+		
+		<div class="izquierda">
+		<h2>2.4. Practiquemos</h2>
+		<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 1</p>
+		<p>1. Resuelve y simplifica en tu cuaderno aplicando las propiedades vistas en el capítulo</p>
+		<p align="center"><img src="Imagenes/img03a.png" "width:600px" border="0"/></p>
+		<p>2. Resuelve y simplifica en tu cuaderno aplicando las propiedades vistas en el capítulo</p>
+		<p align="center"><img src="Imagenes/img03b.png" "width:600px" border="0"/></p>
+			<h3>32</h3>
+		</div>
+		
+		<div class="derecha">
+		<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 2</p>
+		<p>Mide tus conocimientos de lo aprendido en esta sección y responde las siguientes preguntas tipo icfes:</p>
+		<p align="center" class="escena6" style="height:500px;"><iframe src="interactivos/objeto2_JS/3_1/Seleccion_multiple7-3_JS/index.html" style="border:0;" width="700px" height="500px" scrolling="no"></iframe></p>
+
+			<h3>33</h3>
+		</div>
+		
+		<div class="izquierda">
+			
+		</div>
+		
+		<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Capitulo 3</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Expresiones Algebraicas</font></h1>
+			<p align="center" style="position: absolute; bottom: 155px; left:130px; right:0;"><font color="black" size="5"><b>Carlos Alberto Rojas Hincapié</b></font></p>
+		</div>
+		
+		<div class="izquierda">
+			<h1>3. Expresiones algebraicas</h1>
+			<h2>3.1.Definiciones preliminares</h2>
+			<p class="t4">3.1.1. Expresión algebraica:</p>
+			<p class="sg">Combinación de números, letras, signos de agrupación, con operaciones indicadas. Por ejemplo:</p>
+			<p align="center"><iframe src="interactivos/expresiones_algebraicas/escena1.html" width="400px" height="80px" frameborder="no" scrolling="no"></iframe></p>
+			<p class="t4">3.1.2. Términos en una expresión algebraica:</p>
+			<p class="sg">Se llama término en una expresión algebráica, a cada parte de ella que viene a ser separada por el signo mas ( + ) ó el signo menos ( - ), 
+			los términos están formados por números y letras o expresiones combinadas multiplicadas entre sí (llamados factores). Por ejemplo:</p>
+			<p align="center"><iframe src="interactivos/expresiones_algebraicas/escena2.html" width="440px" height="100px" frameborder="no" scrolling="no"></iframe></p>
+			<p class="sg">El término puede tener factor literal y factor numérico o coeficiente numérico o coeficiente del término.</P>
+		<h3>36</h3>
+		</div>
+		
+		<div class="derecha">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Observa y explora las diferentes expresiones algebraicas.</p>
+			<p align="center" class="escena6a" style="height:550px;"><iframe src="interactivos/objeto3_JS/3_1/interactivo1.html" width="608px" height="560" frameborder="no" scrolling="no"></iframe><p align="center" style="position:relative; bottom: 20px;"><small>Escena de Consolación Ruiz Gil con licencia <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><font color="blue"> CC by-nc-sa</font></a></small></p>
+					
+		<h3>37<h3>		
+		</div>
+		
+		<div class="izquierda">
+			<p>Cuando un término en apariencia no presenta coeficiente numérico, como en la expresión algebraica b – 4c en donde b es el término que en apariencia no presenta el coeficiente numérico, se asume a la unidad ( 1 ) como su coeficiente numérico. Luego el término 1b = b.</p>
+			<p>Para conocer el valor numérico de una expresión algebraica, se sustituyen las letras por números reales y se efectúan operaciones. Por ejemplo:</p>
+			<p align="center"><iframe src="interactivos/expresiones_algebraicas/escena3.html" width="700px" height="250px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/expresiones_algebraicas/escena3.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=250');return false;">
+				<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+			
+			<p class="t4">3.1.3. Términos semejantes:</p>
+			<p class="sg">Aquéllas expresiones que poseen una misma parte, bien sea literal (letras) o radical (raíces). Por ejemplo:</p>
+			<p align="center"><iframe src="interactivos/expresiones_algebraicas/escena4.html" width="650px" height="80px" frameborder="no" scrolling="no"></iframe></p>
+	
+		<h3>38</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>Los términos semejantes pueden sumarse o restarse. Por ejemplo:</p>
+			
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/escena1.html" width="700px" height="350px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto3_JS/1_1/escena1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=700,height=400');return false;">
+				<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+			
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio</p>
+			<p>Simplificar términos semejantes en expresiones algebraicas cuando sea posible.</p>
+			<p align="center"><img src="Imagenes/img04a.png" "width:700px" border="0"/></p>
+		<h3>39</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Verifica los conocimientos de lo visto en esta sección:</p>
+			<p align="center" class="escena6a" style="height:470px;"><iframe src="interactivos/objeto3_JS/1_1/2m_b01_t02_s01-JS/monomios_1.html" width="700px" height="500" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><a href="interactivos/objeto3_JS/1_1/2m_b01_t02_s01-JS/monomios_1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=790,height=540');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>1</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/Telesecundaria/materiales_didacticos/2m_b01_t02_s01_descartes-JS/index.html" target="_blank"><font color="blue">http://proyectodescartes.org/Telesecundaria/materiales_didacticos/2m_b01_t02_s01_descartes-JS/index.html</font></a>.</div>
+		
+		<h3>40</h3>
+		</div>
+		
+		<div class="derecha">
+			<h2>3.2. Polinomios</h2>
+			<p>Son expresión algebraica con características especiales, así por ejemplo un polinomio en la variable x, es una expresión algebraica de la forma:</p>
+			<p class="postit4a">P( x ) = a<sub>n</sub>x<sup>n</sup> + a<sub>n-1</sub>x<sup>n-1</sup> + a<sub>n-2</sub>x<sup>n-2</sup> + … + a<sub>1</sub>x + a<sub>0</sub></p>
+			<p class="sg"><UL type = disk ><li>n es un entero no negativo.</p>
+			<li>a<sub>n</sub>, a<sub>n-1</sub>, a<sub>n-2</sub>, …, a<sub>1</sub>, a<sub>0</sub>  son números reales.</p>
+			<li>a<sub>n</sub>, a<sub>n-1</sub>, a<sub>n-2</sub>, …, a<sub>1</sub>  son coeficientes del polinomio.</p>
+			<li>a<sub>n</sub>  es el coeficiente principal.</p>
+			<li>a<sub>0</sub>  es el término independiente.</p>
+			<li>El mayor exponente de x se denomina grado del polinomio.</UL></p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/escena2.html" width="700px" height="230px" frameborder="no" scrolling="no"></iframe></p>
+		<h3>41</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>Algunos polinomios reciben nombres especiales de acuerdo con el número de términos que posean:</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/escena3.html" width="350px" height="100px" frameborder="no" scrolling="no"></iframe></p>
+			<p>Simplifiquemos polinomios, seleccionando el tipo de operación y verifica tu solución.</P>
+			<p class="t4">3.3. Suma y resta de polinomios</p>
+			<p>Sean los polinomios: P1 = x<sup>3</sup> + 2x<sup>2</sup> – 5x + 7 y P2 = 4x<sup>3</sup> – 5x<sup>2</sup> + 3</p>
+			<p>1. Se coloca el primer polinomio y a continuación se le suma o adiciona el segundo polinomio.</P>
+			<p align="center">P1 + P2 = ( x<sup>3</sup> + 2x<sup>2</sup> – 5x + 7 ) +  ( 4x<sup>3</sup> – 5x<sup>2</sup> + 3 )</p>
+			<p>2. Se eliminan signos de agrupación ( paréntesis, llaves, corchetes )</p>
+			<p align="center">P1 + P2 = x<sup>3</sup> + 2x<sup>2</sup> – 5x + 7 + 4x<sup>3</sup> – 5x<sup>2</sup> + 3</p>
+			<p>Si a un signo de agrupación (paréntesis, llaves, corchetes) lo antecede un signo mas (+), al eliminar el signo de agrupación, todos los términos que haya dentro de él quedarán con los mismos signos, para el caso, que el signo de agrupación lo antecede un signo menos (-), o sea en la resta, al eliminar el signo de agrupación todos los términos dentro de éste cambian de signo. </p>
+		<h3>42</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>3. Se realizan las operaciones de sumas o restas de términos semejantes, los que no son semejantes se dejan igual, después de realizar las operaciones con los términos semejantes se organizan en orden creciente o decreciente para la variable si es el caso.</p>
+			<p align="center">P1 + P2 = ( x<sup>3</sup> + 4x<sup>3</sup> ) + ( 2x<sup>2</sup> – 5x<sup>2</sup> ) – 5x + ( 7 + 3 )</p>
+			<p align="center">P1 + P2 = 5x<sup>3</sup> - 3x<sup>2</sup> – 5x + 10</p>
+			<p>Nota: Se pueden sumar o restar dos o más polinomios. Se suman los términos semejantes de cada polinomio.</p>
+			<p>Modifica los coeficientes de cada polinomio y observa los resultados.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/escena5_suma.html" width="690px" height="340px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto3_JS/1_1/escena5_suma.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=700,height=400');return false;">
+				<br><br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		<h3>43</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Verifica los conocimientos de lo visto en esta sección:</p>
+			<p align="center" class="escena6a" style="height:470px;"><iframe src="interactivos/objeto3_JS/1_1/2m_b01_t02_s01-JS/sumas_1.html" width="700px" height="500" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><a href="interactivos/objeto3_JS/1_1/2m_b01_t02_s01-JS/sumas_1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=790,height=540');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>2</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/Telesecundaria/materiales_didacticos/2m_b01_t02_s01_descartes-JS/index.html" target="_blank"><font color="blue">http://proyectodescartes.org/Telesecundaria/materiales_didacticos/2m_b01_t02_s01_descartes-JS/index.html</font></a>.</div>
+		
+		<h3>44</h3>
+		</div>
+						
+		<div class="derecha">
+			<p class="t4">3.4. Producto de monomios entre si</p>
+			<p>a. Se multiplican los coeficientes numéricos de los términos, aplicando regla de signos:
+			
+			<table align="center">
+			<tr>
+			<td width="300px">Signos iguales:( + )</td>
+			<td width="300px">Signos diferentes:( - )</td>
+			</tr>
+			<tr>
+			<td width="300px">( + ) . ( + ) = ( + )<br>( - ) . ( - ) = ( + )</td>
+			
+			<td width="300px"> ( - ) . ( + ) = ( - )<br>( - ) . ( + ) = ( - )</td></tr>
+			</table>
+			<p>b. Se aplica a la parte literal, el producto de potencias de igual base: b<sup>m</sup> . b<sup>n</sup> = b<sup>m+n</sup><br>
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/escena4.html" width="680px" height="390px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto3_JS/1_1/escena4.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=700,height=430');return false;">
+				<br><br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>	
+		<h3>45</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p class="t4">3.5. Producto de polinomios</p>
+			<p>Para multiplicar polinomios entre sí, se aplica la propiedad distributiva, multiplicando cada término del primer polinomio por todo el segundo polinomio, ejemplo:</p>
+			<p align="center">(3x + 4) . (5x – 7) = 3x . (5x – 7) + 4 . (5x – 7)</p>
+			<p class="sg">Se aplica a la parte literal, el producto de potencias de igual base:<br><p align="center"> b<sup>m</sup> . b<sup>n</sup> = b<sup>m+n</sup></p>
+			<p class="sg">Se aplica propiedad distributiva.</p> 
+			<p align="center">( (3x) . (5x) – (3x) . 7 ) + ( 4 . (5x) – 4 . 7 ) </p>
+			<p class="sg">Suma de términos semejantes.</p> 
+			<p align="center">15x<sup>2</sup> – 21x + 20x – 28 </p>
+			<p align="center">por lo tanto, (3x + 4) . (5x – 7)  =  15x<sup>2</sup> – 1x – 28</p>
+			<p>Se debe tener en cuenta la ley de signos entre los términos a multiplicar, donde los positivos son aquéllos términos que los antecede un signo mas ( + ) ó aquéllos términos que en apariencia no poseen signo que los anteceda; y los negativos son aquéllos términos que los antecede un signo menos ( - ).</p>
+			
+		<h3>46</h3>
+		</div>
+		
+		<div class="derecha">
+		<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Verifica los conocimientos de lo visto en esta sección:</p>
+			<p align="center" class="escena6a" style="height:470px;"><iframe src="interactivos/objeto3_JS/1_1/2m_b02_t02_s01-JS/binomios_3.html" width="700px" height="500" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><a href="interactivos/objeto3_JS/1_1/2m_b02_t02_s01-JS/binomios_3.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=790,height=540');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>3</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/Telesecundaria/materiales_didacticos/2m_b02_t02_s01_descartes-JS/index.html" target="_blank"><font color="blue">http://proyectodescartes.org/Telesecundaria/materiales_didacticos/2m_b02_t02_s01_descartes-JS/index.html</font></a>.</div>
+		
+			<h3>47</h3>
+		</div>
+
+		<div class="izquierda">
+			<p class="t4">3.6. Productos notables</p>
+			<p>Corresponden a productos especiales, destacables en operaciones matemáticas y que tienen su base en la potenciación de polinomios.</p>
+			<p class="t4">3.6.1. Cuadrado de la suma de dos términos</p>
+			<p>Corresponde al cuadrado del primer término, mas el doble producto del primer término por el segundo término, mas el cuadrado del segundo término, veamos como se genera:</p>
+			<p align="center">(a + b)<sup>2</sup> = (a + b) . (a + b) - - - - - - - - Definición de potencia</p>
+			<p class="postit4">(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></p>
+			<p>Ejemplo:</p>
+			<p align="center">(2m + 3)<sup>2</sup> = (2m)<sup>2</sup> + 2 . (2m) . (3) + (3)<sup>2</sup> = 4m<sup>2</sup> + 12m + 9</p>
+			<p class="t4">3.6.2. Cuadrado de la diferencia de dos términos</p>
+			<p>Corresponde al cuadrado del primer término, menos el doble producto del primer término por el segundo término, mas el cuadrado del segundo término, veamos como se genera:</p>	
+			<p align="center">(a - b)<sup>2</sup> = (a - b) . (a - b) - - - - - - - - Definición de potencia</p>
+			<h3>48</h3>
+		</div>
+		
+		<div class="derecha">
+			
+			<p class="postit4">(a - b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup></p>
+			<p align="center">Ejemplo: (y - 5x)<sup>2</sup> = (y)<sup>2</sup> - 2 . (y) . (5x) + (5x)<sup>2</sup></p>
+			<p align="center">= y<sup>2</sup> - 10xy + 25x<sup>2</sup></p>
+			<p> Si se tienen tres o más términos, se agrupan y se aplica la misma definición:</p>
+			<p class="postit4a">(a + b + c)<sup>2</sup> = [( a + b ) + c]<sup>2</sup> = a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>+2ab+2ac+2b</p>
+			<p>Escribe los valores de los coeficientes y exponente, pulsa la tecla "intro" y observa el resultado cuando tiene diferentes exponentes dentro de los términos del binomio.</p>
+							
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/index1.html" width="700px" height="200px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto3_JS/1_1/index1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=700,height=250');return false;">
+				<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>		
+			<h3>49</h3>
+		</div>
+
+		<div class="izquierda">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Verifica los conocimientos de lo visto en esta sección:</p>
+			<p align="center" class="escena6a" style="height:470px;"><iframe src="interactivos/objeto3_JS/1_1/3m_b01_t01_s01-JS/productos_notables_1.html" width="700px" height="500" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><a href="interactivos/objeto3_JS/1_1/3m_b01_t01_s01-JS/productos_notables_1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=790,height=540');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>3</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/index.html" target="_blank"><font color="blue">http://proyectodescartes.org/Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/index.html</font></a>.</div>
+		
+			<h3>50</h3>
+		</div>
+		
+		
+		<div class="derecha">
+			<p class="t4">3.6.3. Potencias de binomios</p>
+			<p>Los binomios se desarrollan de la siguiente forma:</p>
+			<p class="sg">(a + b)<sup>0</sup> = 1</p>
+			<p class="sg">(a + b)<sup>1</sup> = a + b</p>
+			<p class="sg">(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></p>
+			<p class="sg">(a + b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b + 3ab<sup>2</sup> + b<sup>3</sup></p>
+			<p class="sg">(a + b)<sup>4</sup> = a<sup>4</sup> + 4a<sup>3</sup>b + 6a<sup>2</sup>b<sup>2</sup> + 4ab<sup>3</sup> + b<sup>4</sup>
+			<p>Detallando el desarrollo de los binomios se tiene que:</p>
+			<OL type = a><p><LI>El número de términos del resultado es uno más que el exponente del binomio.<br>
+			   <LI>El exponente del primer y último término del binomio, son iguales al exponente del binomio.<br>
+			   <LI>El exponente de “a” disminuye de uno en uno en cada término y en cambio “b” aumenta de uno en uno para cada término.<br>
+			   <LI>Todos los términos del desarrollo de cada binomio son positivos, pero fueran de la forma (a – b)<sup>2</sup>, (a – b)<sup>3</sup>, (a – b)<sup>4</sup>,…, los signos alternarían : ( + ), ( - ), ( + ), ( - ), …<br>
+			   <LI>Al analizar los coeficientes numéricos para cada término del desarrollo de un binomio se observa que son simétricos.</p></OL>
+		
+		<h3>51</h3>
+		</div>
+
+		<div class="izquierda">
+			<p>Los términos simétricos tienen los mismos coeficientes, la simetría de los términos permite disponer los coeficientes de cada binomio en forma de un triángulo conocida como:</p>
+			<p class="sg">Triángulo de Pascal</p>
+			<p align="center"><img src="Imagenes/img04b.png" "width:700px" border="0"/></p>
+			<p class="sg">Con este triángulo se puede deducir que:
+			<OL type = a><p class="sg"><LI>Los coeficientes de los términos de los extremos son iguales a uno.<br>
+				<LI>Sumando dos coeficientes seguidos de una fila, se obtiene un coeficiente de la fila siguiente.</OL></P>
+			<p>Ejemplo:</p>
+			<p class="sg">(m – 2n)<sup>5</sup> = (m)<sup>5</sup> – 5(m)<sup>4</sup>(2n) + 10(m)<sup>3</sup>(2n)<sup>2</sup> – 10(m)<sup>2</sup>(2n)<sup>3</sup> + 5(m)(2n)<sup>4</sup> – (2n)<sup>5</sup></p>
+			<p class="sg">(m – 2n)<sup>5</sup> = m<sup>5</sup> – 10m<sup>4</sup>n + 40m<sup>3</sup>n<sup>2</sup> – 80m<sup>2</sup>n<sup>3</sup> + 80mn<sup>4</sup> – 32n<sup>5</sup></p>
+			
+			<h3>52</h3>
+		</div>
+		
+		<div class="derecha">
+			<p class="t4">3.7. División de polinomios</p>
+			<p class="t4">3.7.1. División de monomios</p>
+			<p>Para  dividir dos monomios:
+			<OL type = 1><p><LI>Se dividen los coeficientes, aplicando la ley de los signos.
+				<LI>En la parte literal, se le aplica la propiedad de división de potencias de igual base:
+					<p align="center"><img src="Imagenes/img04c.png" "width:650px" border="0"/></OL></P>
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/escena6_division.html" width="700px" height="350px" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto3_JS/1_1/escena6_division.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=700,height=400');return false;">
+				<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>	
+			<h3>53</h3>
+		</div>
+
+		<div class="izquierda">
+			<p class="t4">3.7.2. División de un polinomio por un monomio</p>
+			<p>Para dividir un polinomio por un monomio, se divide cada término del polinomio por el monomio, teniendo en cuenta la ley de signos y las propiedades de la potencia de bases iguales, ejemplo:</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/escena7.html" width="650px" height="150" frameborder="no" scrolling="no"></iframe></p>
+			<p class="t4">3.7.3. División de un polinomio por un polinomio</p>
+			<OL type = 1><p><LI>Ordenamos los polinomios en orden decreciente.
+				<LI>Dividimos el primer término del dividendo por el primer término del divisor, para obtener el primer término del cociente.
+				<LI>Multiplicamos este primer término del cociente por cada uno de los términos del divisor y el resultado lo restamos del dividendo, así obtenemos un dividendo parcial.
+				<LI>Continuamos a partir de este dividendo parcial, conforme lo indicamos en los paso 2 hasta obtener un residuo de menor exponente que el divisor.
+				<LI>Si el resultado es CERO la división es EXACTA.</OL></p>
+
+		<h3>54</h3>
+		</div>
+		
+		<div class="derecha">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos </p>
+			<p>Observa varios ejercicios, verás que para hacer la división siempre <b>se dividen</b> los monomios de mayor grado, <b>se multiplica</b> y se cambia de signo, y <b>se suma</b>. Este proceso se repite hasta obtener un resto de grado menor que el del divisor. La división de polinomios debe cumplir dos condiciones. La primera, que el <b>Dividendo = divisor·cociente + resto</b> y, la segunda, que <b>gr(resto)&lt;gr(divisor)</b></p>
+			<p>El grado del cociente es la diferencia de los grados del Dividendo y del divisor. Cuando el resto es cero, se dice que el dividendo es divisible entre el divisor</p>
+			<p align="center" class="escena6a" style="width:350px; height:350px; position:relative; left:170px;"><iframe src="interactivos/objeto3_JS/EDAD_4eso_A_polinomios-JS/division1a.html" width="350px" height="350px" frameborder="no" scrolling="no" ></iframe></p>
+			<p align="center" style="position:relative; bottom: 20px;"><small>Escena de Consolación Ruiz Gil con licencia <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><font color="blue"> CC by-nc-sa</font></a></small><br><a href="interactivos/objeto3_JS/EDAD_4eso_A_polinomios-JS/division1a.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=600');return false;">
+			<img src="images/amp.png" style="width:80px" border="0" /></a></p> 
+		
+			<h3>55</h3>
+		</div>
+
+		<div class="izquierda">
+			<p>En la siguiente escena se ven divisiones de polinomios con la expresión en coeficientes, cuyo procedimiento es el mismo:<b>División</b> de coeficientes, <b>Multiplicación</b> del último coeficiente por el divisor <b>cambiando de signo</b> el resultado y, <b>Suma</b> de este resultado con lo que resta en el dividendo.<br><br>Observa varios ejercicios en cada uno de los tres niveles de la escena.</p>
+			<p align="center" class="escena6a" style="width:450px; height:450px; position:relative; left:120px;"><iframe src="interactivos/objeto3_JS/EDAD_4eso_A_polinomios-JS/division2a.html" width="450px" height="450px" frameborder="no" scrolling="no" ></iframe></p>
+			<p align="center" style="position:relative; bottom: 20px;"><small>Escena de Consolación Ruiz Gil con licencia <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><font color="blue"> CC by-nc-sa</font></a></small><br><a href="interactivos/objeto3_JS/EDAD_4eso_A_polinomios-JS/division2a.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=600');return false;">
+			<img src="images/amp.png" style="width:80px" border="0" /></a></p> 
+		
+			<h3>56</h3>
+		</div>
+		
+		<div class="derecha">
+			<h2>3.8. Practiquemos</h2>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 1</p>
+			<p>Simplifique la siguiente expresion algebraica de ( sumas, restas, productos, cocientes, potencias ), resuelve primero en tu cuaderno y luego verifica la solución.</P><br>
+			<p align="center"><iframe src="interactivos/objeto3_JS/1_1/index.html" width="700px" height="450" frameborder="no" scrolling="no"></iframe>
+			<a href="interactivos/objeto3_JS/1_1/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=480');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<h3>57</h3>
+		</div>
+
+		<div class="izquierda">
+		<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 2</p>
+			<p>Mide tus conocimientos de lo aprendido en esta sección y resuelve la actividad:</p>
+			<p align="center" class="escena6" style="height:550px;"><iframe src="interactivos/objeto3_JS/1_1/Asocia_imagenes-JS/index.html" width="640px" height="540" frameborder="no" scrolling="no"></iframe></p> 
+		
+			<h3>58</h3>
+		</div>
+		
+		<div class="derecha">
+			
+		</div>
+		
+		<div class="izquierda">
+			
+		</div>
+		
+		<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Capitulo 4</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Factorización</font></h1>
+			<p align="center" style="position: absolute; bottom: 155px; left:130px; right:0;"><font color="black" size="5"><b>Carlos Alberto Rojas Hincapié</b></font></p>
+		</div>
+		
+		<div class="izquierda">
+			<h1>4. Factorización de polinomios</h1>
+			<p>Factorizar un polinomio es expresarlo como el producto de otros polinomios que tengan menor grado que éste. Casos de factorización:</p> 
+			<p class="t4">4.1. Factor común</p>
+			<p>Hace referencia al término común de un polinomio, pueden ser factores numéricos o factores literales. Para encontrar el factor común, se realiza lo siguiente:
+			<OL type = 1><p><LI>Encontrar el factor común numérico que corresponde al M.C.D de los coeficientes del polinomio común (MCD = Factores comunes elevados a su menor exponente).
+				<LI>El factor común literal está conformado por aquellas letras que están elevadas a su menor exponente.
+				<LI>El factor común para el polinomio corresponde a la multiplicación del factor común numérico con el factor común literal.</OL>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/index1.html" width="700px" height="240" frameborder="no" scrolling="no"></iframe></p>
+		
+		<h3>62</h3>
+		</div>
+
+		<div class="derecha">
+			<p>Ejemplo: Encontrar el factor común para el polinomio: 3m<sup>3</sup> – 6m<sup>2</sup>n</p>
+			<p class="sg">Factor común numérico = MCD (3,6) = 3<br>Factor común literal = m<sup>2</sup><br>Por lo tanto, el factor común del polinomio 3m<sup>3</sup> – 6m<sup>2</sup>n = 3m<sup>2</sup></P>
+			<p>Ahora, veamos por medio de un paso a paso como hallar el factor común de un polinomio, pulsa en botón paso1 y sigue las instrucciónes.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/index2.html" width="700px" height="450" frameborder="no" scrolling="no"></iframe>
+				<a href="interactivos/objeto3_JS/2_1/index2.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=500');return false;">
+				<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		<h3>63</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>Una vez encontrado el factor común para un determinado polinomio, se procede a encontrar el otro factor que multiplica al factor común, dividiendo cada término del polinomio dado por el factor común. Quedando en ésta forma factorizado completamente el polinomio dado.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/escena1.html" width="600px" height="280" frameborder="no" scrolling="no"></iframe></p>
+			<p class="t4">4.2. Diferencia de cuadrados</p>
+			<p>Se caracteriza por ser una diferencia (resta) entre dos términos que poseen raíz cuadrada exacta.</P>
+			<p>Ejemplo: 9a<sup>2</sup> – b<sup>2</sup></p>
+			<p class="sg">raíz cuadrada del primer término ---->  3a<br>raíz cuadrada del segundo término ----> b</p>
+				
+		<h3>64</h3>
+		</div>
+
+		<div class="derecha">
+			<p>Una diferencia de cuadrados se factoriza como la suma de las raíces cuadradas, multiplicada por la diferencia de las mismas, simbólicamente se tiene:</p>
+			<p class="postit4">a<sup>2</sup> – b<sup>2</sup> = ( a + b )( a – b )</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/escena2.html" width="600px" height="210" frameborder="no" scrolling="no"></iframe></p>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio: Factorizar los siguientes polinomios si es posible.</p>
+			<p></p>
+			<p align="center"><img src="Imagenes/img05a.png" "width:700px" border="0"/></p>
+		<h3>65</h3>
+		</div>
+		
+		
+		<div class="izquierda">
+			<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Verifica los conocimientos de lo visto en esta sección:</p>
+			<p align="center" class="escena6a" style="height:470px;"><iframe src="interactivos/objeto3_JS/1_1/3m_b01_t01_s01-JS/factorizacion_2.html" width="700px" height="500" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><a href="interactivos/objeto3_JS/1_1/3m_b01_t01_s01-JS/factorizacion_2.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=790,height=540');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>4</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/index.html" target="_blank"><font color="blue">http://proyectodescartes.org/Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/index.html</font></a>.</div>
+		<h3>66</h3>
+		</div>
+		
+		<div class="derecha">
+			<p class="t4">4.3. Trinomio de la forma x<sup>2</sup> +  bx + c</p>
+			<p>Estos trinomios se factorizan de la siguiente forma:</p>
+			<p>Todo trinomio de la forma x<sup>2</sup> + bx + c, siempre que x<sup>2</sup> + bx + c = 0 tenga solución, equivale al producto de dos binomios o factores.</P>
+			<p class="postit4">x<sup>2</sup> + bx + c = ( x + p )( x + q )</p>
+			<p>Donde el primer término de cada binomio, es la raíz cuadrada del primer término del trinomio "x" y los segundos términos de cada binomio son los números p y q, cuya suma p + q = b  y cuyo producto p . q = c. Simbólicamente se tiene:</P>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/escena3_trinomio1.html" width="700px" height="300" frameborder="no" scrolling="no"></iframe></p>
+		
+			<h3>67</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>Se puede presentar que el trinomio tenga la forma x<sup>2n</sup> + bx<sup>n</sup> + c, el cual se factoriza de igual forma.</p>
+			<p>Ejemplo:</p> 
+			<p class="sg">x<sup>4</sup> – x<sup>2</sup> – 6 = ( x<sup>2</sup> - 3 )( x<sup>2</sup> + 2 )  donde, </p>
+			<p class="sg">b = (-3 + 2) = -1<br> c = (-3)(2) = -6</p>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio: Practiquemos factorizando algunos trinomios, si es posible.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/index3.html" width="640px" height="360" frameborder="no" scrolling="no"></iframe>
+			<a href="interactivos/objeto3_JS/2_1/index3.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=400');return false;">
+			<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<h3>68</h3>
+		</div>
+
+		<div class="derecha">
+			<p class="t4">4.4. Trinomio de la forma ax<sup>2</sup> +  bx + c</p>
+			<p>Estos trinomios se factorizan de la siguiente forma:</p>
+			<p>Se caracterizan por ser muy parecidas a la forma x<sup>2n</sup> + bx<sup>n</sup> + c, con la diferencia de que la variable x<sup>2n</sup> ya tiene un coeficiente "a" diferente de cero y uno. Por ejemplo:</P>
+			<p align="center">2x<sup>2</sup> + 7x – 15<br> 3x<sup>2</sup> + 17x + 10<br>5x<sup>2</sup> – 17x + 6</p>
+			<p>Para factorizar trinomios de la forma ax<sup>2n</sup> + bx<sup>n</sup> + c, lo que se hace es llevarlo a la forma  y<sup>2n</sup> + by<sup>n</sup> + c, y luego se resuelve como en el caso anterior.</p> 
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/escena3_trinomio2.html" width="700px" height="300" frameborder="no" scrolling="no"></iframe></p>
+		
+			<h3>69</h3>
+		</div>
+		
+		<div class="izquierda">
+		<p align="center"><iframe src="interactivos/objeto3_JS/2_1/escena3_trinomio2ej.html" width="670px" height="250" frameborder="no" scrolling="no"></iframe></p>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio: Practiquemos factorizando algunos trinomios, si es posible.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/index4.html" width="700px" height="360" frameborder="no" scrolling="no"></iframe>
+			<a href="interactivos/objeto3_JS/2_1/index4.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=650,height=400');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<h3>70</h3>
+		</div>
+
+		<div class="derecha">
+				<p><img src="images/expl.png" style="float:left; width:35px" border="0"/>xploremos</p>
+			<p>Verifica los conocimientos de lo visto en esta sección:</p>
+			<p align="center" class="escena6a" style="height:470px;"><iframe src="interactivos/objeto3_JS/1_1/3m_b01_t01_s01-JS/factorizacion_1.html" width="700px" height="500" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><a href="interactivos/objeto3_JS/1_1/3m_b01_t01_s01-JS/factorizacion_1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=790,height=540');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>5</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/index.html" target="_blank"><font color="blue">http://proyectodescartes.org/Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/index.html</font></a>.</div>
+		
+		<h3>71</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p class="t4">4.5. Suma de cubos</p>
+			<p>Se trata de suma entre dos términos cuya característica es que pueden expresarse como cantidades que se pueden elevar al cubo, por lo tanto cada término posee raíz cúbica exacta.</p>
+			<p>Ejemplo: x<sup>3</sup> + 27 = x<sup>3</sup> + 3<sup>3</sup></p>
+			<p class="sg">raíz cúbica del primer término ---->  x<br>raíz cúbica del segundo término ----> 3</p>
+			<p>Para factorizar una suma de cubos, se tiene en cuenta lo siguiente:</p>
+			<OL type = 1><p><LI>Una suma de cubos es igual al producto de un binomio (dos términos) por un trinomio (tres términos).
+				<LI>El binomio está formado por la suma de las raíces cúbicas.
+				<LI>El trinomio consta de: cuadrado de la primera raíz, producto de las dos raíces y cuadrado de la segunda raíz.
+				<LI>Los signos del trinomio son: ( + ) , ( – ) , ( + ).</OL></p>
+			<p class="postit4">a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> - ab + b<sup>2</sup>)</p>
+			<p>Ejemplo</p>
+			<p class="sg">y<sup>3</sup> + 64x<sup>3</sup> = (y + 4x)(y<sup>2</sup> - 4xy + 16y<sup>2</sup>)</p>
+	
+		<h3>72</h3>
+		</div>
+
+		<div class="derecha">
+			<p class="t4">4.6. Diferencia de cubos</p>
+			<p>Se trata de resta entre dos términos cuya característica es que pueden expresarse como cantidades que se pueden elevar al cubo, por lo tanto cada término posee raíz cúbica exacta.</p>
+			<p>Ejemplo: p<sup>3</sup> - 8k<sup>3</sup> = p<sup>3</sup> - (2k)<sup>3</sup></p>
+			<p class="sg">Raíz cúbica del primer término ---->  p<br>Raíz cúbica del segundo término ----> 2k</p>
+			<p>Para factorizar una diferencia de cubos, se tiene en cuenta lo siguiente:</p>
+			<OL type = 1><p><LI>Una diferencia de cubos es igual al producto de un binomio (dos términos) por un trinomio (tres términos).
+				<LI>El binomio está formado por la diferencia de las raíces cúbicas.
+				<LI>El trinomio consta de: cuadrado de la primera raíz, producto de las dos raíces y cuadrado de la segunda raíz.
+				<LI>Los signos del trinomio son: ( + ) , ( + ) , ( + ).</OL></p>
+			<p class="postit4">a<sup>3</sup> - b<sup>3</sup> = (a - b)(a<sup>2</sup> + ab + b<sup>2</sup>)</p>
+			<p>Ejemplo</p>
+			<p class="sg">y<sup>3</sup> - 64x<sup>3</sup> = (y -4x)(y<sup>2</sup> + 4xy + 16y<sup>2</sup>)</p>
+		<h3>73</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>Ahora, veamos algunos ejemplos de la factorización de suma y diferencia de cubos.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/index5.html" width="720px" height="330" frameborder="no" scrolling="no"></iframe></p>
+			<p class="t4">4.7. Factorización por agrupación</p>
+			<p>Algunos polinomios no se pueden factorizar directamente, mediante la aplicación de los casos vistos hasta ahora, sino que es necesario agrupar adecuadamente los términos antes de factorizar</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/2_1/escena4_agrupar.html" width="680px" height="170" frameborder="no" scrolling="no"></iframe></p>
+			
+			
+		<h3>74</h3>
+		</div>
+
+		<div class="derecha">
+			<h2>4.8. Practiquemos</h2>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio</p>
+			<p>Mide tus conocimientos de lo aprendido en esta sección y resuelve la actividad:</p>
+			<p align="center" class="escena6" style="height:500px;"><iframe src="interactivos/objeto3_JS/2_1/Secuencias_temporales_2-JS/index.html" width="700px" height="550" frameborder="no" scrolling="no"></iframe></p>
+		<h3>75</h3>
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+
+		<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Capitulo 5</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Fracciones Algebraicas</font></h1>
+			<p align="center" style="position: absolute; bottom: 155px; left:130px; right:0;"><font color="black" size="5"><b>Carlos Alberto Rojas Hincapié</b></font></p>
+		</div>
+		
+		<div class="izquierda">
+			<h1>5. Fracciones Racionales</h1>
+			<p class="t4">5.1. Simplificación de fracciones aritméticas</p>
+			<p>Recordemos:</p>
+			<p class="sg">Para simplificar fracciones, escribimos el numerador y el denominador como un producto de factores y cancelamos los FACTORES COMUNES a ambos.</p>
+			<p class="sg">¡CUIDADO! No podemos simplificar términos. Sólo factores.</p>
+			<p class="sg">Una fracción aritmética está simplificada cuando el único factor común al numerador y al denominador es el número UNO</p>.
+			<p>Ejemplo</p>
+			<p align="center"><img src="Imagenes/img05b.png" "width:750px" border="0"/></p>
+			<p>Para simplificar, cancelamos los FACTORES COMUNES al numerador y al denominador.</p>
+			<p>Cuando el denominador de una fracción es cero ( 0 ) se dice que la fracción no existe o no está definida.</p>
+		
+		<h3>78</h3>
+		</div>
+
+		<div class="derecha">
+			<p class="t4">5.2. Simplificación de fracciones racionales</p>
+			<p>Al igual que las fracciones aritméticas, decimos que una fracción algebraica está simplificada, cuando el único factor común al numerador y al denominador es el número UNO, es decir, cuando el numerador y el denominador sean primos entre sí.</p>
+			<p>Para simplificar fracciones algebraicas procedemos de la siguiente forma:</p>
+			<OL type = 1><p><LI>Factorizamos el numerador y el denominador.</p>
+			<LI>Suprimimos los FACTORES COMUNES al numerador y denominador (¡CUIDADO!). No podemos cancelar sumandos).</p></OL>
+			<p>Ejemplo</p>
+			<p align="center"><img src="Imagenes/img05c.png" "width:750px" border="0"/></p>
+			<p>En algunos casos, se requiere cambiar el orden de los términos del uno o varios factores, para el segundo ejemplo, se requiere cambiar el orden del factor (x – 6), por eso se le antecedió con un signo menos ( – ) al signo de agrupación y se cambió el orden de los términos dentro del signo de agrupación, quedando -(6 - x).</p>
+		<h3>79</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 1: En la siguiente escena simplifica en tu cuaderno la expresión racional dada, luego verifica haciendo clic en el botón "Solución".</p><br><br>
+			<p align="center"><iframe src="interactivos/escena4.html" width="500px" height="500" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><small>Escena de Consolación Ruiz Gil con licencia <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><font color="blue"> CC by-nc-sa</font></a></small></p>
+			<p align="center"><a href="interactivos/escena4.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-360)+',top='+(screen.availHeight/2-360)+',width=720,height=720');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+				
+		<h3>80</h3>		
+		</div>
+		
+		<div class="derecha">
+			<p class="t4">5.3. Suma y diferencia de fracciones racionales</p>
+			<p>Para sumar o restar fracciones racionales hacemos lo siguiente:</p>
+			<OL type = 1><p><LI>Hallamos el mínimo común múltiplo (m.c.m) de los denominadores.
+				<LI>Dividimos el m.c.m. encontrado entre el denominador de cada fracción y lo multiplicamos por el numerador respectivo.
+				<LI>Efectuamos las operaciones indicadas y simplificamos el resultado, si es posible.</p></OL>
+			<p align="center"><img src="Imagenes/img05d.png" "width:600px" border="0"/></p>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 2: Simplifiquemos expresiones racionales de suma y diferencia</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/3_1/escena_s.html" width="700px" height="350px" frameborder="no" scrolling="no"></iframe></p>
+			
+		<h3>81</h3>
+		</div>
+
+		<div class="izquierda">
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 3<br> Resuelve en tu cuaderno y practica simplificando expresiones racionales.</p>
+			<p align="center"><img src="Imagenes/img05e.png" "width:580px" border="0"/></p>
+		
+		<h3>82</h3>
+		</div>
+		
+		<div class="derecha">
+			<p class="t4">5.4. Producto de fracciones racionales</p>
+			<p>Para multiplicar fracciones racionales hacemos lo siguiente:</p>
+			<OL type = 1><p><LI>Factorizamos en primer lugar todos los numeradores y los denominadores.
+				<LI>Se multiplican numeradores entre sí y denominadores entre sí.
+				<LI>Suprimir (cancelar) los factores comunes que aparezcan entre el numerador y el denominador de las fracciones.</p></OL>
+			<p align="center"><iframe src="interactivos/objeto3_JS/3_1/escena_p1.html" width="500px" height="170px" frameborder="no" scrolling="no"></iframe></p>
+			<p>Multipliquemos y simplifiquemos la siguiente fracción racional:</p>
+			<p align="center"><img src="Imagenes/img05f.png" "width:600px" border="0"/></p>
+		
+		<h3>83</h3>
+		</div>
+
+		<div class="izquierda">
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 4<br>Simplifiquemos productos de expresiones racionales.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/3_1/escena_p.html" width="700px" height="200px" frameborder="no" scrolling="no"></iframe></p>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 5<br> Resuelve en tu cuaderno y practica simplificando expresiones racionales.</p>
+			<p align="center"><img src="Imagenes/img05g.png" "width:380px" border="0"/></p>
+		<h3>84</h3>
+		</div>
+		
+		
+		<div class="derecha">
+			<p class="t4">5.5. División de fracciones racionales</p>
+			<p>Para dividir fracciones racionales hacemos lo siguiente:</p>
+			<OL type = 1><p><LI>En primer lugar, la segunda fracción se cambia por su inverso multiplicativo, conviertiendo la división en una multiplicación.
+				<LI>Se continua con el mismo proceso de la multiplicación, factorizamos todos los numeradores y los denominadores.
+				<LI>Se multiplican numeradores entre sí y denominadores entre sí.
+				<LI>Suprimir (cancelar) los factores comunes que aparezcan entre el numerador y el denominador de las fracciones.</p></OL>
+			<p align="center"><iframe src="interactivos/objeto3_JS/3_1/escena_d1.html" width="500px" height="200px" frameborder="no" scrolling="no"></iframe></p>
+			<p>Dividamos y simplifiquemos la siguiente fracción racional:</p>
+			<p align="center"><img src="Imagenes/img05h.png" "width:600px" border="0"/></p>
+		
+		<h3>85</h3>
+		</div>
+
+		<div class="izquierda">
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 6: Simplifiquemos divisiones de expresiones racionales.</p>
+			<p align="center"><iframe src="interactivos/objeto3_JS/3_1/escena_d.html" width="700px" height="260" frameborder="no" scrolling="no"></iframe></p>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 7<br> Resuelve en tu cuaderno y practica simplificando expresiones racionales.</p>
+			<p align="center"><img src="Imagenes/img05i.png" "width:380px" border="0"/></p>
+		<h3>86</h3>
+		</div>
+		
+
+		
+		<div class="derecha">
+			<h2>5.6. Practiquemos</h2>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 8:</p>
+			<p>Simplifica las siguiente expresion racional ( sumas, restas, productos, cocientes, potencias ), resuelve primero en tu cuaderno y luego verifica la solución.</P>
+			<p align="center"><iframe src="interactivos/objeto3_JS/3_1/escena_t.html" width="700px" height="350" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center"><a href="interactivos/objeto3_JS/3_1/escena_t.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=720,height=360');return false;">
+			<img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+				
+		<h3>87</h3>		
+		</div>
+		
+		<div class="izquierda">
+		<h1>Bibliografía</h1><br>
+			<p class="bib">Abreu L., José y Muñoz P., Valentina   (2004). <i>proyectodescartes.org-Telesecundaria </i>Obtenido de: http://proyectodescartes.org/Telesecundaria/materiales_didacticos</p>
+			<p class="bib">Barbero Corral, Eduardo  (2004). <i>ProyectoDescartes.org. </i>Obtenido de: http://proyectodescartes.org/uudd/materiales_didacticos</p>
+			<p class="bib">Barnett, Raymon A.  (1989). <i>Álgebra y Geometría. </i> Bogotá: 2° Ed. Ediciones MC Graw-Hill. </i> 384 pag. </p>
+			
+			<p class="bib">Rodríguez S, Benjamín y otros (1996). <i>Matemáticas con Tecnología Aplicada. </i> Bogotá: Ediciones Prentice Hall. </i> 220 pag.</p>
+		
+			<p class="bib">Ruiz Gil, Consolación (2014). <i>proyectodescartes.org-EDAD</i>Obtenido de: http://proyectodescartes.org/EDAD/materiales_didacticos</p>
+			<p class="bib">Uribe Calad, Julio A. (1989). <i>Elementos de Matemáticas. </i> Medellín: 2° Ed. Ediciones Bedout. </i> 401 pag.</p>
+		
+		<h3>88</h3>
+		</div>
+		
+		<div class="cover">
+			<p align="center" style="position: absolute; bottom: 350px; left:0; right:0;"> <a id="logo"><img src="images/logo3.svg" alt="Descartes"></a>	</p>
+		<div class="gradient"></div>
+		</div>
+		
+</div>
+	<script>
+		$("#book").turn({
+			display: 'double',
+			acceleration: true,
+			gradients: true,
+			elevation: 50,
+		});
+		$(window).bind('keydown', function(e){
+		if (e.target && e.target.tagName.toLowerCase()!='input')
+			if (e.keyCode==37)
+				$('#book').turn('previous');
+			else if (e.keyCode==39)
+				$('#book').turn('next');
+		});
+	</script>
+	
+	
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction(i) {
+   
+	$('#book').turn('page',i+2);
+}
+
+function myFunction2() {
+   
+	$('#book').turn('next');
+}
+
+function myFunction3() {
+   
+	$('#book').turn('previous');
+}
+
+function calculadora() {
+	 var myWindow = window.open("calculadora/index.htm", "_blank","toolbar=yes,scrollbars=no,resizable=yes,top=100,left=800,width=400,height=400");
+}
+
+function imprimir() {
+	 var myPrinter = window.print();
+}
+
+function ayuda() {
+	 var myWindow = window.open("images/info.html", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=100,right=800,width=800,height=600");
+}
+
+</script>
+<div class="dropdown">
+<button onclick="myFunction(3)" class="dropbtn2"></button>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction(4)" class="dropbtn"></button>
+</div>
+
+<!-- Eliminar el comentario para activar el botón del menú tres -->
+<!--
+<div class="dropdown">
+<button onclick="myFunction(6)" class="dropbtn3"></button>
+</div>
+-->
+
+
+<div class="dropdown">
+<button onclick="calculadora()" class="dropbtn4"></button>
+</div>
+<div class="dropdown">
+
+<button onclick="imprimir()" class="dropbtn5"></button>
+<style type="text/css" media="print">
+  @page {size: A4 landscape;}
+</style>
+</div>
+<div class="dropdown">
+<button onclick="ayuda()" class="dropbtn6"></button>
+</div>
+
+<div class="nextdown">
+<button onclick="myFunction2()" class="nextbtn"></button>
+</div>
+<div class="prevdown">
+<button onclick="myFunction3()" class="prevbtn"></button>
+</div>
+</body>
+		
+</html>
+		
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="740" height="400" code="Descartes">
+    <param name="tamaño" value="740x400">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' cID='13e95a9314a' x='0' y='0' ancho='760' alto='140' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='c9aeffdb' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' cID='13e95c39fda' x='0' y='145' ancho='760' alto='255' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='cbffffc3' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='r1' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(420,40,40,30)' valor='&squot;&squot;' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' evaluar='no' ">
+    <param name="C_02" value="id='r2' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(420,82,40,30)' valor='&squot;&squot;' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' evaluar='no' ">
+    <param name="C_03" value="id='n6' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otro ejercicio' expresión='(E1._w-150,E1._h-40,140,30)' valor='0' visible='sí' color='222222' color-int='f0f8ff' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='terminos=ent(rnd*2)+2\na=ent(rnd*8)+2\nb=ent(rnd*8)+2\nc=ent(rnd*8)+2\nd=ent(rnd*8)+2\ne=ent(rnd*8)+2\nr1=&squot;&squot;\nr2=&squot;&squot;' dibujar-si='(r1!=&squot;&squot;)&(r2!=&squot;&squot;)' ">
+    <param name="A_01" value="id='inf' expresión='&squot;\u221e&squot;' evaluar='una-sola-vez' constant='sí' ">
+    <param name="A_02" value="id='menos' expresión='&squot;\u2212 &squot;' evaluar='una-sola-vez' constant='sí' ">
+    <param name="A_03" value="id='menosinf' expresión='&squot;-&squot;+&squot;\u221e&squot;' evaluar='una-sola-vez' constant='sí' ">
+    <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='terminos=ent(rnd*2)+2;a=ent(rnd*8)+2;b=ent(rnd*8)+2;c=ent(rnd*8)+2;d=ent(rnd*8)+2;e=ent(rnd*8)+2' ">
+    <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='rta1=(terminos=3)?a:b;rta2=d;bien1=(a/d)=_Eval_(r1)/_Eval_(r2)?1:0;bien2=(b/d)=_Eval_(r1)/_Eval_(r2)?1:0;bien=bien1+bien2;;' ">
+    <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='terminos=3' expresión='[80,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red99\green0\blue0;}\f0\cf0\fs48\b\i Halla el límite de la funci\i0\b0\cf0\b\i ón f(x) cuando x tiende a \i0\b0\cf0\fs60\b\i ∞\i0\b0\par\f0\cf0\fs48\b\i                        f(x) =\i0\b0\b\i{\*\mjaformula{\fraction{\num{\expr a\decimals 0\fixed1}x{\supix 4}+{\expr b\decimals 0\fixed1}x{\supix 2}+{\expr c\decimals 0\fixed1}}{\den{\expr d\decimals 0\fixed1}x{\supix 4}+{\expr e\decimals 0\fixed1}}}}\i0\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita Cursiva,BOLD+ITALIC,24' align='a_left' ">
+    <param name="G_02" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='terminos=2' expresión='[80,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;}\f0\cf0\fs48\b\i Halla el límite de la función f(x) cuando x tiende a \i0\b0\cf0\fs60\b\i ∞\i0\b0\par\f0\cf0\fs60\b\i                         f(x)\i0\b0\b\i{\*\mjaformula{\fraction{\num{\expr b\decimals 0\fixed1}x{\supix 2}+{\expr c\decimals 0\fixed1}x}{\den{\expr d\decimals 0\fixed1}x{\supix 2}{\supix}+{\expr e\decimals 0\fixed1}x+{\expr ent(rnd*9)+1\decimals 0\fixed1}}}}\i0\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita Cursiva,BOLD+ITALIC,24' align='a_left' ">
+    <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[240,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52\b Lim  f(x)\b0\par\f0\fs52\b x  \b0\fs76\b\i → ∞\i0\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,26' align='a_left' ">
+    <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[360,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs52\b =\b0\f1\fs60\b  \b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,26' align='a_left' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[400,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52\b _____\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,26' align='a_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='bien' expresión='[241,171]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs56\b ¡Excel\b0\cf0\b ente\b0\f1\cf0\b !\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,28' align='a_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='bien' expresión='[240,170]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;}\f0\cf0\fs56\b ¡Excelente!\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,28' align='a_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(bien=0)&(r1!=&squot;&squot;)&(r2!=&squot;&squot;)&(terminos=3)' expresión='[140,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs52\b Lo siento, revisa tus cálculos.\b0\par\f0\cf0\fs52\b La respuesta correcta es \b0\b{\*\mjaformula{\fraction{\num{\expr a\decimals 0\fixed1}}{\den{\expr d\decimals 0\fixed0}}}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,26' align='a_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(bien=0)&(r1!=&squot;&squot;)&(r2!=&squot;&squot;)&(terminos=3)' expresión='[141,151]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;}\f0\cf0\fs52\b Lo siento, revisa tus cálculos.\b0\par\f0\cf0\fs52\b La respuesta correcta es \b0\b{\*\mjaformula{\fraction{\num{\expr a\decimals 0\fixed1}}{\den{\expr d\decimals 0\fixed0}}}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,26' align='a_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(bien=0)&(r1!=&squot;&squot;)&(r2!=&squot;&squot;)&(terminos=2)' expresión='[140,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs52\b Lo siento, revisa tus cálculos.\b0\par\f0\cf0\fs52\b La respuesta correcta es \b0\b{\*\mjaformula{\fraction{\num{\expr b\decimals 0\fixed1}}{\den{\expr d\decimals 0\fixed0}}}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,26' align='a_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(bien=0)&(r1!=&squot;&squot;)&(r2!=&squot;&squot;)&(terminos=2)' expresión='[141,151]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;}\f0\cf0\fs52\b Lo siento, revisa tus cálculos.\b0\par\f0\cf0\fs52\b La respuesta correcta es \b0\b{\*\mjaformula{\fraction{\num{\expr b\decimals 0\fixed1}}{\den{\expr d\decimals 0\fixed0}}}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Negrita,BOLD,26' align='a_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

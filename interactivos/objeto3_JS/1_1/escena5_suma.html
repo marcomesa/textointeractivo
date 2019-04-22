@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Propiedades de la potenciacion</title>
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+  <link rel="stylesheet" href="../../../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font5.css" type="text/css">
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden;">
+
+  <p align="center">
+    <ajs name="Descartes" code="descinst.Descartes.class" width="500" height="300">
+      <param name="tamaño" value="500x300">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="no">
+      <param name="deshacer" value="no">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='404040' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='c1' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a3' expresión='(0,0)' valor='-1' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_02" value="id='c2' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a2' expresión='(0,0)' valor='5' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_03" value="id='c3' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a1' expresión='(0,0)' valor='-1' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_04" value="id='c4' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a0' expresión='(0,0)' valor='1' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_05" value="id='c5' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a3' expresión='(0,0)' valor='0' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_06" value="id='c6' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a2' expresión='(0,0)' valor='5' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_07" value="id='c7' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a1' expresión='(0,0)' valor='-1' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_08" value="id='c8' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='a0' expresión='(0,0)' valor='-3' incr='1' min='-9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+      <param name="C_09" value="id='b9' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='SOLUCiÓN' expresión='(330,180,150,30)' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='16' imagen='imagenes/btn150.png' acción='calcular' parámetro='h=1' dibujar-si='h=0' ">
+      <param name="C_10" value="id='n10' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='OTRO EJEMPLO' expresión='(330,180,150,30)' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='16' imagen='imagenes/btn150.png' acción='calcular' parámetro='h=0;c1=0;c2=0;c3=0;c4=0;c5=0;c6=0;c7=0;c8=0' dibujar-si='h=1' ">
+      <param name="A_01" value="id='e1' evento='sí' acción='inicio' parámetro='h=0;c1=0;c2=0;c3=0;c4=0;c5=0;c6=0;c7=0;c8=0' ejecución='una-sola-vez' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[85,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs36         {\*\mjaformula P1&nbsp;={\expr c1\decimals 0\fixed0}x{\supix 3}+&nbsp;({\expr c2\decimals 0\fixed0}x{\supix 2})&nbsp;+&nbsp;({\expr c3\decimals 0\fixed0}x&nbsp;)&nbsp;+&nbsp;({\expr c4\decimals 0\fixed0})}\par\par}' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[85,55]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs36         {\*\mjaformula P2&nbsp;={\expr c5\decimals 0\fixed0}x{\supix 3}+&nbsp;({\expr c6\decimals 0\fixed0}x{\supix 2})&nbsp;+&nbsp;({\expr c7\decimals 0\fixed0}x&nbsp;)&nbsp;+&nbsp;({\expr c8\decimals 0\fixed0})}\par}' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='h=1' coord_abs='sí' expresión='[80,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 P1 + P2 ={\*\mjaformula{\expr c1+c5\decimals 2\fixed0}x{\supix 3}+&nbsp;({\expr c2+c6\decimals 0\fixed0}x{\supix 2})&nbsp;+&nbsp;({\expr c3+c7\decimals 0\fixed0}x&nbsp;)&nbsp;+&nbsp;({\expr c4+c8\decimals 0\fixed0})}}' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E0' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[60,75]' texto='__________________________________________' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(65,252)' texto='Polinómio 1 (P1)' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E0' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(320,252)' texto='Polinómio 2 (P2)' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(10,220)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 Ingresa los coeficientes del polinomio{\*\mjaformula P(x)&nbsp;=&nbsp;a{\subix 3}x{\supix 3}+&nbsp;a{\subix 2}x{\supix 2}+&nbsp;a{\subix 1}x&nbsp;+&nbsp;a{\subix 0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E0' tipo='polígono' fondo='sí' color='b7ffff' coord_abs='sí' expresión='(0,250)(250,250)(250,300)(0,300)' relleno='d2ffff' ancho='1' lineDash='solid' ">
+      <param name="G_09" value="espacio='E0' tipo='polígono' fondo='sí' color='b7ffff' coord_abs='sí' expresión='(250,250)(550,250)(550,300)(250,300)' relleno='aaff95' ancho='1' lineDash='solid' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>

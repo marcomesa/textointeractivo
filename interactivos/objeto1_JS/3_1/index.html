@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Intervalos no acotados</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body style="margin:0;padding:0; overflow: hidden;">
+
+<p align="center">
+<ajs name="Descartes" width=600 height=400 code="Descartes">
+   <param name="tamaño" value="600x400">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.336, 2015-02-13">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='30' y='100' ancho='90%' alto='55%' despl_imagen='arr-izq' fondo='ccffa5' red='no' red10='no' ejes='405860' texto='405860' números='sí' eje-x='x' eje-y='no'">
+   <param name="C_01" value="id='int' tipo='numérico' interfaz='menú' región='norte' espacio='E1' nombre='Seleccione Intervalo' expresión='(300,10,250,30)' valor='ent(rnd*4+1)' fijo='sí' visible='no' opciones='Abierto a derecha[1],Cerrado a derecha[3],Abierto a izquierda[2],Cerrado a izquierda[4]' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='E2.escala' tipo='numérico' región='norte' espacio='E1' nombre='zoom' expresión='(450,370)' valor='21' min='10' max='100' decimales='0' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='a' tipo='numérico' región='interior' espacio='E2' nombre='Extremo Inferior' expresión='((int=2)|(int=4)?50:600,170,200,25)' valor='ent(rnd*4)+1' incr='1' discreto='sí' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='a' tipo='numérico' región='interior' espacio='E2' nombre='Extremo Superior' expresión='((int=1)|(int=3)?50:600,170,200,25)' valor='ent(rnd*4)+1' incr='1' min='0' max='100' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='x' tipo='gráfico' espacio='E2' color='blanco' color-int='rojo' tamaño='5' expresión='(a,0)' constricción='y=0' fijo='sí'">
+   <param name="C_06" value="id='inicio' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='VER INTERVALO' expresión='(20,330,150,30)' fijo='sí' visible='sí' color='blanco' negrita='sí' fuente puntos='14' imagen='imagenes/btn150.png' acción='inicio' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='a' constante='sí' expresión='(rnd<0.5?ent(rnd*5):-ent(rnd*5))' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='a1' constante='sí' expresión='((int=1)|(int=2))?sgn(a)*(abs(a)-1/10^6):a' evaluar='siempre'">
+   <param name="A_03" value="id='d' constante='sí' expresión='6' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='x.x' constante='sí' expresión='((int=1)|(int=3))?(x.x<a1?x.x:a1):(x.x>a1?x.x:a1)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='int=3' expresión='[50,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs32 Intervalo no acotado cerrado a izquierda\cf1\f2\fs32\b\par (\fs48 -\u8734 \fs32 ,{\*\mjaformula{\expr a}}\fs36 ]\fs24\b0  , \fs32\b x \u8804 {\*\mjaformula{\expr a}}\fs24\b0\par }' fuente='SansSerif,PLAIN,16' decimales='1' fijo='no'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='int=2' expresión='[50,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;}{\colortbl\red32\green48\blue58;}\f1\fs32 Intervalo no acotado cerrado a izquierda\cf0\f2\fs36\b\par (\fs32{\*\mjaformula{\expr a}},+\fs48\u8734 \fs36 )\fs24\b0 ,\fs32\b{\*\mjaformula{\expr a}}< x \fs24\b0\par }' fuente='SansSerif,PLAIN,16' decimales='1' fijo='no'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='int=1' expresión='[50,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;}{\colortbl\red32\green48\blue58;}\f1\fs32 Intervalo no acotado cerrado a izquierda\cf0\f2\fs36\b\par (\fs32 -\fs48\u8734 \fs32 ,{\*\mjaformula{\expr a}})\fs24\b0 , \fs32\b x <{\*\mjaformula{\expr a}}\fs24\b0\par }' fuente='SansSerif,PLAIN,16' decimales='1' fijo='no'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='int=4' expresión='[50,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs32 Intervalo no acotado cerrado a izquierda\f2\fs32\b\par [{\*\mjaformula{\expr a}},-\fs48\u8734 \fs32 )\fs24\b0 , \fs32\b{\*\mjaformula{\expr a}}\u8804  x \fs24\b0\par }' fuente='SansSerif,PLAIN,16' decimales='1' fijo='no'">
+   <param name="G_05" value="espacio='E2' tipo='segmento' color='007a00' dibujar-si='(int=2)|(int=4)' expresión='(a,0)(310/E2.escala,0)' fijo='sí' tamaño='0' ancho='4'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' color='007a00' dibujar-si='(int=1)|(int=3)' expresión='(-310/E2.escala,0)(a,0)' fijo='sí' tamaño='0' ancho='4'">
+   <param name="G_07" value="espacio='E2' tipo='punto' color='007a00' dibujar-si='(int=4)' expresión='(a-0.6*21/E2.escala,-0.4*21/E2.escala)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;}\f1\fs64\b [\fs24\b0\par}' fuente='Monospaced,BOLD,32' fijo='sí' tamaño='0'">
+   <param name="G_08" value="espacio='E2' tipo='punto' color='007a00' dibujar-si='(int=3)' expresión='(a-0.37*21/E2.escala,-0.4*21/E2.escala)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;}\f1\fs64\b ]\fs24\b0\par}' fuente='Monospaced,BOLD,32' fijo='sí' tamaño='0'">
+   <param name="G_09" value="espacio='E2' tipo='punto' color='007a00' dibujar-si='(int=2)' expresión='(a-0.6*21/E2.escala,-0.4*21/E2.escala)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;}\f1\fs64\b (\fs24\b0\par}' fuente='Monospaced,BOLD,32' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E2' tipo='punto' color='007a00' dibujar-si='(int=1)' expresión='(a-0.37*21/E2.escala,-0.4*21/E2.escala)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;}\f1\fs64\b )\fs24\b0\par}' fuente='Monospaced,BOLD,32' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='E2' tipo='texto' expresión='[20,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs34 Desplace el punto \cf0\b Rojo\cf1\b0  y verifique\f3\fs30}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_12" value="espacio='E2' tipo='texto' dibujar-si='int=3' expresión='[300,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs24  \fs32\b\cf0{\*\mjaformula{\expr x.x}} \cf1\u8804 {\*\mjaformula{\expr a}}\fs24\b0\par }' fuente='Monospaced,PLAIN,12' decimales='6' fijo='no'">
+   <param name="G_13" value="espacio='E2' tipo='texto' dibujar-si='int=2' expresión='[300,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs24  \fs32\b{\*\mjaformula{\expr a}}< \cf0{\*\mjaformula{\expr x.x}} \cf1\fs24\b0\par }' fuente='Monospaced,PLAIN,12' decimales='6' fijo='no'">
+   <param name="G_14" value="espacio='E2' tipo='texto' dibujar-si='int=1' expresión='[300,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs24\cf0  \fs32\b{\*\mjaformula{\expr x.x}}\cf1  <{\*\mjaformula{\expr a}}\fs24\b0\par }' fuente='Monospaced,PLAIN,12' decimales='6' fijo='no'">
+   <param name="G_15" value="espacio='E2' tipo='texto' dibujar-si='int=4' expresión='[300,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs24  \fs32\b{\*\mjaformula{\expr a}}\u8804  \cf0{\*\mjaformula{\expr x.x}} \cf1\fs24\b0\par }' fuente='Monospaced,PLAIN,12' decimales='6' fijo='no'">
+</ajs></p>
+
+</body>
+</html>

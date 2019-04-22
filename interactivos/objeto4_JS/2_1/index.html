@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Solución ec. cuadrática</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="e0e4e8">
+
+<p align="center">
+<ajs name="Descartes" width=700 height=400 code="Descartes">
+   <param name="tamaño" value="700x400">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.4, 2016-05-18">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E2' x='37' y='80' ancho='625' alto='100' despl_imagen='arr-izq' fondo='ccffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E4' x='37' y='80' ancho='625' alto='100' despl_imagen='arr-izq' fondo='ccffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ini' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='EJERCICIO' expresión='(20,310,150,30)' fijo='sí' visible='sí' color='blanco' imagen='imagenes/btn150.png' acción='calcular' parámetro='j=ent(rnd*9)+1\na=3-ent(rnd*6)\nb=3-ent(rnd*6)\na2=ent(rnd*3)+1\na3=ent(rnd*3)+1\nver=0\nter1=0\nter2=0\nter11=0\nter22=0\nmetodo=0\na1=0\nb1=0\nc1=0' parámetro.fuente='Monospaced,PLAIN,12' activo-si='ini=1'">
+   <param name="C_02" value="id='ver' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='VERIFICAR' expresión='(20,350,150,30)' fijo='sí' visible='sí' color='blanco' imagen='imagenes/btn150.png' acción='calcular' parámetro='ver=1\nini=1' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='n1' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='[signo1]' expresión='(85,70,30,25)' valor='100' decimales='0' fijo='sí' visible='sí' negrita='sí' fuente puntos='18' imagen='imagenes/btn30.png' acción='calcular' parámetro='sgn3=sgn3+1' parámetro.fuente='Monospaced,PLAIN,12' activo-si='ver=0'">
+   <param name="C_04" value="id='n2' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='[signo2]' expresión='(218,70,30,25)' valor='100' decimales='0' fijo='sí' visible='sí' negrita='sí' fuente puntos='18' imagen='imagenes/btn30.png' acción='calcular' parámetro='sgn4=sgn4+1' parámetro.fuente='Monospaced,PLAIN,12' activo-si='ver=0'">
+   <param name="C_05" value="id='n3' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' expresión='(30,33,25,25)' valor='1' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='ter11=(ter11>11)?1:ter11+1' parámetro.fuente='Monospaced,PLAIN,12' activo-si='ver=0'">
+   <param name="C_06" value="id='n4' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' expresión='(117,33,25,25)' min='0' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='ter1=(ter1<12)?ter1+1:1' parámetro.fuente='Monospaced,PLAIN,12' activo-si='ver=0'">
+   <param name="C_07" value="id='n5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' expresión='(170,33,25,25)' valor='1' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='ter22=(ter22>11)?1:ter22+1' parámetro.fuente='Monospaced,PLAIN,12' activo-si='ver=0'">
+   <param name="C_08" value="id='n6' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' expresión='(255,33,25,25)' min='0' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='ter2=(ter2<12)?ter2+1:1' parámetro.fuente='Monospaced,PLAIN,12' activo-si='ver=0'">
+   <param name="C_09" value="id='metodo2' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Fórmula General' expresión='(450,35,120,30)' fijo='sí' visible='sí' color='azul' negrita='sí' fuente puntos='14' imagen='vacio.gif' acción='calcular' parámetro='metodo=2' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_10" value="id='a1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' nombre='a' expresión='(300,60,50,25)' min='-9' max='9' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='metodo=2'">
+   <param name="C_11" value="id='b1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' nombre='b' expresión='(380,60,50,25)' min='-12' max='15' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='metodo=2'">
+   <param name="C_12" value="id='c1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' nombre='c' expresión='(460,60,50,25)' min='-12' max='12' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='metodo=2'">
+   <param name="A_01" value="id='letra' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='letra[1]=&squot;a&squot;;letra[2]=&squot;b&squot;;letra[3]=&squot;c&squot;;letra[4]=&squot;u&squot;;letra[5]=&squot;n&squot;;letra[6]=&squot;x&squot;;letra[7]=&squot;y&squot;;letra[8]=&squot;z&squot;;letra[9]=&squot;k&squot;;letra[10]=&squot;p&squot;'">
+   <param name="A_02" value="id='j' constante='sí' expresión='ent(rnd*9)+1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='a' constante='sí' expresión='3-ent(rnd*6)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='b' constante='sí' expresión='3-ent(rnd*6)' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='a2' constante='sí' expresión='ent(rnd*3)+1' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='a3' constante='sí' expresión='ent(rnd*3)+1' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='a5' algoritmo='sí' evaluar='siempre' inicio='ct=0' hacer='ct=ct+1;i=letra[j];a=(a=0)?1:a;b=(b=0)?1:b;c=a2*a3;d=a*a3+a2*b;e=a*b;s1=(ent(sgn3/2)=(sgn3/2));s2=(ent(sgn4/2)=(sgn4/2));signo1=(s1>0)?&squot;+&squot;:&squot;-&squot;;signo2=(s2>0)?&squot;+&squot;:&squot;-&squot;;d2=(-1+2*s1)*n4*n5+(-1+2*s2)*n6*n3;e2=(-1+2*s1)*(-1+2*s2)*n4*n6;signo3=d2>0?&squot;+&squot;:&squot;-&squot;;signo4=e2>0?&squot;+&squot;:&squot;-&squot;;signo5=d>0?&squot;+&squot;:&squot;-&squot;;signo6=(a*b)>0?&squot;+&squot;:&squot;-&squot;;t0=&squot; &squot;+signo6+&squot; &squot;+abs(e);t1=signo5+&squot; &squot;+abs(d)+i+&squot; &squot;+signo6+&squot; &squot;+abs(e);t1=(d=0)?t0:t1;t2=signo5+&squot; &squot;+i+&squot; &squot;+signo6+&squot; &squot;+abs(e);t22=(c=1)?i:c+i;t3=((d=1)+(d=-1))?t2:t1;t4=&squot; &squot;+signo4+&squot; &squot;+abs(e2);t5=signo3+&squot; &squot;+abs(d2)+i+&squot; &squot;+signo4+&squot; &squot;+abs(e2);t5=(d2=0)?t4:t5;t6=signo3+&squot; &squot;+i+&squot; &squot;+signo4+&squot; &squot;+abs(e2);t7=((d2=1)+(d2=-1))?t6:t5;esca1=(-d+sqrt(d^2-4*c*e))/(2*c);esca2=(-d-sqrt(d^2-4*c*e))/(2*c)' mientras='ct>1'">
+   <param name="G_01" value="espacio='E2' tipo='texto' expresión='[10,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;}\f1\fs28 Escribe los coeficientes,\fs40  \fs30 pulsa \b (enter)\u8626 \fs40\b0}' fuente='SansSerif,PLAIN,14' fijo='sí' info='subtitulo'">
+   <param name="G_02" value="espacio='E2' tipo='texto' expresión='[30,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs46\b\cf0{\*\mjaformula{\expr t22\decimals 0\fixed1}{\supix 2}{\expr t3\decimals 0\fixed1} }=  0 \cf1\par \fs48\b0}' fuente='SansSerif,BOLD,23' fijo='sí' info='Expresion a factorizar'">
+   <param name="G_03" value="espacio='E4' tipo='texto' expresión='[250,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;\red0\green0\blue0;}\f1\fs28 Ingresa los valores de la f\u243 rmula  \cf0\fs32\b{\*\mjaformula ax{\supix 2}+bx+c = 0  }\cf1\fs28\b0          \b                \cf2\par \cf1\f4\fs24\b0}' fuente='SansSerif,PLAIN,14' fijo='sí' info='Subtitulo formula general'">
+   <param name="G_04" value="espacio='E4' tipo='texto' color='negro' expresión='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red32\green48\blue58;}\f1\fs28          F\u243 rmula general\par \par {\*\mjaformula{\expr letra[j]\decimals 0\fixed1}={\fraction{\num -b \u8723 {\radical{\index}{\radicand b{\supix 2}- 4ac}}}{\den 2a}}}\cf0\f2\fs24}' fuente='SansSerif,PLAIN,14' fijo='sí' info='formula general'">
+   <param name="G_05" value="espacio='E2' tipo='ecuación' color='rojo' expresión='y=c*x^2+d*x+e'">
+   <param name="G_06" value="espacio='E2' tipo='punto' color='azul' expresión='(esca1,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\cf0\f1\fs20\b\par {\*\mjaformula{\expr letra[j]+2\decimals 2\fixed1}}={\*\mjaformula{\expr esca1\decimals 2\fixed1}}\cf1\f2\fs24\b0\par }' fuente='Arial Bold,BOLD,10' fijo='sí' tamaño='0.2'">
+   <param name="G_07" value="espacio='E2' tipo='punto' color='azul' expresión='(esca2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Times New Roman,PLAIN,12' fijo='sí'">
+   <param name="G_08" value="espacio='E2' tipo='punto' color='azul' expresión='(esca2-3,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\cf0\f1\fs20\b\par {\*\mjaformula{\expr letra[j]+1\decimals 2\fixed1}}={\*\mjaformula{\expr esca2\decimals 2\fixed1}}\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,10' fijo='sí' tamaño='.2'">
+   <param name="G_09" value="espacio='E2' tipo='punto' color='azul' expresión='(esca1,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\cf0\f1\fs20\b\par \cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,10' fijo='sí'">
+   <param name="G_10" value="espacio='E2' tipo='texto' expresión='[210,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs28\b\u161 UNO O M\u193 S VALORES INGRESADOS NO SON CORRECTOS!\fs32\cf1\par \f3\fs24\b0}' fuente='SansSerif,BOLD,14' fijo='sí' info='¡UNO O MÁS VALORES INGRESADOS NO SON CORRECTOS!'">
+   <param name="G_11" value="espacio='E2' tipo='texto' expresión='[280,290]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\cf0\f1\fs32\b\u8594  {\*\mjaformula{\expr letra[j]\decimals 0\fixed1}}\fs20 1\fs32  = {\*\mjaformula{\expr (s1=0)*n4/n5-(s1&gt;0)*n4/n3\decimals 2\fixed1}}    y    {\*\mjaformula{\expr letra[j]\decimals 0\fixed1}}\fs20 2\fs32  = {\*\mjaformula{\expr (s2=0)*n6/n5-(s2&gt;0)*n6/n5\decimals 2\fixed1}} \cf1\f3\fs24\b0\par }' fuente='SansSerif,BOLD,16' fijo='sí'">
+</ajs></p>
+
+</body>
+</html>

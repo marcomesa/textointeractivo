@@ -1,0 +1,1190 @@
+﻿<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title>Libro digital interactivo</title>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/turn.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="fonts/font4.css" type="text/css">
+	<link rel="stylesheet" href="fonts/font3.css" type="text/css">
+	<link rel="stylesheet" href="fonts/font5.css" type="text/css">
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden; ">
+
+	<div id="book">
+	
+		<div class="hard" style="background-image: url(images/fondo.jpg);  border: 2px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; font-size:65px; position: absolute; top: 40px; left:150px; right:0; bottom:55px;"><font color="white">MATEMÁTICAS<br><br>OPERATIVAS</font></h1>
+			<p style="position: absolute; top: 250px; left:290px; right:0;"><img src="images/portada_2.png" width="380px"></p>
+			<h1 class="t11" style="text-shadow: 2px 4px #89a; font-size:45px; position: absolute; top: 570px; left:150px; right:0;""><font color="112211" size="7">INTERACTIVO</font></h1>
+			
+		</div>
+		
+		<div class="hard" style="background-image: url(images/cover.png);">
+		<p align="center" style="position: absolute; bottom: 350px; left:0; right:0;"> <a id="logo"><img src="images/logo3.svg" alt="Descartes"></a>	</p>
+		</div>
+		
+		<div class="derecha">
+			<p align="center" style="position: absolute; top: 100px; left:0; right:0;"><span style="font-size:36px"><strong><big>MATEMÁTICAS OPERATIVAS</big></strong></span><br><span style="font-size:28px"><big>INTERACTIVO</big></span></p>
+			<br><br>
+			<p align="center" style="position: absolute; top: 240px; left:0; right:0;">Guilda Viviana Dávila Durán<br><br>
+			Marco Tulio Mesa Cardona<br><br>
+			Juan Guillermo Arango Arango<br><br>
+			Institución Universitaria Pascual Bravo<br></p>
+			<p align="center" style="position: absolute; bottom: 100px; left:0; right:0;">Fondo Editorial Pascual Bravo<br><br><img src="images/logo_pascual.png" width="130px"></p>
+			<p align="center" style="position: absolute; bottom: 60px; left:0; right:0;">Medellín</p>
+		</div>
+		
+		<div class="izquierda">
+			<p><span style="font-size:16px">Título de la obra<br>
+			Matemáticas Operativas<br><br>
+			Autores<br>
+			Guilda Viviana Dávila Durán<br>
+			Marco Tulio Mesa Cardona<br>
+			Juan Guillermo Arango Arango<br><br>
+			Primera edición: 2019</span></p>
+			<br><br>
+			<p> <span style="font-size:16px">Diseño del libro: Juan Guillermo Rivera Berrío<br>Diseño de cubierta: Diana María Velásquez García<br>
+			Librería turn.js: Emmanuel García<br>
+			Herramienta de edición: DescartesJS<br>
+			Fuente: Amaranth<br>
+			<p> <span style="font-size:16px">Fondo Editorial Pascual Bravo<br>
+			Calle 73 73A-226<br>
+			PBX: (574) 4480520<br>
+			Apartado 6564<br>
+			Medellín, Colombia<br>
+			<a style="font-size:16px" href="http://www.pascualbravo.edu.co/" target="_blank"><font color="blue">www.pascualbravo.edu.co</font></a></span></p>
+			<p style="font-size:16px; position: absolute; bottom: 60px; left:0; right:0;"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="images/88x31.png" style="height:40px; width:110px" /></a><br/><a style="font-size:16px" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><font color="blue">Creative Commons Attribution License 4.0</font></a> license.</p>
+			<p align="left"></p>
+		</div>
+		
+		<div class="derecha">
+			<h2 class="t2">Tabla de contenido</h2>
+				<p><a class="a2" href="javascript:myFunction(9)"><b>Prólogo</b><span class="span2">vii</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(9)"><b><font color="blue">Fundamentos Aritméticos</font></b><span class="span2">viii</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(11)">0. Conjuntos numéricos<span class="span2">11</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(11)">0.1. Los números naturales<span class="span2">11</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(11)">0.2. Los números enteros<span class="span2">11</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(11)">0.3. Los números racionales<span class="span2">11</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(13)">0.4. Los números irracionales<span class="span2">13</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(13)">0.5. Los números reales<span class="span2">13</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(13)">0.6. Los números Complejos<span class="span2">13</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(21)">0.7. Propiedades de las operaciones con los reales<span class="span2">21</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(21)">0.8. Operaciones entre conjuntos numéricos<span class="span2">21</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(29)">0.9. Fracciones<span class="span2">29</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(33)">0.10. Operaciones con fracciones<span class="span2">33</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(39)">0.11. Recta numérica<span class="span2">39</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(45)">0.12. Conjuntos e intervalos<span class="span2">45</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(49)">0.13. Valor absoluto y distancia<span class="span2">49</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(51)">0.14. Regla de tres<span class="span2">51</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(51)">0.15. Aplicaciones con porcentajes<span class="span2">52</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(55)">0.16. Practiquemos<span class="span2">56</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(57)"><b><font color="blue">Capitulo 1. Potenciación</font></b><span class="span2">58</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(59)">1. Potenciación<span class="span2">59</span></a></p>
+				<p><a class="a2" href="javascript:myFunction(59)">1.1. Propiedades de la potenciación<span class="span2">60</span></a></p>
+								
+				<h3>iii</h3>	
+		</div>
+		
+		<div class="izquierda">
+			<h2 class="t3">Tabla de contenido</h2>
+				<p><a class="a2" href="javascript:myFunction(61)">1.2. Operaciones con potencias<span class="span2">62</span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">1.3. Simplificar expresiones potencias<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">1.4. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )"><b><font color="blue">Capitulo 2. Radicación</font></b><span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">2. Radicación<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">2.1. Propiedades de los radicales<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">2.2. Operaciones con expresiones radicales<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">2.3. Simplificar expresiones radicales<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">2.4. Racionalización<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">2.5. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )"><b><font color="blue">Capitulo 3. Conceptos fundamentales de algebra</font></b><span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3. Expresiones algebraicas<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.1. Operaciones entre expresiones algebraicas no racionales(+,-,x)<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.2. Productos notables<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.3. Factorización<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.4. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.5. División de polinomios<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.6. Descomposición de un polinomio en factores por el método de evaluación<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">3.7. Operaciones entre fracciones algebraicas<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.8. Potenciación, radicación y racionalización<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">3.9. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )"><b><font color="blue">Capitulo 4. Sistemas de ecuaciones algebraicas</font></b><span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">4. Sistemas de ecuaciones algebraicas<span class="span2"> </span></a></p> 			
+				<p><a class="a2" href="javascript:myFunction( )">4.1. Ecuaciones lineales<span class="span2"> </span></a></p> 
+
+		<h3>iv</h3>	
+		</div>
+	
+			<div class="derecha">
+			<h2 class="t4">Tabla de contenido</h2>
+				<p><a class="a2" href="javascript:myFunction( )">4.2. Sistemas de ecuaciones lineales 2x2 y 3x3<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">4.3. Ecuaciones de segundo grado con una incógnita<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">4.4. Ecuaciones de grado n, binomias y trinomias<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">4.5. Sistema de ecuaciones no lineales 2x2<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">4.6. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">4.7. Problemas de aplicación<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )"><b><font color="blue">Capitulo 5. Fracciones parciales</font></b><span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">5. Fracciones parciales<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )"><b><font color="blue">Capitulo 6. Ecuaciones logaritmica y exponencial</font></b><span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">6. Ecuaciones logaritmica y exponencial<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">6.1. Propiedades de los logarítmos y las potencias<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">6.2. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">6.3. Problemas de aplicación<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )"><b><font color="blue">Capitulo 7. Trigonometría</font></b><span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">7. Trigonometría<span class="span2"> </span></a></p> 			
+				<p><a class="a2" href="javascript:myFunction( )">7.1. Angulos<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">7.2. Longitud de arco<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">7.3. Definición de funciones trigonométricas<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">7.4. Signos de las funciones trigonométricas<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">7.5. Funciones trigonométricas de ángulos cuadrantales<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">7.6. Funciones trigonométricas del triaángulo rectángulo<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">7.7. Funciones trigonométricas de ángulos notables<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">7.8. Reducción de ángulos al primer cuadrante<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">7.9. Funciones trigonométricasde ángulos coterminales<span class="span2"> </span></a></p> 
+				
+				<h3>v</h3>	
+		</div>
+		
+		<div class="izquierda">
+			<h2 class="t5">Tabla de contenido</h2>
+				<p><a class="a2" href="javascript:myFunction( )">7.10. Funciones trigonométricas de ángulos en posición normal<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">7.11. Gráficas de las funciones trigonométricas<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">7.12. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">7.13. Problemas de aplicación<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )"><b><font color="blue">Capitulo 8. Trigonometría Analítica</font></b><span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8. Trigonometría Analítica<span class="span2"> </span></a></p> 			
+				<p><a class="a2" href="javascript:myFunction( )">8.1. Identidades trigonométricas<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8.2. Fórmulaa de adición y sustracción<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8.3. Fórmula para ángulos dobles y medios<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">8.4. Ecuación trigonométrica<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">8.5. Aplicaciones de laas funciones trigonométricas<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8.6. Angulo de elevación y ángulo de depresión<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8.7. Triángulos oblicuangulos<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8.8. Ley del Seno<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8.9. Ley del Coseno<span class="span2"> </span></a></p> 
+				<p><a class="a2" href="javascript:myFunction( )">8.10. Area del triángulo<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">8.11. Gráficas de las funciones trigonométricas<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">8.12. Practiquemos<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )">8.13. Problemas de aplicación<span class="span2"> </span></a></p>
+				<p><a class="a2" href="javascript:myFunction( )"><b>Bibliografía</b><span class="span2"> </span></a></p> 
+			<h3>vi</h3>
+			<div class="gradient"></div>
+		</div>
+		
+		
+		<div class="derecha">
+				<h3>vii</h3>	
+		</div>
+		
+		<div class="izquierda">
+			<h1>Prólogo</h1>
+			<p> De la colección iCartesiLibri surge este libro digital interactivo, diseñado de tal forma que permita el aprendizaje significativo a través de la intervención directa y personal del usuario, el cual se convierte en el protagonista del libro, en tanto que podrá interactuar con algunos objetos de aprendizaje. Estos objetos de aprendizaje interactivos fueron diseñados con el editor DescartesJS y GeoGebra.</p>
+
+			<div class="nt">La herramienta DescartesJS se caracteriza por una innata interactividad, por permitir realizar representaciones de objetos bi y tridimensionales, por gestionar expresiones de texto y de fórmulas, por integrar objetos multimedia como imágenes, audios y vídeos, por tener la posibilidad de reflejar casos concretos y también potenciar la conceptualización de tareas y procedimientos mediante la utilización de semillas aleatorias y controles numéricos, gráficos y de texto, y con ellos poder abordar la evaluación de manera automática, tanto la correctiva como la formativa. Con Descartes es posible el diseño y desarrollo de objetos educativos que promueven el aprendizaje significativo, posibilitando esa deseada construcción del conocimiento.<sup>1</sup></div>
+
+			<p>Todos los recursos incluidos en este libro se basan en el estándar HTML5 y consecuentemente son plenamente accesibles y operativos en cualquier ordenador, tableta o smartphone sin más que utilizar un navegador compatible con dicho estándar. Diseñar en HTML5, significa que usaremos:</p>
+			
+			<ul>
+				<li>Lenguaje HTML</li>
+				<li>Hojas de estilo CSS</li>
+				<li>Programación en JavaScript</li>
+			</ul>
+			
+			
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>1</sup>&nbsp;&nbsp;&nbsp;Véase <a href="http://proyectodescartes.org/iCartesiLibri/descripcion.htm" target="_blank"><font color="blue">http://proyectodescartes.org/iCartesiLibri/descripcion.htm</font></a>.</div>
+			
+			<h3>viii</h3>
+			
+		</div>
+		
+		<div class="derecha"style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t5" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Fundamentos aritméticos</font></h1>
+			<p align="center" style="position: absolute; bottom: 110px; left:130px; right:0;"><font color="black" size="5"><b>Guilda Viviana Dávila Durán<br>
+			Marco Tulio Mesa Cardona<br>
+			Juan Guillermo Arango Arango<br><br></b></font></p>
+		</div>
+		
+		
+		
+		<div class="izquierda">
+			<h1><strong>0. Conjuntos numéricos</strong></h1>
+			<p>Los conjuntos numéricos son agrupaciones de números con determinadas características que los diferencian de los demás, recordaremos el conjunto de los reales (<font color="brown">&Ropf;</font>), los racionales (<font color="brown">&Qopf;</font>), los enteros (<font color="brown">&Zopf;</font>), los naturales (<font color="brown">&Nopf;</font>) y los irracionales (<font color="brown">&Qopf;'</font>).</p><br>
+			<table width="720px" align="center"><tr>
+			<td width="140px"><img src="Imagenes/img011.png" width="120px" border="0"/></td>
+			<td><b>0.1. Los números naturales (<font color="brown">&Nopf;</font>)</b><br><br>
+			<span align="justify">El conjunto se formalizó para dar respuesta a la necesidad de contar en una base generalizada, la base 10. Con los dígitos se forma cualquier número natural. El conjunto de los números naturales, se denota por N, y se representa así: </td></span>
+			</tr></table>
+			<p align="center"style="color: brown;";><font color="brown">&Nopf;</font> = {1, 2, 3, 4, 5, 6, 7,&hellip;}</p>
+			<p><strong>0.2. Los números enteros (<font color="brown">&Zopf;</font>).</strong></p>
+			<p>El conjunto surge de la necesidad de dar solución general a la sustracción, cuando el sustraendo es mayor que el minuendo, esta sustracción no tiene solución en los números Naturales. Por ejemplo: 5-20?. Se denota por (Z) y se representa así:</p>
+			<p align="center"style="color: brown;";><font color="brown">&Zopf;</font> = {...,-3,-2,-1,0,1, 2, 3,&hellip;}</p>
+			<p class="t4"><strong>0.3. Los números racionales (<font color="brown">&Qopf;</font>).</strong><p>
+			<p>Son un subconjunto de los números reales, conformado por el conjunto de los</p>
+			<h3>11</h3>
+		</div>
+		
+		<div class="derecha">
+			<p> enteros (<font color="brown">&Zopf;</font>) y los naturales (<font color="brown">&Nopf;</font>). Es el resultado del cociente entre dos enteros <span class="fraction"><span class="fup">p</span><span class="bar">/</span><span class="fdn">q</span></span>, siempre y cuando el denominador (q) sea diferente de cero</p>
+			<p align="center"><img src="imagenes/img07.png" width="400px"></img></p>
+			<p>Los números racionales se ubican en una de las siguientes características: Ser entero, tener una expresión decimal finita, o tener una expresión decimal infinita periódica.</p>
+			<p>Ejemplos: <span class="fraction"><span class="fup">10</span><span class="bar">/</span><span class="fdn">2</span></span> = 5, &nbsp <span class="fraction"><span class="fup">30</span><span class="bar">/</span><span class="fdn">8</span></span> = 3,75 y <span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">3</span></span> = 0,66666666</p>
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://proyectodescartes.org/iCartesiLibri/materiales_didacticos/Matematicas_Basicas-JS/index.html" target="_blank"><font color="blue">Carlos Rojas Hincapié</font></a><sup>1</sup>, puedes interactuar cambiando el numerador y el denominador de la fracción y pulsar solución, lo cual permitirá que se presente una representación gráfica, dividiendo cada intervalo de una recta numérica en espacios iguales que representan números enteros. También, puedes hacer uso del zoom para visualizar mejor la partición en la recta numérica o, si lo deseas, hacer clic en el botón ampliar para ver la escena en un tamaño más grande. </p>
+			<p>Prueba con las siguientes fracciones: <span class="fraction"><span class="fup">3</span><span class="bar">/</span><span class="fdn">4</span></span>, <span class="fraction"><span class="fup">7</span><span class="bar">/</span><span class="fdn">5</span></span>, &hellip;</p>
+			
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>1</sup>&nbsp;&nbsp;&nbsp;Carlos Rojas Hincapíe es un autor de la red Descartes, que publicó el libro Matemáticas Básicas, del cual seleccionaremos algunas escenas interactivas en el resto de esta obra.</a>.</div>
+			<h3>12</h3>
+		</div>
+
+		<div class="izquierda">
+			<br>
+			<p align="center"><iframe src="interactivos/objeto1_JS/2_1/index.html" width="600px" height="300px" frameborder="no" scrolling="no"></iframe><a href="interactivos/objeto1_JS/2_1/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<br><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>
+			<p class="t4"><strong>0.4. Los números irracionales (<font color="brown">&Qopf;'</font>)</strong></p>
+			<p class="t4">Es el conjunto de números cuya expresión decimal no es finita ni periódica, estos números no pueden transformarse en una fracción. Se denota con la letra (<font color="brown">&Qopf;'</font>). Como ejemplos de ellos tenemos todas las raíces no exactas como &#8730;3, &#8730;5, etc., igualmente el número &pi;, la constante "&#101" de la base de los logaritmos naturales, entre otros.</p>
+			<p class="t4">Representación gráfica del conjunto de los números reales.</p>
+			<p>En la figura 1., se puede visualizar la representación gráfica de los números reales.</p>
+			<h3>13</h3>
+		</div>
+		
+
+		<div class="derecha">
+			<br>
+			<p align="center"><a href="Imagenes/img06.png" frameborder="0" allowfullscreen target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=0,titlebar=0,menubar=0,status=0,toolbar=0,left='+(screen.availWidth/2-387)+',top='+(screen.availHeight/2-174)+',width=774,height=348');return false;"><img src="Imagenes/img06.png" width="600px"/></a></p>
+			<p class="fig"><b>Figura 1</b>. Conjuntos numéricos (adaptado del libro Precálculo de Stewart<sup>2</sup></p>
+			<p><strong>0.5. Los números reales (<font color="brown">&Ropf;</font>).</strong></p>
+			<p>Es el conjunto de números formado por la unión de los números Racionales (<font color="brown">&Qopf;</font>) y los Irracionales (<font color="brown">&Qopf;'</font>). Se denota por la letra R y se representa así: </p>
+			<p align="center" style="color: brown;";>&Ropf; = { &Qopf; &#8899; &Qopf;' }</p>
+			<p><strong>0.6. Los números complejos (C).</strong></p>
+			
+			<p>Es el conjunto formado por la unión de los números reales y los números imaginarios, incluyen todas las raíces de los polinomios, a diferencia de los reales. Un número complejo puede representarse de la forma a <font color="red">a + bi</font>, que es la suma de un número real y </p>
+			
+			
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>2</sup>&nbsp;&nbsp;&nbsp;Precálculo, 5ta Edición – James Stewart, Lothar Redlin y Saleem Watson.</div>
+			<h3>14</h3>
+		</div>
+
+		
+		<div class="izquierda">
+			<p> un número imaginario. Se denota por C y se representa así:</p>
+			<p align="center"style="color: brown;";>C = { &Ropf; &#8899; i }.</p>
+			<p>Los números imaginarios son números complejos, cuya parte real es igual a cero, por ejemplo: los números 5i, i o –i son números imaginarios, donde la letra i denota la raíz cuadrada de -1 .</p>
+			<p align="center"style="color: brown;";>i = &radic;<span class="raiz"><span class="fup">-1</span><span class="bar">/</span><span class="fdn"></span></span>, por lo tanto i<sup>2</sup> = -1</p>
+			<p><strong>Igualdad de números complejos:</strong></p>
+			<p align="center">( a + bi ) + ( c + di ), si y sólo si a = c &nbsp; y  &nbsp;b = d</p>
+			<p align="center">( 3 + 2i ) + ( 3 + 2i ) = 2( 3 + 2i )</p>
+			<p><strong>Suma de números complejos:</strong>&nbspSe suma la parte real y la parte imaginaria</p>
+			<p align="center">( a + bi ) + ( c + di ) = ( a + c ) + ( bi + di )</p>
+			<p align="center">( 4 + 2i ) + ( 5 + 3i ) = 9 + 5i</p>
+			<p><strong>Producto de números complejos:</strong>&nbspSe aplica la propiedad distributiva y se suman los términos semejantes, teniendo en cuenta que la parte real debe quedar a la izquierda y la parte imaginaria a la derecha.</p>
+			<h3>15</h3>
+		</div>
+		
+		<div class="derecha">
+			<p align="Left"style="color:#2E2EFE">Nota:</p>
+			<p>Tener en cuenta que i<sup>2</sup> = -1</p>
+			<p align="center">( a + bi) + ( c + di) = ac + adi + bci + bd(-1)</p>
+			<p align="center">               =( ac - bd ) + ( ad +bc )i</p>
+			<p>Ejemplo:</p>
+			<p align="center">( 4+2i)( 5+3i ) = ( 20-6 ) + ( 12 + 10 )i</p>
+			<p align="center">              =14 + 22i</p>
+			<p><strong>División de números complejos:</strong>&nbspSe debe tener en cuenta racionalizar el denominador, es decir; multiplocar numerador y denominador por la conjugada del denominador</p>
+			<p align="center"><span class="fraction"><span class="fup">( a + bi )</span><span class="bar">/</span><span class="fdn">( c + di )</span></span>, con ( c + di )&nbsp; &#8800; &nbsp;0</p>
+			<p align="center"><span class="fraction"><span class="fup">( a + bi )</span><span class="bar">/</span><span class="fdn">( c + di )</span></span>&#215;<span class="fraction"><span class="fup">( c - di )</span><span class="bar">/</span><span class="fdn">( c - di )</span></span></p>
+			<p align="center"><span class="fraction"><span class="fup">( a + bi )</span><span class="bar">/</span><span class="fdn">( c + di )</span></span>=<span class="fraction"><span class="fup">ac + adi + bci -b di<sup>2</sup></span><span class="bar">/</span><span class="fdn">c<sup>2</sup>-(di)<sup>2</sup></span></span></p>
+			<h3>16</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p align="center">=<span class="fraction"><span class="fup">ac + (ad + bc)i - bd(-1)</span><span class="bar">/</span><span class="fdn">c<sup>2</sup>-d<sup>2</sup>(-1)</span></span></p>
+			<p align="center">=<span class="fraction"><span class="fup">ac +( ad + bc)i + bd</span><span class="bar">/</span><span class="fdn">c<sup>2</sup>+d<sup>2</sup></span></span></p>
+			<p align="center">=<span class="fraction"><span class="fup">(ac + bd)(ad + bc)i</span><span class="bar">/</span><span class="fdn">c<sup>2</sup>+d<sup>2</sup></span></span></p>
+			<p>Ejemplo:&nbsp;<span class="fraction"><span class="fup">( 4 + 2i)</span><span class="bar">/</span><span class="fdn">( 5 +3 i)</span></span>&nbsp;=&nbsp;<span class="fraction"><span class="fup">( 4 + 2i)</span><span class="bar">/</span><span class="fdn">( 5 + 3i)</span></span>&#215;<span class="fraction"><span class="fup">( 5 - 3i)</span><span class="bar">/</span><span class="fdn">( 5 - 3i)</span></span></p>
+			<p align="center"><span class="fraction"><span class="fup">(4&#215;5)-(4&#215;3i)+(2&#215;5i)-(2&#215;3i<sup>2</sup>	&#41;</span><span class="bar">/</span><span class="fdn">5<sup>2</sup>-(3i)<sup>2</sup></span></span></p>
+			<p align="center"><span class="fraction"><span class="fup">20 - 12i + 10i - 6(-1)</span><span class="bar">/</span><span class="fdn">5<sup>2</sup>+3<sup>2</sup></span></span></p>
+			<p align="center"><span class="fraction"><span class="fup">20 - 2i + 6</span><span class="bar">/</span><span class="fdn">25 + 9</span></span></p>
+			<p align="center"><span class="fraction"><span class="fup">26 - 2i</span><span class="bar">/</span><span class="fdn">34</span></span></p>
+			<h3>17</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>Separamos el denominador y simplificamos</p>
+			<p align="center"><span class="fraction"><span class="fup">26</span><span class="bar">/</span><span class="fdn">34</span></span> - <span class="fraction"><span class="fup">2i</span><span class="bar">/</span><span class="fdn">34</span></span> = <span class="fraction"><span class="fup">13</span><span class="bar">/</span><span class="fdn">17</span></span> - <span class="fraction"><span class="fup">i</span><span class="bar">/</span><span class="fdn">17</span></span></p>
+			<p>Antes de empezar a clasificar los números propuestos en la escena interactiva “Clasifica los siguientes números” y así dar inicio a las operaciones básicas que te abrirán el camino para resolver ejercicios en contexto aplicando conjuntos numéricos y propiedades de las expresiones aritméticas, en el siguiente video, realizodo por <a href="https://www.youtube.com/watch?v=rvnYQIqSt9U" target="_blank"><font color="blue">Ana Rivera</font></a><sup>1</sup>,recordarás lo que se ha visto hasta el momento.</p>
+			<p align="center"><iframe  width="550" height="330" src="https://www.youtube.com/embed/rvnYQIqSt9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<a href="https://www.youtube.com/embed/rvnYQIqSt9U" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-380)+',top='+(screen.availHeight/2-220)+',width=760,height=440');return false;">
+			<br><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>	
+			
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>1</sup>&nbsp;&nbsp;&nbsp;Ana Rivera es autora de la red Youtube, que publicó el video "Los números a través del tiempo".</a></div>
+			<h3>18</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>Ejercicio de conocimiento:&nbsp;Arrastra cada número a la casilla correspondiente</p>
+			<p align="center"><iframe src="interactivos/Clasifica3/index.html" width="700px" height="450px" frameborder="no" scrolling="no"></iframe>
+			<a href="interactivos/Clasifica3/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-480)+',top='+(screen.availHeight/2-300)+',width=960,height=600');return false;">
+				<br><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>
+		
+			
+			
+			<h3>19</h3>
+		</div>
+		
+		
+		<div class="derecha">
+			<p>En la siguiente escena interactiva, podrás identificar el número dado al oprimir los botones correspondientes, según el conjunto numérico al cual pertenece.  Basta con optimir el botón correspondiente &Nopf; (Naturales), &Zopf; (Enteros), &Qopf; (Racional), &Qopf;' (Irracional) o &Ropf; (Real) y verifica la respuesta.</p>   
+			<p align="center"><iframe src="interactivos/objeto1_JS/1_1/interactivo1.html" width="750px" height="450px" frameborder="no" scrolling="no"></iframe>
+			<a href="interactivos/objeto1_JS/1_1/interactivo1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<br><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>20</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p><strong>0.7. Propiedades de las operaciones con los reales.</strong></p>
+			<p>Las operaciones definidas en los reales cumplen ciertas propiedades.</p>
+			<p>Veamos algunas de ellas: Sean a, b y c números reales cualesquiera.</p>
+			<p align="center"><img src="tablas/tabla1.png" width="580px" ></p>
+			<p class="fig"><b>Tabla 1</b>. Propiepades de las operaciones en &Ropf;</p>
+			<p><strong>0.8. Operaciones entre conjuntos numéricos.</strong></p>
+			<p>Cuando se realizan operaciones entre los conjuntos numéricos, se debe tener en cuenta la aplicación de la propiedades mencionadas anteriormente.</p>
+			<p>En caso de presentase presentarse signos de agrupación, como llaves, corchetes o paréntesis, se recomienda tener en cuenta las siguientes indicaciones:</p>
+			<p>&diams;&nbspLos signos de agrupación indican el orden en que se deben realizar las operqaciones</p>
+			<p>&diams;&nbspLos paréntesis deben estar dentro de los corchetes y los corchetes dentro de llaves</p>
+			<h3>21</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>&diams;&nbspSe quitan primero los parénesis, luego los corchetes y finalmente las llaves</p>
+			<p>&diams;&nbspSe tienen en cuenta los signos de las diferentes operaciones aritméticas, sin olvidar que signos iguales dan positivos y signos contrarios dan negativo, esto es:</p>
+			<p align="center"><img src="Imagenes/img13.png" style="float:center; width:200px" border="0"/></p>
+			<p>&diams;&nbspSiempre que un signo de agrupación (paréntesis, corchetes o llaves) lo preceda un valor negativo, todos los signos que esten dentro del signo de agrupación cambian.</p>
+			<p>&diams;&nbspDe igual forma, si se requiere utilizar un signo de agrupación y el signo que lo precede es negativo, se deben cambiar todos los signos en su interior.</p>
+			<p>&diams;&nbspEn operaciones aritméticas mixtas, primero se realizan las multiplicaciones y divisiones y luego las sumas y restas.</p>
+			<p>Ejemplo:</p>
+			<p>1.&nbsp 13 + <font color="red">&#123;</font>2 + <font color="green">&#91;</font>6 + 3 + <font color="blue">&#40;</font>8 + 7<font color="blue">&#41;</font><font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<h3>22</h3>
+		</div>
+
+		<div class="izquierda">
+			<p align="center">13 + <font color="red">&#123;</font> 2 + <font color="green">&#91;</font> 6 + 3 + <font color="blue">&#40;</font> 8 + 7 <font color="blue">&#41;</font><font color="green">&#93;</font> <font color="red">&#125;</font> = 13 + <font color="red">&#123;</font> 2 + <font color="green">&#91;</font> 9 +15 <font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<p align="center">13 + <font color="red">&#123;</font></font> 2 + <font color="green">&#91;</font> 9 +1 5 <font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<p align="center">13 + <font color="red">&#123;</font>  2 + 24 <font color="red">&#125;</font> </p>
+			<p align="center">13 + <font color="red">&#123;</font>  26 <font color="red">&#125;</font> </p>
+			<p align="center">13+26</p>
+			<p align="center">39</p>
+			<p>2.&nbsp 13 - <font color="red">&#123;</font> 2 + <font color="green">&#91;</font> 6 +3 - <font color="blue">&#40;</font> 8 + 7 <font color="blue">&#41;</font> <font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<p align="center">13 - <font color="red">&#123;</font> 2 + <font color="green">&#91;</font> 6 + 3 - <font color="blue">&#40;</font> 8 + 7 <font color="blue">&#41;</font> <font color="green">&#93;</font> <font color="red">&#125;</font> = 13 - <font color="red">&#123;</font> 2 + <font color="green">&#91;</font> 9- <font color="blue">&#40;</font> 15 <font color="blue">&#41;</font><font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<p align="center">13 - <font color="red">&#123;</font> 2 + <font color="green">&#91;</font> 9 - 15 <font color="green">&#93;</font> <font color="red">&#125;</font></p>
+			<p align="center">13 - <font color="red">&#123;</font> 2 + <font color="green">&#91;</font> - 6 <font color="green">&#93;</font> <font color="red">&#125;</font></p>
+			<p align="center">13 - <font color="red">&#123;</font> 2 - 6 <font color="red">&#125;</font></p> 
+			<p align="center">13 - <font color="red">&#123;</font> -4 <font color="red">&#125;</font></p>
+			<p align="center">13 + 4</p>
+			<p align="center">17</p>
+			<p>3.&nbsp 20 - <font color="red">&#123;</font> 7 + 2 <font color="green">&#91;</font> 3 - 2 <font color="blue">&#40;</font> 7 + 9 &#41;</font> + 5 <font color="blue">&#40;</font> 6 - 2 <font color="blue">&#41;</font><font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<h3>23</h3>
+		</div>
+
+		<div class="derecha">
+			<p align="center">20 - <font color="red">&#123;</font> 7 + 2 <font color="green">&#91;</font> 3 - 2 <font color="blue">&#40;</font> 7 + 9 <font color="blue">&#41;</font> +5 <font color="blue">&#40;</font> 6 - 2 <font color="blue">&#41;</font><font color="green">&#93;</font><font color="red">&#125;</font> = 20 - <font color="red">&#123;</font>7 + 2 <font color="green">&#91;</font>3 - 2 <font color="blue">&#40;</font>16 &#41;</font>+5 <font color="blue">&#40;</font>4 <font color="blue">&#41;</font><font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<p align="center">20 - <font color="red">&#123;</font> 7 + 2 <font color="green">&#91;</font> 3 - 32 + 20 <font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<p align="center">20 - <font color="red">&#123;</font> 7 + 2 <font color="green">&#91;</font> - 9 <font color="green">&#93;</font><font color="red">&#125;</font></p>
+			<p align="center">20 - <font color="red">&#123;</font> 7 - 18 <font color="red">&#125;</font></p>
+			<p align="center">20 - <font color="red">&#123;</font> -11 <font color="red">&#125;</font></p>
+			<p align="center">20 + 11</p>
+			<p align="center">31</p>
+			<p><strong>TEOREMA FUNDAMENTAL DE LA ARITMÉTICA.</strong></p>
+			<p>Todo entero positivo se puede representar de forma única como producto de factores primos excepto por el orden.</p>
+			<p>Ejemplo:</p>
+			<p align="center">20808 = 2<sup>3</sup></span> ∙ 3<sup>2</sup></span> ∙ 17<sup>2</sup></span>, 3600 = 2<sup>4</sup></span> ∙ 3<sup>2</sup></span> ∙ 5<sup>2</sup></span></p>
+			<p><strong>NÚMEROS PRIMOS.</strong></p>
+			<p>Se denomina número primo a todo número natural diferente de uno, <font color="crown">cuyos únicos divisores POSITIVOS son el mismo número y la unidad</font>; los números que no son primos se denominan compuestos. Eratóstenes de Cirene (276-194 a de C) Matemático griego, </p>
+			<h3>24</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>ideó una forma de determinar los primeros números primos al construir la denominada Criba de Eratóstenes. Así los primeros 100 números primos son los siguientes:</p>  
+			<p align="center"><img src="Imagenes/img09.png" style="float:center; width:700px" border="0"/></p>
+			<p class="fig"><b>Tabla 2</b>. Primeros 100 números primos</p>
+			<p><strong>MÍNIMO COMÚN MÚLTIPLO</strong></p>
+			<p>El Mínimo Común Múltiplo (“<font color="red">m.c.m.</font>”) de dos o más números naturales es el menor número natural (distinto de cero) que es múltiplo de todos ellos.</p>
+			<p>Hallar al m.c.m de 4, 8 y 12</p>
+			<p>m<sub>(4)</sub> = {4 , 8 , 12 , 16 , 20 ,<font color="red"> 24</font>, &hellip;}</p>
+			<p>m<sub>(8)</sub> = {8 , 16 ,<font color = "red"> 24</font>  , &hellip;}</p>
+			<p>m<sub>(4)</sub> = {12,<font color="red"> 24</font> , &hellip;}</p>
+			<p>Así, el <font color="red">m.c.m</font><sub>(4,8,12)</sub> = { <font color="red"> 24</font> }</p>
+			<p>Otro método es descomponer los números en factores primos y tomar los factores comunes y no comunes con su mayor exponente..</p>
+			<h3>25</h3>
+		</div>
+		
+		<div class="derecha">
+			<br>
+			<p align="center"><img src="Imagenes/img10.png" style="float:center; width:350px" border="0"/></p>
+			<p align="center"><span><font color="red">m.c.m</font><sub>(4,8,12)</sub>&nbsp; =&nbsp; {<font color="red"> 2<sup>3</sup></span> ∙ 3 </font>}</p>
+			<p align="center"><span><font color="red">m.c.m</font><sub>(4,8,12)</sub>&nbsp; =&nbsp; {<font color="red"> 24 </font>}</p>
+			<p><strong>MAXIMO COMÚN DIVISOR</strong></p>
+			<p>El Máximo Común Divisor (“<font color="red">M.C.D.</font>”) de dos o más números naturales es el mayor divisor posible de todos ellos.</p>
+			<p>Hallar al M.C.D de 48 y 60</p>
+			<p><font color="red">D</font><sub>(48)</sub>={1 , 2 , 4 , 6 , 8 , <font color="red">12</font> , &hellip;}</p>
+			<p><font color="red">D</font><sub>(60)</sub>={1 , 2 , 3 , 4 , 5 , 6 , 10 , <font color="red">12</font> , &hellip;}</p>
+			<p align="center"><span><font color="red">M.C.D</font><sub>(48,60)</sub> = { <font color="red">12</font> }</p>
+			<p>Veámos ahora utilizando el otro método, para el cálculo se descomponen los números en factores primos y se toman los factores comúnes con su menor exponente.</p>
+			<h3>26</h3>
+		</div>
+			
+		<div class="izquierda">
+			<br>
+			<p align="center"><img src="Imagenes/img11.png" style="float:center; width:250px" border="0"/></p>
+			<p align="center"><span><font color="red">M.C.D</font><sub>(48 , 60)</sub> = {<font color="red"> 2<sup>2</sup></span> ∙ 3 </font> }</p>
+			<p align="center"><span><font color="red">M.C.D</font><sub>(48 , 60)</sub> = {<font color="red"> 12</font> }</p>
+			<p>Hallar el M.C.D y el m.c.m de:</p>
+			<p>(72 , 108 , 60)&nbsp,&nbsp(428 , 376)</p>
+			<p>(148 , 156)&nbsp,&nbsp(3600 , 1000)</p>
+			<p>(14 ,7 8 , 36)&nbsp,&nbsp(36 , 62 , 18)</p>
+			<p>(15 , 16 , 18)&nbsp,&nbsp(32 , 40 , 48)</p>
+			<p>(36 , 54 , 30)&nbsp,&nbsp(16 , 20 , 24)</p>
+			<h3>27</h3>	
+		</div>		
+		
+		<div class="derecha">
+			<p><strong>CRITERIOS DE DIVISIBILIDAD</strong></p>
+			<p>Un número es divisible por otro, cuando cumple las condiciones que presentan a continuación:</p>
+			<p align="center"><img src="Imagenes/img12.png" style="float:center; width:700px" border="0"/></p>
+			<p class="fig"><b>Tabla 3</b>. Criterios de divisibilidad</p>
+			<h3>28</h3>	
+		</div>		
+		
+		<div class="izquierda">
+			<p><strong>0.9. Fracciones.</strong></p>
+			<p>Los fraccionarios pertenecen al conjunto de los racionales, están formados por dos números enteros; el numerador que está en la parte de arriba y el denominador que está en la parte de abajo. Así un fraccionario se expresa de la forma:</p>
+			<p align="center"style="color: brown;"><span class="fraction"><span class="fup">a</span><span class="bar">/</span><span class="fdn">b</span></span>, con b ≠ 0</h2></p>
+			<p><strong>Fracciones equivalentes</strong></p>
+			<p>Dos fracciones son equivalentes cuando el producto de extremos es igual al producto de medios.</p>
+			<p align="center"style="color: brown;"><span class="fraction"><span class="fup">a</span><span class="bar">/</span><span class="fdn">b</span></span>=<span class="fraction"><span class="fup">c</span><span class="bar">/</span><span class="fdn">d</span></span>, con ad = bc</h2></p>
+			<p>Si se multiplica o divide el numerador y el denominador de una fracción por un número entero, distinto de cero, se obtiene otra fracción equivalente a la dada. Al primer caso le llamamos amplificar, al segundo simplificar.</p>
+			<p>Ejemplo:</p>
+			<p>Amplificar por 4 el racional <span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">5</span></span></p>
+			<p><span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">5</span></span>&#215;<span class="fraction"><span class="fup">4</span><span class="bar">/</span><span class="fdn">4</span></span>=<span class="fraction"><span class="fup">8</span><span class="bar">/</span><span class="fdn">20</span></span></p>
+			<h3>29</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>Simplificar el racional <span class="fraction"><span class="fup">8</span><span class="bar">/</span><span class="fdn">20</span></span></p>
+			<p><span class="fraction"><span class="fup">8</span><span class="bar">/</span><span class="fdn">20</span></span>=<span class="fraction"><span class="fup">4</span><span class="bar">/</span><span class="fdn">10</span></span>=<span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">5</span></span></p>
+			<p><span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">5</span></span>=<span class="fraction"><span class="fup">8</span><span class="bar">/</span><span class="fdn">20</span></span>, son fracciones equivalentes</p>
+			<p>Simplificar las siguientes expresiones racionalaes </p>
+			<p align="center"><img src="Imagenes/img14.png" style="float:center; width:750px" border="0"/></p>
+			<p>Ejemplos:</p>
+			<table width="720px" align="center"><tr>
+			<td width=<span class="fraction"><span class="fup">45</span><span class="bar">/</span><span class="fdn">120</span></span></td>
+			<td>Se busca el <font color="red">M.C.D.</font>, que para el ejemplo ejemplo el 15</td>
+			<table width="720px" align="center"><tr>
+			<td width=<span class="fraction"><span class="fup">45÷15</span><span class="bar">/</span><span class="fdn">120÷15</span></span></td>
+			<td>Se divide numerador y denominador por el <font color="red">M.C.D.</font> encontrado, para obtener el resultado final de <span class="fraction"><span class="fup">3</span><span class="bar">/</span><span class="fdn">8</span></span></td>
+			</tr></table>
+			
+			
+			<h3>30</h3>
+		</div>
+			
+		<div class="izquierda">
+			<p><strong>Propiedades de las fracciones</strong></p>
+			<p align="center"><img src="Imagenes/img15.png" style="float:center; width:750px" border="0"/></p>
+			<p class="fig"><b>Tabla 4</b>. Propiedades de las fracciones</p>
+			<p><strong>Tipos de fracciones</strong></p>
+			<p><strong>Fracciones Propias:</strong>&nbspCuando el numerador es menor que el denominador. Su valor está comprendido entre cero y uno.</p>
+			<p>Ejemplos: <span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">5</span></span>&nbsp,<span class="fraction"><span class="fup">3</span><span class="bar">/</span><span class="fdn">7</span></span>&nbsp,<span class="fraction"><span class="fup">9</span><span class="bar">/</span><span class="fdn">11</span></span></p>
+			<p><strong>Fracciones Imropias:</strong>&nbspcuando el numerador es mayor o igual que el denominador. Su valor es mayor o igual a uno.</p>
+			<p>Ejemplos: <span class="fraction"><span class="fup">5</span><span class="bar">/</span><span class="fdn">2</span></span>&nbsp,<span class="fraction"><span class="fup">7</span><span class="bar">/</span><span class="fdn">3</span></span>&nbsp,<span class="fraction"><span class="fup">11</span><span class="bar">/</span><span class="fdn">9</span></span>&nbsp,<span class="fraction"><span class="fup">5</span><span class="bar">/</span><span class="fdn">5</span></span>.</p>
+			<p>En el siguiente objeto interactivo se puede ver la representación en la recta de fracciones propias e impropias</p>
+			<h3>31</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/rBkjkyqf" target="_blank"><font color="blue">María Fernanda Mejía Palomino, Leopoldo Aranda Murcia</font></a><sup>8</sup>, podrás entender la diferencia entre fracciones propias e impropias, en el momento que hagas uso de los deslizadores.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+		<br>
+			<sup>8</sup>&nbsp;&nbsp;&nbsp;María Fernanda Mejía Palomino, Leopoldo Aranda Murcia son autores de la red GeoGebra, que publicaron la escena interactiva "Fracción propia e impropia".</a>.</div>
+			<p align="center"><iframe src="interactivos/geogebra9.html" style="border:0;" width="780px" height="450px" scrolling="no"></iframe></p>
+			<a href="interactivos/geogebra9.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>32</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p><strong>Fracciones Mixtas:</strong>&nbspEste tipo de fracciones está compuesta de una parte entera y otra fraccionaria. Se obtienen de una fracción impropia, donde la parte entera corresponde al cociente y la fraccionaria del residuo(numerador), dividido por el divisor (denominador)</p>
+			<p>Ejemplos</p>
+			<p><big>3</big><span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">5</span></span> &nbsp, <big>1</big><span class="fraction"><span class="fup">3</span><span class="bar">/</span><span class="fdn">7</span></span> &nbsp, <big>5</big><span class="fraction"><span class="fup">9</span><span class="bar">/</span><span class="fdn">11</span></span></p>
+			<p>Para fracilitar su comprensión, analizaremos la fraccion impropia <span class="fraction"><span class="fup">17</span><span class="bar">/</span><span class="fdn">5</span></span></p>
+			<p align="center"><img src="Imagenes/img16.png" style="float:center; width:550px" border="0"/></p>
+			<p align="center"><big>3</big><span class="fraction"><span class="fup">2</span><span class="bar">/</span><span class="fdn">5</span></span></p>
+			<p>Para pasar un número mixto a una fracción impropia se procede de la siguiente manera:</p>
+			<h3>33</h3>
+		</div>
+		
+		<div class="derecha">
+			<p align="center"><img src="Imagenes/img17.png" style="float:center; width:300px" border="0"/></p>
+			<p>&nbsp a. Se multiplica la parte entera por el denominador de la parte fraccionaria.</p>
+			<p>&nbsp b. Se le suma el numerador de la parte fraccionaria.</p>
+			<p>&nbsp c. Luego se divide por el denominador de la parte fraccionaria.</p>
+			<p align="center"><span class="fraction"><span class="fup">17</span><span class="bar">/</span><span class="fdn">5</span></span></p>
+			<p><strong>0.10. Operaciones con fracciones.</strong></p>
+			<p><strong>Suma y resta de fracciones:</strong>&nbspEn la suma y resta de fraccionarios se pueden presentar dos tipos de operaciones, cuando tienen el mismo denominador (hogéneas) y cuando su denominador es diferente (heterogénas).</p>
+			<p>&diams;&nbsp<strong>Suma y resta de fracciones homogéneas:</strong>&nbspEn este caso se suman o restan los numeradores y se pone el mismo denominador.</p>
+			<p>Ejemplos:&nbspEn el siguiente cuadro, podrás realizar los ejercicios propuestos para que te familiarices con el procedimiento.</p>
+			<h3>34</h3>
+		</div>
+		
+		<div class="izquierda">
+			<br>
+			<p align="center"><img src="Imagenes/img18.png" style="float:center; width:700px" border="0"/></p>
+			<p>&diams;&nbsp<strong>Suma y resta de fracciones heterogéneas:</strong>&nbsp Se puede hacer lo siguiente.</p>
+			<p>Para la suma o resta de dos fraccionarios, con denominadores pequeños (menores que 10), se recomienda aplicar la siguiente propiedad:</p>
+			<p align="center"style="color: brown;";<strong><span class="fraction"><span class="fup">a</span><span class="bar">/</span><span class="fdn">b</span></span>±<span class="fraction"><span class="fup">c</span><span class="bar">/</span><span class="fdn">d</span></span>=<span class="fraction"><span class="fup">ad ± bc</span><span class="bar">/</span><span class="fdn">bd</span></span>,&nbsp con b y d ≠ 0  </strong></p>
+			<p>Ejemplos</p>
+			<p><span class="fraction"><span class="fup">5</span><span class="bar">/</span><span class="fdn">3</span></span>±<span class="fraction"><span class="fup">4</span><span class="bar">/</span><span class="fdn">5</span></span>=<span class="fraction"><span class="fup">25 ± 12</span><span class="bar">/</span><span class="fdn">15</span></span></p>
+			<p><span class="fraction"><span class="fup">8</span><span class="bar">/</span><span class="fdn">5</span></span>±<span class="fraction"><span class="fup">3</span><span class="bar">/</span><span class="fdn">6</span></span>=<span class="fraction"><span class="fup">48 ± 15</span><span class="bar">/</span><span class="fdn">30</span></span></p>
+			<h3>35</h3>
+		</div>
+		
+		<div class="derecha">
+			<br>
+			<p align="center"><img src="Imagenes/img19.png" style="float:center; width:300px" border="0"/></p>
+			<p>Para la suma o resta de dos fraccionarios, con denominadores grandes (mayores que 10), se recomienda encontrar el (m.c.m) entre los denominadores y hacer lo siguiente:</p>
+			<p>&nbsp a. Determinar el m.c.m de los denominadores.</p>
+			<p>&nbsp b. Dividir el m.c.m encontrado, por el denominador de la primer fracción.</p>
+			<p>&nbsp c. Multiplicar resultado anterior, por el numerador de la primer fracción.</p>
+			<p>&nbsp d. Se repite el mismo procedimiento para cada uno de las demás fracción.</p>
+			<p>&nbsp e. Finalmente se realizan las operaciones y se simplifica, si es posible.</p>
+			<p align="center"><img src="Imagenes/img20.png" style="float:center; width:600px" border="0"/></p>
+			<p>&diams;&nbsp<strong> Suma y resta de fracciones mixtas:</strong>&nbsp Para sumar o restar fracciones mixtas, lo más conveniente es convertirlas en fracciones impropias y realizar las sumas o restas como se indicó anteriormente.</p>
+			<h3>36</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>También se pueden convertir las fracciones en fracciones equivalentes y de esta forma llevar las operaciones con fracciones heterogénas. a homogéneas</p>
+			<p>En el siguiente ejemplo se realiza el procedimiento.</p>
+			<p>Ejemplo</p>
+			<p><span class="fraction"><span class="fup">7</span><span class="bar">/</span><span class="fdn">12</span></span>+<span class="fraction"><span class="fup">1</span><span class="bar">/</span><span class="fdn">6</span></span>-<span class="fraction"><span class="fup">5</span><span class="bar">/</span><span class="fdn">24</span></span></p>
+			<p>Debes realizar los siguientes pasos:</p>
+			<p>&nbsp a. Determinar el m.c.m de los denominadores (en el ejemplo es 24).</p>
+			<p>&nbsp b. Convertir las fracciones heterogéneas en homogéneas, multiplicando numerador y denominadr por el factor que haga falta para que el denominador de cada fracción sea igual al m.c.m.</p>
+			<p>Veamos</p>
+			<p><span class="fraction"><span class="fup">7</span><span class="bar">/</span><span class="fdn">12</span></span>&nbsp+&nbsp<span class="fraction"><span class="fup">1</span><span class="bar">/</span><span class="fdn">6</span></span>&nbsp-&nbsp<span class="fraction"><span class="fup">5</span><span class="bar">/</span><span class="fdn">24</span></span>&nbsp=&nbsp<span class="fraction"><span class="fup">7(2)</span><span class="bar">/</span><span class="fdn">12(2)</span></span>&nbsp+&nbsp<span class="fraction"><span class="fup">1(4)</span><span class="bar">/</span><span class="fdn">6(4)</span></span>&nbsp-&nbsp<span class="fraction"><span class="fup">5(1)</span><span class="bar">/</span><span class="fdn">24(1)</span></span></p>
+			<p>Ahora se tienen las siguientes fracciones equivalentes:</p>
+			<p><span class="fraction"><span class="fup">14</span><span class="bar">/</span><span class="fdn">24</span></span>&nbsp+&nbsp<span class="fraction"><span class="fup">4</span><span class="bar">/</span><span class="fdn">24</span></span>&nbsp-&nbsp<span class="fraction"><span class="fup">5</span><span class="bar">/</span><span class="fdn">24</span></span>&nbsp=&nbsp<span class="fraction"><span class="fup">14&nbsp+&nbsp4&nbsp-&nbsp5</span><span class="bar">/</span><span class="fdn">24</span></span>&nbsp=&nbsp<span class="fraction"><span class="fup">13</span><span class="bar">/</span><span class="fdn">24</span></span></p>
+			<h3>37</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>En el siguiente escena interactiva, diseñada por <a href="https://proyectodescartes.org/descartescms/matematicas/item/1134-suma-de-fracciones/interactivos/objeto5_JS/index.html" target="_blank"><font color="blue">Diego Luis Feria Gómez</font></a><sup>2</sup>, puedes interactuar y ampliar los conocimientos adquiridos.</p>
+			
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>2</sup>&nbsp;&nbsp;&nbsp;Diego Luis Feria Gómez es un autor de la red Descartes, que publicó la escena interactiva "Suma de fracciones".</a>.</div>
+			<p align="center"><iframe src="interactivos/objeto5_JS/index.html" style="border:0;" width="700px" height="500px" scrolling="no"></iframe></p>
+			<a href="interactivos/objeto5_JS/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>38</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>&diams;&nbsp<strong> Producto de fracciones:</strong>&nbsp Para multiplicar fraccionarios, se multiplican numeradores y denominadores entre sí.</p>
+			<p>Se aplica la siguiente propiedad:</p>
+			<p align="center"style="color: brown;";<strong><span class="fraction"><span class="fup">a</span><span class="bar">/</span><span class="fdn">b</span></span>&nbsp;&bull;&nbsp<span class="fraction"><span class="fup">c</span><span class="bar">/</span><span class="fdn">d</span></span>=<span class="fraction"><span class="fup">ad&nbsp;&bull;&nbsp;bc</span><span class="bar">/</span><span class="fdn">bd</span></span>,&nbsp con b y d ≠ 0  </strong></p>
+			<p align="center"><img src="Imagenes/img21.png" style="float:center; width:130px" border="0"/></p>
+			<p>&diams;&nbsp<strong> División de fracciones:</strong>&nbsp Se multiplica el numerador del primer fraccionario, por el denominador del segundo fraccionario (será el numerador) y el denominador del primero por el numerador del segundo (será el denominador). En conclusión, se multiplican en cruz.</p>
+			<p>Se aplica la siguiente propiedad:</p>
+			<p align="center"style="color: brown;";<strong><span class="fraction"><span class="fup">a</span><span class="bar">/</span><span class="fdn">b</span></span>&nbsp;&divide;&nbsp<span class="fraction"><span class="fup">c</span><span class="bar">/</span><span class="fdn">d</span></span>=<span class="fraction"><span class="fup">ad&nbsp;&bull;&nbsp;bc</span><span class="bar">/</span><span class="fdn">bd</span></span>,&nbsp con b y d ≠ 0  </strong></p>
+			<p align="center"><img src="Imagenes/img22.png" style="float:center; width:340px" border="0"/></p>
+			<h3>39</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>Ejercicios de aplicación:</p>
+			<p>&nbsp; a.	La población de un pequeño pueblo disminuyó de 1 750 a 1 700 habitantes. ¿Cuál es el porcentaje de decrecimiento?</p>
+			<p>R&#47;.&nbsp;<span class="fraction"><span class="fup">1750-1700</span><span class="bar">/</span><span class="fdn">1750</span></span> = &nbsp;0.0285714&nbsp;=&nbsp;0.0285714&nbsp;×&nbsp;100&nbsp;&#37;&nbsp;=&nbsp;2.86&nbsp;&#37;&nbsp;</span></p>
+			<p>&nbsp; b.	El salario por hora de trabajo de un estudiante se elevó de 5.25 dólares a 5.75. ¿Cuál es el porcentaje de incremento?</p>
+			<p>R&#47;.&nbsp;<span class="fraction"><span class="fup">5.25-5.75</span><span class="bar">/</span><span class="fdn">5.25</span></span> = &nbsp;0.952381&nbsp;=&nbsp;0.952381&nbsp;×&nbsp;100&nbsp;&#37;&nbsp;=&nbsp;9.52&nbsp;&#37;&nbsp;</span></p>
+			<p>&nbsp; c.	¿Cuál es el descuento y el precio de oferta de un balón de volibol si el precio normal es de $28,60 y hay 25% de descuento?</p>
+			<p>R&#47;.&nbsp;Descuento = $28.6&nbsp;×&nbsp;0.25&nbsp;=&nbsp;$7.15</p>
+			<p>Precio Oferta = $28.6&nbsp;×&nbsp;0.75&nbsp;=&nbsp;$21.45</p>
+			<p><strong>0.11. Recta numérica.</strong></p>
+			<p>Los números reales están ordenados de menor a mayor, de izquierda a derecha en lo que se conoce como la recta numérica. Decimos que <font color="red">a &lt; x &lt; b</font>, siempre y cuando <font color="red">x - a y b - x son números positivos</font>. Quiere decir que todos los números que se ubiquen a la izquierda de un punto de referencia cualquiera, serán menores que los que se ubique a la derecha.</p>
+			<h3>40</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>De la gráfica de la recta numérica se puede concluir que a &lt; &nbsp; x &nbsp; y que x &nbsp; a &lt;&nbsp; b.
+			<p align="center"><img src="Imagenes/img23.png" style="float:center; width:380px" border="0"/></p>
+			<p align="center"style="color: brown;";<strong>a &nbsp; &lt; &nbsp; x &nbsp; &lt; &nbsp; b</p>
+			<p>Si, <font color="red">a &lt; b, a = b o a &gt; b</font> , se llama <b>ley de tricotomía</b>.</p>
+			<p align="center"style="color: brown;";<strong>Si,&nbsp;a&nbsp;&lt;&nbsp;b&nbsp;y&nbsp;b&nbsp;&lt;&nbsp;c&nbsp;, entonces&nbsp;a&nbsp;&lt;&nbsp;c</p>
+			<p>Se conoce como <b>Propiedad transitiva</b>.</p>
+			<p align="center"><img src="Imagenes/img24.png" style="float:center; width:410px" border="0"/></p>
+			<p>Ejemplo: Si, &nbsp;x&nbsp;&lt;&nbsp;12&nbsp; y&nbsp; 12&nbsp;&lt;&nbsp;y, concluimos de la propiedad anterior que &nbsp;x&nbsp;&lt;&nbsp;y&nbsp;.Veamos el ejemplo graficamente.</p>
+			<p align="center"><img src="Imagenes/img25.png" style="float:center; width:410px" border="0"/></p>
+			<p>Los intervalos pueden ser abiertos o cerrados, los abiertos se representan con parénteis y los cerrados con corchetes.</p>
+			<h3>41</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>En la siguiente escena interactiva puedes darte cuenta del significado de lo que es un intervalo abierto y un intervalo cerrado. Observa cuando la escena te muestra en las opciones de intervalos, como incluye el valor cuando se trata de un intervalo cerrado y como se acerca con muchas cifras decimales, pero no lo toma cuando se trata de un intervalo abierto. También podrás ver como puedes desplazar <font color="red">el punto rojo</font>, sólo hasta donde el intervalo te lo permite.</p>
+			<p align="center"><iframe src="interactivos/objeto1_JS/3_1/index.html" style="border:0;" width="800px" height="500px" scrolling="no"></iframe></p>
+			<a href="interactivos/objeto1_JS/3_1/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>42</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/bxdudgks" target="_blank"><font color="blue">Alfredo Cortés Sánchez</font></a><sup>3</sup>, podrás interactuar realizando cambios en los rangos para que profundices en tus conocimientos.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>3</sup>&nbsp;&nbsp;&nbsp;Alfredo Cortés Sánchez es un autor de la red GeoGebra, que publicó la escena interactiva "Intervalos".</a>.</div>
+			<p align="center"><iframe src="interactivos/intervalos.html" style="border:0;" width="600px" height="500px" scrolling="no"></iframe></p>
+			<a href="interactivos/intervalos.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>43</h3>
+		
+		</div>
+		
+		<div class="derecha">
+			<p>En la siguiente escena interactiva, al realizar los ejercicios propuestos, pondrás a prueba los conocimientos adquiridos.</p>
+			<br>
+			<p align="center"><iframe src="interactivos/interactivo21.html" style="border:0;" width="700px" height="500px" scrolling="no"></iframe></p>
+			<a href="interactivos/interactivo21.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>44</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+			<p><strong>0.12. Conjuntos e intervalos.</strong></p>
+			<p><b>Unión e Intersección de intervalos.</b></p>
+			<p><b>Unión de intervalos:</b> En la unión de intervalos, se enccuentran todos los elementos que pertenecen a los conjuntos numéricos en referenacia.</p>
+			<p>Ejemplo: Sea  A = &#91; -1 , 2 &#41; ,  B = &#91; 1 , 4 &#93;  y  C = &#40; -3 , &infin; &#41;</p>
+			<p>Graficamente lo podemos representar de la siguiente forma:</p>
+			<p align="center"><img src="Imagenes/img26.png" style="float:center; width:450px" border="0"/></p>
+			<p>Hallar:</p>
+			
+			<div style="text-align:center;">
+			<table><html>
+				<head>
+				</head>
+				<body>
+
+				<div style="text-align:center;">
+				<table border="1" style="margin: 0 auto;">
+					<tr>
+						<td>Ejercicio</td>
+						<td>Solución</td>
+					</tr>
+					<tr>
+						<td>A &#8746; B</td>
+						<td>&#91; -1 , 4 &#93;</td>
+					</tr>
+					<tr>
+						<td>B &#8746; C</td>
+						<td>&#40;  -3 , &infin; &#41; </td>
+					</tr>
+					<tr>
+						<td>A &#8746; C</td>
+						<td>&#40;  -3 , &infin; &#41; </td>
+					</tr>
+					<tr>
+						<td>A &#8746; B &#8746; C</td>
+						<td>&#40;  -3 , &infin; &#41; </td>
+					</tr>
+				</table>
+				</div>
+				</body>
+				</html>
+			<h3>45</h3>
+		
+		</div>
+		
+		
+		<div class="derecha">
+			<p><b>Intersección de intervalos:</b> En la intersección de intervalos, se enccuentran SÓLO los elementos comunes que pertenecen a los conjuntos numéricos en referenacia.</p>
+			<p>Para una mejor comprensión, se continuará con el mismo ejemplo.</p>
+			<p>Sea  A = &#91; -1 , 2 &#41; ,  B = &#91; 1 , 4 &#93;  y  C = &#40; -3 , &infin; &#41;</p>
+			<p>Graficamente lo podemos representar de la siguiente forma:</p>
+			<p align="center"><img src="Imagenes/img26.png" style="float:center; width:450px" border="0"/></p>
+			<p>Hallar:</p>
+			
+			<div style="text-align:center;">
+			<table><html>
+				<head>
+				</head>
+				<body>
+
+				<div style="text-align:center;">
+				<table border="1" style="margin: 0 auto;">
+					<tr>
+						<td>Ejercicio</td>
+						<td>Solución</td>
+					</tr>
+					<tr>
+						<td>A &#8745; B</td>
+						<td>&#91; -1 , 2 &#41;</td>
+					</tr>
+					<tr>
+						<td>B &#8745; C</td>
+						<td>&#91;  1 , 4 &#93; </td>
+					</tr>
+					<tr>
+						<td>A &#8745; C</td>
+						<td>&#91;  1 , 2 &#41; </td>
+					</tr>
+					<tr>
+						<td>A &#8745; B &#8745; C</td>
+						<td>&#91;  1 , 2 &#41; </td>
+					</tr>
+				</table>
+				</div>
+				</body>
+				</html>
+			<p>Observa que no se incluye el número 2 en la intersección, ya que NO ES COMÚN para el conjunto A.</p>
+			<h3>46</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/sj56aGRD" target="_blank"><font color="blue">EducaticMeta</font></a><sup>4</sup>, podrás interactuar realizando cambios en los rangos para que profundices en tus conocimientos.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>4</sup>&nbsp;&nbsp;&nbsp;EducaticMeta son autores de la red GeoGebra, que publicaron la escena interactiva "ov2 operaciones con intervalos".</a>.</div>
+			<p align="center"><iframe src="interactivos/intervalos - copia.html" style="border:0;" width="800px" height="500px" scrolling="no"></iframe></p>
+			<a href="interactivos/intervalos - copia.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>47</h3>
+		
+		</div>
+		
+		<div class="derecha">
+		<br>
+		<table width="720px" align="center"><tr>
+			<td width="300px"><iframe width="310" height="200" src="https://www.youtube.com/embed/j-5mBl4fInA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+			<td>En el siguiente video realizado por <a href="https://www.youtube.com/watch?v=j-5mBl4fInA" target="_blank"><font color="blue">Matemáticas Profe Alex</font></a><sup>1</sup>, vas a repasar los conceptos de intervalos abiertos y cerrados explicados anteriormente y podrás ver cómo influyen en la solución de la <font color="red"><b>unión de intervalos.</b></font><br>De igual forma podrás ver la representación gráfica y en forma de intervalos de la respuesta final.</td>
+			</tr></table>
+			<a href="interactivos/video2.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>
+			</table></p>
+			
+		<table width="720px" align="center"><tr>
+			<td width="300px"><iframe width="310" height="200" src="https://www.youtube.com/embed/nx_rvu-yD70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+			<td>En el siguiente video realizado por <a href="https://www.youtube.com/watch?v=nx_rvu-yD70" target="_blank"><font color="blue">Matemáticas Profe Alex</font></a><sup>2</sup>, vas a repasar los conceptos de intervalos abiertos y cerrados explicados anteriormente y podrás ver cómo influyen en la solución de la <font color="red"><b>intersección de intervalos.</b></font><br>De igual forma podrás ver la representación gráfica y en forma de intervalos de la respuesta final..</td>
+			</tr></table>
+			<a href="interactivos/video3.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>
+			</table></p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>2</sup>&nbsp;&nbsp;&nbsp;Matemáticas Profe Alex son autores de la red Youtube, que publicaron el video "Unión e Intersección de intervalos".</a></div>
+			<h3>48</h3>
+		
+		</div>
+		
+		
+		<div class="izquierda">
+			<p><strong>0.13. Valor absoluto y distancia</strong></p>
+			<p><b>Valor absoluto.</b></p>
+			<p>El valor absoluto de un número a, denotado por <font color="red">&mid; a &mid;</font> , es la distancia desde a hasta 0 sobre la recta numérica. La distancia es siempre positiva o cero, de modo que tenemos para cada número a <font color="red">&mid; a &mid; &ge; 0</font>. Tenga en cuenta que –a es cuando a es negativa.</p>
+			<p align="center"><img src="Imagenes/img27.png" style="float:center; width:230px" border="0"/></p>
+			<p>Hallar:</p>
+			
+			<div style="text-align:center;">
+			<table><html>
+				<head>
+				</head>
+				<body>
+
+				<div style="text-align:center;">
+				<table border="1" style="margin: 0 auto;">
+					<tr>
+						<td>Ejercicio</td>
+						<td>Solución</td>
+					</tr>
+					<tr>
+						<td>a. &mid; 3 &mid;</td>
+						<td> 3 </td>
+					</tr>
+					<tr>
+						<td>b. &mid; -3 &mid;</td>
+						<td>- ( -3 ) = 3</td>
+					</tr>
+					<tr>
+						<td>c. &mid; 0 &mid;</td>
+						<td> 0 </td>
+					</tr>
+					<tr>
+						<td>d. &mid; 3 - &pi; &mid;</td>
+						<td>- ( 3 - &pi; ) = &pi; - 3 </td>
+					</tr>
+				</table>
+				</div>
+				</body>
+				</html>
+				<p> En la tabla siguiente, encontrará las principales propieddes del valor absoluto.  Así como un ejemplo de cada una de ellas y su descripción.<P>
+			<h3>49</h3>
+		
+		</div>
+		
+		
+		<div class="derecha">
+		<br>
+			<p align="center"><img src="Imagenes/img28.png" style="float:center; width:720px" border="0"/></p>
+			<p class="fig"><b>Tabla 5</b>. Propiedades del valor absoluto</p>
+			<p><b>Distancia entre dos puntos.</b></p>
+			<p>Si a y b son números reales, entonces la distancia ( cero o siempre positiva) entre ellos en la recta numérica es:</p>
+			<p align="center"style="color: brown;";<strong> d<sub>( a , b ) = &mid; b - a &mid;</p>
+			<p>Ejemplos: En el siguiente cuadro se presentan tres ejercicios con la solución y su representación gráafica.</p>
+			<h3>50</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+			<p><strong>0.14. Regla de tres</strong></p>
+			<p>Es un mecanismo mátemático que sirve para la solución de problemas que tienen una proporcionalidad, se deben conocer tres datos y con su utilización, se encuentra el cuarto. Siempre que existe un cambio en uno de los datos, los otros cambiaraán en forma proporcional.</p>
+			<p>Ejemplo: Si para la elaboración de una torta se necesitan 5 huevos, cuántos se necesitarán para la elaboración de siete (7) tortas?.</p>
+			<p>Solución: Se define con la variable X, la canatidad de huevos que se necesitan para la elaboración de las 7 tortas.</p>
+			<p align="center"><img src="Imagenes/img30.png" style="float:center; width:320px" border="0"/></p>
+			<p>( 1 ) X = 7 &bull; 5 , luego X = 35 huevos .</p>
+			<p>Como existe una proporcionalidad o equvalencia, lo podemos resolver teniendo en cuenta la definición vista en la pagina 28 para fracciones equivalentes.</p>
+			<p align="center"style="color: brown;"><span class="fraction"><span class="fup">a</span><span class="bar">/</span><span class="fdn">b</span></span>=<span class="fraction"><span class="fup">c</span><span class="bar">/</span><span class="fdn">d</span></span>, con ad = bc</h2></p>
+			<p Lo que sería:</p>
+			<span class="fraction"><span class="fup">1</span><span class="bar">/</span><span class="fdn">7</span></span> = <span class="fraction"><span class="fup">5</span><span class="bar">/</span><span class="fdn">x</span></span>, y se lee: Uno ( 1 ) es a siete ( 7 ) como  cinco ( 5 ) es a x.</h2></p>
+			<h3>51</h3>
+		
+		</div>
+		
+		
+		<div class="derecha">
+			
+			<br>
+			<p>Aplicamos la definición de fracciones equvalentes y se resuelve de igual forma:</p>
+			<p>( 1 ) x = 7 &bull; 5 , luego x = 35 huevos .</p>
+			<p><strong>0.15. Aplicaciones con porcentajes.</strong></p>
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/amgmfj2d" target="_blank"><font color="blue">Leslye RS, Fabián Colombo</font></a><sup>7</sup>, podrás observar que el denominador determina en cuantas partes se divide una unidad y el numerador determina la fracción (parte del denominador) o porcentaje que se toma. En la escena interactiva el “lado”, elevado al cuadrado determina el denominador y el deslizador es el numerador.</p>
+			<p>Observa lo que sucede al ingresar los lados 10, 8, 6 y mueve el deslizador (numerador) a 50, 32 y 18 respectivamente; en cada uno de ellos.</p>
+			<p>En cada cambio que realices, sobre la escena interactiva puedes presionar click derecho en tu mosue y dejarlo presionado, desplazando hacia la izquierda o derecha, hacia arriba o hacia abajo para una mejor visualización de la escena.</p>
+			<p>Puedes realizar diferentes cambios en el "lado" de la escena interactiva y mover el deslizador para que observes como cambia el fraccionario, el decimal y el porcentaje, en cada uno de los ejercicios que te propongas realizar.</p>
+			<h3>52</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+		<br>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>7</sup>&nbsp;&nbsp;&nbsp;Leslye RS, Fabián Colombo son autores de la red GeoGebra, que publicaron la escena interactiva "Fracciones, decimales y porcentajes.".</a>.</div>
+			<p align="center"><iframe src="interactivos/geogebra10.html" style="border:0;" width="780px" height="450px" scrolling="no"></iframe></p>
+			<a href="interactivos/geogebra10.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+		
+			<h3>53</h3>
+		
+		</div>
+		
+		<div class="derecha">
+			<br>
+			<p>Ejemplos:</p>
+			<p>1. Si compras un televisor, para el que su precio se estima en $1.800.000 y te dan un descuento del 15%, cuanto estarías pagando?</p>
+			<p>$1.800.000 - ($1.800.000 x <span class="fraction"><span class="fup">15</span><span class="bar">/</span><span class="fdn">100</span></span>) = $1.800.000 - 270.000 = $1.530.000. Que sería equivalente a pagar: $1.800.000 x 0.85 = $1.530.000</p>
+			<p>2. Si se paga la matricula de la universidad la fecha indicada, se pagarán $1.980.000. Se excedes la fecha limite se te cobrará un 25% adicional.</p>
+			<p>$1.980.000 + ($1.980.000 x <span class="fraction"><span class="fup">25</span><span class="bar">/</span><span class="fdn">100</span></span>) = $1.980.000 + 495.000 = $2.475.000. Que sería equivalente a pagar: $1.980.000 x 1.25 = $2.475.000</p>
+			<p>3. Si las ventas de determinado producto, para el mes de enero fueron de 250.000 unidades y en el mes de febrero las ventas de ese mismo producto alcanzo los niveles de 290.000 unidades, cuánto fue el crecimiento en las ventas?.</p>
+			<p><span class="fraction"><span class="fup">290.000 - 250.000</span><span class="bar">/</span><span class="fdn">250.000</span></span> = 0.16 = 16%</p>
+			<p>También puedes dividir las ventas de febrero por las ventas de enero y obtienes el incremento <span class="fraction"><span class="fup">290.000</span><span class="bar">/</span><span class="fdn">250.000</span></span> = 1.16, esto quiere decir que las ventas se incrementaron un 16%</p>
+			<h3>54</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://proyectodescartes.org/AprendeMX/materiales_didacticos/M05_042_PorcentajesYFracciones/index.html" target="_blank"><font color="blue">@prende.mx</font></a><sup>5</sup>, podrás interactuar para observar las distintas maneras de representar porcentajes, explorar la relación existente entre porcentajes y fracciones, aprender a representar porcentajes y fracciones y finalmente pndrás a prueba los conocimientos adquiridos, al responder sin limite de tiempo 10 preguntas. !Buena Suerte!.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>5</sup>&nbsp;&nbsp;&nbsp;@prende.mx son autores de la red Descartes, que publicaron la escena interactiva "Porcentajes y fracciones ".</a>.</div>
+			<p align="center"><iframe src="interactivos/objeto4_JS/index.html" style="border:0;" width="700px" height="450px" scrolling="no"></iframe></p>
+			<a href="interactivos/objeto4_JS/index.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>55</h3>
+		
+		</div>
+		
+		<div class="derecha">
+			<p><strong>0.16. Practiquemos</strong></p>
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/AzNeYjzt" target="_blank"><font color="blue">Javier Cayetano Rodriguez</font></a><sup>6</sup>, podrás resolver los ejercicios planteados con aproximación de dos cifrras decimales y pondrás a prueba tus conocimientos.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>6</sup>&nbsp;&nbsp;&nbsp;Javier Cayetano Rodriguez es un autor de la red GeoGebra, que publicó la escena interactiva "Aumentos y Disminuciones porcentuales.".</a>.</div>
+			<p align="center"><iframe src="interactivos/geogebra3.html" style="border:0;" width="780px" height="430px" scrolling="no"></iframe></p>
+			<a href="interactivos/geogebra3.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>56</h3>
+		
+		</div>
+		
+		<div class="izquierda">
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/yptnngn9" target="_blank"><font color="blue">Javier Cayetano Rodriguez</font></a><sup>7</sup>, podrás resolver los ejercicios planteados y pondrás a prueba tus conocimientos.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>7</sup>&nbsp;&nbsp;&nbsp;Javier Cayetano Rodriguez es un autor de la red GeoGebra, que publicó la escena interactiva "Problemas de porcentajes".</a>.</div>
+			<p align="center"><iframe src="interactivos/geogebra4.html" style="border:0;" width="780px" height="450px" scrolling="no"></iframe></p>
+			<a href="interactivos/geogebra4.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>57</h3>
+		
+		</div>
+		
+		
+		<div class="derecha"style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Capitulo 1</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Potenciación</font></h1>
+			<p align="center" style="position: absolute; bottom: 130px; left:100px; right:0;"><font color="black" size="5"><b>Guilda Viviana Dávila Durán<br>
+			Marco Tulio Mesa Cardona<br>
+			Juan Guillermo Arango Arango<br></b></font></p>
+		</div>
+		
+		
+		<div class="izquierda">
+		<h1><font color="blue">Capitulo 1. Potenciación</font></h1>
+			<p><strong>2. Potenciación</strong></p>
+			<p> En la potenciación se distinguen tres partes importantes, una base, un exponente y una potencia. El exponente son las veces que se debe multiplicar la base por sí misma y el resultado de este producto, es la potencia.</p>
+			<p align="center"><img src="Imagenes/img31.png" style="float:center; width:600px" border="0"/></p>
+		<br>
+			<p align="center"><img src="Imagenes/img32.png" style="float:center; width:600px" border="0"/></p>
+			<p>Ejemplos:</p>
+			<p>5 <sup>3</sup> = 5 &bull; 5 &bull; 5 = 125</p>
+			<p>-3 <sup>3</sup> = (-3 ) &bull; ( -3 ) &bull; ( -3 ) = 27</p>
+			<h3>59</h3>
+		</div>
+		
+		<div class="derecha">
+			<p><strong>2.1. Propiedades de la potenciación<p></strong>
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_radicales-JS-LOMCE/index.htm" target="_blank"><font color="blue">Miguel Angel Cabezón Ochoa</font></a><sup>8</sup>, podrás analizar las popiedades de las potencia con ejercicios propuestos.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+		<br>
+			<sup>8</sup>&nbsp;&nbsp;&nbsp;Miguel Angel Cabezón Ochoa es un autor de la red Descartes, que publicó la escena interactiva "Propiedades de las potencias."</a>.</div>
+			<p align="center"><iframe src="interactivos/EDAD/escena6.html" style="border:0;" width="700px" height="450px" scrolling="no"></iframe></p>
+			<a href="interactivos/EDAD/escena6.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+			<h3>60</h3>
+		</div>
+		
+		<div class="izquierda">
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/rzwf8fup" target="_blank"><font color="blue">Orlando, El Sueniero</font></a><sup>9</sup>, podrás resolver los ejercicios planteados y pondrás a prueba tus conocimientos.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+		<br>
+			<sup>9</sup>&nbsp;&nbsp;&nbsp;Orlando, El Sueniero es un autor de la red GeoGebra, que publicó la escena interactiva "Problemas de porcentajes".</a>.</div>
+			<p align="center"><iframe src="interactivos/geogebra8.html" style="border:0;" width="780px" height="450px" scrolling="no"></iframe></p>
+			<a href="interactivos/geogebra8.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+		
+			<h3>61</h3>
+		</div>
+		
+		<div class="derecha">
+			<p><strong>2.2. Operaciones con potencias<p></strong>
+			<p> En las siguientes operaciones con potencias, se aplicarán las propiedades de las potencias.</p>
+			<p> 1. <b> Producto de potencias de la misma base:</b> Recordemos que para multiplicar potencias que tienen la misma base, se pone la misma base y se suman sus exponentes, esto es:<font color="red"> a <sup>m </sup> &bull; a <sup>n </sup> = a <sup>m + n </sup></font>.</p>
+			<p>Ejemplos:</p>
+			<div style="text-align:center;">
+			<table><html>
+				<head>
+				</head>
+				<body>
+
+				<div style="text-align:center;">
+				<table border="1" style="margin: 0 auto;">
+					<tr>
+						<td>Ejercicio</td>
+						<td>Solución</td>
+					</tr>
+					<tr>
+						<td>a. 3 <sup>2 </sup> &bull; 3 <sup>4 </sup> &bull; 3 <sup>6 </sup></td>
+						<td> 3 <sup>2 + 4 + 6 </sup> = 3 <sup>12 </sup></td>
+					</tr>
+					<tr>
+						<td>b. 5 <sup>3 </sup> &bull; 5 <sup>2 </sup> &bull; 5 </td>
+						<td> 5 <sup>3 + 2 + 1 </sup> = 5 <sup>6 </sup></td>
+					</tr>
+					<tr>
+						<td>c. 6 <sup>4 </sup> &bull; 6 <sup>5 </sup> &bull; 6 <sup>3 </sup> </td>
+						<td> 6 <sup>4 + 5 + 3 </sup> = 6 <sup>12 </sup></td>
+					</tr>
+					<tr>
+						<td>d. 7 <sup>3 </sup> &bull; 7 <sup>2 </sup> &bull; 7 <sup>5 </sup> </td>
+						<td> 7 <sup>3 + 2 </sup> = 7 <sup>5 </sup> = 16.807</td>
+					</tr>
+				</table>
+				</div>
+				</body>
+				</html>
+			
+			
+			
+			<h3>62</h3>
+		</div>
+		
+		
+		<div class="izquierda">
+			<br>
+			<p align="center"><video width="640" height="360" controls><source src="videos/ejemplo.mp4" type="video/mp4">Su navegador es como el de Jaime.</video>
+
+			<a href="videos/ejemplo.mp4" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-384)+',top='+(screen.availHeight/2-216)+',width=768,height=432');return false;">
+			<br><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>	
+			<h3>63</h3>
+		</div>
+		
+		
+		<div class="derecha">
+			<p align="center"><iframe  width="550" height="450" src="https://www.youtube.com/embed/jSZWvCh2PqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<a href="interactivos/video5.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<br><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>	
+			<h3>64</h3>
+		</div>
+		
+		
+		<div class="izquierda">
+			<p align="center"><iframe src="interactivos/escena5.html" style="border:0;" width="700px" height="450px" scrolling="no"></iframe></p>
+			<a href="interactivos/escena5.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<br><p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>	
+			<h3>65</h3>
+		</div>
+		
+		<div class="derecha">
+			<p>En la siguiente escena interactiva, diseñada por <a href="https://www.geogebra.org/m/amgmfj2d" target="_blank"><font color="blue">Leslye RS, Fabián Colombo</font></a><sup>7</sup>, podrás observar que el denominador determina en cuantas partes se divide una unidad y el numerador determina la fracción (parte del denominador) o porcentaje que se toma. En la escena interactiva el “lado”, elevado al cuadrado determina el denominador y el deslizador es el numerador.</p>
+			<p>Observa lo que sucede al ingresar los lados 10, 8, 6 y mueve el deslizador (numerador) a 50, 32 y 18 respectivamente; en cada uno de ellos.</p>
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>7</sup>&nbsp;&nbsp;&nbsp;Leslye RS, Fabián Colombo son autores de la red GeoGebra, que publicaron la escena interactiva "Fracciones, decimales y porcentajes.".</a>.</div>
+			<p align="center"><iframe src="interactivos/geogebra10.html" style="border:0;" width="780px" height="340px" scrolling="no"></iframe></p>
+			<a href="interactivos/geogebra10.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<p align="center"><img src="images/amp_1.png" style="float:center; width:80px" border="0" /></a></p>				
+		
+			<h3>66</h3>
+		</div>
+		
+		
+		<div class="izquierda">
+		<h1>Bibliografía</h1><br>
+			<p class="bib">Abreu L., José y Muñoz P., Valentina   (2004). <i>proyectodescartes.org-Telesecundaria </i>Obtenido de: http://proyectodescartes.org/Telesecundaria/materiales_didacticos</p>
+			<p class="bib">Barbero Corral, Eduardo  (2004). <i>ProyectoDescartes.org. </i>Obtenido de: http://proyectodescartes.org/uudd/materiales_didacticos</p>
+			<p class="bib">Barnett, Raymon A.  (1989). <i>Álgebra y Geometría. </i> Bogotá: 2° Ed. Ediciones MC Graw-Hill. </i> 384 pag. </p>
+			
+			<p class="bib">Rodríguez S, Benjamín y otros (1996). <i>Matemáticas con Tecnología Aplicada. </i> Bogotá: Ediciones Prentice Hall. </i> 220 pag.</p>
+		
+			<p class="bib">Ruiz Gil, Consolación (2014). <i>proyectodescartes.org-EDAD</i>Obtenido de: http://proyectodescartes.org/EDAD/materiales_didacticos</p>
+			<p class="bib">Uribe Calad, Julio A. (1989). <i>Elementos de Matemáticas. </i> Medellín: 2° Ed. Ediciones Bedout. </i> 401 pag.</p>
+		
+		<h3>67</h3>
+		</div>
+		
+		<div class="cover">
+			<p align="center" style="position: absolute; bottom: 350px; left:0; right:0;"> <a id="logo"><img src="images/logo3.svg" alt="Descartes"></a>	</p>
+		<div class="gradient"></div>
+		</div>
+		
+</div>
+	<script>
+		$("#book").turn({
+			display: 'double',
+			acceleration: true,
+			gradients: true,
+			elevation: 50,
+		});
+		$(window).bind('keydown', function(e){
+		if (e.target && e.target.tagName.toLowerCase()!='input')
+			if (e.keyCode==37)
+				$('#book').turn('previous');
+			else if (e.keyCode==39)
+				$('#book').turn('next');
+		});
+	</script>
+	
+	
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction(i) {
+   
+	$('#book').turn('page',i+2);
+}
+
+function myFunction2() {
+   
+	$('#book').turn('next');
+}
+
+function myFunction3() {
+   
+	$('#book').turn('previous');
+}
+
+function calculadora() {
+	 var myWindow = window.open("calculadora/index.htm", "_blank","toolbar=yes,scrollbars=no,resizable=yes,top=100,left=800,width=400,height=400");
+}
+
+function imprimir() {
+	 var myPrinter = window.print();
+}
+
+function ayuda() {
+	 var myWindow = window.open("images/info.html", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=100,right=800,width=800,height=600");
+}
+
+</script>
+<div class="dropdown">
+<button onclick="myFunction(3)" class="dropbtn2"></button>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction(4)" class="dropbtn"></button>
+</div>
+
+<!-- Eliminar el comentario para activar el botón del menú tres -->
+<!--
+<div class="dropdown">
+<button onclick="myFunction(6)" class="dropbtn3"></button>
+</div>
+-->
+
+
+<div class="dropdown">
+<button onclick="calculadora()" class="dropbtn4"></button>
+</div>
+<div class="dropdown">
+
+<button onclick="imprimir()" class="dropbtn5"></button>
+<style type="text/css" media="print">
+  @page {size: A4 landscape;}
+</style>
+</div>
+<div class="dropdown">
+<button onclick="ayuda()" class="dropbtn6"></button>
+</div>
+
+<div class="nextdown">
+<button onclick="myFunction2()" class="nextbtn"></button>
+</div>
+<div class="prevdown">
+<button onclick="myFunction3()" class="prevbtn"></button>
+</div>
+</body>
+		
+</html>
+		
+</html>

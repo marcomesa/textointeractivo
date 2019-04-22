@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Unidad 1.2  -  Suma y resta de expresiones algebraicas</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body style="margin:0;padding:0; overflow: hidden; ">
+
+
+<ajs name="Explorar" width=790 height=520 code="Descartes">
+   <param name="tamaño" value="790x520">
+   <param name="image_loader" value="">
+   <param name="expand" value="fit">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Explorar">
+   <param name="Versión" value="5.335, 2015-01-12">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E2' fijo='sí' despl_imagen='arr-izq' fondo='d8d8e5' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='operacion' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(xB-1,yB-1,B.ancho+2,B.alto+2)' decimales='0' fijo='sí' visible='sí' imagen='images/VACIO.GIF' acción='calcular' parámetro='otro=(otro+1)%2' dibujar-si='dibujar'">
+   <param name="C_02" value="id='prev' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(28,471,34,38)' fijo='sí' visible='sí' imagen='images/VACIO.GIF' acción='abrir Escena' parámetro='sumas_3.html target=_self' pos_mensajes='centro'">
+   <param name="C_03" value="id='next' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(728,471,34,38)' fijo='sí' visible='sí' imagen='images/VACIO.GIF' acción='abrir Escena' parámetro='sumas_5.html target=_self' pos_mensajes='centro'">
+   <param name="A_01" value="id='cuadroX' vector='sí' evaluar='una-sola-vez' expresión='cuadroX[0]=-3;cuadroX[1]=0;cuadroX[2]=3'">
+   <param name="A_02" value="id='cuadroY' vector='sí' evaluar='una-sola-vez' expresión='cuadroY[0]=0;cuadroY[1]=0;cuadroY[2]=0'">
+   <param name="A_03" value="id='permutacion' vector='sí' evaluar='una-sola-vez' expresión='permutacion[0]=0;permutacion[1]=0;permutacion[2]=0'">
+   <param name="A_04" value="id='permAux' vector='sí' evaluar='una-sola-vez' expresión='permAux[0]=2;permAux[1]=0;permAux[2]=1'">
+   <param name="A_05" value="id='CX' vector='sí' evaluar='una-sola-vez' expresión='CX[0]=0;CX[1]=0;CX[2]=0'">
+   <param name="A_06" value="id='CY' vector='sí' evaluar='una-sola-vez' expresión='CY[0]=0;CY[1]=0;CY[2]=0'">
+   <param name="A_07" value="id='norma(x,y)' algoritmo='sí' expresión='x^2+y^2' algoritmo='sí'">
+   <param name="A_08" value="id='iniPerm()' algoritmo='sí' expresión='0' algoritmo='sí' hacer='r1=ent(rnd*3);r2=ent(rnd*2);r2=(r2>=r1)?r2+1:r2;r3=3-r1-r2' mientras='(r1=0)&(r2=1)&(r3=2)'">
+   <param name="A_09" value="id='Reinit()' algoritmo='sí' expresión='0' algoritmo='sí' hacer='otro=0;seleccionado=-1;j=0;coef11=ent(rnd*18)-8;coef21=ent(rnd*18)-8;coef31=ent(rnd*18)-8;coef12=ent(rnd*18)-8;coef22=ent(rnd*18)-8;coef32=ent(rnd*18)-8;coef11=(coef11<=0)?coef11-1:coef11;coef12=(coef12<=0)?coef12-1:coef12;coef21=(coef21<=0)?coef21-1:coef21;coef22=(coef22<=0)?coef22-1:coef22;coef31=(coef31<=0)?coef31-1:coef31;coef32=(coef32<=0)?coef32-1:coef32;iniPerm();dibujar=0;permAux[0]=r1;permAux[1]=r2;permAux[2]=r3;permutacion[0]=permAux[0];permutacion[1]=permAux[1];permutacion[2]=permAux[2];CX[permutacion[0]]=cuadroX[0];CX[permutacion[1]]=cuadroX[1];CX[permutacion[2]]=cuadroX[2];CY[permutacion[0]]=cuadroY[0];CY[permutacion[1]]=cuadroY[1];CY[permutacion[2]]=cuadroY[2]'">
+   <param name="A_10" value="id='INI_T' algoritmo='sí' evaluar='una-sola-vez' inicio='T.modulo=|1.2  -  Suma y resta de expresiones algebraicas|' hacer='T.tema=|Sumas 4|;T.a_t=500;T.a_e=700;T.N=2;T.en_1=|Coloca los términos del segundo renglón debajo de sus|;T.en_2=|semejantes para así calcular la suma.|'">
+   <param name="A_11" value="id='INI_B' algoritmo='sí' evaluar='una-sola-vez' hacer='xB=320;yB=465;B.dx=20;B.dy=8;B.texto=|Otra suma|;B.ancho=160;B.alto=40;'">
+   <param name="A_12" value="id='FUZZ' algoritmo='sí' evaluar='siempre' inicio='FUZZ.ancho=790;FUZZ.alto=520' hacer='FUZZ.MaxT=0.7;FUZZ.Cx=600;FUZZ.Cy=150;FUZZ.Cw=300;FUZZ.Ch=300;FUZZ.Rojo=0.85;FUZZ.Verde=0.85;FUZZ.Azul=0.95;'">
+   <param name="A_13" value="id='FLECHAS' algoritmo='sí' evaluar='una-sola-vez' hacer='FA.Rojo=0;FA.Verde=0.8;FA.Azul=0.2;FA.ancho=36;FA.largo=32;FI.Rojo=1.0;FI.Verde=0.0;FI.Azul=0.0;FI.ancho=36;FI.largo=32;'">
+   <param name="A_14" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='aux=Reinit()'">
+   <param name="A_15" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='ancho=cuadroX[1]-cuadroX[0];limiteDerecho=cuadroX[2]+(ancho/2)-.01;limiteIzquierdo=cuadroX[0]-(ancho/2);'">
+   <param name="A_16" value="id='seleccionar' evento='sí' condición='(E2.mouse_pressed=1)&(dibujar!=1)' acción='calcular' parámetro='mouseX=E2.mouse_x\nmouseY=E2.mouse_y\nseleccionado=(norma(mouseX-cuadroX[0],mouseY-cuadroY[0])<1)?0:-1\nseleccionado=(norma(mouseX-cuadroX[1],mouseY-cuadroY[1])<1)?1:seleccionado\nseleccionado=(norma(mouseX-cuadroX[2],mouseY-cuadroY[2])<1)?2:seleccionado\nvacio=seleccionado' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_17" value="id='arrastrar' evento='sí' condición='(E2.mouse_pressed=1)&(seleccionado!=-1)&(dibujar!=1)' acción='calcular' parámetro='CX[permutacion[seleccionado]]=(E2.mouse_x<=limiteDerecho)?E2.mouse_x:limiteDerecho\nCX[permutacion[seleccionado]]=(E2.mouse_x>=limiteIzquierdo)?CX[permutacion[seleccionado]]:limiteIzquierdo\nCY[permutacion[seleccionado]]=(E2.mouse_y<=1)?E2.mouse_y:1\nCY[permutacion[seleccionado]]=(E2.mouse_y>=-1)?CY[permutacion[seleccionado]]:-1\nj=ent((CX[permutacion[seleccionado]]-limiteIzquierdo)/ancho)' ejecución='siempre' pos_mensajes='centro'">
+   <param name="A_18" value="id='iman' evento='sí' condición='E2.mouse_pressed=0' acción='calcular' parámetro='permutacion[0]=permAux[0]\npermutacion[1]=permAux[1]\npermutacion[2]=permAux[2]\nCX[permutacion[0]]=cuadroX[0]\nCX[permutacion[1]]=cuadroX[1]\nCX[permutacion[2]]=cuadroX[2]\nCY[permutacion[0]]=cuadroY[0]\nCY[permutacion[1]]=cuadroY[1]\nCY[permutacion[2]]=cuadroY[2]' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_19" value="id='preview' evento='sí' condición='j!=vacio' acción='calcular' parámetro='CX[permAux[j]]=cuadroX[vacio]\nCY[permAux[j]]=cuadroY[vacio]\ntemp=permAux[j]\npermAux[j]=permAux[vacio]\npermAux[vacio]=temp\nvacio=j\n\n' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_20" value="id='verifica' evento='sí' condición='(permutacion[0]=0)&(permutacion[1]=1)&(permutacion[2]=2)' acción='calcular' parámetro='dibujar=1' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_21" value="id='otraVez' evento='sí' condición='otro=1' acción='calcular' parámetro='aux=Reinit()' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E2' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(10,106)' archivo='images/pizarron_2.png'">
+   <param name="G_02" value="espacio='E2' tipo='macro' fondo='sí' expresión='titulo' nombre='T'">
+   <param name="G_03" value="espacio='E2' tipo='macro' fondo='sí' expresión='flecha' rotini='180' posini='[61,508]' nombre='FI'">
+   <param name="G_04" value="espacio='E2' tipo='macro' fondo='sí' expresión='flecha' posini='[729,472]' nombre='FA'">
+   <param name="G_05" value="espacio='E2' tipo='macro' dibujar-si='dibujar' expresión='boton_int' posini='[xB,yB]' nombre='B'">
+   <param name="G_06" value="espacio='E2' tipo='punto' color='blanco' expresión='(CX[0]-0.75,CY[0]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef12)\decimals 0\fixed1}}x\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_07" value="espacio='E2' tipo='punto' color='blanco' expresión='(CX[1]-0.75,CY[1]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef22)\decimals 0\fixed1}}y\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_08" value="espacio='E2' tipo='punto' color='blanco' expresión='(CX[2]-0.3,CY[2]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef32)\decimals 0\fixed1}}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_09" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='(coef12>=0)&(permAux[0]!=0)' expresión='(CX[0]-1.75,CY[0]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula +}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='(coef22>=0)&(permAux[0]!=1)' expresión='(CX[1]-1.75,CY[1]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula +}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='(coef32>=0)&(permAux[0]!=2)' expresión='(CX[2]-1.75,CY[2]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula +}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef12<0' expresión='(CX[0]-1.75,CY[0]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef22<0' expresión='(CX[1]-1.75,CY[1]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef32<0' expresión='(CX[2]-1.75,CY[2]-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_15" value="espacio='E2' tipo='punto' color='blanco' expresión='(cuadroX[0]-0.75,cuadroY[0]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef11)\decimals 0\fixed1}}x\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_16" value="espacio='E2' tipo='punto' color='blanco' expresión='(cuadroX[1]-0.75,cuadroY[1]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef21)\decimals 0\fixed1}}y\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_17" value="espacio='E2' tipo='punto' color='blanco' expresión='(cuadroX[2]-0.3,cuadroY[2]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef31)\decimals 0\fixed1}}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_18" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef21>=0' expresión='(cuadroX[1]-1.75,cuadroY[1]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula +}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_19" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef31>=0' expresión='(cuadroX[2]-1.75,cuadroY[2]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula +}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_20" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef11<0' expresión='(cuadroX[0]-1.75,cuadroY[0]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_21" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef21<0' expresión='(cuadroX[1]-1.75,cuadroY[1]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_22" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='coef31<0' expresión='(cuadroX[2]-1.75,cuadroY[2]+2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_23" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='(dibujar)&((coef11+coef12)!=0)' expresión='(cuadroX[0]-0.75,cuadroY[0]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef11+coef12)\decimals 0\fixed1}}x\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_24" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='(dibujar)&((coef21+coef22)!=0)' expresión='(cuadroX[1]-0.75,cuadroY[1]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef21+coef22)\decimals 0\fixed1}}y\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_25" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='(dibujar)&((coef31+coef32)!=0)' expresión='(cuadroX[2]-0.3,cuadroY[2]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula{\expr abs(coef31+coef32)\decimals 0\fixed1}}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_26" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='((coef11+coef12)!=0)&((coef21+coef22)>0)&(dibujar)' expresión='(cuadroX[1]-1.75,cuadroY[1]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula +}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_27" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='(((coef11+coef12)!=0)|((coef21+coef22)!=0))&((coef31+coef32)>0)&(dibujar)' expresión='(cuadroX[2]-1.75,cuadroY[2]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula +}\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_28" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='((coef11+coef12)<0)&(dibujar)' expresión='(cuadroX[0]-1.75,cuadroY[0]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_29" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='((coef21+coef22)<0)&(dibujar)' expresión='(cuadroX[1]-1.75,cuadroY[1]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_30" value="espacio='E2' tipo='punto' color='blanco' dibujar-si='((coef31+coef32)<0)&(dibujar)' expresión='(cuadroX[2]-1.4,cuadroY[2]-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112{\*\mjaformula\u8722 }\f2\fs24\par}' fuente='SansSerif,PLAIN,56' fijo='sí' tamaño='0'">
+   <param name="G_31" value="espacio='E2' tipo='segmento' color='blanco' expresión='(cuadroX[0]-2,-1.5)(cuadroX[2]+2,-1.5)' fijo='sí' tamaño='0' ancho='5'">
+   <param name="G_32" value="espacio='E2' tipo='punto' color='blanco' expresión='(cuadroX[0]-3.5,0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs144{\*\mjaformula\f2\fs24 +}\f2\fs24\par}' fuente='SansSerif,PLAIN,72' fijo='sí' tamaño='0'">
+   <param name="G_33" value="espacio='E2' tipo='imagen' fondo='sí' dibujar-si='0' coord_abs='sí' expresión='(10,106)' archivo='images/pizarron_2.png'">
+   <param name="G_34" value="espacio='E2' tipo='imagen' coord_abs='sí' expresión='(75,110)' archivo='images/pizarronencima.png'">
+</ajs>
+
+<script type="descartes/macro" id="titulo">
+tipo_de_macro=R2
+id='modulo' expresión='|Módulo   |' evaluar='una-sola-vez' constante='si'
+id='tema' expresión='|   Tema|' evaluar='una-sola-vez' constante='si'
+id='N' expresión='1' evaluar='una-sola-vez' constante='si'
+id='en_1' expresión='|Utiliza los pulsadores para modificar y el botón para verificar|' evaluar='una-sola-vez' constante='si'
+id='en_2' expresión='||' evaluar='una-sola-vez' constante='si'
+id='en_3' expresión='||' evaluar='una-sola-vez' constante='si'
+id='y0' expresión='10' evaluar='una-sola-vez' constante='si'
+id='a_t' expresión='220' evaluar='una-sola-vez' constante='si'
+id='a_e' expresión='700' evaluar='una-sola-vez' constante='si'
+inicio='h0=25; h1=30' hacer='x1=a_t-h0;y1=y0+h0;x2=a_e-h1*N;y2=y1+h1*N;;' id='CALCULOS' evaluar='siempre' algoritmo='si'
+tipo='polígono' fondo='si' color='ffc0c0e8' expresión='(0,y0)(x1,y0)(x1,y1)(0,y1)' relleno='(0.3,0.3,1.0,0.25)' coord_abs='si' 
+tipo='arco' color='ffc0c0e8' centro='(x1,y1)' radio='h0' fin='-90' relleno='(0.3,0.3,1.0,0.25)' coord_abs='si' 
+tipo='texto' color='blanco' expresión='[20,y0+4]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs32{\*\mjaformula{\expr modulo\decimals 0\fixed0}}  \b  | \b0   {\*\mjaformula{\expr tema\decimals 0\fixed0}}\par}' fuente='SansSerif,PLAIN,16' 
+tipo='polígono' fondo='si' color='ffc0c0e8' expresión='(0,y1)(x2,y1)(x2,y2)(0,y2)' relleno='(0.3,0.3,1.0,0.85)' coord_abs='si' 
+tipo='arco' color='c0c0e8' centro='(x2,y2)' radio='h1*N' fin='-90' relleno='(0.3,0.3,1.0,0.85)' coord_abs='si' 
+tipo='segmento' color='c0c0e8' expresión='(0,y1)(x2,y1)' tamaño='0' coord_abs='si' 
+tipo='segmento' color='c0c0e8' expresión='(0,y2)(x2+h1*N,y2)' tamaño='0' coord_abs='si' 
+tipo='texto' dibujar-si='N>0' color='d8d8e5' expresión='[20+ent(s/3),y0+26+ent(s)%3]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48{\*\mjaformula{\expr en_1\decimals 0\fixed0}}\f2\fs24\par}' fuente='SansSerif,PLAIN,24' 
+tipo='texto' dibujar-si='N>0' color='negro' expresión='[20+1,y0+26+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48{\*\mjaformula\f0\fs24{\expr en_1\decimals 0\fixed0}}\f2\fs24\par}' fuente='SansSerif,PLAIN,24' 
+tipo='texto' dibujar-si='N>1' color='d8d8e5' expresión='[20+ent(s/3),y0+26+28+ent(s)%3]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48{\*\mjaformula{\expr en_2\decimals 0\fixed0}}\f2\fs24\par}' fuente='SansSerif,PLAIN,24' 
+tipo='texto' dibujar-si='N>1' color='negro' expresión='[20+1,y0+26+28+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48{\*\mjaformula\f0\fs24{\expr en_2\decimals 0\fixed0}\f2\fs24}\f2\fs24\par}' fuente='SansSerif,PLAIN,24' 
+tipo='texto' dibujar-si='N>2' color='d8d8e5' expresión='[20+ent(s/3),y0+26+2*28+ent(s)%3]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48{\*\mjaformula{\expr en_3\decimals 0\fixed0}}\f2\fs24\par}' fuente='SansSerif,PLAIN,24' 
+tipo='texto' dibujar-si='N>2' color='negro' expresión='[20+1,y0+26+2*28+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48{\*\mjaformula\f0\fs24{\expr en_3\decimals 0\fixed0}\f2\fs24}\f2\fs24\par}' fuente='SansSerif,PLAIN,24' 
+</script>
+
+<script type="descartes/macro" id="flecha">
+tipo_de_macro=R2
+id='largo' expresión='40' evaluar='una-sola-vez' constante='si'
+id='ancho' expresión='40' evaluar='una-sola-vez' constante='si'
+id='grueso' expresión='16' evaluar='una-sola-vez' constante='si'
+id='hp' expresión='2' evaluar='una-sola-vez' constante='si'
+id='hc' expresión='0' evaluar='una-sola-vez' constante='si'
+id='Transp' expresión='0' evaluar='una-sola-vez' constante='si'
+id='Rojo' expresión='1' evaluar='una-sola-vez' constante='si'
+id='Verde' expresión='1' evaluar='una-sola-vez' constante='si'
+id='Azul' expresión='0' evaluar='una-sola-vez' constante='si'
+hacer='y1=(ancho-grueso)/2;y2=y1+grueso;x1=largo-ancho/2;' id='CALCULOS' evaluar='siempre' algoritmo='si'
+tipo='polígono' color='707070' expresión='(x1,hp)(x1,y1)(hc,y1)(0,y1+hc)(0,y2-hc)(hc,y2)(x1,y2)(x1,ancho-hp)(x1+hp,ancho-hp)(largo-hc/2,ancho/2+hc/2)(largo-hc/2,ancho/2-hc/2)(x1+hp,hp)(x1,hp)' relleno='(Rojo,Verde,Azul,Transp)' coord_abs='si' 
+</script>
+<script type="descartes/macro" id="boton_int">
+tipo_de_macro=R2
+id='ancho' expresión='120' evaluar='una-sola-vez' constante='si'
+id='alto' expresión='30' evaluar='una-sola-vez' constante='si'
+id='texto' expresión='|Etiqueta|' evaluar='una-sola-vez' constante='si'
+id='dx' expresión='13' evaluar='una-sola-vez' constante='si'
+id='dy' expresión='3' evaluar='una-sola-vez' constante='si'
+id='letra' expresión='0' evaluar='una-sola-vez' constante='si'
+inicio='_B_.texto=||;_B_.inv=1' hacer='_B_.m=0.85;_B_.Mv=1;_B_.Mh=1;_B_.Rojo=0.92;_B_.Verde=1;_B_.Azul=0;_B_.r=7' id='INICIO' evaluar='una-sola-vez' algoritmo='si'
+hacer='_B_.ancho=ancho;_B_.alto=alto;_B_.dx=dx;_B_.dy=dy;;' id='CALCULOS' evaluar='siempre' algoritmo='si'
+tipo='macro' expresión='boton_suave' nombre='_B_' 
+tipo='texto' dibujar-si='letra=0' color='e9f4c1' expresión='[_B_.dx+ent(s)%3,_B_.dy+ent(s/3)]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula{\expr texto\decimals 2\fixed1}}\fs36\b0\par}' fuente='SansSerif,BOLD,20' 
+tipo='texto' dibujar-si='letra=0' color='006677' expresión='[_B_.dx+1,_B_.dy+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula{\expr texto\decimals 2\fixed1}}\par}' fuente='SansSerif,BOLD,20' 
+tipo='texto' dibujar-si='letra=1' color='e9f4c1' expresión='[_B_.dx+ent(s)%3,_B_.dy+ent(s/3)]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs48\b{\*\mjaformula{\expr texto\decimals 2\fixed1}}\fs36\b0\par}' fuente='SansSerif,BOLD,24' 
+tipo='texto' dibujar-si='letra=1' color='006677' expresión='[_B_.dx+1,_B_.dy+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs48\b{\*\mjaformula{\expr texto\decimals 2\fixed1}}\fs40\par}' fuente='SansSerif,BOLD,24' 
+tipo='texto' dibujar-si='letra=2' color='e9f4c1' expresión='[_B_.dx+ent(s)%3,_B_.dy+ent(s/3)]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs80\b{\*\mjaformula{\expr texto\decimals 2\fixed1}}\fs36\b0\par}' fuente='SansSerif,BOLD,40' 
+tipo='texto' dibujar-si='letra=2' color='006677' expresión='[_B_.dx+1,_B_.dy+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs80\b{\*\mjaformula{\expr texto\decimals 2\fixed1}}\fs40\par}' fuente='SansSerif,BOLD,40' 
+</script>
+<script type="descartes/macro" id="boton_suave">
+tipo_de_macro=R2
+id='ancho' expresión='120' evaluar='una-sola-vez' constante='si'
+id='alto' expresión='30' evaluar='una-sola-vez' constante='si'
+id='texto' expresión='|Mi etiqueta|' evaluar='una-sola-vez' constante='si'
+id='dx' expresión='14' evaluar='una-sola-vez' constante='si'
+id='dy' expresión='14' evaluar='una-sola-vez' constante='si'
+id='r' expresión='15' evaluar='una-sola-vez' constante='si'
+id='m' expresión='0.8' evaluar='una-sola-vez' constante='si'
+id='Mv' expresión='1.5' evaluar='una-sola-vez' constante='si'
+id='Mh' expresión='1.5' evaluar='una-sola-vez' constante='si'
+id='Rojo' expresión='1' evaluar='una-sola-vez' constante='si'
+id='Verde' expresión='0.6' evaluar='una-sola-vez' constante='si'
+id='Azul' expresión='0.0' evaluar='una-sola-vez' constante='si'
+id='inv' expresión='0' evaluar='una-sola-vez' constante='si'
+id='ins(n)' expresión='r-sqrt(abs(r^2-n^2))'
+hacer='res=(n<r)?ins(r-n):0;res=(n>(alto-r))?ins(r-(alto-n)):res;' id='dX(n)' expresión='res' algoritmo='si'
+hacer='res=(n<r)?ins(r-n):0;res=(n>(ancho-r))?ins(r-(ancho-n)):res;' id='dY(n)' expresión='res' algoritmo='si'
+hacer='alto=max(alto,0);ancho=max(ancho,0);r=min(r,min(ancho,alto)/2);mm=(m>0.67)?0.67:m;' id='CALCULOS' evaluar='siempre' algoritmo='si'
+id='T(M,x,L)' expresión='m+(1-m)*M*2*sqrt((L/2)^2-x^2)/L'
+tipo='polígono' color='ff000000' expresión='(0,0)(ancho+1,0)(ancho+1,alto+1)(0,alto+1)' relleno='(Rojo,Verde,Azul,0.0)' coord_abs='si' 
+tipo='texto' dibujar-si='!inv' color='(Rojo*(1-(1-m)/4),Verde*(1-(1-m)/4),Azul*(1-(1-m)/4),0.0)' expresión='[dx+ent(s)%3,dy+ent(s/3)]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula\f2\fs36\b{\expr texto\decimals 0\fixed1}}\fs36\par}' fuente='SansSerif,BOLD,20' 
+tipo='texto' dibujar-si='!inv&((ent(s)%3=1)|(ent(s/3)=1))' color='(m*Rojo,m*Verde,m*Azul,0.0)' expresión='[dx+ent(s)%3,dy+ent(s/3)]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula\f2\fs36\b{\expr texto\decimals 0\fixed1}}\fs36\par}' fuente='SansSerif,BOLD,20' 
+tipo='texto' dibujar-si='!inv' color='(1-(1-Rojo)/16,1-(1-Verde)/16,1-(1-Azul)/16,0.0)' expresión='[dx+1,dy+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula{\expr texto\decimals 0\fixed1}}\fs36\b0\par}' fuente='SansSerif,BOLD,20' 
+tipo='texto' dibujar-si='inv' color='(1-(1-Rojo)/3,1-(1-Verde)/3,1-(1-Azul)/3,0.0)' expresión='[dx+ent(s)%3,dy+ent(s/3)]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula{\expr texto\decimals 0\fixed1}}\fs36\b0\par}' fuente='SansSerif,BOLD,20' 
+tipo='texto' dibujar-si='inv&((ent(s)%3=1)|(ent(s/3)=1))' color='(1-(1-Rojo)/8,1-(1-Verde)/8,1-(1-Azul)/8,0.0)' expresión='[dx+ent(s)%3,dy+ent(s/3)]' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula{\expr texto\decimals 0\fixed1}}\fs36\b0\par}' fuente='SansSerif,BOLD,20' 
+tipo='texto' dibujar-si='inv' color='(mm*Rojo,mm*Verde,mm*Azul,0.0)' expresión='[dx+1,dy+1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula{\expr texto\decimals 0\fixed1}}\fs36\b0\par}' fuente='SansSerif,BOLD,20' 
+</script>
+
+</body>
+</html>

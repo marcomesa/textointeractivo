@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Fracciones impropias</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body style="margin:0;padding:0; overflow: hidden;">
+
+<p align="center">
+<ajs name="Descartes" width=600 height=280 code="Descartes">
+   <param name="tamaño" value="600x280">
+   <param name="image_loader" value="">
+   <param name="expand" value="fit">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.4, 2016-05-18">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='30' y='60' ancho='90%' alto='57%' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='405860'">
+   <param name="C_01" value="id='INICIO' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='OTRA FRACCIÓN' expresión='(430,245,150,30)' valor='1' fijo='sí' visible='sí' color='blanco' negrita='sí' fuente puntos='14' imagen='imagenes/btn150.png' acción='inicio' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='E2.escala' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='zoom' expresión='(20,245,200,25)' valor='20' min='10' max='100' decimales='0' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='den' constante='sí' expresión='ent(rnd*12+2)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='num' constante='sí' expresión='(ent(rnd*ent(99/den))+1)*den+ent(rnd*(den-1))+1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='signo' constante='sí' expresión='rnd<0.5?1:-1' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='pe' constante='sí' expresión='ent(num/den)' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='numf' constante='sí' expresión='num-pe*den' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='f' constante='sí' expresión='signo*numf*10/den' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='signo=1' expresión='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs32 Representaci\u243 n en la recta de una fracci\u243 n impropia:\f2\fs36\b{\*\mjaformula{\fraction{\num{\expr num*signo}}{\den{\expr den}}}={\expr pe}{\fraction{\num{\expr numf}}{\den{\expr den}}}}\fs40\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='signo=-1' expresión='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs32 Representaci\u243 n en la recta de una fracci\u243 n impropia:\f2\fs36\b{\*\mjaformula -{\fraction{\num{\expr num}}{\den{\expr den}}}=-{\expr pe}{\fraction{\num{\expr numf}}{\den{\expr den}}}}\fs40\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='ecuación' color='grisClaro' expresión='y=0'">
+   <param name="G_04" value="espacio='E2' tipo='segmento' expresión='(0,0)(signo*pe*10,0)' fijo='sí'">
+   <param name="G_05" value="espacio='E2' tipo='punto' expresión='(0+signo*s,0)' familia='s' s.intervalo='[0,10]' s.pasos='den' decimales='0' fijo='sí'">
+   <param name="G_06" value="espacio='E2' tipo='punto' dibujar-si='signo<0' expresión='(-11.4+10*s+0.7,-0.90)' familia='s' s.intervalo='[0,pe+1]' s.pasos='pe+1' texto='[-1+signo*pe-signo*s]' fuente='Monospaced,BOLD,20' decimales='0' fijo='sí' tamaño='0'">
+   <param name="G_07" value="espacio='E2' tipo='punto' dibujar-si='signo>=0' expresión='(9.8-10*s-0.4,-0.90)' familia='s' s.intervalo='[0,pe+1]' s.pasos='pe+1' texto='[1+pe-s]' fuente='Monospaced,BOLD,20' decimales='0' fijo='sí' tamaño='0'">
+   <param name="G_08" value="espacio='E2' tipo='segmento' color='rojo' expresión='(-signo*10*pe,0)(f,0)' fuente='Monospaced,PLAIN,20' fijo='sí' tamaño='3' ancho='2'">
+   <param name="G_09" value="espacio='E2' tipo='punto' dibujar-si='f>=0' expresión='(f-0.8,1.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f0\fs40\b{\*\mjaformula{\fraction{\num{\expr num\decimals 0}}{\den{\expr den\decimals 0}}}}\cf1\par}' fuente='Monospaced,BOLD,20' decimales='0' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E2' tipo='punto' dibujar-si='f<0' expresión='(f-1.3,1.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f0\fs40\b -{\*\mjaformula{\fraction{\num{\expr num\decimals 0}}{\den{\expr den\decimals 0}}}}\cf1\par}' fuente='Monospaced,BOLD,20' decimales='0' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='E2' tipo='punto' dibujar-si='signo<0' expresión='(-10+10*s,0)' familia='s' s.intervalo='[0,pe+1]' s.pasos='pe+1' decimales='0' fijo='sí'">
+   <param name="G_12" value="espacio='E2' tipo='punto' dibujar-si='signo>0' expresión='(10-10*s,0)' familia='s' s.intervalo='[0,pe+1]' s.pasos='pe+1' decimales='0' fijo='sí'">
+</ajs></p>
+
+</body>
+</html>

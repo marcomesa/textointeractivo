@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Radicales</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#f1f1f1" onLoad="MM_preloadImages('imagen4/paraantes3.png','imagen4/paraantes2.png','imagen4/paraconte.png','imagen4/paracont2.png','imagen4/paraejer3.png','imagen4/paraejer2.png','imagen4/paraeval3.png','imagen4/paraeval2.png','imagen4/paratut3.png','imagen4/paratut2.png','imagen4/paramas3.png','imagen4/paramas2.png','imagen4/atrasb.png','imagen4/adelanteb.png')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:800px; height:528px; z-index:1">
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="quincena2_presenta_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','antes','imagen4/paraantes3.png',1)" onMouseOver="MM_nbGroup('over','antes','imagen4/paraantes2.png','imagen4/paraantes3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraantes.png" alt="" name="antes" border="0" onload="" width="130" height="18"></a></td>
+      <td><a href="javascript:;" target="_self" onClick="MM_nbGroup('down','group1','contenido','imagen4/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenido','imagen4/paracont2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paracont3.png" alt="" name="contenido" width="130" height="18" border="0" onload="MM_nbGroup('init','group1','contenido','imagen4/paraconte.png',1)"></a></td>
+      <td><a href="quincena2_ejercicios_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','ejercicios','imagen4/paraejer3.png',1)" onMouseOver="MM_nbGroup('over','ejercicios','imagen4/paraejer2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraejer.png" alt="" name="ejercicios" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="quincena2_autoeval_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','autoeval','imagen4/paraeval3.png',1)" onMouseOver="MM_nbGroup('over','autoeval','imagen4/paraeval2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraeval.png" alt="" name="autoeval" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="quincena2_tutor_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','paratutor','imagen4/paratut3.png',1)" onMouseOver="MM_nbGroup('over','paratutor','imagen4/paratut2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paratut.png" alt="" name="paratutor" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="quincena2_sabermas_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','paramas','imagen4/paramas3.png',1)" onMouseOver="MM_nbGroup('over','paramas','imagen4/paramas2.png','imagen4/paramas3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paramas.png" alt="" name="paramas" width="130" height="18" border="0" onload=""></a></td>
+    </tr>
+  </table>
+  <table width="800" height="8" border="0" align="center" cellspacing="0">
+    <tr>
+      <td width="8" height="8" background="imagen4/e1.gif"></td>
+      <td height="8" background="imagen4/b1.gif"></td>
+      <td width="8" height="8" background="imagen4/e2.gif"></td>
+    </tr>
+  </table>
+  <table width="800" height="85%" border="0" align="center" cellspacing="0">
+    <tr height="100%">
+      <td width="8" background="imagen4/b4.gif"></td>
+      <td height="89%" valign="top" bgcolor="#FFFFFF"> <table width="100%" cellspacing="12">
+          <tr>
+            <td height="30" valign="middle"> <font size="3" face="Geneva, Arial, Helvetica, sans-serif"><strong><font color="#FF6600" size="4">
+			1.</font></strong><font color="#FF6600" size="4"><strong>
+            Radicales</strong></font></font></td>
+            <td> <div align="right"> </div>
+              <div align="right"> </div></td>
+          </tr>
+          <tr>
+            <td valign="bottom" rowspan="4"> <ajs name="2b" width=440 height=360
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="440x360">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="2b">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' O.x='240' O.y='150' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ej' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(225,yd-29,22,23)' valor='1' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/siguiente.png' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='ej' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(180,yd1-29,22,23)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/siguiente.png' pos_mensajes='centro'">
+   <param name="C_03" value="id='ej' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(180,yd2-29,22,23)' valor='4' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/siguiente.png' pos_mensajes='centro'">
+   <param name="C_04" value="id='pxx' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='pxx' incr='1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='mcd(x,y)' algoritmo='s&iacute;' expresi&oacute;n='p1' algoritmo='s&iacute;' inicio='p1=max(x,y);q1=min(x,y)' hacer='r1=p1%q1;p1=q1;q1=r1' mientras='r1#0'">
+   <param name="A_02" value="id='ejemplos()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer=';alea=rnd;caso=alea&lt;0.4?-2:(alea&lt;0.4?-1:ent(rnd*4));a=ent(rnd*8)+2;e=((caso=1)|(caso=2))?1:ent(rnd*11)+2;i=caso&lt;2?2:ent(rnd*8)+3;n1=ent(rnd*9)+2;i1=i*n1;e1=e*n1;n2=ent(rnd*9)+2;n2=n1=n2?n2+1:n2;i2=i*n2;e2=e*n2;tipo=rnd&lt;1/3?24:(rnd&lt;1/3?4:0);caso=caso&lt;0?caso:caso+tipo;b=ent(rnd*8)+2;b=caso=-1?(a=b?a+1:b):b;;i1=caso=-2?i1+1:i1;;caso2=caso;ej=10;' mientras='(i1&gt;99)|(i2&gt;99)'">
+   <param name="A_03" value="id='amplificacion()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='caso=ent(rnd*4);tipo=rnd&lt;0.5?8:0;;a=ent(rnd*8)+2;i=caso&lt;2?2:ent(rnd*8)+3;e=((caso=1)|(caso=2))?1:(caso=0?2*ent(rnd*5)+3:ent(rnd*7)*i+ent(rnd*(i-3)+2));;n1=ent(rnd*9)+2;i1=i*n1;e1=e*n1;mcdxy=mcd(i1,e1);caso=caso+ej;n1=caso=7?mcdxy:n1;;i=caso=7?i1/n1:i;e=caso=7?e1/n1:e;caso=caso=7?(i=2?(e=1?5:4):(e=1?6:7)):caso;caso=caso+tipo;caso2=caso&lt;8?caso%4:caso%4+4;;;ej=i1=100?ej:20+10*(ej=4);;' mientras='i1=100'">
+   <param name="A_04" value="id='irreducible()' algoritmo='s&iacute;' algoritmo='s&iacute;' inicio='casof=0' hacer='casof0=((tipo=8)|(tipo=4))&amp;(caso&gt;-1)?4:0;casof=(i=2)&amp;(e=1)?1:casof;casof=(i=2)&amp;(e&gt;1)?0:casof;casof=(i&gt;2)&amp;(e=1)?2:casof;casof=(i&gt;2)&amp;(e&gt;1)?3:casof;casof=casof+casof0;mcds=mcd(i,e);;'">
+   <param name="A_05" value="id='a1' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='ej=1;xd=5;yd=32;yd1=yd+80;yd2=yd1+80;yd3=yd2+80;yd4=yd3+80;;'">
+   <param name="A_06" value="id='a0' algoritmo='s&iacute;' evaluar='siempre' hacer='qq=ej&lt;5?(ej=1?ejemplos():((ej=0)|(ej=4)?amplificacion():irreducible())):0;qq=irreducible();'">
+   <param name="A_07" value="id='a7' algoritmo='s&iacute;' evaluar='siempre' inicio='xds2=10000;nuevo0=-4;nuevo2=-3' hacer='xds=caso2=-2?63-3*(i1&gt;9)+5*(ent(log10(e))):xds;xds=caso2=-1?63-3*(i1&gt;9)+5*(ent(log10(e))):xds;xds=caso2=0?63-3*(i1&gt;9)+5*(ent(log10(e))):xds;xds=caso2=1?63-3*(i1&gt;9)+5*(ent(log10(e)))-6:xds;xds=caso2=2?63-3*(i1&gt;9)+5*(ent(log10(e)))-6:xds;xds=caso2=3?63-3*(i1&gt;9)+5*(ent(log10(e))):xds;xds=caso2=4?63-3*(i1&gt;9)+5*(ent(log10(e)))-6:xds;xds=caso2=5?63-3*(i1&gt;9)+5*(ent(log10(e)))-12:xds;xds=caso2=6?63-3*(i1&gt;9)+5*(ent(log10(e)))-12:xds;xds=caso2=7?63-3*(i1&gt;9)+5*(ent(log10(e)))-6:xds;xds=caso2=24?63-3*(i1&gt;9)+5*(ent(log10(e))):xds;xds=caso2=25?63-3*(i1&gt;9)+5*(ent(log10(e)))-6:xds;xds=caso2=26?63-3*(i1&gt;9)+5*(ent(log10(e)))-6:xds;xds=caso2=27?63-3*(i1&gt;9)+5*(ent(log10(e))):xds;xds=xds+nuevo0;xds2=caso2=24?63+3*(i1&gt;9)-4*(i2&gt;9)+6*(ent(log10(e1)))+xds:xds2;xds2=caso2=25?63+3*(i1&gt;9)-4*(i2&gt;9)+6*(ent(log10(e1)))+xc+xds:xds2;xds2=caso2=26?63+3*(i1&gt;9)-4*(i2&gt;9)+6*(ent(log10(e1)))+xc+xds:xds2;xds2=caso2=27?63+3*(i1&gt;9)-4*(i2&gt;9)+5*(ent(log10(e1)))+xc+xds:xds2;xds2=xds2+nuevo2'">
+   <param name="A_08" value="id='a73' algoritmo='s&iacute;' evaluar='siempre' inicio='nuevo3=-4' hacer='xds3=caso=0?xds+98+7*(ent(log10(e)))+6*(ent(log10(n1))):xds3;xds3=caso=1?xds+99+3+5*(ent(log10(e)))+5*(ent(log10(n1))):xds3;xds3=caso=2?xds+99+5*(ent(log10(e)))+5*(ent(log10(n1))):xds3;xds3=caso=3?xds+99+6*(ent(log10(e)))+6*(ent(log10(n1))):xds3;xds3=caso=8?xds+99+5*(ent(log10(e)))+5*(ent(log10(n1)))-5:xds3;xds3=caso=9?xds+99+3+5*(ent(log10(e)))+5*(ent(log10(n1)))-5:xds3;xds3=caso=10?xds+99+5*(ent(log10(e)))+5*(ent(log10(n1)))-6:xds3;xds3=caso=11?xds+99+6*(ent(log10(e)))+6*(ent(log10(n1)))-5:xds3;xds3=xds3+nuevo3;'">
+   <param name="A_09" value="id='a74' algoritmo='s&iacute;' evaluar='siempre' inicio='xds40=64+5*ent(log10(e1))-6*(caso&gt;10);nuevo4=-8' hacer='xds4=caso=4?xds40+99+5*(ent(log10(e1)))+5*(ent(log10(n1))):xds4;xds4=caso=5?xds40+99+3+5*(ent(log10(e1)))+5*(ent(log10(n1))):xds4;xds4=caso=6?xds40+99+6*(ent(log10(e1)))+6*(ent(log10(n1)))-5*(i&gt;9)-5*(i1&lt;10):xds4;xds4=caso=7?xds40+99+6*(ent(log10(e1)))+6*(ent(log10(n1))):xds4;xds4=caso=12?xds40+99+5*(ent(log10(e1)))+5*(ent(log10(n1)))-5:xds4;xds4=caso=13?xds40+99+3+5*(ent(log10(e1)))+5*(ent(log10(n1)))-5:xds4;xds4=caso=14?xds40+99+5*(ent(log10(e1)))+5*(ent(log10(n1)))-6-5*(i&gt;9)-5*(i1&lt;10):xds4;xds4=caso=15?xds40+99+6*(ent(log10(e1)))+6*(ent(log10(n1)))-5:xds4;xds4=xds4+nuevo4;;;'">
+   <param name="G_01" value="espacio='E1' tipo='pol&iacute;gono' color='ffda99' coord_abs='s&iacute;' expresi&oacute;n='(xd-4,yd3-5)(xd-4+265,yd3-5)(xd-4+265,yd3+40)(xd-4,yd3+40)(xd-4,yd3-5)' relleno='blanco'">
+   <param name="G_02" value="tipo='pol&iacute;gono' color='ffda99' dibujar-si='ej=20' coord_abs='s&iacute;' expresi&oacute;n='(xd-4+275,yd1-5)(439,yd1-5)(439,yd1+40)(xd-4+275,yd1+40)(xd-4+275,yd1-5)' relleno='blanco'">
+   <param name="G_03" value="tipo='pol&iacute;gono' color='ffda99' dibujar-si='ej=30' coord_abs='s&iacute;' expresi&oacute;n='(xd-4+275,yd2-5)(439,yd2-5)(439,yd2+40)(xd-4+275,yd2+40)(xd-4+275,yd2-5)' relleno='blanco'">
+   <param name="G_04" value="tipo='pol&iacute;gono' color='ffda99' dibujar-si='ej=30' coord_abs='s&iacute;' expresi&oacute;n='(xd-4,yd2-5)(xd-4+265,yd2-5)(xd-4+265,yd2+40)(xd-4,yd2+40)(xd-4,yd2-5)' relleno='blanco'">
+   <param name="G_05" value="tipo='pol&iacute;gono' color='ffda99' dibujar-si='ej=20' coord_abs='s&iacute;' expresi&oacute;n='(xd-4,yd1-5)(xd-4+265,yd1-5)(xd-4+265,yd1+40)(xd-4,yd1+40)(xd-4,yd1-5)' relleno='blanco'">
+   <param name="G_06" value="tipo='pol&iacute;gono' color='ffda99' coord_abs='s&iacute;' expresi&oacute;n='(xd-4,yd-5)(xd-4+265,yd-5)(xd-4+265,yd+40)(xd-4,yd+40)(xd-4,yd-5)' relleno='blanco'">
+   <param name="G_07" value="tipo='pol&iacute;gono' color='ffda99' coord_abs='s&iacute;' expresi&oacute;n='(xd-4+275,yd-5)(439,yd-5)(439,yd+40)(xd-4+275,yd+40)(xd-4+275,yd-5)' relleno='blanco'">
+   <param name="G_08" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(caso2=0)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}} \f2\fs24} \cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=1)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Arial;\f4\fcharset0 Times New Roman;}\f1\fs32{\*\mjaformula\f1\fs32{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}\f2\fs40}\fs30   \f4\fs24 \f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=2)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Arial;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand{\expr a}{\supix}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}\f2\fs40}\fs30\cf1\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=3)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula\f1\fs32{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand{\expr a}{\supix{\expr e}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}\f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=4)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand x{\supix{\expr e}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand x{\supix{\expr e1}}}} \f2\fs24} \cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=5)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand x{\supix}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand x{\supix{\expr e1}}}}\f2\fs40}  \f3\fs24 \f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=6)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand x{\supix}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand x{\supix{\expr e1}}}}\f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=7)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand x{\supix{\expr e}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand x{\supix{\expr e1}}}}\f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=24)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Arial;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand{\expr a}{\supix{\expr e}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}={\radical{\index{\expr i2=2?&squot;&squot;:i2}}{\radicand{\expr a}{\supix{\expr e2}}}}\f2\fs40}\fs30\cf1\par \par \f2\fs40}' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=25)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand{\expr a}{\supix}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}={\radical{\index{\expr i2=2?&squot;&squot;:i2}}{\radicand{\expr a}{\supix{\expr e2}}}} \f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=26)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}}}}={\radical{\index{\expr i2=2?&squot;&squot;:i2\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e2}}}} \f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_19" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=27)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}}}}={\radical{\index{\expr i2=2?&squot;&squot;:i2\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e2}}}}\f2\fs40}\par \f2\fs40\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_20" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=-1)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}\f1\fs32\u8800  {\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand{\expr b}{\supix{\expr e1}}}} \f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_21" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(caso2&lt;8)&amp;(caso2&gt;-1)' expresi&oacute;n='[xd+280,yd+3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Times New Roman;}{\colortbl\red32\green32\blue32;\red102\green102\blue102;}\f1\fs24\cf0 por ser \fs26{\*\mjaformula{\fraction{\num{\expr e}}{\den{\expr i\decimals 0\fixed0}}}\f3\fs40\b ={\fraction{\num{\expr e1}}{\den{\expr i1}}}\f4\fs24\b0}\cf1\f4\fs24 \par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='s&iacute;'">
+   <param name="G_22" value="espacio='E1' tipo='texto' color='666666' dibujar-si='caso2&gt;13' expresi&oacute;n='[xd+275,yd+3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}{\colortbl\red32\green32\blue32;\red102\green102\blue102;}\f1\fs24\cf0 por ser\fs26{\*\mjaformula\f3\fs32{\fraction{\num{\expr e}}{\den{\expr i\decimals 0\fixed1}}}\f4\fs40\b ={\fraction{\num{\expr e1}}{\den{\expr i1}}}={\fraction{\num{\expr e2}}{\den{\expr i2}}}\b0}\cf1\f5\fs40\par \par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='s&iacute;'">
+   <param name="G_23" value="espacio='E1' tipo='texto' color='666666' dibujar-si='caso2=-1' expresi&oacute;n='[xd+280,yd+7]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red32\green32\blue32;\red102\green102\blue102;}\f1\fs24\cf0 las bases son distintas\fs28  \cf1\f3\fs40\par \par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='s&iacute;'">
+   <param name="G_24" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=0)&amp;(ej=20)' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}={\radical{\index{\expr i}\u183 {\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}\u183 {\expr n1}}}}={\radical{\index{\expr i*n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}}}}}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_25" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=1)&amp;(ej=20)' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix}}}={\radical{\index{\expr i\decimals 0\fixed1}\u183 {\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}\u183 {\expr n1}}}} ={\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}}}} \f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_26" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=2)&amp;(ej=20)' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix}}}={\radical{\index{\expr i\decimals 0\fixed1}\u183 {\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}\u183 {\expr n1}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}} \f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_27" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=3)&amp;(ej=20)' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand{\expr a}{\supix{\expr e}}}}={\radical{\index{\expr i\decimals 0\fixed1}\u183 {\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}\u183 {\expr n1}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}}}}\f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_28" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=4)&amp;(ej=30)' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}={\radical{\index{\expr i1\decimals 0\fixed1}:{\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand{\expr a}{\supix{\expr e}}}}\f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_29" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=5)&amp;(ej=30)' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}=\f1\fs32{\radical{\index{\expr i1\decimals 0\fixed1}:{\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand{\expr a}{\supix}}}\f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_30" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=6)&amp;(ej=30)' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand{\expr a}{\supix{\expr e1}}}}={\radical{\index{\expr i1\decimals 0\fixed1}:{\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix}}}\f2\fs40}\par \f2\fs40\cf1\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_31" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso=7)&amp;(ej=30)' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}}}}={\radical{\index{\expr i1\decimals 0\fixed1}:{\expr n1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}\f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_32" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=8' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix{\expr e}}}}={\radical{\index{\expr i}\u183 {\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e}\u183 {\expr n1}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}}}}}\par \f2\fs40\cf1\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_33" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=9' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix}}}={\radical{\index{\expr i\decimals 0\fixed1}\u183 {\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e}\u183 {\expr n1}}}} ={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand x{\supix{\expr e1}}}} \f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_34" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=10' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\f1\fs32\cf0{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand x{\supix}}}={\radical{\index{\expr i\decimals 0\fixed1}\u183 {\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e}\u183 {\expr n1}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand x{\supix{\expr e1}}}} \f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_35" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=11' expresi&oacute;n='[xd,yd1]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i}}{\radicand x{\supix{\expr e}}}}={\radical{\index{\expr i\decimals 0\fixed1}\u183 {\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e}\u183 {\expr n1}}}}={\radical{\index{\expr i1=2?&squot;&squot;:i1}}{\radicand x{\supix{\expr e1}}}}\f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_36" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=12' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red102\green102\blue102;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}}}}={\radical{\index{\expr i1\decimals 0\fixed0}:{\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix{\expr e}}}}\f2\fs40}\cf0\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_37" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=14' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red102\green102\blue102;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}}}}={\radical{\index{\expr i1\decimals 0\fixed0}:{\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix}}}\f2\fs40}\cf0\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_38" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=13' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red102\green102\blue102;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}}}}={\radical{\index{\expr i1\decimals 0\fixed0}:{\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix}}}\f2\fs40}\cf0\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_39" value="espacio='E1' tipo='texto' color='545454' dibujar-si='caso=15' expresi&oacute;n='[xd,yd2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}}}}={\radical{\index{\expr i1\decimals 0\fixed0}:{\expr n1\decimals 0\fixed1}}{\radicand x{\supix{\expr e1}:{\expr n1}}}}={\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix{\expr e}}}}\f2\fs40}\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_40" value="espacio='E1' tipo='texto' color='ff6600' expresi&oacute;n='[0,yd-24]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Ejemplos de  Radicales  Equivalentes\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_41" value="espacio='E1' tipo='texto' color='ff6600' expresi&oacute;n='[0,yd1-24]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Amplificaci\u243 n de Radicales  \f2\fs24\b0\par}' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_42" value="tipo='texto' color='ff6600' expresi&oacute;n='[0,yd2-24]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Simplificaci\u243 n  de Radicales  \f2\fs24\b0\par}' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_43" value="espacio='E1' tipo='texto' color='ff6600' expresi&oacute;n='[0,yd3-24]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Obtenci\u243 n de Radicales Irreducibles\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_44" value="espacio='E1' tipo='texto' color='202020' dibujar-si='ej=20' expresi&oacute;n='[xd+280,yd1+3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs24 Multiplico por {\*\mjaformula{\expr n1\decimals 0\fixed0}}el \par \u237 ndice y el exponente\f2\fs24\par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_45" value="espacio='E1' tipo='texto' color='202020' dibujar-si='ej=30' expresi&oacute;n='[xd+280,yd2+3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs24 Divido por {\*\mjaformula{\expr n1\decimals 0\fixed0}}el \par \u237 ndice y el exponente\f2\fs24\par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_46" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(caso2=-2)' expresi&oacute;n='[xd,yd]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}\f1\fs32\u8800  {\radical{\index{\expr i1=2?&squot;&squot;:i1\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e1}}}} \f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_47" value="espacio='E1' tipo='texto' color='202020' dibujar-si='caso2=-2' expresi&oacute;n='[xd+280,yd+3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}\f1\fs24 por ser \fs26{\*\mjaformula{\fraction{\num{\expr e}}{\den{\expr i\decimals 0\fixed1}}} \u8800  {\fraction{\num{\expr e1}}{\den{\expr i1}}}\f3\fs24}\f3\fs24 \par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='s&iacute;'">
+   <param name="G_48" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(casof=0)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}\f2\fs24} \par \f2\fs24\cf1}' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_49" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(casof=1)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;\f5\fcharset0 Times New Roman;}{\colortbl\red102\green102\blue102;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix}}}\f2\fs40}\fs30  \cf0\f4\fs24  \f5\fs24 \f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_50" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(casof=2)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix}}}\f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_51" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(casof=3)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand{\expr a}{\supix{\expr e}}}}\f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_52" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(casof=4)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;}{\colortbl\red102\green102\blue102;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix{\expr e}}}}\f1\fs32  \f2\fs24}\fs30  \cf0\f2\fs24\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_53" value="espacio='E1' tipo='texto' color='545454' dibujar-si='(casof=5)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Times New Roman;}\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix}}}{\supix}\f2\fs40}\f3\fs24   \f4\fs24 \f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_54" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(casof=6)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix}}}\f2\fs40{\supix}}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_55" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(casof=7)' expresi&oacute;n='[xd,yd3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red84\green84\blue84;\red102\green102\blue102;}\cf0\f1\fs32{\*\mjaformula{\radical{\index{\expr i=2?&squot;&squot;:i\decimals 0\fixed1}}{\radicand x{\supix{\expr e}}}}\f2\fs40}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;'">
+   <param name="G_56" value="espacio='E1' tipo='texto' color='negro' dibujar-si='(mcds=1)' expresi&oacute;n='[xd+85,yd3+5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red32\green32\blue32;\red0\green0\blue0;}\f1\fs24\cf0{\*\mjaformula\f2\fs32 Es irreducible por \f3\fs40}\par {\*\mjaformula ser mcd({\expr i\decimals 0\fixed1}\f1\fs24 ,{\expr e\decimals 0\fixed1})=1}\cf1\f3\fs40\par \par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='s&iacute;'">
+   <param name="G_57" value="espacio='E1' tipo='texto' color='negro' dibujar-si='(mcds#1)' expresi&oacute;n='[xd+80,yd3+5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red32\green32\blue32;\red0\green0\blue0;}\f1\fs24\cf0 No es irreducible. Se puede \par simplificar por  {\*\mjaformula mcd({\expr i\decimals 0\fixed1}\f1\fs24 ,{\expr e\decimals 0\fixed1})=\f2\fs40{\expr mcds\decimals 0\fixed1}}\cf1\f2\fs40\par \par }' fuente='SansSerif,PLAIN,12' decimales='0' fijo='s&iacute;'">
+</ajs>
+</td>
+            <td valign="top" height="23"><div align="justify"><strong>
+				<font face="Arial, Helvetica, sans-serif" color="#666666">
+				Radicales equivalentes.</font></strong></div></td>
+          </tr>
+          <tr>
+            <td valign="top">
+			<p align="justify"> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">Dos
+                o más radicales se dicen <b>equivalentes</b> si las fracciones
+                de los exponentes de las potencias asociadas son equivalentes.
+                </font></td>
+          </tr>
+          <tr>
+            <td valign="top"> <div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Dado
+                un radical se pueden obtener infinitos radicales equivalentes,<b>
+                multiplicando</b> o <b>dividiendo</b> el exponente del radicando
+                y el índice de la raíz por un mismo número. Si se multiplica se
+                llama <b>amplificar</b> y si se divide se llama <b>simplificar</b>
+                el radical. </font> </div>
+              <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                Un radical es <b>irreducible</b>, cuando la fracción de la potencia
+                asociada es irreducible.</font></td>
+          </tr>
+          <tr>
+            <td valign="bottom"><table width="100%" cellpadding="8" cellspacing="0" bordercolor="#999966" bgcolor="#Eeeedd" class="recuadro">
+                <tr> 
+                  <td bordercolor="#eeeedd"> <div align="right">Pulsa sobre el 
+                      botón para hacer un ejercicio </div></td>
+                  <td width="50" height="50" align="center" valign="middle" bordercolor="#eeeedd"><ajs name="Descartes" width=40 height=40
+        code="Descartes.class"> 
+                      <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script><param name="jnlp_href" value="./lib/Descartes5.jnlp">
+                      <param name="tama&ntilde;o" value="40x40"> 
+					  <param name="decimal_symbol" value=","> 
+					  <param name="antialias" value="s&iacute;"> 
+					  <param name="nombre" value="Descartes"> 
+					  <param name="Versi&oacute;n" value="5.3.02, 2013-12-06"> 
+					  <param name="Idioma" value="espa&ntilde;ol"> 
+					  <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no"> 
+					  <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='eeeedd' red='no' red10='no' ejes='no' texto='no'"> 
+					  <param name="C_01" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(-1,-1,40,40)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/paralapiz1.png' acci&oacute;n='abrir Escena' par&aacute;metro='q2_resueltos1b.htm'"> 
+                      </ajs></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+      <td width="8" rowspan="2" background="imagen4/b2.gif"> </td>
+    </tr>
+  </table>
+  <table width="800" height="10" border="0" align="center" cellspacing="0">
+    <tr>
+      <td width="8" height="8" background="imagen4/e4.gif"></td>
+      <td height="8" background="imagen4/b3.gif"></td>
+      <td width="8" height="8" background="imagen4/e3.gif"></td>
+    </tr>
+  </table>
+  <table width="768" border="0" align="center" cellspacing="0">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center">
+		<a target="_parent" onMouseOver="MM_swapImage('anterior','','imagen4/atrasb.png',1)" onMouseOut="MM_swapImgRestore()" href="quincena2_contenidos_1a.htm"><img src="imagen4/atras.png" alt="anterior" name="anterior" width="25" height="25" border="0"></a></div></td>
+      <td width="30">
+<div align="center"> <a target="_parent" onMouseOver="MM_swapImage('siguiente','','imagen4/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()" href="quincena2_contenidos_1c.htm"><img src="imagen4/adelante.png" alt="siguiente" name="siguiente" width="25" height="25" border="0"></a></div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

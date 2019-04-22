@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Ecuación del plano</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font5.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0; background:#ffffff;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="760" height="380">
+      <param name="tamaño" value="760x380">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='fondo0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='30' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='fondo' x='10' y='10' ancho='740' alto='100%' dibujar-si='1' fijo='no' escala='30' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R3' R3='sí' id='E0' x='fondo._w-341' y='81' ancho='350' alto='290' dibujar-si='1' fijo='no' escala='30' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='f0f8fa' despliegue='orden' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_04" value="tipo='R2' id='E1' cID='139457edcdf' x='10' y='80' ancho='400' alto='300' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='ax' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(71,25,45,30)' valor='1' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_02" value="id='ay' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(128,25,45,30)' valor='0' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_03" value="id='az' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(185,25,45,30)' valor='1' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_04" value="id='bx' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(297,25,45,30)' valor='-3' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_05" value="id='by' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(354,25,45,30)' valor='1' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_06" value="id='bz' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(411,25,45,30)' valor='2' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_07" value="id='cx' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(523,25,45,30)' valor='1' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_08" value="id='cy' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(580,25,45,30)' valor='2' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_09" value="id='cz' tipo='numérico' interfaz='pulsador' región='interior' espacio='fondo' expresión='(637,25,45,30)' valor='0' incr='1' min='-9' max='9' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='animate=1' ">
+      <param name="C_10" value="id='ampliar' interfaz='botón' tipo='numérico' región='interior' espacio='E0' expresión='(E0._w-37,E0._h-37,32,32)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='imagen/lupa.png' acción='abrir Escena' parámetro='escena221b.html' dibujar-si='0' ">
+      <param name="A_01" value="id='mcd(x,y)' algoritmo='sí' expresión='xM' inicio='x=x=0?y:x;y=y=0?x:y;xM=max(x,y);xm=min(x,y)' hacer='r=xM%xm;xM=xm;xm=r;' mientras='xm#0' tipo='función' ">
+      <param name="A_02" value="id='mcm(x,y)' algoritmo='sí' expresión='mcm' hacer='mcd2=mcd(x,y);mcm=x*y/mcd2;' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='escala=36;p1=ent(rnd*3)*(-1)^ent(rnd*2);p2=ent(rnd*4)*(-1)^ent(rnd*2);p3=ent(rnd*2)*(-1)^ent(rnd*2);u1=(1+ent(rnd*5))*(-1)^ent(rnd*2);u2=ent(rnd*5)*(-1)^ent(rnd*2);u3=0;v1=-u2;v2=u1;v3=(1+ent(rnd*3))*(-1)^ent(rnd*2);ej_E0.lx=40;ej_E0.ly=40;ej_E0.lz=40;E0.rot.y=6' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='ux=bx-ax;uy=by-ay;uz=bz-az;uE0.rojo=0.9;uE0.azul=0;uE0.verde=0;uE0.i=ax;uE0.j=ay;uE0.k=az;uE0.a=bx;uE0.b=by;uE0.c=bz;uE0.escala=E0.escala;vx=cx-ax;vy=cy-ay;vz=cz-az;vE0.rojo=0.9;vE0.azul=0;vE0.verde=0;vE0.i=ax;vE0.j=ay;vE0.k=az;vE0.a=cx;vE0.b=cy;vE0.c=cz;vE0.escala=E0.escala;;A=uy*vz-uz*vy;B=-(ux*vz-uz*vx);C=ux*vy-uy*vx;D=-A*ax-B*ay-C*az;alin=((ux*vy=uy*vx)&(ux*vz=uz*vx)&(uy*vz=vy*uz))?1:0;alin2=((ax=bx)&(ay=by)&(az=bz))+((ax=cx)&(ay=cy)&(az=cz))+((bx=cx)&(by=cy)&(bz=cz));ayb=(ax=bx)&(ay=by)&(az=bz))?1:0;ayc=(ax=cx)&(ay=cy)&(az=cz))?1:0;byc=(cx=bx)&(cy=by)&(cz=bz))?1:0;AA=A/mcd(A,mcd(B,mcd(C,D)));BB=B/mcd(A,mcd(B,mcd(C,D)));CC=C/mcd(A,mcd(B,mcd(C,D)));DD=D/mcd(A,mcd(B,mcd(C,D)))' ">
+      <param name="A_05" value="id='e5' evento='sí' condición='animate=1' acción='animar' ejecución='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[42,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 Punto:   P{\*\mjaformula ({\expr ax\decimals 1\fixed0},{\expr ay\decimals 2\fixed0},{\expr az\decimals 2\fixed0})}{\*\mjaformula{\subix}}\par\f0\fs34 Vectores: \b\i  \i0\b0\b AB\b0  = {\*\mjaformula ({\expr ux\decimals 1\fixed0},{\expr uy\decimals 2\fixed0},{\expr uz\decimals 2\fixed0})}  \b AC\b0  ={\*\mjaformula ({\expr vx\decimals 2\fixed0},{\expr vy\decimals 2\fixed0},{\expr vz\decimals 2\fixed0})}}' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='alin=0' coord_abs='sí' expresión='(20,65)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 ●}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='alin=0' coord_abs='sí' expresión='[42,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs34\b Ecuación vectorial: \b0\i{\*\mjaformula{\subix}}\i0\par\f0\cf0\fs34 (x, y, z) \cf0 ={\*\mjaformula ({\expr ax\decimals 1\fixed0},{\expr ay\decimals 2\fixed0},{\expr az\decimals 2\fixed0})}\cf0 + s{\*\mjaformula ({\expr ux\decimals 1\fixed0},{\expr uy\decimals 2\fixed0},{\expr uz\decimals 2\fixed0})}\cf0 + t{\*\mjaformula ({\expr vx\decimals 1\fixed0},{\expr vy\decimals 2\fixed0},{\expr vz\decimals 2\fixed0})}\par\par\par\par}' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='alin=0' coord_abs='sí' expresión='(20,125)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 ●}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='alin=0' coord_abs='sí' expresión='[42,125]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs34\b Ecuación general:\b0\par\par\par}' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='alin=0' coord_abs='sí' expresión='[135,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\fs34{\*\mjaformula{\expr ax>0?&squot;x - &squot;+ax:(ax<0?&squot;x + &squot;+abs(ax):&squot;x&squot;)\decimals 2\fixed0}}\cf0  \par\f0\fs34{\*\mjaformula{\expr ux\decimals 2\fixed0}}\par\f0\fs34{\*\mjaformula{\expr vx\decimals 2\fixed0}}\par}' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_center' anchor='a_top_center' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='alin=0' coord_abs='sí' expresión='[180,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\fs34{\*\mjaformula{\expr ay>0?&squot;y - &squot;+ay:(ay<0?&squot;y + &squot;+abs(ay):&squot;y&squot;)\decimals 2\fixed0}}\cf0  \par\f0\fs34{\*\mjaformula{\expr uy\decimals 2\fixed0}}\par\f0\fs34{\*\mjaformula{\expr vy\decimals 2\fixed0}}\par}' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_center' anchor='a_top_center' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='alin=0' coord_abs='sí' expresión='[225,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\fs34{\*\mjaformula{\expr az>0?&squot;z - &squot;+az:(az<0?&squot;z + &squot;+abs(az):&squot;z&squot;)\decimals 2\fixed0}}\cf0  \par\f0\fs34{\*\mjaformula{\expr uz\decimals 2\fixed0}}\par\f0\fs34{\*\mjaformula{\expr vz\decimals 2\fixed0}}\par}' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_center' anchor='a_top_center' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='alin=0' coord_abs='sí' expresión='(260,172)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 = 0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' dibujar-si='alin=0' coord_abs='sí' expresión='(110+140*s,155)(110+140*s,210)' familia='s' s.intervalo='[0,1]' s.pasos='1' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='alin=0' coord_abs='sí' expresión='(190,220)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f0\fs34\b π\b0\f1 : {\*\mjaformula{\expr A>0?(A=1?&squot; x&squot;:A+&squot;x&squot;):(A<0?(A=-1?&squot; - x&squot;:A+&squot;x&squot;):&squot;&squot;)\decimals 2\fixed0}{\expr A#0?(B>0?&squot;+&squot;:(B<0?&squot;-&squot;:&squot;&squot;)):&squot;&squot;\decimals 2\fixed0}{\expr B#0?(abs(B)=1?&squot; y&squot;:abs(B)+&squot;y&squot;):&squot;&squot;\decimals 2\fixed0}{\expr (A#0)|(B#0)?(C>0?&squot;+&squot;:(C<0?&squot;-&squot;:&squot;&squot;)):&squot;&squot;\decimals 2\fixed0}{\expr C#0?(abs(C)=1?&squot; z&squot;:((A=0)&(B=0)?C+&squot;z&squot;:abs(C)+&squot;z&squot;)):&squot;&squot;\decimals 2\fixed0}{\expr D>0?&squot;+&squot;:(D<0?&squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}{\expr D=0?&squot;&squot;:abs(D)\decimals 2\fixed0}=&nbsp;0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_12" value="espacio='fondo' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 ●}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='fondo' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(42,-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 Ecuación del plano que determinan los puntos:}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='fondo' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(240,40)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 A (            ,            ,            )}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_right' anchor='a_center_right' ">
+      <param name="G_15" value="espacio='fondo' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(370,40)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 B (            ,            ,            )}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' ">
+      <param name="G_16" value="espacio='fondo' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(500,40)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 C (            ,            ,            )}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_center_left' ">
+      <param name="G_17" value="espacio='fondo' tipo='rectángulo' fondo='no' color='90206090' coord_abs='sí' expresión='(fondo._w-352,70,351,291)' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(abs(mcd(A,mcd(B,mcd(C,D))))#1)&(alin=0)' coord_abs='sí' expresión='(42,245)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 Simplificando:\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_19" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(abs(mcd(A,mcd(B,mcd(C,D))))#1)&(alin=0)' coord_abs='sí' expresión='(190,270)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f0\fs34\b π\b0\f1 : {\*\mjaformula{\expr AA>0?(AA=1?&squot; x&squot;:AA+&squot;x&squot;):(AA<0?(AA=-1?&squot; - x&squot;:AA+&squot;x&squot;):&squot;&squot;)\decimals 2\fixed0}{\expr AA#0?(BB>0?&squot;+&squot;:(BB<0?&squot;-&squot;:&squot;&squot;)):&squot;&squot;\decimals 2\fixed0}{\expr BB#0?(abs(BB)=1?&squot; y&squot;:abs(BB)+&squot;y&squot;):&squot;&squot;\decimals 2\fixed0}{\expr (AA#0)|(BB#0)?(CC>0?&squot;+&squot;:(CC<0?&squot;-&squot;:&squot;&squot;)):&squot;&squot;\decimals 2\fixed0}{\expr CC#0?(abs(CC)=1?&squot; z&squot;:((AA=0)&(BB=0)?CC+&squot;z&squot;:abs(CC)+&squot;z&squot;)):&squot;&squot;\decimals 2\fixed0}{\expr DD>0?&squot;+&squot;:(DD<0?&squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}{\expr DD=0?&squot;&squot;:abs(DD)\decimals 2\fixed0}=&nbsp;0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_20" value="espacio='E1' tipo='texto' fondo='no' color='206090' dibujar-si='(alin=1)&(alin2=0)' coord_abs='sí' expresión='(200,70)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 ¡Atención! Los tres puntos están alineados.\par\f0\fs32 No determinan un plano.\par\f0\fs32 Cambia las coordenadas de alguno.}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_21" value="espacio='E1' tipo='texto' fondo='no' color='206090' dibujar-si='(alin=1)&(alin2>0)' coord_abs='sí' expresión='(200,70)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 ¡Atención! Solo hay{\*\mjaformula{\expr alin2>1?&squot;un punto.&squot;:&squot;dos puntos.&squot;\decimals 2\fixed0}}\par\f0\fs32 No determinan un plano.\par\f0\fs32 Cambia las coordenadas de alguno.}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="S_01" value="nombre='vE0' espacio='E0' tipo='macro' fondo='no' dibujar-si='ayc=0' expresión='macros/vector.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_02" value="nombre='uE0' espacio='E0' tipo='macro' fondo='no' dibujar-si='ayb=0' expresión='macros/vector.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_03" value="espacio='E0' tipo='punto' fondo='no' color='404040' color_reverso='ff6600' expresión='(ax,ay,az)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32  A}' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_04" value="espacio='E0' tipo='punto' fondo='no' color='404040' color_reverso='ff6600' dibujar-si='ayb=0' expresión='(bx,by,bz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32  B}' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_05" value="espacio='E0' tipo='punto' fondo='no' color='404040' color_reverso='ff6600' dibujar-si='(ayc=0)&(byc=0)' expresión='(cx,cy,cz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32  C}' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_06" value="espacio='E0' tipo='punto' fondo='no' color='eeffaa' color_reverso='6090a0' expresión='(7.2,0,0)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red238\green255\blue170;}\f1\fs24\cf0 X\f2\fs24\cf1}' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='12' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_07" value="espacio='E0' tipo='punto' fondo='no' color='eeffaa' color_reverso='6090a0' expresión='(0,5.4,0)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red238\green255\blue170;}\f1\fs24\cf0 Y\f2\fs24\cf1}' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='12' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_08" value="espacio='E0' tipo='punto' fondo='no' color='eeffaa' color_reverso='6090a0' expresión='(0,0,4.8)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red238\green255\blue170;}\f1\fs24\cf0  Z\f2\fs24\cf1}' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='12' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_09" value="espacio='E0' tipo='superficie' fondo='no' color='c030a0d0' color_reverso='c030d0ba' expresión='x=ax+4*(ux*u+v*vx)-2*(ux+vx) y=ay+4*(uy*u+v*vy)-2*(uy+vy) z=az+4*(uz*u+v*vz)-2*(uz+vz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='sí' aristas='no' modelo='luz' Nu='1' Nv='1' ">
+      <param name="S_10" value="espacio='E0' tipo='segmento' fondo='no' color='808080' expresión='(s,0,0)(s+1,0,0)' familia='s' s.intervalo='[0,60]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_11" value="espacio='E0' tipo='segmento' fondo='no' color='aaaaaa' expresión='(s,0,0)(s+1,0,0)' familia='s' s.intervalo='[-60,0]' s.pasos='8' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_12" value="espacio='E0' tipo='segmento' fondo='no' color='808080' expresión='(0,s,0)(0,s+1,0)' familia='s' s.intervalo='[0,60]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_13" value="espacio='E0' tipo='segmento' fondo='no' color='aaaaaa' expresión='(0,s,0)(0,s+1,0)' familia='s' s.intervalo='[-60,0]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_14" value="espacio='E0' tipo='segmento' fondo='no' color='808080' expresión='(0,0,s)(0,0,s+1)' familia='s' s.intervalo='[0,60]' s.pasos='60' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_15" value="espacio='E0' tipo='segmento' fondo='no' color='aaaaaa' expresión='(0,0,s)(0,0,s+1)' familia='s' s.intervalo='[-60,0]' s.pasos='60' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="Animación" value="pausa='40' controles='sí' auto='sí' repetir='no' inicio='ggg=0' hacer='ggg=ggg+1;animate=0' mientras='ggg<10' ">
+    </ajs>
+  </div>
+
+<script id="macros/mis_ejes2.txt" type="descartes/macro">
+﻿tipo_de_macro=R3
+Idioma=espa&ntilde;ol
+id='lx' constante='s&iacute;' expresi&oacute;n='30' evaluar='una-sola-vez'
+id='ly' constante='s&iacute;' expresi&oacute;n='30' evaluar='una-sola-vez'
+id='lz' constante='s&iacute;' expresi&oacute;n='30' evaluar='una-sola-vez'
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(lx,0,0)' Nu='1'
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(0,ly,0)' Nu='1'
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(0,0,lz)' Nu='1'
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(-lx,0,0)' Nu='1'
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(0,-ly,0)' Nu='1'
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(0,0,-lz)' Nu='1'
+tipo='punto' color='ff999999' color_reverso='999999' expresión='(s,0,0)' familia='s' s.intervalo='[1,lx]' s.pasos='lx-1' fuente='Monospaced,PLAIN,12' fijo='sí'
+tipo='punto' color='ff999999' color_reverso='999999' expresión='(0,s,0)' familia='s' s.intervalo='[1,ly]' s.pasos='ly-1' fuente='Monospaced,PLAIN,12' fijo='sí'
+tipo='punto' color='ff999999' color_reverso='999999' expresión='(0,0,s)' familia='s' s.intervalo='[1,lz]' s.pasos='lz-1' fuente='Monospaced,PLAIN,12' fijo='sí'
+tipo='punto' color='ffbbbbbb' color_reverso='bbbbbb' expresión='(s,0,0)' familia='s' s.intervalo='[-1,-lx]' s.pasos='lx-1' fuente='Monospaced,PLAIN,12' fijo='sí'
+tipo='punto' color='ffbbbbbb' color_reverso='bbbbbb' expresión='(0,s,0)' familia='s' s.intervalo='[-1,-ly]' s.pasos='ly-1' fuente='Monospaced,PLAIN,12' fijo='sí'
+tipo='punto' color='ffbbbbbb' color_reverso='bbbbbb' expresión='(0,0,s)' familia='s' s.intervalo='[-1,-lz]' s.pasos='lz-1' fuente='Monospaced,PLAIN,12' fijo='sí'  
+</script>
+
+<script id="macros/vector0.txt" type="descartes/macro">
+﻿tipo_de_macro=R3
+id='a' expresión='0' evaluar='una-sola-vez' constante='si'
+id='b' expresión='1' evaluar='una-sola-vez' constante='si'
+id='c' expresión='0' evaluar='una-sola-vez' constante='si'
+id='m' expresión='sqrt(a^2+b^2+c^2)' evaluar='siempre' constante='si'
+id='alto_cono' expresión='min(m/2,0.36*48/escala)' evaluar='siempre' constante='si'
+id='ry' expresión='90+asen(c/m)*180/pi' evaluar='siempre' constante='si'
+id='rz' expresión='(a#0)?90*(1+sgn(a))+atan(b/a)*180/pi:90*-sgn(b)' evaluar='siempre' constante='si'
+id='rojo' expresión='0.9' evaluar='una-sola-vez' constante='si'
+id='verde' expresión='0' evaluar='una-sola-vez' constante='si'
+id='azul' expresión='0' evaluar='una-sola-vez' constante='si'tipo='segmento' expresión='(0,0,0)(a,b,c)' color='(rojo,verde,azul)' ancho='3'
+tipo='segmento' expresión='(0,0,0)(a-alto_cono/2*a/m,b-alto_cono/2*b/m,c-alto_cono/2*c/m)' color='(rojo,verde,azul)' ancho='3'
+tipo='cono' expresión='Cono' rotini='(0,ry,rz)' posini='(a-(alto_cono/2-2/escala)*a/m,b-(alto_cono/2-2/escala)*b/m,c-(alto_cono/2-2/escala)*c/m)' color='(rojo,verde,azul)' color_reverso='60aaaaaa' modelo='luz' Nu='3' Nv='1' aristas='si' ancho='0.2*48/escala' largo='0.2*48/escala' alto='alto_cono' 
+</script>
+
+<script id="macros/vector.txt" type="descartes/macro">
+﻿tipo_de_macro=R3
+Idioma=espa&ntilde;ol
+id='i' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'
+id='j' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'
+id='k' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'
+id='a' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'
+id='b' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'
+id='c' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'
+id='m' constante='s&iacute;' expresi&oacute;n='sqrt((a-i)^2+(b-j)^2+(c-k)^2)' evaluar='siempre'
+id='alto_cono' constante='s&iacute;' expresi&oacute;n='min(m/2,0.36*48/escala)' evaluar='siempre'
+id='ry' constante='s&iacute;' expresi&oacute;n='90+asen((c-k)/m)*180/pi' evaluar='siempre'
+id='rz' constante='s&iacute;' expresi&oacute;n='((a-i)#0)?90*(1+sgn(a-i))+atan((b-j)/(a-i))*180/pi:90*-sgn(b-j)' evaluar='siempre'
+id='rojo' constante='s&iacute;' expresi&oacute;n='0.9' evaluar='una-sola-vez'
+id='verde' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'
+id='azul' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'
+tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(i,j,k)(a-alto_cono/2*(a-i)/m,b-alto_cono/2*(b-j)/m,c-alto_cono/2*(c-k)/m)' ancho='3' Nu='1' 
+tipo='cono' color='(rojo,verde,azul)' color_reverso='60aaaaaa' expresi&oacute;n='Cono' rotini='(0,ry,rz)' posini='(a-(alto_cono/2-2/escala)*(a-i)/m,b-(alto_cono/2-2/escala)*(b-j)/m,c-(alto_cono/2-2/escala)*(c-k)/m)' aristas='s&iacute;' modelo='metal' ancho='0.3*48/escala' largo='0.2*48/escala' alto='alto_cono' Nu='3' Nv='1' 
+</script>
+
+</body>
+</html>

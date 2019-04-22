@@ -1,0 +1,12 @@
+tipo_de_macro=R2
+id='Cx' expresión='ancho/2' evaluar='una-sola-vez' constante='si'
+id='Cy' expresión='alto/2' evaluar='una-sola-vez' constante='si'
+id='R' expresión='200' evaluar='una-sola-vez' constante='si'
+id='Rojo' expresión='0.8' evaluar='una-sola-vez' constante='si'
+id='Verde' expresión='0.8' evaluar='una-sola-vez' constante='si'
+id='Azul' expresión='0.8' evaluar='una-sola-vez' constante='si'
+id='m' expresión='0.5' evaluar='una-sola-vez' constante='si'
+id='N' expresión='100' evaluar='una-sola-vez' constante='si'
+id='Radio(s)' expresión='R*s'
+id='Transp(s)' expresión='1-m+m*sen(pi*s/2)^2'
+tipo='arco' color='ff000000' centro='(Cx,Cy)' radio='Radio(s)' fin='360' familia='s' s.intervalo='[0,1]' s.pasos='N' relleno='(Rojo,Verde,Azul,Transp(s))' coord_abs='si' 

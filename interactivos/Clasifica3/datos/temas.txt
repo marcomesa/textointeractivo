@@ -1,0 +1,6 @@
+5
+'Rios'
+'Países'
+'Montañas'
+'Animales'
+'Etnias'

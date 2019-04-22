@@ -1,0 +1,7 @@
+Las fuentes tipo font3 y font 4 son Amaranth diseñada por Gesine Todt, su licencia permite el uso redistribución.
+La diferencia entre una y otra está en que la primera (font3) convierte los textos de Descartes tipo SanSerif a Amaranth, la segunda (font4) lo hace con los textos tipo Monospace. 
+
+Se sugiere incoporar las dos fuentes a las escenas Descartes, pues así usemos SanSerif en los textos que diseñemos, la fuente de los controles están en monospace.
+
+La fuente tipo 5 es Italianno (http://www.typesetit.com/) con igual libertad de uso y redistribución. Esta fuente es una opción para cvuando se desea incluir formato script a nuestra escenas, para lo cual debemos seleccionar letra monospace.
+

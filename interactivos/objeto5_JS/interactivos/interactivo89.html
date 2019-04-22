@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4b.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="700" height="450" code="Descartes">
+    <param name="tamaño" value="700x450">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E1' cID='129a84e5367' x='0' y='0' ancho='700' alto='450' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='E1_sig' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Siguiente ►' expresión='(E1._w-130,E1._h-40,120,35)' valor='0' visible='sí' color='ffffff' color-int='536598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E1_num_ejer=(E1_num_ejer+1)%4;otro=otro+1;reinit_E1()' activo-si='(E1_bien)&(otro<2)' ">
+    <param name="C_02" value="id='E1_ant' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='◄ Anterior' expresión='(10,E1._h-40,120,35)' valor='0' visible='sí' color='ffffff' color-int='536598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E1_num_ejer=(E1_num_ejer-1)%4\nreinit_E1()' activo-si='E1_num_ejer>0' ">
+    <param name="A_01" value="id='dist(x1,y1,x2,y2)' algoritmo='no' expresión='sqrt((x2-x1)^2+(y2-y1)^2)' ">
+    <param name="A_02" value="id='toCoordRelX(ax,w,e,ox)' algoritmo='no' expresión='(ax-(ent(w/2)+ox))/e' ">
+    <param name="A_03" value="id='toCoordRelY(ay,h,e,oy)' algoritmo='no' expresión='-(ay-(ent(h/2)+oy))/e' ">
+    <param name="A_04" value="id='orden' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_05" value="id='E3_vecAux' vector='sí' evaluar='una-sola-vez' tamaño='5' ">
+    <param name="A_06" value="id='xRatio' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_07" value="id='yRatio' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_08" value="id='respCorr' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='respCorr[0]=1;respCorr[1]=1;respCorr[2]=2;respCorr[3]=3;respCorr[4]=4;respCorr[5]=1' ">
+    <param name="A_09" value="id='BD' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_10" value="id='resp' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_11" value="id='CX' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_12" value="id='CY' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_13" value="id='CX_goal' vector='sí' evaluar='una-sola-vez' tamaño='9' ">
+    <param name="A_14" value="id='CY_goal' vector='sí' evaluar='una-sola-vez' tamaño='9' ">
+    <param name="A_15" value="id='iniGX' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_16" value="id='iniGY' vector='sí' evaluar='una-sola-vez' tamaño='10' ">
+    <param name="A_17" value="id='variables' vector='sí' evaluar='una-sola-vez' tamaño='numVariables' expresión='variables[0]=|x|;variables[1]=|y|;variables[2]=|z|' ">
+    <param name="A_18" value="id='vecAux' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='vecAux[0]=0;vecAux[1]=1;vecAux[2]=2;vecAux[3]=3;vecAux[4]=4;vecAux[5]=5;vecAux[6]=6;vecAux[7]=7;vecAux[8]=8;vecAux[9]=9' ">
+    <param name="A_19" value="id='vecDePosicion' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='vecDePosicion[0]=0;vecDePosicion[1]=1;vecDePosicion[2]=2;vecDePosicion[3]=3;vecDePosicion[4]=4;vecDePosicion[5]=5;vecDePosicion[6]=6;vecDePosicion[7]=7;vecDePosicion[8]=8;vecDePosicion[9]=9' ">
+    <param name="A_20" value="id='iniVecAux()' algoritmo='sí' expresión='1' inicio='_j=0' hacer='E3_vecAux[_j]=_j;_j=_j+1' mientras='_j<numIncisos' ">
+    <param name="A_21" value="id='actVecAux(n)' algoritmo='sí' expresión='1' inicio='_k=n' hacer='E3_vecAux[_k]=E3_vecAux[_k+1];_k=_k+1' mientras='_k<(numIncisos-1)' ">
+    <param name="A_22" value="id='setOrden()' algoritmo='sí' expresión='1' inicio='_i=0*iniVecAux()' hacer='_resto=numIncisos-_i;_indice=ent(rnd*_resto);orden[_i]=E3_vecAux[_indice];aux=actVecAux(_indice);_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_23" value="id='setRatio()' algoritmo='sí' expresión='1' inicio='_i=0' hacer='xRatio[orden[_i]]=xRAT1;yRatio[orden[_i]]=yRAT1-_i*RAT1.sv;_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_24" value="id='llenaVecAux(random1,limite)' algoritmo='sí' expresión='0' inicio='i=0;r=random1' hacer='vecAux[i]=(i>=r)?vecAux[i+1]:vecAux[i];i=i+1' mientras='i<limite' ">
+    <param name="A_25" value="id='permutacionAleatoria(limite)' algoritmo='sí' expresión='0' inicio='_t=0' hacer='r=ent(rnd*(limite-_t));vecDePosicion[_t]=vecAux[r];llenaVecAux(r,limite);_t=_t+1' mientras='_t<limite' ">
+    <param name="A_26" value="id='ini_vecDePosicion()' algoritmo='sí' expresión='1' hacer='vecDePosicion[0]=0;vecDePosicion[1]=1;vecDePosicion[2]=2;vecDePosicion[3]=3;vecDePosicion[4]=4;vecDePosicion[5]=5;vecDePosicion[6]=6;vecDePosicion[7]=7;vecDePosicion[8]=8;vecDePosicion[9]=9;vecAux[0]=0;vecAux[1]=1;vecAux[2]=2;vecAux[3]=3;vecAux[4]=4;vecAux[5]=5;vecAux[6]=6;vecAux[7]=7;vecAux[8]=8;vecAux[9]=9' ">
+    <param name="A_27" value="id='ini_vecsC()' algoritmo='sí' expresión='1' inicio='_i=0' hacer='CX[_i]=iniGX[vecDePosicion[_i]];CY[_i]=iniGY[vecDePosicion[_i]];_i=_i+1' mientras='_i<10' ">
+    <param name="A_28" value="id='iniGs()' algoritmo='sí' expresión='1' inicio='_i=1;iniGX[0]=E1_cajitas_x;iniGY[0]=E1_cajitas_y' hacer='iniGX[_i]=iniGX[_i-1]+E1_cajita_ancho+E1_cajitas_sep;iniGY[_i]=iniGY[_i-1];BD[_i-1]=-1;_i=_i+1;;' mientras='_i<10' ">
+    <param name="A_29" value="id='ini_Cgoal()' algoritmo='sí' expresión='0' inicio='CX_goal[0]=-4;CY_goal[0]=1.1;CX_goal_sep=1;_i=1' hacer=';CX_goal[_i]=CX_goal[_i-1]+CX_goal_sep;CY_goal[_i]=CY_goal[_i-1];;_i=_i+1' mientras='_i<9' ">
+    <param name="A_30" value="id='E1_acomoda_opciones()' algoritmo='sí' expresión='x' hacer='E1_w=E1._w/E1.escala;E1_cajitas_sep=.8;E1_cajitas_x=(E1_w-E1_num_opciones*E1_cajita_ancho-(E1_num_opciones-1)*E1_cajitas_sep)/2-E1_w/2+E1_cajita_ancho/2;E1_cajitas_y=0.5;' ">
+    <param name="A_31" value="id='E1_ejer1()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=2;E1_acomoda_opciones();;CX_goal[0]=.7;CY_goal[0]=2.65;;CX_goal[1]=3.6;CY_goal[1]=2.65;;resp[0]=&squot;f ´(x)&squot;;resp[1]=&squot;g´(x)&squot;' ">
+    <param name="A_32" value="id='E1_ejer2()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=4;E1_acomoda_opciones();;CX_goal[0]=-0.65;CY_goal[0]=2.65;;CX_goal[1]=0.7;CY_goal[1]=2.65;;CX_goal[2]=2.4;CY_goal[2]=2.65;;CX_goal[3]=3.8;CY_goal[3]=2.65;;resp[0]=&squot;f(x)&squot;;resp[1]=&squot;g(x)&squot;;resp[2]=&squot;g´(x)&squot;;resp[3]=&squot;f ´(x)&squot;;' ">
+    <param name="A_33" value="id='E1_ejer3()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=6;E1_acomoda_opciones();;CX_goal[0]=-2.45;CY_goal[0]=2.65;;CX_goal[1]=-1.20;CY_goal[1]=2.65;;CX_goal[2]=1.27;CY_goal[2]=2.65;;CX_goal[3]=2.55;CY_goal[3]=2.65;;CX_goal[4]=5.1;CY_goal[4]=2.65;;CX_goal[5]=6.5;CY_goal[5]=2.65;;;resp[0]=&squot;f(x)&squot;;resp[1]=&squot;g(x)&squot;;resp[2]=&squot;h(x)&squot;;resp[3]=&squot;f ´(x)&squot;;resp[4]=&squot;g´(x)&squot;;resp[5]=&squot;h´(x)&squot;;' ">
+    <param name="A_34" value="id='E1_ejer4()' algoritmo='sí' expresión='x' hacer='E1_num_opciones=9;E1_acomoda_opciones();;CX_goal[0]=-3.7;CY_goal[0]=2.65;CX_goal[1]=-2.4;CY_goal[1]=2.65;CX_goal[2]=-1.1;CY_goal[2]=2.65;;CX_goal[3]=.4;CY_goal[3]=2.65;CX_goal[4]=1.7;CY_goal[4]=2.65;CX_goal[5]=3;CY_goal[5]=2.65;;CX_goal[6]=4.5;CY_goal[6]=2.65;CX_goal[7]=5.8;CY_goal[7]=2.65;CX_goal[8]=7.1;CY_goal[8]=2.65;;resp[0]=&squot;f(x)&squot;;resp[1]=&squot;g(x)&squot;;resp[2]=&squot;h(x)&squot;;resp[3]=&squot;f ´(x)&squot;;resp[4]=&squot;g´(x)&squot;;resp[5]=&squot;h´(x)&squot;;resp[6]=&squot;f(x)&squot;;resp[7]=&squot;g(x)&squot;;resp[8]=&squot;h(x)&squot;' ">
+    <param name="A_35" value="id='reinit_E1()' algoritmo='sí' expresión='x' hacer=';aux=(E1_num_ejer=0)?E1_ejer1():0;aux=(E1_num_ejer=1)?E1_ejer2():0;aux=(E1_num_ejer=2)?E1_ejer3():0;aux=(E1_num_ejer=3)?E1_ejer4():0;;ini_vecDePosicion();permutacionAleatoria(E1_num_opciones);iniGs();ini_vecsC();E1_num_colocados=0;E1_bien=0;;' ">
+    <param name="A_36" value="id='ini_E1()' algoritmo='sí' expresión='x' hacer='E1_cajita_ancho=1.2;E1_cajita_alto=0.6;E1_num_ejer=0;;reinit_E1();' ">
+    <param name="A_37" value="id='Reini()' algoritmo='sí' expresión='1' inicio='reini=0' hacer='E3_verSol=0;E3_bien=-1;ratio=-1;ratioActivo=1;aux2=setOrden()*setRatio()' ">
+    <param name="A_38" value="id='liberarCasilla(_o)' algoritmo='sí' expresión='x' inicio='_i=0' hacer='E1_num_colocados=(BD[_i]=_o)?E1_num_colocados-1:E1_num_colocados;E1_bien=(BD[_i]=_o)?0:E1_bien;BD[_i]=(BD[_i]=_o)?-1:BD[_i];;;_i=_i+1' mientras='_i<E1_num_opciones' ">
+    <param name="A_39" value="id='cualGoal()' algoritmo='sí' expresión='encontrado' inicio='_i=0;E1_eps=0.5;encontrado=10' hacer='encontrado=((abs(CX[seleccionado]-CX_goal[_i])<E1_eps)&(abs(CY[seleccionado]-CY_goal[_i])<E1_eps))?_i:10;;_i=_i+1' mientras='(_i<E1_num_opciones)&(encontrado=10)' ">
+    <param name="A_40" value="id='regresarAlInicio(s)' algoritmo='sí' expresión='1' hacer='CX[s]=iniGX[vecDePosicion[s]];CY[s]=iniGY[vecDePosicion[s]];' ">
+    <param name="A_41" value="id='E1_verif1()' algoritmo='sí' expresión='(BD[1]=0)' ">
+    <param name="A_42" value="id='E1_verif2()' algoritmo='sí' expresión='((BD[0]+2)%4=BD[1])' ">
+    <param name="A_43" value="id='E1_verif3()' algoritmo='sí' expresión='((BD[0]+BD[1]=6)&(BD[2]+BD[3]=5))' ">
+    <param name="A_44" value="id='E1_verif4()' algoritmo='sí' expresión='((BD[0]%6+BD[1]%6+BD[2]%6=6)&(BD[3]%6+BD[4]%6+BD[5]%6=6))' ">
+    <param name="A_45" value="id='E1_verif()' algoritmo='sí' expresión='1' hacer='E1_bien=(E1_num_ejer=0)?E1_verif1():E1_bien;E1_bien=(E1_num_ejer=1)?E1_verif2():E1_bien;E1_bien=(E1_num_ejer=2)?E1_verif3():E1_bien;E1_bien=(E1_num_ejer=3)?E1_verif4():E1_bien;;' ">
+    <param name="A_46" value="id='soltar(s)' algoritmo='sí' expresión='1' hacer='_goal=cualGoal();es_colocable=((_goal!=10)&(BD[_goal]=-1));BD[_goal]=(es_colocable)?seleccionado:BD[_goal];E1_num_colocados=(es_colocable)?E1_num_colocados+1:E1_num_colocados;CX[seleccionado]=(es_colocable)?CX_goal[_goal]:iniGX[vecDePosicion[seleccionado]];CY[seleccionado]=(es_colocable)?CY_goal[_goal]:iniGY[vecDePosicion[seleccionado]];;;' ">
+    <param name="A_47" value="id='seleccion()' algoritmo='sí' expresión='s_aux' inicio='_i=0;_cont=0;s_aux=-1;_dx=E1_cajita_ancho/2;_dy=E1_cajita_alto/2' hacer='s_aux=((abs(E1.mouse_x-CX[_i])<=_dx)&(abs(E1.mouse_y-CY[_i])<=_dy))?_i:s_aux;;_cont=(s_aux!=-1)?0:1;;;_i=_i+1' mientras='((_cont=1)&(_i<E1_num_opciones))' ">
+    <param name="A_48" value="id='agarrar()' algoritmo='sí' expresión='_aux' hacer='_aux=seleccion();_aux2=(_aux=-1)?0:liberarCasilla(_aux);;' ">
+    <param name="A_49" value="id='arrastrarFigura()' algoritmo='sí' expresión='1' hacer='CX[seleccionado]=E1.mouse_x;CY[seleccionado]=E1.mouse_y;' ">
+    <param name="A_50" value="id='clicRatio(mx,my)' algoritmo='sí' expresión='1' inicio='_i=0;_epsilon=1' hacer='_onRatio=(dist(mx,my,xRatio[_i],yRatio[_i])<_epsilon);ratio=((_onRatio)?_i:ratio);E3_bien=((_onRatio)?-1:E3_bien);_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_51" value="id='E3_Verificar()' algoritmo='sí' expresión='1' hacer='E3_bien=(ratio=respCorr[E3_num_ejer])' ">
+    <param name="A_52" value="id='CONFIG' algoritmo='sí' evaluar='una-sola-vez' hacer='E3_escala=10;E3_Ox=0;E3_Oy=0;numEjercicios=6;numIncisos=4' ">
+    <param name="A_53" value="id='INI_MRC' algoritmo='sí' evaluar='una-sola-vez' hacer='MRC1.b=420;MRC1.h=90;xMRC1=160;yMRC1=100;MRC2.b=550;MRC2.h=230;xMRC2=180;yMRC2=100' ">
+    <param name="A_54" value="id='INI_RAT' algoritmo='sí' evaluar='una-sola-vez' hacer='RAT1.re=0.8;RAT1.ri=0.4;RAT1.sv=4.6;RAT1.sh=22;RAT1.xt=1;xRAT1=toCoordRelX(30,E3._w,E3_escala,E3_Ox);yRAT1=toCoordRelY(120,E3._h,E3_escala,E3_Oy)' ">
+    <param name="A_55" value="id='numVariables' expresión='3' evaluar='una-sola-vez' constant='sí' ">
+    <param name="A_56" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='reini=1' hacer='ini_E1();' ">
+    <param name="A_57" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='aux=((reini)?Reini():0)' hacer='alternador=(E1.mouse_pressed=mousePressed)?0:1;mousePressed=(alternador=1)?(mousePressed+1)%2:mousePressed;seleccionado=((mousePressed=1)&(alternador=1))?agarrar():seleccionado;aux=((mousePressed=1)&(seleccionado>-1))?arrastrarFigura():0;aux=((seleccionado>-1)&(mousePressed=0)&(alternador=1))?soltar(seleccionado):0;E1_completo=(E1_num_colocados=E1_num_opciones)?E1_verif():0;aux=(((E3.mouse_pressed)&(ratioActivo))?clicRatio(E3.mouse_x,E3.mouse_y):0);' ">
+    <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='205060' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs52\b Actividad \b0\b{\*\mjaformula{\expr E1_num_ejer+1\decimals 0\fixed1}}\b0\b  de 3\b0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,BOLD,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_02" value="espacio='E1' tipo='polígono' fondo='no' color='20303a' coord_abs='no' expresión='(CX_goal[s]-E1_cajita_ancho/2,CY_goal[s]-E1_cajita_alto/2)(CX_goal[s]+E1_cajita_ancho/2,CY_goal[s]-E1_cajita_alto/2)(CX_goal[s]+E1_cajita_ancho/2,CY_goal[s]+E1_cajita_alto/2)(CX_goal[s]-E1_cajita_ancho/2,CY_goal[s]+E1_cajita_alto/2)(CX_goal[s]-E1_cajita_ancho/2,CY_goal[s]-E1_cajita_alto/2)' familia='s' s.intervalo='[0,E1_num_opciones-1]' s.pasos='E1_num_opciones-1' relleno='dddddd' ancho='0' lineDash='solid' ">
+    <param name="G_03" value="espacio='E1' tipo='polígono' fondo='no' color='20303a' coord_abs='no' expresión='(CX[s]-E1_cajita_ancho/2,CY[s]-E1_cajita_alto/2)(CX[s]+E1_cajita_ancho/2,CY[s]-E1_cajita_alto/2)(CX[s]+E1_cajita_ancho/2,CY[s]+E1_cajita_alto/2)(CX[s]-E1_cajita_ancho/2,CY[s]+E1_cajita_alto/2)(CX[s]-E1_cajita_ancho/2,CY[s]-E1_cajita_alto/2)' familia='s' s.intervalo='[0,E1_num_opciones-1]' s.pasos='E1_num_opciones-1' relleno='bb205060' ancho='0' lineDash='solid' ">
+    <param name="G_04" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(CX[s]-0.8,CY[s]-0.15)' familia='s' s.intervalo='[0,E1_num_opciones-1]' s.pasos='E1_num_opciones-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs52\i{\*\mjaformula{\expr resp[s]\decimals undefined\fixed0}}\i0\par}' decimales='0' fijo='sí' tamaño='0' fuente='Serif,ITALIC,17' ">
+    <param name="G_05" value="espacio='E1' tipo='polígono' fondo='no' color='c0c0c0' dibujar-si='(E1_completo)&ppp' coord_abs='sí' expresión='(xMRC1,yMRC1)(xMRC1+MRC1.b,yMRC1)(xMRC1+MRC1.b,yMRC1+MRC1.h)(xMRC1,yMRC1+MRC1.h)(xMRC1,yMRC1)' ancho='1' lineDash='solid' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(E1_completo)&(E1_bien)' expresión='[xMRC1-80,yMRC1+120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green125\blue0;\red32\green48\blue58;}\f0\cf0\fs52\b ¡Muy bien!\b0\par\f0\cf1\fs52  \par\f0\cf1\fs52 Con esta fórmula puedes calcular la derivada de un \par\f0\cf1\fs52 producto de\cf1  \cf1 funciones.}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='E1_num_ejer=0' expresión='[150,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs52\i{\*\mjaformula (f·g)&squot;(x)=f(x)}\i0\i           + g(x)\i0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,18' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(E1_num_ejer=0)&(E1_completo)&(!E1_bien)' expresión='[xMRC1-100,yMRC1+120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs52\b Incorrecto\b0\par\f0\fs52  \par\f0\fs52 Recuerda que en ningún sumando deben estar juntos \par\f0\fs52 una función y su derivada.}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='E1_num_ejer=1' expresión='[140,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs52\i{\*\mjaformula (f·g)&squot;(x)=}\i0\i                   \i0\fs38\i  \i0\fs52\b\i +\i0\b0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,18' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='E1_num_ejer=2' expresión='[0,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs48\i{\*\mjaformula (f·g·h)&squot;(x)=f(x)}\i0\i                     + g(x)                    + h(x\i0\fs52\i )  \i0}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' anchor='a_top_left' ">
+    <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='E1_num_ejer=3' expresión='[0,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs48\i{\*\mjaformula (f·g·h)&squot;(x)=}\i0\i  \i0\i  \i0\b\i    \i0\b0\fs52\b\i                       +                            +\i0\b0}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' anchor='a_top_left' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(E1_num_ejer>0)&(E1_completo)&(!E1_bien)' expresión='[xMRC1-100,yMRC1+120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f0\cf0\fs52 Incorrecto\par\f0\cf1\fs52  \par\f0\cf1\fs52 Recuerda que en ningún sumando deben estar juntos \par\f0\cf1\fs52 una función y su derivada, ni dos derivadas\cf1\fs34 .}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,17' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

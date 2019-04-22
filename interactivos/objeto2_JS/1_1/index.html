@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Propiedades de la potenciacion</title>
+  <link rel="stylesheet" href="../../../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font5.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden;">
+
+  <p align="center">
+    <ajs name="Descartes" code="Descartes" width="670" height="400">
+      <param name="tamaño" value="670x400">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='10' y='6' ancho='50%' alto='97%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ccffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='n5' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(347,10,310,30)' valor='ent(rnd*4+1)' decimales='2' fijo='sí' visible='no' opciones='Seleccione para ver ejemplos[1],Producto de potencias de la misma base[2],Cociente de potencias de la misma base[3],Potencia de una potencia[4],Producto de potencias con igual exponente[5],Cociente de potencias con igual exponente[6]' acción='calcular' parámetro='n=ent(rnd*30+2);nx=ent(rnd*30+2);a=ent(rnd*8+2);bx=ent(rnd*8+2)' ">
+      <param name="C_02" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='otro' expresión='(E1._w-50,55*(n5=2)+120*(n5=3)+195*(n5=4)+265*(n5=5)+345*(n5=6),50,30)' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/boton3.png' acción='calcular' parámetro='n=ent(rnd*30+2);nx=ent(rnd*30+2);a=ent(rnd*8+2);bx=ent(rnd*8+2)' dibujar-si='n5>1' ">
+      <param name="A_01" value="id='n' expresión='ent(rnd*30+2)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_02" value="id='nx' expresión='ent(rnd*30+2)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_03" value="id='m' expresión='n=nx?nx+1:nx' evaluar='siempre' constante='sí' ">
+      <param name="A_04" value="id='a' expresión='ent(rnd*8+2)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_05" value="id='bx' expresión='ent(rnd*8+2)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_06" value="id='b' expresión='bx=a?b+1:bx' evaluar='siempre' constante='sí' ">
+      <param name="G_01" value="espacio='E1' tipo='polígono' fondo='no' color='c8ffe8d5' coord_abs='sí' expresión='(435,10)(750,10)(750,320)(435,320)' ancho='0' lineDash='solid' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,55]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b{\*\mjaformula a{\supix n}·a{\supix m}=a{\supix n+m}}\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='Monospaced' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b{\*\mjaformula{\fraction{\num a{\supix n}}{\den a{\supix m}}}=a{\supix n-m}}\fs24\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,195]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula (a{\supix n}){\supix m}= a{\supix n\u183 m}}\fs24\par }' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,265]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula a{\supix n}\u183 b{\supix n}=(a\u183 b){\supix n}}\fs24\par }' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,335]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b{\*\mjaformula{\fraction{\num a{\supix n}}{\den b{\supix n}}}=({\fraction{\num a}{\den b}}){\supix n}}\fs24\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='n5=2' coord_abs='sí' expresión='[350,55]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula{\expr a\decimals 0\fixed0}{\supix{\expr n\decimals 0\fixed0}}\u183 {\expr a\decimals 0\fixed0}{\supix{\expr m\decimals 0\fixed0}}={\expr a\decimals 0\fixed0}{\supix{\expr n+m\decimals 0\fixed0}}}\fs24\b0\par }' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='n5=3' coord_abs='sí' expresión='[350,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b{\*\mjaformula{\fraction{\num{\expr a\decimals 0\fixed0}{\supix{\expr n\decimals 0\fixed0}}}{\den{\expr a\decimals 0\fixed0}{\supix{\expr m\decimals 0\fixed0}}}}={\expr a\decimals 0\fixed0}{\supix{\expr n-m\decimals 0\fixed0}}}\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='n5=4' coord_abs='sí' expresión='[350,195]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b{\*\mjaformula ({\expr a\decimals 0\fixed0}{\supix{\expr n\decimals 0\fixed0}}){\supix{\expr m\decimals 0\fixed0}}={\expr a\decimals 0\fixed0}{\supix{\expr m*n\decimals 0\fixed0}}}\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='n5=5' coord_abs='sí' expresión='[350,265]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b{\*\mjaformula{\expr a\decimals 0}{\supix{\expr n\decimals 0}}\u183 {\expr b\decimals 0}{\supix{\expr n\decimals 0}}={\expr a*b\decimals 0}{\supix{\expr n\decimals 0}}}\fs24\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='Monospaced' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='n5=6' coord_abs='sí' expresión='[350,335]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b{\*\mjaformula{\fraction{\num{\expr a\decimals 0}{\supix{\expr n\decimals 0}}}{\den{\expr b\decimals 0}{\supix{\expr n\decimals 0}}}}=({\fraction{\num{\expr a\decimals 0}}{\den{\expr b\decimals 0}}}){\supix{\expr n\decimals 0}}}\fs24\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='Monospaced' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[10,35]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 1. Producto de potencias de la misma base\f2\fs30}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' align='left' anchor='top_left' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[10,92]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f1\fs30 2. Cociente de potencias de la misma base\f0\fs30}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' align='left' anchor='top_left' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[10,170]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 3. Potencia de una potencia\f2\fs30}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' align='left' anchor='top_left' ">
+      <param name="G_15" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[10,240]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 4. Producto de potencias con igual exponente\f2\fs30}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' align='left' anchor='top_left' ">
+      <param name="G_16" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[10,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 5. Cociente de potencias con igual exponente\f2\fs30}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' align='left' anchor='top_left' ">
+      <param name="G_17" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[100,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 Selecciona y observa ejemplos:\f2\fs30}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' align='left' anchor='top_left' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>

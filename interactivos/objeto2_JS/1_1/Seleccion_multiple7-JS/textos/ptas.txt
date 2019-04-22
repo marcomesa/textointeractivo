@@ -1,0 +1,7 @@
+'Escribe las preguntas encerradas en comillas simples'
+'1. Conectas tu chicharra a la batería pero no produce sonido. Al explorarlo, notas que su bobina está muy alejada de la tapa. En este caso'
+'2. Al conectar tu chicharra a la batería notas que ésta atrae a la tapa de la lata y se queda pegada a la bobina y despegada del clavo a la izquierda. ¿Qué está pasando?'
+'3. ¿Qué pasa si se voltea la batería en el circuito (se cambian las conexiones de positivo por negativo y negativo por positivo)?'
+'4. Cuatro de las cinco opciones nos explican por qué una chicharra como la del experimento no funciona. Indica la excepción.'
+'5. Al construir un timbre como el del experimento, notas que no suena al conectarlo a la batería. Al revisarlo, notas que la tapa sigue pegada al clavo a la izquierda, pero la bobina no lo atrae. Cuatro de las opciones permiten resolver el problema. ¿Cuál no?'
+

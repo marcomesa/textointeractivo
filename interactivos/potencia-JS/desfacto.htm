@@ -1,0 +1,412 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Descomposición factorial</title><script type='text/javascript' src='lib/descartes-min.js'></script>
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFF8E1" text="#000000" link="#993366"
+vlink="#999933" topmargin="0" leftmargin="0"
+onload="MM_preloadImages('img/boton_atras2.gif','img/boton_arriba2.gif','img/boton_adelante2.gif')">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>    <tr>
+        <td valign="top" rowspan="2" width="240"
+        bgcolor="#FFF8E1"><a href="http://proyectodescartes.org/" target="_blank"><img
+        src="img/red_240x80_ftrans.png" border="0" vspace="6" width="240"
+        height="80"></a><a href="img/index.html"></a></td>
+        <td align="middle" width="100%" bgcolor="#006699"
+        height="49">
+      <div align="center"><font color="#FFFFFF" size="3"
+        face="Verdana, Arial, Helvetica, sans-serif"><b>Descomposición factorial 
+        de un número.</b></font> </div>
+    </td>
+    </tr>
+    <tr>
+        <td align="middle" bgcolor="#EAF4FF" height="39">
+      <div align="center"><font
+        color="#006699" size="3"
+        face="Arial, Helvetica, sans-serif"><i>Las potencias..</i></font></div>
+    </td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+</tbody></table>
+
+<hr size="50" color="#FEE6B8">
+<table border="0" cellpadding="3" width="100%" height="66%">
+  <tr> 
+    <td colspan="2" height="21"><font color="#000000"
+        size="3" face="Arial, Helvetica, sans-serif"><b>1. Las potencias en la 
+      descomposici&oacute;n factorial de un n&uacute;mero.</b></font></td>
+  </tr>
+  <TBODY> 
+  <tr> 
+    <td colspan="2" bgcolor="#E9E8CB" height="137"> 
+      <p><font
+        color="#000000" size="2"
+        face="Verdana, Arial, Helvetica, sans-serif"><b>Una de las aplicaciones 
+        de las potencias es en la descomposici&oacute;n factorial de un n&uacute;mero.<br>
+        </b></font><font
+        color="#000000" size="2"
+        face="Verdana, Arial, Helvetica, sans-serif"><b>Descomponer un número 
+        en factores es ponerlo como producto de factores primos.</b><br>
+        - Para descomponer en factores un número lo dividimos por el primer número 
+        primo que podamos. <br>
+        - El cociente que haya resultado lo colocamos bajo el número.<br>
+        - Si podemos seguimos dividiendo sucesivamente ese cociente por el mismo 
+        número primo.<br>
+        - Cuando no podamos hacer la división por ese número primo lo hacemos 
+        por el siguiente primo que se pueda.<br>
+        - Así sucesivamente hasta que el cociente final sea 1.<br>
+        - Finalmente ponemos ese número como un producto de potencias de factores 
+        primos.</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="500" height="368">&nbsp;<applet name="descomposición factorial"
+        code="Descartes.class"
+        codebase="../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=375 height=375>
+   <param name="nombre" value="descomposición factorial">
+   <param name="Versión" value="2.45">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=si limpiar=no">
+   <param name="Espacio" value="fondo=blanco red=no red10=no ejes=no texto=no eje-x=no eje-y=no">
+   <param name="C_00" value="id=n tipo=numérico valor='2' decimales='0' incr='1' min='2' max='99999' nombre=Marca un número y pulsa intro">
+   <param name="A_00" value="id=escala expresión='55' constante=si evaluar=una-sola-vez">
+   <param name="A_01" value="id=p1 algoritmo=si inicio='p1=1' hacer='p1=p1+1' mientras='(ent(n/p1)<n/p1)*(p1<n)' evaluar=siempre">
+   <param name="A_02" value="id=c1 expresión='n/p1' constante=si evaluar=siempre">
+   <param name="A_03" value="id=p2 algoritmo=si inicio='p2=p1-1' hacer='p2=p2+1' mientras='(ent(c1/p2)<c1/p2)*(p2<c1)' evaluar=siempre">
+   <param name="A_04" value="id=c2 expresión='c1/p2' constante=si evaluar=siempre">
+   <param name="A_05" value="id=p3 algoritmo=si inicio='p3=p2-1' hacer='p3=p3+1' mientras='(ent(c2/p3)<c2/p3)*(p3<c2)' evaluar=siempre">
+   <param name="A_06" value="id=c3 expresión='c2/p3' constante=si evaluar=siempre">
+   <param name="A_07" value="id=p4 algoritmo=si inicio='p4=p3-1' hacer='p4=p4+1' mientras='(ent(c3/p4)<c3/p4)*(p4<c3)' evaluar=siempre">
+   <param name="A_08" value="id=c4 expresión='c3/p4' constante=si evaluar=siempre">
+   <param name="A_09" value="id=p5 algoritmo=si inicio='p5=p4-1' hacer='p5=p5+1' mientras='(ent(c4/p5)<c4/p5)*(p5<c4)' evaluar=siempre">
+   <param name="A_10" value="id=c5 expresión='c4/p5' constante=si evaluar=siempre">
+   <param name="A_11" value="id=p6 algoritmo=si inicio='p6=p5-1' hacer='p6=p6+1' mientras='(ent(c5/p6)<c5/p6)*(p6<c5)' evaluar=siempre">
+   <param name="A_12" value="id=c6 expresión='c5/p6' constante=si evaluar=siempre">
+   <param name="A_13" value="id=p7 algoritmo=si inicio='p7=p6-1' hacer='p7=p7+1' mientras='(ent(c6/p7)<c6/p7)*(p7<c6)' evaluar=siempre">
+   <param name="A_14" value="id=c7 expresión='c6/p7' constante=si evaluar=siempre">
+   <param name="A_15" value="id=p8 algoritmo=si inicio='p8=p7-1' hacer='p8=p8+1' mientras='(ent(c7/p8)<c7/p8)*(p8<c7)' evaluar=siempre">
+   <param name="A_16" value="id=c8 expresión='c7/p8' constante=si evaluar=siempre">
+   <param name="A_17" value="id=p9 algoritmo=si inicio='p9=p8-1' hacer='p9=p9+1' mientras='(ent(c8/p9)<c8/p9)*(p9<c8)' evaluar=siempre">
+   <param name="A_18" value="id=c9 expresión='c8/p9' constante=si evaluar=siempre">
+   <param name="A_19" value="id=p10 algoritmo=si inicio='p10=p9-1' hacer='p10=p10+1' mientras='(ent(c9/p10)<c9/p10)*(p10<c9)' evaluar=siempre">
+   <param name="A_20" value="id=c10 expresión='c9/p10' constante=si evaluar=siempre">
+   <param name="A_21" value="id=p11 algoritmo=si inicio='p11=p10-1' hacer='p11=p11+1' mientras='(ent(c10/p11)<c10/p11)*(p11<c10)' evaluar=siempre">
+   <param name="A_22" value="id=c11 expresión='c10/p11' constante=si evaluar=siempre">
+   <param name="A_23" value="id=p12 algoritmo=si inicio='p12=p11-1' hacer='p12=p12+1' mientras='(ent(c11/p12)<c11/p12)*(p12<c11)' evaluar=siempre">
+   <param name="A_24" value="id=c12 expresión='c11/p12' constante=si evaluar=siempre">
+   <param name="A_25" value="id=p13 algoritmo=si inicio='p13=p12-1' hacer='p13=p13+1' mientras='(ent(c12/p13)<c12/p13)*(p13<c12)' evaluar=siempre">
+   <param name="A_26" value="id=c13 expresión='c12/p13' constante=si evaluar=siempre">
+   <param name="A_27" value="id=p14 algoritmo=si inicio='p14=p13-1' hacer='p14=p14+1' mientras='(ent(c13/p14)<c13/p14)*(p14<c13)' evaluar=siempre">
+   <param name="A_28" value="id=c14 expresión='c13/p14' constante=si evaluar=siempre">
+   <param name="A_29" value="id=p15 algoritmo=si inicio='p15=p14-1' hacer='p15=p15+1' mientras='(ent(c14/p15)<c14/p15)*(p15<c14)' evaluar=siempre">
+   <param name="A_30" value="id=c15 expresión='c14/p15' constante=si evaluar=siempre">
+   <param name="A_31" value="id=p16 algoritmo=si inicio='p16=p15-1' hacer='p16=p16+1' mientras='(ent(c15/p16)<c15/p16)*(p16<c15)' evaluar=siempre">
+   <param name="A_32" value="id=e expresión='1+(p1=p2)*(c1>1)+(p1=p3)*(c2>1)+(p1=p4)*(c3>1)+(p1=p5)*(c4>1)+(p1=p6)*(c5>1)+(p1=p7)*(c6>1)+(p1=p8)*(c7>1)+(p1=p9)*(c8>1)+(p1=p10)*(c9>1)+(p1=p11)*(c10>1)+(p1=p12)*(c11>1)+(p1=p13)*(c12>1)+(p1=p14)*(c13>1)+(p1=p15)*(c14>1)+(p1=p16)*(c15>1)' constante=si evaluar=siempre">
+   <param name="A_33" value="id=b2 expresión='(e=1)*(c1>1)*p2+(c2>1)*(e=2)*(c2>1)*p3+(e=3)*(c3>1)*p4+(e=4)*(c4>1)*p5+(e=5)*(c5>1)*p6+(e=6)*(c6>1)*p7+(e=7)*(c7>1)*p8+(e=8)*(c8>1)*p9+(e=9)*(c9>1)*p10+(e=10)*(c10>1)*p11+(e=11)*(c11>1)*p12+(e=12)*(c12>1)*p13+(e=13)*(c13>1)*p14+(e=14)*(c14>1)*p15+(e=15)*(c15>1)*p16' constante=si evaluar=siempre">
+   <param name="A_34" value="id=e2 expresión='(b2=p2)*(c1>1)+(b2=p3)*(c2>1)+(b2=p4)*(c3>1)+(b2=p5)*(c4>1)+(b2=p6)*(c5>1)+(b2=p7)*(c6>1)+(b2=p8)*(c7>1)+(b2=p9)*(c8>1)+(b2=p10)*(c9>1)+(b2=p11)*(c10>1)+(b2=p12)*(c11>1)+(b2=p13)*(c12>1)+(b2=p14)*(c13>1)+(b2=p15)*(c14>1)+(b2=p16)*(c15>1)' constante=si evaluar=siempre">
+   <param name="A_35" value="id=b3 expresión='(e+e2=2)*(c2>1)*p3+(e+e2=3)*(c3>1)*p4+(e+e2=4)*(c4>1)*p5+(e+e2=5)*(c5>1)*p6+(e+e2=6)*(c6>1)*p7+(e+e2=7)*(c7>1)*p8+(e+e2=8)*(c8>1)*p9+(e+e2=9)*(c9>1)*p10+(e+e2=10)*(c10>1)*p11+(e+e2=11)*(c11>1)*p12+(e+e2=12)*(c12>1)*p13+(e+e2=13)*(c13>1)*p14' constante=si evaluar=siempre">
+   <param name="A_36" value="id=e3 expresión='(b3=p3)*(c2>1)+(b3=p4)*(c3>1)+(b3=p5)*(c4>1)+(b3=p6)*(c5>1)+(b3=p7)*(c6>1)+(b3=p8)*(c7>1)+(b3=p9)*(c8>1)+(b3=p10)*(c9>1)+(b3=p11)*(c10>1)+(b3=p12)*(c11>1)+(b3=p13)*(c12>1)+(b3=p14)*(c13>1)' constante=si evaluar=siempre">
+   <param name="A_37" value="id=b4 expresión='(e+e2+e3=3)*(c3>1)*p4+(e+e2+e3=4)*(c4>1)*p5+(e+e2+e3=5)*(c5>1)*p6+(e+e2+e3=6)*(c6>1)*p7+(e+e2+e3=7)*(c7>1)*p8+(e+e2+e3=8)*(c8>1)*p9+(e+e2+e3=9)*(c9>1)*p10+(e+e2+e3=10)*(c10>1)*p11+(e+e2+e3=11)*(c11>1)*p12' constante=si evaluar=siempre">
+   <param name="A_38" value="id=e4 expresión='(b4=p4)*(c3>1)+(b4=p5)*(c4>1)+(b4=p6)*(c5>1)+(b4=p7)*(c6>1)+(b4=p8)*(c7>1)+(b4=p9)*(c8>1)+(b4=p10)*(c9>1)+(b4=p11)*(c10>1)+(b4=p12)*(c11>1)' constante=si evaluar=siempre">
+   <param name="A_39" value="id=b5 expresión='(e+e2+e3+e4=4)*(c4>1)*p5+(e+e2+e3+e4=5)*(c5>1)*p6+(e+e2+e3+e4=6)*(c6>1)*p7+(e+e2+e3+e4=7)*(c7>1)*p8+(e+e2+e3+e4=8)*(c8>1)*p9+(e+e2+e3+e4=9)*(c9>1)*p10' constante=si evaluar=siempre">
+   <param name="A_40" value="id=e5 expresión='(b5=p5)*(c4>1)+(b5=p6)*(c5>1)+(b5=p7)*(c6>1)+(b5=p8)*(c7>1)+(b5=p9)*(c8>1)+(b5=p10)*(c9>1)' constante=si evaluar=siempre">
+   <param name="A_41" value="id=b6 expresión='(e+e2+e3+e4+e5=5)*(c5>1)*p6+(e+e2+e3+e4+e5=6)*(c6>1)*p7' constante=si evaluar=siempre">
+   <param name="G_00" value="tipo=segmento expresión='(2.35,3.1)(2.35,-2.8)' fondo=si decimales=0 tamaño=0 ancho=3">
+   <param name="G_01" value="tipo=punto expresión='(-3,2.8)' color=rojo fondo=si texto='Descomposición factorial' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_02" value="tipo=punto expresión='(-3,2.4)' color=rojo fondo=si texto='del número' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_03" value="tipo=punto expresión='(-3,1.4)' color=0000d7 texto='[n]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,60'">
+   <param name="G_04" value="tipo=punto expresión='(1.4,2.8)' texto='[n]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_05" value="tipo=punto expresión='(2.4,2.8)' color=magenta texto='[p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_06" value="tipo=punto expresión='(1.4,2.4)' color=magenta texto='[c1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_07" value="tipo=punto expresión='(2.4,2.4)' color=magenta dibujar-si='c1>1' texto='[p2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_08" value="tipo=punto expresión='(1.4,2)' color=magenta dibujar-si='c1>1' texto='[c2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_09" value="tipo=punto expresión='(2.4,2)' color=magenta dibujar-si='c2>1' texto='[p3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_10" value="tipo=punto expresión='(1.4,1.6)' color=magenta dibujar-si='c2>1' texto='[c3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_11" value="tipo=punto expresión='(2.4,1.6)' color=magenta dibujar-si='c3>1' texto='[p4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_12" value="tipo=punto expresión='(1.4,1.2)' color=magenta dibujar-si='c3>1' texto='[c4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_13" value="tipo=punto expresión='(2.4,1.2)' color=magenta dibujar-si='c4>1' texto='[p5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_14" value="tipo=punto expresión='(1.4,0.8)' color=magenta dibujar-si='c4>1' texto='[c5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_15" value="tipo=punto expresión='(2.4,0.8)' color=magenta dibujar-si='c5>1' texto='[p6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_16" value="tipo=punto expresión='(1.4,0.4)' color=magenta dibujar-si='c5>1' texto='[c6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_17" value="tipo=punto expresión='(2.4,0.4)' color=magenta dibujar-si='c6>1' texto='[p7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_18" value="tipo=punto expresión='(1.4,0)' color=magenta dibujar-si='c6>1' texto='[c7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_19" value="tipo=punto expresión='(2.4,0)' color=magenta dibujar-si='c7>1' texto='[p8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_20" value="tipo=punto expresión='(1.4,-0.4)' color=magenta dibujar-si='c7>1' texto='[c8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_21" value="tipo=punto expresión='(2.4,-0.4)' color=magenta dibujar-si='c8>1' texto='[p9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_22" value="tipo=punto expresión='(1.4,-0.8)' color=magenta dibujar-si='c8>1' texto='[c9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_23" value="tipo=punto expresión='(2.4,-0.8)' color=magenta dibujar-si='c9>1' texto='[p10]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_24" value="tipo=punto expresión='(1.4,-1.2)' color=magenta dibujar-si='c9>1' texto='[c10]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_25" value="tipo=punto expresión='(2.4,-1.2)' color=magenta dibujar-si='c10>1' texto='[p11]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_26" value="tipo=punto expresión='(1.4,-1.6)' color=magenta dibujar-si='c10>1' texto='[c11]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_27" value="tipo=punto expresión='(2.4,-1.6)' color=magenta dibujar-si='c11>1' texto='[p12]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_28" value="tipo=punto expresión='(1.4,-2)' color=magenta dibujar-si='c11>1' texto='[c12]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_29" value="tipo=punto expresión='(2.4,-2)' color=magenta dibujar-si='c12>1' texto='[p13]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_30" value="tipo=punto expresión='(1.4,-2.4)' color=magenta dibujar-si='c12>1' texto='[c13]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_31" value="tipo=punto expresión='(2.4,-2.4)' color=magenta dibujar-si='c13>1' texto='[p14]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_32" value="tipo=punto expresión='(1.4,-2.8)' color=magenta dibujar-si='c13>1' texto='[c14]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_33" value="tipo=punto expresión='(2.4,-2.8)' color=magenta dibujar-si='c14>1' texto='[p15]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_34" value="tipo=punto expresión='(1.4,-3.2)' color=magenta dibujar-si='c14>1' texto='[c15]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_35" value="tipo=punto expresión='(2.4,-3.2)' color=magenta dibujar-si='c15>1' texto='[p16]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_36" value="tipo=punto expresión='(-3,-0.7)' color=0000b5 texto='= [p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_37" value="tipo=punto expresión='(-2.4,-0.4)' color=0000b5 dibujar-si='e>1' texto='[e]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_38" value="tipo=punto expresión='(-2.2,-0.7)' color=0000b5 dibujar-si='b2' texto='· [b2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_39" value="tipo=punto expresión='(-1.7,-0.4)' color=0000b5 dibujar-si='e2>1' texto='[e2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_40" value="tipo=punto expresión='(-1.4,-0.7)' color=0000b5 dibujar-si='b3' texto='· [b3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_41" value="tipo=punto expresión='(-0.9,-0.4)' color=0000b5 dibujar-si='e3>1' texto='[e3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_42" value="tipo=punto expresión='(-0.6,-0.7)' color=0000b5 dibujar-si='b4' texto='· [b4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_43" value="tipo=punto expresión='(-0.1,-0.4)' color=0000b5 dibujar-si='e4>1' texto='[e4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_44" value="tipo=punto expresión='(0.2,-0.7)' color=0000b5 dibujar-si='b5' texto='· [b5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_45" value="tipo=punto expresión='(0.7,-0.4)' color=0000b5 dibujar-si='e5>1' texto='[e5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_46" value="tipo=punto expresión='(1,-0.7)' color=0000b5 dibujar-si='b6' texto='· [b6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+</applet>
+</td>
+    <td width="100%" height="368"> 
+      <table border="2"
+        cellpadding="3">
+        <tr> 
+          <td bgcolor="#E9E8CB" height="141"><font size="2"
+                face="Verdana, Arial, Helvetica, sans-serif"><b>Esta escena realiza 
+            la descomposición factorial de un número</b>, para ello marca el número 
+            natural que quieras en la ventana del control que está bajo la escena 
+            y pulsa intro. <br>
+            Para ver cómo quedan descompuestos otros números puedes ir variando 
+            el valor del número utilizando los triángulos.<br>
+            El número más grande que puedes marcar es de cinco cifras.</font></td>
+        </tr>
+      </table>
+      <p><br>
+        <font size="2"
+        face="Verdana, Arial, Helvetica, sans-serif">A la derecha puedes ver los 
+        factores que intervienen y abajo la expresi&oacute;n del producto de potencias. 
+        <br>
+        Si el exponente es 1 no se pone exponente. <br>
+        <br>
+        <b>Observa que cualquier n&uacute;mero natural se puede poner como un 
+        producto de potencias</b> cuyas bases son n&uacute;meros primos</font>.</p>
+      </td>
+  </tr>
+  </TBODY>
+</table>
+
+<hr size="50" color="#FEE6B8">
+<table border="0" cellpadding="3" width="100%" height="66%">
+  <tr> 
+    <td colspan="2" height="40"><font color="#000000"
+        size="3" face="Arial, Helvetica, sans-serif"><b>2. Halla el n&uacute;mero 
+      del que proviene esta descomposici&oacute;n factorial.</b></font></td>
+  </tr>
+  <tbody> 
+  <tr> 
+    <td width="500" height="368">&nbsp;<applet name="descomposición factorial 2"
+        code="Descartes.class"
+        codebase="../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=375 height=375>
+   <param name="nombre" value="descomposición factorial 2">
+   <param name="Versión" value="2.45">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=si limpiar=no">
+   <param name="Espacio" value="fondo=blanco red=no red10=no ejes=no texto=no eje-x=no eje-y=no">
+   <param name="C_00" value="id=N tipo=numérico valor='0' decimales='0' incr='1' min='0' max='99999' nombre=Marca un número y pulsa intro">
+   <param name="A_00" value="id=escala expresión='55' constante=si evaluar=una-sola-vez">
+   <param name="A_01" value="id=n expresión='ent(rnd*1000)+2' constante=si evaluar=una-sola-vez">
+   <param name="A_02" value="id=p1 algoritmo=si inicio='p1=1' hacer='p1=p1+1' mientras='(ent(n/p1)<n/p1)*(p1<n)' evaluar=siempre">
+   <param name="A_03" value="id=c1 expresión='n/p1' constante=si evaluar=siempre">
+   <param name="A_04" value="id=p2 algoritmo=si inicio='p2=p1-1' hacer='p2=p2+1' mientras='(ent(c1/p2)<c1/p2)*(p2<c1)' evaluar=siempre">
+   <param name="A_05" value="id=c2 expresión='c1/p2' constante=si evaluar=siempre">
+   <param name="A_06" value="id=p3 algoritmo=si inicio='p3=p2-1' hacer='p3=p3+1' mientras='(ent(c2/p3)<c2/p3)*(p3<c2)' evaluar=siempre">
+   <param name="A_07" value="id=c3 expresión='c2/p3' constante=si evaluar=siempre">
+   <param name="A_08" value="id=p4 algoritmo=si inicio='p4=p3-1' hacer='p4=p4+1' mientras='(ent(c3/p4)<c3/p4)*(p4<c3)' evaluar=siempre">
+   <param name="A_09" value="id=c4 expresión='c3/p4' constante=si evaluar=siempre">
+   <param name="A_10" value="id=p5 algoritmo=si inicio='p5=p4-1' hacer='p5=p5+1' mientras='(ent(c4/p5)<c4/p5)*(p5<c4)' evaluar=siempre">
+   <param name="A_11" value="id=c5 expresión='c4/p5' constante=si evaluar=siempre">
+   <param name="A_12" value="id=p6 algoritmo=si inicio='p6=p5-1' hacer='p6=p6+1' mientras='(ent(c5/p6)<c5/p6)*(p6<c5)' evaluar=siempre">
+   <param name="A_13" value="id=c6 expresión='c5/p6' constante=si evaluar=siempre">
+   <param name="A_14" value="id=p7 algoritmo=si inicio='p7=p6-1' hacer='p7=p7+1' mientras='(ent(c6/p7)<c6/p7)*(p7<c6)' evaluar=siempre">
+   <param name="A_15" value="id=c7 expresión='c6/p7' constante=si evaluar=siempre">
+   <param name="A_16" value="id=p8 algoritmo=si inicio='p8=p7-1' hacer='p8=p8+1' mientras='(ent(c7/p8)<c7/p8)*(p8<c7)' evaluar=siempre">
+   <param name="A_17" value="id=c8 expresión='c7/p8' constante=si evaluar=siempre">
+   <param name="A_18" value="id=p9 algoritmo=si inicio='p9=p8-1' hacer='p9=p9+1' mientras='(ent(c8/p9)<c8/p9)*(p9<c8)' evaluar=siempre">
+   <param name="A_19" value="id=c9 expresión='c8/p9' constante=si evaluar=siempre">
+   <param name="A_20" value="id=e expresión='1+(p1=p2)*(c1>1)+(p1=p3)*(c2>1)+(p1=p4)*(c3>1)+(p1=p5)*(c4>1)+(p1=p6)*(c5>1)+(p1=p7)*(c6>1)+(p1=p8)*(c7>1)+(p1=p9)*(c8>1)+(p1=p10)*(c9>1)' constante=si evaluar=siempre">
+   <param name="A_21" value="id=b2 expresión='(e=1)*(c1>1)*p2+(e=2)*(c2>1)*p3+(e=3)*(c3>1)*p4+(e=4)*(c4>1)*p5+(e=5)*(c5>1)*p6+(e=6)*(c6>1)*p7+(e=7)*(c7>1)*p8+(e=8)*(c8>1)*p9+(e=9)*(c9>1)*p10' constante=si evaluar=siempre">
+   <param name="A_22" value="id=e2 expresión='(b2=p2)*(c1>1)+(b2=p3)*(c2>1)+(b2=p4)*(c3>1)+(b2=p5)*(c4>1)+(b2=p6)*(c5>1)+(b2=p7)*(c6>1)+(b2=p8)*(c7>1)+(b2=p9)*(c8>1)+(b2=p10)*(c9>1)' constante=si evaluar=siempre">
+   <param name="A_23" value="id=b3 expresión='(e+e2=2)*(c2>1)*p3+(e+e2=3)*(c3>1)*p4+(e+e2=4)*(c4>1)*p5+(e+e2=5)*(c5>1)*p6+(e+e2=6)*(c6>1)*p7+(e+e2=7)*(c7>1)*p8+(e+e2=8)*(c8>1)*p9+(e+e2=9)*(c9>1)*p10' constante=si evaluar=siempre">
+   <param name="A_24" value="id=e3 expresión='(b3=p3)*(c2>1)+(b3=p4)*(c3>1)+(b3=p5)*(c4>1)+(b3=p6)*(c5>1)+(b3=p7)*(c6>1)+(b3=p8)*(c7>1)+(b3=p9)*(c8>1)+(b3=p10)*(c9>1)' constante=si evaluar=siempre">
+   <param name="A_25" value="id=b4 expresión='(e+e2+e3=3)*(c3>1)*p4+(e+e2+e3=4)*(c4>1)*p5+(e+e2+e3=5)*(c5>1)*p6+(e+e2+e3=6)*(c6>1)*p7+(e+e2+e3=7)*(c7>1)*p8+(e+e2+e3=8)*(c8>1)*p9+(e+e2+e3=9)*(c9>1)*p10' constante=si evaluar=siempre">
+   <param name="A_26" value="id=e4 expresión='(b4=p4)*(c3>1)+(b4=p5)*(c4>1)+(b4=p6)*(c5>1)+(b4=p7)*(c6>1)+(b4=p8)*(c7>1)+(b4=p9)*(c8>1)+(b4=p10)*(c9>1)' constante=si evaluar=siempre">
+   <param name="A_27" value="id=b5 expresión='(e+e2+e3+e4=4)*(c4>1)*p5+(e+e2+e3+e4=5)*(c5>1)*p6+(e+e2+e3+e4=6)*(c6>1)*p7+(e+e2+e3+e4=7)*(c7>1)*p8+(e+e2+e3+e4=8)*(c8>1)*p9+(e+e2+e3+e4=9)*(c9>1)*p10' constante=si evaluar=siempre">
+   <param name="A_28" value="id=f expresión='(N#n)*N' constante=si evaluar=siempre">
+   <param name="A_29" value="id=f1 expresión='N*(w=0)?N:f1' constante=si evaluar=siempre">
+   <param name="A_30" value="id=w expresión='f>0?1:w' constante=si evaluar=siempre">
+   <param name="A_31" value="id=v expresión='N=n' constante=si evaluar=siempre">
+   <param name="G_00" value="tipo=punto expresión='(-3.15,2.8)' color=0000d7 fondo=si texto='¿A qué número le corresponde' decimales=0 tamaño=0 fuente='Helvetica,BOLD,16'">
+   <param name="G_01" value="tipo=punto expresión='(-3.15,2.4)' color=0000d7 fondo=si texto='esta descomposición factorial?' decimales=0 tamaño=0 fuente='Helvetica,BOLD,16'">
+   <param name="G_02" value="tipo=punto expresión='(-3,0)' dibujar-si='v+w' texto='= [n]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,40'">
+   <param name="G_03" value="tipo=punto expresión='(1.7,2.8)' dibujar-si='v+w' texto='[n]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_04" value="tipo=punto expresión='(2.7,2.8)' color=magenta dibujar-si='v+w' texto='[p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_05" value="tipo=punto expresión='(1.7,2.4)' color=magenta dibujar-si='v+w' texto='[c1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_06" value="tipo=punto expresión='(2.7,2.4)' color=magenta dibujar-si='(c1>1)*(v+w)' texto='[p2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_07" value="tipo=punto expresión='(1.7,2)' color=magenta dibujar-si='(c1>1)*(v+w)' texto='[c2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_08" value="tipo=punto expresión='(2.7,2)' color=magenta dibujar-si='(c2>1)*(v+w)' texto='[p3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_09" value="tipo=punto expresión='(1.7,1.6)' color=magenta dibujar-si='(c2>1)*(v+w)' texto='[c3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_10" value="tipo=punto expresión='(2.7,1.6)' color=magenta dibujar-si='(c3>1)*(v+w)' texto='[p4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_11" value="tipo=punto expresión='(1.7,1.2)' color=magenta dibujar-si='(c3>1)*(v+w)' texto='[c4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_12" value="tipo=punto expresión='(2.7,1.2)' color=magenta dibujar-si='(c4>1)*(v+w)' texto='[p5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_13" value="tipo=punto expresión='(1.7,0.8)' color=magenta dibujar-si='(c4>1)*(v+w)' texto='[c5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_14" value="tipo=punto expresión='(2.7,0.8)' color=magenta dibujar-si='(c5>1)*(v+w)' texto='[p6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_15" value="tipo=punto expresión='(1.7,0.4)' color=magenta dibujar-si='(c5>1)*(v+w)' texto='[c6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_16" value="tipo=punto expresión='(2.7,0.4)' color=magenta dibujar-si='(c6>1)*(v+w)' texto='[p7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_17" value="tipo=punto expresión='(1.7,0)' color=magenta dibujar-si='(c6>1)*(v+w)' texto='[c7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_18" value="tipo=punto expresión='(2.7,0)' color=magenta dibujar-si='(c7>1)*(v+w)' texto='[p8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_19" value="tipo=punto expresión='(1.7,-0.4)' color=magenta dibujar-si='(c7>1)*(v+w)' texto='[c8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_20" value="tipo=punto expresión='(2.7,-0.4)' color=magenta dibujar-si='(c8>1)*(v+w)' texto='[p9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_21" value="tipo=punto expresión='(1.7,-0.8)' color=magenta dibujar-si='(c8>1)*(v+w)' texto='[c9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_22" value="tipo=punto expresión='(-3,1)' color=0000b5 texto=' [p1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,22'">
+   <param name="G_23" value="tipo=punto expresión='(-2.5,1.3)' color=0000b5 dibujar-si='e>1' texto='[e]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_24" value="tipo=punto expresión='(-2.25,1)' color=0000b5 dibujar-si='b2' texto='· [b2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,22'">
+   <param name="G_25" value="tipo=punto expresión='(-1.7,1.3)' color=0000b5 dibujar-si='e2>1' texto='[e2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_26" value="tipo=punto expresión='(-1.5,1)' color=0000b5 dibujar-si='b3' texto='· [b3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,22'">
+   <param name="G_27" value="tipo=punto expresión='(-0.9,1.3)' color=0000b5 dibujar-si='e3>1' texto='[e3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_28" value="tipo=punto expresión='(-0.6,1)' color=0000b5 dibujar-si='b4' texto='· [b4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,22'">
+   <param name="G_29" value="tipo=punto expresión='(-0.1,1.3)' color=0000b5 dibujar-si='e4>1' texto='[e4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_30" value="tipo=punto expresión='(0.2,1)' color=0000b5 dibujar-si='b5' texto='· [b5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,22'">
+   <param name="G_31" value="tipo=punto expresión='(0.7,1.3)' color=0000b5 dibujar-si='e5>1' texto='[e5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,12'">
+   <param name="G_32" value="tipo=punto expresión='(1,1)' color=0000b5 dibujar-si='b6' texto='· [b6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,22'">
+   <param name="G_33" value="tipo=punto expresión='(-3.15,-2.8)' color=rojo dibujar-si='v*(w=0)' texto='CORRECTO' decimales=0 tamaño=0 fuente='Helvetica,BOLD,60'">
+   <param name="G_34" value="tipo=segmento expresión='(2.55,3.1)(2.55,-1.5)' dibujar-si='v+w' tamaño=0 ancho=3">
+   <param name="G_35" value="tipo=punto expresión='(-3.2,-2.8)' color=rojo dibujar-si='w' texto='ERROR' decimales=0 tamaño=0 fuente='Helvetica,BOLD,60'">
+   <param name="G_36" value="tipo=punto expresión='(-3.15,-1.7)' color=rojo dibujar-si='w' texto='Has marcado [f1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,20'">
+</applet>
+</td>
+    <td width="100%" height="368"> 
+      <table border="2"
+        cellpadding="3">
+        <tr> 
+          <td bgcolor="#E9E8CB" height="102"><font size="2"
+                face="Verdana, Arial, Helvetica, sans-serif"><b>Realiza el producto 
+            de estas potencias, marca el número y pulsa intro. </b><br>
+            <br>
+            Al picar sobre inicio aparecer&aacute; aleatoriamente la descomposici&oacute;n 
+            factorial de otro n&uacute;mero.</font></td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  </tbody> 
+</table>
+<hr size="50" color="#FEE6B8">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr valign="bottom">
+    <td width="100%" height="39">&nbsp;</td>
+    <td align="center" width="40">&nbsp;</td>
+    <td align="center" width="41"><a href="index.htm"
+        onMouseOut="MM_swapImgRestore()"
+        onMouseOver="MM_swapImage('arriba1','','img/boton_arriba2.gif',1)"></a></td>
+    <td align="center" width="40">&nbsp;</td>
+    <td width="7"><a href="index.htm"
+        onMouseOut="MM_swapImgRestore()"
+        onMouseOver="MM_swapImage('arriba1','','img/boton_arriba2.gif',1)"><img
+        src="img/boton_arriba.gif" border="0" width="39"
+        height="38" name="arriba1"></a><a href="juegos.htm"
+        onMouseOut="MM_swapImgRestore()"
+        onMouseOver="MM_swapImage('arriba','','img/boton_arriba2.gif',1)"></a></td>
+    <td align="center" width="40">&nbsp;</td>
+    <td width="6"><a href="prueba.htm"
+        onMouseOut="MM_swapImgRestore()"
+        onMouseOver="MM_swapImage('atras','','img/boton_atras2.gif',1)"><img
+        src="img/boton_atras.gif" border="0" width="38"
+        height="39" name="atras"></a></td>
+    <td align="center" width="40">&nbsp;</td>
+    <td width="5"><a href="trimd4p.htm"
+        onMouseOut="MM_swapImgRestore()"
+        onMouseOver="MM_swapImage('adelante','','img/boton_adelante2.gif',1)"><img
+        src="img/boton_adelante.gif" border="0" width="38"
+        height="39" name="adelante"></a></td>
+  </tr>
+  <tr>
+    <td height="1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><img src="/spacer2.gif" width="5" height="1"></td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<TBODY>    <tr>
+        <td width="15" bgcolor="#FEE6B8" height="29">&nbsp;</td>
+        
+    <td colspan="2" bgcolor="#FEE6B8" height="29"><font
+        size="2" face="Verdana, Arial, Helvetica, sans-serif"><em>Eduardo Barbero Corral</em> </font></td>
+    </tr>
+    <tr>
+        <td valign="top" rowspan="3" width="65" bgcolor="#FFF8E1"><img
+        src="img/logo2.gif" width="65" height="80"></td>
+        <td valign="top" colspan="2" bgcolor="#FFF8E1"
+        height="20">&nbsp;</td>
+    </tr>
+    <tr>
+        
+    <td valign="top" colspan="2" bgcolor="#FFF8E1"
+        height="20"><font color="#006699" size="1"
+        face="Verdana, Arial, Helvetica, sans-serif">ProyectoDescartes.org. Año 2004</font> </td>
+    </tr>
+    <tr>
+        <td valign="top" colspan="2" bgcolor="#FFF8E1"
+        height="40">&nbsp;</td>
+    </tr>
+</TBODY></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<TBODY>    <tr>
+        <td valign="top" colspan="3" bgcolor="#FEE6B8"
+        height="29">&nbsp;</td>
+    </tr>
+</TBODY></table>
+<!-- Licencia de Creative Commons --><p align="center"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/ "><img alt="Licencia de Creative Commons" src="img/cc.png" border="0"></a><br><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Los contenidos de esta unidad did&aacute;ctica est&aacute;n bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/ ">licencia de Creative Commons</a> si no se indica lo contrario. </font></p><!-- /Licencia de Creative Commons --></body>
+</html>

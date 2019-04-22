@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font5.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="740" height="310">
+      <param name="tamaño" value="740x310">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='comprobar1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='comprobar' expresión='(E1._w-130,135,120,28)' valor='0' color='206090' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='16' imagen='imagen/boton2.png' acción='calcular' parámetro='ver1=1' dibujar-si='ver1=0' activo-si='marca1#0' ">
+      <param name="C_02" value="id='otro1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='otros puntos' expresión='(E1._w-130,135,120,28)' valor='0' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='16' imagen='imagen/boton1.png' acción='calcular' parámetro='ver1=0;ab=&squot;&squot;;x1=(1+ent(rnd*8))*(-1)^ent(rnd*2);y1=(1+ent(rnd*8))*(-1)^ent(rnd*2);vx=(2+2*ent(rnd*3))*(-1)^ent(rnd*2);vy=(2+2*ent(rnd*3))*(-1)^ent(rnd*2);k=0.5*(1+ent(rnd*3))*(-1)^ent(rnd*2);op=1+ent(rnd*2)' dibujar-si='ver1=1' ">
+      <param name="C_03" value="id='ab' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='_._' expresión='(350+35*(op=2),90,40,30)' valor='||' discreto='no' decimales='2' fijo='no' visible='sí' activo-si='ver1=0' evaluar='no' ">
+      <param name="C_04" value="id='comprobar2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='comprobar' expresión='(E1._w-130,260,120,28)' valor='0' color='206090' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='16' imagen='imagen/boton2.png' acción='calcular' parámetro='ver2=1' dibujar-si='ver2=0' activo-si='marca2#0' ">
+      <param name="C_05" value="id='otro2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='otros puntos' expresión='(E1._w-130,260,120,28)' valor='0' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='16' imagen='imagen/boton1.png' acción='calcular' parámetro='ver2=0;bbx=&squot;&squot;;bby=&squot;&squot;;ax=(1+ent(rnd*8))*(-1)^ent(rnd*2);ay=(1+ent(rnd*8))*(-1)^ent(rnd*2);mx=ax+(1+ent(rnd*5))*(-1)^ent(rnd*2);my=ay+(1+ent(rnd*5))*(-1)^ent(rnd*2)' dibujar-si='ver2=1' ">
+      <param name="C_06" value="id='bbx' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='_._' expresión='(340,215,40,30)' valor='||' discreto='no' decimales='2' fijo='no' visible='sí' activo-si='ver2=0' evaluar='no' ">
+      <param name="C_07" value="id='bby' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='_._' expresión='(395,215,40,30)' valor='||' discreto='no' decimales='2' fijo='no' visible='sí' activo-si='ver2=0' evaluar='no' ">
+      <param name="A_01" value="id='mcd(x,y)' algoritmo='sí' expresión='xM' inicio='x=x=0?y:x;y=y=0?x:y;xM=max(x,y);xm=min(x,y)' hacer='r=xM%xm;xM=xm;xm=r;' mientras='xm#0' tipo='función' ">
+      <param name="A_02" value="id='mcm(x,y)' algoritmo='sí' expresión='mcm' hacer='mcd2=mcd(x,y);mcm=x*y/mcd2;' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='x1=(1+ent(rnd*8))*(-1)^ent(rnd*2);y1=(1+ent(rnd*8))*(-1)^ent(rnd*2);vx=(2+2*ent(rnd*3))*(-1)^ent(rnd*2);vy=(2+2*ent(rnd*3))*(-1)^ent(rnd*2);k=0.5*(1+ent(rnd*3))*(-1)^ent(rnd*2);op=1+ent(rnd*2);ax=(1+ent(rnd*8))*(-1)^ent(rnd*2);ay=(1+ent(rnd*8))*(-1)^ent(rnd*2);mx=ax+(1+ent(rnd*5))*(-1)^ent(rnd*2);my=ay+(1+ent(rnd*5))*(-1)^ent(rnd*2);;' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='k=(k=-1)?2:k;x2=x1+vx;y2=y1+vy;x3=x2+k*vx;y3=y2+k*vy;marca1=!(ab=&squot;&squot;)?1:0;bien1=((ab=x3)&(op=1))|((ab=y3)&(op=2))?1:0;bx=2*mx-ax;by=2*my-ay;marca2=(!(bbx=&squot;&squot;)&!(bby=&squot;&squot;))?1:0;bien2=((bbx=bx)&(bby=by))?1:0' ">
+      <param name="G_01" value="espacio='E1' tipo='polígono' fondo='no' color='502060aa' coord_abs='sí' expresión='(0,45)(E1._w-1,45)(E1._w-1,E1._h-1)(0,E1._h-1)(0,45)' relleno='f0f8fa' ancho='1' lineDash='solid' ">
+      <param name="G_02" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(0,0)' archivo='imagen/ejercicios.png' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='206090' coord_abs='sí' expresión='(55,7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs40\b Ejercicio\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[15,55]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34\b a)\b0   Averigua el valor de\i{\*\mjaformula{\expr op=1?&squot;a&squot;:&squot;b&squot;\decimals 2\fixed0}}\i0 para que los puntos A{\*\mjaformula ({\expr x1\decimals 2\fixed0},{\expr y1\decimals 2\fixed0}),}B{\*\mjaformula ({\expr x2\decimals 2\fixed0},{\expr y2\decimals 2\fixed0})}y C{\*\mjaformula ({\expr op=1?&squot;a&squot;:x3\decimals 2\fixed0},{\expr op=1?y3:&squot;b&squot;\decimals 2\fixed0})}estén alineados.\par\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[370,105]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 C ({\*\mjaformula{\expr op=1?&squot;        &squot;:x3\decimals 2\fixed0}},{\*\mjaformula{\expr op=1?y3:&squot;        &squot;\decimals 2\fixed0}})}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_center' anchor='a_center_center' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='cc0000' dibujar-si='(ver1=1)&(bien1=0)' coord_abs='sí' expresión='[380,145]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 C{\*\mjaformula ({\expr x3\decimals 2\fixed0},{\expr y3\decimals 2\fixed0})}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' ">
+      <param name="G_07" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(E1._w-90,85)' archivo='imagen/cuadradillo.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(ver1=1)&(bien1=1)' coord_abs='sí' expresión='(E1._w-90,85)' archivo='imagen/bien.png' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(ver1=1)&(bien1=0)' coord_abs='sí' expresión='(E1._w-90,85)' archivo='imagen/mal.png' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[15,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34\b b)\b0   Si M{\*\mjaformula ({\expr mx\decimals 2\fixed0},{\expr my\decimals 2\fixed0})} es el punto medio del segmento \ol AB\olnone   y  A{\*\mjaformula ({\expr ax\decimals 2\fixed0},{\expr ay\decimals 2\fixed0}),}calcula el punto B.\par}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[370,230]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 B ({\*\mjaformula{\expr &squot;        &squot;\decimals 2\fixed0}},{\*\mjaformula{\expr &squot;        &squot;\decimals 2\fixed0}})}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='16' align='a_center' anchor='a_center_center' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='cc0000' dibujar-si='(ver2=1)&(bien2=0)' coord_abs='sí' expresión='[380,270]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 B{\*\mjaformula ({\expr bx\decimals 2\fixed0},{\expr by\decimals 2\fixed0})}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' ">
+      <param name="G_13" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(E1._w-90,210)' archivo='imagen/cuadradillo.png' rotini='0' opacidad='1' ">
+      <param name="G_14" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(ver2=1)&(bien2=1)' coord_abs='sí' expresión='(E1._w-90,210)' archivo='imagen/bien.png' rotini='0' opacidad='1' ">
+      <param name="G_15" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(ver2=1)&(bien2=0)' coord_abs='sí' expresión='(E1._w-90,210)' archivo='imagen/mal.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

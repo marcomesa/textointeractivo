@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../fonts/font4b.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Arquimedes" width=740 height=640 code="Descartes">
+   <param name="tamaño" value="740x640">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Arquimedes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=30">
+   <param name="E_01" value="tipo='R2' id='E10' x='0' y='0' ancho='740' alto='640' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='fdf0f8fa' red='no' red10='no' ejes='no' texto='no' cID='15715163a85'">
+   <param name="E_02" value="tipo='R2' id='E0' x='31' y='270' ancho='255' alto='160' dibujar-si='1' fijo='sí' escala='36' O.x='-90' O.y='-20' despl_imagen='arr-izq' fondo='e4f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' cID='12bbd3a55f5'">
+   <param name="E_03" value="tipo='R2' id='E1' x='371' y='270' ancho='340' alto='160' dibujar-si='1' fijo='sí' escala='36' O.y='40' despl_imagen='arr-izq' fondo='e4f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' cID='12bbd445c00'">
+   <param name="E_04" value="tipo='R2' id='E2' x='31' y='440' ancho='255' alto='160' dibujar-si='1' fijo='sí' escala='35' O.x='-90' despl_imagen='arr-izq' fondo='e4f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' cID='12bbd44e890'">
+   <param name="E_05" value="tipo='R2' id='E3' x='371' y='440' ancho='340' alto='160' dibujar-si='1' fijo='sí' escala='36' despl_imagen='arr-izq' fondo='e4f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' cID='12bbd731379'">
+   <param name="C_01" value="id='anima' tipo='numérico' interfaz='botón' región='interior' espacio='E10' nombre='Iniciar/Pausar' expresión='(300,598,140,35)' fijo='sí' visible='no' color='blanco' color-int='536598' negrita='sí' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=cd4e00|downColor=ff0000|font=sansSerif|shadowTextColor=rgba(0,0,0,0.2)|shadowBoxColor=808080|shadowTextBlur=0|textBorder=0' acción='animar'">
+   <param name="A_01" value="id='fxE0(_xE0)' expresión='(_xE0^3)-3*(_xE0^2)+1*_xE0'">
+   <param name="A_02" value="id='fpxE0(_pxE0)' expresión='3*(_pxE0^2)-6*(_pxE0)+1'">
+   <param name="A_03" value="id='fxE1(_xE1)' expresión='exp(_xE1/2)'">
+   <param name="A_04" value="id='fpxE1(_pxE1)' expresión='0.5*(exp(_pxE1/2))'">
+   <param name="A_05" value="id='OtrEjem()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='HideEjemplo=1;Paso=0' hacer='Ejem1a=-2+ent(rnd*4.999);Ejem1b=-3+ent(rnd*6.999);Ejem1c=-7+ent(rnd*14.999);Ejem1d=-5+ent(rnd*10.999);Ejem1pa=Ejem1a*3;Ejem1pb=Ejem1b*2;Ejem1pc=Ejem1c;comment=|******Caso1:a.ne.0 y discr>=0**********|;llamada=((Ejem1pa!=0)&(Ejem1pb^2>=4*Ejem1pa*Ejem1pc))?RaicesDeriv1(Ejem1pa,Ejem1pb,Ejem1pc):llamada;Caso=((Ejem1pa!=0)&(Ejem1pb^2>=4*Ejem1pa*Ejem1pc))?1:Caso;comment=|******Caso2:a.eq.0*********************|;llamada=(Ejem1pa==0)?RaicesDeriv2(Ejem1pb,Ejem1pc):llamada;Caso=(Ejem1pa==0)?2:Caso;comment=|******Caso3:a.ne.0 y discr<0***********|;llamada=((Ejem1pa!=0)&(Ejem1pb^2<4*Ejem1pa*Ejem1pc))?RaicesDeriv3():llamada;Caso=((Ejem1pa!=0)&(Ejem1pb^2<4*Ejem1pa*Ejem1pc))?3:Caso'">
+   <param name="A_06" value="id='RaicesDeriv1(_Ejem1pa,_Ejem1pb,_Ejem1pc)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='_x1=(-_Ejem1pb+sqrt((_Ejem1pb^2)-4*_Ejem1pa*_Ejem1pc))/(2*_Ejem1pa);_x2=(-_Ejem1pb-sqrt((_Ejem1pb^2)-4*_Ejem1pa*_Ejem1pc))/(2*_Ejem1pa)'">
+   <param name="A_07" value="id='RaicesDeriv2(_Ejem1pb,_Ejem1pc)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='_x1=-_Ejem1pc/Ejem1pb'">
+   <param name="A_08" value="id='RaicesDeriv3()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='_x1=&squot;No hay raíz&squot;;_x2=&squot;No hay raíz&squot;'">
+   <param name="A_09" value="id='fxE4(__x1)' expresión='Ejem1a*__x1^3+Ejem1b*__x1^2+Ejem1c*__x1+Ejem1d'">
+   <param name="A_10" value="id='fpxE4(__x1)' expresión='Ejem1pa*__x1^2+Ejem1pb*__x1+Ejem1c'">
+   <param name="A_11" value="id='OtrEjem2()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='HideEjemplo2=1;Paso2=0' hacer='Ejem2tipo=1+ent(rnd*2.999);llamada=(Ejem2tipo==1)?sinusoidal():llamada;llamada=(Ejem2tipo==2)?logaritmica():llamada;llamada=(Ejem2tipo==3)?exponencial():llamada'">
+   <param name="A_12" value="id='sinusoidal()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='A=-2+ent(rnd*4.999);A=(A==0)?1:A;omega=0.5+ent(rnd*10.999)/10;phi=ent(200*pi*rnd)/100;raizpx=(pi/2+phi)/omega'">
+   <param name="A_13" value="id='logaritmica()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='k=0.5+ent(rnd*10.999)/10'">
+   <param name="A_14" value="id='exponencial()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='k=0.5+ent(rnd*10.999)/10'">
+   <param name="A_15" value="id='OtroEjercicio()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='PendienteSinusBien=-1;RaicesSinusBien=-1;RaicesBien=-1;RaizSinus2=&squot;&squot;;RaizSinus1=&squot;&squot;;NumRaices=0;ValDerivLog=0;MagnDerivLog=0;SignoDerivExp=0;CrecimientoDerivExp=0;ColorDerivExp=0;EjerR1=&squot;&squot;;EjerR2=&squot;&squot;;EjerTipo=1+ent(rnd*3.999);llamada=(EjerTipo==1)?EjerPolinomial():llamada;llamada=(EjerTipo==2)?EjerSinusoidal():llamada;llamada=(EjerTipo==3)?EjerLogaritmico():llamada;llamada=(EjerTipo==4)?EjerExponencial():llamada;www=(EjerTipo=2)?Cerosinu():0'">
+   <param name="A_16" value="id='EjerPolinomial()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='shwgrphpol=0;SgnDrv1=-1;SgnDrv2=-1;SgnDrv3=-1;SignDeriv1=0;SignDeriv2=0;SignDeriv3=0;EjerCoefa=-2+ent(rnd*4.999);EjerCoefb=-3+ent(rnd*6.999);EjerCoefc=-7+ent(rnd*14.999);EjerCoefd=-5+ent(rnd*10.999);EjerPolDeriv(EjerCoefa,EjerCoefb,EjerCoefc);EjerRaicesDeriv(EjerPCoefa,EjerPCoefb,EjerPCoefc);EjerNumRaices=(_Ejrx1!=_Ejrx2)?2:((_Ejrx1!=&squot;No hay raíz&squot;)?1:3);' mientras='(EjerCoefa=0)&(EjerCoefb=0)'">
+   <param name="A_17" value="id='EjerPolDeriv(_EjerCoefa,_EjerCoefb,_EjerCoefc)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='EjerPCoefa=3*_EjerCoefa;EjerPCoefb=2*_EjerCoefb;EjerPCoefc=_EjerCoefc;discriminante=(EjerPCoefb^2)-4*EjerPCoefa*EjerPCoefc;SgnDrv1=(EjerPCoefa>0)?1:2;SgnDrv2=(EjerPCoefb>0)?1:2;SgnDrv3=(EjerPCoefa>0)?1:2'">
+   <param name="A_18" value="id='EjerRaicesDeriv(_a,_b,_c)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='_Ejrx1=((_a!=0)&(_b^2>=4*_a*_c))?(-_b+sqrt((_b^2)-4*_a*_c))/(2*_a):&squot;No hay raíz&squot;;_Ejrx2=((_a!=0)&(_b^2>=4*_a*_c))?(-_b-sqrt((_b^2)-4*_a*_c))/(2*_a):&squot;No hay raíz&squot;;_Ejrx1=((_a==0)&(_b!=0))?-_c/_b:_Ejrx1;_Ejrx2=((_a==0)&(_b!=0))?-_c/_b:_Ejrx2;_Ejrx1=((_b==0)&(_c==0))?0:_Ejrx1;_Ejrx2=((_b==0)&(_c==0))?0:_Ejrx2'">
+   <param name="A_19" value="id='EjerSinusoidal()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='SignDerivSinus=0;SignDerivSinusPares=0;AEjer=1+ent(rnd*3.999);omegaEjer=0.5+ent(rnd*10.999)/10;phiEjer=rnd*2*pi;primercero=0;'">
+   <param name="A_20" value="id='EjerLogaritmico()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='SgnValsDrvLog=-1' hacer='CoefLogEjer=-1+ent(rnd*29.999)/10;CoefLogEjer=(CoefLogEjer==0)?1:CoefLogEjer;kEjer=0.3+ent(27.999*rnd)/10;;'">
+   <param name="A_21" value="id='EjerExponencial()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='SgnDrvExp=-1;CrcDrvExp=-1' hacer='AEjer=-1+ent(29.999*rnd)/10;kEjer=0.1+ent(19.999)/10;difgrph=abs(kEjer-1);'">
+   <param name="A_22" value="id='Cerosinu()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='cerosin=-4' hacer='posible=cos(omegaEjer*cerosin-phiEjer);primercero=(abs(posible)<0.01)?cerosin:primercero;cerosin=cerosin+0.01' mientras='abs(posible)>0.01'">
+   <param name="A_23" value="id='VResp2()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='RaizSinus1=primercero;RaizSinus2=primercero+pi/omegaEjer;RaicesSinusBien=1'">
+   <param name="A_24" value="id='VResp1()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='EjerR1=_Ejrx1;EjerR2=_Ejrx2;RaicesBien=1'">
+   <param name="A_25" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='xE0=-0.5;xE1=-4.5;SgnValsDrvLog=-1;SgnDrvExp=-1;CrcDrvExp=-1;OtroEjercicio()'">
+   <param name="A_26" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='GxE0=(fpxE0(xE0)<0)?1:0;BxE0=(fpxE0(xE0)<0)?0:1;E4.escala=Zooom;E6.escala=Zooom2;E8.escala=ZooomEjer'">
+   <param name="G_01" value="espacio='E0' tipo='ecuación' color='004c00' expresión='y=(x^3)-3*(x^2)+1*x' ancho='2'">
+   <param name="G_02" value="espacio='E2' tipo='ecuación' color='004c00' expresión='y=3*(x^2)-6*x+1' ancho='2'">
+   <param name="G_03" value="espacio='E0' tipo='punto' color='(00,GxE0,BxE0,00)' expresión='(xE0,fxE0(xE0))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_04" value="espacio='E0' tipo='segmento' expresión='(xE0,fxE0(xE0))(xE0+1,fxE0(xE0)+fpxE0(xE0))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_05" value="espacio='E0' tipo='segmento' expresión='(xE0,fxE0(xE0))(xE0+1,fxE0(xE0))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_06" value="espacio='E0' tipo='segmento' color='(0,GxE0,BxE0,00)' expresión='(xE0+1,fxE0(xE0))(xE0+1,fxE0(xE0)+fpxE0(xE0))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_07" value="espacio='E0' tipo='segmento' color='(0,GxE0,BxE0,00)' expresión='(xE0,fxE0(xE0))(xE0,fxE0(xE0)-20)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_08" value="espacio='E2' tipo='punto' color='(0,GxE0,BxE0,00)' expresión='(xE0,fpxE0(xE0))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_09" value="espacio='E1' tipo='ecuación' color='rojo' expresión='y=exp(x/2)' ancho='2'">
+   <param name="G_10" value="espacio='E1' tipo='punto' color='azul' expresión='(xE1,fxE1(xE1))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' expresión='(xE1,fxE1(xE1))(xE1+1,fxE1(xE1)+fpxE1(xE1))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_12" value="espacio='E1' tipo='segmento' color='negro' expresión='(xE1,fxE1(xE1))(xE1+1,fxE1(xE1))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_13" value="espacio='E1' tipo='segmento' color='azul' expresión='(xE1+1,fxE1(xE1))(xE1+1,fxE1(xE1)+fpxE1(xE1))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_14" value="espacio='E3' tipo='ecuación' color='rojo' expresión='y=0.5*exp(x/2)' ancho='2'">
+   <param name="G_15" value="espacio='E3' tipo='punto' color='azul' expresión='(xE1,0.5*exp(xE1/2))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_16" value="espacio='E3' tipo='segmento' color='azul' expresión='(xE1,fpxE1(xE1))(xE1,fpxE1(xE1)+20)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='segmento' color='azul' expresión='(xE1,fxE1(xE1))(xE1,fxE1(xE1)-20)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_18" value="espacio='E2' tipo='segmento' color='(0,GxE0,BxE0,00)' expresión='(xE0,fpxE0(xE0))(xE0,fpxE0(xE0)+20)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_19" value="espacio='E10' tipo='texto' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs52 Una función algebraica es aquella que puede expresarse mediante\par\f0\cf0\fs52 un número finito de términos\cf0 . Como ejemplos de funciones\par\f0\cf0\fs52 algebraicas tenemos {\*\mjaformula f(x)=3x{\supix 3}-2x{\supix 2}+4x-2}\cf0 , {\*\mjaformula f(x)={\fraction{\num 1}{\den x}}}\cf0 , {\*\mjaformula f(x)={\radical{\index}{\radicand x}}}\cf0 , etc.\par\f0\cf0\fs52 Por otra parte, las funciones trascendentes son aquellas donde\par\f0\cf0\fs52 aparecen funciones trigonométricas, \cf0 logarítmicas, y exponenciales.\par\f0\cf0\fs52 Algunos ejemplos son {\*\mjaformula f(x)=e{\supix x}}\cf0 , {\*\mjaformula f(x)=sen(x)}\cf0  y {\*\mjaformula f(x)=ln(x)}\cf0 .}' fuente='SansSerif,PLAIN,26' fijo='sí'">
+   <param name="G_20" value="espacio='E10' tipo='texto' expresión='[20,230]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green76\blue0;\red32\green48\blue58;}\f1\fs40\cf0 Algebraica   \i{\*\mjaformula f(x)=x{\supix 3}-&nbsp;3x{\supix 2}+&nbsp;x}\i0  \fs36   \cf1}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_21" value="espacio='E10' tipo='texto' expresión='[50,600]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green76\blue0;\red32\green48\blue58;}\f1\fs40\cf0  \i{\*\mjaformula f &squot;(x) = 3x{\supix 2}- 6x{\supix}+ 1}\i0  \fs36   \cf1}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_22" value="espacio='E10' tipo='texto' expresión='[430,220]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs40\cf0 Trascendente   \i{\*\mjaformula g(x) = e{\supix{\fraction{\num x}{\den 2}}}}\i0  \fs36   \cf1}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_23" value="espacio='E10' tipo='texto' expresión='[485,590]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red255\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs40  \i\cf1{\*\mjaformula g&squot;(x)={\fraction{\num 1}{\den 2}}e{\supix{\fraction{\num x}{\den 2}}}}\i0  \fs36   \cf2}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="Animación" value="pausa='30' controles='no' auto='sí' repetir='sí' hacer='xE0=xE0+0.1;xE0=(xE0>2.8)?-0.5:xE0;xE1=xE1+0.1;xE1=(xE1>2.5)?-3.5:xE1'">
+</ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<p>Observa la representación en la recta de fracciones propias e impropias</p>
+			<p align="center"><ifrme src="interactivos/objeto1_JS/2_1/index1.html" width="650px" height="800px" frameborder="no" scrolling="no"></iframe></p>
+
+
+
+
+
+
+
+
+<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 2</p>
+
+
+
+
+<p> <img src="Imagenes/img01a.png" style="float:left; width:400px" border="0"/></p>
+			<p>Representación gráfica del conjunto de los números reales.</p>
+			<p>Todos los conjuntos numéricos pueden ser representados en la recta numérica.</p>
+			<h2>0.6. Practiquemos</h2>
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 1</p>
+			<p>Identifica a que conjunto numérico pertenece el número dado. Oprime el botón correspondiente al conjunto numérico al cual pertenece el numero dado, N(Naturales), Z(Enteros), Q(Racional), Q*(Irracional) o R(Real) y verifica tu respuesta</p>   
+			<p align="center"><iframe src="interactivos/objeto1_JS/1_1/interactivo1.html" width="750px" height="450px" frameborder="no" scrolling="no"></iframe>
+			<a href="interactivos/objeto1_JS/1_1/interactivo1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-474)+',top='+(screen.availHeight/2-330)+',width=750,height=450');return false;">
+			<br><img src="images/amp.png" style="float:center; width:80px" border="0" /></a></p>
+		
+
+			<p><img src="images/ejer.png" style="float:left; width:35px" border="0"/>jercicio 3</p>
+			<p><img src="images/printer.png" style="float:left; width:45px" border="0"/>Imprimir: Resuelve los siguientes ejercicios con su debido procedimiento.</p>
+			<p><img src="Imagenes/img01b.png" style="float:left; width:430px" border="0"/></p>
+			<p><img src="Imagenes/img01c.png" style="float:left; width:430px" border="0"/></p>

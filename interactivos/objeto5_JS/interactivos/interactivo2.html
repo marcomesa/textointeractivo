@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>TITULO</title>
+	<link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+
+
+<ajs name="Descartes" width=790 height=200 code="Descartes">
+   <param name="tamaño" value="790x200">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='16' ancho='740' alto='120' fijo='sí' O.x='-30' O.y='10' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='N' tipo='numérico' región='interior' espacio='E1' nombre='_nada_' expresión='(250,150,80,45)' valor='5' incr='1' min='3' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_02" value="id='dx' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(550,150,220,45)' valor='0.999999' incr='0.000001' min='0.000001' max='1' decimales='6' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="A_01" value="id='incrNN()' algoritmo='sí' expresión='inc' algoritmo='sí' inicio='inc=1' hacer='inc=(NN>=30)?10:inc;inc=(NN>=300)?100:inc;inc=(NN>=3000)?1000:inc'">
+   <param name="A_02" value="id='r(t)' expresión='1+0.03*(sen(6*pi*t)+cos(10*pi*t+1))'">
+   <param name="A_03" value="id='f(x)' expresión='-0.4*(x-a1-3.5)^2+2.0'">
+   <param name="A_04" value="id='F(x)' expresión='2.1+0.5*cos(1.5*x+1)+0.7*sen(x)'">
+   <param name="A_05" value="id='G(x)' expresión='(1.5)*sen(x+3)+0.7*sen(1.5*(x+2))+1'">
+   <param name="A_06" value="id='X(s)' expresión='A+s*(B-A)/NN'">
+   <param name="A_07" value="id='Integral()' algoritmo='sí' expresión='I' algoritmo='sí' inicio='I=0;n=1' hacer='I=I+F( (X(n)+X(n-1))/2 )*(B-A)/NN;n=n+1' mientras='n<NN'">
+   <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='a=-5.5;b=-0.8;w=4;h=1.8;a1=0.5;b1=-1.2;w1=6;h1=2.45;A=1;B=6'">
+   <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='m=min(N,256);pend=(f(a1+2.2+dx)-f(a1+2.2))/dx;MM=(H!=0)?(G(P.x+H)-G(P.x))/H:&squot;División por cero&squot;'">
+   <param name="G_01" value="espacio='E2' tipo='curva' fondo='sí' color='203040' expresión='(a+w/2+2*r(t)*cos(2*pi*t),b+h/2+r(t)*sen(2*pi*t))' t.pasos='96'">
+   <param name="G_02" value="espacio='E2' tipo='curva' color='203040' expresión='(a+w/2+2*r(t)*cos(2*pi*t),b+h/2+r(t)*sen(2*pi*t))' t.pasos='m' relleno='ffff80'">
+   <param name="G_03" value="espacio='E2' tipo='segmento' color='c0203040' expresión='(a+w/2,b+h/2)(a+w/2+2*r(s)*cos(2*pi*s),b+h/2+r(s)*sen(2*pi*s))' familia='s' s.intervalo='[0,1]' s.pasos='m' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_04" value="espacio='E2' tipo='punto' color='203044' expresión='(a-1.4+w/2,b+h/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i\u193 rea = {\*\mjaformula{\limit{\from N}{\to\u8734 }{\what A{\subix N}}}}\f2\fs24\i0}' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_05" value="espacio='E2' tipo='polígono' fondo='sí' color='203040' dibujar-si='0' expresión='(a1,b1)(a1+w1+2,b1)(a1+w1+2,b1+h1)(a1,b1+h1)(a1,b1)' relleno='blanco'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' fondo='sí' color='203040' expresión='(a1+0.3,b1+0.3)(a1+w1-0.7,b1+0.3)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_07" value="espacio='E2' tipo='segmento' fondo='sí' color='203040' expresión='(a1+0.8,b1+0.1)(a1+0.8,b1+h1-0.2)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_08" value="espacio='E2' tipo='ecuación' fondo='sí' color='203040' dibujar-si='(x>a1+1.5)&(x<a1+3.5)' expresión='y=b1+f(x)' ancho='2'">
+   <param name="G_09" value="espacio='E2' tipo='punto' fondo='sí' color='203040' expresión='(a1+w1-0.7,b1+0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i t\f2\fs24\i0}' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E2' tipo='punto' fondo='sí' color='203040' expresión='(a1+0.85,b1+h1-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i d\f2\fs24\i0}' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='E2' tipo='punto' fondo='sí' color='203040' expresión='(a1+w1-2.3,b1+h1-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs42\i{\*\mjaformula v=\f2\fs46\i{\limit{\from h}{\to 0}{\what{\fraction{\num d(t+h)-d(t)}{\den h}}}}}\fs24\i0}' fuente='Monospaced,ITALIC,21' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E2' tipo='segmento' color='203040' expresión='(a1+2.2,b1+0.3)(a1+2.2,b1+0.3+1.03)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E2' tipo='segmento' color='203040' expresión='(a1+0.8,b1+1.33)(a1+2.2,b1+1.33)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='E2' tipo='segmento' color='203040' expresión='(a1+2.2+dx,b1+0.3)(a1+2.2+dx,b1+f(a1+2.2+dx))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_15" value="espacio='E2' tipo='segmento' color='203040' expresión='(a1+0.8,b1+f(a1+2.2+dx))(a1+2.2+dx,b1+f(a1+2.2+dx))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_16" value="espacio='E2' tipo='segmento' color='80203040' expresión='(a1+2.2-1,b1+f(a1+2.2)-pend)(a1+2.2+dx+1,b1+f(a1+2.2+dx)+pend)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='ffde00' expresión='[10,165,230,10]' texto='Número de lados N =' fuente='Monospaced,PLAIN,20' fijo='sí' ancho='230' color_borde_texto='negro'">
+   <param name="G_18" value="espacio='E1' tipo='texto' color='turquesa' expresión='[350,165,230,10]' texto='Incremento h =' fuente='Monospaced,PLAIN,20' fijo='sí' ancho='230' color_borde_texto='negro'">
+</ajs>
+
+</body>
+</html>

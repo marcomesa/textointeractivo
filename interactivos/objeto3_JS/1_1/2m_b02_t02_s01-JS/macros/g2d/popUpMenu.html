@@ -1,0 +1,42 @@
+<html>
+
+<center>
+
+<applet name="Explorar"
+        code="Descartes.class"
+        codebase="../../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=790 height=520>
+   <param name="decimal_symbol" value=".">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Explorar">
+   <param name="Versi&oacute;n" value="3.88203, 2006-09-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='E2' fijo='si' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' sensible_a_los_movimientos_del_rat&oacute;n='si'">
+   <param name="A_00" value="id='disponible' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='reflejado' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='elegido' expresi&oacute;n='-1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='pintarSi' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='anchoCuadrito' expresi&oacute;n='40' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='altoCuadrito' expresi&oacute;n='60' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='coordX' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_07" value="id='coordY' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="inicio='reflejado=(coordX+9*anchoCuadrito/2&gt;790)?-1:1' id='reflejar' evaluar='siempre' algoritmo='si'">
+   <param name="A_09" value="id='tam' expresi&oacute;n='3' evaluar='una-sola-vez' constante='si'">
+   <param name="A_10" value="id='transformaX(x)' expresi&oacute;n='0.021*x-8.229'">
+   <param name="A_11" value="id='transformaY(y)' expresi&oacute;n='5.416-0.021*y'">
+   <param name="A_12" value="inicio='i=0;regresar=-1' hacer='regresar=((reflejado*E2.mouse_x&gt;reflejado*transformaX(coordX+anchoCuadrito/2+reflejado*(i+1)*anchoCuadrito))&amp;(reflejado*E2.mouse_x&lt;reflejado*transformaX(coordX+anchoCuadrito/2+reflejado*(i+2)*anchoCuadrito))&amp;(E2.mouse_y&lt;transformaY(coordY))*(E2.mouse_y&gt;transformaY(coordY+altoCuadrito)))?i:regresar;i=i+1' mientras='i&lt;3' id='elegir()' expresi&oacute;n='regresar' algoritmo='si'">
+   <param name="A_13" value="hacer='pintarSi=((E2.mouse_pressed=1)&amp;(E2.mouse_x&lt;E2._x(coordX+anchoCuadrito))&amp;(E2.mouse_x&gt;E2._x(coordX))&amp;(E2.mouse_y&gt;E2._y(coordY+altoCuadrito))&amp;(E2.mouse_y&lt;E2._y(coordY))&amp;disponible)?(pintarSi+1)%2:pintarSi;;elegido=((pintarSi=1)&amp;(E2.mouse_pressed=1))?elegir():elegido;pintarSi=((E2.mouse_pressed=1)&amp;(reflejado*E2.mouse_x&lt;reflejado*E2._x(coordX+anchoCuadrito/2+reflejado*(tam+1)*anchoCuadrito))&amp;(reflejado*E2.mouse_x&gt;reflejado*E2._x(coordX+anchoCuadrito/2+reflejado*anchoCuadrito))&amp;(E2.mouse_y&gt;E2._y(coordY+altoCuadrito))&amp;(E2.mouse_y&lt;E2._y(coordY))&amp;(pintarSi=1)&amp;disponible)?(pintarSi+1)%2:pintarSi' id='click' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="espacio='E2' tipo='pol&iacute;gono' color='ffffff00' expresi&oacute;n='(coordX,coordY)(coordX+anchoCuadrito,coordY)(coordX+anchoCuadrito,coordY+altoCuadrito)(coordX,coordY+altoCuadrito)(coordX,coordY)' relleno='ceffff00' coord_abs='si'">
+   <param name="G_01" value="espacio='E2' tipo='pol&iacute;gono' dibujar-si='pintarSi=1' color='amarillo' expresi&oacute;n='(coordX+anchoCuadrito/2+reflejado*(anchoCuadrito/2),coordY+1/4*altoCuadrito)(coordX+anchoCuadrito/2+reflejado*(anchoCuadrito),coordY+1/4*altoCuadrito)(coordX+anchoCuadrito/2+reflejado*(anchoCuadrito),coordY+3/4*altoCuadrito)(coordX+anchoCuadrito/2+reflejado*(anchoCuadrito/2),coordY+3/4*altoCuadrito)(coordX+anchoCuadrito/2+reflejado*(anchoCuadrito/2),coordY+1/4*altoCuadrito)' relleno='amarillo' coord_abs='si'">
+   <param name="G_02" value="espacio='E2' tipo='pol&iacute;gono' dibujar-si='pintarSi=1' color='negro' expresi&oacute;n='(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+1),coordY)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+2),coordY)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+2),coordY+altoCuadrito)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+1),coordY+ altoCuadrito)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+1),coordY)' familia='paso' paso.intervalo='[0,tam-1]' paso.pasos='tam-1' relleno='amarillo' coord_abs='si'">
+   <param name="G_03" value="espacio='E2' tipo='pol&iacute;gono' dibujar-si='(reflejado*E2.mouse_x&gt;reflejado*E2._x(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+1)))&amp;(reflejado*E2.mouse_x&lt;reflejado*E2._x(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+2)))&amp;(E2.mouse_y&lt;E2._y(coordY))*(E2.mouse_y&gt;E2._y(coordY+altoCuadrito))&amp;(pintarSi=1)' color='negro' expresi&oacute;n='(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+1),coordY)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+2),coordY)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+2),coordY+altoCuadrito)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+1),coordY+ altoCuadrito)(coordX+anchoCuadrito/2+reflejado*anchoCuadrito*(paso+1),coordY)' familia='paso' paso.intervalo='[0,tam-1]' paso.pasos='tam-1' relleno='a3ff0000' coord_abs='si'">
+   <param name="G_04" value="espacio='E2' tipo='texto' dibujar-si='pintarSi=1' color='negro' expresi&oacute;n='[coordX+anchoCuadrito/2+(3*reflejado-1)*anchoCuadrito/2,coordY-20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112 x\f2\fs24\par}' fuente='SansSerif,PLAIN,56'">
+   <param name="G_05" value="espacio='E2' tipo='texto' dibujar-si='pintarSi=1' color='negro' expresi&oacute;n='[coordX+anchoCuadrito/2+(5*reflejado-1)*anchoCuadrito/2,coordY-20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112 y\f2\fs24\par}' fuente='SansSerif,PLAIN,56'">
+   <param name="G_06" value="espacio='E2' tipo='texto' dibujar-si='elegido=0' color='negro' expresi&oacute;n='[coordX,coordY-20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112 x\f2\fs24\par}' fuente='SansSerif,PLAIN,56'">
+   <param name="G_07" value="espacio='E2' tipo='texto' dibujar-si='elegido=1' color='negro' expresi&oacute;n='[coordX,coordY-20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112 y\f2\fs24\par}' fuente='SansSerif,PLAIN,56'">
+</applet>
+</center>
+</html>

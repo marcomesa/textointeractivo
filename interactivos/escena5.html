@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">&lt;
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <ajs name="Descartes" code="Descartes" width="740" height="350">
+    <param name="tamaño" value="740x350">
+    <param name="decimal_symbol" value=".">
+    <param name="nombre" value="potencia">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=sí limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='808080' texto='no' números='no' eje-x='no' eje-y='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='b' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='base' expresión='(0,0)' valor='3' incr='1' min='0' max='9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+    <param name="C_02" value="id='e' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='exponente' expresión='(0,0)' valor='2' incr='1' min='0' max='9' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+    <param name="A_01" value="id='E0.escala' expresión='20' evaluar='una-sola-vez' constante='si' ">
+    <param name="G_01" value="espacio='E0' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(-7.1,2.5)' texto='Exponente = [e]' decimales='0' fijo='sí' tamaño='0' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='15' ">
+    <param name="G_02" value="espacio='E0' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(-7,0)' texto='[e]' decimales='0' fijo='sí' tamaño='0' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' ">
+    <param name="G_03" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' coord_abs='no' expresión='(-7.4,0)' texto='[b]' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='30' ">
+    <param name="G_04" value="espacio='E0' tipo='punto' fondo='no' color='000000' dibujar-si='e=0' coord_abs='no' expresión='(-6,0)' texto='=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_05" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=1' coord_abs='no' expresión='(-6,0)' texto='=[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_06" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=2' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_07" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=3' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_08" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=4' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]·[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_09" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=5' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]·[b]·[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_10" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=6' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]·[b]·[b]·[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_11" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=7' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]·[b]·[b]·[b]·[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_12" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=8' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_13" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' dibujar-si='e=9' coord_abs='no' expresión='(-6,0)' texto='=[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]=' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='26' ">
+    <param name="G_14" value="espacio='E0' tipo='punto' fondo='no' color='20303a' dibujar-si='(b>0)+(e>0)' coord_abs='no' expresión='(e-5,0)' texto='[b^e]' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='28' ">
+    <param name="G_15" value="espacio='E0' tipo='punto' fondo='no' color='000000' coord_abs='no' expresión='(-4.5,2.5)' texto='Indica que la base [b] se multiplica [e] veces por sí mismo' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' ">
+    <param name="G_16" value="espacio='E0' tipo='punto' fondo='no' color='0000ff' coord_abs='no' expresión='(-7.5,-2)' texto='Base = [b], (es el número que se multiplica por sí mismo)' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' ">
+    <param name="G_17" value="espacio='E0' tipo='punto' fondo='sí' color='000000' coord_abs='no' expresión='(-0.5,-2)' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='15' ">
+  </ajs>
+
+
+
+</body>
+</html>

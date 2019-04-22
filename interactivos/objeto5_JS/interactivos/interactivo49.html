@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="600" height="250" code="Descartes">
+    <param name="tamaño" value="600x250">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E4' cID='12a19f7d66d' x='0' y='0' ancho='600' alto='250' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='resp' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E4' expresión='(440,60, 60,40)' valor='&squot;&squot;' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' activo-si='!resp.ok' evaluar='sí' respuesta='krypto_npd3b6n3b7tqa0ourl53mrc6mgl65ps7mo2na2omrl93mo3bbkri' ">
+    <param name="C_02" value="id='otroEjercicio' interfaz='botón' tipo='numérico' región='interior' espacio='E4' nombre='Otro Ejercicio' expresión='(E4._w - 145,E4._h-40,140,35)' valor='0' visible='no' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='otroEjercicio()' ">
+    <param name="A_01" value="id='otroEjemplo()' algoritmo='sí' expresión='x' hacer='w=(f=0)?fseno():0;w=(f=1)?fcoseno():0;w=(f=2)?ftangente():0;;' ">
+    <param name="A_02" value="id='mcd(a,b)' algoritmo='sí' expresión='m' inicio='aa=(a<b)?b:a; bb=(a<b)?a:b' hacer='c=ent(aa/bb);d=aa-c*bb;m=bb;aa=bb;bb=d' mientras='d>0' ">
+    <param name="A_03" value="id='fseno()' algoritmo='sí' expresión='x' hacer='a0=2+ent(9*rnd);b0=2+ent(9*rnd);c0=2+ent(9*rnd);mcd0=mcd(a0*b0,c0);A0=(a0*b0)/mcd0;C0=c0/mcd0;;N=4;;' mientras='c0=b0' ">
+    <param name="A_04" value="id='fcoseno()' algoritmo='sí' expresión='x' hacer=';N=6' ">
+    <param name="A_05" value="id='ftangente()' algoritmo='sí' expresión='x' hacer=';N=5;;a0=2+ent(9*rnd);b0=2+ent(9*rnd);;mcd0=mcd(a0,b0);A0=a0/mcd0;B0=b0/mcd0;;' mientras='a0=b0' ">
+    <param name="A_06" value="id='otroEjercicio()' algoritmo='sí' expresión='x' hacer='f1=ent(10*rnd);w=1;w=(f1<5)?eseno():w;w=((f1=5)|(f1=6))?ecoseno():w;w=(f1>6)?etangente():w;;resp.ok=0;resp=&squot;&squot;;;' ">
+    <param name="A_07" value="id='eseno()' algoritmo='sí' expresión='w' hacer='a1=2+ent(9*rnd);b1=2+ent(9*rnd);c1=2+ent(9*rnd);mcd1=mcd(a1*b1,c1);A1=(a1*b1)/mcd1;C1=c1/mcd1;L1=a1*b1/c1;w=1' ">
+    <param name="A_08" value="id='ecoseno()' algoritmo='sí' expresión='w' hacer='L1=0;w=2' ">
+    <param name="A_09" value="id='etangente()' algoritmo='sí' expresión='w' hacer='a1=2+ent(9*rnd);b1=2+ent(9*rnd);;L1=a1/b1;w=3' ">
+    <param name="A_10" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='p=atan(P.y/P.x);pa=p*180/pi;' ">
+    <param name="A_11" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='f=0;;otroEjemplo();otroEjercicio();' ">
+    <param name="G_01" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='w=1' expresión='[0,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Calcula el siguiente límite\par\par\f0\fs48\i                                       \i0\i{\*\mjaformula lim{\subix x→0}{\fraction{\num{\expr a1\decimals 2\fixed0}sen({\expr b1\decimals 2\fixed0}x)}{\den{\expr c1\decimals 2\fixed0}x}}=}\i0    \fs24  }' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' ">
+    <param name="G_02" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='resp.ok' expresión='[350,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green103\blue0;}\f0\cf0\fs60\b Correcto\b0}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' ">
+    <param name="G_03" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='w=2' expresión='[0,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Calcula el siguiente límite\par\par\f0\fs48\i                                      \i0\i{\*\mjaformula lim{\subix x→0}{\fraction{\num 1-cos(x)}{\den x}}=}\i0\fs24     }' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' ">
+    <param name="G_04" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='w=3' expresión='[0,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs46 Calcula el siguiente límite\par\par\f0\fs46\i                                            \i0\i{\*\mjaformula lim{\subix x→0}{\fraction{\num sen({\expr a1\decimals 2\fixed0}x)}{\den tan({\expr b1\decimals 2\fixed0}x)}}=}\i0\fs24     }' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

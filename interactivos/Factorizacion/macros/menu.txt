@@ -1,0 +1,10 @@
+.
+calculos
+circuitos
+dinamica
+electromag
+estadistica
+logica_digital
+optica
+vectores
+disenoTerceroTS

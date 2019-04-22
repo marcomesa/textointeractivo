@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>factorizacion de cubos(ejemplos)</title>
+  <link rel="stylesheet" href="../../../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font5.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden; ">
+
+  <p align="center">
+    <ajs name="Descartes" code="Descartes" width="720" height="330">
+      <param name="tamaño" value="720x330">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='80' ancho='550' alto='60' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='20' y='200' ancho='550' alto='60' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='ejemplos' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='OTRO EJEMPLO' expresión='(20,280,150,30)' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/btn150.png' acción='calcular' parámetro='j=ent(rnd*9)+1\nc1=ent(rnd*8)+1\nc2=ent(rnd*5)+1\nb=ent(rnd+.5)\nj1=ent(rnd*9)+1\nc3=ent(rnd*8)+1\nc4=ent(rnd*5)+1\nb1=ent(rnd+.5)\n' ">
+      <param name="A_01" value="id='letra' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='letra[1]=&squot;a&squot;;letra[2]=&squot;b&squot;;letra[3]=&squot;c&squot;;letra[4]=&squot;m&squot;;letra[5]=&squot;n&squot;;letra[6]=&squot;x&squot;;letra[7]=&squot;y&squot;;letra[8]=&squot;z&squot;;letra[9]=&squot;k&squot;;letra[10]=&squot;p&squot;' tipo='vector' ">
+      <param name="A_02" value="id='j' expresión='ent(rnd*9)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_03" value="id='j1' expresión='ent(rnd*9)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_04" value="id='j2' expresión='ent(rnd*9)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_05" value="id='c1' expresión='ent(rnd*8)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_06" value="id='c2' expresión='ent(rnd*5)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_07" value="id='c3' expresión='ent(rnd*7)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_08" value="id='c4' expresión='ent(rnd*5)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_09" value="id='c5' expresión='ent(rnd*8)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_10" value="id='c6' expresión='ent(rnd*5)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_11" value="id='b' expresión='ent(rnd+.5)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_12" value="id='b1' expresión='ent(rnd+.5)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_13" value="id='b2' expresión='ent(rnd+.5)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_14" value="id='sgn1' expresión='ent(rnd+.5)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_15" value="id='textos' algoritmo='sí' evaluar='siempre' inicio='z=0' hacer='z=z+1;signo1=(sgn1=1)?&squot;+&squot;:&squot;-&squot;;signo2=(sgn1=1)?&squot;-&squot;:&squot;+&squot;;c2=(c1=c2)?c2+1:c2;c4=(c3=c4)?c4+1:c4;c6=(c5=c6)?c6+1:c6;t1=(c1^3=1)?letra[j]:c1^3+letra[j];t2=(c2^3=1)?letra[j+1]:c2^3+letra[j+1];t2=(b=0)?c2^3:t2;t3=(c1=1)?letra[j]:c1+letra[j];t4=(c2=1)?letra[j+1]:c2+letra[j+1];t4=(b=0)?((c2=1)?1:c2):t4;t5=(c1^2=1)?letra[j]:c1^2+letra[j];t6=(c1*c2=1)?letra[j]+letra[j+1]:c1*c2+letra[j]+letra[j+1];t6=(b=0)?((c1*c2=1)?letra[j]:c1*c2+letra[j]):t6;t7=(c2^2=1)?letra[j+1]:c2^2+letra[j+1];t7=(b=0)?c2^2:t7;p1=(c3^3=1)?letra[j1]:c3^3+letra[j1];p2=(c4^3=1)?letra[j1+1]:c4^3+letra[j1+1];p2=(b1=0)?c4^3:p2;p3=(c3=1)?letra[j1]:c3+letra[j1];p4=(c4=1)?letra[j1+1]:c4+letra[j1+1];p4=(b1=0)?((c4=1)?1:c4):p4;p5=(c3^2=1)?letra[j1]:c3^2+letra[j1];p6=(c3*c4=1)?letra[j1]+letra[j1+1]:c3*c4+letra[j1]+letra[j1+1];p6=(b1=0)?((c3*c4=1)?letra[j1]:c3*c4+letra[j1]):p6;p7=(c4^2=1)?letra[j1+1]:c4^2+letra[j1+1];p7=(b1=0)?c4^2:p7;q1=(c5^3=1)?letra[j2]:c5^3+letra[j2];q2=(c6^3=1)?letra[j2+1]:c6^3+letra[j2+1];q2=(b2=0)?c6^3:q2;q3=(c5=1)?letra[j2]:c5+letra[j2];q4=(c6=1)?letra[j2+1]:c6+letra[j2+1];q4=(b2=0)?((c6=1)?1:c6):q4;q5=(c5^2=1)?letra[j2]:c5^2+letra[j2];q61=(c5*c6=1)?letra[j2]:c5*c6+letra[j2];q62=letra[j2+1];q7=(c6^2=1)?letra[j2+1]:c6^2+letra[j2+1];q7=(b2=0)?c6^2:q7;;' mientras='z<1' ">
+      <param name="A_16" value="id='e1' expresión='3*(ent(rnd*5)+1)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_17" value="id='e2' expresión='3*(ent(rnd*5)+1)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_18" value="id='ef1' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_19" value="id='ef2' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_20" value="id='ef3' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_21" value="id='ef4' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_22" value="id='ef5' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_23" value="id='ef6' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_24" value="id='controles' algoritmo='sí' evaluar='siempre' inicio='ct=0' hacer='ct=ct+1;ct1=(base1=q3)&(ef1=e1/3);ct2=(base2=q4)&(ef2=e2/3)&(ct1=1)&(b2=1)+(base22=c6)&(ct1=1)&(b2=0);ct3=(tri1=q5)&(ef3=ef1*2);ct41=(tri21=q61)&(ef4=ef1);ct42=(tri22=q62)&(ef5=ef2)&(b2=1);ct4=(b2=0)?ct41:ct41*ct42;ct51=(tri31=q7)&(b2=1)&(ef6=e2*2/3);ct52=(tri32=c6^2)&(b2=0);ct5=(b2=1)?ct51:ct52;' mientras='ct<1' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[20,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f0\cf0\fs40 Suma y diferencia de c\cf0 ubo\cf0 s}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[20,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs40 SUMA DE CUBOS, expresión de la forma:   \i{\*\mjaformula a{\supix 3}+&nbsp;b{\supix 3}=&nbsp;(a&nbsp;+&nbsp;b)(a{\supix 2}-&nbsp;ab&nbsp;+&nbsp;b{\supix 2})}\i0    \fs28  }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='b=1' coord_abs='sí' expresión='[30,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f0\fs40\b{\*\mjaformula{\expr t1\decimals 0\fixed1}{\supix 3}}\b0\cf0\b +\b0\cf0\b  \b0\b{\*\mjaformula{\expr t2\decimals 0\fixed1}{\supix 3}}\b0\cf0\b = (\b0\b{\*\mjaformula{\expr t3\decimals 0\fixed1}}\b0\cf0\b + \b0\b{\*\mjaformula{\expr t4\decimals 0\fixed1}}\b0\cf0\b )(\b0\b{\*\mjaformula{\expr t5\decimals 0\fixed1}{\supix 2}}\b0\cf0\b - \b0\b{\*\mjaformula{\expr t6\decimals 0\fixed1}}\b0\cf0\b  + \b0\b{\*\mjaformula{\expr t7\decimals 0\fixed1}{\supix 3}}\b0\cf0\b )\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='b=0' coord_abs='sí' expresión='[30,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f0\fs40\b{\*\mjaformula{\expr t1\decimals 0\fixed1}}\b0\b{\*\mjaformula{\supix 3}}\b0\cf0\b + \b0\b{\*\mjaformula{\expr t2\decimals 0\fixed1}}\b0\cf0\b = (\b0\b{\*\mjaformula{\expr t3\decimals 0\fixed1}}\b0\cf0\b + \b0\b{\*\mjaformula{\expr t4\decimals 0\fixed1}}\b0\cf0\b )(\b0\b{\*\mjaformula{\expr t5\decimals 0\fixed1}}\b0\b{\*\mjaformula{\supix 2}}\b0\cf0\b - \b0\b{\*\mjaformula{\expr t6\decimals 0\fixed1}}\b0\cf0\b  + \b0\b{\*\mjaformula{\expr t7\decimals 0\fixed1}}\b0\b{\*\mjaformula{\supix}}\b0\cf0\b )\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[20,160]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs40 DIFERENCIA DE CUBOS, expresión de la forma:   \i{\*\mjaformula a{\supix 3}-&nbsp;b{\supix 3}=&nbsp;(a&nbsp;-&nbsp;b)(a{\supix 2}+&nbsp;ab&nbsp;+&nbsp;b{\supix 2})}\i0   \fs28   }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E3' tipo='texto' fondo='no' color='0000ff' dibujar-si='b1=1' coord_abs='sí' expresión='[30,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f0\fs40\b{\*\mjaformula{\expr p1\decimals 0\fixed1}{\supix 3}}\b0\cf0\b - \b0\b{\*\mjaformula{\expr p2\decimals 0\fixed1}{\supix 3}}\b0\cf0\b = (\b0\b{\*\mjaformula{\expr p3\decimals 0\fixed1}}\b0\cf0\b - \b0\b{\*\mjaformula{\expr p4\decimals 0\fixed1}}\b0\cf0\b )(\b0\b{\*\mjaformula{\expr p5\decimals 0\fixed1}{\supix 2}}\b0\cf0\b + \b0\b{\*\mjaformula{\expr p6\decimals 0\fixed1}}\b0\cf0\b  + \b0\b{\*\mjaformula{\expr p7\decimals 0\fixed1}{\supix 3}}\b0\cf0\b )\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E3' tipo='texto' fondo='no' color='0000ff' dibujar-si='b1=0' coord_abs='sí' expresión='[30,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f0\fs40\b{\*\mjaformula{\expr p1\decimals 0\fixed1}{\supix 3}}\b0\cf0\b - \b0\b{\*\mjaformula{\expr p2\decimals 0\fixed1}}\b0\cf0\b = (\b0\b{\*\mjaformula{\expr p3\decimals 0\fixed1}}\b0\cf0\b - \b0\b{\*\mjaformula{\expr p4\decimals 0\fixed1}}\b0\cf0\b )(\b0\b{\*\mjaformula{\expr p5\decimals 0\fixed1}{\supix 2}}\b0\cf0\b + \b0\b{\*\mjaformula{\expr p6\decimals 0\fixed1}}\b0\cf0\b  + \b0\b{\*\mjaformula{\expr p7\decimals 0\fixed1}}\b0\b{\*\mjaformula{\supix}}\b0\cf0\b )\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>

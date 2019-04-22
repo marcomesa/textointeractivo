@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="740" height="350" code="Descartes">
+    <param name="tamaño" value="740x350">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E10' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E2' x='0' y='0' ancho='100%' alto='80' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff00' red='no' red10='no' ejes='000000' texto='no' números='sí' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_03" value="tipo='R2' id='E3' x='0' y='90' ancho='100%' alto='300' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ff00ffff' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='otroejer' interfaz='botón' tipo='numérico' región='interior' espacio='E3' nombre='Otro Ejercicio' expresión='(200,150,140,30)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=cd4e00|downColor=ff0000|font=sansSerif|shadowTextColor=rgba(0,0,0,0.2)|shadowBoxColor=808080|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='ejernuevo()' dibujar-si='vr=1' ">
+    <param name="C_02" value="id='verifica' interfaz='botón' tipo='numérico' región='interior' espacio='E3' nombre='Verificar' expresión='(200,150,140,30)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=cd4e00|downColor=ff0000|font=sansSerif|shadowTextColor=rgba(0,0,0,0.2)|shadowBoxColor=808080|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='verresp()\nn0=&squot;&squot;' dibujar-si='(vr=0)&(n0>0)' ">
+    <param name="C_03" value="id='n0' tipo='numérico' interfaz='menú' región='interior' espacio='E3' expresión='(200,20,140,40)' valor='0' decimales='2' fijo='sí' visible='no' opciones='Elige,a,b,c,d' activo-si='n0=0' ">
+    <param name="A_01" value="id='ejernuevo()' algoritmo='sí' expresión='x' hacer='e=1+ent(3.99*rnd);ejer0=ent(6.99*rnd);ejer1=ent(6.99*rnd);vr=0' mientras='ejer0=ejer1' ">
+    <param name="A_02" value="id='verresp()' algoritmo='sí' expresión='x' hacer='vr=1;res=(e=n0)?1:2;' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='ejernuevo()' ">
+    <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='E3' tipo='texto' fondo='no' color='20303a' dibujar-si='ejer0<ejer1' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs50\b a) \b0\b{\*\mjaformula [{\expr ejer0\decimals 0\fixed1},{\expr ejer1\decimals 0\fixed1}]}\b0\par\par\f0\fs50\b b) \b0\b{\*\mjaformula ({\expr ejer0\decimals 0\fixed1},{\expr ejer1\decimals 0\fixed1})}\b0\b  \b0\par\par\f0\fs50\b c) \b0\b{\*\mjaformula [{\expr ejer0\decimals 0\fixed1},{\expr ejer1\decimals 0\fixed1})}\b0\par\par\f0\fs50\b d) \b0\b{\*\mjaformula ({\expr ejer0\decimals 0\fixed1},{\expr ejer1\decimals 0\fixed1}]}\b0\par\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_02" value="espacio='E3' tipo='texto' fondo='no' color='20303a' dibujar-si='(vr=1)&(res=1)' expresión='[500,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green162\blue0;}\f0\cf0\fs60\b ¡Correcto!\b0\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_03" value="espacio='E3' tipo='texto' fondo='no' color='20303a' dibujar-si='(vr=1)&(res=2)' expresión='[500,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;}\f0\cf0\fs60\b ¡Incorrecto!\b0\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_04" value="espacio='E2' tipo='segmento' fondo='no' color='0000ff' coord_abs='no' expresión='(ejer0,0)(ejer1,0)' decimales='2' fijo='sí' tamaño='4' ancho='3' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_05" value="espacio='E2' tipo='punto' fondo='no' color='ffffff' dibujar-si='(e=3)&((ejer0)<(ejer1))' coord_abs='no' expresión='(ejer1,0)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_06" value="espacio='E2' tipo='punto' fondo='no' color='ffffff' dibujar-si='(e=4)&((ejer0)>(ejer1))' coord_abs='no' expresión='(ejer1,0)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_07" value="espacio='E2' tipo='punto' fondo='no' color='ffffff' dibujar-si='(e=3)&((ejer1)<(ejer0))' coord_abs='no' expresión='(ejer0,0)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_08" value="espacio='E2' tipo='punto' fondo='no' color='ffffff' dibujar-si='(e=4)&((ejer1)>(ejer0))' coord_abs='no' expresión='(ejer0,0)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_09" value="espacio='E3' tipo='texto' fondo='no' color='20303a' dibujar-si='ejer0>ejer1' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34 a) {\*\mjaformula [{\expr ejer1\decimals 0\fixed1},{\expr ejer0\decimals 0\fixed1}]}\par \par b) {\*\mjaformula ({\expr ejer1\decimals 0\fixed1},{\expr ejer0\decimals 0\fixed1})} \par \par c) {\*\mjaformula [{\expr ejer1\decimals 0\fixed1},{\expr ejer0\decimals 0\fixed1})}\par \par d) {\*\mjaformula ({\expr ejer1\decimals 0\fixed1},{\expr ejer0\decimals 0\fixed1}]}\f2\fs24\par \par \par \par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_10" value="espacio='E2' tipo='punto' fondo='no' color='ffffff' dibujar-si='(e=2)' coord_abs='no' expresión='(ejer0,0)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_11" value="espacio='E2' tipo='punto' fondo='no' color='ffffff' dibujar-si='(e=2)' coord_abs='no' expresión='(ejer1,0)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+  </ajs>
+
+
+
+</body>
+</html>

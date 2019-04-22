@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Ejercicios: raíz de una potencia</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body bgcolor="fbefcf">
+<div align="center">
+<ajs name="solucion" width=450 height=200
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="450x200">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="solucion">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' O.x='240' O.y='150' despl_imagen='arr-izq' fondo='fbefcf' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ej2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(389,19,22,22)' valor='2' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='ej=2' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='ej=1'">
+   <param name="C_02" value="id='ej1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(349,19,100,22)' valor='1' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/otroejemplo.png' acci&oacute;n='calcular' par&aacute;metro='ej=1;yuy=todo()' dibujar-si='ej=2' pos_mensajes='centro'">
+   <param name="A_01" value="id='todo()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='tp=0;a=ent(rnd*9)+2;b=(a=9)?3:((a=8)|(a=4)?2:a);e=ent(rnd*8)+2;n=ent(rnd*5)+2;eb=(a=8)?3:((a=9)|(a=4)?2:1);ebr=eb;eb=eb*n;ef=ebr*e;a2=a^n;nca=ent(log10(a2));nca=a2=1000?3:nca;;' mientras='(n=e)|(nca&gt;4)'">
+   <param name="A_02" value="id='CI' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='cxt=90;cxs=5;ej=1;yuy=todo();'">
+   <param name="G_01" value="espacio='E1' tipo='pol&iacute;gono' color='ffda99' coord_abs='s&iacute;' expresi&oacute;n='(0,0)(449,0)(449,60)(0,60)(0,0)' relleno='fbefcf'">
+   <param name="G_02" value="espacio='E1' tipo='texto' color='666666' dibujar-si='tp=0' expresi&oacute;n='[cxt,18]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs32{\*\mjaformula\f2\fs40\b  \fs44\b0{\radical{\index{\expr n=2?&squot; &squot;:n\decimals 0\fixed1}}{\radicand{\expr a2\decimals 0\fixed1}{\supix{\expr e\decimals 0\fixed1}}{\supix}}}} \par \f3\fs44}' fuente='SansSerif,PLAIN,16' decimales='0' fijo='no'">
+   <param name="G_03" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(ebr#1)&amp;(ej=2)' expresi&oacute;n='[cxs,15+65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32  \f3\fs44{\radical{\index{\expr n=2?&squot; &squot;:n\decimals 0\fixed1}}{\radicand{\expr a2\decimals 0\fixed1}{\supix{\expr e\decimals 0\fixed1}}{\supix}}}=\f2\fs32 ({\radical{\index{\expr n=2?&squot; &squot;:n\decimals 0\fixed1}}{\radicand{\expr a2\decimals 0\fixed0}{\supix}}}){\supix{\expr e\decimals 0\fixed0}}=({\radical{\index{\expr n=2?&squot; &squot;:n\decimals 0\fixed1}}{\radicand{\expr b\decimals 0\fixed0}{\supix}{\supix{\expr eb\decimals 0\fixed0}}}}){\supix{\expr e\decimals 0\fixed0}}=({\expr b\decimals 0\fixed0}{\supix{\expr ebr\decimals 0\fixed0}}){\supix{\expr e\decimals 0\fixed0}}={\expr b\decimals 0\fixed0}{\supix{\expr ef\decimals 0\fixed0}}\f3\fs44} \par \f3\fs44}' fuente='SansSerif,PLAIN,14' decimales='0' fijo='no'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='666666' dibujar-si='(ebr=1)&amp;(ej=2)' expresi&oacute;n='[cxs,15+65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32  \f3\fs44{\radical{\index{\expr n=2?&squot; &squot;:n\decimals 0\fixed1}}{\radicand{\expr a2\decimals 0\fixed1}{\supix{\expr e\decimals 0\fixed1}}{\supix}}}=\f2\fs32 ({\radical{\index{\expr n=2?&squot; &squot;:n\decimals 0\fixed1}}{\radicand{\expr a2\decimals 0\fixed0}{\supix}}}){\supix{\expr e\decimals 0\fixed0}}=({\radical{\index{\expr n=2?&squot; &squot;:n\decimals 0\fixed1}}{\radicand{\expr b\decimals 0\fixed0}{\supix}{\supix{\expr eb\decimals 0\fixed0}}}}){\supix{\expr e\decimals 0\fixed0}}={\expr b\decimals 0\fixed0}{\supix{\expr e\decimals 0\fixed0}}\f3\fs44} \par \f3\fs44}' fuente='SansSerif,PLAIN,14' decimales='0' fijo='no'">
+   <param name="G_05" value="espacio='E1' tipo='texto' color='666666' expresi&oacute;n='[cxt-70,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Calcula:\f2\fs24\par }' fuente='SansSerif,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_06" value="tipo='pol&iacute;gono' color='ffda99' dibujar-si='ej=20' coord_abs='s&iacute;' expresi&oacute;n='(0,61)(449,61)(449,200)(0,200)(0,61)' relleno='fbefcf'">
+   <param name="G_07" value="espacio='E1' tipo='texto' color='negro' dibujar-si='ej=1' expresi&oacute;n='[355,61]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue0;}\cf0\f1\fs22 Pulsa para ver  \par    la  soluci\u243 n\cf1\par \f2\fs24}' fuente='SansSerif,PLAIN,11' fijo='s&iacute;'">
+</ajs></div>
+</body>
+</html>

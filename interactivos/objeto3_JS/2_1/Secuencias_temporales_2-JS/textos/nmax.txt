@@ -1,0 +1,2 @@
+'Escribe la nota máxima'
+5

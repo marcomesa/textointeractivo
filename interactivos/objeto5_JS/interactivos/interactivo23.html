@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="460" height="350" code="Descartes">
+    <param name="tamaño" value="460x350">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E4' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='000000' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='punto' tipo='gráfico' espacio='E4' color='a5406080' color-int='b1cc0022' tamaño='10' expresión='(-4,0)' constricción='y=0' ">
+    <param name="C_02" value="id='ot1' interfaz='botón' tipo='numérico' región='interior' espacio='E4' nombre='Otro ejemplo' expresión='(E4._w-145,5,140,30)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=cd4e00|downColor=ff0000|font=sansSerif|shadowTextColor=rgba(0,0,0,0.2)|shadowBoxColor=808080|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='inicia1()\npunto.x=-4.5' ">
+    <param name="A_01" value="id='inicia1()' algoritmo='sí' expresión='x' hacer='kk=ent(rnd*7)' ">
+    <param name="A_02" value="id='inicia2()' algoritmo='sí' expresión='x' hacer='zz=ent(rnd*7);jj=ent(rnd*7)' ">
+    <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='inicia1();inicia2();' ">
+    <param name="A_04" value="id='CALCULOS_EJEMPLO' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='E4' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='kk=0' coord_abs='no' expresión='y=1/x' ancho='2' visible='no' editable='no' ">
+    <param name="G_02" value="espacio='E4' tipo='curva' fondo='no' color='azul' dibujar-si='kk=1' coord_abs='no' expresión='(3*cos(t),sen(t))' parámetro='t' t.intervalo='[0,2*pi]' t.pasos='40' ancho='2' visible='no' editable='no' lineDash='solid' ">
+    <param name="G_03" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='kk=2' coord_abs='no' expresión='y=0.5*x^2' ancho='2' visible='no' editable='no' ">
+    <param name="G_04" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='kk=3' coord_abs='no' expresión='y=sqrt(1+x^2/9)/2' ancho='2' visible='no' editable='no' ">
+    <param name="G_05" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='kk=3' coord_abs='no' expresión='y=-sqrt(1+x^2/9)/2' ancho='2' visible='no' editable='no' ">
+    <param name="G_06" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='(kk=4)' coord_abs='no' expresión='y=sqrt(x^2-1)' ancho='2' visible='no' editable='no' ">
+    <param name="G_07" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='(kk=4)' coord_abs='no' expresión='y=-sqrt(x^2-1)' ancho='2' visible='no' editable='no' ">
+    <param name="G_08" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='kk=5' coord_abs='no' expresión='y=sqrt(x)' ancho='2' visible='no' editable='no' ">
+    <param name="G_09" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='kk=5' coord_abs='no' expresión='y=-sqrt(x)' ancho='2' visible='no' editable='no' ">
+    <param name="G_10" value="espacio='E4' tipo='ecuación' fondo='no' color='azul' dibujar-si='kk=6' coord_abs='no' expresión='y=0.3*x' ancho='2' visible='no' editable='no' ">
+    <param name="G_11" value="espacio='E4' tipo='segmento' fondo='no' color='e80022' coord_abs='no' expresión='(punto.x,4)(punto.x,-4)' decimales='2' fijo='sí' tamaño='0' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_12" value="espacio='E4' tipo='polígono' fondo='no' color='ff20303a' coord_abs='no' expresión='(-5,-2.6)(5,-2.6)(5,-4)(-5,-4)(-5,-2.6)' relleno='b6c5cc' ancho='1' lineDash='solid' ">
+    <param name="G_13" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='kk=0' expresión='[20,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula xy=1}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_14" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='kk=1' expresión='[20,295]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs44\b{\*\mjaformula{\fraction{\num x{\supix 2}}{\den 3{\supix 2}}}}\b0\b{\*\mjaformula +y{\supix 2}=1}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_15" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='kk=2' expresión='[20,295]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs44\b{\*\mjaformula y=}\b0\b{\*\mjaformula{\fraction{\num x{\supix 2}}{\den 2}}}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_16" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='kk=3' expresión='[20,295]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs44\b{\*\mjaformula 4y{\supix 2}-}\b0\b{\*\mjaformula{\fraction{\num x{\supix 2}}{\den 9}}}\b0\b{\*\mjaformula =1}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_17" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='kk=4' expresión='[20,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula x{\supix 2}-y{\supix 2}=1}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_18" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='kk=5' expresión='[20,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs46\b{\*\mjaformula x=y{\supix 2}}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_19" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='kk=6' expresión='[20,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula y=0.3x}\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_20" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='((kk=0)|(kk=2)|(kk=6))&(punto.x>4.2)' expresión='[250,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red0\green201\blue0;\red32\green48\blue58;}\f0\cf0\fs48\b Sí es función\b0\f1\cf1\fs34 .\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_21" value="espacio='E4' tipo='texto' fondo='no' color='20303a' dibujar-si='((kk=1)&(punto.x>-3))|(kk=3)|(kk=4)|((kk=5)&(punto.x>0))' expresión='[250,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;}\f0\cf0\fs48\b No es función.\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

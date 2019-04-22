@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="400" height="280" code="Descartes">
+    <param name="tamaño" value="400x280">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+    <param name="E_01" value="tipo='R2' id='E5' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffffff' red='00d0ff' red10='000000' ejes='000000' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='PP' tipo='gráfico' espacio='E2' color='99406080' color-int='a5cc0022' tamaño='10' expresión='(0,0)' ">
+    <param name="C_02" value="id='PP.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E5' nombre='PP.x' expresión='(0,0)' valor='-3.5' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="C_03" value="id='PP.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E5' nombre='PP.y' expresión='(0,0)' valor='0.9' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="C_04" value="id='QQ' tipo='gráfico' espacio='E5' color='a8406080' color-int='9ccc0022' tamaño='10' expresión='(0,0)' ">
+    <param name="C_05" value="id='QQ.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E5' nombre='QQ.x' expresión='(0,0)' valor='1' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="C_06" value="id='QQ.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E5' nombre='QQ.y' expresión='(0,0)' valor='-2.4' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="A_01" value="id='OtroParPuntos()' algoritmo='sí' expresión='x' hacer='m1=1-2*(ent(rnd+0.5));m2=1-2*(ent(rnd+0.5));m3=1-2*(ent(rnd+0.5));m4=1-2*(ent(rnd+0.5));;a=m1*ent(rnd*10);b=m2*ent(rnd*10);c=m3*ent(rnd*10);d=m4*ent(rnd*10);otropar=0' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='OtroParPuntos()' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a=(P.x+Q.x)/2;b=(P.y+Q.y)/2;;aa=(PP.x+QQ.x)/2;bb=(PP.y+QQ.y)/2;;c1=(A.x+B.x)/2;c2=(A.y+B.y)/2' ">
+    <param name="G_01" value="espacio='E5' tipo='segmento' fondo='no' color='3366dd' coord_abs='no' expresión='(PP.x,PP.y)(QQ.x,QQ.y)' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_02" value="espacio='E5' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(aa,bb)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs44\b M\b0\par}' decimales='2' fijo='sí' tamaño='4' fuente='Arial,PLAIN,14' ">
+    <param name="G_03" value="espacio='E5' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(aa,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs34\b ?\b0\par}' decimales='2' fijo='sí' tamaño='2' fuente='Arial,PLAIN,14' ">
+    <param name="G_04" value="espacio='E5' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(0,bb)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs36\b ?\b0\par}' decimales='2' fijo='sí' tamaño='2' fuente='Arial,PLAIN,14' ">
+    <param name="G_05" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(0,bb)(aa/9,bb)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_06" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(2*aa/9,bb)(3*aa/9,bb)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_07" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(4*aa/9,bb)(5*aa/9,bb)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_08" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(6*aa/9,bb)(7*aa/9,bb)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_09" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(8*aa/9,bb)(9*aa/9,bb)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_10" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(aa,0)(aa,bb/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_11" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(aa,2*bb/9)(aa,3*bb/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_12" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(aa,4*bb/9)(aa,5*bb/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_13" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(aa,6*bb/9)(aa,7*bb/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_14" value="espacio='E5' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(aa,8*bb/9)(aa,9*bb/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+  </ajs>
+
+
+
+</body>
+</html>

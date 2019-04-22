@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cálculo Diferencial - Introducción</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="continua" width=780 height=650 code="Descartes">
+   <param name="tamaño" value="780x650">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="continua">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=0">
+   <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' escala='48' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_01" value="id='S' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='S[0]=&squot;1&squot;;S[1]=&squot;(-1)^n&squot;;S[2]=&squot;n/2&squot;;S[3]=&squot;-1+1/sqrt(n)&squot;;S[4]=&squot;((-1)^n)/n&squot;;S[5]=&squot;ent(pi*10^n)/(10^n)&squot;;S[6]=&squot;(n/3)^3-(n/2)^2&squot;'">
+   <param name="A_02" value="id='D' vector='sí' evaluar='una-sola-vez' tamaño='NE' expresión='D[0]=&squot;Todos los términos de la sucesión son iguales a 1&squot;;D[1]=&squot;Los términos nones valen 1 y los pares valen -1&squot;;D[2]=&squot;&squot;;D[3]=&squot;&squot;;D[4]=&squot;&squot;;D[5]=&squot;Primeros n dígitos de la expansión decimal de π.&squot;;D[6]=&squot;&squot;;;'">
+   <param name="A_03" value="id='F(s)' algoritmo='sí' expresión='r' algoritmo='sí' hacer='n=s;r=_Eval_(S[sucesion-1])'">
+   <param name="A_04" value="id='F1(s)' algoritmo='sí' expresión='r' algoritmo='sí' hacer='n=s;r=_Eval_(S[sucesion1-1])'">
+   <param name="A_05" value="id='F2(n)' algoritmo='sí' expresión='r' algoritmo='sí' hacer='signo=(alternar)?(-1)^n:1;r=LIM+signo*A*(n^pot)'">
+   <param name="A_06" value="id='OtroEjercicio()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='E2.Ox=-350;E2.escala=32;VerletResp=0;VerResp=0;converge=0;limes=0;nolim=0;LIM=ent((-2+4*rnd)*10)/10;A=ent(-2+5*rnd);alternar=(rnd<0.5);pot=-2+ent(5*rnd);A=(pot=1)?A/10:A;A=(pot=2)?A/50:A;CONV=((pot<=-0.01)|((abs(pot)<0.01)&(!alternar)))?1:2;NOLIM=0;NOLIM=((pot>=0)&(alternar))?3:NOLIM;NOLIM=((pot>=0)&(!alternar)&(A<0))?2:NOLIM;NOLIM=((pot>=0)&(!alternar)&(A>0))?1:NOLIM;' mientras='A=0'">
+   <param name="A_07" value="id='Lim1()' algoritmo='sí' expresión='L1!=&squot;&squot;' algoritmo='sí' inicio='L1=&squot;&squot;' hacer='L1=(sucesion1=1)?1:L1;L1=(sucesion1=4)?-1:L1;L1=(sucesion1=5)?0:L1;L1=(sucesion1=6)?pi:L1;L.y=(L1!=&squot;&squot;)?L1:L.y;;;'">
+   <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='NE=7'">
+   <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E0' tipo='polígono' fondo='sí' color='a7205060' coord_abs='sí' expresión='(xMRC1,yMRC1)(xMRC1+MRC1.b,yMRC1)(xMRC1+MRC1.b,yMRC1+MRC1.h)(xMRC1,yMRC1+MRC1.h)(xMRC1,yMRC1)'">
+   <param name="G_02" value="espacio='E0' tipo='texto' fondo='sí' color='205060' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52\b Operaciones con límites \b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_03" value="espacio='E0' tipo='texto' fondo='sí' expresión='[20,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;\f6\fcharset0 Courier New;\f7\fcharset0 Courier New;}\f1\fs52\u8226  La suma de dos funciones continuas es una funci\u243 n continua\par   donde est\u225  definida. Debido a esto, se tiene que\par  \par                  \i{\*\mjaformula{\limit{\from x}{\to a}{\what   (f+g)(x)}}={\limit{\from x}{\to a}{\what   f(x)}}+{\limit{\from x}{\to a}{\what   g(x)}}}\i0  \par \par \u8226  El producto de dos funciones continuas es una funci\u243 n continua\par   donde est\u225  definida. Debido a esto, se tiene que\par  \par                  \i{\*\mjaformula{\limit{\from x}{\to a}{\what   (f \u8231  g)(x)}}={\limit{\from x}{\to a}{\what   f(x)}}\u8231 {\limit{\from x}{\to a}{\what   g(x)}}}\i0\par \par \u8226  El cociente de dos funciones continuas es una funci\u243 n continua\par   donde est\u225  definida. Debido a esto, se tiene que\par \par                  \i{\*\mjaformula{\limit{\from x}{\to a}{\what{\fraction{\num f}{\den g}}(x)}}={\fraction{\num{\limit{\from x}{\to a}{\what   f(x)}}}{\den{\limit{\from x}{\to a}{\what   g(x)}}}}}\i0\par \f3\fs16  \par \fs34  \f5\fs44   \fs48 siempre que \i{\*\mjaformula{\limit{\from x}{\to a}{\what   g(x)}}\u8800 0}\i0 .\par \f4\fs34  }' fuente='Monospaced,PLAIN,26' fijo='sí'">
+   <param name="Animación" value="pausa='(paso>2)&(t>0.13)&(t<0.25)?180:50' controles='no' auto='sí' inicio='t=0' hacer='t=t+0.005;anim=0;p0.x=p0.x+t;p1.x=p1.x+t;p2.x=p2.x+t;p3.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p3.x);p4.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p4.x);escala=(paso=3)&((t>=0.13)&(t<0.20))?escala/2^(0.9*t):((paso=3)&((t>=0.20)&(t<0.25))?escala*2^(0.9*t):escala);escala=(paso=4)&((t>=0.13)&(t<0.20))?escala*2^(0.3*t):((paso=4)&((t>=0.20)&(t<0.25))?escala/2^(0.3*t):escala);Oy=(paso=4)&((t>=0.13)&(t<0.18))?Oy+700*t:((paso=4)&(t>=0.18)&(t<0.25)?Oy-2330*(t-0.18):Oy);;' mientras='t<0.38'">
+</ajs>
+
+
+
+</body>
+</html>

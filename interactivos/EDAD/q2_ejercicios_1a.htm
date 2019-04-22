@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicios</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#f1f1f1" onLoad="MM_preloadImages('imagen4/paraantes3.png','imagen4/paraantes2.png','imagen4/paracont3.png','imagen4/paracont2.png','imagen4/paraejer.png','imagen4/paraejer2.png','imagen4/paraeval3.png','imagen4/paraeval2.png','imagen4/paratut3.png','imagen4/paratut2.png','imagen4/paramas3.png','imagen4/paramas2.png','imagen4/atrasb.png','imagen4/adelanteb.png')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:800px; height:528px; z-index:1"> 
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','antes','imagen4/paraantes3.png',1)" onMouseOver="MM_nbGroup('over','antes','imagen4/paraantes2.png','imagen4/paraantes3.png',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_presenta_1a.htm"><img src="imagen4/paraantes.png" alt="" name="antes" border="0" onload=""></a></td>
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','contenido','imagen4/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenido','imagen4/paracont2.png','',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_contenidos_1a.htm"><img src="imagen4/paraconte.png" alt="" name="contenido" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="texto" onClick="MM_nbGroup('down','group1','ejercicios','imagen4/paraejer3.png',1)" onMouseOver="MM_nbGroup('over','ejercicios','imagen4/paraejer2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen4/paraejer3.png" alt="" name="ejercicios" border="0" onload="MM_nbGroup('init','group1','ejercicios','imagen4/paraejer.png',1)"></a></td>
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','autoeval','imagen4/paraeval3.png',1)" onMouseOver="MM_nbGroup('over','autoeval','imagen4/paraeval2.png','',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_autoeval_1a.htm"><img src="imagen4/paraeval.png" alt="" name="autoeval" width="130" height="18" border="0" onload=""></a></td>
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','paratutor','imagen4/paratut3.png',1)" onMouseOver="MM_nbGroup('over','paratutor','imagen4/paratut2.png','',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_tutor_1a.htm"><img src="imagen4/paratut.png" alt="" name="paratutor" width="130" height="18" border="0" onload=""></a></td>
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','paramas','imagen4/paramas3.png',1)" onMouseOver="MM_nbGroup('over','paramas','imagen4/paramas2.png','imagen4/paramas3.png',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_sabermas_1a.htm"><img src="imagen4/paramas.png" alt="" name="paramas" width="130" height="18" border="0" onLoad=""></a></td>
+    </tr>
+  </table>
+  <table width="800" height="8" border="0" align="center" cellspacing="0">
+    <tr> 
+      <td width="8" height="8" background="imagen4/e1.gif"></td>
+      <td height="8" background="imagen4/b1.gif"></td>
+      <td width="8" height="8" background="imagen4/e2.gif"></td>
+    </tr>
+  </table>
+  <table width="800" height="85%" border="0" align="center" cellspacing="0">
+    <tr height="100%">
+      <td width="8" background="imagen4/b4.gif"></td>
+      <td height="89%" valign="top" bgcolor="#FFFFFF"><table width="100%" cellpadding="4" cellspacing="8">
+          <tr> 
+            <td width="29%" height="40" valign="top"> <font color="#FF6600" size="3" face="Geneva, Arial, Helvetica, sans-serif"><strong><img src="imagen4/ejercicios.png" width="50" height="38" align="middle"><font size="4">Para 
+              practicar </font></strong></font> <div align="right"> </div></td>
+            <td width="71%" valign="bottom"><div align="right"><font color="#666666" size="3" face="Geneva, Arial, Helvetica, sans-serif"><strong><font color="#808080"></font>&nbsp;&nbsp; 
+                </strong></font></div></td>
+          </tr>
+          <tr> 
+            <td rowspan="2" valign="top"> <div align="center"><img src="imagen4/calculadora.png" alt="CALCULADORA" width="231" height="347" border="0" onClick="MM_openBrWindow('calculadora/index.htm','CALCULAR','width=180,height=310')"> 
+              </div></td>
+            <td valign="top"><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Practica 
+                ahora resolviendo distintos ejercicios en tu cuaderno.</font></p>
+              <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Encontrar&aacute;s 
+                ejercicios y problemas de</font></p>
+              <ul>
+                <ul>
+                  <ul>
+                    <li>
+					<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+					<a target="_parent" href="quincena2_ejercicios_1c.htm">
+					Radicales</a></font></li>
+					<li>
+					<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+					<a target="_parent" href="quincena2_ejercicios_1d.htm">
+					Operaciones con radicales</a></font></li>
+                  </ul>
+                </ul>
+              </ul>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">En 
+                cada caso vas a encontrar ejercicios y problemas de distintos 
+                tipos donde elegir. Procurar hacer al menos uno de cada clase 
+                y una vez resuelto comprueba la soluci&oacute;n, si no lo has 
+                hecho bien haz otro an&aacute;logo.</font></p>
+              <p align="justify">&nbsp;</p></td>
+          </tr>
+          <tr> 
+            <td valign="middle" bgcolor="#f1f1f1"> <div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Puedes 
+                ir al apartado que quieras desde esta p&aacute;gina, pulsando 
+                sobre los distintos enlaces, o bien siguiendo el orden correlativo 
+                de las p&aacute;ginas con el enlace de abajo. <img src="imagen4/adelante.png" width="25" height="25" align="middle"></font></div></td>
+          </tr>
+        </table></td>
+      <td width="8" background="imagen4/b2.gif"></td>
+    </tr>
+  </table>
+  <table width="800" height="10" border="0" align="center" cellspacing="0">
+    <tr> 
+      <td width="8" height="8" background="imagen4/e4.gif"></td>
+      <td height="8" background="imagen4/b3.gif"></td>
+      <td width="8" height="8" background="imagen4/e3.gif"></td>
+    </tr>
+  </table>
+  <table width="768" border="0" align="center" cellspacing="0">
+    <tr> 
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center">
+		<a target="_parent" onMouseOver="MM_swapImage('anterior','','imagen4/atrasb.png',1)" onMouseOut="MM_swapImgRestore()" href="quincena2_resumen_1a.htm"><img src="imagen4/atras.png" alt="anterior" name="anterior" width="25" height="25" border="0"></a></div></td>
+      <td width="30">
+<div align="center"> <a target="_parent" onMouseOver="MM_swapImage('siguiente','','imagen4/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()" href="quincena2_ejercicios_1c.htm"><img src="imagen4/adelante.png" alt="siguiente" name="siguiente" width="25" height="25" border="0"></a></div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

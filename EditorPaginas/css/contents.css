@@ -1,0 +1,291 @@
+﻿/*
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+
+body
+{
+	/* Font */
+	
+
+	/* Text color */
+	color: #333;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+	margin:3px 15px 3px 16px;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+}
+
+.own-size{
+	width:850px;
+	height:785px;
+	background-color:white;
+	overflow:hidden;
+}
+
+.izquierda{
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+	background-image:-webkit-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:-moz-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:-ms-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:-o-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:linear-gradient(left, #fff 93%, #dadada 100%);
+}
+
+.derecha{
+	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #fff), color-stop(1, #cacaca));
+	background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:linear-gradient(right, #fff 95%, #cacaca 100%);
+}
+
+.cke_editable
+{	
+	font-size: 13px;
+	line-height: 1.6;
+
+	/* Fix for missing scrollbars with RTL texts. (#10488) */
+	word-wrap: break-word;
+	
+}
+
+blockquote
+{
+	font-style: italic;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.cke_contents_ltr blockquote
+{
+	
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote
+{
+	
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}
+
+a
+{
+	color: #0782C1;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+
+
+p {
+    color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 55px 0px 55px; font-weight: 580;
+	}
+	
+h1
+{
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0 0 0;
+	margin:15px 55px 5px 55px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2
+{
+	color: #009;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0 0 0;
+	margin:15px 55px 5px 55px;
+	text-align: left;
+	
+}
+
+h3
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: center; 
+}
+
+a{
+	color:#000;	font-size:20px; font-family: 'descartesJS_SansSerif', sans-serif; text-decoration: none; margin:15px 0px 5px 0px;
+			
+	}
+		
+li{
+		color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; margin:5px 55px 0px 55px; font-weight: 580;
+}
+
+
+td {
+    color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: 580; padding: 10px 10px;
+	}
+th {
+    color:#009;	font-size:20px; text-align: center; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: 580;  padding: 10px 10px;background-color: #C0C0C0;
+	}
+
+
+/*Aquí definimos estilos para notas de texto, párrafos sangrados, créditos, notas al pies y el tool tip */
+
+
+.nt{
+	color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: normal; margin:25px 55px 0px 95px; 
+	}
+	
+.sg{
+	color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: normal; margin:25px 55px 0px 95px; 
+	}
+	
+.creditos{
+	color: #000; font-family: 'descartesJS_Sansserif', sans-serif; font-size: 32px; font-weight: 500; line-height: 24px; margin: 0 0 0; padding: 20px 25px; text-align: left; 
+	}
+	
+.p2{
+	color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: normal; margin:5px 55px 0px 55px;
+	}
+
+.t11{
+	color: #ff0; font-family: 'descartesJS_Sansserif', sans-serif; font-size: 50px; font-weight: 700; line-height: 46px; margin: 0 0 0; margin:15px 55px 45px 55px; text-align: center; text-transform: uppercase;
+	}
+	
+.footer {
+  font-size:14px; 
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  position: absolute;
+  right: 50px;
+  bottom: 4em;
+  left: 50px;
+  padding: 0;
+  
+  text-align: left;
+}
+.footer a {
+  font-size:14px; 
+  color: blue;
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  margin-right:2px;
+  margin-left:2px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	font-size:20px; 
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	visibility: hidden;
+    width: 450px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+	left:180px;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+img.right
+{
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+img.left
+{
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+img.center
+{
+	border: 1px solid #ccc;
+	float: center;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+.marker
+{
+	background-color: Yellow;
+}
+
+span[lang]
+{
+	font-style: italic;
+}
+
+figure
+{
+	text-align: center;
+	border: solid 1px #ccc;
+	border-radius: 2px;
+	background: rgba(0,0,0,0.05);
+	padding: 10px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+
+figure > figcaption
+{
+	text-align: center;
+	display: block; /* For IE8 */
+}
+
+a > img {
+	padding: 1px;
+	margin: 1px;
+	border: none;
+	outline: 1px solid #0782C1;
+}

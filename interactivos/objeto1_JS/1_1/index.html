@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Conjuntos numericos</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body style="margin:0;padding:0; overflow: hidden;">
+
+<p align="center">
+<ajs name="Descartes" width=700 height=400 code="Descartes">
+   <param name="tamaño" value="700x400">
+   <param name="image_loader" value="">
+   <param name="expand" value="fit">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.4, 2016-05-18">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='N' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='N' expresión='(20,80,50,30)' valor='1' fijo='sí' visible='sí' negrita='sí' imagen='imagenes/btn50.png' acción='calcular' parámetro='n1=n1+1\nN=n1%2\n' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='Z' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Z' expresión='(20,115,50,30)' valor='2' fijo='sí' visible='sí' negrita='sí' imagen='imagenes/btn50.png' acción='calcular' parámetro='n2=n2+1\nZ=n2%2*2' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='Q' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Q' expresión='(20,150,50,30)' valor='4' fijo='sí' visible='sí' negrita='sí' imagen='imagenes/btn50.png' acción='calcular' parámetro='n3=n3+1\nQ=n3%2*4' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='I' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Q*' expresión='(20,185,50,30)' valor='100' fijo='sí' visible='sí' negrita='sí' imagen='imagenes/btn50.png' acción='calcular' parámetro='n4=n4+1\nI=n4%2*100' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_05" value="id='R' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='R' expresión='(20,220,50,30)' valor='6' fijo='sí' visible='sí' imagen='imagenes/btn50.png' acción='calcular' parámetro='n5=n5+1\nR=n5%2*6' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_06" value="id='Ej' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Ejercicio' expresión='(20,300,150,30)' valor='1' fijo='sí' visible='sí' color='blanco' negrita='sí' fuente puntos='16' imagen='imagenes/btn150.png' acción='calcular' parámetro='m=0' parámetro.fuente='Monospaced,PLAIN,12' activo-si='m=1' pos_mensajes='centro'">
+   <param name="C_07" value="id='S' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Solución' expresión='(20,340,150,30)' valor='1' fijo='sí' visible='sí' color='blanco' negrita='sí' fuente puntos='16' imagen='imagenes/btn150.png' parámetro='m=1' parámetro.fuente='Monospaced,PLAIN,12' activo-si='m=0' pos_mensajes='centro'">
+   <param name="A_01" value="id='inicio()' algoritmo='sí' algoritmo='sí' hacer='n1=0;n2=0;n3=0;n4=0;n5=0;N=0;Z=0;Q=0;R=0;I=0;S=0;;'">
+   <param name="A_02" value="id='Ej' constante='sí' expresión='1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='N' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='Z' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='Q' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='R' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='I' constante='sí' expresión='50' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='comenzar' evento='sí' condición='(Ej=1)' acción='calcular' parámetro='f=inicio()\nitem=item+1\ntt=tipo\ntipo=ent(rnd*4)+1\ntipo=tt=tipo?((tipo+2)%4)+1:tipo\nEj=2\nSS=0\nS=0\nm=0\n' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_09" value="id='naturalentero' evento='sí' condición='(tipo=1)|(tipo=2)' acción='calcular' parámetro='com=tipo=1?13:12\ntn=ent(rnd*3)+1\ndj=tipo*10+tn\nden=tn=2?ent(rnd*18+2):1\nnum=den=1?(tn=3?(ent(rnd*8+2))^2:ent(rnd*101)):den*ent(rnd*4+1)\nnum=tipo=2?-num:num\ntipo=0' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_10" value="id='racional' evento='sí' condición='(tipo=3)' acción='calcular' parámetro='com=10\ntn=ent(rnd*2)\ndj=tipo*10+tn\nx9=ent(rnd*2+1)\nden=tn=1?(10^x9-1)*10^ent(rnd*3):ent(rnd*18+2)\ne=ent(rnd*10)\nnum=ent(rnd*(den-1))+1\nm2=tn=1?max((10^x9-1),num):0\nm1=tn=1?min((10^x9-1),num):0\nrr=m1=1?1:m2%m1\nnum=den*e+num\nnum=tn=1?num/den:num\nnum=tn=1?ent(num*10^9)/10^9:num\nnum=rnd<0.5?num:-num\n\ndj=rr=0?77:dj\ntipo=0' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_11" value="id='irracional' evento='sí' condición='(tipo=4)' acción='calcular' parámetro='com=106\ntn=ent(rnd*2)\ndj=tipo*10+tn\nnum=ent(rnd*10)+1\nnum=num^2+ent(rnd*2*num+1)\nnum=tn=1?sqrt(num):num\n\nsig=rnd\nnum=sig>0.5?num:-num\ndj=dj=40?(sig<0.5?42:dj):dj\ntipo=0' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_12" value="id='comprobar' evento='sí' condición='S=1' acción='calcular' parámetro='suma=N+Z+Q+I+R\nhh=com=suma?1:0\nbien=bien+hh\nmal=mal+1-hh\nSS=1\nm=1\n' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_13" value="id='mal' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='Ej>=0' expresión='[0,22]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32\b{\*\mjaformula{\expr item\decimals undefined\fixed0}}\b0\b . Identifica a qué conjuntos de numéricos pertenece el número:\b0\par\f0\fs32\b               \b0\fs24\b   (Haz clic en todos los botones a los cuale pertenece el número)\b0\par}' fijo='no'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='N=1' expresión='[80,85]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b Natural\fs24\b0\par }' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='Z=2' expresión='[80,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b Entero\fs24\b0\par }' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='Q=4' expresión='[80,155]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b Racional\par \fs24\b0}' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='I=100' expresión='[80,190]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b Irracional\fs24\b0}' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='R=6' expresión='[80,225]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b Real\fs24\b0\par }' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='(dj=11)|(dj=21)' expresión='[490,22]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula{\expr num}}\fs24\b0\par }' decimales='9' fijo='no'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='(dj=12)|(dj=22)|(dj=30)' expresión='[490,13]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula{\fraction{\num{\expr num}}{\den{\expr den}}}}\fs24\b0\par}' decimales='0' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='(dj=13)|(dj=40)' expresión='[490,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula\f2\fs36\b{\radical{\expr num}}\fs24\b0}\fs24\b0\par}' decimales='0' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='(dj=23)|(dj=42)' expresión='[480,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula\f2\fs36\b -{\radical{\index}{\radicand{\expr -num}}}\fs24\b0}\fs24\b0\par }' decimales='0' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='(dj=31)|(dj=41)' expresión='[490,22]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula{\expr num}}.....\fs24\b0\par }' decimales='9' fijo='no'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='(dj=77)' expresión='[490,22]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula{\expr num}}\fs24\b0\par }' decimales='9' fijo='no'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(hh=0)&(SS=1)&(com=106)' expresión='[220,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;}\f1\fs36\b ERROR\fs24\b0  \fs32\b\par La soluci\u243 n es \ul Irracional\fs24\b0\ulnone ,\fs32\b\ul Real\fs24\b0\ulnone\par }' fijo='no'">
+   <param name="G_14" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(hh=0)&(SS=1)&(com=13)' expresión='[220,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}\f1\fs36\b ERROR\fs32\par La soluci\u243 n es \ul Natural\fs24\b0\ulnone ,\fs32\b\ul Entero\b0\ulnone ,\b\ul Racional\b0\ulnone ,\b\ul Real\fs24\b0\ulnone\par }' fijo='no'">
+   <param name="G_15" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(hh=0)&(SS=1)&(com=12)' expresión='[220,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}\f1\fs36\b ERROR\fs32\par La soluci\u243 n es \ul Entero\b0\ulnone ,\b\ul Racional\b0\ulnone ,\b\ul Real\fs24\b0\ulnone\par }' fijo='no'">
+   <param name="G_16" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(hh=0)&(SS=1)&(com=10)' expresión='[220,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}\f1\fs36\b ERROR\fs32\par La soluci\u243 n es \ul Racional\b0\ulnone ,\b\ul Real\fs24\b0\ulnone\par }' fijo='no'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(hh=1)&(SS=1)' expresión='[220,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs36\b\ul CORRECTO\fs24\b0\ulnone\par }' fijo='no'">
+   <param name="G_18" value="espacio='E1' tipo='texto' expresión='[220,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b{\*\mjaformula Bien={\expr bien}}\fs24\b0  \fs40\b  \par {\*\mjaformula Mal ={\expr mal}}\par \fs24\b0}' decimales='0' fijo='sí'">
+</ajs></p>
+
+</body>
+</html>

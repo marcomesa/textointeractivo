@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Arquimedes" width=700 height=400 code="Descartes">
+   <param name="tamaño" value="700x400">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Arquimedes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=30">
+   <param name="E_01" value="tipo='R2' id='E4' x='0' y='0' ancho='386' alto='400' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='5af0f8fa' red='no' red10='no' ejes='no' texto='no' cID='130dccd3892'">
+   <param name="E_02" value="tipo='R2' id='E5' x='396' y='0' ancho='304' alto='400' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='6ff0f8fa' red='no' red10='no' ejes='no' texto='no' cID='130dcce5334'">
+   <param name="A_01" value="id='f1(x)' algoritmo='sí' expresión='y' algoritmo='sí' inicio='y=0' hacer='y=(n=1)?(x^2):y;y=(n=2)?(1/x):y;y=(n=3)?(log(x)):y;y=(n=4)?(exp(x)):y;y=(n=5)?(x^m):y;y=(n=6)?(sen(x)):y;'">
+   <param name="A_02" value="id='otroEjercicio()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='VerRespC=0;VerLetR=0;resp=0;Lok=0;L=&squot;&squot;;;n1=1+ent(rnd*6);a1=-10+ent(rnd*20);a1=(a1=0)?2:a1;;m1=-10+ent(rnd*20);;L1=0;VL=0;;L1=((n1=1)&(a1>0)&(m1>0))?1:L1;L1=((n1=1)&(a1<0)&(m1>0))?2:L1;L1=((n1=1)&(m1<=0))?3:L1;VL=((n1=1)&(m1=0))?a1:VL;VL=((n1=1)&(m1>0))?0:VL;;L1=((n1=2)&(a1>0)&(m1<0))?1:L1;L1=((n1=2)&(a1<0)&(m1<0))?2:L1;L1=((n1=2)&(m1>=0))?3:L1;VL=((n1=2)&(m1=0))?a1:VL;VL=((n1=2)&(m1>0))?0:VL;;L1=((n1=3)&(a1>0))?1:L1;L1=((n1=3)&(a1<0))?2:L1;;L1=((n1=4)&(a1>0))?1:L1;L1=((n1=4)&(a1<0))?2:L1;;L1=(n1>4)?4:L1;;resp2=&squot;&squot;;resp2=(L1=1)?(&squot;= &squot;+inf):resp2;resp2=(L1=2)?(&squot;= - &squot;+inf):resp2;resp2=(L1=3)?(&squot;= &squot; + VL):resp2;resp2=(L1=4)?&squot;no existe&squot;:resp2'">
+   <param name="A_03" value="id='califica()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='bien1=((resp!=0)&(resp=L1))?1:0;mal1=((resp!=0)&(resp!=L1))?1:0;;todoBien=((L1!=3)&(bien1))|(Lok);mal2=(L1=3)&(L!=&squot;&squot;)&(!Lok);'">
+   <param name="A_04" value="id='INI_MRC' algoritmo='sí' evaluar='una-sola-vez' hacer='MRC1.margen=10;MRC1.b=E0._w-2*MRC1.margen;MRC1.h=E0._h-2*MRC1.margen;xMRC1=MRC1.margen;yMRC1=MRC1.margen;MRC2.extra=40;MRC2.b=280+MRC2.extra;MRC2.h=75;xMRC2=ent((E2._w-MRC2.b+MRC2.extra)/2);yMRC2=E2._h-40-MRC2.h'">
+   <param name="A_05" value="id='inf' constante='sí' expresión='&squot;\u221e&squot;' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='menos' constante='sí' expresión='&squot;\u2212 &squot;' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='menosinf' constante='sí' expresión='&squot;-&squot;+&squot;\u221e&squot;' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='lim=0' hacer='lim=(m>0)?inf:lim;lim=(m=0)?1:lim;lim=(m<0)?0:lim;;califica();'">
+   <param name="A_09" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otroEjercicio()'">
+   <param name="G_01" value="espacio='E4' tipo='texto' fondo='sí' expresión='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red32\green48\blue58;}\f0\fs48\b Las operaciones \b0\b válidas en las\b0\par\f0\fs48\b que aparece el símbolo \b0\b\i{\*\mjaformula ∞}\i0\b0\b  son:\b0\par\par\f0\fs48\b   •   \b0\b\i{\*\mjaformula ∞+a=∞}\i0\b0\cf0\b  para cualquier número\b0\par\f0\cf0\fs48\b                       real \b0\b\i{\*\mjaformula a}\i0\b0\par\f0\cf0\fs48\b  \b0\par\f0\cf0\fs48\b   •\b0\cf0\b    \b0\b\i{\*\mjaformula ∞+∞=∞}\i0\b0\cf0\b  \b0\par\f0\cf0\fs48\b  \b0\par\f0\cf0\fs48\b   •\b0\cf0\b    \b0\b\i{\*\mjaformula a·∞=∞}\i0\b0\cf0\b  si \b0\b\i{\*\mjaformula a>0}\i0\b0\cf0\b  \b0\par\f0\cf0\fs48\b  \b0\par\f0\cf0\fs48\b   •\b0\cf0\b    \b0\b\i{\*\mjaformula a·∞=-∞}\i0\b0\cf0\b  si \b0\b\i{\*\mjaformula a<0}\i0\b0\cf0\b  \b0\par\f0\cf0\fs48\b  \b0\par\f0\cf0\fs48\b   •\b0\cf0\b    \b0\b\i{\*\mjaformula{\fraction{\num 1}{\den ∞}}=0}\i0\b0\f1\cf0\fs34  \par\par\par\par\par\f1\cf0\fs34  }' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_02" value="espacio='E5' tipo='texto' fondo='sí' expresión='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Arial;\f6\fcharset0 Arial;}\f1\fs48\b Las indeterminaciones que\b0\par \b pueden presentarse son:\b0\par \par \b   \u8226    \i{\*\mjaformula{\fraction{\num 0}{\den 0}}}\i0  \b0\par \b  \b0\par \b   \u8226    \i{\*\mjaformula{\fraction{\num\u8734 }{\den\u8734 }}}\i0  \b0\par \b  \b0\par \b   \u8226    \i{\*\mjaformula\f4\fs44\b\i\u8734 \fs48{\supix 0}}\f5\fs34\i0  \b0\par \par \par  }' fuente='Monospaced,BOLD,24' fijo='sí'">
+   <param name="G_03" value="espacio='E5' tipo='texto' expresión='[160,107]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Arial;}\f1\fs48\b\u8226    \fs56\i{\*\mjaformula 1{\supix\u8734 }}\fs48\b0\i0\par \par \b\u8226    \i{\*\mjaformula 0\u183 \u8734 }\i0  \b0\par \par \b\u8226    \i{\*\mjaformula\u8734 -\u8734 }\f5\fs34\b0\i0  \par \par \f1\fs48\b\u8226    \i{\*\mjaformula 0{\supix 0}}\f5\fs34\b0\i0  \par }' fuente='Monospaced,BOLD,24' fijo='sí'">
+</ajs>
+
+
+
+</body>
+</html>

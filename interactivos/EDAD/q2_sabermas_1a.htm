@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin título</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function popup(a,msg,look,x,y){ //v1.0.5
+  var d=document; if (!a){var ln='pLayer';dx=";dy=";b=(d.layers)?1:0;
+    nn=(b||d.getElementById &&!d.all)?1:0;l = new Object();
+    l.s=b?d.layers[ln]:MM_findObj(ln).style;l.r=b?d.layers[ln].document:MM_findObj(ln);
+    l.w=function (t) {if(b){l.r.write(t);l.r.close()}else l.r.innerHTML=t}
+	if(b) d.captureEvents(Event.MOUSEMOVE);d.onmousemove=function(e)
+	{dx=(nn)?e.pageX:event.x;dy=(nn)?e.pageY:event.y;}}if (a=='1') {l.s.visibility='hidden'}
+  if (a=='2') {l.w('<span class="'+look+'">'+unescape(msg)+'</span>')
+	if(d.all) dy=dy+d.body.scrollTop;x=(!x)?50:Number(x);
+	y=(!y)?-20:Number(y);l.s.left=dx+x; l.s.top=dy+y;l.s.visibility='visible'}
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+
+
+<link href="unidadprueba/paradescartes.css" rel="stylesheet" type="text/css" >
+<link href="paradescartes.css" rel="stylesheet" type="text/css" >
+<style type="text/css"><!--
+<!--
+.parakaos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	background-color: #F1F1F1;
+	text-align: justify;
+	display: block;
+	border: thin dashed #FF6600;
+	margin: 4px;
+	padding: 4px;
+	height: auto;
+	width: 280px;
+}
+.parakaos2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FF6600;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #99CC00;
+}
+-->
+
+</style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#f1f1f1" onLoad="MM_preloadImages('imagen4/paraantes3.png','imagen4/paraantes2.png','imagen4/paraconte.png','imagen4/paracont2.png','imagen4/paraejer3.png','imagen4/paraejer2.png','imagen4/paraeval3.png','imagen4/paraeval2.png','imagen4/paratut3.png','imagen4/paratut2.png','imagen4/paramas3.png','imagen4/paramas2.png','imagen4/atrasb.png','imagen4/adelanteb.png');popup()">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:800px; height:528px; z-index:1">
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','antes','imagen4/paraantes3.png',1)" onMouseOver="MM_nbGroup('over','antes','imagen4/paraantes2.png','imagen4/paraantes3.png',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_presenta_1a.htm"><img src="imagen4/paraantes.png" alt="" name="antes" border="0" onload="" width="130" height="18"></a></td>
+       <td><a target="_parent" onClick="MM_nbGroup('down','group1','contenido','imagen4/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenido','imagen4/paracont2.png','',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_contenidos_1a.htm"><img src="imagen4/paraconte.png" alt="" name="contenido" width="130" height="18" border="0" onload=""></a></td>
+     <td><a target="_parent" onClick="MM_nbGroup('down','group1','ejercicios','imagen4/paraejer3.png',1)" onMouseOver="MM_nbGroup('over','ejercicios','imagen4/paraejer2.png','',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_ejercicios_1a.htm"><img src="imagen4/paraejer.png" alt="" name="ejercicios" border="0" onload="" width="130" height="18"></a></td>
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','autoeval','imagen4/paraeval3.png',1)" onMouseOver="MM_nbGroup('over','autoeval','imagen4/paraeval2.png','',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_autoeval_1a.htm"><img src="imagen4/paraeval.png" alt="" name="autoeval" width="130" height="18" border="0" onload=""></a></td>
+      <td><a target="_parent" onClick="MM_nbGroup('down','group1','paratutor','imagen4/paratut3.png',1)" onMouseOver="MM_nbGroup('over','paratutor','imagen4/paratut2.png','',1)" onMouseOut="MM_nbGroup('out')" href="quincena2_tutor_1a.htm"><img src="imagen4/paratut.png" alt="" name="paratutor" width="130" height="18" border="0" onload=""></a></td>
+     <td><a target="texto" onClick="MM_nbGroup('down','group1','paramas','imagen4/paramas3.png',1)" onMouseOver="MM_nbGroup('over','paramas','imagen4/paramas2.png','imagen4/paramas3.png',1)" onMouseOut="MM_nbGroup('out')" href="javascript:;"><img src="imagen4/paramas3.png" alt="" name="paramas" border="0" onLoad="MM_nbGroup('init','group1','paramas','imagen4/paramas.png',1)" width="130" height="18"></a></td>
+    </tr>
+  </table>
+  <table width="800" height="8" border="0" align="center" cellspacing="0">
+    <tr>
+      <td width="8" height="8" background="imagen4/e1.gif"></td>
+      <td height="8" background="imagen4/b1.gif"></td>
+      <td width="8" height="8" background="imagen4/e2.gif"></td>
+    </tr>
+  </table>
+  <table width="800" height="85%" border="0" align="center" cellspacing="0">
+    <tr height="100%">
+      <td width="8" background="imagen4/b4.gif"></td>
+      <td height="89%" valign="top" bgcolor="#FFFFFF"> <table width="100%" cellspacing="8">
+          <tr>
+            <td height="15" valign="middle" colspan="2"> <font size="4" face="Verdana, Arial, Helvetica, sans-serif"><strong><img src="imagen4/mas.png" width="50" height="38" align="middle"><font color="#FF6600" face="Geneva, Arial, Helvetica, sans-serif">Para
+              saber más</font></strong></font> </td>
+          </tr>
+          <tr>
+            <td height="8" valign="middle">
+            <p style="margin-top: 0; margin-bottom: 0"><strong><font color="#666666" face="Arial, Helvetica, sans-serif" size="3">
+			Aproximación de una raíz cuadrada mediante fracciones.</font></strong></p>
+ </td>
+            <td height="15" rowspan="2" style="border-style:solid; border-width:1; " align="center" bgcolor="#F7F7D7">
+              <p align="center"><b><u><font face="Verdana" size="2" color="#666666">
+ <ajs name="autoevaluacion2" width=500 height=370
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="500x370">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="autoevaluacion2">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffe4' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="E_02" value="tipo='R2' id='co' x='480' y='10+38' ancho='22' alto='20' dibujar-si='ver=0' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffe4' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='co2' x='480' y='150' ancho='22' alto='20' dibujar-si='ver=1' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffe4' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='raiz' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' expresi&oacute;n='(60,7,40,26)' valor='ent(rnd*8)^2+1' incr='1' min='2' max='999' fijo='no' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='veces=3\nscf=1'">
+   <param name="C_02" value="id='veces' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='co' nombre='veces' expresi&oacute;n='(-43,0,55,20)' valor='4' incr='1' min='1' max='sino=0?30:veces0' discreto='s&iacute;' fijo='no' visible='no' imagen='imagen4/siguiente.png' dibujar-si='(dibujar=1)'">
+   <param name="C_03" value="id='ver' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(199+272,86-5,22,22)' valor='1' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/siguiente.png' acci&oacute;n='calcular' dibujar-si='(ver=0)&amp;(dibujar=1)' pos_mensajes='centro'">
+   <param name="C_04" value="id='ver' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(199+272,86-5,22,22)' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' imagen='imagen4/siguiente.png' dibujar-si='(ver=1)&amp;(dibujar=1)' pos_mensajes='centro'">
+   <param name="C_05" value="id='scf' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='co2' nombre='scf' expresi&oacute;n='(-43,0,55,20)' valor='1' incr='1' min='1' max='jfp+1' fijo='no' visible='no' acci&oacute;n='calcular' dibujar-si='(dibujar=1)'">
+   <param name="A_01" value="id='a' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='a[0]=0;a[1]=0;a[2]=0'">
+   <param name="A_02" value="id='b' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='V1[0]=0;V1[1]=0;V1[2]=0'">
+   <param name="A_03" value="id='d' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='V1[0]=0;V1[1]=0;V1[2]=0'">
+   <param name="A_04" value="id='cxa' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='cxa[0]=0;cxa[1]=0;cxa[2]=0'">
+   <param name="A_05" value="id='cxda' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='cxa[0]=0;cxa[1]=0;cxa[2]=0'">
+   <param name="A_06" value="id='cyda' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='cxa[0]=0;cxa[1]=0;cxa[2]=0'">
+   <param name="A_07" value="id='fn' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='fn[0]=0;fn[1]=0;fn[2]=0'">
+   <param name="A_08" value="id='fd' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='fn[0]=0;fn[1]=0;fn[2]=0'">
+   <param name="A_09" value="id='ra' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='300' expresi&oacute;n='fn[0]=0;fn[1]=0;fn[2]=0'">
+   <param name="A_10" value="id='fini(x)' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='fn[0]=a[x];fd[0]=1;ra[0]=a[x]'">
+   <param name="A_11" value="id='fraccion(x)' algoritmo='s&iacute;' algoritmo='s&iacute;' inicio='k=1;qqq=fini(x)' hacer='fn[k]=a[x-k]*fn[k-1]+fd[k-1];fd[k]=fn[k-1];ra[k]=fn[k]/fd[k];k=k+1' mientras='(k&lt;x)'">
+   <param name="A_12" value="id='inicio' algoritmo='s&iacute;' evaluar='siempre' hacer=';byy=40;cxr0=10-2;cxr=90+17;'">
+   <param name="A_13" value="id='a1_inicio' algoritmo='s&iacute;' evaluar='siempre' hacer='b[0]=0;d[0]=1;alfa=sqrt(raiz);a[0]=ent(alfa);dibujar=a[0]^2=raiz?0:1;'">
+   <param name="A_14" value="id='a2_periodo' algoritmo='s&iacute;' evaluar='siempre' inicio='j=0;terminar=0;fin=0' hacer='a[j+1]=ent((alfa+b[j])/d[j]);b[j+1]=a[j+1]*d[j]-b[j];d[j+1]=(raiz-b[j+1]^2)/d[j];terminar=(b[j+1]=b[1])&amp;(d[j+1]=d[1])&amp;(j&gt;0)?terminar+1:terminar;fin=terminar&gt;0?fin+1:fin;;j=j+1;jfp=j-1;;' mientras='fin&lt;2'">
+   <param name="A_15" value="id='a3_coorfc' algoritmo='s&iacute;' evaluar='siempre' inicio='s=2;cxa[1]=cxr0+53+9*ent(log10(raiz))' hacer='cxa[s]=cxa[s-1]+15+7*(ent(log10(a[s-1])));cxa[s]=s=26?cxa[1]+15+7*(ent(log10(a[1]))):cxa[s];;;s=s+1' mientras='s&lt;jfp+1'">
+   <param name="A_16" value="id='a4_inicoorfcd' algoritmo='s&iacute;' evaluar='siempre' inicio='cxda[0]=3;cyda[0]=130+15+3' hacer='cxda[1]=cxda[0];cyda[1]=cyda[0];;;;'">
+   <param name="A_17" value="id='a5_coorfcd' algoritmo='s&iacute;' evaluar='siempre' inicio='s=2' hacer=';cxda[s]=cxda[s-1]+25+6*ent(log10(a[s-1]));cyda[s]=cyda[s-1]+15;s=s+1' mientras='s&lt;veces+1'">
+   <param name="A_18" value="id='a13' algoritmo='s&iacute;' evaluar='siempre' hacer='cxda[veces]=cxda[veces]+5;cyda[veces]=cyda[veces]-5'">
+   <param name="A_19" value="id='a14' algoritmo='s&iacute;' evaluar='siempre' inicio='jf=veces;kv=jfp+1' hacer='a[kv]=a[kv-jfp+1];kv=kv+1' mientras='kv&lt;veces+1'">
+   <param name="A_20" value="id='a19' algoritmo='s&iacute;' evaluar='siempre' hacer='qqq=fraccion(veces);vecesd=veces&lt;15?veces:15;veces0=veces;fn1=fn[veces-1];fd1=fd[veces-1];ncfn1=ent(log10(fn1));ncfd1=ent(log10(fd1));sino=(ncfn1&gt;11)|(ncfd1&gt;11)?1:0'">
+   <param name="G_01" value="tipo='pol&iacute;gono' color='blanco' coord_abs='s&iacute;' expresi&oacute;n='(1,1)(499,1)(499,37)(1,37)(1,1)' relleno='6dfcfa98'">
+   <param name="G_02" value="tipo='pol&iacute;gono' color='bec0c0c0' coord_abs='s&iacute;' expresi&oacute;n='(1,39)(357,39)(357,39+37)(1,39+37)(1,39)' relleno='blanco'">
+   <param name="G_03" value="tipo='texto' color='0000b3' expresi&oacute;n='[3+120,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f1\fs28 Valor de {\radical{\index{\expr &squot; &squot;\decimals 12\fixed0}}{\radicand{\expr raiz\decimals 12\fixed0}}}={\expr sqrt(raiz)}\f2\fs24}\f2\fs24  \par }' fuente='SansSerif,PLAIN,14' decimales='12' fijo='no'">
+   <param name="G_04" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)' expresi&oacute;n='[cxa[s],cxr+4+15*(s&gt;25)]' familia='s' s.intervalo='[1,jfp]' s.pasos='jfp-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs24{\*\mjaformula{\expr a[s]}}\par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_05" value="tipo='segmento' color='negro' dibujar-si='(dibujar=1)' coord_abs='s&iacute;' expresi&oacute;n='(cxa[2]+8,cxr-2+4)(cxa[min(jfp,25)]+15+5*(a[min(jfp,25)]&gt;9)+5*(a[min(jfp,25)]&gt;99),cxr-2+4)' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='segmento' color='negro' dibujar-si='(dibujar=1)&amp;(jfp&gt;25)' coord_abs='s&iacute;' expresi&oacute;n='(cxa[2]+8,cxr-2+4+17)(cxa[jfp]+15+5*(a[jfp]&gt;9)+5*(a[jfp]&gt;99),cxr-2+4+17)' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)&amp;(s#16)' expresi&oacute;n='[cxda[s],cyda[s]]' familia='s' s.intervalo='[1,jf]' s.pasos='jf-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs24{\*\mjaformula{\expr a[s]}}\par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_08" value="tipo='segmento' color='negro' dibujar-si='(jf&gt;2)&amp;(dibujar=1)&amp;(s&lt;15)' coord_abs='s&iacute;' expresi&oacute;n='(cxda[s]+30+6*ent(log10(a[s])),cyda[s]+8)(cxda[vecesd]+20,cyda[s]+8)' familia='s' s.intervalo='[1,jf-1]' s.pasos='jf-2' fijo='no' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)&amp;(s&lt;15)' expresi&oacute;n='[cxda[s]+10+6*ent(log10(a[s])),cyda[s]]' familia='s' s.intervalo='[1,jf-1]' s.pasos='jf=2?1:jf-2' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28{\*\mjaformula +}\fs24\par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_10" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)&amp;(s&lt;15)' expresi&oacute;n='[(cxda[s]+30+6*ent(log10(a[s]))+cxda[vecesd]+3)/2,cyda[s]-8]' familia='s' s.intervalo='[1,jf-1]' s.pasos='jf=2?1:jf-2' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs24{\*\mjaformula{\expr 1\decimals 2\fixed0}}\par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_11" value="tipo='segmento' color='negro' dibujar-si='(jf=2)&amp;(dibujar=1)' coord_abs='s&iacute;' expresi&oacute;n='(cxda[1]+30+6*ent(log10(a[1])),cyda[1]+8)(cxda[veces]+20,cyda[1]+8)' fijo='no' tama&ntilde;o='0'">
+   <param name="G_12" value="tipo='texto' color='negro' dibujar-si='(dibujar=0)' expresi&oacute;n='[cxr0,cxr-10-55]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 La ra\u237 z es exacta: \fs28{\*\mjaformula{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}={\expr alfa\decimals 2\fixed0}}\f3\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_13" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)' expresi&oacute;n='[cxr0-7,cxr-10-17+4]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Desarrollo en fracci\u243 n continua:\par  \fs28{\*\mjaformula{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}}= [\fs24\par \f3\fs24}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_14" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)' expresi&oacute;n='[cxa[jfp*(jfp&lt;25)+(jfp-24)*(jfp&gt;24)]+15+5*(a[jfp]&gt;9)+5*(a[jfp]&gt;99),cxr-2+4+15*(jfp&gt;24)]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32 ]\f3\fs24}\f3\fs24}' fuente='SansSerif,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_15" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)' expresi&oacute;n='[20+cxda[vecesd]-(13-6*ent(log10(a[1])))*(veces=1),95+30+15+5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula ={\fraction{\num{\expr fn[veces-1]\decimals 2\fixed0}}{\den{\expr fd[veces-1]\decimals 2\fixed0}}}}\f2\fs24\par }' fuente='SansSerif,PLAIN,14' decimales='12' fijo='no'">
+   <param name="G_16" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)' expresi&oacute;n='[3,5+37]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Fracci\u243 n:   \fs28{\*\mjaformula{\fraction{\num{\expr fn[veces-1]\decimals 2\fixed0}}{\den{\expr fd[veces-1]\decimals 2\fixed0}}}}\fs24 ={\*\mjaformula{\expr ra[veces-1]\decimals 12\fixed0}}\f3\fs24\par }' fuente='SansSerif,PLAIN,12' decimales='12' fijo='no'">
+   <param name="G_17" value="tipo='texto' color='aa0000' expresi&oacute;n='[1,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22 Introduce\par la Ra\u237 z\f2\fs24\par }' fuente='SansSerif,PLAIN,11' fijo='s&iacute;'">
+   <param name="G_18" value="tipo='texto' color='aa0000' dibujar-si='(ver=0)&amp;(dibujar=1)' expresi&oacute;n='[395,13+38]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22{\*\mjaformula\u177 aproximaci\u243 n }\f2\fs24\par }' fuente='SansSerif,PLAIN,11' fijo='s&iacute;'">
+   <param name="G_19" value="tipo='texto' color='negro' dibujar-si='(dibujar=1)&amp;((veces&gt;15)|(sino=1))' expresi&oacute;n='[cxda[vecesd]+10+6*ent(log10(a[vecesd])),cyda[vecesd]-5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28{\*\mjaformula ....}\fs24\par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_20" value="tipo='texto' color='ff6600' dibujar-si='(ver=0)&amp;(dibujar=1)' expresi&oacute;n='[190+50,86]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22 Para ver la obtenci\u243 n de la fracci\u243 n continua\f2\fs24\par }' fuente='SansSerif,PLAIN,11' fijo='s&iacute;'">
+   <param name="G_21" value="tipo='pol&iacute;gono' color='bec0c0c0' dibujar-si='(ver=1)&amp;(dibujar=1)' coord_abs='s&iacute;' expresi&oacute;n='(0,228-86)(500,228-86)(500,400)(0,400)' relleno='ffffe4'">
+   <param name="G_22" value="tipo='texto' color='ff6600' dibujar-si='(ver=1)&amp;(dibujar=1)' expresi&oacute;n='[190+50,86]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22 Para ver el desarrollo de la fracci\u243 n continua\f2\fs24\par }' fuente='SansSerif,PLAIN,11' fijo='s&iacute;'">
+   <param name="G_23" value="tipo='texto' color='negro' dibujar-si='(ver=1)&amp;(b[scf-1]#0)&amp;(d[scf-1]&gt;1)&amp;(dibujar=1)' expresi&oacute;n='[20+285*(scf&gt;1),148+99*(scf&gt;1)+32]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32 a{\subix{\expr scf\decimals 2\fixed0}}=\fs28 [{\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}}{\den{\expr d[scf-1]\decimals 2\fixed0}}}\fs32 ]={\expr a[scf]\decimals 2\fixed0}\f3\fs24\b}\f3\fs24\b\par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_24" value="tipo='texto' color='negro' dibujar-si='(ver=1)&amp;(b[scf-1]#0)&amp;(d[scf-1]=1)&amp;(dibujar=1)' expresi&oacute;n='[20+285*(scf&gt;1),148+99*(scf&gt;1)+32]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32 a{\subix{\expr scf\decimals 2\fixed0}}=\fs28 [{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}\fs32 ]={\expr a[scf]\decimals 2\fixed0}\f3\fs24\b}\f3\fs24\b\par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_25" value="tipo='texto' color='negro' dibujar-si='(ver=1)&amp;(b[scf-1]=0)&amp;(d[scf-1]=1)&amp;(dibujar=1)' expresi&oacute;n='[20+285*(scf&gt;1),148+99*(scf&gt;1)]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32 a{\subix{\expr scf\decimals 2\fixed0}}=\fs28 [{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\fs32 ]={\expr a[scf]\decimals 2\fixed0}\f3\fs24\b}\f3\fs24\b\par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_26" value="tipo='texto' color='negro' dibujar-si='(ver=1)&amp;(b[scf-1]=0)&amp;(d[scf-1]&gt;1)&amp;(dibujar=1)' expresi&oacute;n='[20+285*(scf&gt;1),148+99*(scf&gt;1)]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32 a{\subix{\expr scf\decimals 2\fixed0}}=\fs28 [{\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}}{\den{\expr d[scf-1]\decimals 2\fixed0}}}\fs32 ]={\expr a[scf]\decimals 2\fixed0}\f3\fs24\b}\f3\fs24\b\par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_27" value="tipo='texto' color='negro' dibujar-si='(ver=1)&amp;(d[scf-2+(scf=1)]#1)&amp;(b[scf-2+(scf=1)]#0)&amp;(d[scf-1]#1)&amp;(dibujar=1)' expresi&oacute;n='[20,148+byy-6]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs36{\expr a[scf-1]\decimals 2\fixed0}\fs28 +\f3\fs36{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}\fs28 =\f1\fs28{\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-2]\decimals 2\fixed0}}{\den{\expr d[scf-2]\decimals 2\fixed0}}}\f5\fs24}\par \par {\*\mjaformula{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}={\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-2]\decimals 2\fixed0}}{\den{\expr d[scf-2]\decimals 2\fixed0}}}\u8722 {\expr a[scf-1]\decimals 2\fixed0}={\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}{\den{\expr d[scf-2]\decimals 2\fixed0}}}}\par \par {\*\mjaformula x{\subix{\expr scf\decimals 2\fixed0}}={\fraction{\num{\expr d[scf-2]\decimals 2\fixed0}}{\den{\radical{\index{\expr 2\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}}={\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}}{\den{\expr d[scf-1]\decimals 2\fixed0}}}}\par \par \f5\fs24\par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_28" value="tipo='texto' color='negro' dibujar-si='(scf#1)&amp;(ver=1)&amp;(d[scf-2+(scf=1)]=1)&amp;(b[scf-2+(scf=1)]=0)&amp;(d[scf-1]#1)&amp;(dibujar=1)' expresi&oacute;n='[20,148+byy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32{\expr a[scf-2]\decimals 2\fixed0}+\f3\fs36{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}\fs28{\supix}=\f1\fs28{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\f5\fs24}\par \par {\*\mjaformula{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}={\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr a[scf-1]\decimals 2\fixed0}{\supix}}\par \par {\*\mjaformula x{\subix{\expr scf\decimals 2\fixed0}}={\fraction{\num 1}{\den{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr a[scf-1]\decimals 2\fixed0}}}={\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}}{\den{\expr d[scf-1]\decimals 2\fixed0}}}}\par \f5\fs24}' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_29" value="tipo='texto' color='negro' dibujar-si='(scf#1)&amp;(ver=1)&amp;(d[scf-2+(scf=1)]=1)&amp;(b[scf-2+(scf=1)]#0)&amp;(d[scf-1]#1)&amp;(dibujar=1)' expresi&oacute;n='[20,148+byy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f1\fs28{\expr a[scf-1]\decimals 2\fixed0}+\f2\fs36{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}\fs28{\supix}=\f1\fs28{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}\f4\fs24}\par \par {\*\mjaformula{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}={\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}\u8722 {\expr a[scf-1]\decimals 2\fixed0}={\supix}{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}\par \par {\*\mjaformula x{\subix{\expr scf\decimals 2\fixed0}}={\fraction{\num 1}{\den{\radical{\index{\expr 2\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}}={\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}}{\den{\expr d[scf-1]\decimals 2\fixed0}}}}\par \f4\fs24}' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_30" value="tipo='texto' color='negro' dibujar-si='(ver=1)&amp;(d[scf-2+(scf=1)]#1)&amp;(b[scf-2+(scf=1)]#0)&amp;(d[scf-1]=1)&amp;(dibujar=1)' expresi&oacute;n='[20,148+byy-6]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs36{\expr a[scf-1]\decimals 2\fixed0}\fs28 +\f3\fs36{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}\f4\fs32 =\fs28{\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-2]\decimals 2\fixed0}}{\den{\expr d[scf-2]\decimals 2\fixed0}}}\f5\fs24}\par \par {\*\mjaformula{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}={\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-2]\decimals 2\fixed0}}{\den{\expr d[scf-2]\decimals 2\fixed0}}}\u8722 {\expr a[scf-1]\decimals 2\fixed0}={\fraction{\num{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}{\den{\expr d[scf-2]\decimals 2\fixed0}}}}\par \par {\*\mjaformula x{\subix{\expr scf\decimals 2\fixed0}}={\fraction{\num{\expr d[scf-2]\decimals 2\fixed0}}{\den{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}}={\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}}\par \par \par \f5\fs24}' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_31" value="tipo='texto' color='negro' dibujar-si='(scf#1)&amp;(ver=1)&amp;(d[scf-2+(scf=1)]=1)&amp;(b[scf-2+(scf=1)]=0)&amp;(d[scf-1]=1)&amp;(dibujar=1)' expresi&oacute;n='[20,148+byy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32{\expr a[scf-2]\decimals 2\fixed0}+\f3\fs36{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}\fs28{\supix}=\f1\fs28{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\f5\fs24}\par \par {\*\mjaformula{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}={\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr a[scf-1]\decimals 2\fixed0}{\supix}}\par \par {\*\mjaformula x{\subix{\expr scf\decimals 2\fixed0}}={\fraction{\num 1}{\den{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr a[scf-1]\decimals 2\fixed0}}}={\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}}\par \f5\fs24}' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_32" value="tipo='texto' color='negro' dibujar-si='(scf#1)&amp;(ver=1)&amp;(d[scf-2+(scf=1)]=1)&amp;(b[scf-2+(scf=1)]#0)&amp;(d[scf-1]=1)&amp;(dibujar=1)' expresi&oacute;n='[20,148+byy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f1\fs28{\expr a[scf-1]\decimals 2\fixed0}+\f2\fs36{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}\fs28{\supix}=\f1\fs28{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}\f4\fs24}\par \par {\*\mjaformula{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}={\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}\u8722 {\expr a[scf-1]\decimals 2\fixed0}={\supix}{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}\par \par {\*\mjaformula x{\subix{\expr scf\decimals 2\fixed0}}={\fraction{\num 1}{\den{\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}\u8722 {\expr b[scf-1]\decimals 2\fixed0}}}={\radical{\index{\expr &squot; &squot;\decimals 2\fixed0}}{\radicand{\expr raiz\decimals 2\fixed0}}}+{\expr b[scf-1]\decimals 2\fixed0}}\par \f4\fs24}' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_33" value="tipo='texto' color='negro' dibujar-si='(scf=jfp+1)&amp;(ver=1)&amp;(dibujar=1)' expresi&oacute;n='[170,300+byy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Comienza a repetirse el periodo\f2\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_34" value="tipo='texto' color='rojo' dibujar-si='(ver=1)&amp;(dibujar=1)' expresi&oacute;n='[cxa[scf&gt;jfp?jfp:scf],cxr+4+15*(scf&gt;25)]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red255\green255\blue255;}\f1\fs24{\*\mjaformula{\expr a[scf&amp;gt;jfp?jfp:scf]}}\cf0\par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_35" value="tipo='texto' color='aa0000' dibujar-si='(ver=1)&amp;(dibujar=1)' expresi&oacute;n='[400,153]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22{\*\mjaformula\f1\fs22 siguiente cifra}\f2\fs24\par }' fuente='SansSerif,PLAIN,11' fijo='s&iacute;'">
+   <param name="G_36" value="tipo='texto' color='negro' dibujar-si='(ver=1)&amp;(scf&gt;1)&amp;(dibujar=1)' expresi&oacute;n='[20,148]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;\f5\fcharset0 Courier New;}\f1\fs28{\*\mjaformula\f2\fs32 a{\subix{\expr scf-1\decimals 2\fixed0}}\fs28 +\f3\fs36{\fraction{\num 1}{\den x{\subix{\expr scf\decimals 2\fixed0}}}}\fs28 =\f2\fs32  x{\subix{\expr scf-1\decimals 2\fixed0}}\f5\fs24}\f5\fs24\par \par \par \par \par }' fuente='SansSerif,PLAIN,14' fijo='no'">
+</ajs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </font></u></b>
+ </td>
+          </tr>
+          <tr>
+            <td height="7" valign="top">
+              <p align="justify" style="margin-top: 0; margin-bottom: 6"> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">Cualquier
+                número irracional se puede aproximar mediante una fracción, que
+                se obtiene a partir de su desarrollo en <a href="http://es.wikipedia.org/wiki/Fracción_continua" target="_blank">fracción
+                continua.</a></font></p>
+			  <p align="justify" style="margin-top: 0; margin-bottom: 6"> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                En la escena&nbsp; de la derecha puedes ver ejemplos de fracciones
+                que aproximan una raíz cuadrada.</font></p>
+			  <p align="justify" style="margin-top: 0; margin-bottom: 6"> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                Introduce en la escena la raíz (máximo 999) que quieres aproximar
+                mediante una fracción y luego pulsa <font color="#AA0000">±aproximación.</font></font></p>
+			  <p align="justify" style="margin-top: 0; margin-bottom: 6"> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">Pulsando
+                sobre el icono correpsondiente, puedes ver como se obtiene la
+                fracción continua y al modificar <font color="#AA0000"> siguiente
+                cifra </font> , verás como se obtiene cada cifra.</font></p>
+			&nbsp;</td>
+          </tr>
+        </table></td>
+      <td width="8" rowspan="2" background="imagen4/b2.gif"> </td>
+    </tr>
+  </table>
+  <table width="800" height="10" border="0" align="center" cellspacing="0">
+    <tr>
+      <td width="8" height="8" background="imagen4/e4.gif"></td>
+      <td height="8" background="imagen4/b3.gif"></td>
+      <td width="8" height="8" background="imagen4/e3.gif"></td>
+    </tr>
+  </table>
+  <table width="768" border="0" align="center" cellspacing="0">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center">
+		<a target="_parent" onMouseOver="MM_swapImage('anterior','','imagen4/atrasb.png',1)" onMouseOut="MM_swapImgRestore()" href="quincena2_tutor_1a.htm"><img src="imagen4/atras.png" alt="anterior" name="anterior" width="25" height="25" border="0"></a></div></td>
+      <td width="30">
+<div align="center">&nbsp;</div></td>
+    </tr>
+  </table>
+</div>
+<div id="pLayer" style="position:absolute; width:200; visibility:hidden; z-index:200">
+  <!--Empty div-->
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cálculo Diferencial - Introducción</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="740" height="400" code="Descartes">
+    <param name="tamaño" value="740x400">
+    <param name="decimal_symbol" value=",">
+    <param name="image_loader" value="../images/logo0.png">
+    <param name="expand" value="">
+    <param name="nombre" value="continua">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=0 ">
+    <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='E1_verif' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Verificar' expresión='(250,E1._h-50,120,35)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E1_verif()' activo-si='!E1_bien' ">
+    <param name="C_02" value="id='E1_otro' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otro ejercicio' expresión='(370,E1._h-50,120,35)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='ini_E1()' activo-si='E1_bien' ">
+    <param name="C_03" value="id='E1_menu' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(300,90,120,40)' valor='-1' decimales='2' fijo='no' visible='no' opciones='Elige [-1],a)[0],b)[1],c)[2],d)[3]' ">
+    <param name="A_01" value="id='respuestas' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='respuestas[0]=0;respuestas[1]=0;respuestas[2]=0' ">
+    <param name="A_02" value="id='vectorAuxiliar' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='vectorAuxiliar[0]=0;vectorAuxiliar[1]=1;vectorAuxiliar[2]=2;vectorAuxiliar[3]=3' ">
+    <param name="A_03" value="id='permutacion' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='permutacion[0]=0;permutacion[1]=1;permutacion[2]=2;permutacion[3]=3' ">
+    <param name="A_04" value="id='llenaVecAux(random1,limite)' algoritmo='sí' expresión='x' inicio='i=0;r=random1' hacer='vectorAuxiliar[i]=(i>=r)?vectorAuxiliar[i+1]:vectorAuxiliar[i];i=i+1' mientras='i<limite' ">
+    <param name="A_05" value="id='permutacionAleatoria(limite)' algoritmo='sí' expresión='x' inicio='_t=0' hacer='r=ent(rnd*(limite-_t));permutacion[_t]=vectorAuxiliar[r];llenaVecAux(r,limite);_t=_t+1' mientras='_t<limite' ">
+    <param name="A_06" value="id='ini_permutacion()' algoritmo='sí' expresión='1' hacer='permutacion[0]=0;permutacion[1]=1;permutacion[2]=2;permutacion[3]=3;vectorAuxiliar[0]=0;vectorAuxiliar[1]=1;vectorAuxiliar[2]=2;vectorAuxiliar[3]=3' ">
+    <param name="A_07" value="id='ini_E0()' algoritmo='sí' expresión='x' hacer='E0_a=ent(rnd*10)+1;E0_b=ent(rnd*10);E0_c=ent(rnd*10);E0_a_sign=(ent(rnd*2)=0)?-1:1;E0_b_sign=(ent(rnd*2)=0)?-1:1;E0_c_sign=(ent(rnd*2)=0)?-1:1;;E0_a=E0_a_sign*E0_a;E0_b=E0_b_sign*E0_b;E0_c=E0_c_sign*E0_c;;E0_denominador=(E0_b=0)?&squot;x&squot;:&squot;&squot;;tempE0_b=abs(E0_b);E0_denominador=((E0_b!=0)&(E0_b_sign=1))?&squot;x + &squot;+tempE0_b:E0_denominador;E0_denominador=((E0_b!=0)&(E0_b_sign=-1))?&squot;x - &squot;+tempE0_b:E0_denominador;tempE0_c=abs(E0_c);;E0_c_Str=&squot;&squot;;E0_c_Str=((E0_c!=0)&(E0_c_sign=1))?&squot; + &squot;+tempE0_c:E0_c_Str;E0_c_Str=((E0_c!=0)&(E0_c_sign=1))?&squot; - &squot;+tempE0_c:E0_c_Str;;;;posIniXTxt=95;posIniYTxt=90;posSepTxt=50;;posIniXEc=230;posIniYEc=115;posSepEc=50;;E0_paso=0' ">
+    <param name="A_08" value="id='ini_E2()' algoritmo='sí' expresión='x' hacer='E2_a=ent(rnd*10);E2_b=ent(rnd*10);E2_c=ent(rnd*10)' ">
+    <param name="A_09" value="id='ini_E1()' algoritmo='sí' expresión='x' hacer='ini_permutacion();permutacionAleatoria(3);;E1_a=ent(rnd*10)+1;E1_b=ent(rnd*10);E1_c=ent(rnd*10);E1_a_sign=(ent(rnd*2)=0)?-1:1;E1_b_sign=(ent(rnd*2)=0)?-1:1;E1_c_sign=(ent(rnd*2)=0)?-1:1;;;E1_a=E1_a_sign*E1_a;E1_b=E1_b_sign*E1_b;E1_c=E1_c_sign*E1_c;;;E1_denominador=(E1_b=0)?&squot;x&squot;:&squot;&squot;;tempE1_b=abs(E1_b);E1_denominador=((E1_b!=0)&(E1_b_sign=1))?&squot;x + &squot;+tempE1_b:E1_denominador;E1_denominador=((E1_b!=0)&(E1_b_sign=-1))?&squot;x - &squot;+tempE1_b:E1_denominador;tempE1_c=abs(E1_c);;E1_c_Str=&squot;&squot;;E1_c_Str=((E1_c!=0)&(E1_c_sign=1))?&squot; + &squot;+tempE1_c:E1_c_Str;E1_c_Str=((E1_c!=0)&(E1_c_sign=1))?&squot; - &squot;+tempE1_c:E1_c_Str;;respuestas[permutacion[0]]=&squot;El conjunto de los números reales excepto el número &squot;+E1_b;E1_temp_b=-E1_b;respuestas[permutacion[1]]=&squot;El conjunto de los números reales excepto el número &squot;+E1_temp_b;E1_tipo=ent(rnd*2);respuestas[permutacion[2]]=(E1_tipo=0)?&squot;El conjunto de los números reales excepto el número &squot;+E1_a:&squot;El conjunto de los números reales excepto el número &squot;+E1_c;E1_temp_a=-E1_a;E1_temp_c=-E1_c;E1_temp_c=(E1_a==E1_c)?E1_temp_a+ent(rnd*3)+1:E1_temp_c;;respuestas[permutacion[3]]=(E1_tipo=0)?&squot;El conjunto de los números reales excepto el número &squot;+E1_temp_a:&squot;El conjunto de los números reales excepto el número &squot;+E1_temp_c;;;E1_posIniXTxt=55;E1_posIniYTxt=150;E1_posSepTxt=30;;E1_bien=0;E1_verif=0;E1_menu=-1' mientras='(abs(E1_a)=abs(E1_b))|(E1_b=E1_c)|(E1_b=E1_temp_c)|(E1_b=0)' ">
+    <param name="A_10" value="id='E1_verif()' algoritmo='sí' expresión='x' hacer='E1_bien=(E1_menu==permutacion[1])?1:0;E1_verif=1' ">
+    <param name="A_11" value="id='Reinit()' algoritmo='sí' expresión='x' hacer='ini_E0();ini_E2();ini_E1()' ">
+    <param name="A_12" value="id='imprimeFunc()' algoritmo='sí' expresión='x' hacer='E2_a_sign=(E2_a<0)?-1:1;E2_b_sign=(E2_b<0)?-1:1;E2_c_sign=(E2_c<0)?-1:1;;;E2_denominador=(E2_b=0)?&squot;x&squot;:&squot;&squot;;tempE2_b=abs(E2_b);E2_denominador=((E2_b!=0)&(E2_b_sign=1))?&squot;x + &squot;+tempE2_b:E2_denominador;E2_denominador=((E2_b!=0)&(E2_b_sign=-1))?&squot;x - &squot;+tempE2_b:E2_denominador;tempE2_c=abs(E2_c);;E2_c_Str=&squot;&squot;;E2_c_Str=((E2_c!=0)&(E2_c_sign=1))?&squot; + &squot;+tempE2_c:E2_c_Str;E2_c_Str=((E2_c!=0)&(E2_c_sign=1))?&squot; - &squot;+tempE2_c:E2_c_Str' ">
+    <param name="A_13" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='Reinit();' ">
+    <param name="A_14" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='imprimeFunc()' ">
+    <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[50,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs52 El dominio de la función  {\*\mjaformula f(x)&nbsp;={\fraction{\num{\expr E1_a\decimals 1\fixed0}}{\den{\expr E1_denominador\decimals 1\fixed0}}}{\expr E1_c_Str\decimals 1\fixed0}} \f1 es\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[E1_posIniXTxt,E1_posIniYTxt]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52{\*\mjaformula a){\expr respuestas[0]\decimals undefined\fixed0}}\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[E1_posIniXTxt,E1_posIniYTxt+E1_posSepTxt]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52{\*\mjaformula b){\expr respuestas[1]\decimals undefined\fixed0}}\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[E1_posIniXTxt,E1_posIniYTxt+2*E1_posSepTxt]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52{\*\mjaformula c){\expr respuestas[2]\decimals undefined\fixed0}}\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[E1_posIniXTxt,E1_posIniYTxt+3*E1_posSepTxt]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52{\*\mjaformula d){\expr respuestas[3]\decimals undefined\fixed0}}\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(E1_verif)&(E1_bien)' expresión='[300,E1._h-100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green137\blue0;}\f0\cf0\fs52\b ¡Correcto!\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='E1_verif&!E1_bien' expresión='[298,E1._h-100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;}\f0\cf0\fs52\b ¡Incorrecto!\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,14' align='a_left' ">
+    <param name="Animación" value="pausa='(paso>2)&(t>0.13)&(t<0.25)?180:50' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+0.005;anim=0;p0.x=p0.x+t;p1.x=p1.x+t;p2.x=p2.x+t;p3.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p3.x);p4.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p4.x);escala=(paso=3)&((t>=0.13)&(t<0.20))?escala/2^(0.9*t):((paso=3)&((t>=0.20)&(t<0.25))?escala*2^(0.9*t):escala);escala=(paso=4)&((t>=0.13)&(t<0.20))?escala*2^(0.3*t):((paso=4)&((t>=0.20)&(t<0.25))?escala/2^(0.3*t):escala);Oy=(paso=4)&((t>=0.13)&(t<0.18))?Oy+700*t:((paso=4)&(t>=0.18)&(t<0.25)?Oy-2330*(t-0.18):Oy);;' mientras='t<0.38' ">
+  </ajs>
+
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Indicar el femenino de nombres de personas y animales.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>
+
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body >
+
+<p align="left">
+<ajs name="Descartes" width=790 height=520
+        code="Descartes.class"
+        codebase="../"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="790x520">
+   <param name="pleca" value="title='Analiza cada suma propuesta y el proceso que se sigue para resolverla.' subtitle='Presta atenci&oacute;n a los denominadores, pues all&iacute; esta la clave.' subtitlines='2' bgcolor='268bea' fgcolor='ffffff' align='center' titleimage='images/instrucciones.jpg' titlefont='SansSerif,PLAIN,22' subtitlefont='SansSerif,PLAIN,22' ">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.107, 2013-08-17">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='s&iacute;' escala='100' O.x='-75' O.y='-55' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='n4' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Resolver' expresi&oacute;n='(300,400,150,30)' fijo='s&iacute;' visible='s&iacute;' color-int='fff0f8ff' negrita='s&iacute;' fuente puntos='18' imagen='imagenes/btn150.png' acci&oacute;n='calcular' par&aacute;metro='muestra=1\nanimar=1\npartes=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='otro=1' activo-si='animar=0'">
+   <param name="C_02" value="id='n5' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otra suma' expresi&oacute;n='(20,400,150,30)' fijo='s&iacute;' visible='s&iacute;' color-int='fff0f8ff' negrita='s&iacute;' fuente puntos='18' imagen='imagenes/btn150.png' acci&oacute;n='calcular' par&aacute;metro='muestra=0\nb=ent(rnd*5)+2\na=ent(rnd*(b-1) + 1)\nd=ent(rnd*5)+2\nc=ent(rnd*(d-1) + 1)\nanimar=0\npartes=0\nintentos1=0\nintentos2=0\np=&squot;&squot;\nq=&squot;&squot;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(animar=1)&amp;(otro=1)'">
+   <param name="C_03" value="id='n8' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Debes Saber' expresi&oacute;n='(560,400,150,30)' fijo='s&iacute;' visible='s&iacute;' color-int='fff0f8ff' negrita='s&iacute;' fuente puntos='18' imagen='imagenes/btn150.png' acci&oacute;n='calcular' par&aacute;metro='otro=2\nanimar=0\npartes=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(animar=1)&amp;(otro=1)'">
+   <param name="C_04" value="id='n7' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Seguir explorando' expresi&oacute;n='(560,400,200,30)' fijo='s&iacute;' visible='s&iacute;' color-int='fff0f8ff' negrita='s&iacute;' fuente puntos='18' imagen='imagenes/btn200.png' acci&oacute;n='calcular' par&aacute;metro='otro=1\nmuestra=0\npartes=0\nb=ent(rnd*5)+2\na=ent(rnd*(b-1) + 1)\nd=ent(rnd*5)+2\nc=ent(rnd*(d-1) + 1)\nanimar=0\nintentos1=0\nintentos2=0\np=&squot;&squot;\nq=&squot;&squot;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='otro=2'">
+   <param name="A_01" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='SOM.Top=200;SOM.Left=200;SOM.transp=0.80;SOM.rojo=0.28;SOM.verde=0.60;SOM.azul=0.93;otro=1;;;;'">
+   <param name="A_02" value="id='b' constante='s&iacute;' expresi&oacute;n='ent(rnd*5)+2' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(rnd*(b-1) + 1)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='a2' algoritmo='s&iacute;' evaluar='siempre' hacer='r1=ent(a/b);re=a-b*r1'">
+   <param name="A_05" value="id='muestra' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='d' constante='s&iacute;' expresi&oacute;n='ent(rnd*5)+2' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(rnd*(d-1) + 1)' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='e8' evento='s&iacute;' condici&oacute;n='animar=1' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' dibujar-si='otro=1' expresi&oacute;n='(-1,1)' archivo='imagenes/pizza.png'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' dibujar-si='otro=1' expresi&oacute;n='(1,1)' archivo='imagenes/pizza.png'">
+   <param name="G_03" value="espacio='E1' tipo='macro' expresi&oacute;n='macros/sombras.txt' nombre='SOM'">
+   <param name="G_04" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='otro=1' fin='(360*a)/b' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='36ff00ff' ancho='0'">
+   <param name="G_05" value="espacio='E1' tipo='arco' color='blanco' dibujar-si='otro=1' centro='(2,0)' fin='(360*c)/d' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='3cffff00'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' color='84ffffff' dibujar-si='(otro=1)&amp;(partes=1)' expresi&oacute;n='(0,0)(cos(2*s*pi/mcm),sen(2*s*pi/mcm))' familia='s' s.intervalo='[0,mcm]' s.pasos='mcm' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='3'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' color='87ffffff' dibujar-si='(otro=1)&amp;(partes=1)' expresi&oacute;n='(2,0)(cos(2*s*pi/mcm)+2,sen(2*s*pi/mcm))' familia='s' s.intervalo='[0,mcm]' s.pasos='mcm' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='3'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='(animar=1)&amp;(otro=1)' expresi&oacute;n='[250,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs52\i{\*\mjaformula{\fraction{\num{\expr [a]\decimals 0\fixed1}}{\den{\expr [b]\decimals 0\fixed1}}}}+{\*\mjaformula{\fraction{\num{\expr [c]\decimals 0\fixed1}}{\den{\expr [d]\decimals 0\fixed1}}}}  =  {\*\mjaformula{\fraction{\num{\expr [(mcm/b)*a]\decimals 0\fixed1}}{\den{\expr [mcm]\decimals 0\fixed1}}}} +{\*\mjaformula{\fraction{\num{\expr [(mcm/d)*c]\decimals 0\fixed1}}{\den{\expr [mcm]\decimals 0\fixed1}}}= }{\*\mjaformula{\fraction{\num{\expr [(mcm/b)*a+(mcm/d)*c]\decimals 0\fixed1}}{\den{\expr [mcm]\decimals 0\fixed1}}}}  \cf1\f2\fs24\i0}' fuente='Arial Italic,ITALIC,26' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='(animar=0)&amp;(otro=1)' expresi&oacute;n='[250,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs52\i{\*\mjaformula{\fraction{\num{\expr [a]\decimals 0\fixed1}}{\den{\expr [b]\decimals 0\fixed1}}}}+{\*\mjaformula{\fraction{\num{\expr [c]\decimals 0\fixed1}}{\den{\expr [d]\decimals 0\fixed1}}}}  =  \cf1\f2\fs24\i0}' fuente='Arial Italic,ITALIC,26' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='otro=2' expresi&oacute;n='[40,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red255\green111\blue0;\red0\green0\blue255;}\f1\fs42   \cf0                  \b\i\cf1   Para sumar o restar fraciones estas \par                      tienen que tener el mismo denominador.\cf0\b0\i0\par \par Si tienen el mismo denominador, se suman (o restan) \par los numeradores y se deja el mismo denominador com\u250 n.\par \cf1\fs48 Ejemplo: {\*\mjaformula{\fraction{\num 3}{\den 5}}}+{\*\mjaformula{\fraction{\num 1}{\den 5}}}+{\*\mjaformula{\fraction{\num 2}{\den 5}}}= {\*\mjaformula{\fraction{\num 3+1+3}{\den 5}}}={\*\mjaformula{\fraction{\num 7}{\den 5}}}\fs42\par \cf0\par Para sumar o restar fracciones con distintos denominadores\par se convierten primero a \b un com\u250 n denominador\b0 .\par \cf1\fs48 Por ejemplo: {\*\mjaformula{\fraction{\num 3}{\den 4}}}+{\*\mjaformula{\fraction{\num 1}{\den 3}}}={\*\mjaformula{\fraction{\num 9}{\den 12}}}+{\*\mjaformula{\fraction{\num 4}{\den 12}}}={\*\mjaformula{\fraction{\num 13}{\den 12}}}\cf0\fs42\par \par \cf2\f5\fs24}' fuente='Arial,PLAIN,21' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='s&iacute;' auto='s&iacute;' inicio='i=1' hacer='mcm=b*i;i=(mcm%d=0)?10000:i+1' mientras='(i&lt;=b*d)'">
+</ajs></p>
+
+</body>
+</body>
+<script type="descartes/macro" id="macros/sombras.txt">
+tipo_de_macro=R2
+Idioma=espa&ntilde;ol
+id='W' constante='s&iacute;' expresi&oacute;n='790' evaluar='una-sola-vez'
+id='H' constante='s&iacute;' expresi&oacute;n='485' evaluar='una-sola-vez'
+id='Top' constante='s&iacute;' expresi&oacute;n='400' evaluar='una-sola-vez'
+id='Left' constante='s&iacute;' expresi&oacute;n='300' evaluar='una-sola-vez'
+id='transp' constante='s&iacute;' expresi&oacute;n='0.8' evaluar='una-sola-vez'
+id='rojo' constante='s&iacute;' expresi&oacute;n='0.18' evaluar='una-sola-vez'
+id='verde' constante='s&iacute;' expresi&oacute;n='0.1' evaluar='una-sola-vez'
+id='azul' constante='s&iacute;' expresi&oacute;n='0.93' evaluar='una-sola-vez'
+tipo='curva' color='(rojo,verde,azul,transp)' coord_abs='s&iacute;' expresi&oacute;n='((t<=1)?Top*t^2:Top*(1-t),(t<=1)?Left*(1-sqrt(1-(1-t^2)^2)):0)' t.intervalo='[0,2]' t.pasos='64' relleno='(rojo,verde,azul,transp)' ancho='0' visible='no' 
+tipo='curva' color='(rojo,verde,azul,transp)' coord_abs='s&iacute;' expresi&oacute;n='((t<=1)?W-Top*t^2:W-Top*(1-t),(t<=1)?H-Left*(1-sqrt(1-(1-t^2)^2)):H)' t.intervalo='[0,2]' t.pasos='64' relleno='(rojo,verde,azul,transp)' ancho='0' visible='no' 
+</script>
+</html>

@@ -1,0 +1,51 @@
+a {
+	color: #FF6600;
+	text-decoration: none;
+}
+a:hover {
+	color: #99CC00;
+}
+.textopeque {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.superpequeño {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	vertical-align: super;
+}
+.subpeque {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	vertical-align: sub;
+}
+.parapop {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #f1f1f1;
+	text-align: justify;
+	display: block;
+	padding: 4px;
+	width: auto;
+	border: thin dashed #FF6600;
+	cursor: auto;
+}
+.sobre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: overline;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+}
+.recuadro {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #CCCC99;
+}
+.recuadronaranja {
+	border: 1px solid #FF6600;
+}
+.paravector {
+	text-decoration: overline;
+}

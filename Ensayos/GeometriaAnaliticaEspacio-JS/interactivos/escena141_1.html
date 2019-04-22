@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Propiedades del producto escalar</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font5.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="ffffff">
+
+  <p align="left">
+    <ajs name="Descartes" code="descinst.Descartes.class" width="740" height="180">
+      <param name="tamaño" value="740x180">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='escala=40;x0=-2;y0=3;z0=-1;v1=1;v2=-2;v3=2;info=1' ">
+      <param name="A_02" value="id='CALCULOS_v' algoritmo='sí' evaluar='siempre' hacer='E2.Ox=108*(h>0);vi.rojo=0.6;vi.azul=0.6;vi.verde=0.6;vi.a=1;vi.b=0;vi.c=0;vj.rojo=0.6;vj.azul=0.6;vj.verde=0.6;vj.a=0;vj.b=1;vj.c=0;vk.rojo=0.6;vk.azul=0.6;vk.verde=0.6;vk.a=0;vk.b=0;vk.c=1;vu.a=x0;vu.b=y0;vu.c=z0;vv.a=v1;vv.b=v2;vv.c=v3;vw.rojo=0.3;vw.azul=0.5;vw.verde=0.6;vw.a=x0+alfa*v1;vw.b=y0+alfa*v2;vw.c=z0+alfa*v3' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='206090' coord_abs='sí' expresión='(0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs40\b Propiedades del producto mixto\b0}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[0,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs34 Teniendo en cuenta las propiedades de los determinantes e\cf0 s fácil probar que \par\par\par\par\par\par\par\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='206090' coord_abs='sí' expresión='(30,67)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b 1)\b0}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(55,68)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 [ \b u\b0 , \b v\b0 , \b w\b0  ] = [ \b v\b0 , \b w\b0 , \b u\b0  ] = [ w, \b u\b0 , \b v\b0  ] = - [ \b u\b0 , \b w\b0 , \b v\b0  ]}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='206090' coord_abs='sí' expresión='(30,95)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b 2)\b0}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(55,96)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 [ a\b u\b0 , b\b v\b0 , c\b w\b0  ] = abc [ \b u\b0 , \b v\b0 , \b w\b0  ]  siendo a, b, c números reales.}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='206090' coord_abs='sí' expresión='(30,123)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b 3)\b0}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(55,124)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 [ \b u\b0 , \b v\b0 , \b w\b0  ] = 0 si y solo si \b u\b0 , \b v\b0  y \b w\b0  son linealmente dependientes.}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='206090' coord_abs='sí' expresión='(30,151)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b 4)\b0}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(55,152)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs34 [ \b u + h\b0 , \b v\b0 , \b w\b0  ] = [ \b u\b0 , \b v\b0 , \b w\b0  ] + [ \b h\b0 , \b v\b0 , \b w\b0  ]}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="S_01" value="espacio='E0' tipo='segmento' fondo='no' color='ff6600' expresión='(x0,y0,z0)(x0+alfa*v1,y0+alfa*v2,z0+alfa*v3)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='5' Nu='7' ">
+      <param name="S_02" value="espacio='E2' tipo='punto' fondo='no' color='54ff6600' color_reverso='cc0000' expresión='(v1,v2,v3)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red136\green0\blue0;}\cf0\f1\fs32\b v\f2\fs24\b0}' negrita='sí' cursiva='no' font_family='Arial Negrita' fuente puntos='16' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_03" value="nombre='ejes' espacio='E2' tipo='macro' fondo='no' expresión='macros/mis_ejes.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_04" value="nombre='vi' espacio='E2' tipo='macro' fondo='no' expresión='macros/vector0.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_05" value="nombre='vj' espacio='E2' tipo='macro' fondo='no' expresión='macros/vector0.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_06" value="nombre='vk' espacio='E2' tipo='macro' fondo='no' expresión='macros/vector0.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_07" value="nombre='vv' espacio='E2' tipo='macro' fondo='no' expresión='macros/vector0.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_08" value="nombre='vu' espacio='E2' tipo='macro' fondo='no' expresión='macros/vector0.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_09" value="nombre='vw' espacio='E2' tipo='macro' fondo='no' expresión='macros/vector.txt' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' ">
+      <param name="S_10" value="espacio='E2' tipo='punto' fondo='no' color='ff6600' color_reverso='cc0000' expresión='(x0+alfa*v1,y0+alfa*v2,z0+alfa*v3)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red136\green0\blue0;}\f1\fs36\cf0   u +\f2\fs40\i  \u945 \f1\fs36\i0  v\cf1\f3\fs24}' negrita='no' cursiva='no' font_family='Arial' fuente puntos='18' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_11" value="espacio='E2' tipo='punto' fondo='no' color='990000' color_reverso='ff6600' expresión='(x0/2,y0/2,z0/2)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red153\green0\blue0;}\f1\fs36  \cf0 u\cf1\f2\fs24}' negrita='no' cursiva='no' font_family='Arial' fuente puntos='18' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_12" value="espacio='E2' tipo='punto' fondo='no' color='990000' color_reverso='ff6600' expresión='(0,0,0)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red153\green0\blue0;}\f1\fs36\cf0 O\cf1\f2\fs24}' negrita='no' cursiva='no' font_family='Arial' fuente puntos='18' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_13" value="espacio='E2' tipo='punto' fondo='no' color='990000' color_reverso='ff6600' expresión='(1,0,0)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red108\green108\blue108;\red153\green0\blue0;}\cf0\f1\fs32\b\i  \ol i\f3\fs24\b0\i0\olnone\cf1}' negrita='sí' cursiva='sí' font_family='Times New Roman Negrita Cursiva' fuente puntos='16' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_14" value="espacio='E2' tipo='punto' fondo='no' color='990000' color_reverso='ff6600' expresión='(0,1,0)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red108\green108\blue108;\red153\green0\blue0;}\cf0\f1\fs32\b\i  \ol j\f3\fs24\b0\i0\olnone\cf1}' negrita='sí' cursiva='sí' font_family='Times New Roman Negrita Cursiva' fuente puntos='16' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_15" value="espacio='E2' tipo='punto' fondo='no' color='990000' color_reverso='ff6600' expresión='(0,0,1)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red108\green108\blue108;\red153\green0\blue0;}\cf0\f1\fs32\b\i  \ol k\f3\fs24\b0\i0\olnone\cf1}' negrita='sí' cursiva='sí' font_family='Times New Roman Negrita Cursiva' fuente puntos='16' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_16" value="espacio='E2' tipo='superficie' fondo='no' color='b793bad2' color_reverso='b793bad2' expresión='x=u*x0+v*alfa*v1 y=u*y0+v*alfa*v2  z=u*z0+v*alfa*v3' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' Nu='7' Nv='7' ">
+      <param name="S_17" value="espacio='E2' tipo='punto' fondo='no' color='ff6600' color_reverso='cc0000' expresión='(x0,y0,z0)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}{\colortbl\red136\green0\blue0;}\cf0\f1\fs24}' negrita='no' cursiva='no' font_family='Times New Roman' fuente puntos='12' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_18" value="espacio='E2' tipo='texto' fondo='no' color='negro' expresión='[20,27]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs34\i\u945  =\f2\fs24\i0}' decimales='2' fijo='sí' negrita='no' cursiva='sí' font_family='Times New Roman Cursiva' fuente puntos='17' ">
+      <param name="S_19" value="espacio='E2' tipo='punto' fondo='no' color='990000' color_reverso='ff6600' expresión='(v1/2,v2,v3/2)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red153\green0\blue0;}\cf0\f1\fs34\b  v\cf1\f2\fs24\b0}' negrita='sí' cursiva='no' font_family='Arial Negrita' fuente puntos='17' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>

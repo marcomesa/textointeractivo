@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="720" height="450" code="Descartes">
+    <param name="tamaño" value="720x450">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' cID='124266eaeef' x='0' y='0' ancho='720' alto='450' dibujar-si='1' fijo='no' escala='15' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='sí' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='E0_sig' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Siguiente' expresión='(E0._w/4-70,E0._h-40,130,35)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E0_ejemplo=(E0_ejemplo+1)%4\n' ">
+    <param name="A_01" value="id='E0_f(x)' algoritmo='sí' expresión='E0_aux' hacer='E0_aux=((E0_ejemplo=0)&(10*x+5>0))?sqrt(10*x+5):0;E0_aux=((E0_ejemplo=1)&(abs(x)>0.01))?1/x:E0_aux;E0_aux=(E0_ejemplo=2)?x-1:E0_aux;' ">
+    <param name="A_02" value="id='E2_verif()' algoritmo='sí' expresión='x' hacer='E2_bien=0;E2_bien=((E2_ejemplo=0)&(E2_menu=1))?1:E2_bien;E2_bien=((E2_ejemplo=1)&(E2_menu=3))?1:E2_bien;E2_bien=((E2_ejemplo=2)&(E2_menu=2))?1:E2_bien;E2_bien=((E2_ejemplo=3)&(E2_menu=1))?1:E2_bien;E2_bien=((E2_ejemplo=4)&(E2_menu=3))?1:E2_bien;' ">
+    <param name="A_03" value="id='E3_verif()' algoritmo='sí' expresión='x' hacer='E3_bien=0;E3_bien=((E3_ejer=0)&(E3_cb_checked=0)&(E3_cb2_checked=1)&(E3_cb3_checked=0))?1:E3_bien;E3_bien=((E3_ejer=1)&(E3_cb_checked=0)&(E3_cb2_checked=1)&(E3_cb3_checked=1))?1:E3_bien;E3_bien=((E3_ejer=2)&(E3_cb_checked=0)&(E3_cb2_checked=1)&(E3_cb3_checked=1))?1:E3_bien;E3_bien=((E3_ejer=3)&(E3_cb_checked=0)&(E3_cb2_checked=1)&(E3_cb3_checked=1))?1:E3_bien;E3_bien=((E3_ejer=4)&(E3_cb_checked=0)&(E3_cb2_checked=0)&(E3_cb3_checked=1))?1:E3_bien;' ">
+    <param name="A_04" value="id='inicio' algoritmo='sí' evaluar='una-sola-vez' hacer='E0_a=4;;;E2_ejemplo=0;E2_num_ejem=4;E2_verif=0;E2_bien=0;;E3_cb_line_h=60;;E3_cb_x=E3._w/2-40;E3_cb_y=30;E3_cb_alto=14;E3_cb_ancho=14;;E3_cb2_x=E3_cb_x;E3_cb2_y=E3_cb_y+E3_cb_line_h;E3_cb2_alto=14;E3_cb2_ancho=14;;E3_cb3_x=E3_cb_x;E3_cb3_y=E3_cb2_y+E3_cb_line_h;E3_cb3_alto=14;E3_cb3_ancho=14;;E3_cb4_x=E3_cb_x;E3_cb4_y=E3_cb3_y+E3_cb_line_h;E3_cb4_alto=14;E3_cb4_ancho=14;' ">
+    <param name="G_01" value="espacio='E0' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(1,E0_a+0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 y = a\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,14' ">
+    <param name="G_02" value="espacio='E0' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(20,0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 x\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,14' ">
+    <param name="G_03" value="espacio='E0' tipo='punto' fondo='no' color='20303a' dibujar-si='E0_ejemplo<2' coord_abs='no' expresión='(1.8,9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 y\par}' decimales='2' fijo='sí' tamaño='0' fuente='Arial,PLAIN,12' ">
+    <param name="G_04" value="espacio='E0' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(-100,0)(100,0)' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_05" value="espacio='E0' tipo='segmento' fondo='no' color='20303a' dibujar-si='E0_ejemplo<2' coord_abs='no' expresión='(3,-100)(3,100)' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_06" value="espacio='E0' tipo='segmento' fondo='no' color='20303a' dibujar-si='(E0_ejemplo=2)|(E0_ejemplo=3)' coord_abs='no' expresión='(18,-100)(18,100)' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_07" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='(-100,E0_a)(100,E0_a)' decimales='2' fijo='sí' tamaño='2' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_08" value="espacio='E0' tipo='ecuación' fondo='no' color='205060' dibujar-si='E0_ejemplo=0' coord_abs='no' expresión='y=E0_a-8/x' ancho='2' visible='no' editable='no' ">
+    <param name="G_09" value="espacio='E0' tipo='ecuación' fondo='no' color='205060' dibujar-si='E0_ejemplo=1' coord_abs='no' expresión='y=(16.5*(x-2)²+10*(x-2)+1)/(4*(x-2)²+1)' ancho='2' visible='no' editable='no' ">
+    <param name="G_10" value="espacio='E0' tipo='ecuación' fondo='no' color='205060' dibujar-si='E0_ejemplo=2' coord_abs='no' expresión='y=E0_a-8/(-1*(x-21))' ancho='2' visible='no' editable='no' ">
+    <param name="G_11" value="espacio='E0' tipo='ecuación' fondo='no' color='205060' dibujar-si='E0_ejemplo=3' coord_abs='no' expresión='y=(16.5*(-x+20)²+10*(-x+20)+1)/(4*(-x+20)²+1)' ancho='2' visible='no' editable='no' ">
+    <param name="G_12" value="espacio='E0' tipo='polígono' fondo='no' color='20303a' coord_abs='sí' expresión='(1,1)(E0._w/2,1)(E0._w/2,E0._h)(1,E0._h)(1,1)' relleno='f0f8fa' ancho='0' lineDash='solid' ">
+    <param name="G_13" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' dibujar-si='E0_ejemplo=0' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red255\green255\blue255;}\f0\cf0\fs48 A medida que x se hace más grande,\par\f0\cf0\fs48 f(x) se aproxima al valor a. En\par\f0\cf0\fs48 este caso \cf0 f se acerca a la recta \par\f0\cf0\fs48 y=a por \cf0\b abajo\b0\cf0 . \cf0 Es decir, f(x) < a \par\f0\cf0\fs48 para valores muy \cf0 grandes de x.\par\par\f0\cf0\fs48 Ya has aprendido que la notación \par\f0\cf0\fs48 usada para describir este\par\f0\cf0\fs48 comportamiento \cf0 de la función es:\par\par\f0\cf0\fs48          \b{\*\mjaformula lim{\subix x→∞}f(x)=a}\b0\par\par\par\f0\cf2\fs24 Despu\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_14" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='E0_ejemplo=1' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red255\green255\blue255;}\f0\cf0\fs48 A medida que x s\cf0 e\cf0  hace más \cf0 grande,\par\f0\cf0\fs48 f(x) se aproxima al valor a. En\par\f0\cf0\fs48 este caso \cf0 f se acerca a la recta\par\f0\cf0\fs48 y=a por \cf0\b arriba\b0\cf0 . \cf0 Es decir, f(x) > a \par\f0\cf0\fs48 para valores muy \cf0 grandes de x.\par\par\f0\cf0\fs48 Ya has aprendido que la notación \par\f0\cf0\fs48 usada para describir este \par\f0\cf0\fs48 comportamiento \cf0 de la función es:\par\par\f0\cf0\fs48        \cf1\b  \b0\b{\*\mjaformula lim{\subix x→∞}f(x)=a}\b0\par\par\par\f0\cf2\fs24 Despu\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_15" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='E0_ejemplo=2' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green255\blue255;}\f0\cf0\fs48 A medida que x decrece, f(x) se \par\f0\cf0\fs48 aproxima al valor a. En este caso\par\f0\cf0\fs48 f se acerca a la recta y=a por \cf0\b abajo\b0\cf0 . \par\f0\cf0\fs48 Es decir, f(x) < a para valores muy \par\f0\cf0\fs48 pequeños de x.\par\par\f0\cf0\fs48 La notación \cf0 usada para describir\par\f0\cf0\fs48 este comportamiento \cf0 de la función es:\par\par\f0\cf0\fs48          \cf0\b      \b0\b{\*\mjaformula lim{\subix x→-∞}f(x)=a}\b0\par\par\par\f0\cf1\fs24 Despu\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_16" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='E0_ejemplo=3' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red255\green255\blue255;}\f0\cf0\fs48 A medida que x de\cf0 crece, f(x) se \par\f0\cf0\fs48 aproxima al valor a. En este caso\par\f0\cf0\fs48 f se acerca a la recta y=a por \cf0\b arriba\b0\cf0 . \par\f0\cf0\fs48 Es decir, f(x) > a para valores muy \par\f0\cf0\fs48 pequeños de x.\par\par\f0\cf0\fs48 La notación \cf0 usada para describir este\par\f0\cf0\fs48 comportamiento \cf0 de la función es:\par\par\f0\cf0\fs48      \cf1\b      \b0\b{\*\mjaformula lim{\subix x→-∞}f(x)=a}\b0\par\par\par\f0\cf2\fs24 Despu\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

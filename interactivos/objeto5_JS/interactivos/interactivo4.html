@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>TITULO</title>
+	<link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+
+<ajs name="Descartes" width=600 height=550 code="Descartes">
+   <param name="tamaño" value="600x550">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E4' ancho='600' alto='400' despl_imagen='arr-izq' fondo='fdf1ffff' red='00b3ff' red10='no' ejes='405860' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' y='400' alto='150' fijo='sí' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='Otroejer' tipo='numérico' interfaz='botón' región='interior' espacio='E4' nombre='Otro ejercicio' expresión='(E4._w-140-35,E4._h-35-5,140,35)' decimales='0' fijo='no' visible='sí' color='blanco' color-int='ff7100' negrita='sí' fuente puntos='22' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='oejer()' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='ver=1'">
+   <param name="C_02" value="id='verifica' tipo='numérico' interfaz='botón' región='interior' espacio='E4' nombre='Verifica' expresión='(E4._w-130-35,E4._h-35-5,130,35)' fijo='sí' visible='sí' color='blanco' color-int='ff7100' fuente puntos='22' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='verifica()' dibujar-si='ver=0'">
+   <param name="C_03" value="id='B' tipo='gráfico' espacio='E4' color='a8406080' color-int='a8cc0022' tamaño='10' fijo='sí' activo-si='ver=0'">
+   <param name="C_04" value="id='B.x' tipo='numérico' región='exterior' espacio='E4' nombre='B.x' valor='v1' incr='0.5' discreto='sí' decimales='1' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='B.y' tipo='numérico' región='exterior' espacio='E4' nombre='B.y' valor='v2' incr='0.5' discreto='sí' decimales='1' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='E4.escala' tipo='numérico' región='interior' espacio='E4' nombre='E4.escala' expresión='(E4._w-30-5,E4._h-50,30,50)' valor='25' incr='0.1*E4.escala' min='0.000001' decimales='(escala<0.1)+(escala<1)+(escala<10)+(escala<100)+(escala<1000)+(escala<10000)+(escala<100000)' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_07" value="id='ver' tipo='numérico' interfaz='botón' región='interior' espacio='E4' nombre='Verificar' expresión='(E4._w-120-35,E4._h-25-5,120,25)' decimales='0' fijo='no' visible='sí' color-int='9fff00' negrita='sí' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='oejer()' parámetro.fuente='Monospaced,PLAIN,12' activo-si='sol=1' pos_mensajes='centro'">
+   <param name="A_01" value="id='oejer()' algoritmo='sí' algoritmo='sí' hacer='ver=0;sol=0;n1=1-2*ent(rnd+0.5);v1=n1*(0.5)*ent((rnd+0.1)*10);n2=1-2*ent(rnd+0.5);v2=n2*(0.5)*ent((rnd+0.1)*10);;n3=1-2*ent(rnd+0.5);v3=n3*(0.5)*ent((rnd+0.1)*10);n4=1-2*ent(rnd+0.5);v4=n4*(0.5)*ent((rnd+0.1)*10);;E4.escala=25'">
+   <param name="A_02" value="id='verifica()' algoritmo='sí' algoritmo='sí' hacer='sol=(B.x=v3)&(B.y=v4);ver=1'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='n1=1-2*ent(rnd+0.5);v1=n1*(0.5)*ent((rnd+0.1)*10);n2=1-2*ent(rnd+0.5);v2=n2*(0.5)*ent((rnd+0.1)*10);;n3=1-2*ent(rnd+0.5);v3=n3*(0.5)*ent((rnd+0.1)*10);n4=1-2*ent(rnd+0.5);v4=n4*(0.5)*ent((rnd+0.1)*10);'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E2' tipo='texto' color='negro' dibujar-si='ver=0' expresión='[5,30,590,60]' texto='El punto rojo sobre el plano se puede arrastrar libremente con el ratón. Colócalo en la posición cuyas coordenadas son  ([v3],  [v4]), comprueba tu respuesta pulsando el botón de Verificar.' fuente='Monospaced,BOLD,24' fijo='sí' ancho='590'">
+   <param name="G_02" value="espacio='E4' tipo='texto' color='verde' dibujar-si='sol&ver' expresión='[20,130]' texto='¡Correcto!' fuente='Monospaced,BOLD,24' fijo='sí' color_borde_texto='negro'">
+   <param name="G_03" value="espacio='E2' tipo='texto' color='ff5c00' dibujar-si='(sol=0)&ver' expresión='[20,10]' texto='¡Incorrecto!\nObserva el punto azul\ncon la ubicación correcta' fuente='Monospaced,BOLD,24' fijo='sí' color_borde_texto='negro'">
+   <param name="G_04" value="espacio='E4' tipo='punto' color='c00000ff' dibujar-si='(sol=0)&ver' expresión='(v3,v4)' fijo='sí' tamaño='10'">
+</ajs>
+
+</body>
+</html>

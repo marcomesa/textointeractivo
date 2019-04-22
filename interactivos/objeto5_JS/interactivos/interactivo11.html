@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="760" height="490" code="Descartes">
+    <param name="tamaño" value="760x490">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='10' y='170' ancho='300' alto='300' dibujar-si='1' fijo='sí' escala='48' O.x='-10' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='889498' ejes='405860' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_03" value="tipo='R2' id='E2' x='320' y='170' ancho='460' alto='300' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='E1.escala' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='E1.escala' expresión='(E1._w-5-30,E1._h-5-50,30,50)' valor='30' incr='0.1*E1.escala' discreto='no' decimales='(escala<0.01)+(escala<1)+(escala<10)+(escala<100)+(escala<1000)+(escala<10000)+(escala<100000)' fijo='sí' visible='sí' ">
+    <param name="C_02" value="id='P' tipo='gráfico' espacio='E1' color='9f406080' color-int='b4cc0022' tamaño='10' expresión='(0,0)' ">
+    <param name="C_03" value="id='P.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='P.x' expresión='(0,0)' valor='-3' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="C_04" value="id='P.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='P.y' expresión='(0,0)' valor='-2' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="C_05" value="id='Q' tipo='gráfico' espacio='E1' color='ae406080' color-int='a8cc0022' tamaño='10' expresión='(0,0)' ">
+    <param name="C_06" value="id='Q.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='Q.x' expresión='(0,0)' valor='2' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="C_07" value="id='Q.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='Q.y' expresión='(0,0)' valor='1' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' ">
+    <param name="A_01" value="id='otroSegmento()' algoritmo='sí' expresión='x' hacer='m1=1-2*(ent(rnd+0.5));m2=1-2*(ent(rnd+0.5));m3=1-2*(ent(rnd+0.5));m4=1-2*(ent(rnd+0.5));;x1=m1*ent(rnd*10);y1=m2*ent(rnd*10);x2=m3*ent(rnd*10);y2=m4*ent(rnd*10);A.x=x1;A.y=y1;B.x=x2;B.y=y2;otrosegmento=0' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otrosegmento=0;x1=-4;y1=-1;x2=2;y2=3;' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a=(P.x+Q.x)/2;b=(P.y+Q.y)/2;;aa=(PP.x+QQ.x)/2;bb=(PP.y+QQ.y)/2;;c1=(A.x+B.x)/2;c2=(A.y+B.y)/2' ">
+    <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='20303a' expresión='[0,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red32\green80\blue96;\red32\green48\blue58;}\f0\cf0\fs48\b Ejemplo\b0\par\par\f0\cf1\fs48\b Dados los extremos del segmento PQ:   \b0\b{\*\mjaformula P(x{\subix 1}, y{\subix 1})&nbsp; y&nbsp; Q(x{\subix 2}, y{\subix 2})}\b0\cf1\b  \b0\cf1\b  \b0\par\f0\cf1\fs48\b Las coordenadas (a, b) del punto medio M son:\b0\par\par\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,BOLD,24' align='a_left' ">
+    <param name="G_02" value="espacio='E1' tipo='segmento' fondo='no' color='3366dd' coord_abs='no' expresión='(P.x,P.y)(Q.x,Q.y)' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_03" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(a,b)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 M\f2\fs24\par}' decimales='2' fijo='no' tamaño='4' fuente='Arial,PLAIN,14' ">
+    <param name="G_04" value="espacio='E1' tipo='punto' fondo='no' color='00aa22' coord_abs='no' expresión='(P.x,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 x1\f2\fs24\par}' decimales='2' fijo='sí' tamaño='4' fuente='Arial,PLAIN,14' ">
+    <param name="G_05" value="espacio='E1' tipo='punto' fondo='no' color='00aa22' coord_abs='no' expresión='(0,P.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 y1\f2\fs24\par}' decimales='2' fijo='sí' tamaño='4' fuente='Arial,PLAIN,14' ">
+    <param name="G_06" value="espacio='E1' tipo='punto' fondo='no' color='00aa22' coord_abs='no' expresión='(Q.x,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 x2\f2\fs24\par}' decimales='2' fijo='sí' tamaño='4' fuente='Arial,PLAIN,14' ">
+    <param name="G_07" value="espacio='E1' tipo='punto' fondo='no' color='00aa22' coord_abs='no' expresión='(0,Q.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 y2\f2\fs24\par}' decimales='2' fijo='sí' tamaño='4' fuente='Arial,PLAIN,14' ">
+    <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='20303a' expresión='[40,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;\red0\green0\blue255;}\f0\cf0\fs48\b                 \b0\cf1\b a = \b0\b{\*\mjaformula{\fraction{\num{\expr P.x\decimals 2\fixed0}{\expr (Q.x<0)?&squot;-&squot;:&squot;+&squot;\decimals 2\fixed0}{\expr abs(Q.x)\decimals 2\fixed0}}{\den 2}}}\b0\cf1\b  = \b0\cf0\b  \b0\b{\*\mjaformula{\expr a\decimals 2\fixed0}}\b0\cf1\b  \b0\par\f0\cf1\fs48\b        y\b0\par\f0\cf1\fs48\b                 b = \b0\b{\*\mjaformula{\fraction{\num{\expr P.y\decimals 2\fixed0}{\expr (Q.y<0)?&squot;-&squot;:&squot;+&squot;\decimals 2\fixed0}{\expr abs(Q.y)\decimals 2\fixed0}}{\den 2}}}\b0\cf1\b   = \b0\b{\*\mjaformula{\expr b\decimals 2\fixed0}}\b0\cf1\b  \b0\par\par\f0\cf1\fs48\b Por lo tanto, el punto medio del\b0\par\f0\cf1\fs48\b segmento PQ, \b0\cf1\b es:\b0\cf1\b   \b0\cf2\b M(\b0\b{\*\mjaformula{\expr a\decimals 2\fixed0}}\b0\cf2\b , \b0\b{\*\mjaformula{\expr b\decimals 2\fixed0}}\b0\cf2\b ) \b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,BOLD,24' align='a_left' ">
+    <param name="G_09" value="espacio='E1' tipo='punto' fondo='no' color='negro' coord_abs='no' expresión='(a,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green170\blue34;}\f1\fs28\cf0 a\cf1\f2\fs24\par}' decimales='2' fijo='sí' tamaño='3' fuente='Arial,PLAIN,14' ">
+    <param name="G_10" value="espacio='E1' tipo='punto' fondo='no' color='negro' coord_abs='no' expresión='(0,b)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green170\blue34;}\f1\fs28\cf0 b\cf1\f2\fs24\par}' decimales='2' fijo='sí' tamaño='3' fuente='Arial,PLAIN,14' ">
+    <param name="G_11" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(9*a/9,b)(8*a/9,b)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_12" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(7*a/9,b)(6*a/9,b)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_13" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(5*a/9,b)(4*a/9,b)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_14" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(3*a/9,b)(2*a/9,b)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_15" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(1*a/9,b)(0*a/9,b)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_16" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(a,9*b/9)(a,8*b/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_17" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(a,7*b/9)(a,6*b/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_18" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(a,5*b/9)(a,4*b/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_19" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(a,3*b/9)(a,2*b/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_20" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(a,1*b/9)(a,0*b/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_21" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(9*Q.x/9,Q.y)(8*Q.x/9,Q.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_22" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(7*Q.x/9,Q.y)(6*Q.x/9,Q.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_23" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(5*Q.x/9,Q.y)(4*Q.x/9,Q.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_24" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(3*Q.x/9,Q.y)(2*Q.x/9,Q.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_25" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(1*Q.x/9,Q.y)(0*Q.x/9,Q.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_26" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(Q.x,9*Q.y/9)(Q.x,8*Q.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_27" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(Q.x,7*Q.y/9)(Q.x,6*Q.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_28" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(Q.x,5*Q.y/9)(Q.x,4*Q.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_29" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(Q.x,3*Q.y/9)(Q.x,2*Q.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_30" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(Q.x,1*Q.y/9)(Q.x,0*Q.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_31" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(9*P.x/9,P.y)(8*P.x/9,P.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_32" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(7*P.x/9,P.y)(6*P.x/9,P.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_33" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(5*P.x/9,P.y)(4*P.x/9,P.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_34" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(3*P.x/9,P.y)(2*P.x/9,P.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_35" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(1*P.x/9,P.y)(0*P.x/9,P.y)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_36" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(P.x,9*P.y/9)(P.x,8*P.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_37" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(P.x,7*P.y/9)(P.x,6*P.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_38" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(P.x,5*P.y/9)(P.x,4*P.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_39" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(P.x,3*P.y/9)(P.x,2*P.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_40" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(P.x,1*P.y/9)(P.x,0*P.y/9)' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+  </ajs>
+
+
+
+</body>
+</html>

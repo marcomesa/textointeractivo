@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>título</title>
+  <link rel="stylesheet" href="../fonts/font4b.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="600" height="350" code="Descartes">
+    <param name="tamaño" value="600x350">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='rolle' cID='13c26334da1' x='0' y='0' ancho='600' alto='350' dibujar-si='1' fijo='sí' escala='30' O.x='-10%' O.y='25%' despl_imagen='arr-izq' fondo='ff396999' red='81c0c0c0' red10='889498' ejes='000000' texto='no' números='sí' eje-x='x' eje-y='y' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='A' tipo='gráfico' espacio='rolle' color='d8406080' color-int='d2cc0022' tamaño='10' expresión='(0,0)' constricción='y=(x-1)*(x-2)*(x-3)*(x-4)' ">
+    <param name="C_02" value="id='A.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='rolle' nombre='A.x' expresión='(0,0)' valor='0' incr='0.001' min='.500' max='4.500' discreto='no' decimales='3' fijo='sí' visible='sí' ">
+    <param name="C_03" value="id='A.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='rolle' nombre='A.y' expresión='(0,0)' valor='0' incr='0.001' discreto='no' decimales='3' fijo='sí' visible='sí' ">
+    <param name="C_04" value="id='B_rolle' tipo='numérico' interfaz='barra' región='interior' espacio='rolle' nombre='_nada_' expresión='(rolle._w-200,rolle._h-30,200,30)' valor='0' incr='0.001' min='0.500' max='4.500' discreto='no' decimales='3' fijo='sí' visible='sí' acción='calcular' parámetro='A.x=B_rolle' ">
+    <param name="A_01" value="id='f(x)' algoritmo='no' expresión='(x-1)*(x-2)*(x-3)*(x-4)' tipo='función' ">
+    <param name="A_02" value="id='g(x)' algoritmo='no' expresión='(f(x+dx)-f(x))/dx' tipo='función' ">
+    <param name="A_03" value="id='f1(x)' algoritmo='no' expresión='0.2*(x-1)*(x-2)' tipo='función' ">
+    <param name="A_04" value="id='g1(x)' algoritmo='no' expresión='(f1(x+dx1)-f1(x))/dx1' tipo='función' ">
+    <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='dx=0.000001;dx1=0.000001' ">
+    <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a=A.x' ">
+    <param name="G_01" value="espacio='rolle' tipo='ecuación' fondo='no' color='ffc81e' coord_abs='no' expresión='y=f(x)' ancho='2' visible='no' editable='no' ">
+    <param name="G_02" value="espacio='rolle' tipo='ecuación' fondo='no' color='rojo' coord_abs='no' expresión='y=f(a)+g(a)*(x-a)' ancho='2' visible='no' editable='no' ">
+    <param name="G_03" value="espacio='rolle' tipo='punto' fondo='no' color='000000' coord_abs='no' expresión='[a,f(a)]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b  P\b0}' decimales='2' fijo='sí' tamaño='2' fuente='Arial Bold,BOLD,18' ">
+    <param name="G_04" value="espacio='rolle' tipo='segmento' fondo='no' color='006300' coord_abs='no' expresión='[0.5,0][0.5,f(0.5)]' decimales='2' fijo='sí' tamaño='4' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_05" value="espacio='rolle' tipo='segmento' fondo='no' color='006300' coord_abs='no' expresión='[4.5,0][4.5,f(4.5)]' decimales='2' fijo='sí' tamaño='4' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_06" value="espacio='rolle' tipo='texto' fondo='no' color='ff0000' expresión='[50,270]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs44\b Tangente en P\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_07" value="espacio='rolle' tipo='texto' fondo='no' color='006300' expresión='[rolle.0x+130,rolle.Oy+5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b f(0.5)=\b0\b{\*\mjaformula{\expr f(0.5)\decimals 2\fixed0}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' anchor='a_top_left' ">
+    <param name="G_08" value="espacio='rolle' tipo='texto' fondo='no' color='006300' expresión='[rolle.0x+380,rolle.Oy+5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b f(4\b0\b .\b0\b 5)=\b0\b{\*\mjaformula{\expr f(4.5)\decimals 2\fixed0}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' align='a_left' anchor='a_top_left' ">
+    <param name="G_09" value="espacio='rolle' tipo='texto' fondo='no' color='ffffff' expresión='[3,26]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs44\b Derivada en P=\b0\b{\*\mjaformula{\expr g(a)\decimals 1\fixed0}}\b0}' decimales='3' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_10" value="espacio='rolle' tipo='texto' fondo='no' color='ffffff' expresión='[2,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green144\blue255;}\f0\cf0\fs44\b Derivada en P=\b0\b{\*\mjaformula{\expr g(a)\decimals 1\fixed0}}\b0}' decimales='3' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,17' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

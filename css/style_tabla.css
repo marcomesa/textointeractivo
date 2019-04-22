@@ -1,0 +1,82 @@
+/* Aquí definimos el estilo de las etiquetas <p>, <h1>, <h2>, <h3>, <a>, <li>, <td> y <th> */
+
+p {
+    color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 55px 0px 55px; font-weight: 580;
+	}
+	
+h1
+{
+	color: #009;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 35px;
+	margin: 0 0 0;
+	margin:25px 55px 5px 55px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2
+{
+	color: #009;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 35px;
+	margin:25px 55px 5px 55px;
+	text-align: left;
+	
+}
+
+h3
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: center; 
+}
+
+td {
+    color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 55px 0px 55px; font-weight: 580;
+	}
+
+
+
+/* Aquí cargamos la cubierta del libro */
+
+body{
+	color: black;  background:"#FFCC99"; 
+	
+}
+
+.integral
+{
+    color:#000;	font-size:50px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 55px 0px 55px; font-weight: 580;
+	}
+
+div.p { margin-top: 7pt;}
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.norm {line-height:normal;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td.sqrt {border-top:2 solid black;
+          border-left:2 solid black;
+          border-bottom:none;
+          border-right:none;}
+ table.sqrt {border-top:2 solid black;
+             border-left:2 solid black;
+             border-bottom:none;
+             border-right:none;}
+
+
+
+
+
+	

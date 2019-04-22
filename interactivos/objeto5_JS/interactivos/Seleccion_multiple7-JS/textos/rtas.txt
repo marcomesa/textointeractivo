@@ -1,0 +1,27 @@
+'Escribe las respuestas, a cada pregunta corresponden cinco respuestas. La primera respuesta es la correcta'
+
+'Riga.'
+'Vaduz.'
+'Vilna.'
+'Praga.'
+
+'La corriente se interrumpe justo después de conectar la batería, y nunca vuelve a pasar.'
+'La corriente siempre pasa y la bobina es muy fuerte como para dejar que la tapa regrese a su posición original.'
+'La corriente siempre pasa y la tapa de la lata no tiene una fuerza que la regrese a su posición original.'
+'Nunca pasa corriente por el circuito.'
+
+'La bobina se comporta como un imán invertido respecto al original, pero sigue atrayendo a la tapa de la lata.'
+'La bobina en este caso hace vibrar la tapa de la lata empujándola en lugar de atrayéndola.'
+'La corriente fluye a veces en un sentido y a veces en otro, empujando y atrayendo la tapa de la lata y haciéndola vibrar.'
+'La corriente no fluye y la chicharra no suena.'
+
+'La batería es muy potente.'
+'Están mal lijados los extremos del alambre.'
+'Está mal lijada la tapa.'
+'La bobina está muy separada de la tapa.'
+
+'Conectar la pila al revés en el circuito.'
+'Usar una bobina con más vuelas de alambre.'
+'Acercar ligeramente la bobina a la tapa.'
+'Aflojar ligeramente la tapa del aro que se usa para unirla a la tabla de madera.'
+

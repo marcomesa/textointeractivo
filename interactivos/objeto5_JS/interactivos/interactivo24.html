@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Ejercicio resuelto: Es una función?</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+
+  <div align="center">
+    <ajs name="Descartes" width="560" height="430" code="Descartes">
+      <param name="tamaño" value="560x430">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="">
+      <param name="nombre" value="ejercicio1a">
+      <param name="Versión" value="6">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='texto' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='10' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0c7' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='imag' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='10' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fffff0c7' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R2' id='E1' x='1' y='50' ancho='560' alto='301' dibujar-si='1' fijo='sí' escala='16' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='dddddd' red10='no' ejes='6c6c6c' texto='no' números='sí' eje-x='X' eje-y='Y' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='imag' nombre='otra vez' expresión='(430,385,100,30)' valor='0' visible='sí' color='222222' color-int='f0f8ff' negrita='no' cursiva='no' subrayada='no' fuente puntos='19' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=fdced0|downColor=ff0000|font=sansSerif|shadowTextColor=rgba(0,0,0,0.2)|shadowBoxColor=808080|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='a=ent(rnd*12);k1=((-1)^ent(rnd*2))*ent(rnd*4+1);k2=((-1)^ent(rnd*2))*ent(rnd*6+1);si=0;no=0' dibujar-si='(si=1)|(no=1)' ">
+      <param name="C_02" value="id='si' interfaz='botón' tipo='numérico' región='interior' espacio='imag' nombre='SÍ' expresión='(450,10,28,28)' valor='0' visible='sí' color='222222' color-int='f0f8ff' negrita='no' cursiva='no' subrayada='no' fuente puntos='16' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=fdced0|downColor=ff0000|font=sansSerif|shadowTextColor=rgba(0,0,0,0.2)|shadowBoxColor=808080|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='si=1;no=0' dibujar-si='(si=0)&(no=0)' ">
+      <param name="C_03" value="id='no' interfaz='botón' tipo='numérico' región='interior' espacio='imag' nombre='NO' expresión='(490,10,28,28)' valor='0' visible='sí' color='222222' color-int='f0f8ff' negrita='no' cursiva='no' subrayada='no' fuente puntos='16' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=fdced0|downColor=ff0000|font=sansSerif|shadowTextColor=rgba(0,0,0,0.2)|shadowBoxColor=808080|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='no=1;si=0' dibujar-si='(si=0)&(no=0)' ">
+      <param name="C_04" value="id='g' tipo='gráfico' espacio='E1' color='aa0000' color-int='ddaa0000' tamaño='10' expresión='(0,0)' constricción='y=0' dibujar-si='(si=1)|(no=1)' ">
+      <param name="C_05" value="id='g.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='g.x' expresión='(0,0)' valor='-7' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+      <param name="A_01" value="id='f0(x)' algoritmo='no' expresión='(-k1+(x^2+1)^0.5)*(-1)^k1' ">
+      <param name="A_02" value="id='f1(x)' algoritmo='no' expresión='k1*x-k2' ">
+      <param name="A_03" value="id='f2(x)' algoritmo='no' expresión='0.1*k1*x^2-k2' ">
+      <param name="A_04" value="id='f3(x)' algoritmo='no' expresión='0.1*k1*x^3-0.5*k2*x' ">
+      <param name="A_05" value="id='f4(x)' algoritmo='no' expresión='0.2*k1*x*sen(x)' ">
+      <param name="A_06" value="id='f5(x)' algoritmo='no' expresión='(1.2*k2/(exp(-x)+1))-(k1/2)' ">
+      <param name="A_07" value="id='f6(x)' algoritmo='no' expresión='(2*k1*x)/(x^2+1)' ">
+      <param name="A_08" value="id='f7(x)' algoritmo='no' expresión='k2' ">
+      <param name="A_09" value="id='f8(x)' algoritmo='no' expresión='0.5*x^2-k2' ">
+      <param name="G_01" value="espacio='text' tipo='polígono' fondo='no' color='aa0000' coord_abs='sí' expresión='(0,0)(558,0)(558,49)(0,49)(0,0)' relleno='ffffff' ancho='1' lineDash='solid' ">
+      <param name="G_02" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=0' coord_abs='no' expresión='y=f0(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_03" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=1' coord_abs='no' expresión='y=f1(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_04" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=2' coord_abs='no' expresión='y=f2(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_05" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=3' coord_abs='no' expresión='y=f3(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_06" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=4' coord_abs='no' expresión='y=f4(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_07" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=5' coord_abs='no' expresión='y=f5(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_08" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=6' coord_abs='no' expresión='y=f6(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_09" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=7' coord_abs='no' expresión='y=f7(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_10" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=8' coord_abs='no' expresión='x=f8(y)' ancho='2' visible='no' editable='no' ">
+      <param name="G_11" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=9' coord_abs='no' expresión='(x/(2*k1))^2+(y/k2)^2=1' ancho='2' visible='no' editable='no' ">
+      <param name="G_12" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=10' coord_abs='no' expresión='x=k2' ancho='2' visible='no' editable='no' ">
+      <param name="G_13" value="espacio='E1' tipo='ecuación' fondo='no' color='0000cc' dibujar-si='a=11' coord_abs='no' expresión='(x/k1)^2-(y/k2)^2=1' ancho='2' visible='no' editable='no' ">
+      <param name="G_14" value="espacio='text' tipo='texto' fondo='no' color='0000ff' expresión='[2,12]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs48\b ¿Es la gráfica de una \b0\cf0\b función?\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,14' align='a_left' ">
+      <param name="G_15" value="espacio='text' tipo='texto' fondo='no' color='0000ff' dibujar-si='((si=1)&(a<=7))' expresión='[10,355]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs44\b En efecto, arrastr\b0\cf0\b a la recta\b0\par\f0\cf0\fs44\b y  \b0\cf0\b comprueba que cada x sólo\b0\par\f0\cf0\fs44\b tiene una imagen.\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,12' align='a_left' ">
+      <param name="G_16" value="espacio='texto' tipo='texto' fondo='no' color='0000ff' dibujar-si='((no=1)&(a>7))' expresión='[10,355]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs44\b En efecto, arrastra la recta \b0\par\f0\cf0\fs44\b y \b0\cf0\b comprueba que hay valores  \b0\par\f0\cf0\fs44\b de x con más de una imagen\b0\f1\cf0\fs24 .\par}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,12' align='a_left' ">
+      <param name="G_17" value="espacio='texto' tipo='texto' fondo='no' color='0000ff' dibujar-si='((si=1)&(a>7))|((no=1)&(a<=7))' expresión='[10,355]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs44\b Fíjate bien, arrast\b0\cf0\b ra la recta \b0\par\f0\cf0\fs44\b y comprueba si  cada  valor \b0\par\f0\cf0\fs44\b de x sólo tiene una imagen.\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,12' align='a_left' ">
+      <param name="G_18" value="espacio='E1' tipo='ecuación' fondo='no' color='aa0000' dibujar-si='(si=1)|(no=1)' coord_abs='no' expresión='x=g.x' ancho='1' visible='no' editable='no' ">
+      <param name="G_19" value="espacio='E1' tipo='punto' fondo='no' color='azul' dibujar-si='(si=1)|(n=1)' coord_abs='no' expresión='(g.x-2,-1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\f1\fs24\b\cf0\u8592 \fs20 arrastra\fs24\u8594 \cf1\f3\fs24\b0\par}' decimales='2' fijo='sí' tamaño='0' fuente='SansSerif,BOLD,12' ">
+      <param name="G_20" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=0)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f0(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_21" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=1)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f1(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_22" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=2)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f2(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_23" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=3)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f3(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_24" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=4)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f4(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_25" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=5)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f5(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_26" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=6)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f6(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_27" value="espacio='E1' tipo='punto' fondo='no' color='ff6600' dibujar-si='(a=7)&((si=1)|(no=1))' coord_abs='no' expresión='(g.x,f7(g.x))' decimales='2' fijo='sí' tamaño='4' fuente='SansSerif,PLAIN,18' ">
+      <param name="G_28" value="espacio='texto' tipo='texto' fondo='no' color='0000ff' expresión='[450,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 SI    NO\cf1\f2\fs24\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,BOLD,16' align='a_left' ">
+      <param name="G_29" value="espacio='texto' tipo='texto' fondo='no' color='0000ff' dibujar-si='si=1' expresión='[450,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b\ul SI\ulnone     NO\cf1\f3\fs24\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,BOLD,16' align='a_left' ">
+      <param name="G_30" value="espacio='texto' tipo='texto' fondo='no' color='0000ff' dibujar-si='no=1' expresión='[450,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b SI    \ul NO\cf1\f3\fs24\b0\ulnone\par}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,BOLD,16' align='a_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

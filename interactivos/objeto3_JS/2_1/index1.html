@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Ejemplo factorizacion </title>
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+   <link rel="stylesheet" href="../../../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font5.css" type="text/css">
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden;">
+
+  <p align="center">
+    <ajs name="Descartes" code="Descartes" width="650" height="210">
+      <param name="tamaño" value="700x210">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='40' ancho='94%' alto='57%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='n7' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='OTRO EJEMPLO' expresión='(20,168,150,30)' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/btn150.png' acción='calcular' parámetro='c0=ent(rnd*6)+1\nc1=ent(rnd*4)+1\nc2=ent(rnd*5)+1\nc3=ent(rnd*6)+1\ne0=ent(rnd*4)+1\ne1=ent(rnd*6)+1\ne2=ent(rnd*5)+1\ne3=ent(rnd*5)+1\n' ">
+      <param name="A_01" value="id='r' vector='sí' evaluar='una-sola-vez' tamaño='50' expresión='r[0]=0;r[1]=0;r[2]=0' tipo='vector' ">
+      <param name="A_02" value="id='c0' expresión='ent(rnd*6)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_03" value="id='c1' expresión='ent(rnd*7)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_04" value="id='c2' expresión='ent(rnd*8)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_05" value="id='c3' expresión='ent(rnd*4)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_06" value="id='e0' expresión='ent(rnd*4)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_07" value="id='e1' expresión='ent(rnd*4)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_08" value="id='e2' expresión='ent(rnd*4)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_09" value="id='e3' expresión='ent(rnd*4)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_10" value="id='a1' algoritmo='sí' evaluar='siempre' inicio='i=1;r[0]=c0*c1;r[1]=c0*c2' hacer='r[i+1]=r[i-1]%r[i];mcd1=r[i-1];i=i+1' mientras='r[i-1]!=0' ">
+      <param name="A_11" value="id='a2' algoritmo='sí' evaluar='siempre' inicio='i=1;r[0]=mcd1;r[1]=c0*c3' hacer='r[i+1]=r[i-1]%r[i];mcd=r[i-1];i=i+1' mientras='r[i-1]!=0' ">
+      <param name="A_12" value="id='a3' algoritmo='sí' evaluar='siempre' inicio='f=0' hacer='f=f+1;ef1=min(e0+e1,e0+e2);ef=min(ef1,e0+e3);' mientras='f<1' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[20,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs28 La expresión, presenta un polinomio al lado izquierdo de la igualdad y a la derecha la factorización\par\f0\cf0\fs28 del polinomio. }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[200,165]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs28 Si aparecen expresiones con exponente cero, se han dejado sólo \par\f0\cf0\fs28 por ilustración.  }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[30,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f0\cf0\fs40\b   \b0\cf0\b  \b0\b{\*\mjaformula{\expr c0*c1\decimals 0\fixed1}x{\supix{\expr e0+e1\decimals 0\fixed1}}+{\expr c0*c2\decimals 0\fixed1}x{\supix{\expr e0+e2\decimals 0\fixed1}}+{\expr c0*c3\decimals 0\fixed1}x{\supix{\expr e0+e3\decimals 0\fixed1}}={\expr mcd\decimals 0\fixed1}x{\supix{\expr ef\decimals 0\fixed1}}({\expr c1*c0/mcd\decimals 0\fixed1}x{\supix{\expr e0+e1-ef\decimals 0\fixed1}}+{\expr c2*c0/mcd\decimals 0\fixed1}x{\supix{\expr e0+e2-ef\decimals 0\fixed1}}+{\expr c3*c0/mcd\decimals 0\fixed1}x{\supix{\expr e0+e3-ef\decimals 0\fixed1}}{\supix})}\b0\par}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[130,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs26  FACTOR COMÚN\fs40\b   \b0\b{\*\mjaformula{\expr mcd\decimals 0\fixed1}}\b0\b x\b0\b{\*\mjaformula{\supix{\expr ef\decimals 0\fixed1}}}\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='13' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='ff0000' dibujar-si='mcd#1' coord_abs='sí' expresión='[400,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs28 Factor Numérico:\fs30\b  \b0\b{\*\mjaformula{\expr mcd\decimals 0\fixed1}}\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='ff0000' dibujar-si='mcd=1' coord_abs='sí' expresión='[400,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs28 Factor Numérico:\fs30\b  No tiene\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[400,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Courier New;}\f0\fs28 Factor Literal:\f1\fs30  \f0\fs40\b\i{\*\mjaformula x{\supix{\expr ef\decimals 0\fixed1}}}\i0\b0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </p>
+
+
+
+</body>
+</html>

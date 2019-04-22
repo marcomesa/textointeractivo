@@ -1,0 +1,13 @@
+tipo_de_macro=R2
+id='ancho' expresión='640' evaluar='una-sola-vez' constante='si'
+id='alto' expresión='400' evaluar='una-sola-vez' constante='si'
+id='Cx' expresión='ancho/2' evaluar='una-sola-vez' constante='si'
+id='Cy' expresión='alto/2' evaluar='una-sola-vez' constante='si'
+id='Cw' expresión='ancho/2' evaluar='una-sola-vez' constante='si'
+id='Ch' expresión='alto/2' evaluar='una-sola-vez' constante='si'
+id='Rojo' expresión='0.8' evaluar='una-sola-vez' constante='si'
+id='Verde' expresión='0.8' evaluar='una-sola-vez' constante='si'
+id='Azul' expresión='0.8' evaluar='una-sola-vez' constante='si'
+id='MaxT' expresión='1' evaluar='una-sola-vez' constante='si'
+tipo='segmento' color='(Rojo,Verde,Azul,MaxT*exp(-4*((s-Cy)/Ch)^2))' expresión='(P.x,s)(P.x+ancho,s)' familia='s' s.intervalo='[0,alto]' s.pasos='alto' tamaño='0' coord_abs='si' 
+tipo='segmento' color='(Rojo,Verde,Azul,MaxT*exp(-4*((s-Cx)/Cw)^2))' expresión='(s,P.y)(s,P.y+alto)' familia='s' s.intervalo='[0,ancho]' s.pasos='ancho' tamaño='0' coord_abs='si' 

@@ -1,0 +1,7 @@
+tipo_de_macro=R2
+id='a' expresión='4' evaluar='una-sola-vez' constante='si'
+id='b' expresión='3' evaluar='una-sola-vez' constante='si'
+id='rojo' expresión='1' evaluar='una-sola-vez' constante='si'
+id='verde' expresión='1' evaluar='una-sola-vez' constante='si'
+id='azul' expresión='0' evaluar='una-sola-vez' constante='si'
+tipo='polígono' color='negro' expresión='(0,0)(a,0)(a,b)(0,0)' relleno='(rojo,verde,azul)' 

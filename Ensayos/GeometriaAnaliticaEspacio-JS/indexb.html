@@ -1,0 +1,1389 @@
+﻿<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title>Libro digital interactivo</title>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/turn.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="fonts/font4.css" type="text/css">
+	<link rel="stylesheet" href="fonts/font3.css" type="text/css">
+	<link rel="stylesheet" href="fonts/font5.css" type="text/css">
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden; ">
+
+	<div id="book">
+	
+		<div class="hard" style="background-image: url(images/fondo.jpg);  border: 2px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; font-size:56px; position: absolute; top: 40px; left:150px; right:0; bottom:65px; line-height: 108%"><font color="white">Geometría analítica<br>del espacio</font>
+			<p style="position: absolute; top: 120px; left:0px; right:0;"><img src="images/portada.png" width="360px"></p>
+			<h1 class="t11" style="text-shadow: 2px 4px #89a; font-size:45px; position: absolute; top: 540px; left:150px; right:0;""><font color="112211" size="7">INTERACTIVO</font></h1>
+			
+		</div>
+		
+		<div class="hard" style="background-image: url(images/cover.png);">
+		<p align="center" style="position: absolute; bottom: 350px; left:0; right:0;"> <a id="logo"><img src="images/logo3.svg" alt="Descartes"></a>	</p>
+		</div>
+		
+		<div class="derecha">
+			<p align="center" style="position: absolute; top: 100px; left:0; right:0;"><span style="font-size:36px"><strong><big>GEOMETRÍA ANALÍTICA DEL ESPACIO</big></strong></span><br><span style="font-size:28px"><big>INTERACTIVO</big></span></p>
+			<br><br>
+			<p align="center" style="position: absolute; top: 240px; left:0; right:0;">Elena Esperanza Álvarez Sáiz<br>
+			María José García Cebrian<br><br>
+			Red Educativa Digital Descartes, España<br><br><img src="images/red.png" width="210px"></p>
+			<p align="center" style="position: absolute; bottom: 100px; left:0; right:0;">Fondo Editorial Pascual Bravo<br><br><img src="images/logo_pascual.png" width="130px"></p>
+			<p align="center" style="position: absolute; bottom: 60px; left:0; right:0;">Medellín</p>
+		</div>
+		
+		<div class="izquierda">
+			<p><span style="font-size:16px">Título de la obra<br>
+			Geometría analítica del espacio<br><br>
+			Elena Esperanza Álvarez Sáiz<br>
+			María José García Cebrian<br>
+			Primera edición: 2019</span></p>
+			<br><br><br>
+			<p> <span style="font-size:16px">Diseño del libro: Juan Guillermo Rivera Berrío<br>Diseño de cubierta: Diana María Velásquez García<br>
+			Librería turn.js: Emmanuel García<br>
+			Herramienta de edición: DescartesJS<br>
+			Fuente: Amaranth</span></p>
+			<p> <span style="font-size:16px">Fondo Editorial Pascual Bravo<br>
+			Calle 73 73A-226<br>
+			PBX: (574) 4480520<br>
+			Apartado 6564<br>
+			Medellín, Colombia<br>
+			<a style="font-size:16px" href="http://www.pascualbravo.edu.co/" target="_blank"><font color="blue">www.pascualbravo.edu.co</font></a></span></p>
+			<p style="font-size:14px; position: absolute; bottom: 60px; left:0; right:0;"><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/es/" target="_blank"><img src="images/88x31.png" style="height:40px; width:110px" /></a><br>Esta obra está bajo una licencia Creative Commons 4.0 internacional: Reconocimiento-No Comercial-Compartir Igual.<br>Todos los objetos interactivos y los contenidos de esta obra colectiva están protegidos por la Ley de Propiedad Intelectual.</p>
+			<p align="left"></p>
+		</div>
+		
+		<div class="derecha">
+			<h2 class="t2">Tabla de contenido</h2>
+<p><a class="a22" href="javascript:myFunction(7)"><b>Prólogo</b><span class="span2">vii</span></a></p>
+			<p><a class="a22" href="javascript:myFunction(13)"><b>PARTE I: Vectores</b><span class="span2">1</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(15)">&nbsp;&nbsp;&nbsp;&nbsp;Introducción<span class="span2">3</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(17)">&nbsp;&nbsp;&nbsp;&nbsp;1. El espacio <span style="letter-spacing: -0.12em;">IR</span><sup>3</sup><span class="span2">5</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(18)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1. Vector fijo y vector libre<span class="span2">6</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(19)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2. Módulo<span class="span2">7</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(20)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.3. Operaciones. Combinación lineal<span class="span2">8</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(22)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4. Dependencia e independencia lineal. Base.<span class="span2">10</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(25)">&nbsp;&nbsp;&nbsp;&nbsp;2. Producto escalar<span class="span2">13</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(25)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1. Vectores ortogonales<span class="span2">13</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(27)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2. Ángulo entre vectores<span class="span2">14</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(30)">&nbsp;&nbsp;&nbsp;&nbsp;3. Producto vectorial<span class="span2">18</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(31)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1. Área de un paralelogramo<span class="span2">19</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(34)">&nbsp;&nbsp;&nbsp;&nbsp;4. Producto mixto<span class="span2">22</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(36)">&nbsp;&nbsp;&nbsp;&nbsp;Autoevaluación<span class="span2">24</span></a></p>
+				
+		<p><a class="a22" href="javascript:myFunction(39)"><b>PARTE II: El espacio afín</b><span class="span2">27</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(41)">&nbsp;&nbsp;&nbsp;&nbsp;Introducción<span class="span2">29</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(43)">&nbsp;&nbsp;&nbsp;&nbsp;1. Sistema de referencia y puntos en el espacio<span class="span2">31</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(43)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1. Punto medio de un segmento<span class="span2">31</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(44)">&nbsp;&nbsp;&nbsp;&nbsp;2. Rectas en el espacio<span class="span2">32</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(45)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1. Ecuación de la recta<span class="span2">33</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(46)">&nbsp;&nbsp;&nbsp;&nbsp;3. Planos en el espacio<span class="span2">34</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(47)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1. Ecuación del plano<span class="span2">35</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(48)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2. Ecuación normal del plano<span class="span2">36</span></a></p>
+		
+		
+
+			<h3>iii</h3>	
+		</div>
+		
+		<div class="izquierda">
+			<h2 class="t2">&nbsp;</h2>
+				<p><a class="a2" href="javascript:myFunction(50)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3. Ejes y planos coordenados<span class="span2">38</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(51)">&nbsp;&nbsp;&nbsp;&nbsp;4. Incidencia y paralelismo<span class="span2">39</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(51)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1. Posiciones relativas de dos rectas en el espacio<span class="span2">39</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(53)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2. Posiciones relativas de dos planos<span class="span2">41</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(54)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.3. Posiciones relativas de tres planos<span class="span2">43</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(57)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.4. Posiciones relativas de una recta y un plano<span class="span2">45</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(59)">&nbsp;&nbsp;&nbsp;&nbsp;5. Resolución de problemas<span class="span2">47</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(59)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1. Determinar planos<span class="span2">47</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(62)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2. Determinar rectas<span class="span2">50</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(64)">&nbsp;&nbsp;&nbsp;&nbsp;6. Haz de planos<span class="span2">52</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(65)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1. Haz de planos secantes<span class="span2">53</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(66)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2. Haz de planos paralelos<span class="span2">54</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(67)">&nbsp;&nbsp;&nbsp;&nbsp;Autoevaluación<span class="span2">55</span></a></p>
+			<p><a class="a22" href="javascript:myFunction(69)"><b>PARTE III: Espacio métrico</b><span class="span2">57</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(71)">&nbsp;&nbsp;&nbsp;&nbsp;Introducción<span class="span2">59</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(73)">&nbsp;&nbsp;&nbsp;&nbsp;1. Ángulos<span class="span2">61</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(75)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1. Ángulos entre rectas y planos<span class="span2">62</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(77)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2. Rectas y planos perpendiculares<span class="span2">65</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(80)">&nbsp;&nbsp;&nbsp;&nbsp;2. Distancias<span class="span2">67</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(81)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1. Distancia de un punto a una recta y a un plano<span class="span2">69</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(82)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2. Distancia entre dos planos<span class="span2">71</span></a></p>			
+			<p><a class="a2" href="javascript:myFunction(84)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3. Distancia entre una recta y un plano<span class="span2">72</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(85)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4. Distancia entre dos rectas<span class="span2">73</span></a></p>
+		<p><a class="a2" href="javascript:myFunction(87)">&nbsp;&nbsp;&nbsp;&nbsp;3. Resolución de problemas<span class="span2">75</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(87)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1. Distancias paso a paso<span class="span2">75</span></a></p>
+		<h3>iv</h3>	
+		</div>
+		
+				<div class="derecha">
+			<h2 class="t2">&nbsp;</h2>
+				
+			<p><a class="a2" href="javascript:myFunction(89)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2. Punto simétrico de otro<span class="span2">77</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(91)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3. Lugares geométricos<span class="span2">79</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(93)">&nbsp;&nbsp;&nbsp;&nbsp;Autoevaluación<span class="span2">81</span></a></p>
+			<p><a class="a22" href="javascript:myFunction(95)"><b>Apéndice</b><span class="span2">83</span></a></p>
+			<p><a class="a2" href="javascript:myFunction(97)">&nbsp;&nbsp;&nbsp;&nbsp;Ejercicios para practicar<span class="span2">85</span></a></p>
+			<h3>v</h3>	
+		</div>
+		
+				<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+		<div class="derecha">
+			<h1>Prólogo</h1>
+			<p align="justify">
+			¿Quién soy?, ¿dónde estoy?, ¿hacia dónde voy?... ¡No!, ¡no te has equivocado de libro!, éste no es un libro de autoayuda, aunque también, es un libro de Matemáticas que busca dar respuesta a esas preguntas o más bien que quiere contribuir a que tú seas capaz de darlas. 
+			</p>
+<p align="justify" class="menosp">
+Bueno, la primera pregunta quizás sea demasiado existencial, aunque de partida René Descartes al ligar la existencia al raciocinio
+ ―”pienso luego existo”― nos facilitó al menos la consciencia de nuestro ser, si bien Shakespeare ―”ser o no ser”― 
+ ahondó en nuestra pesadumbre y, por ello, quizás debamos bordearla y simplemente poner de manifiesto cómo, 
+ al contemplar la inmensidad del Universo en el que vivimos, con seguridad en algún momento nos hemos sentido como seres puntuales, 
+ es decir, entes asimilables al objeto geométrico más simple: ¡El punto! Pero, ¿qué es un punto? Euclides lo define como “lo que no tiene parte”. 
+ Pero si no tiene parte, no existe, no es. Nuestros sentidos requieren un ancho y un largo, aunque sea muy pequeñito, para poder ver, oír, oler, saborear o palpar cualquier objeto, sin embargo... mi mente ¡lo ve!, ¡sí, lo veo!, 
+ las limitaciones de mi cuerpo biológico no son capaces de refrenar a mi intelecto y soy capaz de introducirme en un hipertúnel que me conduce a un mundo 
+ que denominamos matemático ―de μαθηματικóς: amante del conocimiento― un mundo ideal, no tangible, pero que cuando lo necesite podré 
+ desvirtualizar pasando del mundo abstracto al concreto, del mundo adimensional a la yocto-yotta realidad<sup>1</sup>.
+</p>
+<p align="justify" class="menosp">De acuerdo, ya sé quien soy ―parafraseando a Sócrates: “solo sé que no soy nada”― y de nuevo 
+es Cartesius quien nos orienta y ubica en nuestro contexto, quien sitúa un sistema de referencia, obviamente denominado 
+cartesiano, y me permite ubicarme, me otorga una posición, es como un estar sin ser, ocupo un lugar en el mundo geométrico sin tener dimensión…, 
+y, a su vez, me permite identificar de manera unívoca cada uno de los caminos por los que puedo optar para desplazarme; 
+caminos curvos que sólo tienen longitud, pero no anchura, y además, entre ellos identifico a aquellos que son más condescendientes conmigo, 
+que me ahorran energía, y me permiten llegar con menor recorrido, esos que intuitivamente son elegidos tanto por legos como profanos y 
+que son conocidos como rectos.
+</p>
+
+				
+		
+			<div class="footer">			&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+			<br>
+			<sup>1</sup>&nbsp;&nbsp;&nbsp;En longitud, el orden de magnitud de aquello que es físicamente apreciable o medible en nuestro entorno se ubica actualmente en el rango determinado por el intervalo [10<sup>-35</sup>, 10<sup>26</sup>] metros, es decir, desde la longitud de Planck al tamaño del universo observable. Pero en el Sistema Internacional el rango de prefijos para múltiplos y divisores se sitúa en el intervalo [yocto, yotta], es decir, [10<sup>-24</sup>, 10<sup>24</sup>], y de ahí surge nuestra denominación de yocto-yotta realidad.
+			</div>
+			<h3>vii</h3>
+		</div>
+	
+		
+		<div class="izquierda">
+			<h1>&nbsp;</h1>
+			<p align="justify" >¡Oh! adorada línea recta que siempre sigues a mi mirada sin desviarse un ápice de mi objetivo, que me indicas y marcas la dirección hacia la que voy. 
+			¡Oh! linda geometría euclidiana en la que si esa dirección que sigo se encuentra con un obstáculo, un bello monte por ejemplo, 
+			su empecinamiento director me fuerza... a construir ¡un túnel! ¿Cómo?... Vaya, <i>¡se me cayeron los palos del sombrajo!</i>&nbsp; 
+			Pero no, no ha de verse de esa perspectiva pesimista, la construcción de la geometría euclídeo-cartesiana, la geometría analítica, 
+			me permite primero ascender a la perfección construyendo una utopía en la que desarrollar el pensamiento y el razonamiento y, 
+			a su vez, desde la comprensión teórica poder posteriormente descender a nuestra yocto-yotta realidad y resolver problemas de nuestro 
+			entorno en los que aparecen otros condicionantes, otras variables que hay que contemplar e integrar en nuestro modelo final. 
+			</p>
+			<p align="justify" class="menosp">
+			Eso es lo que acontece, por ejemplo, cuando se quieren abordar arduas tareas como la que en su momento se plantearon al proyectar 
+			la construcción del túnel bajo el Canal de la Mancha o, en general, en cualquier proyecto de ingeniería que ha de enfrentarse a 
+			un mundo lleno de obstáculos que hay que salvar. Ni aun abordando la costosa construcción de un túnel este puede ser recto, pues ha de contemplar cuestiones geológicas de dureza o resistencia del terreno sobre el que hay que cavar y evitar aquellas que puedan ocasionar filtraciones que lo puedan inundar. O si queremos tardar lo menos posible, la mitad de tiempo, hemos de avanzar desde los dos extremos para encontrarnos en el punto medio y tendremos que usar muy bien la geometría analítica para tener la certeza de que nos vamos a encontrar en el sitio previsto y evitar que, si eso no aconteciese, construyamos dos túneles en lugar de uno. Los constructores del túnel del Canal de la Mancha se desviaron menos de medio metro, ¡todo un éxito geométrico-científico!
+
+</p>
+<p align="justify" class="menosp">A continuación se presentan dos vídeos. El primero es un vídeo breve (dos minutos) para que te ubiques en el contexto y objetivo de ese proyecto. 
+</p>
+<p align="justify" class="menosp">
+Pero más interesante es el siguiente. ¡Prepara tus palomitas y disfruta con el éxito de la Matemática y de la Ciencia! Cincuenta minutos vibrantes que no quedan minorados por una resolución de imagen que desde la perspectiva actual sería mejorable. Si tienes poco tiempo te sugiero avanzar al minuto diez y ver al menos cuatro minutos.
+<p>
+	<h3>viii</h3>		
+		</div>
+		
+			<div class="derecha">
+			<h1>&nbsp;</h1>
+			<p>
+<table width="740" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <tbody>
+ <tr>
+<td align="center" width="60" valign="middle"></td>
+<td align="center" width="560" valign="middle">
+			<iframe width="555" height="312" src="https://www.youtube.com/embed/us7bQnUdaVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			</td>
+			<td align="left" width="120" valign="bottom">
+			<a href="interactivos/video0.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-512)+',top='+(screen.availHeight/2-290)+',width=1024,height=580');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a>
+			</td>
+			</tr>
+			</table>
+			
+			<table width="740" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <tbody>
+ <tr>
+<td align="right" width="120" valign="bottom">
+			<a href="interactivos/video1.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-512)+',top='+(screen.availHeight/2-290)+',width=1024,height=580');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a>
+</td>
+<td align="center" width="560" valign="middle">
+			<iframe width="555" height="312" src="https://www.youtube.com/embed/Tglmet07F_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			</td>
+			<td align="left" width="60" valign="bottom">
+
+			</td>
+			</tr>
+			</table></p>
+						
+			<h3>ix</h3>
+		</div>	
+		
+						<div class="izquierda">
+			<h1>&nbsp;</h1>
+			<p align="justify" >En definitiva el libro que está entre tus manos o siendo más precisos, dado su carácter digital e interactivo, el libro en el que te estás adentrando y con el que aprenderás gracias a la acción de tus dedos tiene el objetivo de catapultarte a la compresión de los fundamentos de la Geometría analítica tridimensional como base constructiva de micro y de megaproyectos como el antes citado. A través de sus tres partes o capítulos las autoras, grandes expertas en el desarrollo de recursos educativos interactivos con Descartes, nos enseñan de manera directa y concisa y con una edición y composición estética envidiable, a identificar los objetos geométricos básicos: el punto, la recta y el plano, a distinguir respectivamente unos de otros a través de sus coordenadas y ecuaciones; a localizar e interpretar las posiciones relativas que ocupan entre sí, a abordar la medición de ángulos, distancias, áreas y volúmenes, y a resolver problemas que puedan modelizarse en base a estos objetos. Y todo se alcanza mediante el uso de los vectores y el cálculo vectorial que es una herramienta matemática de gran potencia y que podemos visualizar como una sublimación de la tradicional regla y el compás euclidianos. Todo vector nos da una dirección, es nuestra regla, el producto escalar y vectorial actúa como compás y, en particular, cual escuadra o cartabón traza direcciones ortogonales. Adicionalmente, nos permite calcular distancias, áreas y volúmenes. 
+</p>
+<p align="justify" class="menosp">Los contenidos de este libro cubren el currículo de Geometría tridimensional establecido por la universidades españolas en sus procesos selectivos y puede servir como guía preparatoria de la prueba de acceso a las mismas, es por ello que las autoras han optado por incluir un apéndice en el que se aportan algunos ejercicios modelo.</p>
+<p align="justify" class="menosp">
+Te auguro un aprendizaje óptimo y te animo a apoyarte en todas las escenas interactivas para que sea un aprendizaje significativo y que en un futuro próximo puedas embarcarte en grandiosos y bellos proyectos que contribuyan a construir una sociedad mejor y más justa. 
+<p>
+<p align="right">
+En Córdoba, a 24 de marzo de 2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p align="right" class="pocop">José R. Galo Sánchez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+	<h3>x</h3>		
+		</div>
+		
+		<div class="derecha">
+			<div class="gradient"></div>
+		</div>
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+	<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">parte i</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Vectores</font></h1>
+			
+			
+
+			<p class="h111" style="position: absolute; top: 515px; left:150px; right:0;">Elena E. Álvarez Sáiz<br>
+			María José García Cebrian</p>
+
+		</div>
+		
+<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+		<div class="derecha">
+			<h1>Introducción</h1>
+			<p align="justify">Muchas de las cantidades que manejamos, como la temperatura, el tiempo, el número de alumnos de un  aula, etc, quedan perfectamente definidas por un 
+número real y la unidad correspondiente.</p>
+<p align="justify" class="pocop">Sin embargo, hay otras cantidades  para las que es necesario establecer, además de su magnitud, la dirección y su sentido.</p>
+<p align="center" >
+<iframe src="interactivos/escena100.html" width="560px" height="220px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="justify" class="menosp">
+Las magnitudes que quedan completamente especificadas mediante un número con la unidad apropiada se llaman <b>escalares</b>. Aquellas que deben ser especificadas mediantes su magnitud, dirección y sentido se llaman <b>vectoriales</b>.
+</p>
+<p align="justify" class="pocop">
+En este tema trabajaremos con las magnitudes vectoriales viendo cómo es posible operar con ellas. Pretendemos alcanzar los siguientes objetivos:
+</p>
+			<ul class="sinul">
+<li>
+Representar vectores fijos y libres en el espacio.
+</li>
+<li>
+Sumar, restar y multiplicar por un escalar vectores libres.
+</li>
+<li>
+Determinar si dos o tres vectores son dependientes o independientes.
+</li>
+<li>
+Calcular las coordenadas de un vector respecto de una base dada.
+</li>
+<li>
+Calcular y expresar analíticamente el producto escalar, vectorial y mixto de vectores.
+</li>
+<li>
+Aplicar el producto escalar, vectorial y mixto de vectores a la determinación de ángulos áreas y volúmenes.
+</li>
+</ul>
+
+<br>
+
+		
+			
+			<h3>3</h3>
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+				
+		<div class="derecha">
+			<h2 class="t2">1. El espacio <span style="letter-spacing: -0.06em;">IR</span><sup>3</sup></h2>
+			<p align="justify" class="menosp">El conjunto <span style="letter-spacing: -0.12em;">IR</span><sup>3</sup> está formado por todas las ternas ordenadas de números reales, es decir, por los elementos ﻿(x, y, z)﻿ ﻿﻿﻿
+siendo ﻿x﻿, ﻿y﻿, ﻿z﻿ números reales. Es importante el orden en el que figuran los elementos, ya que la terna (1, 2, 3) no es ﻿﻿﻿la misma que la (3, 2, 1).﻿﻿﻿
+			<p align="center" class="menosp"><iframe width="740" height="550" src="interactivos/escena110.html" frameborder="no" scrolling="no"></iframe></p>
+
+
+						<h3>5</h3>
+		</div>
+		
+		<div class="izquierda">
+<h4 class="t2">1.1. Vector fijo y vector libre</h4>
+			<p align="center" >
+<iframe src="interactivos/escena111.html" width="740px" height="435px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="pocop">
+<iframe src="interactivos/ejercicio111.html" width="740px" height="220px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>6</h3>
+		</div>
+		
+		<div class="derecha">		
+			<h4 class="t2">1.2. Módulo</h4>
+			
+			<p align="center">
+<iframe src="interactivos/escena112.html" width="740px" height="380px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center"class="masp">
+<iframe src="interactivos/ejercicio112.html" width="740px" height="255px" frameborder="no" scrolling="no"></iframe>
+</p>
+						<h3>7</h3>
+		</div>
+		
+		<div class="izquierda">
+			<h4 class="t2">1.3. Operaciones. Combinación lineal</h4>
+						<p align="center" >
+<iframe src="interactivos/escena113.html" width="740px" height="600px" frameborder="no" scrolling="no"></iframe>
+</p>
+			
+				<h3>8</h3>
+				</div>
+		
+		<div class="derecha">
+		<h4 class="t2">&nbsp;</h4>
+			<p align="center">
+<iframe src="interactivos/escena113_1.html" width="740px" height="330px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="pocop">
+<iframe src="interactivos/ejercicio113_1.html" width="740px" height="320px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>9</h3>
+		</div>
+
+						<div class="izquierda">
+			<h4 class="t2">1.4. Dependencia e independencia lineal. Base</h4>
+			<p align="justify">Un conjunto de vectores se dice﻿ <b>﻿linealmente dependiente</b>﻿﻿ si alguno de ellos se puede poner como combinación
+lineal de los demás. Cuando no es posible, el conjunto de vectores se dice que es <b>﻿linealmente independiente</b>﻿.</p>
+						<p align="center" class="pocop">
+<iframe src="interactivos/escena114.html" width="740px" height="520px" frameborder="no" scrolling="no"></iframe>
+</p>
+	<p align="justify" class="pocop">
+		Cuando  un  conjunto de vectores es linealmente independiente y, además, cualquier vector en el espacio se 
+puede poner como combinación lineal de ellos se dice que forman una <b>﻿base</b>﻿. </p>
+
+				<h3>10</h3>
+				</div>
+		
+		<div class="derecha">
+		<h4 class="t2">&nbsp;</h4>
+		
+<p align="justify" >
+En <span style="letter-spacing: -0.12em;">IR</span><sup>3</sup> tres vectores linealmente independientes forman una base. 
+
+﻿Por ejemplo, el conjunto de vectores ﻿{﻿ ﻿<b>i﻿</b> , <b>﻿j﻿</b> , <b>﻿k</b>﻿ ﻿} ﻿con ﻿<b>i</b>﻿ = (1,0,0), <b>﻿j</b>﻿ = (0,1,0), <b>﻿k</b>﻿ = (0,0,1) forman una base, recibe el 
+nombre de <b>﻿base canónica</b>﻿.
+		</p>
+			<p align="center" class="menosp">
+<iframe src="interactivos/escena114_1.html" width="740px" height="265px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<iframe src="interactivos/ejercicio114_1.html" width="740px" height="320px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>11</h3>
+		</div>
+		
+		<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center">
+<iframe src="interactivos/ejercicio113_2.html" width="740px" height="655px" frameborder="no" scrolling="no"></iframe>
+</p>
+			
+				<h3>12</h3>
+				</div>
+
+<div class="derecha">
+<h2 class="t2">2. Producto escalar</h2>
+			<h4 class="t2">2.1. Vectores ortogonales</h4>
+						<p align="center" class="sinp">
+<iframe src="interactivos/escena121.html" width="740px" height="620px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+				<h3>13</h3>
+				</div>
+		
+		<div class="izquierda">
+		<h4 class="t2"></h4>
+				<p align="center">
+<iframe src="interactivos/escena121_1.html" width="740px" height="420px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+<p align="center" class="menosp">
+<iframe src="interactivos/escena122.html" width="740px" height="282px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>14</h3>
+		</div>
+		
+	<div class="derecha">
+		<h4 class="t2"></h4>
+				<p align="center">
+<iframe src="interactivos/escena122_1.html" width="740px" height="720px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+			<h3>15</h3>
+		</div>
+		
+		<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center">
+<iframe src="interactivos/ejercicio122_1.html" width="740px" height="580px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<a href="interactivos/ejercicio122_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-490)+',top='+(screen.availHeight/2-375)+',width=980,height=750');return false;">
+<img src="images/amp.png" style="float:center; width:80px" border="0"/></a>
+</p>
+			
+				<h3>16</h3>
+				</div>
+		
+		<div class="derecha">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center">
+<iframe src="interactivos/ejercicio122_2.html" width="740px" height="655px" frameborder="no" scrolling="no"></iframe>
+</p>
+			
+				<h3>17</h3>
+				</div>		
+	
+<div class="izquierda">
+<h2 class="t2">3. Producto vectorial</h2>
+			
+						<p align="center" class="sinp">
+<iframe src="interactivos/escena130.html" width="740px" height="680px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+				<h3>18</h3>
+				</div>
+		
+	
+	<div class="derecha">
+		<h4 class="t2">3.1. Área de un paralelogramo</h4>
+				<p align="center">
+<iframe src="interactivos/escena131.html" width="740px" height="660px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+			<h3>19</h3>
+		</div>
+		
+		<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center">
+<iframe src="interactivos/ejercicio131_1.html" width="740px" height="580px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<a href="interactivos/ejercicio131_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-490)+',top='+(screen.availHeight/2-375)+',width=980,height=750');return false;">
+<img src="images/amp.png" style="float:center; width:80px" border="0"/></a>
+</p>
+			
+				<h3>20</h3>
+				</div>
+		
+		<div class="derecha">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center">
+<iframe src="interactivos/ejercicio131_2.html" width="740px" height="655px" frameborder="no" scrolling="no"></iframe>
+</p>
+			
+				<h3>21</h3>
+				</div>	
+	
+<div class="izquierda">
+<h2 class="t2">4. Producto mixto</h2>
+			
+						<p align="center" class="sinp">
+<iframe src="interactivos/escena140.html" width="740px" height="679px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+				<h3>22</h3>
+				</div>	
+				
+		<div class="derecha">
+			<h4 class="t2"></h4>
+						<p align="center">
+<iframe src="interactivos/escena141_1.html" width="740px" height="180px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<p align="center" >
+<iframe src="interactivos/ejercicio141_1.html" width="740px" height="515px" frameborder="no" scrolling="no"></iframe>
+</p>
+			
+				<h3>23</h3>
+				</div>
+				
+		
+		<div class="izquierda">		
+			<h2></h2>
+				<h1>Autoevaluación</h1><br>
+<p class="escena5">
+<iframe src="interactivos/cuestionario1.html" width="720px" height="520px" frameborder="no" scrolling="no"></iframe>
+</p>	
+<p align="center">
+<a href="interactivos/cuestionario1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-512)+',top='+(screen.availHeight/2-375)+',width=1024,height=750');return false;">
+<img src="images/amp.png" style="float:center; width:80px" border="0"/></a>
+</p>
+						<h3>24</h3>
+		</div>
+		
+			<div class="derecha">
+			<div class="gradient"></div>
+		</div>
+		
+					<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+
+	<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">parte ii</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">El espacio afín</font></h1>
+					<p class="h111" style="position: absolute; top: 535px; left:150px; right:0;">María José García Cebrian</p>
+		</div>
+				
+				<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+		<div class="derecha">
+			<h1>Introducción</h1>
+			<p align="justify">En esta parte se estudian de forma interactiva rectas y planos en el espacio, sus ecuaciones y posiciones relativas. Se pretenden alcanzar los siguientes objetivos:
+			</p>
+			<ul class="sinul">
+<li>
+Conocer las distintas formas de expresar la ecuación de una recta en el espacio.
+</li>
+<li>
+Reconocer y determinar las distintas formas de expresar la ecuación de un plano.
+</li>
+<li>
+Reconocer las ecuaciones de los ejes y planos coordenados.
+</li>
+<li>
+Analizar las posiciones relativas de dos rectas en el espacio.
+</li>
+<li>
+Determinar las posiciones relativas de dos y tres planos en el espacio.
+</li>
+<li>
+Determinar las posiciones relativas de una recta y un plano. Hallar el punto de intersección cuando exista.
+</li>
+<li>
+Conocer la expresión de un haz de planos secantes o paralelos. Calcular el plano del haz que cumple determinadas condiciones.
+</li>
+</ul>
+<p align="justify">Se comienza por ver las distintas formas de la ecuación de la recta, vectorial, paramétricas, continua e implícita, a partir de un punto y un vector o bien a partir de dos puntos. A continuación se calcula la ecuación de un plano también expresada en sus diferentes formas.
+</p>
+<p align="justify" class="pocop">Sigue el estudio de las posiciones relativas de dos rectas, de dos y tres planos y de una recta y un plano, determinando las condiciones de incidencia y paralelismo entre ellos.
+</p>
+<p align="justify" class="pocop">Por último se resuelven algunos problemas típicos de obtención de rectas y planos bajo determinadas condiciones, y, para terminar, se ofrece un cuestionario de autoevaluación.
+</p>
+
+<br>
+
+<p align="center" >
+<iframe src="interactivos/escena200.html" width="570px" height="188px" frameborder="no" scrolling="no"></iframe>
+</p>		
+			
+			<h3>29</h3>
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+				
+		<div class="derecha">
+			<h2 class="t2">1. Sistema de referencia y puntos en el espacio</h2>
+			<p align="justify">
+			Un <b>sistema de referencia</b> en el espacio está formado por un punto O llamado origen y una base de <span style="letter-spacing: -0.12em;">IR</span><sup>3</sup>, 
+			en nuestro caso elegiremos la base canónica {<b>i</b>, <b>j</b>, <b>k</b>}.
+			</p>
+			<p align="center" class="pocop">SIstema de referencia:  {O, <b>i</b>, <b>j</b>, <b>k</b>}</p>
+			<p align="center" class="sinp"><iframe width="740" height="280" src="interactivos/escena201_0.html" frameborder="no" scrolling="no"></iframe></p>
+
+			<p align="center" ><iframe width="740" height="290" src="interactivos/escena201.html" frameborder="no" scrolling="no"></iframe></p>
+
+			<h3>31</h3>
+		</div>
+		
+				<div class="izquierda">
+			<h2 class="t2">2. Rectas en el espacio.</h2>
+			
+			<p align="center" ><iframe width="740" height="630" src="interactivos/escena210.html" frameborder="no" scrolling="no"></iframe></p>
+
+			<h3>32</h3>
+		</div>
+		
+		<div class="derecha">
+			<h4 class="t2">2.1. Ecuación de la recta</h4>
+			<p align="justify">
+Para hallar la ecuación de la recta necesitamos conocer un punto y el vector direccional o bien dos puntos de la misma. En este caso el vector de dirección es el que va de un punto al otro.
+</p>
+
+			<p align="center" ><iframe width="740" height="354" src="interactivos/escena211.html" frameborder="no" scrolling="no"></iframe></p>
+			<p align="center" >
+<iframe src="interactivos/ejercicio211.html" width="740px" height="215px" frameborder="no" scrolling="no"></iframe>
+</p>		
+			<h3>33</h3>
+		</div>
+		
+		<div class="izquierda">
+			<h2 class="t2">3. Planos en el espacio</h2>
+			
+
+			<p align="center" ><iframe width="740" height="630" src="interactivos/escena220.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+				
+			<h3>34</h3>
+		</div>
+		
+		<div class="derecha">		
+
+<h4 class="t2">3.1. Ecuación del plano</h4>
+<p align="justify">
+Un plano del espacio queda determinado cuando se conocen un punto del mismo y dos vectores no nulos y linealmente independientes. También a partir de tres puntos no alineados.
+</p>
+			<p align="center" >
+<iframe src="interactivos/escena221.html" width="740px" height="364px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="menosp">
+<iframe src="interactivos/ejercicio221.html" width="740px" height="215px" frameborder="no" scrolling="no"></iframe>
+</p>
+						<h3>35</h3>
+		</div>
+			
+				<div class="izquierda">
+			<h4 class="t2">3.2. Ecuación normal del plano</h2>
+			<p align="justify">
+Un vector <b>n</b> se dice normal o característico a un plano si es perpendicular a dicho plano, esto es ortogonal a cualquier vector contenido en el plano.
+</p>
+			<p align="center" class="sinp"><iframe width="740" height="615" src="interactivos/escena222.html" frameborder="no" scrolling="no"></iframe></p>
+
+			<h3>36</h3>
+		</div>
+		
+		<div class="derecha">
+			<h4 class="t2">&nbsp;</h4>
+			
+					<p align="justify">
+También se puede determinar la ecuación de un plano conociendo un punto del mismo y un vector normal.
+</p>
+			<p align="center" >
+<iframe src="interactivos/escena222_1.html" width="740px" height="364px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" >
+<iframe src="interactivos/ejercicio222.html" width="740px" height="215px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+			<h3>37</h3>
+		</div>
+		
+		<div class="izquierda">
+
+			<h4 class="t2">3.3. Ejes y planos coordenados</h4>
+			
+					<p align="center" >
+<iframe src="interactivos/escena223.html" width="740px" height="451px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="pocop">
+<iframe src="interactivos/ejercicio223.html" width="740px" height="205px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+						<h3>38</h3>
+		</div>
+		
+			<div class="derecha">
+			<h2 class="t2">4. Incidencia y paralelismo</h2>		
+			<p class="h44" >4.1. Posiciones relativas de dos rectas en el espacio</p>
+<p align="justify" class="pocop">
+Dos rectas en el espacio que no sean coincidentes, pueden adoptar tres posiciones relativas. Si tienen un punto en común se cortan, y si no tienen ningún punto en común son paralelas o se cruzan según lleven la misma dirección o no.
+</p>
+<div align="center" class="pocop"><iframe width="740" height="570" src="interactivos/escena231.html" frameborder="no" scrolling="no"></iframe>
+			</div>
+
+<h3>39</h3>
+		</div>
+
+				
+		
+			<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			
+					<p align="center" >
+<iframe src="interactivos/escena231_1.html" width="740px" height="410px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<iframe src="interactivos/ejercicio231.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+						<h3>40</h3>
+		</div>
+		
+				
+		
+			<div class="derecha">
+			<h4 class="t2">4.2. Posiciones relativas de dos planos</h2>
+			<p align="justify">
+Dados dos planos en el espacio que no sean coincidentes, pueden tener puntos en común o no. Si tienen puntos en común se dicen secantes, se cortan en una recta, y si no son paralelos.</p>
+
+					<p align="center" class="sinp">
+<iframe src="interactivos/escena232.html" width="740px" height="620px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+<h3>41</h3>
+		</div>
+		
+					<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			
+					<p align="center" >
+<iframe src="interactivos/escena232_1.html" width="740px" height="410px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<iframe src="interactivos/ejercicio232.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+						<h3>42</h3>
+		</div>
+		
+					<div class="derecha">
+			<h4 class="t2">4.3. Posiciones relativas de tres planos</h2>
+			<p align="justify">
+Para estudiar las posiciones relativas que pueden adoptar tres planos en el espacio basta analizar las posibles soluciones del sistema formado por las ecuaciones generales de los tres planos.</p>
+
+					<p align="center" class="pocop">
+<iframe src="interactivos/escena233.html" width="740px" height="620px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+<h3>43</h3>
+		</div>
+		
+					<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			
+					<p align="center" >
+<iframe src="interactivos/escena233_1.html" width="740px" height="436px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="sinp">
+<iframe src="interactivos/ejercicio233.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+						<h3>44</h3>
+		</div>
+		
+		
+		
+		<div class="derecha">
+			<h4 class="t2">4.4. Posiciones relativas de una recta y un plano</h2>
+			<p align="justify">
+Dados una recta y un plano en el espacio pueden ser paralelos si no tienen ningún punto en común, secantes si se cortan en un punto o puede ser que la recta esté contenida en el plano.</p>
+
+					<p align="center" class="menosp">
+<iframe src="interactivos/escena234.html" width="740px" height="600px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+<h3>45</h3>
+		</div>
+		
+		
+		
+					<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			
+					<p align="center" >
+<iframe src="interactivos/escena234_1.html" width="740px" height="410px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<iframe src="interactivos/ejercicio234.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+						<h3>46</h3>
+		</div>
+		
+		<div class="derecha">
+			<h2 class="t2">5. Resolución de problemas</h2>		
+			<p class="h44" >5.1. Determinar planos</p>
+<p align="justify" class="pocop">
+A continuación tienes algunos problemas resueltos para que practiques, en cada caso debes participar en la solución. Pulsa el botón con la "<b>i</b>" si necesitas ayuda.
+</p>
+<p align="center"><iframe width="740" height="505" src="interactivos/escena241_1.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+			<p align="center">
+<a href="interactivos/escena241_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+<h3>47</h3>
+		</div>
+
+			<div class="izquierda">
+			<h2 class="t2">&nbsp;</h2>	
+			
+					<p align="center" >
+<iframe src="interactivos/escena241_2.html" width="740px" height="505px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center"><br>
+<a href="interactivos/escena241_2b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+						<h3>48</h3>
+		</div>
+		
+					<div class="derecha">
+			<h2 class="t2">&nbsp;</h2>	
+			<p align="center" >
+<iframe src="interactivos/escena241_3.html" width="740px" height="505px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center"><br>
+<a href="interactivos/escena241_3b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+						<h3>49</h3>
+		</div>
+		
+		<div class="izquierda">
+			<h4 class="t2">5.2. Determinar rectas</h4>	
+			
+					<p align="center" >
+<iframe src="interactivos/escena242_1.html" width="740px" height="535px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center"><br>
+<a href="interactivos/escena242_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+						<h3>50</h3>
+		</div>
+		
+<div class="derecha">
+			<h2 class="t2">&nbsp;</h2>	
+			<p align="center" >
+<iframe src="interactivos/escena242_2.html" width="740px" height="550px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center"><br>
+<a href="interactivos/escena242_2b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+						<h3>51</h3>
+		</div>
+		
+				<div class="izquierda">
+			<h2 class="t2">6. Haz de planos</h2>
+			<p align="justify">
+El conjunto de planos secantes que pasan por una recta es el haz de planos asociado a dicha recta, llamada eje o arista del haz. También se puede considerar el conjunto de planos paralelos a uno dado. En este apartado podrás ver algunos problemas resueltos por un método distinto al visto anteriormente.
+			</p>
+
+					<p align="center" class="sinp">
+<iframe src="interactivos/escena250.html" width="740px" height="580px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+<h3>52</h3>
+		</div>
+		
+				<div class="derecha">
+			<h4 class="t2">6.1. Haz de planos secantes</h4>
+			
+					<p align="center" >
+<iframe src="interactivos/escena251.html" width="740px" height="410px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<iframe src="interactivos/ejercicio251.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+<h3>53</h3>
+		</div>
+	
+				<div class="izquierda">
+			<h4 class="t2">6.2. Haz de planos paralelos</h4>
+			
+					<p align="center" >
+<iframe src="interactivos/escena252.html" width="740px" height="410px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<iframe src="interactivos/ejercicio252.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+<h3>54</h3>
+</div>
+		
+		<div class="derecha">
+		<h1>Autoevaluación</h1><br>
+<p class="escena5">
+<iframe src="interactivos/cuestionario2.html" width="720px" height="520px" frameborder="no" scrolling="no"></iframe>
+</p>	
+<p align="center">
+<a href="interactivos/cuestionario2b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-512)+',top='+(screen.availHeight/2-375)+',width=1024,height=750');return false;">
+<img src="images/amp.png" style="float:center; width:80px" border="0"/></a>
+</p>
+<h3>55</h3>
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+	<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">parte iii</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white">Espacio métrico</font></h1>
+								<p class="h111" style="position: absolute; top: 535px; left:150px; right:0;">María José García Cebrian</p>
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+				<div class="derecha">
+			<h1>Introducción</h1>
+			<p align="justify">En esta parte se aborda la resolución de distintos problemas métricos en el espacio. Las operaciones con vectores, producto escalar, vectorial y mixto, van a permitir calcular ángulos, distancias áreas y volúmenes en el espacio. Se pretenden alcanzar los siguientes objetivos:
+			</p>
+			<ul class="sinul">
+<li>
+Calcular el ángulo que forman dos rectas, dos planos y una recta y un plano.
+</li>
+<li>
+Determinar las ecuaciones de rectas y planos perpendiculares.
+</li>
+<li>
+Calcular la distancia desde un punto a otro punto, a una recta y a un plano.
+</li>
+<li>
+Hallar la distancia entre dos planos o entre una recta y un plano paralelos, y entre dos rectas paralelas o que se cruzan.
+</li>
+<li>
+Obtener el punto simétrico de otro respecto a una recta o a un plano.
+</li>
+<li>
+Determinar el lugar geométrico de los puntos que equidistan de dos puntos dados, y de los puntos que equidistan de dos planos secantes.
+</li>
+
+</ul>
+<p align="justify">Se estudia, en primer lugar la medida de ángulos entre dos rectas, dos planos y una recta y un plano, lo que lleva a resolver problemas de perpendicularidad.
+</p>
+<p align="justify" class="pocop">Sigue el cálculo de distancias entre los distintos elementos del espacio que ya se conocen, desde un punto a otro punto, a una recta y a un plano, y entre rectas y planos.
+</p>
+<p align="justify" class="pocop">Por último se resuelven algunos problemas típicos como la determinación del punto simétrico de otro respecto a una recta o a un plano, o el cálculo de algunos lugares geométricos como el plano mediador o los planos bisectores. Para terminar, se ofrece un cuestionario de autoevaluación.
+</p>
+
+<br>
+
+<p align="center" >
+<iframe src="interactivos/escena300.html" width="570px" height="188px" frameborder="no" scrolling="no"></iframe>
+</p>		
+			
+			<h3>59</h3>
+		</div>
+		
+		<div class="izquierda">
+			<div class="gradient"></div>
+		</div>
+		
+		<div class="derecha">		
+
+<h2 class="t2">1. Ángulos</h2>
+<p align="justify">Mediante el producto escalar podemos calcular el coseno del ángulo que forman dos vectores. Utilizaremos esta misma herramienta para calcular el ángulo de dos rectas, de dos planos o de una recta y un plano en el espacio, a partir de los vectores direccionales de las rectas y los vectores normales de los planos.
+</p>
+					
+			<p align="center" class="sinp">
+<iframe src="interactivos/escena310.html" width="740px" height="580px" frameborder="no" scrolling="no"></iframe>
+</p>
+						<h3>61</h3>
+		</div>
+		
+				<div class="izquierda">
+			<h4 class="t2">1.1. Ángulos entre rectas y planos</h4>
+			<p align="center" >
+<iframe src="interactivos/escena311_1.html" width="740px" height="420px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="menosp">
+<iframe src="interactivos/ejercicio311_1.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>62</h3>
+		</div>
+		
+		<div class="derecha">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center" >
+			<iframe src="interactivos/escena311_2.html" width="740px" height="420px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="menosp">
+<iframe src="interactivos/ejercicio311_2.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+						<h3>63</h3>
+		</div>
+		
+<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center" >
+			<iframe src="interactivos/escena311_3.html" width="740px" height="420px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="menosp">
+<iframe src="interactivos/ejercicio311_3.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>64</h3>
+		</div>
+		
+		<div class="derecha">
+<h4 class="t2">1.2. Rectas y planos perpendiculares</h4>
+
+<ul align="justify">
+<li>Dos rectas son <b>perpendiculares</b> cuando sus vectores direccionales son ortogonales, por tanto el producto escalar <b>u</b>·<b>v</b> es 0.
+</li>
+<li>Dos planos son <b>perpendiculares</b> cuando sus vectores normales son ortogonales, es decir si el producto escalar <b>n</b>·<b>n'</b> es 0.
+</li>
+<li>Una recta y un plano son <b>perpendiculares</b> cuando sus vectores direccional y normal son paralelos.
+</li>
+</ul>
+<p align="justify" class="sinp">
+A continuación puedes resolver algunos problemas de perpendicularidad. Pulsa el botón con la <b><font style="color: #206090";>"i"</font></b> si necesitas ayuda.
+</p>
+			<p align="center">
+<iframe src="interactivos/escena312_2.html" width="740px" height="415px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="pocop">
+<a href="interactivos/escena312_2b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+						<h3>65</h3>
+		</div>
+		
+				<div class="izquierda">
+			<h2 class="t2">&nbsp;</h2>	
+
+					<p align="center" >
+<iframe src="interactivos/escena312_1.html" width="740px" height="540px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center">
+<a href="interactivos/escena312_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+						<h3>66</h3>
+		</div>
+		
+					<div class="derecha">
+			<h2 class="t2">&nbsp;</h2>	
+			<p align="center" >
+<iframe src="interactivos/escena312_3.html" width="740px" height="505px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center"><br>
+<a href="interactivos/escena312_3b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+						<h3>67</h3>
+		</div>	
+				
+			<div class="izquierda">		
+
+<h2 class="t2">2. Distancias</h2>
+<p align="justify">
+La distancia entre dos puntos viene determinada por el módulo del vector que los une. La distancia de un punto P a una recta o a un plano, es el mínimo de las distancias entre el punto y los infinitos puntos de la recta o del plano, corresponde a la distancia entre P y su proyección ortogonal sobre la recta o el plano.</i>.
+</p>
+					
+			<p align="center" class="sinp">
+<iframe src="interactivos/escena320.html" width="740px" height="580px" frameborder="no" scrolling="no"></iframe>
+</p>
+						<h3>68</h3>
+		</div>
+		
+				<div class="derecha">
+			<h4 class="t2">2.1. Distancia de un punto a una recta y a un plano</h4>
+			<p align="center" >
+<iframe src="interactivos/escena321_1.html" width="740px" height="410px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" >
+<iframe src="interactivos/ejercicio321_1.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>69</h3>
+		</div>			
+				
+				<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center" >
+<iframe src="interactivos/escena321_2.html" width="740px" height="410px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" >
+<iframe src="interactivos/ejercicio321_2.html" width="740px" height="225px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>70</h3>
+		</div>	
+		
+<div class="derecha">
+			<h4 class="t2">2.2. Distancia entre dos planos</h4>
+			<p align="center" >
+<iframe src="interactivos/escena322_1.html" width="740px" height="455px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="sinp">
+<iframe src="interactivos/ejercicio322_1.html" width="740px" height="205px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>71</h3>
+		</div>				
+
+<div class="izquierda">
+			<h4 class="t2">2.3. Distancia entre una recta y un plano</h4>
+			<p align="center" >
+<iframe src="interactivos/escena323.html" width="740px" height="461px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="sinp">
+<iframe src="interactivos/ejercicio323.html" width="740px" height="205px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>72</h3>
+	
+	</div>	
+	
+	<div class="derecha">
+			<h4 class="t2">2.4. Distancia entre dos rectas</h4>
+			<p align="center" >
+<iframe src="interactivos/escena324.html" width="740px" height="600px" frameborder="no" scrolling="no"></iframe>
+</p>
+
+			<h3>73</h3>
+		</div>				
+
+<div class="izquierda">
+			<h4 class="t2">&nbsp;</h4>
+			<p align="center" >
+<iframe src="interactivos/escena324_1.html" width="740px" height="415px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="sinp">
+<iframe src="interactivos/ejercicio324.html" width="740px" height="245px" frameborder="no" scrolling="no"></iframe>
+</p>
+			<h3>74</h3>
+	
+	</div>	
+				<div class="derecha">
+		<h2 class="t2">3. Resolución de problemas</h2>
+	<p class="h44" >3.1. Distancias paso a paso</p>
+			<p align="justify" class="pocop">
+En el apartado anterior se ha calculado la distancia de un punto a un plano y a una recta, aquí puedes ver otra forma de calcular estas distancias haciéndolo paso a paso.
+</p>
+<p align="center"><iframe width="740" height="495" src="interactivos/escena331_1.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+			<p align="center">
+<a href="interactivos/escena331_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+			<h3>75</h3>
+		</div>
+		
+						<div class="izquierda">
+		
+	<h4 class="t2">&nbsp;</h4>
+			<p align="center"><iframe width="740" height="495" src="interactivos/escena331_2.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+			<p align="center">
+<a href="interactivos/escena331_2b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+			<h3>76</h3>
+		</div>
+		
+						<div class="derecha">
+		
+	<h4 class="t2">3.2. Punto simétrico de otro</h4>
+						<p align="center"><iframe width="740" height="525" src="interactivos/escena332_1.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+			<p align="center">
+<a href="interactivos/escena332_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+			<h3>77</h3>
+		</div>
+		
+						<div class="izquierda">
+		
+	<h4 class="t2">&nbsp;</h4>
+			<p align="center"><iframe width="740" height="525" src="interactivos/escena332_2.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+			<p align="center">
+<a href="interactivos/escena332_2b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+			<h3>78</h3>
+		</div>
+		
+								<div class="derecha">
+		
+	<h4 class="t2">3.3. Lugares geométricos</h4>
+			<p align="justify" class="pocop">
+Un lugar geométrico en el espacio es un conjunto de puntos con una característica común. A continuación puedes ver dos lugares geométricos: el plano mediador de un segmento y los planos bisectores de un ángulo diedro.
+</p>
+<p align="center"><iframe width="740" height="505" src="interactivos/escena333_1.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+			<p align="center">
+<a href="interactivos/escena333_1b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>
+			<h3>79</h3>
+		</div>
+		
+						<div class="izquierda">
+		
+	<h4 class="t2">&nbsp;</h4>
+		<p align="center"><iframe width="740" height="505" src="interactivos/escena333_2.html" frameborder="no" scrolling="no"></iframe>
+			</p>
+			<p align="center">
+<a href="interactivos/escena333_2b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-495)+',top='+(screen.availHeight/2-345)+',width=990,height=690');return false;"><img src="images/amp.png" style="float:center; width:80px" border="0" />
+			</a></p>	
+			<h3>80</h3>
+		</div>
+		
+				<div class="derecha">
+		<h1>Autoevaluación</h1><br>
+<p class="escena5">
+<iframe src="interactivos/cuestionario3.html" width="720px" height="520px" frameborder="no" scrolling="no"></iframe>
+</p>	
+<p align="center">
+<a href="interactivos/cuestionario3b.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-512)+',top='+(screen.availHeight/2-375)+',width=1024,height=750');return false;">
+<img src="images/amp.png" style="float:center; width:80px" border="0"/></a>
+</p>
+<h3>81</h3>
+		</div>
+		
+							<div class="izquierda">
+		
+	<h4 class="t2">&nbsp;</h4>
+	
+			<h3></h3>
+		</div>
+		
+			<div class="derecha" style="background-image: url(images/fondo.jpg);  border: 0px solid black;">
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 500px; left:140px; right:0;"><font color="white">Apéndice</font></h1>
+			<h1 class="t11" style="text-shadow: 3px 5px #000; position: absolute; bottom: 410px; left:140px; right:0;"><font color="white"></font></h1>
+					<p class="h111" style="position: absolute; top: 535px; left:150px; right:0;">María José García Cebrian</p>
+		</div>
+		
+		<div class="izquierda">
+		
+	<h4 class="t2">&nbsp;</h4>
+	
+			<h3></h3>
+		</div>
+		
+		<div class="derecha">
+			<h2></h2>
+<p class="h11">Ejercicios para practicar</p>
+<p align="justify">
+A continuación se presentan los problemas de Geometría propuestos en la Evaluación de Bachillerato para el acceso a la Universidad del año 2017, en cada distrito universitario de España. De todos ellos se ofrece la solución.</p>
+<p align="center" class="menosp">
+<iframe src="interactivos/ejercicios1fin.html" width="740px" height="550px" frameborder="no" scrolling="no"></iframe>
+</p>
+<p align="center" class="menosp">
+<a href="interactivos/ejercicios1finb.html" target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-512)+',top='+(screen.availHeight/2-380)+',width=1024,height=760');return false;">
+<img src="images/amp.png" style="float:center; width:80px" border="0"/></a>
+</p>
+<h3>85</h3>
+		</div>
+		
+
+		
+		<div class="izquierda">
+			<h2></h2>
+			<h3></h3>
+		</div>
+		
+		<div class="derecha">
+		<h2></h2>
+			
+			
+			<h3></h3>
+		</div>
+		
+
+	
+		<div class="cover">
+			<p align="center" style="position: absolute; bottom: 350px; left:0; right:0;"> 	</p>
+		<div class="gradient"></div>
+		</div>
+</div>
+	
+<script>
+		$("#book").turn({
+			display: 'double',
+			acceleration: true,
+			gradients: true,
+			elevation: 50,
+		});
+		$(window).bind('keydown', function(e){
+		if (e.target && e.target.tagName.toLowerCase()!='input')
+			if (e.keyCode==37)
+				$('#book').turn('previous');
+			else if (e.keyCode==39)
+				$('#book').turn('next');
+		});
+	</script>
+	
+	
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction(i) {
+   
+	$('#book').turn('page',i+2);
+}
+
+function myFunction2() {
+   
+	$('#book').turn('next');
+}
+
+function myFunction3() {
+   
+	$('#book').turn('previous');
+}
+
+function calculadora() {
+	 var myWindow = window.open("calculadora/index.htm", "_blank","toolbar=yes,scrollbars=no,resizable=yes,top=100,left=800,width=400,height=400");
+}
+
+function imprimir() {
+	 var myPrinter = window.print();
+}
+
+function ayuda() {
+	 var myWindow = window.open("images/info.html", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=100,right=800,width=800,height=600");
+}
+
+</script>
+
+<div class="dropdown">
+<button onclick="myFunction(3)" class="dropbtn2"></button>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction(4)" class="dropbtn"></button>
+</div>
+
+
+
+
+
+<div class="dropdown">
+<button onclick="calculadora()" class="dropbtn4"></button>
+</div>
+
+<div class="dropdown">
+<button onclick="imprimir()" class="dropbtn5"></button>
+<style type="text/css" media="print">
+  @page {size: A4 landscape; margin-right: 3%; margin-left: -5%; top-center; }
+  body{zoom:98.6%;}
+
+</style>
+</div>
+
+<div class="dropdown">
+<button onclick="ayuda()" class="dropbtn6"></button>
+</div>
+
+<div class="nextdown">
+<button onclick="myFunction2()" class="nextbtn"></button>
+</div>
+
+<div class="prevdown">
+<button onclick="myFunction3()" class="prevbtn"></button>
+</div>
+</body>
+		
+</html>
+		
+</html>

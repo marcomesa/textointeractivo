@@ -1,0 +1,788 @@
+﻿/* Aquí definimos el estilo de las etiquetas <p>, <h1>, <h2>, <h3>, <a>, <li>, <td> y <th> */
+
+p {
+    color:#000;	font-size:17px; font-family: 'descartesJS_Sansserif', sans-serif; margin:20px 55px 0px 55px; font-weight: 580;
+	}
+
+/*Aquí definimos estilos de párrafo cambiando el margen superior 0 5 10 y 25 para afinar el interlineado en los textos */
+.sinp {
+    color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:0px 55px 0px 55px; font-weight: 580;
+	}
+.pocop {
+    color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:5px 55px 0px 55px; font-weight: 580;
+	}
+.pocopp {
+    color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:5px 55px 0px 45px; font-weight: 740;
+	}
+.menosp {
+    color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:10px 55px 0px 55px; font-weight: 580;
+	}
+.masp {
+    color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 55px 0px 55px; font-weight: 580;
+	}	
+
+h1
+{
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 35px;
+	margin: 0 0 0;
+	margin:25px 55px 5px 55px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.h11
+{
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 35px;
+	margin: 0 0 0;
+	margin:25px 55px 5px 55px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.h111
+{
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 35px;
+	margin: 0 0 0;
+	margin:25px 55px 5px 55px;
+	text-align: center;
+	
+}
+.h112
+{
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 35px;
+	margin: 0 0 0;
+	margin:10px 55px 5px 55px;
+	text-align: center;
+	
+}
+
+h2
+{
+	color: #206090;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 35px;
+	margin:25px 55px 5px 55px;
+	text-align: left;
+	
+}
+h4
+{
+	color: #206090;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 35px;
+	margin:25px 55px 5px 55px;
+	text-align: left;
+	
+}
+.h44
+{
+	color: #206090;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 35px;
+	margin:10px 55px 5px 55px;
+	text-align: left;
+	
+}
+h5
+{
+	color: #206090;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 20px;
+	margin:25px 55px 0px 55px;
+	text-align: left;
+	
+}
+
+h3
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: center; 
+}
+
+a{
+	color:#000;	font-size:18px; font-family: 'descartesJS_SansSerif', sans-serif; text-decoration: none; margin:15px 0px 5px 0px;
+			
+	}
+		
+li{
+		color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:5px 55px 0px 55px; font-weight: 580;
+}
+
+/*Aquí definimos estilos para combinar con <li> sin viñeta */
+.sinli{
+	color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:5px 55px 0px 55px; font-weight: 580; text-align: justify;
+}
+
+.sinli2 {
+    color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:5px 0px 10px 0px; font-weight: 580;
+	}
+/*Aquí definimos estilos para combinar con <ul> subiendo el interlineado inferior */
+.sinul {
+    color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; margin:5px 0px -10px 0px; font-weight: 580;
+	}
+
+td {
+    color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: 580; padding: 10px 10px;
+	}
+th {
+    color:#009;	font-size:20px; text-align: center; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: 580;  padding: 10px 10px;background-color: #C0C0C0;
+	}
+
+
+/*Aquí definimos estilos para notas de texto, párrafos sangrados, créditos, notas al pies y el tool tip */
+
+.paco {
+	 color:#060;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 55px 0px 55px; font-weight: 580;
+	}
+
+.nt{
+	color:#000;	font-size:18px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: normal; margin:25px 55px 0px 95px; 
+	}
+	
+.sg{
+	color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: normal; margin:25px 55px 0px 95px; 
+	}
+	
+.bib{
+	color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; font-weight: normal; margin:10px 55px 0px 136px; text-indent:-80px;
+	}
+	
+.creditos{
+	color: #000; font-family: 'descartesJS_Sansserif', sans-serif; font-size: 32px; font-weight: 500; line-height: 24px; margin: 0 0 0; padding: 20px 25px; text-align: left; 
+	}
+	
+	
+.t11{
+	color: #ff0; font-family: 'descartesJS_Sansserif', sans-serif; font-size: 50px; font-weight: 700; line-height: 46px; margin: 0 0 0; margin:15px 55px 45px 55px; text-align: center; text-transform: uppercase;
+	}
+	
+.escena {
+	border-radius: 20px;
+	background-image: url('../images/fondo_div1.png');
+	width: 680px;
+	height: 480px;
+	margin:25px 55px 0px 60px;
+	padding: 10px 15px 10px 15px;
+}
+
+.escena2 {
+	border-radius: 20px 20px 30px 30px; 
+	background-image: url('../images/fondo_div3.png');
+	
+	margin:25px 55px 0px 60px;
+    padding: 10px 10px;
+    width: 680px;
+    height: 470px;
+}
+
+.escena3 {
+	background-image: url('../images/fondo_div2.png');
+	
+	width: 740px;
+	height: 490px;
+	margin:5px 25px 0px 20px;
+	padding: 45px 15px 0px 25px;
+}
+
+.escena4 {
+	border-radius: 20px 20px; 
+	background-image: url('../images/fondo_div4.png');
+	background-position: left top;
+   
+	margin:25px 55px 0px 80px;
+    padding: 95px 10px;
+    width: 700px;
+    height: 420px;
+}
+
+.escena5 {
+	border-radius: 40px 40px 40px 40px; 
+	background-image: url('../images/fondo_div5.png');
+	
+	width:  705px;
+	height: 530px;
+	margin:20px 55px 0px 65px;
+	padding: 10px 15px 0px 15px;
+} 
+.escena6 {
+	border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 15px;
+    width: 700px;
+    height: 500px; 
+	
+}
+
+.escena7 {
+	border-radius: 40px 40px 40px 40px; 
+	background-image: url('../images/fondo_div10.png');
+	
+	width: 700px;
+	height: 510px;
+	margin:25px 55px 0px 50px;
+	padding: 20px 15px 0px 30px;
+} 
+
+.escena8 {
+	
+	background-image: url('../images/fondo_div11.png');
+	
+	width: 695px;
+	height: 510px;
+	margin:25px 55px 0px 50px;
+	padding: 20px 15px 0px 30px;
+}
+
+.escena9 {
+	
+	background-image: url('../images/fondo_div8.png');
+	
+	width: 695px;
+	height: 490px;
+	margin:25px 55px 0px 50px;
+	padding: 40px 15px 0px 30px;
+}
+
+.postit1 {
+	right:20px;
+	background-image: url('../images/postit5.png');
+	
+	word-break: keep-all;
+	width: 200px;
+	height: 190px;
+	margin:5px 5px 5px 290px; 
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.postit2 {
+	right:20px;
+	background-image: url('../images/postit2.png');
+	
+	word-break: keep-all;
+	width: 275px;
+	height: 280px;
+	margin:15px 5px 5px 290px; 
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size: 26px;
+}
+.postit22 {
+	
+	background-image: url('../images/postit22.png');
+	
+	word-break: keep-all;
+	width: 680px;
+	height: 175px;
+	margin:5px 55px 5px 55px; 
+	text-align: justify;
+	padding-left: 10px;
+	padding-top: 10px;
+padding-right:50px;
+	font-size: 16px;
+}
+
+.postit3 {
+	right:20px;
+	background-image: url('../images/postit1.png');
+	
+	word-break: keep-all;
+	width: 190px;
+	height: 200px;
+	margin:15px 5px 5px 320px; 
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 24px;
+   
+}
+
+.postit4 {
+	right:20px;
+	background-image: url('../images/postit3.png');
+	
+	word-break: keep-all;
+	width: 300px;
+	height: 55px;
+	margin:25px 5px 5px 250px; 
+	text-align: center;
+	padding-left: 0px;
+	padding:30px 25px 10px 20px;
+	font-size: 24px;
+   
+}
+
+.postit5 {
+	background-image: url('../images/fondo_div6.png');
+	
+	word-break: keep-all;
+	width: 320px;
+	height: 250px;
+	margin:5px 5px 5px 250px; 
+	text-align: center;
+	padding:80px 65px 10px 65px;
+	font-size: 24px;
+	   
+}
+
+.postit6 {
+	background-image: url('../images/postit6.png');
+	
+	word-break: keep-all;
+	width: 335px;
+	height: 190px;
+	margin:5px 5px 5px 250px; 
+	text-align: center;
+	padding:55px 25px 10px 20px;
+	font-size: 24px;
+	   
+}
+
+.postit7 {
+	background-image: url('../images/fondo_div7.png');
+	
+	word-break: keep-all;
+	width: 260px;
+	height: 220px;
+	margin:15px 5px 5px 250px; 
+	text-align: center;
+	padding:80px 65px 10px 75px;
+	font-size: 24px;
+	   
+}
+
+.postit8 {
+	background-image: url('../images/postit8.png');
+	
+	word-break: keep-all;
+	width: 168px;
+	height: 193px;
+	margin:15px 5px 5px 250px; 
+	text-align: center;
+	padding:40px 45px 10px 45px;
+	font-size: 24px;
+	   
+}
+
+.vector
+{ font-family: 'descartesJS_Sansserif', sans-serif; font-size:14px; margin:0px 0px 0px -12px; position:relative; bottom:.7em;}
+
+.vector2
+{ font-family: 'descartesJS_Sansserif', sans-serif; font-size:16px; margin:0px 0px 0px -12px; position:relative; bottom:.8em;}
+
+.chapo
+{ font-family: 'descartesJS_Sansserif', sans-serif; font-size:16px; margin:0px 0px 0px -6px; position:relative; bottom:.7em;}
+
+/*Aquí definimos estilos para textox en celdas de tabla o pie de imágenes */
+
+.piecelda {
+color: #000000;  
+font-size:14px; 
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  top: 0px;  
+right: 10px;
+  bottom: 5px;
+  left: 10px;
+  padding: 0;
+   text-align: center;
+}
+.piecelda a{
+color: #0000FF;  
+font-size:14px; 
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  right: 3px;
+   left: 3px;
+  }
+
+.piefoto {
+color: #000000;  
+background-color: rgba(255,255,255,0.7);
+border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+font-size:14px; 
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  position: absolute;
+  right: 65px;
+  bottom: 4em;
+  left: 65px;
+  padding: 0;
+   text-align: center;
+}	
+.piefoto a {
+color: #0000FF;
+  font-size:14px; 
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  margin-right:2px;
+  margin-left:2px;
+}
+
+.footer {
+  font-size:14px; 
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  position: absolute;
+  right: 50px;
+  bottom: 3em;
+  left: 50px;
+  padding: 0;
+  
+  text-align: left;
+}
+.footer a {
+  font-size:14px; 
+  
+  font-family: 'descartesJS_Sansserif', sans-serif;
+  margin-right:2px;
+  margin-left:2px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0px dotted black;
+}
+
+.tooltip .tooltiptext {
+	font-size:16px; 
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	visibility: hidden;
+    width: 300px;
+    background-color: #206090;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 6px;
+
+    /* Position the tooltip */
+    position: absolute;
+	left:-120px;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+/* Estos son estilos propios del diseño del libro, no se deben alterar */
+
+#book .own-size{
+	width:850px;
+	height:785px;
+	background-color:white;
+	overflow:hidden;
+}
+
+#book .izquierda{
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+	background-image:-webkit-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:-moz-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:-ms-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:-o-linear-gradient(left, #fff 93%, #dadada 100%);
+	background-image:linear-gradient(left, #fff 93%, #dadada 100%);
+}
+
+#book .derecha{
+	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #fff), color-stop(1, #cacaca));
+	background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:linear-gradient(right, #fff 95%, #cacaca 100%);
+}
+
+	
+		#book{
+			width:1700px;
+			height: 785px;
+			margin:70px 5px 5px 97px;
+		}
+		#book .turn-page{
+			background-color:white;
+			
+		}
+		#book .cover{
+		
+			}
+		
+		.cover {
+			background-color: #F8ECC2;
+			background: url(../images/cover.png) no-repeat 1px 50%;
+			
+		}
+		
+		#book .page-wrapper{
+		-webkit-perspective:2000px;
+		-moz-perspective: 2000px;
+		-ms-perspective: 2000px;
+		perspective: 2000px;
+		}
+
+
+#book .span2{
+	float:right;
+}
+
+#book .a2{
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	color:#333;
+	margin:2px 0;
+	padding:0 10px;
+	
+}
+
+#book .a2:hover{
+	background:#CAD1EE;
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+/*Aquí definimos estilo en el índice para separar apartados con más interlineliado superior */
+
+#book .a22{
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	color:#333;
+	margin:12px 0px 5px 0px;
+	padding:0 10px;
+	
+}
+
+#book .a22:hover{
+	background:#CAD1EE;
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+span#sub {
+    vertical-align: sub;
+}
+
+/* Aquí cargamos la cubierta del libro */
+
+body{
+	background:transparent url(../images/bg3.png) no-repeat 10px 33px;
+	color:#444;
+	font-size:12px;
+	color: #000;
+	
+}
+
+/* Los botones  del menú superior */
+
+.dropbtn {
+    background: url("../images/menu3.png" ) no-repeat left top; text-align:left;
+	position: absolute;
+    color: white;
+    padding: 20px;
+	height:20px;
+    font-size: 16px;
+    border: none;
+	cursor: pointer;
+	top:-40px;
+	right:1690px;
+}
+.dropdown {
+    position: relative;
+    top: -850px;
+	
+}
+
+.dropbtn2 {
+    background: url("../images/menu1.png" ) no-repeat left top; text-align:left;
+	position: relative;
+    color: white;
+    padding: 20px;
+	height:20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	
+	right:-100px;
+	
+}
+
+.dropdown2 {
+    position: relative;
+	top: -850px;
+}
+
+.dropbtn3 {
+    background: url("../images/menu2.png" ) no-repeat left top; text-align:left;
+	position: absolute;
+    color: white;
+    padding: 20px;
+	height:20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	top:-40px;
+	right:1640px;
+	
+}
+
+.dropdown3 {
+    position: relative;
+	top: -850px;
+}
+
+.dropbtn4 {
+    background: url("../images/calculadoraDescartes.png" ) no-repeat left top; text-align:left;
+	position: absolute;
+    color: white;
+    padding: 20px;
+	height:20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	top:-40px;
+	right:215px;
+	
+}
+
+.dropdown4 {
+    position: relative;
+	top: -850px;
+}
+
+.dropbtn5 {
+    background: url("../images/printer.png" ) no-repeat left top; text-align:left;
+	position: absolute;
+    color: white;
+    padding: 20px;
+	height:20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	top:-42px;
+	right:280px;
+	
+}
+
+.dropdown5 {
+    position: relative;
+	top: -850px;
+}
+
+.dropbtn6 {
+    background: url("../images/help.png" ) no-repeat left top; text-align:left;
+	position: absolute;
+    color: white;
+    padding: 20px;
+	height:20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	top:-40px;
+	right:170px;
+	
+}
+
+.dropdown6 {
+    position: relative;
+	top: -850px;
+}
+
+.show {display:block;}
+
+.nextbtn {
+    background: url("../images/next2.png" ) no-repeat left top; text-align:center;
+    color: white;
+    padding: 24px 35px 60px 20px;
+	font-size: 16px;
+    border: none;
+    cursor: pointer;
+	top:0;
+	right:10px;
+}
+
+.nextdown {
+    position: absolute;
+    right: 0px;
+    top: 44%
+}
+
+.show {display:block;}
+
+.prevbtn {
+    background: url("../images/prev2.png" ) no-repeat left top; text-align:center;
+    color: white;
+    padding: 24px 35px 70px 24px;
+	height:4px;
+	font-size: 16px;
+    border: none;
+    cursor: pointer;
+	top:0;
+	right:10px;
+	
+}
+
+.prevdown {
+    position: absolute;
+    left: 0px;
+    top: 44%;
+	
+		
+}
+
+
+
+
+
+
+
+
+	

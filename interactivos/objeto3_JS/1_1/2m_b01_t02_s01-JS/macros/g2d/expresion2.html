@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>TITULO</title>
+</head>
+<body BGCOLOR="ffffff">
+
+<p align="left">
+<applet code="Descartes.class"
+        codebase="../../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=600 height=300>
+   <param name="decimal_symbol" value=".">
+   <param name="Versi&oacute;n" value="3.8913, 2007-01-25">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='d8d8f2' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='a' valor='1' nombre='a' incr='1' min='-50' max='50' visible='si' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='b' valor='1' nombre='b' incr='1' min='-50' max='50' visible='si' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='c' valor='1' nombre='c' incr='1' min='-50' max='50' visible='si' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='valX' valor='1' nombre='valX' incr='1' min='-50' max='50' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="id='anchoDigito' expresi&oacute;n='20' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='anchoX' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='anchoMas' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='anchoMenos' expresi&oacute;n='12' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='anchoParentesis' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='a' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='b' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_07" value="id='c' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="id='valX' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_09" value="inicio='textoX=|x|;espacio=| |;parIz=|(|;parDer=|)|' hacer='segundoTerminoR1=abs(b)+espacio+textoX;segundoTerminoR2=abs(b)+parIz+valX+parDer;aux=abs(b*valX);segundoTerminoR3=aux;' id='segundoTermino()' expresi&oacute;n='0' algoritmo='si'">
+   <param name="A_10" value="hacer='espacios=|   |;espaciosDiezR1=|  |;espaciosDiezR2=| |;espaciosDiezR2=| |' id='tripleEspacio()' expresi&oacute;n='0' algoritmo='si'">
+   <param name="A_11" value="hacer='espaciosVal=|  |' id='tripleEspacioVal()' expresi&oacute;n='0' algoritmo='si'">
+   <param name="A_12" value="hacer='segundoTerminoR1ConSigno=||;segundoTerminoR2ConSigno=||;segundoTerminoR3ConSigno=||;espacios=|  |' id='nada()' expresi&oacute;n='0' algoritmo='si'">
+   <param name="A_13" value="inicio='menos=|-|' hacer='segundoTerminoR1ConSigno=menos+espacios+segundoTerminoR1;segundoTerminoR2ConSigno=menos+espacio+espacio+segundoTerminoR2' id='negativo()' expresi&oacute;n='|soy yo|' algoritmo='si'">
+   <param name="A_14" value="inicio='mas=|+|;espacio=| |' hacer='segundoTerminoR1ConSigno=mas+espacios+segundoTerminoR1;segundoTerminoR2ConSigno=mas+espacio+segundoTerminoR2' id='positivo()' algoritmo='si'">
+   <param name="A_15" value="hacer='segundoTerminoR3ConSigno=||;espacios=|  |' id='nadaVal()' expresi&oacute;n='0' algoritmo='si'">
+   <param name="A_16" value="inicio='menos=|-|' hacer='segundoTerminoR3ConSigno=menos+espaciosVal+segundoTerminoR3' id='negativoVal()' expresi&oacute;n='|soy yo|' algoritmo='si'">
+   <param name="A_17" value="inicio='mas=|+|;espacio=| |' hacer='segundoTerminoR3ConSigno=mas+espaciosVal+segundoTerminoR3' id='positivoVal()' algoritmo='si'">
+   <param name="A_18" value="hacer='dxT1D=(abs(a)&gt;=10)?20:0;dxT2D=(abs(b)&gt;=10)?20:0;dxT1Ne=(a&lt;0)?12:0;dxT2Ne=(b&lt;0)?-9:0;dxValXD=(abs(valX)&gt;=10)?40:0;aux=dxT1D+dxT2D+dxT1Ne+dxT2Ne+dxValXD' id='acomodaBienR1()' expresi&oacute;n='aux' algoritmo='si'">
+   <param name="A_19" value="hacer='dxT1AD=(abs(a)&gt;=10)?20:0;dxT2BD=(abs(b)&gt;=10)?20:0;dxValXD=(abs(valX)&gt;=10)?50:0;dxT1Ne=(a&lt;0)?12:0;dxT2Ne=(b&lt;0)?1:0;dxValXNe=(valX&lt;0)?24:0;aux=dxT1AD+dxT2BD+dxValXD+dxT1Ne+dxT2Ne+dxValXNe;' id='acomodaBienR2()' expresi&oacute;n='aux' algoritmo='si'">
+   <param name="A_20" value="hacer='dxT1D=(abs(a*valX)&gt;=10)?20:0;dxT1C=(abs(a*valX)&gt;=100)?20:0;dxT1M=(abs(a*valX)&gt;=1000)?20:0;dxT2D=(abs(b*valX)&gt;=10)?20:0;dxT2C=(abs(b*valX)&gt;=100)?20:0;dxT2M=(abs(b*valX)&gt;=1000)?20:0;dxT1Ne=(a*valX&lt;0)?12:0;dxT2Ne=(b*valX&lt;0)?-9:0;aux=dxT1D+dxT1C+dxT1M+dxT2D+dxT2C+dxT2M+dxT3D+dxT3C+dxT3M+dxT1Ne+dxT2Ne' id='acomodaBienR3()' expresi&oacute;n='aux' algoritmo='si'">
+   <param name="A_21" value="hacer='dxTD=(abs(a*valX+b*valX)&gt;=10)?20:0;dxTC=(abs(a*valX+b*valX)&gt;=100)?20:0;dxTM=(abs(a*valX+b*valX)&gt;=1000)?20:0;dxTN=((a*valX+b*valX)&lt;0)?12:0;dxDistinto=((a*valX+b*valX)!=c*valX)?8:0;aux=dxTD+dxTC+dxTM+dxTN+dxDistinto' id='acomodaBienR4()' expresi&oacute;n='aux' algoritmo='si'">
+   <param name="A_22" value="inicio='igual=|=|;distinto=|&#x2260;|' hacer='res=a*valX+b*valX;res2=c*valX;miEcuacionR4=res+espacio+espacio+espacio+igual+espacio+espacio+espacio+res2' id='ec4Igual()' expresi&oacute;n='x' algoritmo='si'">
+   <param name="A_23" value="inicio='igual=|=|;distinto=|&#x2260;|' hacer='res=a*valX+b*valX;res2=c*valX;miEcuacionR4=res+espacio+espacio+espacio+distinto+espacio+espacio+espacio+res2' id='ec4Distinto()' expresi&oacute;n='x' algoritmo='si'">
+   <param name="A_24" value="inicio='textoX=|x|;mas=|+|;menos=|-|;igual=|=|;distinto=|&#x2260;|;espacio=| |;parIz=|(|;parDer=|)|' hacer='espacios=|  |;espaciosDiezR1=||;espaciosDiezR2=||;espaciosDiezR3=||;espaciosVal=|  |;aux=(abs(valX)&gt;9)?tripleEspacio():0;aux=(((abs(b*valX)&gt;9)|(abs(a*valX)&gt;9)))?tripleEspacioVal():0;aux=segundoTermino();aux=(b&lt;0)?negativo():0;aux=(b&gt;=0)?positivo():0;resSegundoTerm=b*valX;aux=(resSegundoTerm&lt;0)?negativoVal():0;aux=(resSegundoTerm&gt;=0)?positivoVal():0;miExpresionR1=a+espacio+textoX+espacios+segundoTerminoR1ConSigno;miExpresionR2=a+parIz+valX+parDer+espacio+segundoTerminoR2ConSigno;miExpresionR3=a*valX+espaciosVal+segundoTerminoR3ConSigno;res=c;miEcuacionR1=miExpresionR1+espacio+espacio+espaciosDiezR1+igual+espacios+res+espacio+textoX;miEcuacionR2=miExpresionR2+espacio+espaciosDiezR2+igual+espacio+espacio+res+parIz+valX+parDer;miEcuacionR3=miExpresionR3+espacio+espacio+espacio+espaciosDiezR3+espaciosDiezR3+igual+espacio+espacio+espacio+res*valX;res=a*valX+b*valX;aux=(res=c*valX)?ec4Igual():ec4Distinto();dxR1=acomodaBienR1();dxR2=acomodaBienR2();dxR3=acomodaBienR3();dxR4=acomodaBienR4();' id='concatena' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='texto' dibujar-si='0' color='blanco' expresi&oacute;n='[194-dxR1,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs72\b{\*\mjaformula{\expr miEcuacionR1\decimals 0\fixed1}}\f2\fs24\b0\par}' fuente='SansSerif,BOLD,36'">
+   <param name="G_01" value="tipo='texto' color='blanco' expresi&oacute;n='[196-dxR2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs72{\*\mjaformula{\expr miEcuacionR2\decimals 0\fixed1}}\f2\fs24\par}' fuente='SansSerif,PLAIN,36'">
+   <param name="G_02" value="tipo='texto' color='blanco' expresi&oacute;n='[244-dxR3,90]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs72{\*\mjaformula{\expr miEcuacionR3\decimals 0\fixed1}}\f2\fs24\par}' fuente='SansSerif,PLAIN,36'">
+   <param name="G_03" value="tipo='texto' color='blanco' expresi&oacute;n='[326-dxR4,160]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs72{\*\mjaformula{\expr miEcuacionR4\decimals 0\fixed1}}\f2\fs24\par}' fuente='SansSerif,PLAIN,36'">
+   <param name="G_04" value="tipo='texto' dibujar-si='0' color='negro' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs72\b -\par +\par (\par )\par x  1    5\par     2    6\par     3    7\par     4    8\par    10  12\par \f2\fs24\b0\par}' fuente='SansSerif,BOLD,36'">
+   <param name="G_05" value="tipo='texto' color='azul' expresi&oacute;n='[384,12]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;\red0\green0\blue255;}\cf0\f1\fs40\b ?\cf1\f2\fs24\b0\par}' fuente='SansSerif,BOLD,20'">
+   <param name="G_06" value="tipo='texto' color='azul' expresi&oacute;n='[384,82]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;\red0\green0\blue255;}\cf0\f1\fs40\b ?\cf1\f2\fs24\b0\par}' fuente='SansSerif,BOLD,20'">
+   <param name="G_07" value="tipo='texto' dibujar-si='0' color='azul' expresi&oacute;n='[384,112]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;\red0\green0\blue255;}\cf0\f1\fs40\b ?\cf1\f2\fs24\b0\par}' fuente='SansSerif,BOLD,20'">
+</applet>
+</p>
+
+</body>
+</html>

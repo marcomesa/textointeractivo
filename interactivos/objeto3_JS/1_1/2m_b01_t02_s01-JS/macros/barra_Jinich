@@ -1,0 +1,12 @@
+tipo_de_macro=R2
+id='B' expresión='0.25' evaluar='una-sola-vez' constante='si'
+id='L' expresión='600' evaluar='una-sola-vez' constante='si'
+id='H' expresión='20' evaluar='una-sola-vez' constante='si'
+id='Rojo(s)' expresión='(s<L/2)+(s>=L/2)*(1-(s-L/2)/(L/2))'
+id='Verde(s)' expresión='(s<L/2)*s/(L/2)+(s>=L/2)*(1-(s-L/2)/(L/2)*0.1)'
+id='Azul(s)' expresión='0.1*(s>=L/2)*(s-L/2)/(L/2)'
+id='AVANZAR' expresión='B>0.99'
+id='RETROCEDER' expresión='B<0.01'
+tipo='polígono' fondo='si' color='707070' expresión='(0,0)(L,0)(L,H)(0,H)(0,0)' coord_abs='si' 
+tipo='segmento' fondo='si' color='(Rojo(s),Verde(s),Azul(s),0.0)' expresión='(s,1)(s,H-1)' familia='s' s.intervalo='[1,L-1]' s.pasos='L-2' tamaño='0' coord_abs='si' 
+tipo='polígono' color='grisObscuro' expresión='(B*L,0)(L,0)(L,H)(B*L,H)(B*L,0)' relleno='606080' coord_abs='si' 

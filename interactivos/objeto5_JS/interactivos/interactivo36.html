@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cálculo Diferencial - Introducción</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="760" height="450" code="Descartes">
+    <param name="tamaño" value="760x450">
+    <param name="decimal_symbol" value=",">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="continua">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=0 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' O.x='-350' O.y='80' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='000000' texto='no' números='sí' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='E0.escala' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='_nada_' expresión='(E0._w-30,E0._h-50,30,50)' valor='48' incr='0.1*E0.escala' discreto='no' decimales='2' fijo='no' visible='no' acción='calcular' parámetro='E0.Ox=-350' ">
+    <param name="C_02" value="id='P' tipo='gráfico' espacio='E0' color='222222' color-int='f0f8ff' tamaño='8' expresión='(2,0)' ">
+    <param name="C_03" value="id='P.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='P.x' expresión='(0,0)' valor='2' incr='1' min='1' discreto='sí' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_04" value="id='P.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='P.y' expresión='(0,0)' valor='0' incr='0.1' min='0' max='0' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_05" value="id='sucesion' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='_nada_' expresión='(100,5,60,40)' valor='0' incr='1' min='1' max='NE' discreto='sí' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='E1.Ox=-350\nE1.escala=48\nL.y=0\nL.y=(sucesion1=2)?1:L.y\nepsilon1=0.25\n' ">
+    <param name="A_01" value="id='S' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='S[0]=&squot;1&squot;;S[1]=&squot;(-1)^n&squot;;S[2]=&squot;n/2&squot;;S[3]=&squot;-1+1/sqrt(n)&squot;;S[4]=&squot;((-1)^n)/n&squot;;S[5]=&squot;ent(pi*10^n)/(10^n)&squot;;S[6]=&squot;(n/3)^3-(n/2)^2&squot;' ">
+    <param name="A_02" value="id='D' vector='sí' evaluar='una-sola-vez' tamaño='NE' expresión='D[0]=&squot;Todos los términos de la sucesión son iguales a 1&squot;;D[1]=&squot;Los términos nones valen 1 y los pares valen -1&squot;;D[2]=&squot;&squot;;D[3]=&squot;&squot;;D[4]=&squot;&squot;;D[5]=&squot;Primeros n dígitos de la expansión decimal de π.&squot;;D[6]=&squot;&squot;;;' ">
+    <param name="A_03" value="id='F(s)' algoritmo='sí' expresión='r' hacer='n=s;r=_Eval_(S[sucesion-1])' ">
+    <param name="A_04" value="id='F1(s)' algoritmo='sí' expresión='r' hacer='n=s;r=_Eval_(S[sucesion1-1])' ">
+    <param name="A_05" value="id='F2(n)' algoritmo='sí' expresión='r' hacer='signo=(alternar)?(-1)^n:1;r=LIM+signo*A*(n^pot)' ">
+    <param name="A_06" value="id='OtroEjercicio()' algoritmo='sí' expresión='x' hacer='E2.Ox=-350;E2.escala=32;VerletResp=0;VerResp=0;converge=0;limes=0;nolim=0;LIM=ent((-2+4*rnd)*10)/10;A=ent(-2+5*rnd);alternar=(rnd<0.5);pot=-2+ent(5*rnd);A=(pot=1)?A/10:A;A=(pot=2)?A/50:A;CONV=((pot<=-0.01)|((abs(pot)<0.01)&(!alternar)))?1:2;NOLIM=0;NOLIM=((pot>=0)&(alternar))?3:NOLIM;NOLIM=((pot>=0)&(!alternar)&(A<0))?2:NOLIM;NOLIM=((pot>=0)&(!alternar)&(A>0))?1:NOLIM;' mientras='A=0' ">
+    <param name="A_07" value="id='Lim1()' algoritmo='sí' expresión='L1!=&squot;&squot;' inicio='L1=&squot;&squot;' hacer='L1=(sucesion1=1)?1:L1;L1=(sucesion1=4)?-1:L1;L1=(sucesion1=5)?0:L1;L1=(sucesion1=6)?pi:L1;L.y=(L1!=&squot;&squot;)?L1:L.y;;;' ">
+    <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='NE=7' hacer='E0.Ox=-350;E1.Ox=-350;E2.Ox=-350;VerResp=0;OtroEjercicio();T1=&squot;{&squot;;T2=&squot;}&squot;' ">
+    <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='E0.Oy=80;E1.Oy=80;E2.Oy=30;HayLim1=Lim1();L.y=(HayLim1)?L1:L.y;BIEN1=(converge=CONV);aux=(abs(pot)<0.01)?A:0;realLIM=LIM+aux;BIEN2=((CONV=1)&(abs(realLIM-limes)<0.01));BIEN3=((CONV=2)&(nolim=NOLIM));BIEN=BIEN1&(BIEN2|BIEN3)' ">
+    <param name="G_01" value="espacio='E0' tipo='sucesión' fondo='no' color='dd0011' coord_abs='no' expresión='(n,_Eval_(S[sucesion-1]))' tamaño='4' visible='no' editable='no' dominio='[1,1000]' ">
+    <param name="G_02" value="espacio='E0' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(P.x,F(P.x))(P.x,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs44\b\i{\*\mjaformula a{\subix{\expr P.x\decimals 0\fixed0}}={\expr F(P.x)\decimals 13\fixed0}}\i0\b0}' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Times New Roman Italic,ITALIC,19' lineDash='solid' ">
+    <param name="G_03" value="espacio='E0' tipo='polígono' fondo='no' color='20303a' coord_abs='sí' expresión='(0,0)(E0._w-1,0)(E0._w-1,100)(0,100)(0,0)' relleno='a5edff' ancho='1' lineDash='solid' ">
+    <param name="G_04" value="espacio='E0' tipo='texto' fondo='no' color='20303a' expresión='[5,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs52\b Ejemplo\b0\f1\fs34  }' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='D[sucesion-1]!=&squot;&squot;' expresión='[160,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52{\*\mjaformula{\expr D[sucesion-1]\decimals 0\fixed0}}}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_06" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='sucesion-1=2' expresión='[160,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52   {\*\mjaformula{\expr T1\decimals 0\fixed0}a{\subix n}{\expr T2\decimals 0\fixed0}}  = {\*\mjaformula{\expr T1\decimals 0\fixed0}{\fraction{\num n}{\den 2}}{\expr T2\decimals 0\fixed0}} }' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='sucesion-1=3' expresión='[160,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs52   {\*\mjaformula{\expr T1\decimals 0\fixed0}a{\subix n}{\expr T2\decimals 0\fixed0}}  = {\*\mjaformula{\expr T1\decimals 0\fixed0}-1+{\fraction{\num 1}{\den{\radical{\index}{\radicand n}}}}{\expr T2\decimals 0\fixed0}}\f1\fs34  }' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_08" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='sucesion-1=4' expresión='[160,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52 Primeros términos:  \i  \i0\i{\*\mjaformula -1,{\fraction{\num 1}{\den 2}},&nbsp;-{\fraction{\num 1}{\den 3}},{\fraction{\num 1}{\den 4,}},&nbsp;...}\i0}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_09" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='sucesion-1=6' expresión='[160,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52{\*\mjaformula{\expr T1\decimals 0\fixed0}({\fraction{\num n{\supix}}{\den 10}}){\supix 3}−({\fraction{\num n}{\den 2}}){\supix 2}{\expr T2\decimals 0\fixed0}} }' decimales='2' fijo='sí' ancho='1' fuente='Times New Roman,PLAIN,19' align='a_left' ">
+    <param name="G_10" value="espacio='E0' tipo='texto' fondo='no' color='20303a' expresión='[60,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs52 ﻿﻿﻿{\*\mjaformula{\expr T1\decimals 0\fixed0}a{\subix n}{\expr T2\decimals 0\fixed0}}﻿﻿ = }' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_11" value="espacio='E0' tipo='texto' fondo='no' color='20303a' expresión='[160,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Times New Roman;}\f0\fs52\i{\*\mjaformula{\expr F(1)\decimals 5\fixed0}}\i0\i  , \i0\i{\*\mjaformula{\expr F(2)\decimals 5\fixed0}}\i0\i  , \i0\i{\*\mjaformula{\expr F(3)\decimals 5\fixed0}}\i0\i   , \i0\i{\*\mjaformula{\expr F(4)\decimals 5\fixed0}}\i0\i   , \i0\i{\*\mjaformula{\expr F(5)\decimals 5\fixed0}}\i0\f1\fs38\i  , ...\i0}' decimales='2' fijo='sí' ancho='1' fuente='Times New Roman Italic,ITALIC,19' align='a_left' ">
+    <param name="Animación" value="pausa='(paso>2)&(t>0.13)&(t<0.25)?180:50' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+0.005;anim=0;p0.x=p0.x+t;p1.x=p1.x+t;p2.x=p2.x+t;p3.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p3.x);p4.x=(t<0.13)?-9+13/0.13*t:((t>0.25)?4+1.5/0.13*(t-0.25):p4.x);escala=(paso=3)&((t>=0.13)&(t<0.20))?escala/2^(0.9*t):((paso=3)&((t>=0.20)&(t<0.25))?escala*2^(0.9*t):escala);escala=(paso=4)&((t>=0.13)&(t<0.20))?escala*2^(0.3*t):((paso=4)&((t>=0.20)&(t<0.25))?escala/2^(0.3*t):escala);Oy=(paso=4)&((t>=0.13)&(t<0.18))?Oy+700*t:((paso=4)&(t>=0.18)&(t<0.25)?Oy-2330*(t-0.18):Oy);;' mientras='t<0.38' ">
+  </ajs>
+
+
+
+</body>
+</html>

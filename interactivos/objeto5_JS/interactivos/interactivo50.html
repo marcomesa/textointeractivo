@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="580" height="400" code="Descartes">
+    <param name="tamaño" value="580x400">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' cID='12aecc69700' x='0' y='0' ancho='580' alto='400' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='40' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='405860' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='ejemplo' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='Ejemplo' expresión='(5,E0._h-45,140,40)' valor='1' incr='1' min='0' max='16' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='anim=0\nE0.Ox=0\nejemplo=(ejemplo<1)?NE:ejemplo\nejemplo=(ejemplo>NE)?1:ejemplo' ">
+    <param name="C_02" value="id='P' tipo='gráfico' espacio='E0' color='a8406080' color-int='a5cc0022' tamaño='10' expresión='(1.5,0)' ">
+    <param name="C_03" value="id='P.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='P.x' expresión='(0,0)' valor='1.5' incr='0.05' discreto='sí' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_04" value="id='P.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='P.y' expresión='(0,0)' valor='0' incr='0.1' min='0' max='0' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_05" value="id='izqder' tipo='numérico' interfaz='menú' región='interior' espacio='E0' expresión='(132,25,85,25)' valor='0' decimales='2' fijo='sí' visible='no' opciones='izquierda,derecha' dibujar-si='0' ">
+    <param name="C_06" value="id='pausa' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Pausa' expresión='(E0._w-125,E0._h-40,120,35)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='anim=1-anim' dibujar-si='anim' ">
+    <param name="C_07" value="id='continuar' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Continuar' expresión='(E0._w-125,E0._h-40,120,35)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='no' cursiva='no' subrayada='no' fuente puntos='19' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='anim=1-anim' dibujar-si='!anim' ">
+    <param name="A_01" value="id='E' vector='sí' evaluar='una-sola-vez' tamaño='NE+1' expresión='E[0]=&squot;0&squot;;E[1]=&squot;x/2&squot;;E[2]=&squot;0.25*x^3-x^2+x+0.33&squot;;E[3]=&squot;-0.75*(x<0)+0.5*(x>0)&squot;;E[4]=&squot;-x*(x<0)+x*(x>0)&squot;;E[5]=&squot;(0.5*x+0.75)*(x<0)+(x^2-1)*(x>0)&squot;;E[6]=&squot;(0.1*x^3-0.05*x^2-0.25)*(x<0.5)+0.3*x+(0.1*x^3-0.05*x^2+0.25)*(x>0.5)&squot;;E[7]=&squot;(x!=0)?1/x:0&squot;;E[8]=&squot;(x!=0)?1/abs(x):0&squot;;E[9]=&squot;((x!=1)&(x!=-1))?1/((x-1)*(x+1)):0&squot;;E[10]=&squot;sen(5x)&squot;;E[11]=&squot;(x>0)?-0.9+(0.5+0.2*x^3)/sqrt(x):-x/2-0.5&squot;;E[12]=&squot;(x>0)?x*sen(10/sqrt(x)):-0.2*x^2&squot;;E[13]=&squot;0.5+cos(3x)/(1+x^2)&squot;;E[14]=&squot;atan(x)&squot;;E[15]=&squot;exp(-x/2)&squot;;;' ">
+    <param name="A_02" value="id='Lim1' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='Lim1[0]=0;Lim1[1]=&squot;-∞&squot;;Lim1[2]=&squot;-∞&squot;;Lim1[3]=-0.75;Lim1[4]=&squot;+∞&squot;;Lim1[5]=&squot;-∞&squot;;Lim1[6]=&squot;-∞&squot;;Lim1[7]=0;Lim1[8]=0;Lim1[9]=0;Lim1[10]=&squot;nada&squot;;Lim1[11]=&squot;+∞&squot;;Lim1[12]=&squot;-∞&squot;;Lim1[13]=0.5;Lim1[14]=-pi/2;Lim1[15]=&squot;+∞&squot;;' ">
+    <param name="A_03" value="id='HayLim1' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='HayLim1[0]=1;HayLim1[1]=0;HayLim1[2]=0;HayLim1[3]=1;HayLim1[4]=0;HayLim1[5]=0;HayLim1[6]=0;HayLim1[7]=1;HayLim1[8]=1;HayLim1[9]=1;HayLim1[10]=0;HayLim1[11]=0;HayLim1[12]=0;HayLim1[13]=1;HayLim1[14]=1;HayLim1[15]=0' ">
+    <param name="A_04" value="id='Lim2' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='Lim2[0]=0;Lim2[1]=&squot;+∞&squot;;Lim2[2]=&squot;+∞&squot;;Lim2[3]=0.5;Lim2[4]=&squot;+∞&squot;;Lim2[5]=&squot;+∞&squot;;Lim2[6]=&squot;+∞&squot;;Lim2[7]=0;Lim2[8]=0;Lim2[9]=0;Lim2[10]=&squot;nada&squot;;Lim2[11]=&squot;+∞&squot;;Lim2[12]=&squot;nada&squot;;Lim2[13]=0.5;Lim2[14]=pi/2;Lim2[15]=0' ">
+    <param name="A_05" value="id='HayLim2' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='HayLim2[0]=1;HayLim2[1]=0;HayLim2[2]=0;HayLim2[3]=1;HayLim2[4]=0;HayLim2[5]=0;HayLim2[6]=0;HayLim2[7]=1;HayLim2[8]=1;HayLim2[9]=1;HayLim2[10]=0;HayLim2[11]=0;HayLim2[12]=0;HayLim2[13]=1;HayLim2[14]=1;HayLim2[15]=1' ">
+    <param name="A_06" value="id='OtroEjercicio()' algoritmo='sí' expresión='x' inicio='ejercicio=1+ent(rnd*NE)' hacer='VerLetResp=0;VerBResp=0;FX=E[ejercicio];k0=0;n0=0;n1=&squot;&squot;;n2=0;menos=(rnd<0.4);' ">
+    <param name="A_07" value="id='getValue(n2)' algoritmo='sí' expresión='x' hacer='val=&squot;&squot;;val=(n2=1)?&squot;-∞&squot;:val;val=(n2=2)?&squot;+∞&squot;:val;val=(n2=3)?&squot;nada&squot;:val;;' ">
+    <param name="A_08" value="id='Verificar1()' algoritmo='sí' expresión='x' hacer='BIEN1=(HayLim1[ejercicio]&(n0=1))|(!HayLim1[ejercicio]&(n0=2));BIEN2=(n1!=&squot;&squot;)&HayLim1[ejercicio]&(abs(Lim1[ejercicio]-n1)<0.02);temp=BIEN2;getValue(n2);BIEN3=(!HayLim1[ejercicio])&(val=Lim1[ejercicio]);BIEN=BIEN1&(BIEN2|BIEN3)' ">
+    <param name="A_09" value="id='Verificar2()' algoritmo='sí' expresión='x' hacer='BIEN1=(HayLim2[ejercicio]&(k0=1))|(!HayLim2[ejercicio]&(k0=2));BIEN2=(n1!=&squot;&squot;)&HayLim2[ejercicio]&(abs(Lim2[ejercicio]-n1)<0.02);getValue(n2);BIEN3=(!HayLim2[ejercicio])&(val=Lim2[ejercicio]);BIEN=BIEN1&(BIEN2|BIEN3)' ">
+    <param name="A_10" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='h=0;H=110;anim=1' hacer='NE=15;OtroEjercicio()' ">
+    <param name="A_11" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='E0.Oy=40;E1.Oy=0' hacer='F=E[ejemplo];x=P.x;FP=_Eval_(F);x=P.x-0.000001;FL=_Eval_(F);LI=abs(FL>100);LIP=(FL>100);x=P.x+0.000001;FR=_Eval_(F);RI=abs(FR>100);RIP=(FR>100);HayLim=(abs(FL-FR)<0.1)&(!LI)*(!RI);FR=((!HayLim)&(FR>100))?&squot;+ ∞&squot;:FR;FR=((!HayLim)&(FR<-100))?&squot;- ∞&squot;:FR;FL=((!HayLim)&(FL>100))?&squot;+ ∞&squot;:FL;FL=((!HayLim)&(FL<-100))?&squot;- ∞&squot;:FL;x=Q.x;FQ=_Eval_(FX);aux=(menos)?Verificar1():Verificar2();;;' ">
+    <param name="A_12" value="id='animar' evento='sí' condición='anim' acción='animar' ejecución='alternar' ">
+    <param name="A_13" value="id='pausar' evento='sí' condición='!anim' acción='animar' ejecución='alternar' ">
+    <param name="G_01" value="espacio='E0' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(P.x,FP)(P.x,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs44\i{\*\mjaformula f(x)={\expr FP\decimals 4\fixed0}}\i0}' decimales='2' fijo='sí' tamaño='1' ancho='1' fuente='Times New Roman Cursiva,ITALIC,19' lineDash='solid' ">
+    <param name="G_02" value="espacio='E0' tipo='ecuación' fondo='no' color='dd0011' dibujar-si='!((ejemplo=12)&(x>0)&(x<0.05))' coord_abs='no' expresión='y=_Eval_(F)' ancho='1' visible='no' editable='no' ">
+    <param name="G_03" value="espacio='E0' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(P.x+0.05,-0.4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs44\i{\*\mjaformula x={\expr P.x\decimals 2\fixed0}}\i0}' decimales='2' fijo='sí' tamaño='0' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_04" value="espacio='E0' tipo='polígono' fondo='no' color='20303a' coord_abs='sí' expresión='(h,h)(E0._w-h-1,h)(E0._w-h-1,h+H)(h,h+H)(h,h)' relleno='45ffff80' ancho='1' lineDash='solid' ">
+    <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='20303a' expresión='[h,h+5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 La función \i f\i0   \i{\*\mjaformula{\expr (HayLim1[ejemplo])?&squot;sí&squot;:&squot;no&squot;\decimals 2\fixed0}}\i0  tiene límite en -\i ∞\i0 , \i{\*\mjaformula{\limit{\from x}{\to -∞}{\what f(x)={\expr Lim1[ejemplo]\decimals 4\fixed0}}}}\i0\par\f0\fs48 La función \i f\i0   \i{\*\mjaformula{\expr (HayLim2[ejemplo])?&squot;sí&squot;:&squot;no&squot;\decimals 2\fixed0}}\i0  tiene límite en +\i ∞\i0 , \i{\*\mjaformula{\limit{\from x}{\to ∞}{\what}}}\i0\i f(x)= \i0\i{\*\mjaformula{\expr Lim2[ejemplo]\decimals 4\fixed0}}\i0}' decimales='4' fijo='no' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="Animación" value="pausa='3000' controles='no' auto='no' repetir='no' hacer='ejemplo=1+(ejemplo)%12;E0.Ox=0' mientras='1' ">
+  </ajs>
+
+
+
+</body>
+</html>

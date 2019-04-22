@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="425" height="400" code="Descartes">
+    <param name="tamaño" value="425x400">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E3' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='-159' O.y='48' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='000000' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='ejE0' tipo='numérico' interfaz='menú' región='interior' espacio='E3' nombre='_nada_' expresión='(E3._w-60,E3._h-45,55,40)' valor='0' decimales='2' fijo='no' visible='no' opciones='1,2,3,4,5,6' acción='limpiar' ">
+    <param name="C_02" value="id='animar' interfaz='botón' tipo='numérico' región='interior' espacio='E3' nombre='Animar' expresión='(5,E3._h-35,80,30)' valor='0' visible='sí' color='ffffff' color-int='ffffff' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='imagenes/btn080.png' acción='animar' ">
+    <param name="C_03" value="id='nejm' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E3' nombre='nejm' expresión='(0,0)' valor='0' incr='1' discreto='no' decimales='2' fijo='sí' visible='sí' activo-si='0' ">
+    <param name="C_04" value="id='ne' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E3' nombre='ne' expresión='(0,0)' valor='0' incr='1' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="A_01" value="id='____ESPACIO E2____' expresión='0' tipo='variable' ">
+    <param name="A_02" value="id='dist(x1,y1,x2,y2)' algoritmo='no' expresión='sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))' tipo='función' ">
+    <param name="A_03" value="id='ArcTan(x,y)' algoritmo='sí' expresión='at' inicio='epsilon=0.000001' hacer='at=(abs(x)>epsilon)?atan(abs(y/x)):pi/2;at=((x<0)&(y>=0))?pi-at:at;at=((x<0)&(y<0))?pi+at:at;at=((x>=0)&(y<0))?2*pi-at:at' tipo='función' ">
+    <param name="A_04" value="id='XF' expresión='v0*v0*cos(alfa)*sen(alfa)/g' tipo='variable' ">
+    <param name="A_05" value="id='YF' expresión='v0*v0*(sen(alfa)^2-cos(alfa)^2)/(2*g)' tipo='variable' ">
+    <param name="A_06" value="id='Xt' expresión='0' tipo='variable' ">
+    <param name="A_07" value="id='p' expresión='(v0*v0*cos(alfa)^2)/(2*g)' tipo='variable' ">
+    <param name="A_08" value="id='____ESPACIO E3____' expresión='0' tipo='variable' ">
+    <param name="A_09" value="id='E' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='E[0]=&squot;1.5&squot;;E[1]=&squot;0.6*x-2&squot;;E[2]=&squot;2-0.09*x^2&squot;;E[3]=&squot;2*sen(pi*x/3)&squot;;E[4]=&squot;2*cos(pi*x)&squot;;E[5]=&squot;25/(6+94*exp(-x+1))-2&squot;;' tipo='vector' ">
+    <param name="A_10" value="id='ej' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='ej[0]=&squot;y0+v0*x+(a0/2)*x^2&squot;;ej[1]=&squot;a/(b+c*exp(-x))&squot;;ej[2]=&squot;h0-9.8*x&squot;;ej[3]=&squot;A0*cos(w0*x)&squot;;' tipo='vector' ">
+    <param name="A_11" value="id='e' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='e[0]=&squot;y0+v0*x+(a0/2)*x^2&squot;;e[1]=&squot;a/(b+c*exp(-x))&squot;;e[2]=&squot;h0-4.9*x^2&squot;;e[3]=&squot;(h1-C)-B*x+C*exp(-D*x)&squot;;e[4]=&squot;A0*cos(w0*x)&squot;;e[5]=&squot;A0*cos(w0*x-d)&squot;;e[6]=&squot;A0*exp(-mu*x)*cos(w0*x-d)&squot;' tipo='vector' ">
+    <param name="A_12" value="id='H(x)' algoritmo='sí' expresión='_Eval_(E[nE])' hacer=';' tipo='función' ">
+    <param name="A_13" value="id='hj(x)' algoritmo='sí' expresión='_Eval_(ej[nejm])' hacer=';' tipo='función' ">
+    <param name="A_14" value="id='h(x)' algoritmo='sí' expresión='_Eval_(e[ne])' hacer=';' tipo='función' ">
+    <param name="A_15" value="id='calculaY()' algoritmo='sí' expresión='x' hacer='py=(ejE0=0)?1.5:py;py=(ejE0=1)?0.6*x-2:py;py=(ejE0=2)?2-0.09*x^2:py;py=(ejE0=3)?2*sen(pi*x/3):py;py=(ejE0=4)?2*cos(pi*x):py;py=(ejE0=5)?25/(6+94*exp(-x+1))-2:py' tipo='función' ">
+    <param name="A_16" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer=';info=1;v0=12;av=1;tm=3.03;g=9.8;;TT=7.6;nE=0;nejm=0;ne=0' ">
+    <param name="A_17" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='v.x=V0.x;v.y=V0.y;alfa=ArcTan(v.x,v.y);hm=(v0^2)/(2*g);a=g/(2*(v0^2));m=(abs(XF)>epsilon)?YF/XF:1000000;b=4*p*m-2*XF;c=XF^2-4*p*YF-4*p*p;signo=(P.x>=0)?1:-1;Xm=(-b+signo*sqrt(b^2-4*c))/2;Ym=m*Xm;Ux=(0+Xm-2*Xm);Uy=(0+2*hm-2*Ym);U=sqrt(Ux*Ux+Uy*Uy);Ux=Ux/U;Uy=Uy/U;snap=(dist(B.x,B.y,0,0)<5/E2.escala);B.x=(snap)?0:B.x;B.y=(snap)?0:B.y;snap2=(dist(B.x,B.y,Xm,Ym)<5/E2.escala);B.x=(snap2)?Xm:B.x;B.y=(snap2)?Ym:B.y;hmt=(v0^2)/(2*g);VB.x=v.x;T=B.x/v.x;VB.y=v.y-g*T/4;dBF=dist(B.x,B.y,XF,YF);VB=sqrt(VB.x^2+VB.y^2);K=VB^2/dBF;cosalfa=cos(alfa);senalfa=sen(alfa);v0cosalfa=v0*cosalfa;v0senalfa=v0*senalfa;g2=g/2;;calculaY();paso=((ejE02==3)|(ejE02==4))?0.03:0.05;nE=(av==1)?ejE0:((av>1)?ejE1:0);vprom=(abs(pE0.x-qE0.x)>0.01)?-(H(pE0.x)-H(qE0.x))/(pE0.x-qE0.x):1;' ">
+    <param name="G_01" value="espacio='E3' tipo='texto' fondo='no' color='20303a' expresión='[E3._w-135+X,E3._h-32+Y]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b Ejemplo\b0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,20' align='a_left' anchor='a_top_left' ">
+    <param name="G_02" value="espacio='E3' tipo='ecuación' fondo='no' color='c0c0c0' coord_abs='no' expresión='x=-.3' ancho='14' visible='no' editable='no' ">
+    <param name="G_03" value="espacio='E3' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(-0.3,py)' decimales='2' fijo='sí' tamaño='6' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_04" value="espacio='E3' tipo='segmento' fondo='no' color='1e5a26' dibujar-si='(py>0)' coord_abs='no' expresión='(-0.3,0)(-0.3,py)' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_05" value="espacio='E3' tipo='segmento' fondo='no' color='d11616' dibujar-si='(py<0)' coord_abs='no' expresión='(-0.3,0)(-0.3,py)' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_06" value="espacio='E3' tipo='segmento' fondo='no' color='0000ff' coord_abs='no' expresión='(0,0)(x,0)' decimales='2' fijo='sí' tamaño='2' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_07" value="espacio='E3' tipo='segmento' fondo='no' color='c90000ff' coord_abs='no' expresión='(x,0)(x,py)' decimales='2' fijo='sí' tamaño='2' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_08" value="espacio='E3' tipo='segmento' fondo='no' color='c90000ff' coord_abs='no' expresión='(0,py)(x,py)' decimales='2' fijo='sí' tamaño='2' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_09" value="espacio='E3' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(0,py)' decimales='2' fijo='sí' tamaño='2' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_10" value="espacio='E3' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(x,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs24 t={\*\mjaformula{\expr x\decimals 1\fixed1}}}' decimales='2' fijo='sí' tamaño='6' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_11" value="espacio='E3' tipo='punto' fondo='no' color='20303a' dibujar-si='(ejE0!=6)' coord_abs='no' expresión='(x,py)' rastro='0000ff' decimales='2' fijo='sí' tamaño='2' fuente='Monospaced,PLAIN,12' ">
+    <param name="Animación" value="pausa='60' controles='sí' auto='no' repetir='no' inicio='tt=0;B.x=0;B.y=0;x=0' hacer='B.x=v0*cos(alfa)*tt;B.y=v0*sen(alfa)*tt-(g*tt^2)/2;tt=tt+0.05;;x=(av==1)?x+paso:x;y=(av==1)?py:y;t=(av==1)?x:t' mientras='(av==0)?(tt<tm):((x<TT)&(abs(y)<3.5)&(x>0))' ">
+  </ajs>
+
+
+
+</body>
+</html>

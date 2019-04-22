@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width=740 height=260 code="Descartes">
+   <param name="tamaño" value="740x260">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150">
+   <param name="E_01" value="tipo='R2' id='E10' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E11' x='0' y='0' ancho='100%' alto='180' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='e3ffff00' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E0' x='0' y='190' ancho='100%' alto='70' dibujar-si='1' escala='48' despl_imagen='arr-izq' fondo='e400ffff' red='b8c4c8' red10='889498' ejes='negro' texto='405860'">
+   <param name="C_01" value="id='g1a' tipo='gráfico' espacio='E0' color='222222' color-int='ff000000' tamaño='10' constricción='y=0'">
+   <param name="C_02" value="id='g1a.x' tipo='numérico' región='interior' espacio='E11' nombre='Punto a' expresión='(25,15,150,40)' valor='-2.1' min='-7' max='7' decimales='1' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_03" value="id='g1b' tipo='gráfico' espacio='E0' color='222222' color-int='ff000000' tamaño='10' constricción='y=0' fijo='sí'">
+   <param name="C_04" value="id='g1b.x' tipo='numérico' región='interior' espacio='E11' nombre='Punto b' expresión='(190,15,150,40)' valor='3' min='-7' max='7' decimales='1' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="A_01" value="id='ejernuevo()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='e=1+ent(3.99*rnd);ejer0=ent(6.99*rnd);ejer1=ent(6.99*rnd);vr=0' mientras='ejer0=ejer1'">
+   <param name="A_02" value="id='verresp()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='vr=1;res=(e=n0)?1:2;'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='ejernuevo()'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='T=&squot;&squot;' hacer='T1=(g1a.x<g1b.x)?&squot;(&squot;+g1a.x+&squot;, &squot;+g1b.x+&squot;) = {x∈&squot;:T1;T2=(g1a.x<g1b.x)?&squot;|&squot;+g1a.x+&squot;< x <&squot;+g1b.x+&squot;}&squot;:T2;T1=(g1a.x=g1b.x)?&squot;&squot;+&squot;x∈{&squot;+g1a.x+&squot;}&squot;:T1;T2=(g1a.x=g1b.x)?&squot;&squot;:T2;;T1=(g1b.x<g1a.x)?&squot;(&squot;+g1b.x+&squot;, &squot;+g1a.x+&squot;) = {x∈&squot;:T1;T2=(g1b.x<g1a.x)?&squot;|&squot;+g1b.x+&squot;< x <&squot;+g1a.x+&squot;}&squot;:T2'">
+   <param name="G_01" value="espacio='E0' tipo='segmento' expresión='(g1a.x,0)(g1b.x,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs24                                  \fs48\b{\*\mjaformula ({\expr g1a.x\decimals 1\fixed0},{\expr g1b.x\decimals 1\fixed0})}\b0}' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='3'">
+   <param name="G_02" value="espacio='E0' tipo='punto' expresión='(s-8,-0.3)' familia='s' s.intervalo='[0,16]' s.pasos='16' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs16{\*\mjaformula{\expr s-8\decimals 0\fixed0}}\f2\fs24\par}' fuente='Arial,PLAIN,8' fijo='sí' tamaño='0'">
+   <param name="G_03" value="espacio='E11' tipo='texto' dibujar-si='g1a.x<g1b.x' expresión='[20,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs34                                                                               \f2\fs48\b{\*\mjaformula{\expr T1}\u8477 {\expr T2}}\b0\par \par \b x puede tomar cualquier n\u250 mero que sea mayor a {\*\mjaformula{\expr g1a.x\decimals 1\fixed0}} y\b0\par \b que sea menor a {\*\mjaformula{\expr g1b.x\decimals 1\fixed0}}.\b0\par \par \cf0\b Este intervalo no incluye el valor de los extremos\cf1 .\b0\par \par \par \par }' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_04" value="espacio='E11' tipo='texto' dibujar-si='g1a.x=g1b.x' expresión='[20,90]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}{\colortbl\red255\green129\blue0;\red32\green48\blue58;}\cf0\f1\fs48\b Si el valor de ambos extremos es igual, se tiene un intervalo vacio.\cf1  \b0}' fuente='Monospaced,BOLD,24' fijo='sí'">
+   <param name="G_05" value="espacio='E11' tipo='texto' dibujar-si='g1a.x>g1b.x' expresión='[20,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;}\f1\fs34                                                                               \f2\fs48\b{\*\mjaformula{\expr T1}\u8477 {\expr T2}}\b0\par \par \b x puede tomar cualquier n\u250 mero que sea mayor a {\*\mjaformula{\expr g1b.x\decimals 1\fixed0}} \b0\par \b y que sea menor o a {\*\mjaformula{\expr g1a.x\decimals 1\fixed0}}.\b0\par \par \cf0\b Este intervalo no incluye el valor de los extremos.\b0\par \par \par \par }' fuente='SansSerif,PLAIN,17' fijo='sí'">
+</ajs>
+
+
+
+</body>
+</html>

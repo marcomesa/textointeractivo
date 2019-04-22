@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width=780 height=600 code="Descartes">
+   <param name="tamaño" value="780x600">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150">
+   <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='10' y='10' ancho='260' alto='380' dibujar-si='1' fijo='sí' escala='60' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='300' y='10' ancho='480' alto='380' dibujar-si='1' escala='48' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='theta' tipo='numérico' región='interior' espacio='E0' nombre='theta' expresión='(100,445,28,50)' valor='85' incr='1' fijo='sí' visible='no'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer=';'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='ang=theta*pi/180;m=((theta=90)|(theta=270))?0:tan(ang);c=cos(ang);s=sen(ang);alpha=180-theta;beta=theta-180;gama=360-theta;ang1=theta1*pi/180;mm=tan(ang1);'">
+   <param name="G_01" value="espacio='E2' tipo='texto' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f0\cf0\fs48\b La pendiente de una recta s\b0\cf0\b e denota por \b0\cf1\b m\b0\par\f0\cf0\fs48\b y se define \b0\cf0\b como la relación del cambio\b0\par\f0\cf0\fs48\b vertical con respecto al \b0\cf0\b horizontal cuando\b0\par\f0\cf0\fs48\b un punto se desplaza sobre la recta de \b0\par\f0\cf0\fs48\b izquierda a derecha, es decir, en términos\b0\par\f0\cf0\fs48\b de los cambios \b0\cf0\b indicados en el dibujo,﻿\b0\par\f0\cf0\fs48              \cf1     ﻿\b{\*\mjaformula m={\fraction{\num Δy}{\den Δx}}}\b0\par\f0\cf0\fs48\b Sea θ el ángulo de inclinación de la recta,\b0\par\f0\cf0\fs48\b por lo \b0\cf0\b tanto la pendiente puede ser\b0\par\f0\cf0\fs48\b calculada como:﻿\b0\par\par\f0\cf1\fs48   ﻿\b{\*\mjaformula m={\fraction{\num Δy}{\den Δx}}={\fraction{\num cateto&nbsp;opuesto&nbsp;a&nbsp;θ}{\den cateto&nbsp;adyacente&nbsp;a&nbsp;θ}}=tan&nbsp;θ}\b0\par}' fuente='Monospaced,BOLD,24' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresión='[110,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b{\*\mjaformula θ}\b0\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresión='[110,195]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48{\*\mjaformula Δx}\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' expresión='[195,130]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48{\*\mjaformula Δy}\par}' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='ecuación' color='gris' expresión='y=-1'">
+   <param name="G_06" value="espacio='E1' tipo='ecuación' color='gris' expresión='x=-1.2'">
+   <param name="G_07" value="espacio='E1' tipo='ecuación' color='negro' expresión='y=x+1'">
+   <param name="G_08" value="espacio='E1' tipo='arco' centro='(-1,0)' radio='0.8' fin='45' fuente='Arial,PLAIN,17' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' expresión='(-1,0)(1,2)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1' ancho='2'">
+   <param name="G_10" value="espacio='E1' tipo='segmento' expresión='(-1,0)(1,0)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1' ancho='2'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' expresión='(1,0)(1,2)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1' ancho='2'">
+   <param name="G_12" value="espacio='E0' tipo='texto' dibujar-si='(theta!=90)&(theta!=270)' expresión='[20,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs48\b Ejemplo\b0\par \par \b\u65279 Sea \u952 =     {\*\mjaformula{\expr theta\decimals 0\fixed0}{\supix o}} el \u225 ngulo de inclinaci\u243 n de una recta.    \b0\par \par \b Entonces,  m=tan({\*\mjaformula{\expr theta\decimals 0\fixed0}{\supix o}})= {\*\mjaformula{\expr m\decimals 3\fixed0}}\b0}' fuente='Monospaced,BOLD,24' fijo='sí'">
+</ajs>
+
+
+
+</body>
+</html>

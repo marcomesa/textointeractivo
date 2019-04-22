@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+  
+  <meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+
+  
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <title>La derivada como razón de cambio</title>
+
+  
+  
+  <style type="text/css">
+<!--
+body {
+	background-color: #FFF8E1;
+}
+.auto-style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+-->
+  </style>
+  
+  <script type="text/javascript" src="lib/descartes-min.js"></script>
+  
+  <script type="text/javascript" src="lib/descartes-min.js"></script>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head><body topmargin="0" leftmargin="0">
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td rowspan="2" bordercolorlight="#C0C0C0" bordercolordark="#000000" bgcolor="#fff8e1" valign="top" width="240"><a href="http://proyectodescartes.org"><img src="img/red_240x80_ftrans.png" border="0" height="80" vspace="6" width="240"></a></td>
+      <td bordercolorlight="#C0C0C0" bordercolordark="#000000" align="center" bgcolor="#006699" height="53" width="100%">
+      <p style="margin-top: 4px; margin-bottom: 4px;" class="auto-style1" align="center">LA DERIVADA COMO RAZÓN DE CAMBIO<br>
+      </p>
+      </td>
+    </tr>
+    <tr>
+      <td bordercolorlight="#C0C0C0" bordercolordark="#000000" align="center" bgcolor="#eaf4ff" height="39">
+      <div align="center"><font color="#006699" face="Arial, Helvetica, sans-serif" size="3"><i>Bloque:&nbsp;Análisis</i></font></div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" bordercolor="#000080">
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <p align="center"><ajs name="Descartes" width=790 height=600 code="Descartes">
+   <param name="tamaño" value="790x600">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='25' O.x='-50%' O.y='50%' imagen='img/fondo.jpg' despl_imagen='arr-izq' fondo='bd9c7e' red='no' red10='no' ejes='no' texto='405860'">
+   <param name="E_02" value="tipo='R2' id='E2' x='350' y='20' ancho='400' alto='250' fijo='sí' escala='25' O.x='-50%' O.y='30%' despl_imagen='arr-izq' red='b8c4c8' red10='889498' ejes='405860' texto='405860'">
+   <param name="C_01" value="id='Llave_llenado' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Abrir llave' expresión='(80,80,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='18' imagen='img/btn120.png' acción='calcular' parámetro='llena=1' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(llena=0)&(t<10.8)'">
+   <param name="C_02" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Cerrar llave' expresión='(80,80,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='img/btn120.png' acción='calcular' parámetro='llena=0' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(llena=1)&(t<10.8)'">
+   <param name="C_03" value="id='n2' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Ancho del tanque' expresión='(380,450,370,30)' valor='7.01' min='7' max='10' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='t=0'">
+   <param name="C_04" value="id='Llave_vaciado' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Iniciar vaciado' expresión='(100,520,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='17' imagen='img/btn120.png' acción='calcular' parámetro='llave2=1\n' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(llave2=0)&(t>0)&(t<10.8)' pos_mensajes='centro'">
+   <param name="C_05" value="id='Llave_vaciado2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Parar vaciado' expresión='(100,520,120,25)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='17' imagen='img/btn120.png' acción='calcular' parámetro='llave2=0' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(llave2=1)&(t<10.8)' pos_mensajes='centro'">
+   <param name="C_06" value="id='n4' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Velocidad de vaciado' expresión='(380,500,370,30)' valor='0.51' min='0.5' max='3' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' activo-si='t<10.8'">
+   <param name="C_07" value="id='n6' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Reiniciar simulación' expresión='(75,560,160,30)' fijo='sí' visible='sí' color='amarillo' color-int='ff873600' negrita='sí' fuente puntos='17' imagen='img/btn160.png' acción='abrir URL' parámetro='index.html target=_self' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='t>0'">
+   <param name="C_08" value="id='n7' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Velocidad de llenado' expresión='(380,550,370,30)' valor='2.01' min='0.5' max='5' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' activo-si='t<10.8'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='V=t/2;V2=(t2)/2;dx=(x2-x1)=0?0.00001:x2-x1;m=(V2-V)/dx'">
+   <param name="A_03" value="id='e3' evento='sí' condición='((llena=1)&(t=0))' acción='animar' parámetro.fuente='Monospaced,PLAIN,12' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='polígono' color='turquesa' dibujar-si='(llena=1)&(t<10.8)' expresión='((6+n2)/2,17)((6+n2)/2-.3,4)((6+n2)/2+.3,4)((6+n2)/2,17)' relleno='turquesa' ancho='3'">
+   <param name="G_02" value="espacio='E1' tipo='polígono' color='turquesa' dibujar-si='(t>0)' expresión='(3,4)(3+n2,4)(3+n2,4+t)(3,4+t)(3,4)' relleno='turquesa' ancho='4'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' expresión='(3,15)(3,4)(3+n2,4)(3+n2,15)' ancho='4'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' expresión='((4.2+n2)/2,18,.5,.5)' archivo='img/llave.png'">
+   <param name="G_05" value="espacio='E1' tipo='ecuación' color='turquesa' dibujar-si='(x>(3+n2))&(llave2=1)&(t>0)&(t<10.8)' expresión='y=-.2*(x-3-n2)^2+4.3' ancho='7'">
+   <param name="G_06" value="espacio='E2' tipo='punto' expresión='(x1,V)' rastro='azul' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='abs(x2-x1)>0' expresión='[360,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs44{\*\mjaformula V = {\expr V\decimals 2\fixed1}u{\supix 3}}\fs40\par \fs44{\*\mjaformula t = {\expr x1*10\decimals 2\fixed1}seg}\fs40\par \par \fs44\b{\*\mjaformula\cf0 Raz\u243 n de cambio {\fraction{\num dV}{\den dt}} = {\expr m\decimals 2\fixed1}{\fraction{\num u{\supix 3}}{\den seg}}{\supix}\cf1}\fs40\b0}' fuente='Arial,PLAIN,22' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='abs(x2-x1)>0' expresión='[361,301]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red255\green255\blue255;\red32\green48\blue58;\red0\green255\blue0;}\f1\fs44\cf0{\*\mjaformula V = {\expr V\decimals 2\fixed1}u{\supix 3}}\fs40\par \fs44{\*\mjaformula t = {\expr x1*10\decimals 2\fixed1}seg}\cf1\fs40\par \par \fs44\b{\*\mjaformula\cf2 Raz\u243 n de cambio {\fraction{\num\cf2 dV}{\den\cf2 dt}} = {\expr m\decimals 2\fixed1}{\fraction{\num\cf2 u{\supix\cf2 3}}{\den\cf2 seg}}{\supix}\cf1}\fs40\b0}' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="Animación" value="pausa='40' controles='no' auto='no' hacer='t2=t;x2=x1;t=t+(n7/(n2^2))*(llena=1)-(n4/(n2^2))*(llave2=1)*(t>0);x1=x1+0.01' mientras='t<10.8'">
+</ajs></p>
+            <p align="center"><ajs name="Descartes" width=600 height=25 code="Descartes">
+   <param name="tamaño" value="600x25">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' ancho='25' alto='600' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='Indicaciones' tipo='numérico' interfaz='botón' espacio='E1' nombre='Indicaciones' fijo='sí' visible='sí' color='003d64' color-int='d8eeff' negrita='sí' fuente puntos='14' acción='abrir Escena' parámetro='indicaciones.html'">
+</ajs></p>
+            <br>
+            </td>
+            <td style="vertical-align: top; text-align: justify;">
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">En este
+simulador se proponen dos actividades que permiten comprender la
+derivada como razón de cambio.</font></p>
+            <p> </p>
+            <ol>
+              <li>
+                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">Si la llave de
+entrada está menos abierta (velocidad de llenado) que la llave de
+salida (velocidad de vaciado) y se empieza a
+abrir de modo que rebase a la llave de salida por un lapso de
+tiempo: </font></p>
+                <ul>
+                  <li>
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurre con
+el volumen de agua en el tanque mientras la llave de entrada está menos
+abierta que la llave de salida?</font> </p>
+                  </li>
+                  <li>
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurre con
+el volumen de agua en el tanque en el momento en que ambas llaves
+coinciden momentáneamente en la misma posición?</font> </p>
+                  </li>
+                  <li>
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurre con
+el volumen de agua en el tanque en el lapso de tiempo en el cual la
+llave de entrada está más abierta que la llave de salida?</font></p>
+                  </li>
+                  <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurre con el gasto neto de agua en el lapso de tiempo
+que ambas llaves tienen casi la misma posición?<br>
+                    </font></li>
+                </ul>
+              </li>
+              <li>
+                <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">Si l</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">a llave de
+entrada se encuentra más cerrada que la llave de
+vaciado y empieza a abrirse uniformemente hasta que llegue </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">por un lapso de
+tiempo </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">a estar más abierta que la de
+vaciado y posteriormente se empieza a cerrar uniformemente hasta
+cerrarla completamente: </font></p>
+                <ul>
+                  <li>
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurre con
+el volumen de agua en el tanque mientras llevó a
+cabo las manipulaciones descritas en </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">la llave de
+entrada</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">?</font> </p>
+                  </li>
+                  <li>
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurrió con
+el volumen de agua en el tanque en los momentos en que ambas llaves
+tuvieron la misma posición?</font> </p>
+                  </li>
+                  <li>
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurrió con
+la rapidez de volumen o en el nivel de agua en el tanque en el momento
+en el
+cual llave de entrada pasa de estar abriéndose a estar cerrándose?</font>
+                    </p>
+                  </li>
+                  <li>
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">¿Qué ocurrió con
+la rapidez del volumen o en el nivel de agua en el tanque durante el
+lapso de
+tiempo en el cual el nivel del agua estuvo ascendiendo?</font> </p>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- Licencia de Creative Commons -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody>
+    <tr>
+      <td bgcolor="#fee6b8" height="29">&nbsp;</td>
+      <td bgcolor="#fee6b8" height="29"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><i> Autores:
+Juan Guillermo Rivera Berrío y Carlos Alirio Ballesteros Torres</i><em></em></font></td>
+    </tr>
+    <tr>
+      <td rowspan="3" bgcolor="#fff8e1" valign="top" width="65"><img src="img/logo2.gif" height="80" width="65"></td>
+      <td bgcolor="#fff8e1" height="20" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td bgcolor="#fff8e1" height="20" valign="top"><font color="#006699" face="Verdana, Arial, Helvetica, sans-serif" size="1">Proyecto
+Descartes. Año 2014</font></td>
+    </tr>
+    <tr>
+      <td bgcolor="#fff8e1" height="40" valign="top">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody>
+    <tr>
+      <td colspan="3" bgcolor="#fee6b8" height="29" valign="top">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Licencia de Creative Commons -->
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES"><img alt="Licencia de Creative Commons" style="border-width: 0pt;" src="img/by-nc-nd.eu_petit.png"></a><br>
+Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES">licencia
+de Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0
+Internacional</a>&nbsp;</font> </p>
+
+</body></html>

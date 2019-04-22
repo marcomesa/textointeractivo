@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4b.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="740" height="640" code="Descartes">
+    <param name="tamaño" value="740x640">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' cID='15702a4ce54' x='0' y='0' ancho='740' alto='640' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Anterior' expresión='(10,E0._h-40,150,34)' valor='0' visible='sí' color='222222' color-int='f0f8ff' negrita='sí' cursiva='no' subrayada='no' fuente puntos='20' imagen=' _STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='pg=1' dibujar-si='ppp' activo-si='pg=2' ">
+    <param name="C_02" value="id='n2' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Siguiente' expresión='(E0._w-160,E0._h-40,150,34)' valor='0' visible='sí' color='222222' color-int='f0f8ff' negrita='sí' cursiva='no' subrayada='no' fuente puntos='20' imagen=' _STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='pg=2' dibujar-si='ppp' activo-si='pg=1' ">
+    <param name="A_01" value="id='dist(x1,y1,x2,y2)' algoritmo='no' expresión='sqrt((x2-x1)^2+(y2-y1)^2)' ">
+    <param name="A_02" value="id='toCoordRelX(ax,w,e,ox)' algoritmo='no' expresión='(ax-(ent(w/2)+ox))/e' ">
+    <param name="A_03" value="id='toCoordRelY(ay,h,e,oy)' algoritmo='no' expresión='-(ay-(ent(h/2)+oy))/e' ">
+    <param name="A_04" value="id='orden' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_05" value="id='vecAux' vector='sí' evaluar='una-sola-vez' tamaño='5' ">
+    <param name="A_06" value="id='xRatio' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_07" value="id='yRatio' vector='sí' evaluar='una-sola-vez' tamaño='4' ">
+    <param name="A_08" value="id='respCorr' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='respCorr[0]=3;respCorr[1]=2;respCorr[2]=0;respCorr[3]=2;respCorr[4]=3' ">
+    <param name="A_09" value="id='coef' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='coef[0]=0;coef[1]=0;coef[2]=0;coef[3]=0' ">
+    <param name="A_10" value="id='coef2' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='coef2[0]=0;coef2[1]=0;coef2[2]=0;coef2[3]=0' ">
+    <param name="A_11" value="id='iniVecAux()' algoritmo='sí' expresión='1' inicio='_j=0' hacer='vecAux[_j]=_j;_j=_j+1' mientras='_j<numIncisos' ">
+    <param name="A_12" value="id='actVecAux(n)' algoritmo='sí' expresión='1' inicio='_k=n' hacer='vecAux[_k]=vecAux[_k+1];_k=_k+1' mientras='_k<(numIncisos-1)' ">
+    <param name="A_13" value="id='setOrden()' algoritmo='sí' expresión='1' inicio='_i=0*iniVecAux()' hacer='_resto=numIncisos-_i;_indice=ent(rnd*_resto);orden[_i]=vecAux[_indice];aux=actVecAux(_indice);_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_14" value="id='setRatio()' algoritmo='sí' expresión='1' inicio='_i=0' hacer='xRatio[orden[_i]]=xRAT1;yRatio[orden[_i]]=yRAT1-_i*RAT1.sv;_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_15" value="id='genera_coeficientes()' algoritmo='sí' expresión='x' inicio='a_0=0;a_1=0;a_2=0;a_3=0' hacer='a_0=ent(rnd*20)-10;a_1=ent(rnd*20)-10;a_2=ent(rnd*20)-10;a_3=ent(rnd*20)-10' mientras='((a_0=0)&(a_1=0)&(a_2=0)&(a_3=0))' ">
+    <param name="A_16" value="id='creaPolinomio()' algoritmo='sí' expresión='return_creaPolinomio' hacer='equis_3=&squot;x\ub3 &squot;;equis_2=&squot;x\ub2 &squot;;equis=&squot;x&squot;;suma=&squot;+&squot;;ajusta_coef();polinomio = (coef[0]==0)?&squot;&squot;:coef[0];;suma=(coef[0]==0)?&squot;&squot;:&squot;+&squot;;suma=(coef[0]<0)?&squot;&squot;:suma;;coef=coef[1];coef=(coef[1]==1)?&squot;&squot;:coef;coef=(coef[1]==-1)?&squot;-&squot;:coef;polinomio = (coef[1]!=0)?coef+equis+suma+polinomio:polinomio;;suma=((coef[1]==0)&(coef[0]<=0))?&squot;&squot;:&squot;+&squot;;suma=(coef[1]<0)?&squot;&squot;:suma;coef=coef[2];coef=(coef[2]==1)?&squot;&squot;:coef;coef=(coef[2]==-1)?&squot;-&squot;:coef;polinomio =(coef[2]!=0)?coef+equis_2+suma+polinomio:polinomio;;suma=((coef[2]==0)&(coef[1]==0)&(coef[0]<=0))?&squot;&squot;:&squot;+&squot;;suma=((coef[2]==0)&(coef[1]<0))?&squot;&squot;:suma;suma=(coef[2]<0)?&squot;&squot;:suma;coef=coef[3];coef=(coef[3]==1)?&squot;&squot;:coef;coef=(coef[3]==-1)?&squot;-&squot;:coef;polinomio =(coef[3]!=0)?coef+equis_3+suma+polinomio:polinomio' ">
+    <param name="A_17" value="id='ini_func()' algoritmo='sí' expresión='x' hacer='coefGradoCero=ent(rnd*8)+2;coefGradoUno=ent(rnd*8)+2;coefGradoDos=ent(rnd*8)+2;coefGradoTres=ent(rnd*8)+2;logBase=ent(rnd*7)+2;baseExponencial=ent(rnd*7)+2' ">
+    <param name="A_18" value="id='ini_pos()' algoritmo='sí' expresión='x' hacer='E0_ancho_cajita=75;E0_alto_cajita=22;;E0_ancho_f=56;E0_ancho_func=E0_ancho_cajita+E0_ancho_f;;E0_posx=(E0._w-2*E0_ancho_func)/3;CX_f=E0_posx+E0_ancho_f;CY_f=30;CX_g=2*E0_posx+E0_ancho_func+E0_ancho_f;CY_g=30;;CX_suma=E0_posx;CY_suma=100;;CX_df=CX_f-E0_ancho_f;CY_df=190;CX_dg=CX_g-E0_ancho_f;CY_dg=190;CX_Dsuma=CX_df;CY_Dsuma=270' ">
+    <param name="A_19" value="id='cambiaSignos()' algoritmo='sí' expresión='x' hacer='signoSDpos=(E0_menu=1)?&squot;+&squot;:&squot;-&squot;;signoSDneg=(E0_menu=1)?&squot;-&squot;:&squot;+&squot;;signoCeroSDpos=(E0_menu=1)?&squot;&squot;:&squot;-&squot;;signoCeroSDneg=(E0_menu=1)?&squot;-&squot;:&squot;&squot;;;' ">
+    <param name="A_20" value="id='REINIT_Polinomios()' algoritmo='sí' expresión='x' hacer='aux=genera_coeficientes();;coef[0]=a_0;coef[1]=a_1;coef[2]=a_2;coef[3]=a_3;aux=creaPolinomio();;polinomio_original=polinomio;;coef[0]=a_1;coef[1]=2*a_2;coef[2]=3*a_3;coef[3]=0;aux=creaPolinomio();;polinomio_derivado=polinomio' ">
+    <param name="A_21" value="id='iniE1()' algoritmo='sí' expresión='x' hacer='E1_x2=&squot;&squot;;E1_x=&squot;&squot;;E1_cte=&squot;&squot;;;E1_x2.ok=0;E1_x.ok=0;E1_cte.ok=0;;aux=genera_coeficientes();;coef[0]=a_0;coef[1]=a_1;coef[2]=a_2;coef[3]=a_3;;coef2[0]=a_0;coef2[1]=a_1;coef2[2]=a_2;coef2[3]=a_3;;aux=creaPolinomio();;E1_polEjer=polinomio;;E1_bien=0;E1_verif=0' ">
+    <param name="A_22" value="id='Reini()' algoritmo='sí' expresión='1' inicio='reini=0' hacer='E3_verSol=0;E3_bien=-1;ratio=-1;ratioActivo=1;aux2=setOrden()*setRatio()' ">
+    <param name="A_23" value="id='E1_verificar()' algoritmo='sí' expresión='E1_bien' hacer='E1_bien=(E1_cte.ok)&(E1_x.ok)&(E1_x2.ok)?1:0;E1_hola=&squot;jpppas&squot;' ">
+    <param name="A_24" value="id='clicRatio(mx,my)' algoritmo='sí' expresión='1' inicio='_i=0;_epsilon=1' hacer='_onRatio=(dist(mx,my,xRatio[_i],yRatio[_i])<_epsilon);ratio=((_onRatio)?_i:ratio);E3_bien=((_onRatio)?-1:E3_bien);_i=_i+1' mientras='_i<numIncisos' ">
+    <param name="A_25" value="id='E3_Verificar()' algoritmo='sí' expresión='1' hacer='E3_bien=(ratio=respCorr[E3_num_ejer])' ">
+    <param name="A_26" value="id='CONFIG' algoritmo='sí' evaluar='una-sola-vez' hacer='E3_escala=10;E3_Ox=0;E3_Oy=0;numEjercicios=5;numIncisos=4;pg=2' ">
+    <param name="A_27" value="id='INI_MRC' algoritmo='sí' evaluar='una-sola-vez' hacer='MRC1.b=560;MRC1.h=70;xMRC1=20;yMRC1=90;MRC2.b=400;MRC2.h=180;xMRC2=190;yMRC2=120' ">
+    <param name="A_28" value="id='INI_RAT' algoritmo='sí' evaluar='una-sola-vez' hacer='RAT1.re=0.8;RAT1.ri=0.4;RAT1.sv=4.6;RAT1.sh=22;RAT1.xt=1;xRAT1=toCoordRelX(30,E3._w,E3_escala,E3_Ox);yRAT1=toCoordRelY(140,E3._h,E3_escala,E3_Oy)' ">
+    <param name="A_29" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='reini=1' hacer='ini_func();ini_pos();cambiaSignos();;REINIT_Polinomios();iniE1();' ">
+    <param name="A_30" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='aux=((reini)?Reini():0)' hacer='aux=(((E3.mouse_pressed)&(ratioActivo))?clicRatio(E3.mouse_x,E3.mouse_y):0)' ">
+    <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='pg=1' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f0\cf0\fs52 Veamos la demostración de la fórmula de la derivada de una\par\f0\cf0\fs52 suma de funciones:\f1\cf0\i  \i0\cf0\b\i  \i0\b0\cf1\b\i  \i0\b0\b\i{\*\mjaformula (f+g)&squot;(x)=f&nbsp;&squot;(x)+g&squot;(x)}\i0\b0\par\par\f0\cf0\fs52 La definición de la derivada de una función es\par\par\f1\cf0\fs52\i                                      \i0\i{\*\mjaformula f&nbsp;&squot;(x)={\limit{\from ∆x}{\to 0}{\what{\fraction{\num f(x+∆x)-f(x)}{\den ∆x}}}}}\i0\par\par\f0\cf0\fs52 Usemos la definición para  la derivada de la función \f1\i{\*\mjaformula f(x)+g(x)}\i0\f0\cf0  \par\f1\cf0\fs52\i                  \i0\i{\*\mjaformula (f+g)&squot;(x)={\limit{\from ∆x}{\to 0}{\what{\fraction{\num (f(x+∆x)+g(x+∆x))-(f(x)+g(x))}{\den ∆x}}}}}\i0\par\f0\cf0\fs52 al quitar paréntesis se obtiene\par\f1\cf0\fs52\i                                 \i0\i{\*\mjaformula ={\limit{\from ∆x}{\to 0}{\what{\fraction{\num f(x+∆x)+g(x+∆x)-f(x)-g(x)}{\den ∆x}}}}}\i0\cf0\i   \i0\par\f0\cf0\fs52 después, al reagrupar términos tenemos\par\par\f1\cf0\fs52\i                                 \i0\i{\*\mjaformula ={\limit{\from ∆x}{\to 0}{\what ({\fraction{\num f(x+∆x)-f(x)}{\den ∆x}}+{\fraction{\num g(x+∆x)-g(x)}{\den ∆x}})}}}\i0\cf0\fs38\i   \i0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_02" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='pg=2' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red32\green80\blue96;}\f0\cf0\fs52 y, como el límite de una suma es l\cf0 a suma de límites, entonces\par\f1\cf0\fs52\i                       \i0\i{\*\mjaformula ={\limit{\from ∆x}{\to 0}{\what{\fraction{\num f(x+∆x)-f(x)}{\den ∆x}}+{\limit{\from ∆x}{\to 0}{\what}}{\fraction{\num g(x+∆x)-g(x)}{\den ∆x}}}}}\i0\cf0\i  \i0\par\f0\cf0\fs52 y esto es precisamente la suma de la derivada de cada función\par\f0\cf0\fs52                                 \cf1\b                \b0\f1\b\i{\*\mjaformula =&nbsp;f&nbsp;&squot;(x)+g&squot;(x)}\i0\b0\par\par\f0\cf0\fs52\b Observación 1. \b0\cf0 Hay que notar que la regla de la derivada de la \par\f0\cf0\fs52 suma \cf0 de dos funciones se puede \cf0 generalizar para el caso de más\par\f0\cf0\fs52 de dos  \cf0 funciones. La regla es válida para un número finito de\par\f0\cf0\fs52 funciones\f1\cf0\i        \i0\i{\*\mjaformula (f{\subix 1}+f{\subix 2}+…+f{\subix n})&squot;(x)=f{\subix 1}&squot;(x)+f{\subix 2}&squot;(x)+…+f{\subix n}&squot;(x)}\i0\par\par\f0\cf0\fs52\b Observación 2.\b0\cf0  Recuerda que la derivada de una constante por\par\f0\cf0\fs52 una \cf0 función es la co\cf0 nstante por la \cf0 derivada de la función:\par\f0\cf0\fs52  \f1\i{\*\mjaformula (cf)&squot;(x)&nbsp;=cf&nbsp;&squot;(x)}\i0\f0\cf0 .  \cf0 Entonces, por este hecho y la observación 1, \par\f0\cf0\fs52 tenemos un método \cf0 muy directo para derivar cualquier polinomio. \par\par\f0\cf0\fs52 Para derivar un polinomio basta con los siguientes dos pasos: \par\f0\cf0\fs52       1) derivar cada uno de los términos del polinomio y\par\f0\cf0\fs52       2) sumar las derivadas resultantes\cf2 .}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,PLAIN,17' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

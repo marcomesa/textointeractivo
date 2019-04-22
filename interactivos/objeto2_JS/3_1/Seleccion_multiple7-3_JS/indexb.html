@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden;">
+  <title>SELECCIÓN MÚLTIPLE</title>
+  <link rel="stylesheet" href="fonts/style.css" type="text/css">
+  <link rel="stylesheet" href="css/btn_style.css" type="text/css">
+  <ajs name="Descartes" code="Descartes" width="790" height="520">
+    <param name="tamaño" value="790x520">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="images/transp_1x1.png">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=100 ancho_oeste=120 alto=50 ">
+    <param name="E_01" value="tipo='R2' id='E2' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='1' O.x='-395' O.y='240' despl_imagen='centrada' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='CalifSp' x='20' y='75' ancho='750' alto='440' dibujar-si='ShwCalifSp' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='#ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='start' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='          Comenzar' expresión='(E2._w/2-150,400,300,78)' color='ffffff' borderColor='no' color-int='fec639' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='36' imagen='_STYLE_|class=btnAprendeMx verdeAgua comenzar|shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='nPreg=0\ncalif=0\nsetLst()\ndoPlay()' dibujar-si='nPreg==-1' ">
+    <param name="C_02" value="id='sigBt' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='          Siguiente' expresión='(E2._w/2-90,E2._h-56,240,46)' color='blanco' borderColor='no' color-int='fec639' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='24' imagen='_STYLE_|class=btnAprendeMx verdeAgua iniciar|shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='nPreg=nPreg+1\nRsps=&squot;&squot;\nsetLst()\nrespondio=0\ncorrecto=0\ncalif2=calif\ndoPlay()' dibujar-si='(nPreg>-1)&(nPreg<(nP-1))&(respondio==1)' ">
+    <param name="C_03" value="id='verifBt' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='          Ver nota' expresión='(E2._w/2-90,E2._h-56,240,46)' color='blanco' borderColor='no' color-int='fec639' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='24' imagen='_STYLE_|class=btnAprendeMx verdeAgua iniciar|shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='doPlay()\nnPreg=nPreg+1\nRsps=&squot;&squot;\nsetLst()\nevaluar()\ncalif2=Nmax[1]*calif/nP\ncaliftot=&squot;Nota: &squot;+calif2\nnotaf=calif2\nresultado1=notaf\nparent.set(&squot;var1&squot;,resultado1)\nparent.update()\n\n' dibujar-si='(nPreg>-1)&(nPreg<(nP))&(respondio==1)' ">
+    <param name="C_04" value="id='otravez' interfaz='botón' tipo='numérico' región='interior' espacio='CalifSp' nombre='          Otra vez' expresión='(CalifSp._w/2-150,355,300,78)' color='blanco' borderColor='no' color-int='fec639' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='36' imagen='_STYLE_|class=btnAprendeMx verdeAgua otravez|shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='nPreg=0\ncalif=0\ndoPlay()\nRsps=&squot;&squot;\ncorrecto=0\nrespondio=0\nsetLst()' ">
+    <param name="C_05" value="id='NO' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Falso' expresión='(1*(E2._w-bd)/15,E2._h-221,bd,bd)' color='blanco' borderColor='no' color-int='ee4444' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='40' imagen='_STYLE_|border=3|borderRadius=72|borderColor=ffffff|overColor=d23534|downColor=d23534|inactiveColor=b0b0b0|shadowBoxColor=808080|shadowInsetBoxColor=991000|shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='doPlay(0)\ndijo=0' dibujar-si='animando' activo-si='1|show_ha&show_hb&show_hc' ">
+    <param name="C_06" value="id='SI' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Cierto' expresión='(14*(E2._w-bd)/15,E2._h-221,bd,bd)' color='blanco' borderColor='no' color-int='84d233' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='40' imagen='_STYLE_|border=3|borderRadius=72|borderColor=ffffff|overColor=66b526|downColor=66b526|inactiveColor=b0b0b0|shadowBoxColor=808080|shadowInsetBoxColor=258200|shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='doPlay(0)\ndijo=1' dibujar-si='animando' activo-si='1|show_ha&show_hb&show_hc' ">
+    <param name="C_07" value="id='unoBt' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='A' expresión='(60,210,46,46)' color='blanco' borderColor='no' color-int='fff0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='24' imagen='_STYLE_|class=btnAprendeMx lavanda |shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='correcto=(rspteo==0)?1:2\ncalif=(correcto==1)?calif+1:calif\nrespondio=1\nimgy=220\nbla=(nPreg==4)?evaluar():bla\ndoPlay()\n' dibujar-si='(nPreg!=-1)' activo-si='(respondio==0)' ">
+    <param name="C_08" value="id='dosBt' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='B' expresión='(60,210+46+13,46,46)' color='blanco' borderColor='no' color-int='fff0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='24' imagen='_STYLE_|class=btnAprendeMx lavanda |shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='correcto=(1==rspteo)?1:2\ncalif=(correcto==1)?calif+1:calif\nrespondio=1\nimgy=220+46+13\nbla=(nPreg==4)?evaluar():bla\ndoPlay()\n' dibujar-si='(nPreg!=-1)' activo-si='(respondio==0)' ">
+    <param name="C_09" value="id='tresBt' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='C' expresión='(60,210+2*46+2*13,46,46)' color='blanco' borderColor='no' color-int='fff0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='24' imagen='_STYLE_|class=btnAprendeMx lavanda |shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='correcto=(2==rspteo)?1:2\ncalif=(correcto==1)?calif+1:calif\nrespondio=1\nimgy=220+2*46+2*13\nbla=(nPreg==4)?evaluar():bla\ndoPlay()\n' dibujar-si='(nPreg!=-1)' activo-si='(respondio==0)' ">
+    <param name="C_10" value="id='cuatroBt' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='D' expresión='(60,210+3*46+3*13,46,46)' color='blanco' borderColor='no' color-int='fff0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='24' imagen='_STYLE_|class=btnAprendeMx lavanda |shadowTextColor=rgba(0,0,0,0.2)|shadowTextOffsetY=2|shadowTextBlur=0|textBorder=0' acción='calcular' parámetro='correcto=(3==rspteo)?1:2\ncalif=(correcto==1)?calif+1:calif\nrespondio=1\nimgy=220+3*46+3*13\nbla=(nPreg==4)?evaluar():bla\ndoPlay()\n' dibujar-si='(nPreg!=-1)' activo-si='(respondio==0)' ">
+    <param name="C_11" value="id='a1' tipo='audio' espacio='E2' expresión='(0,0)' dibujar-si='0' archivo='audio/clic.mp3' ">
+    <param name="A_01" value="id='Nmax' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='Nmax[0]=0;Nmax[1]=0;Nmax[2]=0' archivo='textos/notas.txt' tipo='vector' ">
+    <param name="A_02" value="id='NPT' vector='sí' evaluar='una-sola-vez' tamaño='3' archivo='textos/NP.txt' tipo='vector' ">
+    <param name="A_03" value="id='rtas' vector='sí' evaluar='una-sola-vez' tamaño='30' archivo='textos/rtas.txt' tipo='vector' ">
+    <param name="A_04" value="id='ptas' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='ptas[0]=0;ptas[1]=0;ptas[2]=0' archivo='textos/ptas.txt' tipo='vector' ">
+    <param name="A_05" value="id='randomOpc' vector='sí' evaluar='una-sola-vez' tamaño='6' tipo='vector' ">
+    <param name="A_06" value="id='Avail' vector='sí' evaluar='una-sola-vez' tamaño='6' tipo='vector' ">
+    <param name="A_07" value="id='Prgs' vector='sí' evaluar='una-sola-vez' tamaño='5' tipo='vector' ">
+    <param name="A_08" value="id='RspsTod' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='5' tipo='matriz' ">
+    <param name="A_09" value="id='Rsps' vector='sí' evaluar='una-sola-vez' tamaño='6' tipo='vector' ">
+    <param name="A_10" value="id='SI' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión=';' tipo='vector' ">
+    <param name="A_11" value="id='NO' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión=';' tipo='vector' ">
+    <param name="A_12" value="id='OK' vector='sí' evaluar='una-sola-vez' tamaño='100' tipo='vector' ">
+    <param name="A_13" value="id='WRONG' vector='sí' evaluar='una-sola-vez' tamaño='100' tipo='vector' ">
+    <param name="A_14" value="id='clear_OK_WRONG()' algoritmo='sí' expresión='x' local='j' inicio='iniciado=0;j=0' hacer='OK[j]=0;WRONG[j]=0;j=j+1' mientras='j<100' tipo='función' ">
+    <param name="A_15" value="id='FIG' vector='sí' evaluar='una-sola-vez' tamaño='100' tipo='vector' ">
+    <param name="A_16" value="id='DATA' matriz='sí' evaluar='una-sola-vez' columnas='100' filas='10' expresión='typ=0;vAB=1;vBC=2;vCA=3;vHC=4;vHA=5;vHB=6;acut=0;rect=1;obtu=2;equi=3;isoc=4;NT=5;no=0;si=1' tipo='matriz' ">
+    <param name="A_17" value="id='makeFig(k,str)' algoritmo='sí' expresión='x' local='limite_inf,limite_sup,ind' hacer='limite_inf=(k<32)?15:limite_inf;limite_inf=(k<24)?10:limite_inf;limite_inf=(k<16)?5:limite_inf;limite_inf=(k<8)?0:limite_inf;;ind=limite_inf+ent(rnd*5);FIG[k]=(str==&squot;SI&squot;)?SI[ind]:NO[ind];' tipo='función' ">
+    <param name="A_18" value="id='PREG' matriz='sí' evaluar='una-sola-vez' columnas='100' filas='12' expresión='txt=0;rsp=1;img=2;tri=3;usd=4;txtAB=5;txtBC=6;txtCA=7;txtHC=8;txtHA=9;txtHB=10;;no=0;si=1;;NP=0;;' tipo='matriz' ">
+    <param name="A_19" value="id='randomFig(n)' algoritmo='sí' expresión='x' hacer='orh=(rnd<0.5)?-1:1;orv=1;rot=ent(rnd*12);' tipo='función' ">
+    <param name="A_20" value="id='ORD' vector='sí' evaluar='una-sola-vez' tamaño='50' tipo='vector' ">
+    <param name="A_21" value="id='clearPREGs()' algoritmo='sí' expresión='x' local='i' inicio='i=0' hacer='PREG[i,usd]=0;i=i+1' mientras='i<NP' tipo='función' ">
+    <param name="A_22" value="id='selectPREGs(k)' algoritmo='sí' expresión='x' local='i,j' inicio='clearPREGs();i=0;j=0' hacer='j=ent(rnd*NP);ORD[i]=(PREG[j,usd]==0)?j:ORD[i];i=(PREG[j,usd]==0)?i+1:i;PREG[j,usd]=1;;;;;;' mientras='i<k' tipo='función' ">
+    <param name="A_23" value="id='evaluar()' algoritmo='sí' expresión='1' hacer='calif3=calif/nP;aprecio=(calif3<.2)?&squot;Muy mal&squot;:aprecio;aprecio=(calif3>.19)&(calif3<.4)?&squot;¡Mal!&squot;:aprecio;aprecio=(calif3>.39)&(calif3<.6)?&squot;Mal&squot;:aprecio;aprecio=(calif3>.59)&(calif3<.7)?&squot;Regular&squot;:aprecio;aprecio=(calif3>.69)&(calif3<.9)?&squot;Muy bien&squot;:aprecio;aprecio=(calif3>.89)?&squot;¡Excelente!&squot;:aprecio;;imgFace=(calif3<.4)?&squot;images/face01.png&squot;:imgFace;imgFace=((calif3>.2)&(calif3<.8))?&squot;images/face02.png&squot;:imgFace;imgFace=((calif3>.79)&(calif3<.9))?&squot;images/face03.png&squot;:imgFace;imgFace=(calif3>.89)?&squot;images/face04.png&squot;:imgFace' tipo='función' ">
+    <param name="A_24" value="id='setTit(titulo)' algoritmo='sí' expresión='x' hacer='parent.set(&squot;titulo&squot;,titulo);parent.update();' tipo='función' ">
+    <param name="A_25" value="id='tryPlay(k)' algoritmo='sí' expresión='0' hacer='parent.exec(&squot;tryPlay&squot;,&squot;EXP&squot;)' tipo='función' ">
+    <param name="A_26" value="id='doPlay()' algoritmo='sí' expresión='x' hacer='a1.play()' tipo='función' ">
+    <param name="A_27" value="id='botX(d,x,w,t)' algoritmo='sí' expresión='val' local='val' inicio='val=x' hacer='val=((t==1)|(t==6))?x+d    :val;val=((t==2)|(t==5))?x+w-1-d:val;val=((t==3)|(t==4))?x+w-1  :val;' tipo='función' ">
+    <param name="A_28" value="id='botY(d,y,h,t)' algoritmo='sí' expresión='val' local='val' inicio='val=y' hacer='val=((t%8==0)|(t==3))?y+d  :val;val=((t==4)|(t==7))?y+h-1-d:val;val=((t==5)|(t==6))?y+h-1  :val;' tipo='función' ">
+    <param name="A_29" value="id='initDisplay()' algoritmo='sí' expresión='x' hacer='miescala=50;x_btns=750;y_btns=E2._h-112;asz=0.25;bd=145;;' tipo='función' ">
+    <param name="A_30" value="id='Inicio()' algoritmo='sí' expresión='x' hacer='nP=NPT[1];T=30;instruc=&squot;Responde con la mejor opción.&squot;;;bImg.w=350;bImg.h=294;bImg.x=(E2._w-bImg.w)/2;bImg.y=115;;asigna();;;;nPreg=-1;;Rsps=&squot;&squot;;;rspusu=-1' tipo='función' ">
+    <param name="A_31" value="id='Girar(teta)' algoritmo='sí' expresión='x' local='x1,y1,xg,yg,ct,st' hacer='ct=cos(teta);st=sen(teta);;x1=A.x-x0;y1=A.y-y0;xg=ct*x1-st*y1;yg=st*x1+ct*y1;A.x=x0+xg;A.y=y0+yg;;x1=B.x-x0;y1=B.y-y0;xg=ct*x1-st*y1;yg=st*x1+ct*y1;B.x=x0+xg;B.y=y0+yg;;x1=C.x-x0;y1=C.y-y0;xg=ct*x1-st*y1;yg=st*x1+ct*y1;C.x=x0+xg;C.y=y0+yg;;x1=D.x-x0;y1=D.y-y0;xg=ct*x1-st*y1;yg=st*x1+ct*y1;D.x=x0+xg;D.y=y0+yg;' tipo='función' ">
+    <param name="A_32" value="id='Calculos()' algoritmo='sí' expresión='x' hacer='ShwCalifSp=(nPreg==(nP))' tipo='función' ">
+    <param name="A_33" value="id='setLst()' algoritmo='sí' expresión='x' local='i' inicio='i=0;cont=3;Avail[0]=1;Avail[1]=2;Avail[2]=3;Avail[3]=4;Avail[4]=5;randomOpc[0]=-1;randomOpc[1]=-1;randomOpc[2]=-1;randomOpc[3]=-1;randomOpc[4]=-1' hacer='numrnd=ent((cont+0.9999)*rnd);randomOpc[i]=Avail[numrnd];rspteo=(randomOpc[i]==1)?i:rspteo;bldAvail();i=i+1;bla=(i==4)?ConstPrgs():bla;cont=cont-1' mientras='i<4' tipo='función' ">
+    <param name="A_34" value="id='ConstPrgs()' algoritmo='sí' expresión='x' local='i' inicio='i=0' hacer='Rsps[i]=RspsTod[nPreg,randomOpc[i]-1];i=i+1' mientras='i<4' tipo='función' ">
+    <param name="A_35" value="id='bldAvail()' algoritmo='sí' expresión='x' local='i' inicio='i=0' hacer='Avail[i]=(i<numrnd)?Avail[i]:Avail[i+1];i=i+1' mientras='i<cont+1' tipo='función' ">
+    <param name="A_36" value="id='asigna()' algoritmo='sí' expresión='x' inicio='i=0' hacer='i=i+1;Prgs[i-1]=ptas[i];RspsTod[i-1,0]=rtas[(i-1)*4+1];RspsTod[i-1,1]=rtas[(i-1)*4+2];RspsTod[i-1,2]=rtas[(i-1)*4+3];RspsTod[i-1,3]=rtas[(i-1)*4+4];;' mientras='i<nP' tipo='función' ">
+    <param name="A_37" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Test de conocimientos en &squot;+nP+&squot; preguntas&squot;' hacer='initDisplay();Inicio()' ">
+    <param name="A_38" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='titulo=&squot;Test de conocimientos en &squot;+nP+&squot; preguntas&squot;;Calculos();;;;' ">
+    <param name="A_39" value="id='anim' evento='sí' condición='animar' acción='animar' ejecución='siempre' ">
+    <param name="A_40" value="id='fin' evento='sí' condición='1' acción='calcular' parámetro='playAudio=0\nanimar=0' ejecución='siempre' ">
+    <param name="G_01" value="espacio='E2' tipo='polígono' fondo='no' color='ffffff' dibujar-si='nPreg==-1' coord_abs='sí' expresión='(180,100)(E2._w-180,100)(E2._w-180,E2._h-60)(180,E2._h-60)(180,100)' relleno='ffffff' ancho='1' lineDash='solid' ">
+    <param name="G_02" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='nPreg==-1' coord_abs='sí' expresión='(E2._w/2,100,1.26,1)' archivo='images/filete_arcoiris.png' rotini='0' opacidad='1' ">
+    <param name="G_03" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='nPreg==-1' coord_abs='sí' expresión='((E2._w-169)/2+80,220,1,1)' archivo='images/imagen_prueba.png' rotini='0' opacidad='1' ">
+    <param name="G_04" value="espacio='E2' tipo='texto' fondo='sí' color='1c3f57' coord_abs='sí' expresión='[0,10,790,15]' texto='[titulo]' decimales='2' fijo='sí' ancho='790' color_borde_texto='ff000000' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='28' align='a_left' anchor='a_top_left' info='Título' ">
+    <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='34495e' dibujar-si='animando' coord_abs='sí' expresión='[0,125,770,20]' texto='[pregunta]' decimales='2' fijo='sí' ancho='700' color_borde_texto='ff000000' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='34' align='left' anchor='top_left' ">
+    <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='34495e' dibujar-si='nPreg==-1' coord_abs='sí' expresión='[(E2._w-_AnchoDeCadena_(instruc,&squot;SansSerif&squot;,&squot;PLAIN&squot;,46))/2,320]' texto='[instruc]' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='46' align='left' anchor='top_left' info='Instrucciones' ">
+    <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='34495e' dibujar-si='(!animando)&(n>0)' coord_abs='sí' expresión='[(E2._w-_AnchoDeCadena_(nota,&squot;SansSerif&squot;,&squot;PLAIN&squot;,76))/2,210]' texto='[nota]' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='76' align='left' anchor='top_left' info='Nota' ">
+    <param name="G_08" value="espacio='CalifSp' tipo='polígono' fondo='no' color='blanco' coord_abs='sí' expresión='(CalifSp._w/2-264,78)(CalifSp._w/2+264,78)(CalifSp._w/2+264,475)(CalifSp._w/2-264,475)(CalifSp._w/2-264,78)' relleno='blanco' ancho='1' lineDash='solid' ">
+    <param name="G_09" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='iniciado' coord_abs='sí' expresión='(20+(E2._w-40*nP)/2+s*40,E2._h-40,1,1)' familia='s' s.intervalo='[0,nP-1]' s.pasos='nP-1' archivo='images/icon_score_empty.png' rotini='0' opacidad='1' ">
+    <param name="G_10" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='iniciado&OK[ORD[s]]' coord_abs='sí' expresión='(20+(E2._w-40*nP)/2+s*40,E2._h-40,1,1)' familia='s' s.intervalo='[0,nP-1]' s.pasos='nP-1' archivo='images/icon_score_ok.png' rotini='0' opacidad='1' ">
+    <param name="G_11" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='iniciado&WRONG[ORD[s]]' coord_abs='sí' expresión='(20+(E2._w-40*nP)/2+s*40,E2._h-40,1,1)' familia='s' s.intervalo='[0,nP-1]' s.pasos='nP-1' archivo='images/icon_score_wrong.png' rotini='0' opacidad='1' ">
+    <param name="G_12" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='animando' coord_abs='sí' expresión='(E2._w/2,E2._h/2+5,orh,orv)' archivo='[FIG[ORD[n]]]' rotini='rot' opacidad='1' ">
+    <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='001121' dibujar-si='nPreg!=-1' coord_abs='sí' expresión='[20,95]' texto='[Prgs[nPreg]]' decimales='2' fijo='sí' ancho='765' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='24' align='left' anchor='top_left' ">
+    <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='34495e' dibujar-si='nPreg!=-1' coord_abs='sí' expresión='[110,210+59*s+12*(_length_(Rsps[s])<84)]' familia='s' s.intervalo='[0,3]' s.pasos='3' texto='[Rsps[s]]' decimales='2' fijo='sí' ancho='660' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='22' align='left' anchor='top_left' ">
+    <param name="G_15" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='correcto==1' coord_abs='sí' expresión='(15,imgy-10)' archivo='images/icon_ok.png' rotini='0' opacidad='1' ">
+    <param name="G_16" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='correcto==2' coord_abs='sí' expresión='(15,imgy-10)' archivo='images/icon_wrong.png' rotini='0' opacidad='1' ">
+    <param name="G_17" value="espacio='E2' tipo='polígono' fondo='no' color='dce0e1' dibujar-si='nPreg>-1' coord_abs='sí' expresión='(20,40)(E2._w-20,40)(E2._w-20,72)(20,72)(20,40)' relleno='dce0e1' ancho='1' lineDash='solid' ">
+    <param name="G_18" value="espacio='E2' tipo='polígono' fondo='no' color='f2c40f' dibujar-si='nPreg>-1' coord_abs='sí' expresión='(20,40)(E2._w/10+nPreg*E2._w/nP,40)(E2._w/10+nPreg*E2._w/nP,72)(20,72)(20,40)' relleno='f2c40f' ancho='1' lineDash='solid' ">
+    <param name="G_19" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(nPreg>-1)&0' coord_abs='sí' expresión='(102+nPreg*1024/5,61,1,1)' archivo='images/Reloj.png' rotini='0' opacidad='1' ">
+    <param name="G_20" value="espacio='CalifSp' tipo='texto' fondo='no' color='116bc2' coord_abs='sí' expresión='[0,240,750,10]' texto='Nota: [calif2]' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='48' align='left' anchor='top_left' info='Apreciación' ">
+    <param name="G_21" value="espacio='CalifSp' tipo='texto' fondo='no' color='34495e' coord_abs='sí' expresión='[(CalifSp._w-_AnchoDeCadena_(aprecio,&squot;SansSerif&squot;,&squot;PLAIN&squot;,44))/2,275]' texto='[aprecio]' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='44' align='left' anchor='top_left' info='Apreciación' ">
+    <param name="G_22" value="espacio='CalifSp' tipo='imagen' fondo='no' coord_abs='sí' expresión='(CalifSp._w/2,78,1,1)' archivo='images/filete_arcoiris.png' rotini='0' opacidad='1' ">
+    <param name="G_23" value="espacio='CalifSp' tipo='imagen' fondo='no' coord_abs='sí' expresión='(CalifSp._w/2,78,1,1)' archivo='[imgFace]' rotini='0' opacidad='1' ">
+    <param name="G_24" value="espacio='E2' tipo='texto' fondo='no' color='34495e' dibujar-si='(!animando)&(n>0)' coord_abs='sí' expresión='[(E2._w-_AnchoDeCadena_(nota,&squot;SansSerif&squot;,&squot;PLAIN&squot;,76))/2,180]' texto='Respuestas buenas: [nota]' decimales='1' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='76' align='left' anchor='top_left' info='Nota' ">
+    <param name="G_25" value="espacio='CalifSp' tipo='texto' fondo='no' color='1a2c44' coord_abs='sí' expresión='[0,175,750,10]' texto='Respuestas buenas: [calif]' decimales='0' fijo='no' ancho='750' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='48' align='left' anchor='top_left' info='Apreciación' ">
+    <param name="S_01" value="espacio='E0' tipo='cilindro' fondo='no' color='ffff80' color_reverso='ffff80' dibujar-si='NC=2' expresión='Cilindro' rotini='(0,0,0)' posini='(0,0,h/2)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='rue' modelo='luz' ancho='ancho' largo='ancho' alto='h' Nu='NL' Nv='1' ">
+    <param name="S_02" value="espacio='E3' tipo='polireg' fondo='no' color='ffff80' color_reverso='ffff80' dibujar-si='NC=2' expresión='Polireg' familia='s' s.intervalo='[0,h]' s.pasos='1' rotini='(0,0,0)' posini='(0,0,s)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='luz' ancho='ancho' largo='ancho' Nu='NL' ">
+    <param name="S_03" value="espacio='E3' tipo='cono' fondo='no' color='ffff80' color_reverso='ffff80' dibujar-si='NC=1' expresión='Cono' rotini='(180,0,0)' posini='(0,0,h/2)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='sí' modelo='luz' ancho='ancho' largo='ancho' alto='h' Nu='NL' Nv='1' ">
+    <param name="S_04" value="espacio='E3' tipo='polireg' fondo='no' color='ffff80' color_reverso='ffff80' dibujar-si='NC=1' expresión='Polireg' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='luz' ancho='ancho' largo='ancho' Nu='NL' ">
+  </ajs>
+
+<script type="descartes/vectorFile" id="textos/notas.txt">
+'Máxima nota'
+5
+</script>
+
+<script type="descartes/vectorFile" id="textos/NP.txt">
+'Escribe el número de preguntas'
+8
+</script>
+
+<script type="descartes/vectorFile" id="textos/ptas.txt">
+'Escribe las preguntas encerradas en comillas simples'
+'1. ¿La raiz cuadrada de 81 es?:'
+'2. Si el resultado de la raiz de 128 es 4, ¿cual es el indice de la raiz?'
+'3. ¿Si a la raiz cuadrada de 125 le resto raiz cuadrada de 5, el resultado es?'
+'4. ¿En la raiz de una raiz los indices se....?'
+'5. ¿La raiz cubica de x con exponente 6 elevada a una potencia 3, es igual a?'
+'6. El lado de un cuadrado es raiz cuadrada de 25,¿cual es el valor de su area(Área del cuadrado = lado x lado)?'
+'7. El área de un terreno de forma cuadrada es 169 metros cuadrados. ¿Cuánto medirá el perímetro del terreno?'
+'8. El volumen de un cubo es 1000 metros cubicos. ¿Cuál es el área de una de sus caras?'
+</script>
+
+<script type="descartes/vectorFile" id="textos/rtas.txt">
+'Escribe las respuestas, a cada pregunta corresponden cinco respuestas. La primera respuesta es la correcta'
+'9.'
+'3.'
+'4.'
+'No tiene raiz cuadrada exacta.'
+'Raiz cuarta.'
+'Raiz cuadrada.'
+'Raiz cubica.'
+'Raiz quinta.'
+'4 raiz cuadrada de 5.'
+'3 raiz cuadrada de 5.'
+'5 raiz cuadrada de 5.'
+'No tiene solución.'
+'Multiplican.'
+'Dividen.'
+'Suman'
+'Restan'
+'X con exponente 6'
+'X con exponente 3'
+'X' 
+'No tiene solución'
+'25'
+'10'
+'5'
+'50'
+'52.'
+'25.'
+'169.'
+'100.'
+'100.'
+'250.'
+'1000.'
+'10.'
+</script>
+
+</body>
+</html>

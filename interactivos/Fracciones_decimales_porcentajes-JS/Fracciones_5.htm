@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+  <title>Cálculos con porcentajes.</title>
+  <script>
+  </script>
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFF8E1" text="#000000" link="#993366" vlink="#999933" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onload="MM_preloadImages('img/boton_arriba2.gif','img/boton_atras2.gif','img/boton_adelante2.gif')">
+  <script language="JavaScript">
+    <!--
+
+    function MM_swapImgRestore() { //v3.0
+
+      var i, x, a = document.MM_sr;
+      for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+
+    }
+
+
+
+    function MM_preloadImages() { //v3.0
+
+      var d = document;
+      if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+
+        var i, j = d.MM_p.length,
+          a = MM_preloadImages.arguments;
+        for (i = 0; i < a.length; i++)
+
+          if (a[i].indexOf("#") != 0) {
+            d.MM_p[j] = new Image;
+            d.MM_p[j++].src = a[i];
+          }
+      }
+
+    }
+
+
+
+    function MM_findObj(n, d) { //v4.0
+
+      var p, i, x;
+      if (!d) d = document;
+      if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+
+        d = parent.frames[n.substring(p + 1)].document;
+        n = n.substring(0, p);
+      }
+
+      if (!(x = d[n]) && d.all) x = d.all[n];
+      for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+
+      if (!x && document.getElementById) x = document.getElementById(n);
+      return x;
+
+    }
+
+
+
+    function MM_swapImage() { //v3.0
+
+      var i, j = 0,
+        x, a = MM_swapImage.arguments;
+      document.MM_sr = new Array;
+      for (i = 0; i < (a.length - 2); i += 3)
+
+        if ((x = MM_findObj(a[i])) != null) {
+          document.MM_sr[j++] = x;
+          if (!x.oSrc) x.oSrc = x.src;
+          x.src = a[i + 2];
+        }
+
+    }
+
+    //-->
+  </script>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td valign="top" rowspan="2" width="240" bgcolor="#FFF8E1">
+          <a href="http://ProyectoDescartes.org/" target="_blank"><img src="img/red_240x80_ftrans.png" border="0" vspace="6" width="240" height="80"></a>
+        </td>
+        <td align="center" width="100%" bgcolor="#006699" height="53">
+          <font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Fracciones, decimales y porcentajes: <br>Cálculos con porcentajes.</b></font>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#EAF4FF" height="39">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><i>Álgebra</i></font>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Caso 1.</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td height="56" colspan="2" bgcolor="#E9E8CB">
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Cálculo de un tanto por ciento de una cantidad</b>.
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Para hallar un tanto por ciento de una cantidad, expresamos el tanto por ciento en forma decimal y multiplicamos por él
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Obtención del tanto por ciento correspondiente a una proporción</b>.
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Para hallar qué tanto por ciento representa una cierta cantidad, <strong>a</strong>, respecto a un total <strong>C</strong>, efectuamos
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <img src="fracciones4_06.gif" width="72" height="42" alt="fracciones4_06.gif (1031 bytes)" align="absmiddle">
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" rowspan="2" width="60%">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="400" height="350">
+            <param name="tamaño" value="400x350">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=sí filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='32' O.x='-160' O.y='80' despl_imagen='arr-izq' fondo='404040' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='E0.escala' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='zoom' expresión='(0,0)' valor='32' incr='8' min='8' max='1000000' discreto='no' decimales='4*(E0.escala<10)' fijo='sí' visible='sí' ">
+            <param name="C_02" value="id='E0.Ox' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.x' expresión='(0,0)' valor='-160' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_03" value="id='E0.Oy' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.y' expresión='(0,0)' valor='80' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_04" value="id='C' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='cantidad' expresión='(0,0)' valor='1234' incr='10' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_05" value="id='A' tipo='gráfico' espacio='E0' color='ffff00' color-int='f0f8ff' tamaño='8' expresión='[a+b,0]' ">
+            <param name="A_01" value="id='A.y' expresión='0' tipo='variable' ">
+            <param name="A_02" value="id='a' expresión='500*(A.x<-0.001)' tipo='variable' ">
+            <param name="A_03" value="id='b' expresión='500*(A.x>10.001)' tipo='variable' ">
+            <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+            <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';A.y=0;A.x=(A.x<0)?0:A.x;A.x=(A.x>100)?10:A.x;a=500*(A.x<-0.001);b=500*(A.x>10.001);' ">
+            <param name="G_01" value="espacio='E0' tipo='segmento' fondo='no' color='ffffff' coord_abs='no' expresión='[A.x*(A.x<10)*(A.x>0),A.y][A.x*(A.x<10)*(A.x>0),A.y+6]' rastro='ffffff' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_02" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][0,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_03" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][10,0]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_04" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,6][10,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_05" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[10,0][10,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_06" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[s,0][s,6]' familia='s' s.intervalo='[0,10]' s.pasos='10' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[a+b+10,266]' texto='[A.x*10]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_08" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[a+b+65+10,266]' texto='de [C] =' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_09" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[a+b+160+10,266]' texto='[C] *' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_10" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[a+b+220+10,266]' texto='[A.x/10]' decimales='4' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_11" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[a+b+280+10,266]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_12" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[a+b+300+10,266]' texto='[C*A.x/10]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_13" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[105,10]' texto='C A N T I D A D = [C]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_14" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' dibujar-si='A.x=0' coord_abs='sí' expresión='[100,240]' texto='Arrastra el punto A' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_15" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='no' expresión='(A.x+0.15,A.y-0.15)' texto='A' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+          </ajs>
+        </td>
+        <td valign="middle" colspan="2">
+
+          <p align="center">
+            <table border="2" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td bgcolor="#E2FDFE">
+                    <font color="#000080" size="2" face="Verdana"><em>
+
+</em></font>
+
+                    <p align="justify">
+                      <font color="#000080" size="2" face="Verdana"><em>
+
+  Utiliza esta escena en los siguientes ejercicios.
+
+</em></font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 11</b>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">Calcula el :</font>
+          </p>
+
+          <p>
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              a) 40% de 580.000 €.<br> b) 80% de 500<br> c) 5% de 250<br> d) 10% de 2980<br> e) 20% de 5 millones<br> f) 25% de 1 millón<br> f) 30% de 3000
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Comprueba los resultados en la escena
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 12</b>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">Calcula el tanto por ciento que representa:</font>
+          </p>
+
+          <p>
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              a) 6320 de 15800&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 96 de 480 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) 16 de 320 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) 750 de 5000
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Utiliza la fórmula anterior y después comprueba los resultados con la escena.
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Caso 2.</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td height="56" colspan="2" bgcolor="#E9E8CB">
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Cálculo de <u>aumentos</u> porcentuales</b>:
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Un libro de 18 €. aumenta su precio un
+              <font color="#FF0000"><strong>12%</strong> </font>¿Cuánto vale ahora?
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Aumento: 18*0,12=2,16 €<br> Precio final: 18+2,16=20,16 €.</font>
+          </p>
+
+          <p>
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Pero también podríamos haber hecho directamente:
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              18*(1+0,12)=18*1,12=20,16 €.</font>
+          </p>
+
+          <p align="right">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <strong>índice de variación</strong>--&gt;1+
+              <font color="#FF0000"><strong>0,12</strong></font>=1,12
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Cálculo de <u>disminuciones</u> porcentuales</b>:
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Un traje valía 252 €. y se rebaja un
+              <font color="#FF0000"><strong>25%</strong></font>
+              ¿Cuánto vale ahora?
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Disminución: 252*0,25=63 €.<br> Precio final: 252-63=189 €.</font>
+          </p>
+
+          <p>
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Pero también podríamos haber hecho directamente:
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              252*(1-0,25)=252*0,75=189 €.
+            </font>
+          </p>
+
+          <p align="right">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <strong>índice de variación</strong>--&gt;1-
+              <font color="#FF0000"><strong>0,25</strong></font>=0,75
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" rowspan="2" width="60%">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="320" height="250">
+            <param name="tamaño" value="320x250">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='c' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='cantidad' expresión='(0,0)' valor='252' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_02" value="id='t' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='porcentaje' expresión='(0,0)' valor='12' incr='1' min='0' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[40,20]' texto='AUMENTO PORCENTUAL' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_02" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[5,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36{\*\mjaformula{\expr c\decimals 0\fixed0}}* (1 +{\*\mjaformula{\expr t/100\decimals 2\fixed0}}) ={\*\mjaformula{\expr c\decimals 0\fixed0}}*{\*\mjaformula{\expr (1+t/100)\decimals 2\fixed0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_03" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[156,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 = {\*\mjaformula{\expr c*(1+t/100)\decimals 2\fixed0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_04" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[40,100]' texto='DISMINUCIÓN PORCENTUAL' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[5,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36{\*\mjaformula{\expr c\decimals 0\fixed0}}* (1 -{\*\mjaformula{\expr t/100\decimals 2\fixed0}}) ={\*\mjaformula{\expr c\decimals 0\fixed0}}*{\*\mjaformula{\expr (1-t/100)\decimals 2\fixed0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_06" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[151,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 ={\*\mjaformula{\expr c*(1-t/100)\decimals 2\fixed0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+          </ajs>
+        </td>
+        <td valign="middle" colspan="2">
+
+          <p align="center">
+            <table border="2" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td bgcolor="#E2FDFE">
+                    <font color="#000080" size="2" face="Verdana"><em>
+
+</em></font>
+
+                    <p align="justify">
+                      <font color="#000080" size="2" face="Verdana"><em>
+
+  Utiliza esta escena en los siguientes ejercicios.
+
+</em></font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 13</b>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">a) El número de parados, 184.300, que había en una comunidad autónoma ha disminuido el 19% ¿Cuántos parados hay ahora?<br> b) En un pantano había 340 hl de agua. Ha disminuido un 43% ¿Cuánta agua queda en el pantano?
+              <br> c) Este año la gasolina ha subido un 5%. Si a principios de años costaba 0,799 €/litro, ¿cuánto cuesta ahora el litro?
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Caso 3.</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td height="56" colspan="2" bgcolor="#E9E8CB">
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Encadenamiento de aumentos y disminuciones porcentuales</b>:
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              El coste de la vida subió un 10% en 1990 y un 8% en 1991. Pero en 1992 bajó un 5% (estos datos no son reales). ¿Cuál fue la subida desde comienzos de 1990 hasta finales de 1992?
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              Veamos en qué se transforma el precio de algo que valía 100 € en enero de 1990:<br> (Puedes hacer los cálculos en la escena anterior)
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <table border="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td width="100%" colspan="3">
+                      <font size="-1">
+                        <font color="#FF0000"><strong>100</strong></font>
+                        <font face="Symbol">®</font>(+10%)
+                        <font face="Symbol">®</font>100*
+                        <font color="#0000FF"><strong>1,10</strong></font>=110</font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="33%"></td>
+                    <td width="33%">
+                      <font size="-1">
+                        <font face="Symbol">¯</font>
+                      </font>
+                    </td>
+                    <td width="34%"></td>
+                  </tr>
+                  <tr>
+                    <td width="33%"></td>
+                    <td width="67%" colspan="2">
+                      <font size="-1">110
+                        <font face="Symbol">®</font>(+8%)
+                        <font face="Symbol">®</font>110*
+                        <font color="#0000FF"><strong>1,08</strong></font>=118,8</font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="33%"></td>
+                    <td width="33%"></td>
+                    <td width="34%">
+                      <font size="-1">
+                        <font face="Symbol">¯</font>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="66%" colspan="2"></td>
+                    <td width="34%">
+                      <font size="-1">118,8
+                        <font face="Symbol">®</font>(-5%)
+                        <font face="Symbol">®</font>118,8*
+                        <font color="#0000FF"><strong>0,95</strong></font>=
+                        <font color="#FF0000"><strong>112,86</strong></font>
+                      </font>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </font>
+          </p>
+
+          <p>
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">Por tanto el aumento ha sido del 12,86% (Y no del 10+8-5=13%)
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 14</b>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">La masa forestal de un bosque sufrió las siguientes variaciones a lo largo de tres décadas:</font>
+          </p>
+
+          <p>
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              de 1950 a 1960 aumentó un 28%<br> de 1960 a 1970 disminuyó un 40%<br> de 1970 a 1980 aumentó un 15%</font>
+          </p>
+
+          <p>
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              ¿Qué variación porcentual experimentó de 1950 a 1980?
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 15</b>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">En un año el precio de un artículo sube un 40%, después baja un 10% y, por último, baja un 20% ¿Qué variación porcentual ha experimentado a lo largo del año?
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Caso 4.</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td height="56" colspan="2" bgcolor="#E9E8CB">
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Cálculo de la cantidad inicial, conociendo la variación porcentual y la cantidad final</b>:
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+              <em>Después de haber aumentado su valor un 40%, el precio de una nevera es de 336 €.
+
+¿Cuál era su precio antes de la subida?</em></font>
+          </p>
+          <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">
+
+            <p align="center"><img src="fracciones5_01.gif" width="267" height="111" alt="fracciones5_01.gif (3044 bytes)"><em><br>
+
+</em></p>
+          </font>
+
+          <p align="center">
+            <font size="2" color="#006699" face="Verdana, Arial, Helvetica, sans-serif">PRECIO INICIAL =&nbsp; 336:1,40=240 €.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" rowspan="2" width="60%">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="320" height="250">
+            <param name="tamaño" value="320x250">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='c' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='cantidad FINAL' expresión='(0,0)' valor='336' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_02" value="id='t' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='porcentaje' expresión='(0,0)' valor='40' incr='1' min='0' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[5,10]' texto='CÁLCULO DE LA CANTIDAD INICIAL' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_02" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[35,30]' texto='EN AUMENTO PORCENTUAL' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_03" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[50,50]' texto='[c] ÷ [(1+t/100)] = [c/(1+t/100)]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_04" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[5,80]' texto='CÁLCULO DE LA CANTIDAD INICIAL ' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[35,100]' texto='EN DISMINUCIÓN PORCENTUAL' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_06" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[50,120]' texto='[c] ÷ [(1-t/100)] = [c/(1-t/100)]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+          </ajs>
+        </td>
+        <td valign="middle" colspan="2">
+
+          <p align="center">
+            <table border="2" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td bgcolor="#E2FDFE">
+                    <font color="#000080" size="2" face="Verdana"><em>
+
+</em></font>
+
+                    <p align="justify">
+                      <font color="#000080" size="2" face="Verdana"><em>
+
+  Utiliza esta escena en los siguientes ejercicios.
+
+</em></font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 16</b>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">En las rebajas hemos comprado un cuadro por 105 €., una bicicleta por 50,40 € y un libro por 16,35 €. ¿Cuánto nos habría costado antes de las rebajas si todos los artículos tienen disminuido su precio en un 30%?
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 16</b>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">En unos grandes almacenes anuncian un 14% de descuento en todos sus artículos. Éstos son los precios que aparecen:
+            </font>
+          </p>
+
+          <p align="center">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <table border="1" width="100%">
+                <tbody>
+                  <tr>
+                    <td width="30%">
+                      <font face="Arial">Pantalón de</font>
+                    </td>
+                    <td width="17%">
+                      <font face="Arial">80 € a</font>
+                    </td>
+                    <td width="30%">
+                      <font face="Arial">70,4 €</font>
+                    </td>
+                    <td width="76%" rowspan="5">
+                      <font face="Arial">¿Es cierto que han rebajado el 14%? Compruébalo
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%">
+                      <font face="Arial">Camisa de</font>
+                    </td>
+                    <td width="17%">
+                      <font face="Arial">35 € a</font>
+                    </td>
+                    <td width="30%">
+                      <font face="Arial">30 €</font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%">
+                      <font face="Arial">Jersey de</font>
+                    </td>
+                    <td width="17%">
+                      <font face="Arial">54 € a</font>
+                    </td>
+                    <td width="30%">
+                      <font face="Arial">47,5 €</font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%">
+                      <font face="Arial">Camiseta de</font>
+                    </td>
+                    <td width="17%">
+                      <font face="Arial">12 € a</font>
+                    </td>
+                    <td width="30%">
+                      <font face="Arial">10 €</font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%">
+                      <font face="Arial">Vaqueros de</font>
+                    </td>
+                    <td width="17%">
+                      <font face="Arial">96 € a</font>
+                    </td>
+                    <td width="30%">
+                      <font face="Arial">85 €</font>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td valign="top" width="100%" height="39">&nbsp;</td>
+        <td align="center" width="41">
+          <a href="index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('arriba','','img/boton_arriba2.gif',1)"><img src="img/boton_arriba.gif" border="0" width="39" height="38" name="arriba" alt="Volver al índice"></a>
+        </td>
+        <td valign="top" width="7">&nbsp;</td>
+        <td align="center" width="40">
+          <a href="Fracciones_4b.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('atras','','img/boton_atras2.gif',1)"><img src="img/boton_atras.gif" border="0" width="38" height="39" name="atras" alt="Atrás"></a>
+        </td>
+        <td valign="top" width="6">&nbsp;</td>
+        <td align="center" width="40">&nbsp;</td>
+        <td valign="top" width="5">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="1">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><img src="img/spacer2.gif" width="5" height="1"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="98%">
+    <tbody>
+      <tr>
+        <td valign="top" width="15" bgcolor="#FEE6B8" nowrap="" height="29">&nbsp;</td>
+        <td colspan="14" bgcolor="#FEE6B8" height="29">
+          <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br><i> Autora: Ángela Nuñez Castaín (2001)</i><br><br> Adaptación a DescartesJS: Ángela Nuñez Castaín y José R. Galo Sánchez (2017)<br><br></font>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="98%">
+    <tbody>
+      <tr>
+        <td valign="top" rowspan="3" width="65" bgcolor="#FFFFFF"><img src="img/logo2.gif" width="65" height="80"></td>
+        <td colspan="2" height="28">&nbsp; </td>
+      </tr>
+      <tr>
+        <td colspan="2" width="922" bgcolor="#FFF8E1" height="19">
+          <font color="#006699" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+            ProyectoDescartes.org. Año 2017</font>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2" height="33" class="subtitulos">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3" bgcolor="#FEE6B8">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Licencia de Creative Commons -->
+
+  <p align="center">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/es/"><img alt="Licencia de Creative Commons" src="img/88x31.png" border="0"></a><br>
+    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">Los contenidos de esta unidad didáctica están bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/es/">licencia de Creative Commons</a> si no se indica lo contrario. </font>
+  </p>
+  <!-- /Licencia de Creative Commons -->
+
+
+
+</body>
+</html>

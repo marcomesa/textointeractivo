@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="740" height="580" code="Descartes">
+    <param name="tamaño" value="740x580">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='740' alto='580' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff7f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='390' y='70' ancho='360' alto='240' dibujar-si='(E0Cont=0)' fijo='no' escala='150' O.x='-100' O.y='100' despl_imagen='arr-izq' fondo='f0f8fa' red='no' red10='889498' ejes='405860' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_03" value="tipo='R2' id='E2' x='390' y='70' ancho='360' alto='240' dibujar-si='(E0Cont=2)' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='P' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='8' expresión='(cos(pi/6),sen(pi/6))' constricción='x^2+y^2=1' ">
+    <param name="C_02" value="id='E0Continuar' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Continuar' expresión='(E0._w-130,500,120,25)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='E0Cont=E0Cont+1\nE0Cont=(E0Cont=3)?0:E0Cont' ">
+    <param name="A_01" value="id='otroEjemplo()' algoritmo='sí' expresión='x' hacer='w=(f=0)?fseno():0;w=(f=1)?fcoseno():0;w=(f=2)?ftangente():0;;' ">
+    <param name="A_02" value="id='mcd(a,b)' algoritmo='sí' expresión='m' inicio='aa=(a<b)?b:a; bb=(a<b)?a:b' hacer='c=ent(aa/bb);d=aa-c*bb;m=bb;aa=bb;bb=d' mientras='d>0' ">
+    <param name="A_03" value="id='fseno()' algoritmo='sí' expresión='x' hacer='a0=2+ent(9*rnd);b0=2+ent(9*rnd);c0=2+ent(9*rnd);;mcd0=mcd(a0*b0,c0);A0=(a0*b0)/mcd0;C0=c0/mcd0;;N=4;;' mientras='c0=b0' ">
+    <param name="A_04" value="id='fcoseno()' algoritmo='sí' expresión='x' hacer=';N=6' ">
+    <param name="A_05" value="id='ftangente()' algoritmo='sí' expresión='x' hacer=';N=5;;a0=2+ent(9*rnd);b0=2+ent(9*rnd);;mcd0=mcd(a0,b0);A0=a0/mcd0;B0=b0/mcd0;;' mientras='a0=b0' ">
+    <param name="A_06" value="id='otroEjercicio()' algoritmo='sí' expresión='x' hacer='f1=ent(10*rnd);ww=1;ww=(f1<5)?eseno():ww;ww=((f1=5)|(f1=6))?ecoseno():ww;ww=(f1>6)?etangente():ww;;respok=0;Verlet=0;resp=&squot;&squot;;RespCorr=0;VerRespC=0;' ">
+    <param name="A_07" value="id='eseno()' algoritmo='sí' expresión='ww' hacer='a1=2+ent(9*rnd);b1=2+ent(9*rnd);c1=2+ent(9*rnd);mcd1=mcd(a1*b1,c1);A1=(a1*b1)/mcd1;C1=c1/mcd1;L1=a1*b1/c1;ww=1' ">
+    <param name="A_08" value="id='ecoseno()' algoritmo='sí' expresión='ww' hacer='L1=0;ww=2' ">
+    <param name="A_09" value="id='etangente()' algoritmo='sí' expresión='ww' hacer='a1=2+ent(9*rnd);b1=2+ent(9*rnd);;L1=a1/b1;ww=3' ">
+    <param name="A_10" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='p=atan(P.y/P.x);pa=p*180/pi;' ">
+    <param name="A_11" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='f=0;VerProc=0;E0Cont=0;otroEjemplo();otroEjercicio();' ">
+    <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='E0Cont=0' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green153\blue0;\red255\green0\blue0;\red0\green0\blue255;\red247\green248\blue250;\red32\green48\blue58;}\par\par\f0\cf0\fs48 Calcular el límite:\cf0\i  \i0\i{\*\mjaformula{\limit{\from x}{\to 0}{\what{\fraction{\num sen(x)}{\den x}}}}}\i0\par\par\f0\cf0\fs48 En la figura de la derecha vemos\par\f0\cf0\fs48 que para \i{\*\mjaformula x}\i0\cf0  (\cf0 arco rojo) en el primer\par\f0\cf0\fs48 cuadrante, el triángulo \cf0 verde está\par\f0\cf0\fs48 contenido en el sector rojo y éste\par\f0\cf0\fs48 a \cf0 su vez en el triángulo azul.\par\f0\cf0\fs48 Así que sus áreas satisfacen\par\par\f1\cf0\fs34\i     \i0\f0\cf0\fs48\i  \i0\cf1\b\i A(Tr verde)\i0\b0\cf0\i  ≤  \i0\cf2\b\i A(sector) \i0\b0\cf0\i ≤ \i0\cf3\b\i A(Tr azul)\i0\b0\par\f0\cf4\fs48 .\par\f0\cf0\fs48 es decir,\par\f0\cf5\fs48\i                      \i0\i{\*\mjaformula{\fraction{\num sen(x)}{\den 2}}}\i0\i{\*\mjaformula ≤}\i0\i{\*\mjaformula{\fraction{\num x}{\den 2}}}\i0\i{\*\mjaformula ≤}\i0\i{\*\mjaformula{\fraction{\num tan(x)}{\den 2}}}\i0\par\f0\cf0\fs48 así que\par\f0\cf4\fs48 .\par\f0\cf5\fs48                  \cf5\i   \i0\i{\*\mjaformula sen(x)}\i0\cf0\i  ≤ \i0\cf5\i  \i0\i{\*\mjaformula x}\i0\cf5\i  \i0\cf5\i ≤ \i0\i{\*\mjaformula tan(x)}\i0\cf5  \par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,18' align='a_left' ">
+    <param name="G_02" value="espacio='E1' tipo='polígono' fondo='no' color='azul' coord_abs='no' expresión='(0,0)(1,0)(1,tan(p))(0,0)' relleno='dd0000ff' ancho='2' lineDash='solid' ">
+    <param name="G_03" value="espacio='E1' tipo='arco' fondo='no' color='cce80022' coord_abs='no' centro='(0,0)' radio='s' inicio='0' fin='pa' vectores='no' familia='s' s.intervalo='[0,1]' s.pasos='80' decimales='2' fijo='sí' relleno='ccff0000' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_04" value="espacio='E1' tipo='segmento' fondo='no' color='verde' coord_abs='no' expresión='(s,0)(s*cos(p),s*sen(p))' familia='s' s.intervalo='[0,1]' s.pasos='60' decimales='2' fijo='sí' tamaño='.2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_05" value="espacio='E1' tipo='polígono' fondo='no' color='20303a' coord_abs='no' expresión='(0,0)(1,0)(cos(p),sen(p))(0,0)' relleno='aa00ff00' ancho='1' lineDash='solid' ">
+    <param name="G_06" value="espacio='E1' tipo='arco' fondo='no' color='20303a' coord_abs='no' centro='(0,0)' radio='1' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_07" value="espacio='E2' tipo='ecuación' fondo='no' color='00aa22' coord_abs='no' expresión='y=cos(x)' ancho='1' visible='no' editable='no' ">
+    <param name="G_08" value="espacio='E2' tipo='ecuación' fondo='no' color='e80022' coord_abs='no' expresión='y=(sen(x))/x' ancho='2' visible='no' editable='no' ">
+    <param name="G_09" value="espacio='E2' tipo='ecuación' fondo='no' color='3366dd' coord_abs='no' expresión='y=1' ancho='1' visible='no' editable='no' ">
+    <param name="G_10" value="espacio='E2' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='(0,1)' decimales='2' fijo='sí' tamaño='3' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_11" value="espacio='E2' tipo='punto' fondo='no' color='blanco' coord_abs='no' expresión='(0,1)' decimales='2' fijo='sí' tamaño='2' fuente='Monospaced,PLAIN,12' ">
+    <param name="G_12" value="espacio='E1' tipo='segmento' fondo='no' color='00aa22' coord_abs='no' expresión='(cos(p),0)(cos(p),sen(p))' decimales='2' fijo='sí' tamaño='2' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_13" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(0,0)(1,tan(p))' decimales='2' fijo='sí' tamaño='2' ancho='1' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+    <param name="G_14" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='E0Cont=1' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red247\green248\blue250;\red32\green48\blue58;\red255\green255\blue255;}\f0\cf0\fs48 Escribimos \i{\*\mjaformula tan(x)}\i0\cf0  como \i{\*\mjaformula{\fraction{\num sen(x)}{\den cos(x)}}}\i0\par\f0\cf1\fs48 .\par\f0\cf2\fs48\i                          \i0\i{\*\mjaformula sen(x)}\i0\cf2  \cf2\i ≤\i0\cf2   \i{\*\mjaformula x}\i0\cf2\i   \i0\cf2\i ≤ \i0\i{\*\mjaformula{\fraction{\num sen(x)}{\den cos(x)}}}\i0\par\f0\cf1\fs48 .\cf0 En la primera desigualdad, dividimos entre \i{\*\mjaformula x}\i0\cf0  ambos lados\par\f0\cf0\fs48  de la \cf0 desigualdad\par\f0\cf1\fs48 .\par\f0\cf0\fs48\i                          \i0\i{\*\mjaformula{\fraction{\num sen(x)}{\den x}}≤1}\i0\par\f0\cf1\fs48 .\par\f0\cf0\fs48 y en la segunda desigualdad, multiplicamos por  \i{\*\mjaformula cos(x)}\i0\cf0  \par\f0\cf0\fs48 y dividimos entre \i{\*\mjaformula x}\i0\par\f0\cf3\fs48 .\par\f0\cf0\fs48\i                       \i0\i{\*\mjaformula cos(x)≤{\fraction{\num sen(x)}{\den x}}}\i0\par\f0\cf3\fs48 .\cf0 Al combinar las dos desigualdades, obtenemos\par\f1\cf3\fs48 .\par\f2\cf2\fs48\i                                                \i0\f0\i{\*\mjaformula cos(x)≤{\fraction{\num sen(x)}{\den x}}≤1}\i0}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,18' align='a_left' ">
+    <param name="G_15" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='E0Cont=2' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red247\green248\blue250;}\par\f0\cf0\fs48 En la figura vemos que la gráfica de\par\f0\fs48\i{\*\mjaformula{\fraction{\num sen(x)}{\den x}}}\i0\cf0  \cf0 queda entre las gráficas de\par\f0\fs48\i{\*\mjaformula cos(x)}\i0\cf0  y \i{\*\mjaformula 1}\i0\cf0 .\par\f0\cf1\fs48 .\par\f0\cf0\fs48 Estas dos últimas funciones son\par\f0\cf0\fs48 continuas en \i{\*\mjaformula 0}\i0\cf0 , así que\par\par\f0\fs48\i{\*\mjaformula{\limit{\from x}{\to 0}{\what}}cos(x)=cos(0)=1}\i0\cf0  y \i{\*\mjaformula{\limit{\from x}{\to 0}{\what}}1=1}\i0\par\par\f0\cf0\fs48 por lo tanto, como la funci\cf0 ón\cf0  \i{\*\mjaformula{\fraction{\num sen(x)}{\den x}}}\i0\cf0  está \par\f0\cf0\fs48 entre las otras dos, entonces también\par\f1\cf1\fs16 .\par\f2\cf0\fs34\i                   \i0\f0\cf0\fs48\i          \i0\i{\*\mjaformula{\limit{\from x}{\to 0}{\what{\fraction{\num sen(x)}{\den x}}}}=1}\i0\cf0                  (1)\par\f0\cf1\fs48 .\par\f0\cf0\fs48 Este método de encerrar a una función desconocida\par\f0\cf0\fs48 entre dos funciones que tienen el mismo \cf0 límite se\par\f0\cf0\fs48  conoce como \cf0\i la ley del sándwich\i0\cf0 .}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_16" value="espacio='E1' tipo='segmento' fondo='no' color='3366dd' coord_abs='no' expresión='(1,0)(1,tan(p))' decimales='2' fijo='sí' tamaño='2' ancho='2' fuente='Monospaced,PLAIN,12' lineDash='solid' ">
+  </ajs>
+
+
+
+</body>
+</html>

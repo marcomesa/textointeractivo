@@ -1,0 +1,78 @@
+Vector r
+<b>r</b><span class="vector">&rarr;</span>
+
+Vector F
+<b>F</b><span class="vector2">&rarr;</span>
+
+Vector F1
+<b>F</b><span class="vector2">&rarr;</span><sub>1</sub>
+
+Producto Cruz AxB
+<b>A</b><span style="position: relative; bottom: 6px; left:-12px;"><sup>&rarr;</sup></span>× &nbsp;&nbsp;<b>B</b><span style="position: relative; bottom: 6px; left:-12px;"><sup>&rarr;</sup></span>
+
+Producto punto A.B
+<b>A</b><span style="position: relative; bottom: 6px; left:-12px;"><sup>&rarr;</sup></span>&bull; &nbsp;&nbsp;<b>B</b><span style="position: relative; bottom: 6px; left:-12px;"><sup>&rarr;</sup></span>
+
+Vector unitario î
+<b>i</b><span class="chapo">^</span>
+
+Raiz cuadrada 
+&radic;<span class="raiz"><span class="fup">x<sup>2</sup></span><span class="bar">/</span><span class="fdn"></span></span>
+
+Enlace Figura
+<a href="imagenes/232.jpg" frameborder="0" allowfullscreen target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=0,titlebar=0,menubar=0,status=0,toolbar=0,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-285)+',width=600,height=570');return false;"><font color="blue">figura 2.32</font></a>
+
+Número de fórmula
+<p style="position:absolute; bottom: 52px; right:5px; color:#D85D1E;">(2.38)</p>
+
+Comprueba tu aprendizaje
+Grande
+<h2 style="color: brown;"><img src="images/check.png" width="46px">Comprueba tu aprendizaje 6.10</h2>		<div class="fondo_check"></div>
+
+Pequeño
+<h2 style="color: brown;"><img src="images/check.png" width="30px">Comprueba tu aprendizaje 6.10</h2>
+<div class="fondo_check2"></div>
+
+
+Figura
+<p align="center"><img src="imagenes/231.jpg" width="720px"></p>
+			<p class="fig"><b>Figura 2.31</b> Una llave proporciona agarre y ventaja mecánica al aplicar torque para girar una tuerca. (a) Gira en sentido antihorario para aflojar la tuerca. (b) Gírala en el sentido de las agujas del reloj para apretar la tuerca.</p>
+
+Ejemplo
+<h2 style="color: brown;">Ejemplo 2.18</h2>
+<p><b>El torque de una fuerza</b></p>
+
+Sumatorio
+<span class="suma">&#8721;</span>
+
+<span class="suma" style="position: relative; top: -5px;">&#8721;</span><span style="position: relative; top: 18px; left:-18px;"><sub>i = 1</sub></span><span style="position: relative; bottom: 30px; left:-40px;"><sub>N</sub></span><span style="position: relative; left:-20px;">V<sub>i</sub></span>
+
+
+fracción
+<span class="fraction"><span class="fup">1</span><span class="bar">/</span><span class="fdn">2</span></span>
+
+.media
+v<span class="media">_</span>
+
+.limite
+lim<span class="limite">?t?0</span>
+
+cuadro resaltador
+<div class="fondo_div3" align="center"> </div>
+
+integral
+<span class="integral3">&#x222b;</span>
+
+class="t12"
+
+<p align="center"><a href="Imagenes/img06.png" frameborder="0" allowfullscreen target="_blank" onclick="window.open(this.href,this.target,'scrollbars=yes,resizable=yes,location=0,titlebar=0,menubar=0,status=0,toolbar=0,left='+(screen.availWidth/2-387)+',top='+(screen.availHeight/2-174)+',width=774,height=348');return false;"><img src="Imagenes/img06.png" width="600px"/></a></p>
+			<p class="fig"><b>Figura 1</b>. Conjuntos numéricos (adaptado del libro Precálculo de Stewart<sup>2</sup></p>
+
+videos en local
+
+<video width="640" height="360" controls>
+  <source src="videos/movie.mp4" type="video/mp4">
+  
+Su navegador es como el de Jaime.
+</video>
+

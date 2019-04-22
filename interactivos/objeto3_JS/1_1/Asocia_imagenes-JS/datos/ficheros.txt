@@ -1,0 +1,6 @@
+5
+'/imagenes1/'
+'/imagenes2/'
+'/imagenes3/'
+'/imagenes4/'
+'/imagenes5/'

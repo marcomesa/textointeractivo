@@ -1,0 +1,130 @@
+
+p {
+    color:#000;	font-size:20px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 0px 0px 55px; font-weight: 580;
+	}
+	
+h1
+{
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0 0 0;
+	margin:15px 55px 5px 55px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2
+{
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0 0 0;
+	margin:8px 55px 5px 55px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+h3
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	color: #000;
+	font-family: 'descartesJS_Sansserif', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: center; 
+}
+		
+a{
+	color:#000;	font-size:20px; font-family: 'descartesJS_SansSerif', sans-serif; text-decoration: none; margin:0px 0px 0px 0px;
+			
+	}
+		
+	
+		
+li{
+	list-style:none;
+	line-height:30px;
+}
+
+
+
+td{
+	color:#000;	font-size:24px; font-family: 'descartesJS_SansSerif', sans-serif; text-decoration: none; margin:15px 25px 5px 5px; padding:0 10px;
+}
+
+td{
+	color:#000;	font-size:24px; font-family: 'descartesJS_SansSerif', sans-serif; text-decoration: none; margin:15px 25px 5px 5px; padding:0 10px;
+}
+
+.geogebraweb {
+	color:#000;	font-size:24px; font-family: 'descartesJS_SansSerif', sans-serif; text-decoration: none; margin:5px 5px 5px 5px; padding:0 10px;
+}
+
+table  {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 4px;
+    border-color: blue;
+}
+
+#book .span2{
+	float:right;
+}
+
+#book .a2{
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	color:#333;
+	margin:2px 0;
+	padding:0 10px;
+	
+}
+
+#book .a2:hover{
+	background:#CAD1EE;
+	float:left;
+	width:100%;
+	clear:both;
+	text-decoration:none;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+
+
+span#sub {
+    vertical-align: sub;
+}
+
+body{
+	background:transparent 
+	color:#444;
+	font-size:12px;
+	color: #000;
+	
+}
+
+
+
+
+
+
+
+
+
+
+	

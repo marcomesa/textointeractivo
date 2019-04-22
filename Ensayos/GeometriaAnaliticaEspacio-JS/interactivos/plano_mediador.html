@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Plano mediador</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font5.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="ffffff">
+
+  <p align="center">
+    <ajs name="Descartes" code="descinst.Descartes.class" width="600" height="555">
+      <param name="tamaño" value="600x555">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="antialias" value="sí">
+      <param name="deshacer" value="no">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R3' R3='sí' id='E2' x='0' y='315' ancho='100%' alto='240' dibujar-si='1' fijo='no' escala='30' O.x='-108' O.y='36' despl_imagen='arr-izq' fondo='f1fff7' despliegue='orden' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='t1' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' nombre='_._' expresión='(510,195,23,40)' valor='1' incr='0.1' min='-3' max='3' discreto='no' decimales='2' fijo='no' visible='no' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='ax=-2;ay=-2;az=2;bx=1;by=8;bz=1;E2.rot.y=6;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='mx=(ax+bx)/2;my=(ay+by)/2;mz=(az+bz)/2;nx=bx-ax;ny=by-ay;nz=bz-az;ux=0;uy=nz;uz=-ny;vx=ny;vy=-nx;vz=0;mu=sqrt(ux^2+uy^2+uz^2);mv=sqrt(vx^2+vy^2+vz^2);D=-nx*mx-ny*my-nz*mz;px=mx-t1/10;py=my+t1/10;pz=-(D+nx*px+ny*py)/nz;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[300,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Times New Roman;}\f0\fs32 Un punto cualquiera  P(x, y, z)  del lugar que buscamos debe cumplir: {\*\mjaformula{\subix}}\par\f0\fs32 d(P, A) = d(P, B){\*\mjaformula{\subix}}\par\f0\fs32 Si A ({\*\mjaformula x{\subix 1}},{\*\mjaformula y{\subix 1}},{\*\mjaformula z{\subix 1}}) y B ({\*\mjaformula x{\subix 2}},{\*\mjaformula y{\subix 2}},{\*\mjaformula z{\subix 2}}) será: \par\f0\fs32{\*\mjaformula{\radical{\index}{\radicand (x-x{\subix 1}){\supix 2}+(y-y{\subix 1}){\supix 2}+(z-z{\subix 1}){\supix 2}}}}={\*\mjaformula{\radical{\index}{\radicand (x-x{\subix 2}){\supix 2}+(y-y{\subix 2}){\supix 2}+(z-z{\subix 2}){\supix 2}}}}\par\f0\fs32 Elevando al cuadrado los dos miembros y reduciendo términos semejantes:\par\f0\fs32{\*\mjaformula{\supix}}{\*\mjaformula{\subix}}\par\f0\fs32 Dividiendo para 2 resulta:{\*\mjaformula{\supix}}\par\par\par\f0\fs32 Que es la ecuación de un plano de vector normal  \b AB\b0  = ({\*\mjaformula x{\subix 2}}-{\*\mjaformula x{\subix 1}},{\*\mjaformula y{\subix 2}}-{\*\mjaformula y{\subix 1}},{\*\mjaformula z{\subix 2}}-{\*\mjaformula z{\subix 1}}) \f1\i{\*\mjaformula{\supix}}\i0\par\f0\fs32 y que pasa por el punto medio del segmento:  M ({\*\mjaformula{\fraction{\num x{\subix 1}+x{\subix 2}}{\den 2}}},{\*\mjaformula{\fraction{\num y{\subix 1}+y{\subix 2}}{\den 2}}},{\*\mjaformula{\fraction{\num z{\subix 1}+z{\subix 2}}{\den 2}}})}' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_center' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[255,148]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 2({\*\mjaformula x{\subix 2}}-{\*\mjaformula x{\subix 1}})x + 2({\*\mjaformula y{\subix 2}}-{\*\mjaformula y{\subix 1}})y + 2({\*\mjaformula z{\subix 2}}-{\*\mjaformula z{\subix 1}})z + ({\*\mjaformula x{\subix 2}{\supix 2}}-{\*\mjaformula x{\subix 1}{\supix 2}}) + ({\*\mjaformula y{\subix 2}{\supix 2}}-{\*\mjaformula y{\subix 1}{\supix 2}}) + ({\*\mjaformula z{\subix 2}{\supix 2}}-{\*\mjaformula z{\subix 1}{\supix 2}}) = 0\par}' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_center' anchor='a_top_center' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[270,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 ({\*\mjaformula x{\subix 2}}-{\*\mjaformula x{\subix 1}}) x + ({\*\mjaformula y{\subix 2}}-{\*\mjaformula y{\subix 1}}) y + ({\*\mjaformula z{\subix 2}}-{\*\mjaformula z{\subix 1}}) z +{\*\mjaformula{\fraction{\num x{\subix 2}{\supix 2}-&nbsp;x{\subix 1}{\supix 2}}{\den 2}}}+{\*\mjaformula{\fraction{\num y{\subix 2}{\supix 2}-&nbsp;y{\subix 1}{\supix 2}}{\den 2}}}+{\*\mjaformula{\fraction{\num z{\subix 2}{\supix 2}-&nbsp;z{\subix 1}{\supix 2}}{\den 2}}}= 0\par}' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_center' anchor='a_top_center' ">
+      <param name="S_01" value="espacio='E2' tipo='punto' fondo='no' color='404040' color_reverso='bb0000' expresión='(ax,ay,az)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs32 A}' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_02" value="espacio='E2' tipo='punto' fondo='no' color='404040' color_reverso='bb0000' expresión='(bx,by,bz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32 B\f2\fs24}' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_03" value="espacio='E2' tipo='punto' fondo='no' color='404040' color_reverso='bb0000' dibujar-si='(px#mx)&(py#my)&(pz#mz)' expresión='(mx,my,mz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32 M\f2\fs24}' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' decimales='2' fijo='sí' ancho='3' offset_dist='10' offset_angle='270' ">
+      <param name="S_04" value="espacio='E2' tipo='segmento' fondo='no' color='bb0000' expresión='(ax,ay,az)(bx,by,bz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='2' Nu='1' ">
+      <param name="S_05" value="espacio='E2' tipo='superficie' fondo='no' color='cc427284' color_reverso='cc8adbcf' expresión='x=mx+(ux/mu)*(8*u-4)+(vx/mv)*(8*v-4) y=my+(uy/mu)*(8*u-4)+(vy/mv)*(8*v-4) z=mz+(uz/mu)*(8*u-4)+(vz/mv)*(8*v-4)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='luz' Nu='1' Nv='1' ">
+      <param name="S_06" value="espacio='E2' tipo='punto' fondo='no' color='404040' color_reverso='336cd2' expresión='(px,py,pz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32  X}' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='16' decimales='2' fijo='sí' ancho='4' offset_dist='10' offset_angle='270' ">
+      <param name="S_07" value="espacio='E2' tipo='segmento' fondo='no' color='3c6fcc' expresión='(ax,ay,az)(px,py,pz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_08" value="espacio='E2' tipo='segmento' fondo='no' color='3c6fcc' expresión='(bx,by,bz)(px,py,pz)' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_09" value="espacio='E2' tipo='texto' fondo='sí' color='000000' expresión='[400,205]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red83\green97\blue152;}\f0\cf0\fs32\b\i  Desplazar X \i0\b0}' decimales='2' fijo='sí' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='16' ">
+      <param name="S_10" value="espacio='E2' tipo='segmento' fondo='no' color='808080' expresión='(s,0,0)(s+1,0,0)' familia='s' s.intervalo='[0,60]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_11" value="espacio='E2' tipo='segmento' fondo='no' color='aaaaaa' expresión='(s,0,0)(s+1,0,0)' familia='s' s.intervalo='[-60,0]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_12" value="espacio='E2' tipo='segmento' fondo='no' color='808080' expresión='(0,s,0)(0,s+1,0)' familia='s' s.intervalo='[0,60]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_13" value="espacio='E2' tipo='segmento' fondo='no' color='aaaaaa' expresión='(0,s,0)(0,s+1,0)' familia='s' s.intervalo='[-60,0]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_14" value="espacio='E2' tipo='segmento' fondo='no' color='808080' expresión='(0,0,s)(0,0,s+1)' familia='s' s.intervalo='[0,60]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_15" value="espacio='E2' tipo='segmento' fondo='no' color='aaaaaa' expresión='(0,0,s)(0,0,s+1)' familia='s' s.intervalo='[-60,0]' s.pasos='60' rotini='(0,0,-30)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+    </ajs>
+  </p>
+
+<script id="macros/mis_ejes2.txt" type="descartes/macro">
+tipo_de_macro=R3
+Idioma=espa&ntilde;ol
+id='lx' constante='s&iacute;' expresi&oacute;n='40' evaluar='una-sola-vez'
+id='ly' constante='s&iacute;' expresi&oacute;n='40' evaluar='una-sola-vez'
+id='lz' constante='s&iacute;' expresi&oacute;n='40' evaluar='una-sola-vez'
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(lx,0,0)' 
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(0,ly,0)' 
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(0,0,lz)' 
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(-lx,0,0)' 
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(0,-ly,0)' 
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(0,0,-lz)' 
+</script>
+
+</body>
+</html>

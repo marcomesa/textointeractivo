@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CÃ¡lculo Diferencial - IntroducciÃ³n</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="780" height="650" code="Descartes">
+    <param name="tamaño" value="780x650">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+    <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ff00ff00' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' x='20' y='430' ancho='740' alto='200' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='m1' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='_nada_' expresión='(55,70,60,45)' valor='&squot;&squot;' incr='0.1' discreto='no' decimales='6' fijo='no' visible='sí' activo-si='mal' evaluar='no' ">
+    <param name="C_02" value="id='m2' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='_nada_' expresión='(55,130,60,45)' valor='&squot;&squot;' incr='0.1' discreto='no' decimales='6' fijo='no' visible='sí' activo-si='mal' evaluar='no' ">
+    <param name="C_03" value="id='Otro' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otro ejercicio' expresión='(E1._w-230,E1._h-35,145,30)' valor='0' visible='sí' color='ffffff' color-int='486598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen=' _STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='otro()' ">
+    <param name="A_01" value="id='otro()' algoritmo='sí' expresión='x' hacer='A1=ent(8*rnd)-ent(8*rnd);B1=ent(8*rnd)+1;C1=ent(8*rnd)-ent(8*rnd);m1=&squot;&squot;;m2=&squot;&squot;' ">
+    <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='otro()' hacer=';' ">
+    <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='A=abs(A2);B=abs(B2);C=abs(C2);m=-(A2/B2);b=-(C2/B2);;mm=-(A1/B1);bb=-(C1/B1);res=m1/m2;bien=(res=mm);mal=(res!=mm)' ">
+    <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='c=0' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green87\blue1;}\f0\cf0\fs48 Ahora, vamos a determinar la pendiente de una recta a partir de su\par\f0\cf0\fs48 ecuación general.\par\f0\cf0\fs48\b        \b0\par\f0\cf0\fs48 Sea la recta  Ax + By + C = 0 , si B≠0, podemos despejar  y obtenemos:        \par\f0\fs48{\*\mjaformula y=-{\fraction{\num A}{\den B}}x-{\fraction{\num C}{\den B}}}\cf0 , \cf0 que tiene la forma de la ecuación \cf0\b y=mx+b\b0\cf0  donde m es la\par\f0\cf0\fs48 pendiente, por lo \cf0 tanto, ﻿ \b{\*\mjaformula m=-{\fraction{\num A}{\den B}}}\b0\cf0\b   \b0\cf0 y\cf0\b   \b0\b{\*\mjaformula b=-{\fraction{\num C}{\den B}}}\b0\par\par\f0\cf0\fs48 ﻿Si B=0, la recta es vertical y la pendiente no está definida.\par\par\f0\cf1\fs48\b Ejercicios\b0\par\par\f0\cf0\fs48 En el siguiente ejercicio, escribe el numerador y denominador de la\par\f0\cf0\fs48 pendiente y oprime Intro para verificar la respuesta. \par}' decimales='2' fijo='sí' ancho='1' fuente='Monospaced,PLAIN,24' align='a_left' ">
+    <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(A1!=0)&(C1>0)' expresión='[2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Obtener la pendiente de la siguiente recta:  \b  \b0\b{\*\mjaformula{\expr A1\decimals 0\fixed1}x+{\expr B1\decimals 0\fixed1}y+{\expr C1\decimals 0\fixed1}=0}\b0\par\f0\fs24                                \par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(A1!=0)&(C1<0)' expresión='[2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Obtener la pendiente de la siguiente recta:  \b  \b0\b{\*\mjaformula{\expr A1\decimals 0\fixed1}x+{\expr B1\decimals 0\fixed1}y{\expr C1\decimals 0\fixed1}=0}\b0\par\par\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(A1!=0)&(C1=0)' expresión='[2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Obtener la pendiente de la siguiente recta:  \b  \b0\b{\*\mjaformula{\expr A1\decimals 0\fixed1}x+{\expr B1\decimals 0\fixed1}y=0}\b0\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(A1=0)&(C1>0)' expresión='[2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Obtener la pendiente de la siguiente recta:  \b  \b0\b{\*\mjaformula{\expr B1\decimals 0\fixed1}y+{\expr C1\decimals 0\fixed1}=0}\b0\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(A1=0)&(C1<0)' expresión='[2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Obtener la pendiente de la siguiente recta:  \b  \b0\b{\*\mjaformula{\expr B1\decimals 0\fixed1}y{\expr C1\decimals 0\fixed1}=0}\b0\par\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='(A1=0)&(C1=0)' expresión='[2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 Obtener la pendiente de la siguiente recta:  \b  \b0\b{\*\mjaformula{\expr B1\decimals 0\fixed1}y=0}\b0\par\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='00ff00' dibujar-si='(bien)&(m1!=&squot;&squot;)&(m2!=&squot;&squot;)' expresión='[200,120]' texto='¡Correcto!' decimales='2' fijo='sí' ancho='1' color_borde_texto='000000' fuente='Monospaced,BOLD,28' align='a_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='(mal)&(m1!=&squot;&squot;)&(m2!=&squot;&squot;)' expresión='[200,120]' texto='¡Incorrecto!' decimales='2' fijo='sí' ancho='1' color_borde_texto='000000' fuente='Monospaced,BOLD,34' align='a_left' ">
+    <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='20303a' expresión='[0,95]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48 m ={\*\mjaformula{\fraction{\num ??????}{\den}}}\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial,PLAIN,17' align='a_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

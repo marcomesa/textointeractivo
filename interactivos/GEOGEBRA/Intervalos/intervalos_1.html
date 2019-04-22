@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <title>Intervalos. Operaciones de Unión e Intersección. - GeoGebra</title>        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+                <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#6161FF">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#6161FF">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#6161FF">
+
+        <meta property="og:title" content="Intervalos. Operaciones de Unión e Intersección." />
+<meta property="og:description" content="Intervalos. Operaciones" />
+<meta property="og:site_name" content="GeoGebra" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://cdn.geogebra.org/resource/ztDhubnc/B7B2nK4Dml0AUEeL/material-ztDhubnc.png" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:site" content="@geogebra" />
+<meta property="fb:app_id" content="185307058177853" />
+<meta property="article:published_time" content="2014-09-22" />
+<meta property="article:publisher" content="https://www.facebook.com/geogebra" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/structure.ltr.css?v=1554102008" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/screen.ltr.css?v=1554102008" media="screen and (min-width: 769px)" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/tablet.ltr.css?v=1554102008" media="screen and (min-width: 641px) and (max-width: 768px)" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/phone.ltr.css?v=1554102008" media="screen and (min-width: 0px) and (max-width: 640px)" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/css/general.ltr.css?v=1554102008" />
+                <link rel="stylesheet" type="text/css" href="GeoGebra/css/worksheet/ws.view.ltr.css?v=1554102008" />
+
+        <link href="GeoGebra/css/wysibb/default/wbbtheme.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="GeoGebra/css/wysibb/wysibb.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="GeoGebra/css/compiled.css?v=1554102008" media="screen" rel="stylesheet" type="text/css" />
+                    <script type="text/javascript" src="GeoGebra/scripts/jquery.min.js?v=1554102008"></script>
+        
+        <script type="text/javascript" src="GeoGebra/scripts/jquery.simplemodal.js?v=1554102008"></script>
+        <script type="text/javascript" src="GeoGebra/scripts/worksheet/ws-header-footer.js?v=1554102008"></script>
+
+        
+        <script type="text/javascript" src="GeoGebra/scripts/jlatexmath/texthandlers.js?v=1554102008"></script>
+<script type="text/javascript" src="GeoGebra/scripts/jlatexmath/jlatexmath.js"></script>
+<script type="text/javascript" src="GeoGebra/scripts/jlatexmath/jlatexmath-tube.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    window.GGBT_texthandlers.setLatexRenderer("jlatexmath");    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+                function escapeHtml(text) {
+                  return text
+                      .replace(/(&)/g, "&amp;")
+                      .replace(/(<)/g, "&lt;") 
+                      .replace(/(>)/g, "&gt;")
+                      .replace(/(")/g, "&quot;")
+                      .replace(/(')/g, "&#039;");
+                }
+
+                function GGBT_parseLatexes() {
+                  if (window.GGBT_texthandlers.isLatexRenderer("mathquill")) {
+                        $(".mathquill-embedded-latex").mathquill();
+                    } else {
+                        window.GGBT_jlatexmath.drawLatexOnjQuery($(".jlatexmath"));
+                    }
+                }
+                jQuery(document).ready(function(e) {
+                    var content = $(".bbcode-text");
+                    content.each(function(index) {
+                        var html = window.GGBT_texthandlers.getHTMLFromBBCode(escapeHtml($(this).text())),
+                            t = $(this);
+                            t.removeClass("bbcode-text");
+                            t.html(html);
+                    });
+                    if (window.GGBT_ws_header_footer) {
+                        window.GGBT_ws_header_footer.setWsScrollerHeight();
+                    }
+                });
+                 jQuery(window).on("resize",function(e) {
+                    GGBT_parseLatexes();
+                });
+                document.addEventListener("DOMContentLoaded", function(e) {
+                    window.GGBT_parseLatexes();
+                });
+                //]]>
+</script>
+<script type="text/javascript" src="GeoGebra/scripts/general.original.js"></script>
+<script type="text/javascript" src="GeoGebra/scripts/worksheet/general.js?v=1554102008"></script>
+<script type="text/javascript" src="GeoGebra/scripts/worksheet/view.js?v=1554102008"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+                    window.GGBT_wsf_view.setDefaults({
+                        input: {
+                            text: {
+                                toolbar: {"math":{"text":"Matem&aacute;tica","title":"Inserta Matem&aacute;tica"},"icons":{"text":"Iconos","title":"Insertar iconos de herramientas de GeoGebra"},"text":{"title":"Herramientas de texto"}},
+                                dlg_math: {"title":"Editar Matem&aacute;tica","btn_basic":"B&aacute;sico","btn_greek":"Griego","btn_operators":"Operadores","btn_relationships":"Relaciones","btn_arrows":"Flechas","btn_delimiters":"Separadores","btn_misc":"Miscel&aacute;nea"},
+                                dlg_icons: {"title":"Seleccionar un icono"},
+                                wysibb_lang: ""
+                            }
+                        },
+                        useplaybutton: true
+                    });
+    
+                    //]]>
+</script>
+<script type="text/javascript" src="GeoGebra/scripts/spin.js?v=1554102008"></script>
+<script type="text/javascript" src="GeoGebra/scripts/spinner.js?v=1554102008"></script>
+<script type="text/javascript" src="GeoGebra/scripts/deployggb.js?v=1554102008"></script>
+<script type="text/javascript" src="GeoGebra/scripts/objects/timeago/jquery.timeago.js?v=1554102008"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+            jQuery.timeago.settings.cutoff = 7*24*60*60*1000;
+            jQuery.timeago.settings.allowFuture = true;
+            //]]>
+</script>
+<script type="text/javascript" src="GeoGebra/scripts/objects/timeago/locales/jquery.timeago.en.js?v=1554102008"></script>        <script type="text/javascript">
+            //<![CDATA[
+            var ROOT_URL = 'https://www.geogebra.org';
+            var BASE_URL = 'https://www.geogebra.org';
+            var lang_confirm = "¿Estás seguro de que deseas llevar a cabo esta operación? ¡Es probable que no se pueda deshacer!";
+            var age_label = "Edad:";
+            //]]>
+        </script>
+
+    </head>
+
+    <body class="book scrolling">
+
+    
+<div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <div style="direction: ltr">
+
+                    
+<div class="j-ws-header sWs-header " data-title="Intervalos. Operaciones de Unión e Intersección.">
+
+<ul class="sWs-title">
+    <li>
+        <a class="sWs-logo icon icon-header-logo jCancel jClose"
+           href="https://www.geogebra.org"
+           title="Cerrar la ventana y volver al registro de evaluaci&oacute;n"
+           data-confirm="">
+        </a>
+    </li>
+</ul>
+
+
+    <ul class="sWs-tools jWs-tools" data-id="158021" data-pe_id=""
+        data-user_id="6995682"
+        data-loginmsg=""
+        data-loginurl=""
+        data-inbook=""
+        data-saveurl=""
+        data-yes="S&iacute;" data-no="No" data-cancel="Cancelar">
+
+
+    
+                
+        
+        
+
+    
+                <li><a class="active-icon icon-share"
+           href="https://www.geogebra.org/material/show/id/ztDhubnc#share-popup"           title="Compartir este recurso con los dem&aacute;s"
+           ></a></li>
+    
+        </ul>
+
+
+    
+    <div class="clear"></div>
+</div>
+
+
+    
+    <!-- Popup dialog for editing materials that are used in other books -->
+    <div id="popup-edit-inotherbook" class="message-dialog" style="display:none;">
+        <div class="message-text">
+            Esta hoja de trabajo tambi&eacute;n es parte uno o m&aacute;s libros. Las modificaciones se registrar&aacute;n en todos ellos. &iquest;Deseas cambiar la Actividad original o, en su lugar, crear una copia propia para este libro en particular?        </div>
+        <br/>
+        <span class="button-bar">
+        <button class="button edit-original-edit">Editar esta Actividad</button>
+        <button class="button edit-original-copy">Crear una copia</button>
+    </span>
+    </div>
+    <!-- Popup dialog for editing materials that are used in other books END -->
+
+    <!-- Popup dialog for editing materials owned by other users -->
+    <div id="popup-edit-hasotherowner" class="message-dialog" style="display:none;">
+        <div class="message-text">
+            Esta Actividad fue creada por '{$1}'. &iquest;Deseas modificar la versi&oacute;n original o, en su lugar, crear una nueva copia propia?        </div>
+        <br/><br/>
+        <span class="button-bar">
+        <button class="button edit-original-edit">Editar esta Actividad</button>
+        <button class="button edit-original-copy">Crear una copia</button>
+    </span>
+    </div>
+    <!-- Popup dialog for editing materials owned by other users END -->
+
+    <!-- Popup dialog for editing materials without edit rights -->
+    <div id="popup-edit-noeditrights" class="message-dialog" style="display:none;">
+        <div class="message-text">
+            Esta hoja fue creada por '{$1}' y no tienes permiso para editarla. &iquest;Quieres crear una copia y agregarla a tu libro?        </div>
+        <br/><br/>
+        <span class="button-bar">
+        <button class="button edit-original-copy">Crear una copia</button>
+        <button class="button cancel">Cancelar</button>
+    </span>
+    </div>
+    <!-- Popup dialog for editing materials without edit rights END -->    <script>
+        window.GGBT_ws_header_footer.setDefaults({
+            msg_favorite_add: "El material &#39;{$1}&#39; fue añadido a tus favoritos.",
+            msg_favorite_remove: "El material &#39;{$1}&#39; fue eliminado de tus favoritos.",
+            btn_favorite_view: "Ver los materiales favoritos",
+            btn_ok: "OK",
+            favorites_url: "/user/profile/id/6995682/p/favorites"
+        });
+    </script>
+        <div class="wsf-ws-scroller">
+            <div class="wsf-wrapper worksheet_tbl">
+
+                            <h1 itemprop="headline" class="wsf-worksheet-title">
+				Intervalos. Operaciones de Unión e Intersección.				</h1>
+            
+
+                            <p class="bbcode-text" itemprop="articleBody">Intervalos. Operaciones</p>
+            
+                    <div id="applet_container" class="applet_container">
+    </div>
+<script type="text/javascript">
+    var parameters = {"id":"ggbApplet","height":566,"width":1366,"allowStyleBar":false,"allowUpscale":false,"canary":false,"enableLabelDrags":false,"enableRightClick":false,"enableShiftDragZoom":true,"errorDialogsActive":true,"fixApplet":false,"ggbBase64":"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","isPreloader":false,"language":"es","playButton":false,"playButtonAutoDecide":true,"prerelease":false,"preventFocus":false,"screenshotGenerator":false,"showAlgebraInput":false,"showFullscreenButton":false,"showMenuBar":false,"showResetIcon":true,"showToolBar":false,"showToolBarHelp":false,"showZoomButtons":false,"useBrowserForJS":false};
+    parameters.appletOnLoad = function() {
+        if (typeof $ === "function" && window.GGBT_wsf_view !== undefined) {
+            var container =  $("#applet_container_158021");
+            window.GGBT_wsf_view.postProcessApplet(container.parents('.content-added-content'));
+        }
+    };
+    /** is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, macro=Macro View */
+    var views = {"is3D":0,"AV":0,"SV":0,"CV":0,"EV2":0,"CP":0,"PC":0,"DA":0,"FI":0,"PV":0,"macro":0};
+    var applet = new GGBApplet('4.4', parameters, views, true);
+
+        applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web/', 'true');
+    applet.setPreviewImage('GeoGebra/files/material-ztDhubnc.png', 'GeoGebra/images/GeoGebra_loading.png', null);
+    var appletType_158021 = 'preferhtml5';
+    window.addEventListener("load", function() {
+        applet.inject('applet_container', 'preferhtml5');
+    });
+</script>
+                                    <p class="bbcode-text" itemprop="articleBody">Mueve los extremos de los segmentos y observa la definición del intervalo y las operaciones de Unión e Intersección.</p>
+                
+                
+                                    
+<div id="save-info-inprogress" class="msg-box" style="display: none">
+    <div class="message">Guardando&hellip;</div>
+</div>
+<div id="save-info-successful" class="msg-box" style="display: none">
+    <div class="message">Se han guardado todos los cambios</div>
+</div>
+<div id="save-info-error" class="msg-box" style="display: none">
+    <div class="message general">Error</div>
+    <div class="message error_timeout_retry" style="display: none">Se ha agotado el tiempo de espera. Tratando de volver a guardar ..</div>
+    <div class="message error_timeout" style="display: none">Disculpa, el servidor no responde. Espera unos minutos e intenta guardarlo de nuevo.</div>
+</div>
+                
+            </div>
+
+            
+
+
+<div class="jWS-footer sWs-footer">
+    <div class="sWs-footer-content">
+        <a class="sWs-GeoGebra" href="https://www.geogebra.org"></a>
+            &#0150;
+        <span itemprop="creator" class="sWs-footer-contributors" itemscope itemtype="http://schema.org/Person"> <a href="https://www.geogebra.org/u/fernando+d%C3%ADaz" target="_blank"><span class="notranslate" itemprop="name">Fernando Díaz</span></a></span>    
+
+        </div>
+</div>
+
+
+        </div>
+
+            </div>
+
+</div>
+        <div class="ajax-loading-glass"></div>
+    </body>
+</html>

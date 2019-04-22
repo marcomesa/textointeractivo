@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>2.2 a - Multiplicación y división de expresiones algebraicas</title>
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+   <link rel="stylesheet" href="../../../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../../../fonts/font5.css" type="text/css">
+</head>
+
+<body style="margin:0;padding:0; overflow: hidden;">
+
+  <ajs name="prueba" code="Descartes.class" width="410" height="200">
+    <param name="expand" value="fit">
+	<param name="Versión" value="5.5">
+    <param name="nombre" value="prueba">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+ 	<param name="E_00" value="tipo='R2' fijo='si' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+    <param name="C_00" value="id='cb' tipo='numérico' interfaz='campo de texto' región='interior' expresión='(60+e*24,70,25,30)' decimales='0' nombre='_._' incr='1' visible='si' dibujar-si='cb#b' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicación.fuente='Monospaced,PLAIN,12'">
+    <param name="C_01" value="id='ce' tipo='numérico' interfaz='campo de texto' región='interior' expresión='(84+24*e,60,18,20)' decimales='0' nombre='_._' incr='1' visible='si' dibujar-si='ce#e' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicación.fuente='Monospaced,PLAIN,12'">
+    <param name="C_02" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='OTRO' expresión='(20,170,150,30)' color='ffffff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='14' imagen='imagenes/btn150.png' acción='inicio' parámetro='a=ent(rnd*10)+3\nb=ent(rnd*5)+5\nc=ent(rnd*10)+1' ">
+	<param name="A_00" value="id='escala' constante='si' expresión='20' evaluar='una-sola-vez'">
+    <param name="A_01" value="id='b' constante='si' expresión='1+ent(rnd*9)%9' evaluar='una-sola-vez'">
+    <param name="A_02" value="id='e' constante='si' expresión='1+ent(rnd*9)' evaluar='una-sola-vez'">
+    <param name="A_03" value="id='v' constante='si' expresión='(b=cb)*(e=ce)' evaluar='siempre'">
+    <param name="A_04" value="id='w' constante='si' expresión='((b#cb)*(cb#0))+(e#ce)*(ce#0)' evaluar='siempre'">
+    <param name="A_05" value="id='x' constante='si' expresión='(w>0)?1:x' evaluar='siempre'">
+    <param name="G_00" value="tipo='punto' color='0000c5' dibujar-si='v+x+1' expresión='(1.2*e-7,0)' texto='[b]' fuente='Helvetica,PLAIN,32' decimales='0' tamaño='0'">
+    <param name="G_01" value="tipo='punto' color='0000c5' dibujar-si='v+x+1' expresión='(1.2*e-6,1)' texto='[e]' fuente='Helvetica,BOLD,16' decimales='0' tamaño='0'">
+    <param name="G_02" value="tipo='punto' color='negro' dibujar-si='e=1' expresión='(-9,0)' texto='[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_03" value="tipo='punto' color='negro' dibujar-si='e=2' expresión='(-9,0)' texto='[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_04" value="tipo='punto' color='negro' dibujar-si='e=3' expresión='(-9,0)' texto='[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_05" value="tipo='punto' color='negro' dibujar-si='e=4' expresión='(-9,0)' texto='[b]·[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_06" value="tipo='punto' color='negro' dibujar-si='e=5' expresión='(-9,0)' texto='[b]·[b]·[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_07" value="tipo='punto' color='negro' dibujar-si='e=6' expresión='(-9,0)' texto='[b]·[b]·[b]·[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_08" value="tipo='punto' color='negro' dibujar-si='e=7' expresión='(-9,0)' texto='[b]·[b]·[b]·[b]·[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_09" value="tipo='punto' color='negro' dibujar-si='e=8' expresión='(-9,0)' texto='[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_10" value="tipo='punto' color='negro' dibujar-si='e=9' expresión='(-9,0)' texto='[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_11" value="tipo='punto' color='negro' dibujar-si='e=10' expresión='(-9,0)' texto='[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]·[b]' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_12" value="tipo='punto' color='azul' expresión='(1.2*e-8.5,0)' texto='=' fuente='Helvetica,PLAIN,30' decimales='0' tamaño='0'">
+    <param name="G_13" value="tipo='punto' color='azul' dibujar-si='v*(x=0)' expresión='(-7,-2)' texto='¡Muy bien!' fuente='Helvetica,BOLD,18' tamaño='0'">
+    <param name="G_14" value="tipo='punto' color='azul' dibujar-si='x*((b#cb)+(e#ce))' expresión='(-7,-2)' texto='¡Error!' fuente='Helvetica,BOLD,18' tamaño='0'">
+    <param name="G_15" value="tipo='punto' color='rojo' dibujar-si='x*(cb#b)' expresión='(-1,-2)' texto='La base no es [cb], es [b]' fuente='Helvetica,BOLD,16' decimales='0' tamaño='0'">
+    <param name="G_16" value="tipo='punto' color='rojo' dibujar-si='x*(ce#e)' expresión='(-1,-3)' texto='El exponente no es [ce], es [e]' fuente='Helvetica,BOLD,16' decimales='0' tamaño='0'">
+    <param name="G_17" value="tipo='punto' color='negro' dibujar-si='x' expresión='(-9.9,2.5)' texto='Comienza de nuevo, has tenido confusiones' fuente='Helvetica,BOLD,16' tamaño='0'">
+  </ajs>
+
+
+
+</body>
+</html>

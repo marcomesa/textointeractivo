@@ -1,0 +1,9 @@
+tipo_de_macro=R2
+id='ancho' expresión='30' evaluar='una-sola-vez' constante='si'
+id='h' expresión='2' evaluar='una-sola-vez' constante='si'
+id='sep' expresión='8' evaluar='una-sola-vez' constante='si'
+inicio='A=ancho-2;H=A+sep+2' hacer='x1=1+(A+h)/2;x2=1+A-h/2;x3=1+A-h/2;x4=1+h/2;x5=1+h/2;x6=1+(A-h)/2;y1=1+h/2;y2=1+A/2-h/2;y3=1+A/2;y4=1+A/2;y5=1+A/2-h/2;y6=1+h/2' id='CALCULOS' evaluar='siempre' algoritmo='si'
+id='Rojo' expresión='0.92' evaluar='una-sola-vez' constante='si'
+id='Verde' expresión='1' evaluar='una-sola-vez' constante='si'
+id='Azul' expresión='0' evaluar='una-sola-vez' constante='si'
+tipo='polígono' color='gris' expresión='(x1,y1)(x2,y2)(x3,y3)(x4,y4)(x5,y5)(x6,y6)(x1,y1)' relleno='(Rojo,Verde,Azul,0.0)' coord_abs='si' 

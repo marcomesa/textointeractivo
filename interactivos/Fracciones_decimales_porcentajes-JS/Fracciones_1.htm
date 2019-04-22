@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+  <title>Fracciones.</title>
+  <script>
+  </script>
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFF8E1" text="#000000" link="#993366" vlink="#999933" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onload="MM_preloadImages('img/boton_arriba2.gif','img/boton_atras2.gif','img/boton_adelante2.gif')">
+  <script language="JavaScript">
+    <!--
+
+    function MM_swapImgRestore() { //v3.0
+
+      var i, x, a = document.MM_sr;
+      for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+
+    }
+
+
+
+    function MM_preloadImages() { //v3.0
+
+      var d = document;
+      if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+
+        var i, j = d.MM_p.length,
+          a = MM_preloadImages.arguments;
+        for (i = 0; i < a.length; i++)
+
+          if (a[i].indexOf("#") != 0) {
+            d.MM_p[j] = new Image;
+            d.MM_p[j++].src = a[i];
+          }
+      }
+
+    }
+
+
+
+    function MM_findObj(n, d) { //v4.0
+
+      var p, i, x;
+      if (!d) d = document;
+      if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+
+        d = parent.frames[n.substring(p + 1)].document;
+        n = n.substring(0, p);
+      }
+
+      if (!(x = d[n]) && d.all) x = d.all[n];
+      for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+
+      if (!x && document.getElementById) x = document.getElementById(n);
+      return x;
+
+    }
+
+
+
+    function MM_swapImage() { //v3.0
+
+      var i, j = 0,
+        x, a = MM_swapImage.arguments;
+      document.MM_sr = new Array;
+      for (i = 0; i < (a.length - 2); i += 3)
+
+        if ((x = MM_findObj(a[i])) != null) {
+          document.MM_sr[j++] = x;
+          if (!x.oSrc) x.oSrc = x.src;
+          x.src = a[i + 2];
+        }
+
+    }
+
+    //-->
+  </script>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td valign="top" rowspan="2" width="240" bgcolor="#FFF8E1">
+          <a href="http://ProyectoDescartes.org/" target="_blank"><img src="img/red_240x80_ftrans.png" border="0" vspace="6" width="240" height="80"></a>
+        </td>
+        <td align="center" width="100%" bgcolor="#006699" height="53">
+          <font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Fracciones, decimales y
+		porcentajes: Definiciones.</b></font>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#EAF4FF" height="39">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><i>Álgebra</i></font>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Definiciones.</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#E9E8CB" height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Cuando decimos <em>"me he comido la mitad del bocadillo"</em>, estamos usando una fracción: <img src="fracciones1_01.gif" align="absmiddle">
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              He dividido el bocadillo en dos partes iguales, <strong>2 (denominador)</strong>, y me he comido una de ellas, <strong>1 (numerador)</strong>
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Usaremos la escena siguiente para representar fracciones. En esta escena tenemos <b><font color="Red">
+una unidad</font></b>, representada por el rectángulo rojo. Sigue las instrucciones que se indican al margen para poder representar cualquier fracción, en particular 1/2.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" rowspan="2">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="400" height="350">
+            <param name="tamaño" value="400x350">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='280' O.x='-140' O.y='80' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='d' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='denominador' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_02" value="id='A' tipo='gráfico' espacio='E0' color='00ff00' color-int='f0f8ff' tamaño='8' expresión='[0,0.6]' ">
+            <param name="A_01" value="id='f(x)' algoritmo='no' expresión='0.6' dominio='((x>=0)*(x<=1))' tipo='función' ">
+            <param name="A_02" value="id='g(x)' algoritmo='no' expresión='0.6' dominio='((x>=0)*(x<=A.x))' tipo='función' ">
+            <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+            <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';A.y=0.6;dentro=(A.x>=0)*(A.x<=1);A.x=dentro*(ent(A.x*d))/d+(A.x>1)' ">
+            <param name="G_01" value="espacio='E0' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=f(x)' relleno+='222244' ancho='1' visible='no' editable='no' ">
+            <param name="G_02" value="espacio='E0' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=g(x)' relleno+='9999bb' ancho='1' visible='no' editable='no' ">
+            <param name="G_03" value="espacio='E0' tipo='punto' fondo='no' color='00ff00' coord_abs='no' expresión='[A.x,A.y+5/E0.escala+0.025]' texto='[A.x*d]' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_04" value="espacio='E0' tipo='punto' fondo='no' color='00ff00' coord_abs='no' expresión='[A.x-30/E0.escala,A.y+18/E0.escala+0.05]' texto='numerador' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_05" value="espacio='E0' tipo='punto' fondo='no' color='ffff00' coord_abs='no' expresión='[1-10/E0.escala,-15/E0.escala]' texto='[d]' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_06" value="espacio='E0' tipo='punto' fondo='no' color='ffff00' coord_abs='no' expresión='[0.9-40/E0.escala,-35/E0.escala]' texto='denominador' decimales='0' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_07" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][0,0.6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_08" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][1,0]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_09" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,0.6][1,0.6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_10" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[1,0][1,0.6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_11" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[s,0][s,0.6]' familia='s' s.intervalo='[0,1]' s.pasos='d' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_12" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[100,270]' texto='n' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_13" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[95,272]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_14" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[100,292]' texto='d' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_15" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[117,280]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_16" value="espacio='E0' tipo='texto' fondo='no' color='00ff00' coord_abs='sí' expresión='[132,272]' texto=' [A.x*d]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_17" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[128,272]' texto=' __' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_18" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[133,292]' texto=' [d]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_19" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[165,280]' texto='= [A.x]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_20" value="espacio='E0' tipo='texto' fondo='no' color='00ffff' coord_abs='sí' expresión='[215,280]' texto=' = [A.x*100]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_21" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[160,1]' texto='U N I D A D' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+          </ajs>
+        </td>
+        <td valign="middle">
+
+          <p align="center">
+            <table border="2" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td bgcolor="#E2FDFE">
+                    <font color="#000080" size="2" face="Verdana"><em>
+
+</em></font>
+
+                    <p align="left">
+                      <font color="#000080" size="2" face="Verdana"><em>
+
+En primer lugar selecciona el denominador con los controles de la parte inferior
+de la escena. Después, desplaza suavemente hacia la derecha con el ratón el
+punto señalado en la esquina superior izquierda hasta que el numerador alcance
+el valor deseado.
+
+
+</em></font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Si seleccionas el 2 en el denominador y desplazas el punto hasta que el numerador valga 1, verás que aparece abajo la fracción <img src="fracciones1_01.gif" align="absmiddle"><br> La parte del rectángulo que se ha sombreado es<img src="fracciones1_01.gif" align="absmiddle"><br> El resto hasta completar LA UNIDAD será otro <img src="fracciones1_01.gif" align="absmiddle"></font>
+          </p>
+
+          <p>
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Por otra parte, si hacemos la división de 1 entre 2, nos sale <strong>0.5</strong>, lo ves también en la escena. Así tenemos la fracción <img src="fracciones1_01.gif" align="absmiddle"> en forma de <strong>número decimal</strong>.<br> Pero hay más, esta fracción supone un <strong>50%</strong> de la unidad. Basta multiplicar por 100 el decimal que nos ha salido, y tendremos el <strong>
+	porcentaje</strong>.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#E9E8CB" height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Con esta escena puedes ver muchas fracciones, pasarlas a forma decimal y saber qué % suponen de la unidad. Siempre serán de la forma
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <img src="fracciones1_02.gif" align="absmiddle" width="189" height="50"></font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Se obtienen dividiendo la unidad en tantas partes como diga el <strong>
+denominador d</strong> (con el botón inferior), y tomando tantas partes como diga el <strong>numerador
+n</strong> (moviendo el punto A)</font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              En este caso sólo vamos a tomar en el numerador un número de partes inferior o igual al denominador, debido a que sólo hemos representado una unidad. Mas adelante veremos los demás casos.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <strong>Ejercicio 1</strong>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">Representa en la escena anterior las siguientes fracciones, pulsando el botón inicio, cada vez que quieras cambiar de fracción:
+            </font>
+          </p>
+
+          <p align="center">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <img src="fracciones1_03.gif" align="absmiddle" width="272" height="46">
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif"> y anota qué fracción representa la zona que no está sombreada hasta completar LA UNIDAD.</font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Efectúa las divisiones con la calculadora y comprueba las expresiones decimales y en porcentaje de cada una de ellas.</font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Para esta escena puedes coger otras fracciones que quieras, pero siempre con el numerador menor o igual que el denominador.
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <a name="equivalentes"></a>
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Fracciones
+	equivalentes</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 2</b>.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="middle">
+
+          <p align="center">
+            <table border="2" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td bgcolor="#E2FDFE">
+                    <font color="#000080" size="2" face="Verdana"><em>
+
+</em></font>
+
+                    <p align="left">
+                      <font color="#000080" size="2" face="Verdana"><em>
+
+La escena adjunta funciona básicamente como la anterior con la única diferencia
+de que el numerador se controla ahora desde el punto inferior izquierdo (A) y de
+que en este caso el númerador puede tomar valores decimales. El control del
+numerador es ahora un poco más delicado y tienes que moverlo despacio si quieres
+que el sombreado sea uniforme.
+
+</em></font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </td>
+        <td align="center" valign="middle" rowspan="2">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="400" height="350">
+            <param name="tamaño" value="400x350">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=sí filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='32' O.x='-160' O.y='80' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='E0.escala' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='zoom' expresión='(0,0)' valor='32' incr='8' min='8' max='1000000' discreto='no' decimales='4*(E0.escala<10)' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_02" value="id='E0.Ox' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.x' expresión='(0,0)' valor='-160' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_03" value="id='E0.Oy' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.y' expresión='(0,0)' valor='80' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_04" value="id='d' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='denominador' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_05" value="id='A' tipo='gráfico' espacio='E0' color='ffff00' color-int='f0f8ff' tamaño='8' expresión='[a+b,0]' ">
+            <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+            <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';A.y=0;a=500*(A.x<-0.001);b=500*(A.x>10.001);' ">
+            <param name="G_01" value="espacio='E0' tipo='segmento' fondo='no' color='ffffff' coord_abs='no' expresión='[A.x*(A.x<10)*(A.x>0),A.y][A.x*(A.x<10)*(A.x>0),A.y+6]' rastro='808080' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_02" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][0,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_03" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][10,0]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_04" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,6][10,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_05" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[10,0][10,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_06" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[s,0][s,6]' familia='s' s.intervalo='[0,10]' s.pasos='d' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[140+a+b,250]' texto='n' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_08" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[135+a+b,252]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_09" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[140+a+b,270]' texto='d' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_10" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[157+a+b,260]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_11" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[172+a+b,250]' texto='[A.x*d/10]' decimales='1' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_12" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[168+a+b,252]' texto=' ___' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_13" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[172+a+b,272]' texto='[d]' decimales='1' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_14" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[213+a+b,260]' texto='= [A.x/10] = [10*A.x]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_15" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[160,10]' texto='U N I D A D' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_16" value="espacio='E0' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(A.x+0.25,A.y+0.25)' texto='A' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+          </ajs>
+        </td>
+      </tr>
+      <tr>
+        <td valign="middle">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              1) Representa en esta escena una fracción, por ejemplo <strong>1/3</strong> (<small>ya
+sabes denominador=<font color="#FF0000">3</font> en el <strong>botón de abajo</strong>, y numerador
+=<font color="#FF0000">1</font> <strong>arrastrando el punto A</strong></small>)<br> 2) Pulsa el botón del denominador una vez (<small>d=4</small>), y verás que la UNIDAD ha quedado dividida en cuatro partes iguales (<small>cada una será 1/4</small>), pero que la zona sombreada <strong>no coincide</strong> con ninguna de ellas, y que la fracción tiene un número decimal en el numerador. NO NOS VALE.<br> 3) Pulsa de nuevo el botón denominador (<small>d=5</small>), la UNIDAD ha quedado dividida en cinco partes (<small>cada una será 1/5</small>) y vuelve a ocurrir lo mismo.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="middle" colspan="2" bgcolor="#E9E8CB">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              4) Pulsa de nuevo el botón denominador (<strong><small>d=6</small></strong>)
+              <font color="#0000FF"><strong><blink>
+¡OH MILAGRO!</blink></strong></font>: ahora la UNIDAD ha quedado dividida en seis partes (<strong><small>cada una será 1/6</small></strong>), pero la zona sombreada <strong>coincide exactamente</strong> con <strong>dos</strong> de esas partes. Ahora la fracción es <strong>2/6</strong>, y es exactamente la misma cantidad que el <strong>1/3</strong> que teníamos al principio. <br> Eso quiere decir que <strong>1/3=2/6</strong>, son dos <strong><font color="#0000FF">
+FRACCIONES EQUIVALENTES</font></strong>.
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td valign="top" colspan="2">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              En la escena siguiente puedes representar tres fracciones a la vez.<br> Representa, por ejemplo, las fracciones <img src="fracciones1_05.gif" align="absmiddle" width="147" height="40">
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+
+          <p align="center">
+            <table border="2" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td bgcolor="#E2FDFE">
+                    <font color="#000080" size="2" face="Verdana"><em>
+
+</em></font>
+
+                    <p align="left">
+                      <font color="#000080" size="2" face="Verdana"><em>
+
+Los denominadores se controlan con los botones de abajo, los numeradores
+arrastrando con el ratón los puntos A, B y C, hasta ver escritas cada una de
+ellas.<br>
+
+    Podrás observar que ahora las fracciones pueden ser mayores que la unidad (<small>hemos
+diseñado la escena con 4 unidades</small>)
+
+</em></font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </td>
+        <td align="center" valign="middle" rowspan="2">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="500" height="400">
+            <param name="tamaño" value="500x400">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=sí filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='28' O.x='-224' O.y='110' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='escala' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='zoom' expresión='(0,0)' valor='28' incr='8' min='8' max='1000000' discreto='no' decimales='4*(escala<10)' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_02" value="id='Ox' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.x' expresión='(0,0)' valor='-224' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_03" value="id='Oy' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.y' expresión='(0,0)' valor='130' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_04" value="id='c' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='s' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_05" value="id='a' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='n' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_06" value="id='b' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='q' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_07" value="id='A' tipo='gráfico' espacio='E0' color='ffff00' color-int='f0f8ff' tamaño='8' expresión='[0,0]' ">
+            <param name="C_08" value="id='B' tipo='gráfico' espacio='E0' color='ffff00' color-int='f0f8ff' tamaño='8' expresión='[0,4]' ">
+            <param name="C_09" value="id='C' tipo='gráfico' espacio='E0' color='ffff00' color-int='f0f8ff' tamaño='8' expresión='[0,8]' ">
+            <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+            <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';A.y=0;B.y=4;C.y=8;ma=700*(A.x<-0.001)+700*(A.x>16.001);mb=700*(B.x<-0.001)+700*(B.x>16.001);mc=700*(C.x<-0.001)+700*(C.x>16.001)' ">
+            <param name="G_01" value="espacio='E0' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='[4,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_02" value="espacio='E0' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='[3.9,-0.5]' texto='1' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_03" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[8,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_04" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[7.9,-0.5]' texto='2' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_05" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[12,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_06" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[11.9,-0.5]' texto='3' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_07" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[16,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_08" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[15.9,-0.5]' texto='4' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_09" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[4,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_10" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[3.9,3.5]' texto='1' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_11" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[8,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_12" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[7.9,3.5]' texto='2' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_13" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[12,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_14" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[11.9,3.5]' texto='3' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_15" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[16,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_16" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[15.9,3.5]' texto='4' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_17" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[4,8]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_18" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[3.9,7.5]' texto='1' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_19" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[8,8]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_20" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[7.9,7.5]' texto='2' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_21" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[12,8]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_22" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[11.9,7.5]' texto='3' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_23" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[16,8]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_24" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[15.9,7.5]' texto='4' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_25" value="espacio='E0' tipo='segmento' fondo='no' color='ffff00' coord_abs='no' expresión='[s1,0][s1,2]' familia='s1' s1.intervalo='[0,16]' s1.pasos='4*a' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_26" value="espacio='E0' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='[A.x*(A.x<16)*(A.x>0),A.y][A.x*(A.x<16)*(A.x>0),A.y+2]' rastro='808080' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_27" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][0,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_28" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[4,0][4,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_29" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[8,0][8,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_30" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[12,0][12,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_31" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[16,0][16,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_32" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,0][16,0]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_33" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,2][16,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_34" value="espacio='E0' tipo='segmento' fondo='no' color='ffff00' coord_abs='no' expresión='[s2,4][s2,6]' familia='s2' s2.intervalo='[0,16]' s2.pasos='4*b' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_35" value="espacio='E0' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='[B.x*(B.x<16)*(B.x>0),B.y][B.x*(B.x<16)*(B.x>0),B.y+2]' rastro='808080' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_36" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,4][0,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_37" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[4,4][4,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_38" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[8,4][8,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_39" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[12,4][12,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_40" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[16,4][16,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_41" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,4][16,4]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_42" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,6][16,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_43" value="espacio='E0' tipo='segmento' fondo='no' color='ffff00' coord_abs='no' expresión='[s3,8][s3,10]' familia='s3' s3.intervalo='[0,16]' s3.pasos='4*c' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_44" value="espacio='E0' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='[C.x*(C.x<16)*(C.x>0),C.y][C.x*(C.x<16)*(C.x>0),C.y+2]' rastro='808080' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_45" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,8][0,10]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_46" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[4,8][4,10]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_47" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[8,8][8,10]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_48" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[12,8][12,10]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_49" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[16,8][16,10]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_50" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,8][16,8]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_51" value="espacio='E0' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='[0,10][16,10]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_52" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+ma,300]' texto='m' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_53" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[20+ma,300]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_54" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+ma,315]' texto='n' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_55" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[42+ma,308]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_56" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[57+ma,300]' texto='[A.x*a/4]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_57" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[53+ma,300]' texto=' ____' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_58" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[58+ma,318]' texto='[a]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_59" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[100+ma,308]' texto=' = [A.x/4] = [100*A.x/4]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_60" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+mb,190]' texto='p' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_61" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[20+mb,190]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_62" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+mb,208]' texto='q' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_63" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[42+mb,198]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_64" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[57+mb,190]' texto='[B.x*b/4]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_65" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[53+mb,190]' texto=' ____' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_66" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[58+mb,208]' texto='[b]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_67" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[100+mb,198]' texto=' = [B.x/4] = [100*B.x/4]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_68" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+mc,80]' texto='r' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_69" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[20+mc,80]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_70" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+mc,98]' texto='s' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_71" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[42+mc,88]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_72" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[57+mc,80]' texto='[C.x*c/4]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_73" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[53+mc,80]' texto=' ____' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_74" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[58+mc,98]' texto='[c]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_75" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[100+mc,88]' texto=' = [C.x/4] = [100*C.x/4]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+          </ajs>
+        </td>
+      </tr>
+      <tr>
+        <td valign="middle">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Habrás observado que las tres representan el mismo número.</font>
+          </p>
+
+          <p>
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Se dice que son <strong>fracciones equivalentes</strong>, esto es:
+            </font>
+          </p>
+
+          <p align="center">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <img src="fracciones1_06.gif" align="absmiddle" width="127" height="45"><br>
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2" bgcolor="#E9E8CB">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Observa que si multiplicamos numerador y denominador de la primera fracción por 2, nos da la segunda, y si lo hacemos por 3, nos da la tercera.</font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              O al revés, si dividimos el numerador y denominador de la tercera fracción por 3, nos da la primera, y si lo hacemos con la segunda por 2, también nos da la primera.
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Dada una fracción <img src="fracciones1_07.gif" align="absmiddle" width="45" height="45">, para obtener una <strong>
+fracción equivalente</strong>, basta multiplicar o dividir, numerador y denominador por un mismo número. Así:
+            </font>
+          </p>
+
+          <p align="center">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <img src="fracciones1_08.gif" align="absmiddle" width="164" height="51">
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <b>Ejercicio 3</b>.
+            </font>
+          </p>
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Halla dos fracciones equivalentes a <img src="fracciones1_09.gif" align="absmiddle" width="34" height="39"> y represéntalas en la escena anterior para comprobar que representan el mismo número.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#E9E8CB" height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Pero cuando no las podemos representar, ¿cómo averiguamos si dos fracciones son equivalentes?
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Pues muy fácil. Por ejemplo si quiero saber si <img src="fracciones1_10.gif" align="absmiddle" width="82" height="42">, basta comprobar que 12x10=15x8=120
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="2" face="Arial, Helvetica, sans-serif">
+            ¿Son equivalentes las fracciones <img src="fracciones1_11.gif" align="absmiddle" width="70" height="42">? ¿y <img src="fracciones1_12.gif" align="absmiddle" width="29" height="40"> y <img src="fracciones1_09.gif" align="absmiddle" width="34" height="39">?
+          </font>
+
+          <p>
+            <font color="#006699" size="2" face="Arial, Helvetica, sans-serif"> Comprúebalo en la escena anterior.
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#E9E8CB" height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Diremos que dos fracciones son equivalentes si se cumple la siguiente relación.
+            </font>
+          </p>
+
+          <p align="center">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <img src="fracciones1_13.gif" width="193" height="46">
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <a name="comun"></a>
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Reducción a
+	común denominador.</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#E9E8CB" height="56" colspan="2">
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              El objetivo de este apartado es el siguiente: <b>"Dado un conjunto de
+fracciones, obtener otro conjunto formado por fracciones equivalentes a las
+anteriores pero todas ellas con el mismo denominador"</b>.
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Más adelante esto nos permitirá comparar fracciones con facilidad y efecturar operaciones con ellas.
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Vamos a reducir a común denominador las fracciones <img src="fracciones1_14.gif" align="absmiddle" width="93" height="42"></font>
+          </p>
+
+          <p>
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">El procedimiento es el siguiente:
+            </font>
+          </p>
+
+          <p>
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+            </font>
+          </p>
+          <ol type="a">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <li>
+
+                <p align="justify">Hallamos el mínimo común múltiplo (m.c.m.) de 4 y 6 = 12. <b>Éste va a ser el denominador común</b>. A continuación dividimos el denominador común por cada uno de los denominadores y el resultado se lo multiplicamos a los dos términos de la fracción.
+                </p>
+              </li>
+              <li>12:4 = 3; Hay que multiplicar por 3;&nbsp; <img src="fracciones1_15.gif" align="absmiddle" width="137" height="49">
+              </li>
+              <li> 12:6=2; Hay que multiplicar por 2; <img src="fracciones1_16.gif" align="absmiddle" width="136" height="52">
+              </li>
+            </font>
+          </ol>
+          <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+            Ahora tenemos dos fracciones equivalentes a las primeras, pero con el mismo denominador.
+          </font>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2">
+
+          <p align="center">
+            <table border="2" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td bgcolor="#E2FDFE">
+                    <font color="#000080" size="2" face="Verdana"><em>
+
+<p align="justify">
+
+En la escena adjunta puedes introducir dos fracciones diferentes modificando los
+controles a, b, c y d. Después debes calcular en tu cuaderno el mínimo común
+múltiplo de los denominadores y reducir las fracciones a denominador común.
+
+
+</p></em></font>
+
+                    <p align="justify">
+                      <font color="#000080" size="2" face="Verdana"><em>
+
+Una vez hecho esto, introduce el valor del mcm en el control correspondiente y, <b>cuando éste sea correcto</b>, podrás poner el control solución a 1 para comprobar el resultado.
+
+</em></font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="550" height="200">
+            <param name="tamaño" value="550x200">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='a' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='a' expresión='(0,0)' valor='3' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='s=0;e=1' ">
+            <param name="C_02" value="id='b' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='b' expresión='(0,0)' valor='4' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='s=0;e=1' ">
+            <param name="C_03" value="id='c' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='c' expresión='(0,0)' valor='5' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='s=0;e=1' ">
+            <param name="C_04" value="id='d' tipo='numérico' interfaz='pulsador' región='norte' espacio='E0' nombre='d' expresión='(0,0)' valor='6' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='s=0;e=1' ">
+            <param name="C_05" value="id='e' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='mcm' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_06" value="id='s' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='solución' expresión='(0,0)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='sí' activo-si='e=mcm' ">
+            <param name="A_01" value="id='r' expresión='500*(s=0)' tipo='variable' ">
+            <param name="A_02" value="id='mcd(x,y)' algoritmo='sí' expresión='cc' inicio='cc=max(x,y);dd=min(x,y)' hacer='rr=cc-ent(cc/dd)*dd;cc=dd;dd=rr' mientras='rr>0' tipo='función' ">
+            <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+            <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='mcd=mcd(b,d);mcm=b*d/mcd;' ">
+            <param name="G_01" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[160,15]' texto='a' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_02" value="espacio='E0' tipo='texto' fondo='no' color='808080' coord_abs='sí' expresión='[155,15]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_03" value="espacio='E0' tipo='texto' fondo='no' color='00ffff' coord_abs='sí' expresión='[182,24]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_04" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[160,35]' texto='b' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[195,15]' texto=' [a]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_06" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[243,15+r]' texto=' [a]*[e/b]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[300,15+r]' texto=' [a*e/b]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_08" value="espacio='E0' tipo='texto' fondo='no' color='808080' coord_abs='sí' expresión='[193,15]' texto='___' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_09" value="espacio='E0' tipo='texto' fondo='no' color='808080' coord_abs='sí' expresión='[193,15+r]' texto='___    ___    ___' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_10" value="espacio='E0' tipo='texto' fondo='no' color='00ffff' coord_abs='sí' expresión='[223,24+r]' texto=' =        =' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_11" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[195,35]' texto=' [b]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_12" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[243,35+r]' texto=' [b]*[e/b]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_13" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[300,35+r]' texto=' [b*e/b]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_14" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[160,85]' texto='c' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_15" value="espacio='E0' tipo='texto' fondo='no' color='808080' coord_abs='sí' expresión='[155,85]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_16" value="espacio='E0' tipo='texto' fondo='no' color='00ffff' coord_abs='sí' expresión='[182,94]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_17" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[160,105]' texto='d' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_18" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[195,85]' texto=' [c]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_19" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[243,85+r]' texto=' [c]*[e/d]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_20" value="espacio='E0' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='[300,85+r]' texto=' [c*e/d]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_21" value="espacio='E0' tipo='texto' fondo='no' color='808080' coord_abs='sí' expresión='[193,85+r]' texto='___     ___   ___' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_22" value="espacio='E0' tipo='texto' fondo='no' color='808080' coord_abs='sí' expresión='[193,85]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_23" value="espacio='E0' tipo='texto' fondo='no' color='00ffff' coord_abs='sí' expresión='[223,94+r]' texto=' =        =' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_24" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[200,105]' texto='[d]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_25" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[248,105+r]' texto='[d]*[e/d]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_26" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[300,105+r]' texto=' [d*e/d]' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_27" value="espacio='E0' tipo='texto' fondo='no' color='ffc800' dibujar-si='0' coord_abs='sí' expresión='(20,20)' texto='mcd=[mcd]\nc=[cc]\nd=[dd]\nmcm=[mcm]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+          </ajs>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="2" face="Arial, Helvetica, sans-serif">
+            <b>Ejercicio 4</b>
+
+            <p>Reduce a común denominador las fracciones: </p>
+
+            <p>
+              a) 5/4 y 7/18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 7/3 y 8/27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) 4/7 y 5/14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) 3/100 y 5/4</p>
+
+            <p>
+              Comprueba tus resultados en la escena anterior.</p>
+          </font>
+
+          <p>
+            <font color="#006699" size="2" face="Arial, Helvetica, sans-serif">
+              Repite el ejercicio con las parejas de fracciones que tú quieras.
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <a name="comparacion"></a>
+  <table width="100%" border="0" cellpadding="10">
+    <tbody>
+      <tr>
+        <td colspan="2" height="27">
+          <font color="#006699" size="3" face="Arial, Helvetica, sans-serif"><strong><b>Comparación de
+	fracciones.</b></strong></font>
+        </td>
+      </tr>
+      <tr>
+        <td height="27">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Arial, Helvetica, sans-serif">
+              Introduce en esta escena las fracciones 3/9 y 7/9, que tienen el <strong>mismo
+denominador</strong> (<em>los denominadores en los botones inferiores, los
+numeradores arrastrando con el ratón los puntos A y B</em>).
+              <br> ¿Cuál es mayor?
+            </font>
+          </p>
+        </td>
+        <td align="center" valign="middle" rowspan="2">
+          <ajs name="Descartes" code="descinst.Descartes.class" width="500" height="300">
+            <param name="tamaño" value="500x300">
+            <param name="decimal_symbol" value=".">
+            <param name="image_loader" value="">
+            <param name="expand" value="">
+            <param name="nombre" value="">
+            <param name="Versión" value="5.5">
+            <param name="antialias" value="no">
+            <param name="deshacer" value="no">
+            <param name="editable" value="no">
+            <param name="Idioma" value="español">
+            <param name="Botones" value="créditos=no config=no inicio=sí limpiar=sí filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+            <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='28' O.x='-224' O.y='56' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+            <param name="C_01" value="id='E0.escala' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='zoom' expresión='(0,0)' valor='28' incr='8' min='8' max='1000000' discreto='no' decimales='4*(E0.escala<10)' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_02" value="id='E0.Ox' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.x' expresión='(0,0)' valor='-224' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_03" value="id='E0.Oy' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='O.y' expresión='(0,0)' valor='56' incr='32' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='0' ">
+            <param name="C_04" value="id='b' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='q' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_05" value="id='a' tipo='numérico' interfaz='pulsador' región='sur' espacio='E0' nombre='n' expresión='(0,0)' valor='1' incr='1' min='1' discreto='no' decimales='0' fijo='sí' visible='sí' ">
+            <param name="C_06" value="id='A' tipo='gráfico' espacio='E0' color='ffff00' color-int='f0f8ff' tamaño='8' expresión='[0,0]' ">
+            <param name="C_07" value="id='B' tipo='gráfico' espacio='E0' color='ffff00' color-int='f0f8ff' tamaño='8' expresión='[0,4]' ">
+            <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+            <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';A.y=0;B.y=4;ma=700*(A.x<-0.001)+700*(A.x>16.001);mb=700*(B.x<-0.001)+700*(B.x>16.001)' ">
+            <param name="G_01" value="espacio='E0' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='[4,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_02" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[3.9,-0.5]' texto='1' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_03" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[8,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_04" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[7.9,-0.5]' texto='2' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_05" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[12,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_06" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[11.9,-0.5]' texto='3' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_07" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[16,0]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_08" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[15.9,-0.5]' texto='4' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_09" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[4,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_10" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[3.9,3.5]' texto='1' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_11" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[8,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_12" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[7.9,3.5]' texto='2' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_13" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[12,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_14" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[11.9,3.5]' texto='3' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_15" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[16,4]' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_16" value="espacio='E0' tipo='punto' fondo='no' color='rojo' coord_abs='no' expresión='[15.9,3.5]' texto='4' decimales='2' fijo='sí' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+            <param name="G_17" value="espacio='E0' tipo='segmento' fondo='no' color='ffff00' coord_abs='no' expresión='[s1,0][s1,2]' familia='s1' s1.intervalo='[0,16]' s1.pasos='4*a' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_18" value="espacio='E0' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='[A.x*(A.x<16)*(A.x>0),A.y][A.x*(A.x<16)*(A.x>0),A.y+2]' rastro='808080' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_19" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,0][0,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_20" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[4,0][4,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_21" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[8,0][8,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_22" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[12,0][12,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_23" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[16,0][16,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_24" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,0][16,0]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_25" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,2][16,2]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_26" value="espacio='E0' tipo='segmento' fondo='no' color='ffff00' coord_abs='no' expresión='[s2,4][s2,6]' familia='s2' s2.intervalo='[0,16]' s2.pasos='4*b' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_27" value="espacio='E0' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='[B.x*(B.x<16)*(B.x>0),B.y][B.x*(B.x<16)*(B.x>0),B.y+2]' rastro='808080' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_28" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,4][0,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_29" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[4,4][4,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_30" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[8,4][8,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_31" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[12,4][12,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_32" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[16,4][16,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_33" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,4][16,4]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_34" value="espacio='E0' tipo='segmento' fondo='no' color='rojo' coord_abs='no' expresión='[0,6][16,6]' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+            <param name="G_35" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+ma,200]' texto='m' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_36" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[20+ma,200]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_37" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+ma,215]' texto='n' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_38" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[42+ma,208]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_39" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[57+ma,200]' texto='[A.x*a/4]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_40" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[53+ma,200]' texto=' ____' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_41" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[58+ma,217]' texto='[a]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_42" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[100+ma,208]' texto=' = [A.x/4] = [100*A.x/4]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_43" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+mb,85]' texto='p' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_44" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[20+mb,85]' texto='__' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_45" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[25+mb,102]' texto='q' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_46" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[42+mb,94]' texto='=' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_47" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[57+mb,85]' texto='[B.x*b/4]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_48" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[53+mb,85]' texto=' ____' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_49" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[58+mb,104]' texto='[b]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+            <param name="G_50" value="espacio='E0' tipo='texto' fondo='no' color='ffff00' coord_abs='sí' expresión='[100+mb,94]' texto=' = [B.x/4] = [100*B.x/4]%' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+          </ajs>
+        </td>
+      </tr>
+      <tr>
+        <td height="27">
+
+          <p align="justify">
+            <font color="#006699" size="2" face="Arial, Helvetica, sans-serif">
+              Ahora introduce las fracciones 3/4 y 3/7, que tienen el <strong>mismo numerador</strong>. ¿Cuál es mayor?
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#E9E8CB" height="56" colspan="2">
+
+          <p align="center">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              <table border="1" width="100%">
+                <tbody>
+                  <tr>
+                    <td width="100%" bgcolor="#FFFFCA" align="center">
+                      <font face="Garamond">De dos fracciones con el <strong>mismo denominador</strong> es mayor la de <strong>
+	numerador mayor</strong></font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" bgcolor="#D9FFFF" align="center">
+                      <font face="Garamond">De dos fracciones con el <strong>mismo numerador</strong> es mayor la de <strong>
+	denominador menor</strong></font>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Para comparar dos fracciones que no tienen igual ni numerador ni denominador, se reducen a común denominador y luego se comparan aplicando la regla anterior.
+            </font>
+          </p>
+
+          <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              Otra posibilidad es pasar ambas fracciones a forma decimal y comparar los números resultantes. Volveremos sobre esto más adelante.
+            </font>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="50" align="right" color="#FEE6B8">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td valign="top" width="100%" height="39">&nbsp;</td>
+        <td align="center" width="41">
+          <a href="index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('arriba','','img/boton_arriba2.gif',1)"><img src="img/boton_arriba.gif" border="0" width="39" height="38" name="arriba" alt="Volver al índice"></a>
+        </td>
+        <td valign="top" width="7">&nbsp;</td>
+        <td align="center" width="40">
+          <a href="index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('atras','','img/boton_atras2.gif',1)"><img src="img/boton_atras.gif" border="0" width="38" height="39" name="atras" alt="Atrás"></a>
+        </td>
+        <td valign="top" width="6">&nbsp;</td>
+        <td align="center" width="40">
+          <a href="Fracciones_2.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('adelante','','img/boton_adelante2.gif',1)"><img src="img/boton_adelante.gif" border="0" width="38" height="39" name="adelante" alt="adelante"></a>
+        </td>
+        <td valign="top" width="5">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="1">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><img src="img/spacer2.gif" width="5" height="1"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="98%">
+    <tbody>
+      <tr>
+        <td valign="top" width="15" bgcolor="#FEE6B8" nowrap="" height="29">&nbsp;</td>
+        <td colspan="14" bgcolor="#FEE6B8" height="29">
+          <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br><i> Autora: Ángela Nuñez Castaín (2001)</i><br><br> Adaptación a DescartesJS: Ángela Nuñez Castaín y José R. Galo Sánchez (2017)<br><br></font>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="98%">
+    <tbody>
+      <tr>
+        <td valign="top" rowspan="3" width="65" bgcolor="#FFFFFF"><img src="img/logo2.gif" width="65" height="80"></td>
+        <td colspan="2" height="28">&nbsp; </td>
+      </tr>
+      <tr>
+        <td colspan="2" width="922" bgcolor="#FFF8E1" height="19">
+          <font color="#006699" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+            ProyectoDescartes.org. Año 2017</font>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2" height="33" class="subtitulos">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3" bgcolor="#FEE6B8">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Licencia de Creative Commons -->
+
+  <p align="center">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/es/"><img alt="Licencia de Creative Commons" src="http://i.creativecommons.org/l/by-nc-sa/2.5/es/88x31.png" border="0"></a><br>
+    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+      Los contenidos de esta unidad didáctica están bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/es/">
+licencia de Creative Commons</a> si no se indica lo contrario. </font>
+  </p>
+  <!-- /Licencia de Creative Commons -->
+
+
+
+</body>
+</html>

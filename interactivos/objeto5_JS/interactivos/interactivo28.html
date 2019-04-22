@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cálculo Diferencial - Introducción</title>
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="600" height="500" code="Descartes">
+    <param name="tamaño" value="600x500">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="6">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E0' cID='13b95dec6c0' x='0' y='60' ancho='600' alto='440' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffffff' red='00a6ff' red10='889498' ejes='000000' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E1' cID='13b9a596d25' x='0' y='0' ancho='600' alto='60' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='784500' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='n1' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Otra función' expresión='(440,390,140,35)' valor='0' visible='sí' color='ffffff' color-int='456598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='otro=(otro=6)?1:otro+1' dibujar-si='otro!=3' ">
+    <param name="C_02" value="id='a' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='a' expresión='(20,390,100,40)' valor='-1' incr='0.1' min='-10' max='10' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_03" value="id='b' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='b' expresión='(130,390,100,40)' valor='1' incr='0.1' min='-10' max='10' discreto='no' decimales='2' fijo='sí' visible='sí' ">
+    <param name="C_04" value="id='c' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='c' expresión='(240,390,100,40)' valor='1' incr='0.1' min='-10' max='10' discreto='no' decimales='2' fijo='sí' visible='sí' dibujar-si='(otro=2)|(otro=3)' ">
+    <param name="C_05" value="id='n' tipo='numérico' interfaz='pulsador' región='interior' espacio='E0' nombre='n' expresión='(360,390,100,40)' valor='3' incr='1' min='3' max='7' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='(otro=3)' ">
+    <param name="C_06" value="id='n3' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Otra función' expresión='(440,350,140,35)' valor='0' visible='sí' color='ffffff' color-int='456598' negrita='sí' cursiva='no' subrayada='no' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='otro=(otro=6)?1:otro+1' dibujar-si='otro=3' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;' ">
+    <param name="A_02" value="id='CALCULOS_EJERCICIOS' algoritmo='sí' evaluar='siempre' ">
+    <param name="G_01" value="espacio='E0' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='otro=1' coord_abs='no' expresión='y=a*x+b' ancho='2' visible='no' editable='no' ">
+    <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=1' expresión='[150,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Función lineal: f(x) = ax+b\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,20' align='a_left' ">
+    <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=1' expresión='[151,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;}\f0\cf0\fs48\b Función lineal: f(x) = ax+b\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,20' align='a_left' ">
+    <param name="G_04" value="espacio='E0' tipo='ecuación' fondo='no' color='rojo' dibujar-si='otro=2' coord_abs='no' expresión='y=a*x^2+b*x+c' ancho='2' visible='no' editable='no' ">
+    <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=2' expresión='[110,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Función cuadrática: f(x) = \b0\b{\*\mjaformula ax{\supix 2}+bx+c}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,20' align='a_left' ">
+    <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=2' expresión='[111,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green255\blue0;}\f0\cf0\fs48\b Función cuadrática: f(x) = \b0\b{\*\mjaformula ax{\supix 2}+bx+c}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,20' align='a_left' ">
+    <param name="G_07" value="espacio='E0' tipo='ecuación' fondo='no' color='008d00' dibujar-si='otro=3' coord_abs='no' expresión='y=a*x^n+b*x^(n-2)+c' ancho='2' visible='no' editable='no' ">
+    <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=3' expresión='[10,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs40\b Función polinómica: f(x) = \b0\b{\*\mjaformula a{\subix n}x{\supix n}+a{\subix n+1}x{\supix n-1}+&nbsp;a{\subix n+2}x{\supix n-2}+&nbsp;...&nbsp;+&nbsp;a{\subix 1}x+a{\subix 0}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=3' expresión='[10,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;}\f0\cf0\fs40\b Función polinómica: f(x) = \b0\b{\*\mjaformula a{\subix n}x{\supix n}+a{\subix n+1}x{\supix n-1}+&nbsp;a{\subix n+2}x{\supix n-2}+&nbsp;...&nbsp;+&nbsp;a{\subix 1}x+a{\subix 0}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_10" value="espacio='E0' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=3' expresión='[10,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b f(x) = \b0\b{\*\mjaformula{\expr a\decimals 2\fixed1}x{\supix{\expr n\decimals 0\fixed1}}+{\expr b\decimals 2\fixed1}x{\supix{\expr n-2\decimals 0\fixed1}}+{\expr c\decimals 2\fixed1}}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_11" value="espacio='E0' tipo='ecuación' fondo='no' color='rojo' dibujar-si='otro=4' coord_abs='no' expresión='y=abs(a*x+b)' ancho='2' visible='no' editable='no' ">
+    <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=4' expresión='[110,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f0\fs48\b Función valor absoluto: f(x) = |\b0\b{\*\mjaformula ax+b}\b0\f1\fs36\b |\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_13" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=4' expresión='[111,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red0\green255\blue255;}\f0\cf0\fs48\b Función valor absoluto: f(x) = |\b0\b{\*\mjaformula ax+b}\b0\f1\cf0\fs36\b |\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_14" value="espacio='E0' tipo='ecuación' fondo='no' color='rojo' dibujar-si='otro=5' coord_abs='no' expresión='y=a*sen(x)+b' ancho='2' visible='no' editable='no' ">
+    <param name="G_15" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=5' expresión='[10,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Función trascendente trigonométrica: f(x) = \b0\b{\*\mjaformula asen(x)+b}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_16" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=5' expresión='[11,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red255\green255\blue0;}\f0\cf0\fs48\b Función trascendente trigonométrica: f(x) = \b0\b{\*\mjaformula asen(x)+b}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_17" value="espacio='E0' tipo='ecuación' fondo='no' color='negro' dibujar-si='otro=6' coord_abs='no' expresión='y=a*exp(x)+b' ancho='2' visible='no' editable='no' ">
+    <param name="G_18" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=6' expresión='[40,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs48\b Función trascendente exponencial: f(x) = \b0\b{\*\mjaformula ae{\supix x}+b}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+    <param name="G_19" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='otro=6' expresión='[41,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;}\f0\cf0\fs48\b Función trascendente exponencial: f(x) = \b0\b{\*\mjaformula ae{\supix x}+b}\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Bold,BOLD,18' align='a_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

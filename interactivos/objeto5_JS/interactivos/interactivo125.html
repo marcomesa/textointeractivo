@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../fonts/font4b.css" type="text/css">
+  
+  <script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body style="margin:0;padding:0; border:0; overflow: hidden;">
+  <ajs name="Descartes" width="740" height="620" code="Descartes">
+    <param name="tamaño" value="740x620">
+    <param name="decimal_symbol" value=".">
+    <param name="image_loader" value="">
+    <param name="expand" value="">
+    <param name="nombre" value="Arquimedes">
+    <param name="Versión" value="5.5">
+    <param name="antialias" value="sí">
+    <param name="deshacer" value="no">
+    <param name="editable" value="sí">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=30 ">
+    <param name="E_01" value="tipo='R2' id='E3' cID='157235b25a4' x='0' y='0' ancho='440' alto='620' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="E_02" value="tipo='R2' id='E0' cID='13c1d0e8077' x='440' y='0' ancho='300' alto='620' dibujar-si='1' fijo='sí' escala='40' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='63e7fff3' red='b8c4c8' red10='no' ejes='000000' texto='no' números='no' sensible_a_los_movimientos_del_ratón='no' ">
+    <param name="C_01" value="id='A' tipo='gráfico' espacio='E0' color='222222' color-int='c0cc0022' tamaño='10' expresión='(A.x,A.y)' constricción='x^3+y^3=6*x*y' ">
+    <param name="C_02" value="id='A.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='A.x' expresión='(0,0)' valor='0' incr='0.1' discreto='no' decimales='1' fijo='sí' visible='sí' ">
+    <param name="C_03" value="id='A.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E0' nombre='A.y' expresión='(0,0)' valor='0' incr='0.1' discreto='no' decimales='1' fijo='sí' visible='sí' ">
+    <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='kk=0;ejemplo=0;sol=0' ">
+    <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='x1=A.x;y1=A.y;m1=(x1=0)&(y1=0)?800:(6*y1-3*(x1)^2)/(3*(y1)^2-6*x1);b1=y1-m1*x1;signo1=b1<0?&squot; - &squot;:&squot; + &squot;' ">
+    <param name="G_01" value="espacio='E0' tipo='ecuación' fondo='no' color='006900' coord_abs='no' expresión='x^3+y^3=6*x*y' ancho='3' visible='no' editable='no' ">
+    <param name="G_02" value="espacio='E3' tipo='texto' fondo='no' color='20303a' dibujar-si='m1!=800' expresión='[0,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;}\f0\fs48\b\i{\*\mjaformula m&nbsp;={\fraction{\num dy}{\den dx}}}\i0\b0\b\i  \i0\b0\b\i{\*\mjaformula ={\fraction{\num{\expr 6*y1-3*(x1)^2\decimals 1\fixed1}}{\den{\expr -6*x1-3*(y1)^2\decimals 1\fixed1}}}={\expr m1\decimals 1\fixed1}}\i0\b0\par\par\f0\fs48\b y la ecuación de la recta es:\b0\par\par\f1\cf0\fs56\b\i     \i0\b0\b\i{\*\mjaformula y&nbsp;={\expr m1\decimals 1\fixed1}x{\expr signo1\decimals 0\fixed0}{\expr abs(b1)\decimals 1\fixed0}}\i0\b0\b\i{\*\mjaformula}\i0\b0\b\i{\*\mjaformula}\i0\b0}' decimales='2' fijo='sí' ancho='1' fuente='Arial Italic,ITALIC,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_03" value="espacio='E3' tipo='texto' fondo='no' color='20303a' dibujar-si='m1=800' expresión='[0,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;}\f0\fs48\b\i{\*\mjaformula m&nbsp;={\fraction{\num dy}{\den dx}}}\i0\b0\b\i  \i0\b0\b\i{\*\mjaformula ={\fraction{\num{\expr 6*y1-3*(x1)^2\decimals 1\fixed1}}{\den{\expr -6*x1-3*(y1)^2\decimals 1\fixed1}}}}\i0\b0\f1\b  \b0\f0\b = \b0\fs84\b ?\b0\par\par\f0\fs48\b En este punto se presentan dos\b0\par\f0\fs48\b rectas tangentes.\b0\par\par\f0\cf0\fs48\b ¡Mueve el punto y observa!\b0\par}' decimales='2' fijo='sí' ancho='1' fuente='Arial Italic,ITALIC,17' align='a_left' anchor='a_top_left' ">
+    <param name="G_04" value="espacio='E0' tipo='ecuación' fondo='no' color='azul' dibujar-si='m1!=800' coord_abs='no' expresión='y=m1*x+b1' ancho='1' visible='no' editable='no' ">
+    <param name="G_05" value="espacio='E3' tipo='texto' fondo='no' color='20303a' expresión='[0,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red32\green48\blue58;}\f0\cf0\fs48\b Ecuación del folio de Descartes \b0\par\f0\cf1\fs48\b\i   \i0\b0\b\i{\*\mjaformula x{\supix 3}+y{\supix 3}=6xy}\i0\b0\par\par\f0\cf0\fs48\b\i Derivando implícitamente, obtenemos:\i0\b0\par\f0\fs48\b\i{\*\mjaformula 3x{\supix 2}+3y{\supix 2}{\fraction{\num dy}{\den dx}}=6y+6x{\fraction{\num dy}{\den dx}}}\i0\b0\par\f0\cf0\fs48\b\i Al despejar la derivada, nos queda:\i0\b0\par\f0\fs48\b\i{\*\mjaformula{\fraction{\num dy}{\den dx}}={\fraction{\num 6y-3x{\supix 2}}{\den 3y{\supix 2}-6x}}}\i0\b0\par\par\f0\cf2\fs48\b En el punto \b0\b{\*\mjaformula ({\expr x1\decimals 1\fixed1},{\expr y1\decimals 1\fixed1})}\b0\cf2\b  la derivada es\b0\par\f0\cf2\fs48\b la pendiente de la recta tangente a la\b0\par\f0\cf2\fs48\b curva \b0\cf2\b en ese punto (excepto en el origen\b0\par\f0\cf2\fs48\b ¿por \b0\cf2\b qué?):\b0}' decimales='2' fijo='sí' ancho='1' fuente='SansSerif,BOLD,24' align='a_left' anchor='a_top_left' ">
+  </ajs>
+
+
+
+</body>
+</html>

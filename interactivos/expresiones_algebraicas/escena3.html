@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>TITULO</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+		<link rel="stylesheet" href="../../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../../fonts/font5.css" type="text/css">
+</head>
+<body style="margin:0;padding:0; overflow: hidden; ">
+
+<p align="center">
+<ajs name="Descartes" width=650 height=220 code="Descartes">
+   <param name="tamaño" value="650x220">
+   <param name="image_loader" value="">
+   <param name="expand" value="fit">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.4, 2016-05-18">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='x' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' nombre='x' expresión='(10,190)' min='-100' max='100' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_02" value="id='y' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' nombre='y' expresión='(100,190)' min='-100' max='100' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_03" value="id='z' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' nombre='z' expresión='(200,190)' min='-100' max='100' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_04" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='SOLUCIÓN' expresión='(460,183,150,30)' fijo='sí' visible='sí' color='blanco' negrita='sí' fuente puntos='16' imagen='imagenes/btn150.png' acción='calcular' parámetro='c=1' dibujar-si='c=0'">
+   <param name="C_05" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='LIMPIAR' expresión='(460,183,150,30)' fijo='sí' visible='sí' color='blanco' negrita='sí' fuente puntos='16' imagen='imagenes/btn150.png' acción='inicio' parámetro='c=0\na1=ent(rnd*9)+1\nb1=ent(rnd*9)+1\nc1=ent(rnd*9)+1\nd1=ent(rnd*9)+1' dibujar-si='c=1'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='c=0' hacer='a1=ent(rnd*9)+1;b1=ent(rnd*9)+1;c1=ent(rnd*9)+1;d1=ent(rnd*9)+1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' expresión='[20,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36 Expresi\u243 n algebraica:\b  {\*\mjaformula{\expr a1\decimals 0\fixed1}({\expr b1\decimals 0\fixed1}x{\supix 2}-{\expr c1\decimals 0\fixed1}y)+{\expr d1\decimals 0\fixed1}z}\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='c=1' expresión='[20,35]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 ={\*\mjaformula{\expr a1\decimals 0\fixed1}.({\expr b1\decimals 0\fixed1}.{\expr x\decimals 0\fixed1}{\supix 2}-{\expr c1\decimals 0\fixed1}.{\expr y\decimals 0\fixed1})-{\expr d1\decimals 0\fixed1}.{\expr z\decimals 0\fixed1}}\par \par ={\*\mjaformula{\expr a1\decimals 0\fixed1}.({\expr x*x*b1\decimals 0\fixed1}-{\expr c1*y\decimals 0\fixed1})+{\expr z*d1\decimals 0\fixed1}} \par \par = {\*\mjaformula{\expr a1*(b1*x*x-c1*y)+d1*z\decimals 0\fixed1}}\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresión='[20,160]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs32 Ingresa los valores de x, y , z \fs36}' fuente='SansSerif,PLAIN,16' fijo='sí'">
+</ajs></p>
+
+</body>
+</html>

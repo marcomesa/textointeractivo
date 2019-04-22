@@ -1,0 +1,18 @@
+tipo_de_macro=R2
+Idioma=español
+id='pos_x' expresión='10' evaluar='una-sola-vez' constante='si'
+id='pos_y' expresión='20' evaluar='una-sola-vez' constante='si'
+id='txt_X' expresión='|x|' evaluar='una-sola-vez' constante='si'
+id='txt_Y' expresión='|y|' evaluar='una-sola-vez' constante='si'
+id='numDigitos(_paramNum1)' inicio='_index=1;_paramNum=ent(_paramNum1);_digitos=(_paramNum1&lt;=0)?0.6:0;_paramNum=abs(_paramNum1)' hacer='_tt=_index;_continuar=(abs(_paramNum1)&gt;=_tt);_digitos=(_digitos+_continuar);_index=_index*10' mientras='_continuar' expresión='_digitos' algoritmo='si'
+id='numDecimal(_numero)' inicio='_numero=abs(_numero);_nDecimales=0;' hacer='_continuar=(_numero-ent(_numero))&gt;0;_nDecimales=(_nDecimales+_continuar);_numero=_numero*10;_nDecimales=_nDecimales+((!_continuar)&amp;(_nDecimales&gt;0))*0.5' mientras='_continuar' expresión='_nDecimales' algoritmo='si'
+id='INIT_PULSA_M1' hacer='pulsadorM1.ancho=30;pulsadorM1.sep=37;;pulsadorM1.Rojo=84/255;pulsadorM1.Verde=148/255;pulsadorM1.Azul=69/255;;;' evaluar='una-sola-vez' algoritmo='si'
+id='INIT_PULSA_B1' hacer='pulsadorB1.ancho=pulsadorM1.ancho;pulsadorB1.sep=pulsadorM1.sep;;pulsadorB1.Rojo=pulsadorM1.Rojo;pulsadorB1.Verde=pulsadorM1.Verde;pulsadorB1.Azul=pulsadorM1.Azul;;;;' evaluar='una-sola-vez' algoritmo='si'
+id='INIT' hacer='pulsadorM1.value=1;pulsadorB1.value=1;;pos_x=30;pos_y=20;;segDesplaza=54;tamLetras=15;despInicial=54;' evaluar='una-sola-vez' algoritmo='si'
+id='CALC' hacer='COMM=|********************************************|;COMM=|*     Construimos la cadana de la ecuacion *|;COMM=|********************************************|;sigB1=((pulsadorB1.value&lt;0)?&squot;- &squot;:&squot;+&squot;);_Y=txt_Y +&squot; = &squot;;equacion1=_Y+pulsadorM1.value+&squot; &squot;+txt_X+&squot; &squot;+sigB1+&squot; &squot;+abs(pulsadorB1.value);;;COMM=|********************************************|;COMM=|*    Acomodamos los pulsadores             *|;COMM=|********************************************|;_valueM=pulsadorM1.value;_digiM=numDigitos(_valueM)+numDecimal(_valueM);_tamM1Value=tamLetras*(_digiM);_diffM=(_tamM1Value-pulsadorM1.ancho/2)/2;pulsadorM1.x=pos_x+_diffM+despInicial;pulsadorM1.y=pos_y-16;;_valueB=abs(pulsadorB1.value);_digiB=numDigitos(_valueB)+numDecimal(_valueB);_tamB1Value=15*(_digiB);_diffB=(_tamB1Value-pulsadorB1.ancho/2)/2;pulsadorB1.x=pos_x+_tamM1Value+despInicial+segDesplaza;pulsadorB1.x=pulsadorB1.x+_diffB;pulsadorB1.y=pos_y-16;;' evaluar='siempre' algoritmo='si'
+tipo='texto' fondo='si' dibujar-si='0' color='azul' expresión='[__ECUAC_1__,_EQ1_]' 
+tipo='texto' color='azul' expresión='[pos_x+2,pos_y+2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red192\green192\blue192;\red0\green0\blue255;}\cf0\f1\fs56\b{\*\mjaformula\f2\fs72\b{\expr equacion1\decimals 2\fixed0}}\cf1\fs72\par}' fuente='SansSerif,BOLD,28' 
+tipo='texto' color='azul' expresión='[pos_x,pos_y]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs56\b{\*\mjaformula\f2\fs72\b{\expr equacion1\decimals 2\fixed0}}\cf1\fs72\par}' fuente='SansSerif,BOLD,28' 
+tipo='macro' expresión='pulsadores' posini='[pulsadorM1.x,pulsadorM1.y]' nombre='pulsadorM1' coord_abs='si' 
+tipo='macro' expresión='pulsadores' posini='[pulsadorB1.x,pulsadorB1.y]' nombre='pulsadorB1' coord_abs='si' 
+tipo='texto' dibujar-si='debug=1' color='azul' expresión='[20,20]' texto='_valueM=[_valueM] _digiM=[_digiM] _tamM1Value=[_tamM1Value] _diffM=[_diffM]\n_valueB=[_valueB] _digiB=[_digiB] _tamB1Value=[_tamB1Value] _diffB=[_diffB]' 

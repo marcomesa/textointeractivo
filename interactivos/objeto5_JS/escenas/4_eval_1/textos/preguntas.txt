@@ -1,0 +1,11 @@
+10
+'Suma las fracciones de igual denominador'
+'Calcula el término que falta'
+'Encuentra el resultado'
+'Al resolver la operación el resultado es:'
+'Encontrar el resultado de la suma:'
+'Reduce a un común denominador y resuelve'
+'Encuentra el resultado'
+'Encuentra el término desconocido'
+'Calcula el término que falta'
+'Encuentra el resultado'
